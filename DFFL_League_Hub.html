@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DFFL League Hub</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --card2: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --good: #22c55e;
+      --warn: #f59e0b;
+      --border: #334155;
+    }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 28px 20px; text-align: center; background: linear-gradient(135deg, #0f172a, #1e3a8a); border-bottom: 1px solid var(--border); }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { margin: 8px 0 0; color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 14px; background: #020617; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--border); }
+    nav a { color: var(--text); text-decoration: none; padding: 8px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: 0.9rem; }
+    nav a:hover { background: var(--card2); }
+    main { max-width: 1200px; margin: 0 auto; padding: 22px; }
+    section { margin-bottom: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+    h2 { margin-top: 0; color: var(--accent); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: var(--card2); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
+    .card h3 { margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 10px; margin-top: 10px; }
+    th, td { padding: 10px; border-bottom: 1px solid var(--border); text-align: left; font-size: 0.95rem; }
+    th { background: #020617; color: var(--accent); }
+    tr:hover td { background: rgba(56,189,248,.06); }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; background: #0ea5e9; color: white; font-size: 0.8rem; margin: 2px; }
+    .note, .small { color: var(--muted); font-size: 0.95rem; }
+    .winner { color: var(--good); font-weight: bold; }
+    .pending { color: var(--warn); font-weight: bold; }
+    .footer { text-align: center; color: var(--muted); padding: 30px; font-size: .9rem; }
+    .bracket { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .matchup { background: #020617; border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+    @media print {
+      nav { display: none; }
+      body { background: white; color: black; }
+      section, .card { box-shadow: none; border: 1px solid #999; background: white; color: black; }
+      th { background: #eee; color: black; }
+      h2 { color: #111; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DFFL League Hub</h1>
+    <p>Divisional Fantasy Football League — 2026 Inaugural Season</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#standings">Standings</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#matchups">Matchups</a>
+    <a href="#rosters">Rosters</a>
+    <a href="#playoffs">Playoffs</a>
+    <a href="#rules">Rules</a>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>League Overview</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Format</h3>
+          <p>8 owners draft one NFL division each. No waivers, no trades, and no free agents.</p>
+          <span class="tag">8 Owners</span><span class="tag">8 NFL Divisions</span><span class="tag">Division Draft</span>
+        </div>
+        <div class="card">
+          <h3>Season</h3>
+          <p>Weeks 1-10 regular season. All 8 divisions make the playoffs.</p>
+          <span class="tag">Week 11 Quarterfinals</span><span class="tag">Week 12 Semifinals</span><span class="tag">Week 14 Super Bowl</span>
+        </div>
+        <div class="card">
+          <h3>Lineup</h3>
+          <p>8 starters: QB, 2 RB, 2 WR, TE, FLEX, DEF. Kickers removed.</p>
+          <span class="tag">Max 3 per NFL Team</span><span class="tag">Min 1 per Active Team</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="standings">
+      <h2>Standings</h2>
+      <p class="note">Update these rows weekly after scores are finalized.</p>
+      <table>
+        <thead>
+          <tr><th>Seed</th><th>Owner</th><th>Division</th><th>W</th><th>L</th><th>PF</th><th>PA</th><th>Streak</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Owner 1</td><td>AFC West</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>2</td><td>Owner 2</td><td>NFC North</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>3</td><td>Owner 3</td><td>NFC East</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>4</td><td>Owner 4</td><td>AFC North</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>5</td><td>Owner 5</td><td>AFC East</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>6</td><td>Owner 6</td><td>NFC West</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>7</td><td>Owner 7</td><td>AFC South</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+          <tr><td>8</td><td>Owner 8</td><td>NFC South</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="schedule">
+      <h2>Upcoming Schedule</h2>
+      <p class="note">Example 10-week regular season template. Replace owners/divisions after the division draft.</p>
+      <table>
+        <thead>
+          <tr><th>Week</th><th>Matchup 1</th><th>Matchup 2</th><th>Matchup 3</th><th>Matchup 4</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>AFC East vs AFC North</td><td>AFC South vs AFC West</td><td>NFC East vs NFC North</td><td>NFC South vs NFC West</td></tr>
+          <tr><td>2</td><td>AFC East vs AFC South</td><td>AFC North vs AFC West</td><td>NFC East vs NFC South</td><td>NFC North vs NFC West</td></tr>
+          <tr><td>3</td><td>AFC East vs AFC West</td><td>AFC North vs NFC East</td><td>AFC South vs NFC North</td><td>NFC South vs NFC West</td></tr>
+          <tr><td>4</td><td>AFC East vs NFC East</td><td>AFC North vs NFC North</td><td>AFC South vs NFC South</td><td>AFC West vs NFC West</td></tr>
+          <tr><td>5</td><td>AFC East vs NFC North</td><td>AFC North vs NFC South</td><td>AFC South vs NFC West</td><td>AFC West vs NFC East</td></tr>
+          <tr><td>6</td><td>AFC East vs NFC South</td><td>AFC North vs NFC West</td><td>AFC South vs NFC East</td><td>AFC West vs NFC North</td></tr>
+          <tr><td>7</td><td>AFC East vs NFC West</td><td>AFC North vs AFC South</td><td>AFC West vs NFC South</td><td>NFC East vs NFC North</td></tr>
+          <tr><td>8</td><td>AFC East vs AFC North</td><td>AFC South vs AFC West</td><td>NFC East vs NFC North</td><td>NFC South vs NFC West</td></tr>
+          <tr><td>9</td><td>AFC East vs NFC South</td><td>AFC North vs NFC North</td><td>AFC South vs NFC West</td><td>AFC West vs NFC East</td></tr>
+          <tr><td>10</td><td>AFC East vs NFC East</td><td>AFC North vs AFC West</td><td>AFC South vs NFC South</td><td>NFC North vs NFC West</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="matchups">
+      <h2>This Week's Matchups</h2>
+      <div class="grid">
+        <div class="card"><h3>Matchup 1</h3><p>AFC West vs NFC North</p><p class="pending">Projected / Pending</p></div>
+        <div class="card"><h3>Matchup 2</h3><p>NFC East vs AFC North</p><p class="pending">Projected / Pending</p></div>
+        <div class="card"><h3>Matchup 3</h3><p>AFC East vs NFC West</p><p class="pending">Projected / Pending</p></div>
+        <div class="card"><h3>Matchup 4</h3><p>AFC South vs NFC South</p><p class="pending">Projected / Pending</p></div>
+      </div>
+    </section>
+
+    <section id="rosters">
+      <h2>Weekly Rosters</h2>
+      <p class="note">Replace sample players with submitted lineups each week.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Owner 1 — AFC West</h3>
+          <table>
+            <tr><th>Pos</th><th>Player</th><th>NFL Team</th><th>Pts</th></tr>
+            <tr><td>QB</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>RB</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>RB</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>WR</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>WR</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>TE</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>FLEX</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>DEF</td><td>Defense</td><td>Team</td><td>-</td></tr>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Owner 2 — NFC North</h3>
+          <table>
+            <tr><th>Pos</th><th>Player</th><th>NFL Team</th><th>Pts</th></tr>
+            <tr><td>QB</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>RB</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>RB</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>WR</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>WR</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>TE</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>FLEX</td><td>Player Name</td><td>Team</td><td>-</td></tr>
+            <tr><td>DEF</td><td>Defense</td><td>Team</td><td>-</td></tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="playoffs">
+      <h2>Playoff Bracket</h2>
+      <div class="bracket">
+        <div class="card"><h3>Week 11 — Quarterfinals</h3><div class="matchup">#1 vs #8</div><div class="matchup">#2 vs #7</div><div class="matchup">#3 vs #6</div><div class="matchup">#4 vs #5</div></div>
+        <div class="card"><h3>Week 12 — Semifinals</h3><div class="matchup">Winner 1/8 vs Winner 4/5</div><div class="matchup">Winner 2/7 vs Winner 3/6</div></div>
+        <div class="card"><h3>Week 13 — Off Week</h3><div class="matchup">Pro Bowl / Recap / Super Bowl Preview</div></div>
+        <div class="card"><h3>Week 14 — DFFL Super Bowl</h3><div class="matchup">Semifinal Winner vs Semifinal Winner</div></div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2>Core Rules</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Roster Rules</h3>
+          <ul><li>8 starters total.</li><li>No kickers.</li><li>Must start at least 1 player from each active NFL team in your division.</li><li>If all 4 teams are active, max 3 starters from any single NFL team.</li></ul>
+        </div>
+        <div class="card">
+          <h3>Bye Week Rules</h3>
+          <ul><li>If one team is on bye, use remaining active teams only.</li><li>During playoffs, minimum 1 starter from each remaining active team.</li><li>No delayed scoring from future weeks.</li></ul>
+        </div>
+        <div class="card">
+          <h3>Tiebreakers</h3>
+          <ol><li>Head-to-head record</li><li>Total points scored</li><li>Highest single-week score</li><li>Coin flip</li></ol>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="footer">DFFL League Hub • Edit this file weekly and share it with league members.</div>
+</body>
+</html>
