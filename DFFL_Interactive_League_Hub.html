@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DFFL Interactive League Hub</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --card2: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --good: #22c55e;
+      --warn: #f59e0b;
+      --bad: #ef4444;
+      --border: #334155;
+      --input: #020617;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
+    header { padding: 28px 20px; text-align: center; background: linear-gradient(135deg, #0f172a, #1e3a8a); border-bottom: 1px solid var(--border); }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header p { margin: 8px 0 0; color: var(--muted); }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 14px; background: #020617; position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--border); }
+    nav a, button { color: var(--text); text-decoration: none; padding: 8px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: 0.9rem; background: var(--card2); cursor: pointer; }
+    nav a:hover, button:hover { background: #334155; }
+    main { max-width: 1250px; margin: 0 auto; padding: 22px; }
+    section { margin-bottom: 28px; background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; box-shadow: 0 8px 20px rgba(0,0,0,.2); }
+    h2 { margin-top: 0; color: var(--accent); }
+    h3 { margin-top: 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: var(--card2); border: 1px solid var(--border); border-radius: 14px; padding: 14px; }
+    table { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 10px; margin-top: 10px; }
+    th, td { padding: 8px; border-bottom: 1px solid var(--border); text-align: left; font-size: 0.92rem; }
+    th { background: #020617; color: var(--accent); }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--input);
+      color: var(--text);
+    }
+    input[type="number"] { min-width: 75px; }
+    .tag { display: inline-block; padding: 4px 8px; border-radius: 999px; background: #0ea5e9; color: white; font-size: 0.8rem; margin: 2px; }
+    .note, .small { color: var(--muted); font-size: 0.95rem; }
+    .pending { color: var(--warn); font-weight: bold; }
+    .ok { color: var(--good); font-weight: bold; }
+    .bad { color: var(--bad); font-weight: bold; }
+    .footer { text-align: center; color: var(--muted); padding: 30px; font-size: .9rem; }
+    .tools { display: flex; flex-wrap: wrap; gap: 10px; margin: 12px 0; }
+    .division-card { border-left: 4px solid var(--accent); }
+    .total-line { margin-top: 10px; font-weight: bold; }
+    .warning-box { background: rgba(245,158,11,.12); border: 1px solid rgba(245,158,11,.4); padding: 10px; border-radius: 10px; margin-top: 10px; }
+    .success-box { background: rgba(34,197,94,.12); border: 1px solid rgba(34,197,94,.4); padding: 10px; border-radius: 10px; margin-top: 10px; }
+    .bracket { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+    .matchup { background: #020617; border: 1px solid var(--border); border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+    @media print {
+      nav, .tools, button { display: none; }
+      body { background: white; color: black; }
+      section, .card { box-shadow: none; border: 1px solid #999; background: white; color: black; }
+      th { background: #eee; color: black; }
+      h2 { color: #111; }
+      input, select, textarea { border: none; color: black; background: white; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DFFL Interactive League Hub</h1>
+    <p>Divisional Fantasy Football League — roster submissions, standings, schedule, and playoff hub</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#standings">Standings</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#matchups">Matchups</a>
+    <a href="#submit">Submit Rosters</a>
+    <a href="#playoffs">Playoffs</a>
+    <a href="#rules">Rules</a>
+  </nav>
+
+  <main>
+    <section id="overview">
+      <h2>League Overview</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Format</h3>
+          <p>8 owners draft one NFL division each. No waivers, no trades, and no free agents.</p>
+          <span class="tag">8 Owners</span><span class="tag">8 Divisions</span><span class="tag">Division Draft</span>
+        </div>
+        <div class="card">
+          <h3>Season</h3>
+          <p>Weeks 1-10 regular season. All 8 divisions make playoffs.</p>
+          <span class="tag">Week 11 Quarterfinals</span><span class="tag">Week 12 Semifinals</span><span class="tag">Week 14 Super Bowl</span>
+        </div>
+        <div class="card">
+          <h3>Lineup</h3>
+          <p>8 starters: QB, 2 RB, 2 WR, TE, FLEX, DEF. Kickers removed.</p>
+          <span class="tag">Min 1 per Active Team</span><span class="tag">Max 3 per Team</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="standings">
+      <h2>Standings</h2>
+      <p class="note">Edit weekly after scores are finalized.</p>
+      <table>
+        <thead>
+          <tr><th>Seed</th><th>Owner</th><th>Division</th><th>W</th><th>L</th><th>PF</th><th>PA</th><th>Streak</th></tr>
+        </thead>
+        <tbody id="standingsBody">
+          <tr><td>1</td><td><input value="Owner 1"></td><td>AFC East</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>2</td><td><input value="Owner 2"></td><td>AFC North</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>3</td><td><input value="Owner 3"></td><td>AFC South</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>4</td><td><input value="Owner 4"></td><td>AFC West</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>5</td><td><input value="Owner 5"></td><td>NFC East</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>6</td><td><input value="Owner 6"></td><td>NFC North</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>7</td><td><input value="Owner 7"></td><td>NFC South</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+          <tr><td>8</td><td><input value="Owner 8"></td><td>NFC West</td><td><input type="number" value="0"></td><td><input type="number" value="0"></td><td><input type="number" step=".1" value="0.0"></td><td><input type="number" step=".1" value="0.0"></td><td><input value="-"></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="schedule">
+      <h2>Upcoming Schedule</h2>
+      <table>
+        <thead><tr><th>Week</th><th>Matchup 1</th><th>Matchup 2</th><th>Matchup 3</th><th>Matchup 4</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>AFC East vs AFC North</td><td>AFC South vs AFC West</td><td>NFC East vs NFC North</td><td>NFC South vs NFC West</td></tr>
+          <tr><td>2</td><td>AFC East vs AFC South</td><td>AFC North vs AFC West</td><td>NFC East vs NFC South</td><td>NFC North vs NFC West</td></tr>
+          <tr><td>3</td><td>AFC East vs AFC West</td><td>AFC North vs NFC East</td><td>AFC South vs NFC North</td><td>NFC South vs NFC West</td></tr>
+          <tr><td>4</td><td>AFC East vs NFC East</td><td>AFC North vs NFC North</td><td>AFC South vs NFC South</td><td>AFC West vs NFC West</td></tr>
+          <tr><td>5</td><td>AFC East vs NFC North</td><td>AFC North vs NFC South</td><td>AFC South vs NFC West</td><td>AFC West vs NFC East</td></tr>
+          <tr><td>6</td><td>AFC East vs NFC South</td><td>AFC North vs NFC West</td><td>AFC South vs NFC East</td><td>AFC West vs NFC North</td></tr>
+          <tr><td>7</td><td>AFC East vs NFC West</td><td>AFC North vs AFC South</td><td>AFC West vs NFC South</td><td>NFC East vs NFC North</td></tr>
+          <tr><td>8</td><td>AFC East vs AFC North</td><td>AFC South vs AFC West</td><td>NFC East vs NFC North</td><td>NFC South vs NFC West</td></tr>
+          <tr><td>9</td><td>AFC East vs NFC South</td><td>AFC North vs NFC North</td><td>AFC South vs NFC West</td><td>AFC West vs NFC East</td></tr>
+          <tr><td>10</td><td>AFC East vs NFC East</td><td>AFC North vs AFC West</td><td>AFC South vs NFC South</td><td>NFC North vs NFC West</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="matchups">
+      <h2>This Week's Matchups</h2>
+      <div class="grid">
+        <div class="card"><h3>Matchup 1</h3><input value="AFC West vs NFC North"><p class="pending">Pending</p></div>
+        <div class="card"><h3>Matchup 2</h3><input value="NFC East vs AFC North"><p class="pending">Pending</p></div>
+        <div class="card"><h3>Matchup 3</h3><input value="AFC East vs NFC West"><p class="pending">Pending</p></div>
+        <div class="card"><h3>Matchup 4</h3><input value="AFC South vs NFC South"><p class="pending">Pending</p></div>
+      </div>
+    </section>
+
+    <section id="submit">
+      <h2>Roster Submission Center</h2>
+      <p class="note">Each owner can fill in their weekly lineup. Use Save to Browser so the file remembers entries on the same computer/browser. Use Export to CSV to send the lineups to the commissioner.</p>
+      <div class="tools">
+        <button onclick="saveData()">Save to Browser</button>
+        <button onclick="loadData()">Load Saved Data</button>
+        <button onclick="exportCSV()">Export Rosters to CSV</button>
+        <button onclick="validateAll()">Validate Rosters</button>
+        <button onclick="window.print()">Print / Save PDF</button>
+      </div>
+      <div id="validationSummary"></div>
+      <div id="rosterGrid" class="grid"></div>
+    </section>
+
+    <section id="playoffs">
+      <h2>Playoff Bracket</h2>
+      <div class="bracket">
+        <div class="card"><h3>Week 11 — Quarterfinals</h3><div class="matchup">#1 vs #8</div><div class="matchup">#2 vs #7</div><div class="matchup">#3 vs #6</div><div class="matchup">#4 vs #5</div></div>
+        <div class="card"><h3>Week 12 — Semifinals</h3><div class="matchup">Winner 1/8 vs Winner 4/5</div><div class="matchup">Winner 2/7 vs Winner 3/6</div></div>
+        <div class="card"><h3>Week 13 — Off Week</h3><div class="matchup">Pro Bowl / Recap / Super Bowl Preview</div></div>
+        <div class="card"><h3>Week 14 — DFFL Super Bowl</h3><div class="matchup">Semifinal Winner vs Semifinal Winner</div></div>
+      </div>
+    </section>
+
+    <section id="rules">
+      <h2>Core Rules</h2>
+      <div class="grid">
+        <div class="card"><h3>Roster Rules</h3><ul><li>8 starters total.</li><li>No kickers.</li><li>Must start at least 1 player from each active NFL team in your division.</li><li>If all 4 teams are active, max 3 starters from any single NFL team.</li></ul></div>
+        <div class="card"><h3>Bye Week Rules</h3><ul><li>If one team is on bye, use remaining active teams only.</li><li>During playoffs, minimum 1 starter from each remaining active team.</li><li>No delayed scoring from future weeks.</li></ul></div>
+        <div class="card"><h3>Tiebreakers</h3><ol><li>Head-to-head record</li><li>Total points scored</li><li>Highest single-week score</li><li>Coin flip</li></ol></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer">DFFL Interactive League Hub • Share this file with all 8 owners.</div>
+
+<script>
+const divisions = {
+  "AFC East": ["Buffalo Bills", "Miami Dolphins", "New England Patriots", "New York Jets"],
+  "AFC North": ["Baltimore Ravens", "Cincinnati Bengals", "Cleveland Browns", "Pittsburgh Steelers"],
+  "AFC South": ["Houston Texans", "Indianapolis Colts", "Jacksonville Jaguars", "Tennessee Titans"],
+  "AFC West": ["Denver Broncos", "Kansas City Chiefs", "Las Vegas Raiders", "Los Angeles Chargers"],
+  "NFC East": ["Dallas Cowboys", "New York Giants", "Philadelphia Eagles", "Washington Commanders"],
+  "NFC North": ["Chicago Bears", "Detroit Lions", "Green Bay Packers", "Minnesota Vikings"],
+  "NFC South": ["Atlanta Falcons", "Carolina Panthers", "New Orleans Saints", "Tampa Bay Buccaneers"],
+  "NFC West": ["Arizona Cardinals", "Los Angeles Rams", "San Francisco 49ers", "Seattle Seahawks"]
+};
+const positions = ["QB", "RB", "RB", "WR", "WR", "TE", "FLEX", "DEF"];
+const ownerDefaults = [
+  ["Owner 1", "AFC East"], ["Owner 2", "AFC North"], ["Owner 3", "AFC South"], ["Owner 4", "AFC West"],
+  ["Owner 5", "NFC East"], ["Owner 6", "NFC North"], ["Owner 7", "NFC South"], ["Owner 8", "NFC West"]
+];
+
+function teamOptions(division) {
+  return divisions[division].map(team => `<option value="${team}">${team}</option>`).join("");
+}
+
+function buildRosterCards() {
+  const grid = document.getElementById("rosterGrid");
+  grid.innerHTML = "";
+  ownerDefaults.forEach(([owner, division], idx) => {
+    let rows = positions.map((pos, i) => `
+      <tr>
+        <td>${pos}</td>
+        <td><input data-field="player" data-owner="${idx}" data-row="${i}" placeholder="${pos} name"></td>
+        <td>
+          <select data-field="team" data-owner="${idx}" data-row="${i}">
+            <option value="">Select team</option>
+            ${teamOptions(division)}
+          </select>
+        </td>
+        <td><input type="number" step="0.1" data-field="points" data-owner="${idx}" data-row="${i}" placeholder="0.0"></td>
+      </tr>
+    `).join("");
+    grid.innerHTML += `
+      <div class="card division-card">
+        <h3><input data-owner-name="${idx}" value="${owner}"> — ${division}</h3>
+        <p class="small">Available teams: ${divisions[division].join(", ")}</p>
+        <table>
+          <thead><tr><th>Pos</th><th>Player</th><th>NFL Team</th><th>Pts</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+        <div class="total-line">Total: <span id="total-${idx}">0.0</span></div>
+        <div id="check-${idx}" class="small"></div>
+      </div>
+    `;
+  });
+  document.querySelectorAll("input, select").forEach(el => el.addEventListener("input", updateTotals));
+}
+
+function updateTotals() {
+  ownerDefaults.forEach((_, idx) => {
+    let total = 0;
+    document.querySelectorAll(`[data-field="points"][data-owner="${idx}"]`).forEach(inp => {
+      total += parseFloat(inp.value || 0);
+    });
+    const totalEl = document.getElementById(`total-${idx}`);
+    if (totalEl) totalEl.textContent = total.toFixed(1);
+  });
+}
+
+function collectData() {
+  const data = { rosters: [], standings: [] };
+  ownerDefaults.forEach(([owner, division], idx) => {
+    const ownerName = document.querySelector(`[data-owner-name="${idx}"]`)?.value || owner;
+    const roster = [];
+    positions.forEach((pos, i) => {
+      roster.push({
+        position: pos,
+        player: document.querySelector(`[data-field="player"][data-owner="${idx}"][data-row="${i}"]`)?.value || "",
+        team: document.querySelector(`[data-field="team"][data-owner="${idx}"][data-row="${i}"]`)?.value || "",
+        points: document.querySelector(`[data-field="points"][data-owner="${idx}"][data-row="${i}"]`)?.value || ""
+      });
+    });
+    data.rosters.push({ owner: ownerName, division, roster });
+  });
+  return data;
+}
+
+function saveData() {
+  localStorage.setItem("dfflData", JSON.stringify(collectData()));
+  alert("DFFL data saved to this browser.");
+}
+
+function loadData() {
+  const saved = localStorage.getItem("dfflData");
+  if (!saved) { alert("No saved data found in this browser."); return; }
+  const data = JSON.parse(saved);
+  data.rosters.forEach((team, idx) => {
+    const ownerInput = document.querySelector(`[data-owner-name="${idx}"]`);
+    if (ownerInput) ownerInput.value = team.owner;
+    team.roster.forEach((row, i) => {
+      const player = document.querySelector(`[data-field="player"][data-owner="${idx}"][data-row="${i}"]`);
+      const nflteam = document.querySelector(`[data-field="team"][data-owner="${idx}"][data-row="${i}"]`);
+      const points = document.querySelector(`[data-field="points"][data-owner="${idx}"][data-row="${i}"]`);
+      if (player) player.value = row.player;
+      if (nflteam) nflteam.value = row.team;
+      if (points) points.value = row.points;
+    });
+  });
+  updateTotals();
+}
+
+function validateAll() {
+  let allMessages = [];
+  ownerDefaults.forEach(([owner, division], idx) => {
+    const counts = {};
+    divisions[division].forEach(t => counts[t] = 0);
+    let missing = 0;
+    positions.forEach((pos, i) => {
+      const player = document.querySelector(`[data-field="player"][data-owner="${idx}"][data-row="${i}"]`)?.value || "";
+      const team = document.querySelector(`[data-field="team"][data-owner="${idx}"][data-row="${i}"]`)?.value || "";
+      if (!player || !team) missing++;
+      if (team) counts[team] = (counts[team] || 0) + 1;
+    });
+    const overMax = Object.entries(counts).filter(([team, count]) => count > 3);
+    const zeroTeams = Object.entries(counts).filter(([team, count]) => count === 0);
+    const check = document.getElementById(`check-${idx}`);
+    let messages = [];
+    if (missing > 0) messages.push(`${missing} blank roster fields`);
+    if (overMax.length) messages.push(`Max 3 issue: ${overMax.map(x => x[0] + " (" + x[1] + ")").join(", ")}`);
+    if (zeroTeams.length) messages.push(`Missing team representation: ${zeroTeams.map(x => x[0]).join(", ")}`);
+    if (messages.length === 0) {
+      check.innerHTML = `<div class="success-box">Roster valid: min 1 from each team and max 3 from one team.</div>`;
+    } else {
+      check.innerHTML = `<div class="warning-box">${messages.join("<br>")}</div>`;
+      allMessages.push(`${division}: ${messages.join("; ")}`);
+    }
+  });
+  const summary = document.getElementById("validationSummary");
+  if (allMessages.length === 0) summary.innerHTML = `<div class="success-box">All rosters are valid for a normal week with all 4 teams active.</div>`;
+  else summary.innerHTML = `<div class="warning-box"><strong>Roster checks found:</strong><br>${allMessages.join("<br>")}</div>`;
+}
+
+function exportCSV() {
+  const data = collectData();
+  let csv = "Owner,Division,Position,Player,NFL Team,Points\n";
+  data.rosters.forEach(team => {
+    team.roster.forEach(row => {
+      csv += `"${team.owner}","${team.division}","${row.position}","${row.player}","${row.team}","${row.points}"\n`;
+    });
+  });
+  const blob = new Blob([csv], { type: "text/csv" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "DFFL_Roster_Submissions.csv";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+buildRosterCards();
+updateTotals();
+</script>
+</body>
+</html>
