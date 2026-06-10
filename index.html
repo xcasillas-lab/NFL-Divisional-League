@@ -77,18 +77,11 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 
 <div class="tools" style="justify-content:center; margin-top:20px;">
-  <button onclick="submitToGoogleForm()"
-          style="font-size:20px;
-                 padding:16px 40px;
-                 background:#22c55e;
-                 font-weight:bold;">
-    Submit Official Roster
-  </button>
+  <button type="button" onclick="submitToGoogleForm()" style="font-size:20px;padding:16px 40px;background:#22c55e;font-weight:bold;">Submit Official Roster</button>
 </div>
 
-<p class="small" style="text-align:center; margin-top:10px;">
-  Clicking Submit will validate your roster and open the official DFFL submission form.
-</p>
+<p class="small" style="text-align:center; margin-top:10px;">Clicking Submit will open the official DFFL Google Form with your roster details.</p>
+<p class="small" style="text-align:center; margin-top:8px;">If the button does not open the form, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo1ketMG2OewU9hnZTLhzrWpzo4Hq7SS8NBQt5eJAt1SIXKQ/viewform" target="_blank" style="color:#38bdf8;">open the Google Form directly</a>.</p>
 </section>
 
 <section id="recap" class="tab-section">
@@ -231,44 +224,29 @@ function submitByEmail(){
 }
 
 
+
+
 function submitToGoogleForm(){
-  saveDataSilent();
-
-  const isValid = validateRoster();
-  if(!isValid){
-    const proceed = confirm("Your roster has validation warnings. Continue to the official Google Form anyway?");
-    if(!proceed){ return; }
-  }
-
   const d = collect();
 
-  if(!d.owner || !d.owner.trim()){
-    alert("Please enter Owner Name.");
-    return;
+  let otherSubmission = "";
+  const otherBox = document.getElementById("otherSubmission");
+  if(otherBox){
+    otherSubmission = otherBox.value || "";
   }
 
-  if(!d.email || !d.email.trim()){
-    alert("Please enter Owner Email.");
-    return;
-  }
+  const formBase = "https://docs.google.com/forms/d/e/1FAIpQLSdo1ketMG2OewU9hnZTLhzrWpzo4Hq7SS8NBQt5eJAt1SIXKQ/viewform?usp=pp_url";
 
-  const confirmSubmit = confirm("You are about to open the official DFFL Google Form for " + d.division + " - Week " + d.week + ". Please review and submit the Google Form to make it official.");
-  if(!confirmSubmit){ return; }
+  const params = new URLSearchParams();
+  params.set("entry.1141380727", d.owner || "");
+  params.set("entry.175110858", d.email || "");
+  params.set("entry.1651884925", "Week " + d.week);
+  params.set("entry.2142922224", d.division + " Division");
+  params.set("entry.1341701233", rosterText());
+  params.set("entry.401323428", otherSubmission || "");
+  params.set("entry.1695549654", "Yes");
 
-  const otherSubmissionEl = document.getElementById("otherSubmission");
-  const otherSubmission = otherSubmissionEl ? otherSubmissionEl.value : "";
-
-  const googleFormUrl =
-    "https://docs.google.com/forms/d/e/1FAIpQLSdo1ketMG2OewU9hnZTLhzrWpzo4Hq7SS8NBQt5eJAt1SIXKQ/viewform?usp=pp_url"
-    + "&entry.1141380727=" + encodeURIComponent(d.owner)
-    + "&entry.175110858=" + encodeURIComponent(d.email)
-    + "&entry.1651884925=" + encodeURIComponent("Week " + d.week)
-    + "&entry.2142922224=" + encodeURIComponent(d.division + " Division")
-    + "&entry.1341701233=" + encodeURIComponent(rosterText())
-    + "&entry.401323428=" + encodeURIComponent(otherSubmission)
-    + "&entry.1695549654=" + encodeURIComponent("Yes");
-
-  window.open(googleFormUrl, "_blank");
+  window.location.href = formBase + "&" + params.toString();
 }
 
 function exportCSV(){
