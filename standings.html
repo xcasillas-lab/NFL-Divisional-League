@@ -2,27 +2,215 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>DFFL — Standings</title>
-<link rel="stylesheet" href="css/style.css"/>
+<style>
+:root{
+  --bg:#0c172a;
+  --header1:#14274d;
+  --header2:#1b3b7a;
+  --nav:#020817;
+  --panel:#111c2f;
+  --panel-border:#33435d;
+  --line:#35455e;
+  --table-head:#020817;
+  --accent:#27c2ff;
+  --text:#ffffff;
+  --muted:#c7d2e3;
+  --pill:#1c293b;
+  --green:#67dc4b;
+  --red:#ff6b57;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+body{min-height:100vh}
+header{
+  text-align:center;
+  padding:18px 20px 27px;
+  background:linear-gradient(115deg,var(--header1),var(--header2));
+  border-bottom:1px solid #405279;
+}
+header h1{margin:0;font-size:38px;line-height:1.15;font-weight:800;letter-spacing:.2px}
+header p{margin:8px 0 0;font-size:17px}
+.tabs{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  padding:14px 18px;
+  background:var(--nav);
+  border-bottom:1px solid #31405a;
+}
+.tab-btn{
+  display:inline-block;
+  text-decoration:none;
+  color:#fff;
+  background:var(--pill);
+  border:1px solid #42516a;
+  border-radius:999px;
+  padding:8px 14px;
+  font-size:14px;
+  line-height:1.2;
+  transition:.15s ease;
+}
+.tab-btn:hover{border-color:#61728d;background:#26354a}
+.tab-btn.active{background:var(--accent);border-color:var(--accent);color:#04111d;font-weight:700}
+main{max-width:1400px;margin:0 auto;padding:22px 5.3% 56px}
+.tab-section{
+  background:var(--panel);
+  border:1px solid var(--panel-border);
+  border-radius:17px;
+  padding:18px;
+  box-shadow:0 1px 0 rgba(255,255,255,.02) inset;
+}
+h2{margin:0 0 18px;color:var(--accent);font-size:24px;line-height:1.2}
+.standings-summary{margin:0 0 16px;color:var(--muted);font-size:14px}
+.standings-table-wrap{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:10px}
+table{width:100%;border-collapse:collapse}
+.standings-table{min-width:900px}
+th,td{padding:8px 9px;text-align:left;border-bottom:1px solid var(--line);font-size:14px;white-space:nowrap}
+th{background:var(--table-head);color:var(--accent);font-weight:700}
+.standings-table th:nth-child(1),.standings-table td:nth-child(1){width:7%}
+.standings-table th:nth-child(2),.standings-table td:nth-child(2){width:20%}
+.standings-table th:nth-child(3),.standings-table td:nth-child(3){width:25%}
+.standings-table th:nth-child(n+4),.standings-table td:nth-child(n+4){text-align:center}
+.advanced-toggle{
+  margin:18px 0 0;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:12px 14px;
+  border:1px solid #3a4a64;
+  border-radius:10px;
+  background:#0b1526;
+  color:#fff;
+  font:inherit;
+  font-weight:700;
+  cursor:pointer;
+}
+.advanced-toggle:hover{background:#101d31}
+.advanced-arrow{transition:transform .2s ease;color:var(--accent)}
+.advanced-toggle[aria-expanded="true"] .advanced-arrow{transform:rotate(180deg)}
+.advanced-panel{display:none;margin-top:12px}
+.advanced-panel.open{display:block}
+.advanced-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.advanced-card{overflow:hidden;border:1px solid var(--panel-border);border-radius:11px;background:#0d1829}
+.advanced-card h3{margin:0;padding:12px 13px;background:#0a1323;border-bottom:1px solid var(--line);font-size:15px;color:var(--accent)}
+.advanced-card table{width:100%}
+.advanced-card th,.advanced-card td{padding:8px 10px;font-size:13px}
+.advanced-card th:last-child,.advanced-card td:last-child{text-align:right}
+.metric-positive{color:var(--green);font-weight:700}
+.metric-negative{color:var(--red);font-weight:700}
+.standings-footnote{margin:12px 0 0;color:#aebbd0;font-size:12px}
+.footer{text-align:center;color:#8fa0b9;font-size:13px;padding:0 20px 24px}
+@media(max-width:900px){
+  header h1{font-size:30px}
+  main{padding:18px 18px 42px}
+  .advanced-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  header{padding:16px 12px 20px}
+  header h1{font-size:25px}
+  header p{font-size:14px}
+  .tabs{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding:11px 12px;gap:8px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab-btn{flex:0 0 auto;padding:7px 12px;font-size:13px}
+  main{padding:14px 10px 34px}
+  .tab-section{padding:14px 10px;border-radius:13px}
+  h2{font-size:21px;margin-bottom:12px}
+  .standings-summary{font-size:13px;line-height:1.4}
+  .standings-table{min-width:0;table-layout:fixed}
+  .standings-table th,.standings-table td{padding:8px 5px;font-size:12px}
+  .standings-table th:nth-child(3),.standings-table td:nth-child(3),
+  .standings-table th:nth-child(7),.standings-table td:nth-child(7),
+  .standings-table th:nth-child(8),.standings-table td:nth-child(8){display:none}
+  .standings-table th:nth-child(1),.standings-table td:nth-child(1){width:44px}
+  .standings-table th:nth-child(2),.standings-table td:nth-child(2){width:auto}
+  .standings-table th:nth-child(4),.standings-table td:nth-child(4),
+  .standings-table th:nth-child(5),.standings-table td:nth-child(5){width:36px;text-align:center}
+  .standings-table th:nth-child(6),.standings-table td:nth-child(6){width:62px;text-align:center}
+  .advanced-toggle{margin-top:14px;padding:11px 12px}
+}
+</style>
 </head>
 <body>
-<header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
+<header>
+  <h1>DFFL Interactive League Hub</h1>
+  <p>Welcome to the Inaugural DFFL Season</p>
+</header>
 <nav class="tabs">
-<a class="tab-btn" href="index.html">Home</a>
-<a class="tab-btn active" href="standings.html">Standings</a>
-<a class="tab-btn" href="index.html#submit">Roster Submissions</a>
-<a class="tab-btn" href="matchups.html">Weekly Matchups</a>
-<a class="tab-btn" href="lastweek.html">Last Week</a>
-<a class="tab-btn" href="playoffs.html">Playoffs</a>
-<a class="tab-btn" href="newsletter.html">Newsletter</a>
-<a class="tab-btn" href="schedule.html">Schedule</a>
-<a class="tab-btn" href="rules.html">Rules</a>
+  <a class="tab-btn" href="index.html">Home</a>
+  <a class="tab-btn active" href="standings.html">Standings</a>
+  <a class="tab-btn" href="schedule.html">Schedule</a>
+  <a class="tab-btn" href="matchups.html">Weekly Matchups</a>
+  <a class="tab-btn" href="index.html#submit">Roster Submission</a>
+  <a class="tab-btn" href="lastweek.html">Previous Week Recap</a>
+  <a class="tab-btn" href="newsletter.html">Newsletter</a>
+  <a class="tab-btn" href="playoffs.html">Playoffs</a>
+  <a class="tab-btn" href="rules.html">Rules</a>
 </nav>
 <main>
-<section class="tab-section active" id="standings"><h2>Standings</h2><p class="note">Locked display area.</p><table><thead><tr><th>Seed</th><th>Owner</th><th>Division</th><th>W</th><th>L</th><th>PF</th><th>PA</th></tr></thead><tbody><tr><td>1</td><td>Owner 1</td><td>AFC East</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>2</td><td>Owner 2</td><td>AFC North</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>3</td><td>Owner 3</td><td>AFC South</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>4</td><td>Owner 4</td><td>AFC West</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>5</td><td>Owner 5</td><td>NFC East</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>6</td><td>Owner 6</td><td>NFC North</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>7</td><td>Owner 7</td><td>NFC South</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>8</td><td>Owner 8</td><td>NFC West</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr></tbody></table></section>
+<section class="tab-section active" id="standings">
+  <h2>Standings</h2>
+  <p class="standings-summary">All 8 teams make the playoffs. Regular-season standings determine playoff seeding.</p>
+  <div class="standings-table-wrap">
+    <table class="standings-table">
+      <thead>
+        <tr><th>Seed</th><th>Owner</th><th>Division</th><th>W</th><th>L</th><th>Div Rec</th><th>PF</th><th>PA</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Owner 1</td><td>AFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>2</td><td>Owner 2</td><td>AFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>3</td><td>Owner 3</td><td>AFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>4</td><td>Owner 4</td><td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>5</td><td>Owner 5</td><td>NFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>6</td><td>Owner 6</td><td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>7</td><td>Owner 7</td><td>NFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+        <tr><td>8</td><td>Owner 8</td><td>NFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="advanced-toggle" id="advancedToggle" type="button" aria-expanded="false" aria-controls="advancedStats">
+    <span>📊 Advanced Stats</span><span class="advanced-arrow">▼</span>
+  </button>
+  <div class="advanced-panel" id="advancedStats">
+    <div class="advanced-grid">
+      <div class="advanced-card">
+        <h3>Avg Points / Game</h3>
+        <table><thead><tr><th>Owner</th><th>Avg Pts/G</th></tr></thead><tbody>
+          <tr><td>Owner 1</td><td>0.0</td></tr><tr><td>Owner 2</td><td>0.0</td></tr><tr><td>Owner 3</td><td>0.0</td></tr><tr><td>Owner 4</td><td>0.0</td></tr><tr><td>Owner 5</td><td>0.0</td></tr><tr><td>Owner 6</td><td>0.0</td></tr><tr><td>Owner 7</td><td>0.0</td></tr><tr><td>Owner 8</td><td>0.0</td></tr>
+        </tbody></table>
+      </div>
+      <div class="advanced-card">
+        <h3>Avg Margin in Wins</h3>
+        <table><thead><tr><th>Owner</th><th>Margin</th></tr></thead><tbody>
+          <tr><td>Owner 1</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 2</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 3</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 4</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 5</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 6</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 7</td><td class="metric-positive">0.0</td></tr><tr><td>Owner 8</td><td class="metric-positive">0.0</td></tr>
+        </tbody></table>
+      </div>
+      <div class="advanced-card">
+        <h3>Avg Margin in Losses</h3>
+        <table><thead><tr><th>Owner</th><th>Margin</th></tr></thead><tbody>
+          <tr><td>Owner 1</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 2</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 3</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 4</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 5</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 6</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 7</td><td class="metric-negative">0.0</td></tr><tr><td>Owner 8</td><td class="metric-negative">0.0</td></tr>
+        </tbody></table>
+      </div>
+    </div>
+    <p class="standings-footnote">Advanced stats can be updated after each completed week.</p>
+  </div>
+</section>
 </main>
 <div class="footer">DFFL Interactive League Hub</div>
-
+<script>
+const advancedToggle=document.getElementById('advancedToggle');
+const advancedStats=document.getElementById('advancedStats');
+advancedToggle.addEventListener('click',()=>{
+  const open=advancedToggle.getAttribute('aria-expanded')==='true';
+  advancedToggle.setAttribute('aria-expanded',String(!open));
+  advancedStats.classList.toggle('open',!open);
+});
+</script>
 </body>
 </html>
