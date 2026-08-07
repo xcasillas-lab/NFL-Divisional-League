@@ -207,7 +207,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <button class="tab-btn" onclick="window.location.href='lastweek.html'" type="button">Last Week</button>
 <button class="tab-btn" onclick="window.location.href='playoffs.html'" type="button">Playoffs</button>
 <button class="tab-btn" onclick="window.location.href='newsletter.html'" type="button">Newsletter</button>
-<button class="tab-btn" onclick="showTab('schedule', this)" type="button">Schedule</button>
+<button class="tab-btn" onclick="window.location.href='schedule.html'" type="button">Schedule</button>
 <button class="tab-btn" onclick="showTab('rules', this)" type="button">Rules</button>
 </nav>
 <main>
@@ -285,7 +285,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <h3>⚡ Quick Navigation</h3>
 <div class="quick-nav-grid">
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[1].click()"><span class="icon">🏆</span><span>Standings</span></button>
-<button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[7].click()"><span class="icon">📅</span><span>Schedule</span></button>
+<button class="quick-nav" onclick="window.location.href='schedule.html'"><span class="icon">📅</span><span>Schedule</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[3].click()"><span class="icon">🏈</span><span>Matchups</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[2].click()"><span class="icon">📝</span><span>Roster Submissions</span></button>
 <button class="quick-nav" onclick="window.location.href='lastweek.html'"><span class="icon">📺</span><span>Last Week</span></button>
@@ -301,30 +301,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </div>
 </section>
-<section class="tab-section" id="schedule">
-<h2>📅 DFFL Official Schedule</h2>
-<p class="note">Full season timeline with the NFL teams unavailable each week.</p>
-<table>
-<thead><tr><th>DFFL Week</th><th>NFL Teams on Bye</th><th>Week Status</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td><strong>Week 1</strong></td><td>None</td><td>Regular Season</td><td>🚀 Opening Week</td></tr>
-<tr><td><strong>Week 2</strong></td><td>None</td><td>Regular Season</td><td>—</td></tr>
-<tr><td><strong>Week 3</strong></td><td>None</td><td>Regular Season</td><td>—</td></tr>
-<tr><td><strong>Week 4</strong></td><td>None</td><td>Regular Season</td><td>—</td></tr>
-<tr><td><strong>Week 5</strong></td><td>CAR, KC</td><td>Regular Season</td><td>First NFL bye week</td></tr>
-<tr><td><strong>Week 6</strong></td><td>CIN, DET, MIA, MIN</td><td>Regular Season</td><td>Four teams unavailable</td></tr>
-<tr><td><strong>Week 7</strong></td><td>BUF, JAX, LAC, WAS</td><td>Regular Season</td><td>Four teams unavailable</td></tr>
-<tr><td><strong>Week 8</strong></td><td>HOU, NO, NYG, SF</td><td>Regular Season</td><td>Four teams unavailable</td></tr>
-<tr><td><strong>Week 9</strong></td><td>PIT, TEN</td><td>Regular Season</td><td>Two teams unavailable</td></tr>
-<tr><td><strong>Week 10</strong></td><td>CHI, DEN, PHI, TB</td><td>Regular Season</td><td>🔒 Final regular-season week</td></tr>
-<tr><td><strong>Week 11</strong></td><td>ATL, CLE, GB, LAR, NE, SEA</td><td>League Bye</td><td>🛌 Playoff preparation and final seedings</td></tr>
-<tr><td><strong>Week 12</strong></td><td>None</td><td>Quarterfinals</td><td>🏆 Seeds 1–8 compete with full rosters</td></tr>
-<tr><td><strong>Week 13</strong></td><td>BAL, IND, LV, NYJ</td><td>League Bye</td><td>😴 No DFFL games</td></tr>
-<tr><td><strong>Week 14</strong></td><td>ARI, DAL</td><td>League Bye</td><td>📺 Semifinal preparation</td></tr>
-<tr><td><strong>Week 15</strong></td><td>None</td><td>Semifinals</td><td>⭐ Winners advance with full rosters</td></tr>
-<tr><td><strong>Week 16</strong></td><td>None</td><td>DFFL Super Bowl</td><td>👑 Championship game with full rosters</td></tr>
-</tbody></table>
-</section>
+
 <section class="tab-section" id="submit"><h2>Roster Submission Center</h2>
 <p class="note">Only this section is dynamic. Select week, division, team, then player.</p>
 <div class="warning-box"><strong>Prototype:</strong> player dropdowns use an expanded 2025-style test database with starters and reserves. Verify/update before your live draft.</div>
@@ -373,7 +350,6 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p class="small" style="text-align:center; margin-top:10px;">Clicking Submit will open the official DFFL Google Form with your roster details.</p>
 <p class="small" style="text-align:center; margin-top:8px;">If the button does not open the form, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo1ketMG2OewU9hnZTLhzrWpzo4Hq7SS8NBQt5eJAt1SIXKQ/viewform" style="color:#38bdf8;" target="_blank">open the Google Form directly</a>.</p>
 </section>
-
 <section class="tab-section rules-dashboard" id="rules">
 <div class="rules-shell">
 <div class="rules-hero">
