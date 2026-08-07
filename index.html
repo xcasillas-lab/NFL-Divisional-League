@@ -204,7 +204,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <button class="tab-btn" onclick="window.location.href='standings.html'" type="button">Standings</button>
 <button class="tab-btn" onclick="showTab('submit', this)" type="button">Roster Submissions</button>
 <button class="tab-btn" onclick="window.location.href='matchups.html'" type="button">Weekly Matchups</button>
-<button class="tab-btn" onclick="showTab('recap', this)" type="button">Last Week</button>
+<button class="tab-btn" onclick="window.location.href='lastweek.html'" type="button">Last Week</button>
 <button class="tab-btn" onclick="showTab('playoffs', this)" type="button">Playoffs</button>
 <button class="tab-btn" onclick="showTab('newsletter', this)" type="button">Newsletter</button>
 <button class="tab-btn" onclick="showTab('schedule', this)" type="button">Schedule</button>
@@ -288,7 +288,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[7].click()"><span class="icon">📅</span><span>Schedule</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[3].click()"><span class="icon">🏈</span><span>Matchups</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[2].click()"><span class="icon">📝</span><span>Roster Submissions</span></button>
-<button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[4].click()"><span class="icon">📺</span><span>Last Week</span></button>
+<button class="quick-nav" onclick="window.location.href='lastweek.html'"><span class="icon">📺</span><span>Last Week</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[6].click()"><span class="icon">📰</span><span>Newsletter</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[5].click()"><span class="icon">🏆</span><span>Playoffs</span></button>
 <button class="quick-nav" onclick="document.querySelectorAll('.tab-btn')[8].click()"><span class="icon">📖</span><span>Rules</span></button>
@@ -325,7 +325,6 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <tr><td><strong>Week 16</strong></td><td>None</td><td>DFFL Super Bowl</td><td>👑 Championship game with full rosters</td></tr>
 </tbody></table>
 </section>
-
 <section class="tab-section" id="submit"><h2>Roster Submission Center</h2>
 <p class="note">Only this section is dynamic. Select week, division, team, then player.</p>
 <div class="warning-box"><strong>Prototype:</strong> player dropdowns use an expanded 2025-style test database with starters and reserves. Verify/update before your live draft.</div>
@@ -374,33 +373,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p class="small" style="text-align:center; margin-top:10px;">Clicking Submit will open the official DFFL Google Form with your roster details.</p>
 <p class="small" style="text-align:center; margin-top:8px;">If the button does not open the form, <a href="https://docs.google.com/forms/d/e/1FAIpQLSdo1ketMG2OewU9hnZTLhzrWpzo4Hq7SS8NBQt5eJAt1SIXKQ/viewform" style="color:#38bdf8;" target="_blank">open the Google Form directly</a>.</p>
 </section>
-<section class="tab-section" id="recap">
-<h2>Previous Week Recap</h2>
-<p class="note">Commissioner update area. Add final scores, box scores, and weekly notes here after games are completed.</p>
-<div class="grid">
-<div class="card">
-<h3>Week 1 Box Scores</h3>
-<table>
-<thead><tr><th>Matchup</th><th>Score</th><th>Winner</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>AFC South vs AFC West</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-<tr><td>AFC East vs AFC North</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-<tr><td>NFC East vs NFC North</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-<tr><td>NFC South vs NFC West</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-</tbody>
-</table>
-</div>
-<div class="card">
-<h3>Weekly Storylines</h3>
-<ul>
-<li><strong>Game of the Week:</strong> Pending</li>
-<li><strong>Division MVP:</strong> Pending</li>
-<li><strong>Biggest Surprise:</strong> Pending</li>
-<li><strong>Toughest Loss:</strong> Pending</li>
-</ul>
-</div>
-</div>
-</section>
+
 <section class="tab-section newsletter-dashboard" id="newsletter">
 <div class="newsletter-shell">
 <div class="newsletter-masthead">
