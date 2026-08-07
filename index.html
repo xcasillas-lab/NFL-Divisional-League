@@ -201,7 +201,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
 <nav class="tabs">
 <button class="tab-btn active" onclick="showTab('overview', this)" type="button">Home</button>
-<button class="tab-btn" onclick="showTab('standings', this)" type="button">Standings</button>
+<button class="tab-btn" onclick="window.location.href='standings.html'" type="button">Standings</button>
 <button class="tab-btn" onclick="showTab('submit', this)" type="button">Roster Submissions</button>
 <button class="tab-btn" onclick="showTab('matchups', this)" type="button">Weekly Matchups</button>
 <button class="tab-btn" onclick="showTab('recap', this)" type="button">Last Week</button>
@@ -234,21 +234,19 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="home-stat"><div class="stat-label">Regular Season</div><strong>10</strong><small>DFFL weeks</small></div>
 <div class="home-stat"><div class="stat-label">Season Status</div><strong>2026</strong><small>Inaugural season</small></div>
 </div>
-
-<div class="season-countdown" aria-label="Countdown to the 2026 NFL season">
-  <div class="season-countdown-copy">
-    <span class="season-countdown-kicker">🏈 2026 Season Kickoff</span>
-    <strong>Countdown to Opening Night</strong>
-    <small>Wednesday, Sept. 9 • 7:20 PM CT</small>
-  </div>
-  <div class="season-countdown-clock" aria-live="polite">
-    <div><b id="countdown-days">00</b><span>Days</span></div>
-    <div><b id="countdown-hours">00</b><span>Hours</span></div>
-    <div><b id="countdown-minutes">00</b><span>Mins</span></div>
-    <div><b id="countdown-seconds">00</b><span>Secs</span></div>
-  </div>
+<div aria-label="Countdown to the 2026 NFL season" class="season-countdown">
+<div class="season-countdown-copy">
+<span class="season-countdown-kicker">🏈 2026 Season Kickoff</span>
+<strong>Countdown to Opening Night</strong>
+<small>Wednesday, Sept. 9 • 7:20 PM CT</small>
 </div>
-
+<div aria-live="polite" class="season-countdown-clock">
+<div><b id="countdown-days">00</b><span>Days</span></div>
+<div><b id="countdown-hours">00</b><span>Hours</span></div>
+<div><b id="countdown-minutes">00</b><span>Mins</span></div>
+<div><b id="countdown-seconds">00</b><span>Secs</span></div>
+</div>
+</div>
 <div class="home-three">
 <div class="home-panel">
 <h3>📣 Latest News</h3>
@@ -303,7 +301,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </div>
 </section>
-<section class="tab-section" id="standings"><h2>Standings</h2><p class="note">Locked display area.</p><table><thead><tr><th>Seed</th><th>Owner</th><th>Division</th><th>W</th><th>L</th><th>PF</th><th>PA</th></tr></thead><tbody><tr><td>1</td><td>Owner 1</td><td>AFC East</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>2</td><td>Owner 2</td><td>AFC North</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>3</td><td>Owner 3</td><td>AFC South</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>4</td><td>Owner 4</td><td>AFC West</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>5</td><td>Owner 5</td><td>NFC East</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>6</td><td>Owner 6</td><td>NFC North</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>7</td><td>Owner 7</td><td>NFC South</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr><tr><td>8</td><td>Owner 8</td><td>NFC West</td><td>0</td><td>0</td><td>0.0</td><td>0.0</td></tr></tbody></table></section>
+
 <section class="tab-section" id="schedule">
 <h2>📅 DFFL Official Schedule</h2>
 <p class="note">Full season timeline with the NFL teams unavailable each week.</p>
@@ -355,42 +353,36 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <section class="tab-section" id="submit"><h2>Roster Submission Center</h2>
 <p class="note">Only this section is dynamic. Select week, division, team, then player.</p>
 <div class="warning-box"><strong>Prototype:</strong> player dropdowns use an expanded 2025-style test database with starters and reserves. Verify/update before your live draft.</div>
-
 <div class="card division-card" style="margin:14px 0 18px;">
-  <h3 style="margin-top:0;color:#38bdf8;">🏈 DFFL Roster Requirements</h3>
-  <p class="small" style="margin-top:0;">Every weekly lineup must contain exactly <strong style="color:#f8fafc;">8 players</strong>. The team-balance rule changes based on how many teams in your NFL division are active that week.</p>
-
-  <div class="grid" style="margin-top:12px;">
-    <div class="success-box" style="margin-top:0;">
-      <strong>🟢 4 Active Teams — Normal Week</strong>
-      <ul style="margin-bottom:0;">
-        <li>Minimum <strong>1 player</strong> from each NFL team.</li>
-        <li>Maximum <strong>3 players</strong> from any one NFL team.</li>
-      </ul>
-      <p class="small" style="margin-bottom:0;"><strong>Valid example:</strong> 3 + 2 + 2 + 1 = 8</p>
-    </div>
-
-    <div class="warning-box" style="margin-top:0;">
-      <strong>🟡 3 Active Teams — One Team on Bye</strong>
-      <ul style="margin-bottom:0;">
-        <li>Minimum <strong>2 players</strong> from each active NFL team.</li>
-        <li>Maximum <strong>4 players</strong> from any one active NFL team.</li>
-      </ul>
-      <p class="small" style="margin-bottom:0;"><strong>Valid example:</strong> 4 + 2 + 2 = 8</p>
-    </div>
-
-    <div style="background:rgba(239,68,68,.10);border:1px solid rgba(239,68,68,.40);padding:10px;border-radius:10px;">
-      <strong>🔴 2 Active Teams — Two Teams on Bye</strong>
-      <ul style="margin-bottom:0;">
-        <li>Exactly <strong>4 players</strong> from each active NFL team.</li>
-      </ul>
-      <p class="small" style="margin-bottom:0;"><strong>Required:</strong> 4 + 4 = 8</p>
-    </div>
-  </div>
-
-  <p class="small" style="margin:12px 0 0;color:#cbd5e1;">Bye-week rules are based on the active NFL teams available in your selected division for that week.</p>
+<h3 style="margin-top:0;color:#38bdf8;">🏈 DFFL Roster Requirements</h3>
+<p class="small" style="margin-top:0;">Every weekly lineup must contain exactly <strong style="color:#f8fafc;">8 players</strong>. The team-balance rule changes based on how many teams in your NFL division are active that week.</p>
+<div class="grid" style="margin-top:12px;">
+<div class="success-box" style="margin-top:0;">
+<strong>🟢 4 Active Teams — Normal Week</strong>
+<ul style="margin-bottom:0;">
+<li>Minimum <strong>1 player</strong> from each NFL team.</li>
+<li>Maximum <strong>3 players</strong> from any one NFL team.</li>
+</ul>
+<p class="small" style="margin-bottom:0;"><strong>Valid example:</strong> 3 + 2 + 2 + 1 = 8</p>
 </div>
-
+<div class="warning-box" style="margin-top:0;">
+<strong>🟡 3 Active Teams — One Team on Bye</strong>
+<ul style="margin-bottom:0;">
+<li>Minimum <strong>2 players</strong> from each active NFL team.</li>
+<li>Maximum <strong>4 players</strong> from any one active NFL team.</li>
+</ul>
+<p class="small" style="margin-bottom:0;"><strong>Valid example:</strong> 4 + 2 + 2 = 8</p>
+</div>
+<div style="background:rgba(239,68,68,.10);border:1px solid rgba(239,68,68,.40);padding:10px;border-radius:10px;">
+<strong>🔴 2 Active Teams — Two Teams on Bye</strong>
+<ul style="margin-bottom:0;">
+<li>Exactly <strong>4 players</strong> from each active NFL team.</li>
+</ul>
+<p class="small" style="margin-bottom:0;"><strong>Required:</strong> 4 + 4 = 8</p>
+</div>
+</div>
+<p class="small" style="margin:12px 0 0;color:#cbd5e1;">Bye-week rules are based on the active NFL teams available in your selected division for that week.</p>
+</div>
 <div class="form-row"><div><label>Week</label><select id="weekSelect"></select></div><div><label>Division</label><select id="divisionSelect"></select></div><div><label>Owner Name</label><input id="ownerName" placeholder="Owner name"/></div><div><label>Owner Email</label><input id="ownerEmail" placeholder="owner@email.com" type="email"/></div><div><label>Other Submission (Optional)</label><textarea id="otherSubmission" placeholder="Player Name, NFL Team, Position Filled" rows="3" style="width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--input);color:var(--text)"></textarea></div></div><div id="validationSummary"></div><div class="card division-card"><h3 id="rosterTitle">Roster</h3><p class="small" id="availableTeams"></p><table><thead><tr><th>Position</th><th>Team</th><th>Player</th><th>Pts</th></tr></thead><tbody id="rosterBody"></tbody></table><div class="total-line">Total: <span id="totalScore">0.0</span></div></div>
 <div class="warning-box" style="margin-top:20px;">
 <strong>Before submitting:</strong>
@@ -600,278 +592,250 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="playoff-footnote">Week 13 is an off week.  •  <b>No NFL byes during Weeks 11, 12, or 14.</b></div>
 </div>
 </section>
-
 <section class="tab-section rules-dashboard" id="rules">
 <div class="rules-shell">
-
-  <div class="rules-hero">
-    <div class="rules-kicker">Official 2026 League Handbook</div>
-    <h2>📖 DFFL Rules &amp; Scoring</h2>
-    <p>Eight owners. Eight NFL divisions. One 8-player lineup each week. Owners build rosters only from the NFL teams inside the division they control.</p>
-  </div>
-
-  <div class="rules-jumpbar">
-    <button type="button" data-rule-target="rules-format">📖 League Rules</button>
-    <button type="button" data-rule-target="rules-roster">⚖️ Roster Rules</button>
-    <button type="button" data-rule-target="rules-scoring">📊 Scoring</button>
-    <button type="button" data-rule-target="rules-playoffs">🏆 Playoffs</button>
-  </div>
-
-  <div class="rules-section-card" id="rules-format">
-    <div class="rules-section-title">
-      <span class="rules-icon">🏈</span>
-      <div>
-        <h3>League Format</h3>
-        <p>Unlike traditional fantasy football, DFFL owners draft an NFL division rather than individual players.</p>
-      </div>
+<div class="rules-hero">
+<div class="rules-kicker">Official 2026 League Handbook</div>
+<h2>📖 DFFL Rules &amp; Scoring</h2>
+<p>Eight owners. Eight NFL divisions. One 8-player lineup each week. Owners build rosters only from the NFL teams inside the division they control.</p>
+</div>
+<div class="rules-jumpbar">
+<button data-rule-target="rules-format" type="button">📖 League Rules</button>
+<button data-rule-target="rules-roster" type="button">⚖️ Roster Rules</button>
+<button data-rule-target="rules-scoring" type="button">📊 Scoring</button>
+<button data-rule-target="rules-playoffs" type="button">🏆 Playoffs</button>
+</div>
+<div class="rules-section-card" id="rules-format">
+<div class="rules-section-title">
+<span class="rules-icon">🏈</span>
+<div>
+<h3>League Format</h3>
+<p>Unlike traditional fantasy football, DFFL owners draft an NFL division rather than individual players.</p>
+</div>
+</div>
+<div class="rules-metric-grid">
+<div class="rules-metric"><span>👥</span><b>8</b><small>Owners</small></div>
+<div class="rules-metric"><span>🏈</span><b>8</b><small>NFL Divisions</small></div>
+<div class="rules-metric"><span>📅</span><b>10</b><small>Regular Season Games</small></div>
+<div class="rules-metric"><span>😴</span><b>11</b><small>League Off Week</small></div>
+<div class="rules-metric"><span>🏆</span><b>12</b><small>Quarterfinals</small></div>
+<div class="rules-metric"><span>⏸️</span><b>13–14</b><small>Playoff Break</small></div>
+<div class="rules-metric"><span>🥇</span><b>15</b><small>Semifinals</small></div>
+<div class="rules-metric"><span>👑</span><b>16</b><small>DFFL Super Bowl</small></div>
+</div>
+<div class="rules-note">
+<b>Player Pool:</b> There are no traditional free agents, waivers, or player trades. Your available player pool comes from the four NFL teams in the division you own.
     </div>
-
-    <div class="rules-metric-grid">
-      <div class="rules-metric"><span>👥</span><b>8</b><small>Owners</small></div>
-      <div class="rules-metric"><span>🏈</span><b>8</b><small>NFL Divisions</small></div>
-      <div class="rules-metric"><span>📅</span><b>10</b><small>Regular Season Games</small></div>
-      <div class="rules-metric"><span>😴</span><b>11</b><small>League Off Week</small></div>
-      <div class="rules-metric"><span>🏆</span><b>12</b><small>Quarterfinals</small></div>
-      <div class="rules-metric"><span>⏸️</span><b>13–14</b><small>Playoff Break</small></div>
-      <div class="rules-metric"><span>🥇</span><b>15</b><small>Semifinals</small></div>
-      <div class="rules-metric"><span>👑</span><b>16</b><small>DFFL Super Bowl</small></div>
-    </div>
-
-    <div class="rules-note">
-      <b>Player Pool:</b> There are no traditional free agents, waivers, or player trades. Your available player pool comes from the four NFL teams in the division you own.
-    </div>
-  </div>
-
-  <div class="rules-section-card" id="rules-roster">
-    <div class="rules-section-title">
-      <span class="rules-icon">👥</span>
-      <div>
-        <h3>Weekly Lineup</h3>
-        <p>Every official DFFL lineup contains exactly 8 starters.</p>
-      </div>
-    </div>
-
-    <div class="rules-two-col">
-      <div>
-        <table class="rules-table">
-          <thead><tr><th>Position</th><th>Starters</th></tr></thead>
-          <tbody>
-            <tr><td>QB</td><td>1</td></tr>
-            <tr><td>RB</td><td>2</td></tr>
-            <tr><td>WR</td><td>2</td></tr>
-            <tr><td>TE</td><td>1</td></tr>
-            <tr><td>FLEX</td><td>1</td></tr>
-            <tr><td>DEF/ST</td><td>1</td></tr>
-            <tr class="rules-total-row"><td>TOTAL</td><td>8</td></tr>
-          </tbody>
-        </table>
-        <div class="rules-note"><b>FLEX:</b> RB, WR, or TE &nbsp; • &nbsp; <b>No Kickers</b></div>
-      </div>
-
-      <div class="deadline-card">
-        <div class="deadline-icon">🕛</div>
-        <small>Weekly Roster Deadline</small>
-        <strong>Thursday</strong>
-        <b>12:00 PM</b>
-        <span>Central Time</span>
-        <p>No point penalties are used. Owners may submit future weeks in advance and replace a future roster any time before that week's deadline.</p>
-      </div>
-    </div>
-
-    <div class="roster-rule-grid">
-      <div class="roster-rule-card normal">
-        <div class="roster-rule-head"><span>🟢</span><div><b>4 Active Teams</b><small>Normal Week</small></div></div>
-        <ul>
-          <li>Minimum <b>1 player</b> from each NFL team.</li>
-          <li>Maximum <b>3 players</b> from any one NFL team.</li>
-        </ul>
-        <div class="rule-example">Valid: <b>3 + 2 + 2 + 1 = 8</b></div>
-      </div>
-
-      <div class="roster-rule-card one-bye">
-        <div class="roster-rule-head"><span>🟡</span><div><b>3 Active Teams</b><small>One Team on Bye</small></div></div>
-        <ul>
-          <li>Minimum <b>2 players</b> from each active team.</li>
-          <li>Maximum <b>4 players</b> from any one active team.</li>
-        </ul>
-        <div class="rule-example">Valid: <b>4 + 2 + 2 = 8</b></div>
-      </div>
-
-      <div class="roster-rule-card two-bye">
-        <div class="roster-rule-head"><span>🔴</span><div><b>2 Active Teams</b><small>Two Teams on Bye</small></div></div>
-        <ul>
-          <li>Exactly <b>4 players</b> from each active NFL team.</li>
-        </ul>
-        <div class="rule-example">Required: <b>4 + 4 = 8</b></div>
-      </div>
-    </div>
-
-    <div class="advance-submit">
-      <span>📅</span>
-      <div>
-        <b>Advance Roster Submissions</b>
-        <p>Owners may submit lineups for future weeks at any time as a backup for travel, work, vacations, or simply to avoid missing a deadline. The most recent valid submission before Thursday at noon Central Time becomes the official roster for that week.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="rules-section-card" id="rules-scoring">
-    <div class="rules-section-title">
-      <span class="rules-icon">📊</span>
-      <div>
-        <h3>Official Yahoo-Style Scoring</h3>
-        <p>DFFL uses standard Yahoo-style half-PPR fantasy scoring.</p>
-      </div>
-    </div>
-
-    <div class="scoring-grid">
-      <div class="scoring-card">
-        <h4>🎯 Passing</h4>
-        <div class="score-line"><span>Passing Yards</span><b>1 / 25 yds</b></div>
-        <div class="score-line"><span>Passing TD</span><b>+4</b></div>
-        <div class="score-line"><span>Interception</span><b>-1</b></div>
-        <div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
-      </div>
-
-      <div class="scoring-card">
-        <h4>🏃 Rushing</h4>
-        <div class="score-line"><span>Rushing Yards</span><b>1 / 10 yds</b></div>
-        <div class="score-line"><span>Rushing TD</span><b>+6</b></div>
-        <div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
-        <div class="score-line"><span>Fumble Lost</span><b>-2</b></div>
-      </div>
-
-      <div class="scoring-card">
-        <h4>🙌 Receiving</h4>
-        <div class="score-line"><span>Reception</span><b>+0.5</b></div>
-        <div class="score-line"><span>Receiving Yards</span><b>1 / 10 yds</b></div>
-        <div class="score-line"><span>Receiving TD</span><b>+6</b></div>
-        <div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
-        <div class="score-line"><span>Fumble Lost</span><b>-2</b></div>
-      </div>
-
-      <div class="scoring-card">
-        <h4>🛡️ Defense / ST</h4>
-        <div class="score-line"><span>Sack</span><b>+1</b></div>
-        <div class="score-line"><span>Interception</span><b>+2</b></div>
-        <div class="score-line"><span>Fumble Recovery</span><b>+2</b></div>
-        <div class="score-line"><span>Safety</span><b>+2</b></div>
-        <div class="score-line"><span>Blocked Kick</span><b>+2</b></div>
-        <div class="score-line"><span>Defensive TD</span><b>+6</b></div>
-        <div class="score-line"><span>Kick/Punt Return TD</span><b>+6</b></div>
-      </div>
-    </div>
-
-    <div class="rules-two-col points-allowed-wrap">
-      <div>
-        <h4 class="subheading">Defense — Points Allowed</h4>
-        <table class="rules-table">
-          <thead><tr><th>NFL Points Allowed</th><th>Fantasy Points</th></tr></thead>
-          <tbody>
-            <tr><td>0</td><td>+10</td></tr>
-            <tr><td>1–6</td><td>+7</td></tr>
-            <tr><td>7–13</td><td>+4</td></tr>
-            <tr><td>14–20</td><td>+1</td></tr>
-            <tr><td>21–27</td><td>0</td></tr>
-            <tr><td>28–34</td><td>-1</td></tr>
-            <tr><td>35+</td><td>-4</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="scoring-example">
-        <small>Example</small>
-        <h4>WR scores 17.5 points</h4>
-        <div><span>6 receptions</span><b>3.0</b></div>
-        <div><span>85 receiving yards</span><b>8.5</b></div>
-        <div><span>1 receiving TD</span><b>6.0</b></div>
-        <strong>Total: 17.5</strong>
-      </div>
-    </div>
-  </div>
-
-  <div class="rules-section-card" id="rules-playoffs">
-    <div class="rules-section-title">
-      <span class="rules-icon">🏆</span>
-      <div>
-        <h3>Playoffs &amp; Tiebreakers</h3>
-        <p>All eight divisions reach the quarterfinal bracket, seeded by the final regular-season standings.</p>
-      </div>
-    </div>
-
-    <div class="rules-two-col">
-      <div class="playoff-rules-box">
-        <h4>2026 Playoff Schedule</h4>
-        <div class="playoff-rule-row"><b>Week 12</b><span>Quarterfinals — 1v8, 2v7, 3v6, 4v5</span></div>
-        <div class="playoff-rule-row"><b>Weeks 13–14</b><span>Playoff break</span></div>
-        <div class="playoff-rule-row"><b>Week 15</b><span>Semifinals</span></div>
-        <div class="playoff-rule-row"><b>Week 16</b><span>DFFL Super Bowl</span></div>
-      </div>
-
-      <div class="tiebreaker-box">
-        <h4>Standings Tiebreakers</h4>
-        <ol>
-          <li><b>Head-to-Head Record</b></li>
-          <li><b>Divisional Record</b></li>
-          <li><b>Point Differential</b><span>Points Scored − Points Against. Largest positive margin wins.</span></li>
-          <li><b>Total Fantasy Points Scored</b></li>
-          <li><b>Coin Flip</b></li>
-        </ol>
-      </div>
-    </div>
-
-    <div class="point-diff-example">
-      <div>
-        <small>Point Differential Example</small>
-        <b>AFC East</b>
-        <span>1,486 For − 1,401 Against = <strong>+85</strong></span>
-      </div>
-      <div class="vs-pill">VS</div>
-      <div>
-        <small>Point Differential Example</small>
-        <b>NFC West</b>
-        <span>1,521 For − 1,470 Against = <strong>+51</strong></span>
-      </div>
-      <p>AFC East wins the tiebreaker because <b>+85</b> is the larger point differential.</p>
-    </div>
-  </div>
-
-  <div class="rules-section-card">
-    <div class="rules-section-title">
-      <span class="rules-icon">❓</span>
-      <div>
-        <h3>Frequently Asked Questions</h3>
-        <p>Quick answers to common league questions.</p>
-      </div>
-    </div>
-
-    <div class="faq-list">
-      <details>
-        <summary>Can I submit future lineups?</summary>
-        <p>Yes. Owners may submit future weeks in advance and update them until Thursday at 12:00 PM Central Time for that week.</p>
-      </details>
-      <details>
-        <summary>What happens if I miss the deadline?</summary>
-        <p>There are no point penalties. Only a valid roster submitted by the weekly deadline can become the official lineup for that week.</p>
-      </details>
-      <details>
-        <summary>How do bye weeks work?</summary>
-        <p>Roster balance automatically changes based on whether 4, 3, or 2 NFL teams in your division are active.</p>
-      </details>
-      <details>
-        <summary>Can I use the same player every week?</summary>
-        <p>Yes, as long as the player remains eligible within your division and the weekly roster satisfies all lineup and team-balance rules.</p>
-      </details>
-      <details>
-        <summary>How are standings ties broken?</summary>
-        <p>Head-to-head, divisional record, point differential, total fantasy points scored, then coin flip.</p>
-      </details>
-    </div>
-  </div>
-
+</div>
+<div class="rules-section-card" id="rules-roster">
+<div class="rules-section-title">
+<span class="rules-icon">👥</span>
+<div>
+<h3>Weekly Lineup</h3>
+<p>Every official DFFL lineup contains exactly 8 starters.</p>
+</div>
+</div>
+<div class="rules-two-col">
+<div>
+<table class="rules-table">
+<thead><tr><th>Position</th><th>Starters</th></tr></thead>
+<tbody>
+<tr><td>QB</td><td>1</td></tr>
+<tr><td>RB</td><td>2</td></tr>
+<tr><td>WR</td><td>2</td></tr>
+<tr><td>TE</td><td>1</td></tr>
+<tr><td>FLEX</td><td>1</td></tr>
+<tr><td>DEF/ST</td><td>1</td></tr>
+<tr class="rules-total-row"><td>TOTAL</td><td>8</td></tr>
+</tbody>
+</table>
+<div class="rules-note"><b>FLEX:</b> RB, WR, or TE   •   <b>No Kickers</b></div>
+</div>
+<div class="deadline-card">
+<div class="deadline-icon">🕛</div>
+<small>Weekly Roster Deadline</small>
+<strong>Thursday</strong>
+<b>12:00 PM</b>
+<span>Central Time</span>
+<p>No point penalties are used. Owners may submit future weeks in advance and replace a future roster any time before that week's deadline.</p>
+</div>
+</div>
+<div class="roster-rule-grid">
+<div class="roster-rule-card normal">
+<div class="roster-rule-head"><span>🟢</span><div><b>4 Active Teams</b><small>Normal Week</small></div></div>
+<ul>
+<li>Minimum <b>1 player</b> from each NFL team.</li>
+<li>Maximum <b>3 players</b> from any one NFL team.</li>
+</ul>
+<div class="rule-example">Valid: <b>3 + 2 + 2 + 1 = 8</b></div>
+</div>
+<div class="roster-rule-card one-bye">
+<div class="roster-rule-head"><span>🟡</span><div><b>3 Active Teams</b><small>One Team on Bye</small></div></div>
+<ul>
+<li>Minimum <b>2 players</b> from each active team.</li>
+<li>Maximum <b>4 players</b> from any one active team.</li>
+</ul>
+<div class="rule-example">Valid: <b>4 + 2 + 2 = 8</b></div>
+</div>
+<div class="roster-rule-card two-bye">
+<div class="roster-rule-head"><span>🔴</span><div><b>2 Active Teams</b><small>Two Teams on Bye</small></div></div>
+<ul>
+<li>Exactly <b>4 players</b> from each active NFL team.</li>
+</ul>
+<div class="rule-example">Required: <b>4 + 4 = 8</b></div>
+</div>
+</div>
+<div class="advance-submit">
+<span>📅</span>
+<div>
+<b>Advance Roster Submissions</b>
+<p>Owners may submit lineups for future weeks at any time as a backup for travel, work, vacations, or simply to avoid missing a deadline. The most recent valid submission before Thursday at noon Central Time becomes the official roster for that week.</p>
+</div>
+</div>
+</div>
+<div class="rules-section-card" id="rules-scoring">
+<div class="rules-section-title">
+<span class="rules-icon">📊</span>
+<div>
+<h3>Official Yahoo-Style Scoring</h3>
+<p>DFFL uses standard Yahoo-style half-PPR fantasy scoring.</p>
+</div>
+</div>
+<div class="scoring-grid">
+<div class="scoring-card">
+<h4>🎯 Passing</h4>
+<div class="score-line"><span>Passing Yards</span><b>1 / 25 yds</b></div>
+<div class="score-line"><span>Passing TD</span><b>+4</b></div>
+<div class="score-line"><span>Interception</span><b>-1</b></div>
+<div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
+</div>
+<div class="scoring-card">
+<h4>🏃 Rushing</h4>
+<div class="score-line"><span>Rushing Yards</span><b>1 / 10 yds</b></div>
+<div class="score-line"><span>Rushing TD</span><b>+6</b></div>
+<div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
+<div class="score-line"><span>Fumble Lost</span><b>-2</b></div>
+</div>
+<div class="scoring-card">
+<h4>🙌 Receiving</h4>
+<div class="score-line"><span>Reception</span><b>+0.5</b></div>
+<div class="score-line"><span>Receiving Yards</span><b>1 / 10 yds</b></div>
+<div class="score-line"><span>Receiving TD</span><b>+6</b></div>
+<div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
+<div class="score-line"><span>Fumble Lost</span><b>-2</b></div>
+</div>
+<div class="scoring-card">
+<h4>🛡️ Defense / ST</h4>
+<div class="score-line"><span>Sack</span><b>+1</b></div>
+<div class="score-line"><span>Interception</span><b>+2</b></div>
+<div class="score-line"><span>Fumble Recovery</span><b>+2</b></div>
+<div class="score-line"><span>Safety</span><b>+2</b></div>
+<div class="score-line"><span>Blocked Kick</span><b>+2</b></div>
+<div class="score-line"><span>Defensive TD</span><b>+6</b></div>
+<div class="score-line"><span>Kick/Punt Return TD</span><b>+6</b></div>
+</div>
+</div>
+<div class="rules-two-col points-allowed-wrap">
+<div>
+<h4 class="subheading">Defense — Points Allowed</h4>
+<table class="rules-table">
+<thead><tr><th>NFL Points Allowed</th><th>Fantasy Points</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+10</td></tr>
+<tr><td>1–6</td><td>+7</td></tr>
+<tr><td>7–13</td><td>+4</td></tr>
+<tr><td>14–20</td><td>+1</td></tr>
+<tr><td>21–27</td><td>0</td></tr>
+<tr><td>28–34</td><td>-1</td></tr>
+<tr><td>35+</td><td>-4</td></tr>
+</tbody>
+</table>
+</div>
+<div class="scoring-example">
+<small>Example</small>
+<h4>WR scores 17.5 points</h4>
+<div><span>6 receptions</span><b>3.0</b></div>
+<div><span>85 receiving yards</span><b>8.5</b></div>
+<div><span>1 receiving TD</span><b>6.0</b></div>
+<strong>Total: 17.5</strong>
+</div>
+</div>
+</div>
+<div class="rules-section-card" id="rules-playoffs">
+<div class="rules-section-title">
+<span class="rules-icon">🏆</span>
+<div>
+<h3>Playoffs &amp; Tiebreakers</h3>
+<p>All eight divisions reach the quarterfinal bracket, seeded by the final regular-season standings.</p>
+</div>
+</div>
+<div class="rules-two-col">
+<div class="playoff-rules-box">
+<h4>2026 Playoff Schedule</h4>
+<div class="playoff-rule-row"><b>Week 12</b><span>Quarterfinals — 1v8, 2v7, 3v6, 4v5</span></div>
+<div class="playoff-rule-row"><b>Weeks 13–14</b><span>Playoff break</span></div>
+<div class="playoff-rule-row"><b>Week 15</b><span>Semifinals</span></div>
+<div class="playoff-rule-row"><b>Week 16</b><span>DFFL Super Bowl</span></div>
+</div>
+<div class="tiebreaker-box">
+<h4>Standings Tiebreakers</h4>
+<ol>
+<li><b>Head-to-Head Record</b></li>
+<li><b>Divisional Record</b></li>
+<li><b>Point Differential</b><span>Points Scored − Points Against. Largest positive margin wins.</span></li>
+<li><b>Total Fantasy Points Scored</b></li>
+<li><b>Coin Flip</b></li>
+</ol>
+</div>
+</div>
+<div class="point-diff-example">
+<div>
+<small>Point Differential Example</small>
+<b>AFC East</b>
+<span>1,486 For − 1,401 Against = <strong>+85</strong></span>
+</div>
+<div class="vs-pill">VS</div>
+<div>
+<small>Point Differential Example</small>
+<b>NFC West</b>
+<span>1,521 For − 1,470 Against = <strong>+51</strong></span>
+</div>
+<p>AFC East wins the tiebreaker because <b>+85</b> is the larger point differential.</p>
+</div>
+</div>
+<div class="rules-section-card">
+<div class="rules-section-title">
+<span class="rules-icon">❓</span>
+<div>
+<h3>Frequently Asked Questions</h3>
+<p>Quick answers to common league questions.</p>
+</div>
+</div>
+<div class="faq-list">
+<details>
+<summary>Can I submit future lineups?</summary>
+<p>Yes. Owners may submit future weeks in advance and update them until Thursday at 12:00 PM Central Time for that week.</p>
+</details>
+<details>
+<summary>What happens if I miss the deadline?</summary>
+<p>There are no point penalties. Only a valid roster submitted by the weekly deadline can become the official lineup for that week.</p>
+</details>
+<details>
+<summary>How do bye weeks work?</summary>
+<p>Roster balance automatically changes based on whether 4, 3, or 2 NFL teams in your division are active.</p>
+</details>
+<details>
+<summary>Can I use the same player every week?</summary>
+<p>Yes, as long as the player remains eligible within your division and the weekly roster satisfies all lineup and team-balance rules.</p>
+</details>
+<details>
+<summary>How are standings ties broken?</summary>
+<p>Head-to-head, divisional record, point differential, total fantasy points scored, then coin flip.</p>
+</details>
+</div>
+</div>
 </div>
 </section>
-
 </main><div class="footer">DFFL Interactive League Hub</div>
 <script>
 
@@ -889,6 +853,9 @@ function showTab(tabId, btn){
   }
   if(btn){
     btn.classList.add('active');
+  }
+  if(tabId){
+    history.replaceState(null, '', '#' + tabId);
   }
   window.scrollTo({top:0, behavior:'smooth'});
 }
@@ -997,8 +964,19 @@ function togglePreseasonRankings(btn){
 }
 
 init();
-</script>
 
+document.addEventListener('DOMContentLoaded', function(){
+  const requested = (window.location.hash || '').replace('#','');
+  if(!requested || requested === 'standings') return;
+  const targetButton = Array.from(document.querySelectorAll('nav.tabs .tab-btn')).find(function(button){
+    const handler = button.getAttribute('onclick') || '';
+    return handler.includes("showTab('" + requested + "'");
+  });
+  if(document.getElementById(requested) && targetButton){
+    showTab(requested, targetButton);
+  }
+});
+</script>
 <script>
 document.querySelectorAll('.rules-jumpbar [data-rule-target]').forEach(function(btn){
   btn.addEventListener('click', function(){
@@ -1007,8 +985,6 @@ document.querySelectorAll('.rules-jumpbar [data-rule-target]').forEach(function(
   });
 });
 </script>
-
-
 <script>
 (function(){
   /* 2026 NFL season kickoff: Sept. 9, 2026 at 7:20 PM Central Daylight Time (UTC-05:00). */
@@ -1049,5 +1025,4 @@ document.querySelectorAll('.rules-jumpbar [data-rule-target]').forEach(function(
   setInterval(updateSeasonCountdown, 1000);
 })();
 </script>
-
 </body></html>
