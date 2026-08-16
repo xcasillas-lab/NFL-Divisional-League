@@ -399,5 +399,19 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </section></main>
 <div class="footer">DFFL Interactive League Hub</div>
+
+<script>
+function togglePreseasonRankings(btn){
+  const content = document.getElementById('preseasonRankingsContent');
+  if (!content) return;
+
+  const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+  const shouldExpand = !isExpanded;
+
+  btn.setAttribute('aria-expanded', String(shouldExpand));
+  btn.classList.toggle('collapsed', !shouldExpand);
+  content.hidden = !shouldExpand;
+}
+</script>
 </body>
 </html>
