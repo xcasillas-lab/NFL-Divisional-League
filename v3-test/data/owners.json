@@ -14,52 +14,52 @@
 
   "owners": [
     {
+      "id": "jetlix",
+      "name": "JetLiX",
+      "division": "NFCN",
+      "draftPick": 1
+    },
+    {
       "id": "ben",
       "name": "Ben",
-      "division": null,
-      "draftPick": null
+      "division": "NFCW",
+      "draftPick": 2
     },
     {
       "id": "brian",
       "name": "Brian",
-      "division": null,
-      "draftPick": null
-    },
-    {
-      "id": "jetlix",
-      "name": "JetLiX",
-      "division": null,
-      "draftPick": null
-    },
-    {
-      "id": "joshua",
-      "name": "Joshua",
-      "division": null,
-      "draftPick": null
-    },
-    {
-      "id": "kendall",
-      "name": "Kendall",
-      "division": null,
-      "draftPick": null
-    },
-    {
-      "id": "xavier",
-      "name": "Xavier",
-      "division": null,
-      "draftPick": null
+      "division": "AFCN",
+      "draftPick": 3
     },
     {
       "id": "juan",
       "name": "Juan",
-      "division": null,
-      "draftPick": null
+      "division": "NFCE",
+      "draftPick": 4
+    },
+    {
+      "id": "joshua",
+      "name": "Joshua",
+      "division": "AFCE",
+      "draftPick": 5
+    },
+    {
+      "id": "xavier",
+      "name": "Xavier",
+      "division": "NFCS",
+      "draftPick": 6
     },
     {
       "id": "dallas",
       "name": "Dallas",
-      "division": null,
-      "draftPick": null
+      "division": "AFCW",
+      "draftPick": 7
+    },
+    {
+      "id": "kendall",
+      "name": "Kendall",
+      "division": "AFCS",
+      "draftPick": 8
     }
   ]
 }
