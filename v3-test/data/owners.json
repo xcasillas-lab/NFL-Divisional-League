@@ -1,0 +1,65 @@
+{
+  "season": 2026,
+
+  "divisionHelmets": {
+    "AFCE": "/assets/images/helmets/afce.png",
+    "AFCN": "/assets/images/helmets/afcn.png",
+    "AFCS": "/assets/images/helmets/afcs.png",
+    "AFCW": "/assets/images/helmets/afcw.png",
+    "NFCE": "/assets/images/helmets/nfce.png",
+    "NFCN": "/assets/images/helmets/nfcn.png",
+    "NFCS": "/assets/images/helmets/nfcs.png",
+    "NFCW": "/assets/images/helmets/nfcw.png"
+  },
+
+  "owners": [
+    {
+      "id": "ben",
+      "name": "Ben",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "brian",
+      "name": "Brian",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "jetlix",
+      "name": "JetLiX",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "joshua",
+      "name": "Joshua",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "kendall",
+      "name": "Kendall",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "xavier",
+      "name": "Xavier",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "juan",
+      "name": "Juan",
+      "division": null,
+      "draftPick": null
+    },
+    {
+      "id": "dallas",
+      "name": "Dallas",
+      "division": null,
+      "draftPick": null
+    }
+  ]
+}
