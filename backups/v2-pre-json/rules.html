@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>DFFL — Rules</title>
+<style>
+:root{--bg:#0f172a;--card:#111827;--card2:#1f2937;--text:#f8fafc;--muted:#cbd5e1;--accent:#38bdf8;--good:#22c55e;--warn:#f59e0b;--bad:#ef4444;--border:#334155;--input:#020617}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+header{padding:28px 20px;text-align:center;background:linear-gradient(135deg,#0f172a,#1e3a8a);border-bottom:1px solid var(--border)}header h1{margin:0;font-size:2.2rem}header p{margin:8px 0 0;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:14px;background:#020617;position:sticky;top:0;z-index:10;border-bottom:1px solid var(--border)}
+nav a,button{color:var(--text);text-decoration:none;padding:8px 12px;border:1px solid var(--border);border-radius:999px;font-size:.9rem;background:var(--card2);cursor:pointer}
+main{max-width:1250px;margin:0 auto;padding:22px}section{margin-bottom:28px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 8px 20px rgba(0,0,0,.2)}
+h2{margin-top:0;color:var(--accent)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}.card{background:var(--card2);border:1px solid var(--border);border-radius:14px;padding:14px}
+table{width:100%;border-collapse:collapse;border-radius:10px;margin-top:10px;overflow:hidden}th,td{padding:8px;border-bottom:1px solid var(--border);text-align:left;font-size:.92rem}th{background:#020617;color:var(--accent)}
+input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--input);color:var(--text)}
+.tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#0ea5e9;color:white;font-size:.8rem;margin:2px}.note,.small{color:var(--muted);font-size:.95rem}.pending{color:var(--warn);font-weight:bold}
+.tools{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.division-card{border-left:4px solid var(--accent)}.total-line{margin-top:10px;font-weight:bold}
+.warning-box{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.4);padding:10px;border-radius:10px;margin-top:10px}.success-box{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.4);padding:10px;border-radius:10px;margin-top:10px}
+.form-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:14px}.bracket{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.matchup{background:#020617;border:1px solid var(--border);border-radius:12px;padding:12px;margin-bottom:10px}
+.footer{text-align:center;color:var(--muted);padding:30px;font-size:.9rem}
+@media print{nav,.tools,button{display:none}body{background:white;color:black}section,.card{box-shadow:none;border:1px solid #999;background:white;color:black}th{background:#eee;color:black}h2{color:#111}input,select{border:none;color:black;background:white}}
+
+.tab-section{display:none}
+.tab-section.active{display:block}
+.tab-btn.active{background:var(--accent);color:#020617;font-weight:bold;border-color:var(--accent)}
+
+
+
+/* ===== 2026 DFFL HOME DASHBOARD ===== */
+.home-dashboard{display:grid;gap:16px}
+.home-hero{position:relative;overflow:hidden;min-height:320px;padding:28px;border-radius:18px;border:1px solid #1d4ed8;background:radial-gradient(circle at 85% 20%,rgba(56,189,248,.20),transparent 30%),linear-gradient(115deg,#020617 0%,#07162b 52%,#0b2343 100%)}
+.home-hero:after{content:"";position:absolute;inset:auto 0 0;height:42%;background:linear-gradient(180deg,transparent,rgba(34,197,94,.10));pointer-events:none}
+.hero-copy{position:relative;z-index:2;max-width:610px}.eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:#38bdf8;font-weight:800}.hero-copy h2{font-size:clamp(2rem,5vw,4.2rem);line-height:.96;margin:12px 0 14px;color:white;text-transform:uppercase}.hero-copy h2 span{color:#ef4444}.hero-copy p{max-width:560px;font-size:1.05rem;color:#dbeafe;line-height:1.55}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.hero-actions button{border-radius:10px;padding:12px 18px;font-weight:800}.primary-action{background:#2563eb;border-color:#60a5fa}.secondary-action{background:rgba(15,23,42,.75)}
+.hero-helmets{position:absolute;right:10px;bottom:-18px;width:min(48%,600px);display:flex;align-items:flex-end;justify-content:flex-end;z-index:1;filter:drop-shadow(0 22px 22px rgba(0,0,0,.55))}.hero-helmets img{width:58%;margin-left:-18%;border-radius:18px}.hero-helmets img:first-child{transform:translateY(20px) rotate(-4deg);opacity:.9}.hero-helmets img:last-child{transform:rotate(4deg)}
+.home-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:-2px}.home-stat{background:linear-gradient(180deg,#172033,#0b1220);border:1px solid #334155;border-radius:14px;padding:15px;text-align:center}.home-stat .stat-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;font-weight:700}.home-stat strong{display:block;font-size:1.8rem;margin:7px 0 2px}.home-stat small{color:#38bdf8}
+.home-three{display:grid;grid-template-columns:1.05fr 1.3fr 1fr;gap:16px}.home-panel{background:linear-gradient(180deg,#111827,#0b1220);border:1px solid #334155;border-radius:16px;padding:16px}.home-panel h3{margin:0 0 14px;font-size:1rem;text-transform:uppercase;letter-spacing:.04em}.panel-link{width:100%;margin-top:12px;border-radius:10px;color:#38bdf8;background:#111c2e}.news-item{padding:10px 0;border-bottom:1px solid #253247}.news-item:last-of-type{border-bottom:0}.news-item b{display:block}.news-item span{display:block;color:#94a3b8;font-size:.85rem;margin-top:4px}.new-pill{display:inline-block;margin-right:7px;padding:2px 6px;border-radius:5px;background:#dc2626;font-size:.66rem}
+.mini-standing{display:grid;grid-template-columns:32px 42px 1fr 54px;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #253247}.mini-standing img{width:40px;height:40px;object-fit:cover;border-radius:8px}.mini-standing .record{text-align:right;color:#cbd5e1}.seed{height:25px;width:25px;display:grid;place-items:center;border:1px solid #475569;border-radius:50%;font-size:.78rem}.playoff-note{padding:10px;border-radius:10px;background:rgba(56,189,248,.08);color:#cbd5e1;font-size:.9rem}.playoff-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #253247}.playoff-row b{color:#38bdf8}
+.home-matchups{background:linear-gradient(180deg,#111827,#0b1220);border:1px solid #334155;border-radius:16px;padding:16px}.section-heading-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:13px}.section-heading-row h3{margin:0;text-transform:uppercase}.matchup-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.matchup-card{position:relative;overflow:hidden;background:#07111f;border:1px solid #334155;border-radius:14px;padding:12px;text-align:center}.matchup-number{font-size:.68rem;letter-spacing:.08em;color:#94a3b8;text-transform:uppercase}.helmet-vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:4px;margin:8px 0}.helmet-vs img{width:100%;max-height:92px;object-fit:cover;border-radius:10px}.helmet-vs strong{font-size:1.1rem}.division-code{font-weight:900}.owner-label{font-size:.75rem;color:#94a3b8}.matchup-time{margin-top:9px;font-size:.75rem;color:#cbd5e1}
+.quick-nav-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px}.quick-nav{min-height:92px;border-radius:13px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:linear-gradient(180deg,#172033,#0b1220)}.quick-nav .icon{font-size:1.5rem}.quick-nav span:last-child{font-size:.72rem;font-weight:800;text-align:center}
+.home-bottom{display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:16px}.metric-list{display:grid;gap:8px}.metric-line{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid #253247}.commissioner-note{font-size:1rem;line-height:1.6;color:#dbeafe}.signature{text-align:right;color:#38bdf8;font-style:italic;font-size:1.1rem;margin-top:15px}
+@media(max-width:980px){.home-three,.home-bottom{grid-template-columns:1fr 1fr}.home-three .home-panel:last-child,.home-bottom .home-panel:last-child{grid-column:1/-1}.matchup-grid{grid-template-columns:repeat(2,1fr)}.quick-nav-grid{grid-template-columns:repeat(4,1fr)}.hero-helmets{opacity:.38;width:60%}}
+@media(max-width:640px){main{padding:12px}.home-hero{min-height:390px;padding:20px}.hero-copy{max-width:100%}.hero-copy h2{font-size:2.4rem}.hero-copy p{font-size:.95rem;max-width:80%}.hero-helmets{right:-25px;bottom:-10px;width:90%;opacity:.45}.home-stat-grid{grid-template-columns:repeat(2,1fr)}.home-three,.home-bottom{grid-template-columns:1fr}.home-three .home-panel:last-child,.home-bottom .home-panel:last-child{grid-column:auto}.matchup-grid{grid-template-columns:1fr}.quick-nav-grid{grid-template-columns:repeat(4,1fr);gap:7px}.quick-nav{min-height:76px;padding:7px}.quick-nav .icon{font-size:1.25rem}.quick-nav span:last-child{font-size:.62rem}.mini-standing{grid-template-columns:28px 38px 1fr 48px}.section-heading-row{align-items:flex-start}.section-heading-row .small{display:none}nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}nav button{flex:0 0 auto}}
+
+
+/* ===== DFFL WEEKLY MATCHUPS DASHBOARD ===== */
+#matchups.matchups-dashboard{background:transparent;border:0;padding:0;box-shadow:none}
+.matchups-shell{display:grid;gap:16px}
+.matchups-titlebar{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;padding:4px 2px}
+.matchups-titlebar h2{margin:0;color:#f8fafc;font-size:clamp(1.7rem,4vw,2.45rem);text-transform:uppercase;letter-spacing:.02em}
+.matchups-titlebar p{margin:6px 0 0;color:#94a3b8;font-size:.88rem;text-transform:uppercase;letter-spacing:.06em}
+.season-chip{padding:10px 14px;border:1px solid #334155;border-radius:10px;background:#07111f;color:#dbeafe;font-size:.78rem;font-weight:800;white-space:nowrap}
+.current-week-panel,.season-list-panel,.matchups-info{background:linear-gradient(180deg,#101b2b,#07111f);border:1px solid #334155;border-radius:16px;padding:16px}
+.current-week-label{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border-radius:7px;background:linear-gradient(180deg,#3b82f6,#1d4ed8);font-size:.76rem;font-weight:900;text-transform:uppercase;box-shadow:0 5px 16px rgba(37,99,235,.28)}
+.current-week-sub{margin-left:10px;color:#cbd5e1;font-size:.8rem;text-transform:uppercase}
+.matchups-current-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+.featured-matchup{background:#050d19;border:1px solid #26374e;border-radius:13px;padding:11px;text-align:center;min-width:0}
+.featured-matchup .full-division{font-size:.75rem;font-weight:900;text-transform:uppercase;color:#7dd3fc;white-space:nowrap}
+.featured-matchup .matchup-time{border-top:1px solid #1e293b;padding-top:8px;margin-top:8px;color:#cbd5e1;text-transform:uppercase;letter-spacing:.04em}
+.featured-helmet-vs{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);align-items:center;gap:4px;margin:8px 0}
+.featured-team img{width:100%;height:92px;object-fit:cover;border-radius:9px}
+.featured-team .division-code{font-size:1rem;margin-top:5px}
+.featured-team .owner-label{font-size:.7rem}
+.vs-mark{font-weight:900;font-size:1rem;color:#f8fafc}
+.season-list-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}
+.season-list-heading h3{margin:0;text-transform:uppercase;font-size:1rem;letter-spacing:.04em}
+.season-list-heading span{font-size:.75rem;color:#94a3b8;text-transform:uppercase}
+.season-week-list{display:grid;gap:8px}
+.season-week-row{display:grid;grid-template-columns:88px minmax(0,1fr) 100px;align-items:stretch;border:1px solid #26374e;border-radius:12px;background:#07111f;overflow:hidden}
+.week-block{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;border-right:1px solid #26374e;background:#0b1626}
+.week-block small{font-size:.65rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em}
+.week-block strong{font-size:1.65rem;line-height:1;margin:3px 0}
+.week-block span{font-size:.6rem;color:#94a3b8;text-align:center}
+.week-matchups{display:grid;grid-template-columns:repeat(4,minmax(120px,1fr));align-items:center;gap:4px;padding:8px 10px}
+.compact-matchup{display:grid;grid-template-columns:1fr 18px 1fr;align-items:center;text-align:center;min-width:0;padding:0 5px;border-right:1px solid #1f2d40}
+.compact-matchup:last-child{border-right:0}
+.compact-team{min-width:0}
+.compact-team img{display:block;width:48px;height:48px;object-fit:cover;border-radius:8px;margin:0 auto 3px}
+.compact-team b{display:block;font-size:.72rem;white-space:nowrap}
+.compact-vs{font-size:.7rem;font-weight:900;color:#e2e8f0}
+.week-status{display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid #26374e;color:#fbbf24;text-transform:uppercase;font-size:.68rem;font-weight:800;gap:5px}
+.week-status .status-icon{font-size:1rem}
+.matchups-info{display:grid;grid-template-columns:2fr 1fr;gap:12px}
+.how-it-works h3,.owner-feedback h3{margin:0 0 10px;text-transform:uppercase;font-size:.9rem;color:#38bdf8}
+.rules-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.rule-item{display:flex;gap:9px;align-items:flex-start;color:#cbd5e1;font-size:.78rem;line-height:1.4}
+.rule-icon{font-size:1.25rem}.rule-item b{display:block;color:#f8fafc;margin-bottom:2px}
+.owner-feedback{border:1px solid rgba(168,85,247,.45);border-radius:12px;padding:12px;background:rgba(88,28,135,.10)}
+.owner-feedback h3{color:#c084fc}.owner-feedback p{margin:0;color:#d8b4fe;font-size:.8rem;line-height:1.45}.owner-feedback a{color:#38bdf8}
+@media(max-width:980px){.matchups-current-grid{grid-template-columns:repeat(2,1fr)}.season-week-row{grid-template-columns:78px minmax(0,1fr) 82px}.week-matchups{grid-template-columns:repeat(2,1fr);row-gap:9px}.compact-matchup:nth-child(2){border-right:0}.compact-matchup:nth-child(-n+2){border-bottom:1px solid #1f2d40;padding-bottom:7px}.matchups-info{grid-template-columns:1fr}.rules-strip{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.matchups-titlebar{align-items:flex-start}.season-chip{font-size:.65rem;padding:8px}.matchups-current-grid{grid-template-columns:1fr}.featured-helmet-vs{max-width:300px;margin:8px auto}.featured-team img{height:105px}.season-week-row{grid-template-columns:58px minmax(0,1fr)}.week-block{padding:8px 4px}.week-block strong{font-size:1.4rem}.week-block span{display:none}.week-matchups{grid-template-columns:1fr;padding:8px}.compact-matchup,.compact-matchup:nth-child(2){border-right:0;border-bottom:1px solid #1f2d40;padding:6px 0}.compact-matchup:last-child{border-bottom:0}.compact-team img{width:54px;height:54px}.compact-team b{font-size:.78rem}.week-status{grid-column:1/-1;border-left:0;border-top:1px solid #26374e;flex-direction:row;padding:7px}.rules-strip{grid-template-columns:1fr}.season-list-heading span{display:none}}
+
+
+/* ===== DFFL PLAYOFF BRACKET ===== */
+#playoffs.playoffs-dashboard{background:transparent;border:0;padding:0;box-shadow:none}
+.playoffs-shell{display:grid;gap:16px}
+.playoffs-title{text-align:center;padding:4px 0 2px}.playoffs-title h2{margin:0;color:#f8fafc;font-size:clamp(1.8rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.03em}.playoffs-title p{margin:7px 0 0;color:#93c5fd}
+.playoff-layout{display:grid;grid-template-columns:minmax(0,1fr) 245px;gap:16px;align-items:start}
+.playoff-bracket{display:grid;grid-template-columns:minmax(265px,1fr) 48px minmax(245px,.9fr) 48px minmax(245px,.9fr);gap:8px;align-items:center;background:linear-gradient(180deg,#07111f,#030913);border:1px solid #26374e;border-radius:18px;padding:16px;overflow:hidden}
+.playoff-round{display:grid;gap:12px;min-width:0}.round-heading{text-align:center;margin-bottom:2px}.round-heading strong{display:block;color:#38bdf8;font-size:1rem;text-transform:uppercase}.round-heading span{display:block;color:#94a3b8;font-size:.72rem;text-transform:uppercase;margin-top:3px}
+.playoff-game{background:#07111f;border:1px solid #334155;border-radius:13px;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.playoff-team{display:grid;grid-template-columns:30px 62px minmax(0,1fr) 38px;align-items:center;gap:7px;padding:8px 9px}.playoff-team+ .playoff-team{border-top:1px solid #26374e}.playoff-seed{font-size:1.25rem;font-weight:900;color:#38bdf8;text-align:center}.playoff-team img{width:62px;height:62px;object-fit:cover;border-radius:9px}.playoff-team-info{min-width:0}.playoff-team-info b{display:block;font-size:.82rem;white-space:nowrap}.playoff-team-info span{display:block;color:#94a3b8;font-size:.7rem;margin-top:2px}.playoff-score{font-size:1rem;font-weight:900;text-align:right}.playoff-vs{text-align:center;color:#f8fafc;font-size:.68rem;font-weight:900;padding:3px 0;background:#050b14;letter-spacing:.08em}
+.placeholder-team img{filter:grayscale(1);opacity:.45}.placeholder-team .playoff-team-info b{color:#94a3b8}.placeholder-team .playoff-seed{color:#64748b}
+.bracket-connector{display:flex;align-items:center;justify-content:center;height:100%;min-height:360px;position:relative}.bracket-connector:before{content:"";width:100%;height:2px;background:linear-gradient(90deg,#38bdf8,#ef4444);box-shadow:0 0 8px rgba(56,189,248,.4)}.connector-trophy{position:absolute;width:39px;height:39px;border:1px solid #3b82f6;border-radius:9px;background:#0b1626;display:grid;place-items:center;font-size:1.15rem}
+.semifinal-round{gap:72px}.championship-round{align-self:center}.championship-card{border-color:#f59e0b;box-shadow:0 0 24px rgba(245,158,11,.12)}.championship-card h3{margin:0;text-align:center;padding:11px;color:#fbbf24;font-size:1.12rem;text-transform:uppercase;border-bottom:1px solid rgba(245,158,11,.35)}
+.preseason-panel{background:linear-gradient(180deg,#101b2b,#07111f);border:1px solid #334155;border-radius:16px;padding:14px}.preseason-panel h3{margin:0 0 12px;text-align:center;text-transform:uppercase;font-size:.95rem}.seed-list{display:grid;gap:7px}.seed-row{display:grid;grid-template-columns:24px 48px 1fr;align-items:center;gap:7px;padding:6px 0;border-bottom:1px solid #253247}.seed-row:last-child{border-bottom:0}.seed-row>strong{font-size:1.1rem;color:#38bdf8;text-align:center}.seed-row img{width:46px;height:46px;object-fit:cover;border-radius:8px}.seed-row b{display:block;font-size:.76rem}.seed-row span{display:block;color:#94a3b8;font-size:.68rem;margin-top:2px}.seeding-note{margin-top:12px;padding-top:11px;border-top:1px solid #334155;color:#94a3b8;font-size:.73rem;line-height:1.45}
+.playoff-footnote{text-align:center;padding:11px;border:1px solid #26374e;border-radius:12px;background:#07111f;color:#cbd5e1;font-size:.82rem}.playoff-footnote b{color:#22c55e}
+@media(max-width:1050px){.playoff-layout{grid-template-columns:1fr}.preseason-panel{order:-1}.seed-list{grid-template-columns:repeat(4,1fr)}.seed-row{border:1px solid #253247;border-radius:10px;padding:7px}.playoff-bracket{grid-template-columns:minmax(245px,1fr) 30px minmax(225px,.9fr) 30px minmax(225px,.9fr);padding:12px}.playoff-team{grid-template-columns:26px 54px minmax(0,1fr) 34px}.playoff-team img{width:54px;height:54px}}
+@media(max-width:760px){.seed-list{grid-template-columns:repeat(2,1fr)}.playoff-bracket{display:block;overflow:visible}.playoff-round{margin-bottom:18px}.semifinal-round{gap:12px}.bracket-connector{min-height:38px;height:38px}.bracket-connector:before{width:2px;height:100%;background:linear-gradient(180deg,#38bdf8,#ef4444)}.round-heading{margin-top:4px}.championship-round{margin-bottom:0}.playoff-team{grid-template-columns:28px 60px minmax(0,1fr) 38px}.playoff-team img{width:60px;height:60px}}
+@media(max-width:420px){.seed-list{grid-template-columns:1fr}.playoff-team{grid-template-columns:25px 54px minmax(0,1fr) 34px;padding:7px}.playoff-team img{width:54px;height:54px}.playoff-team-info b{font-size:.76rem}}
+
+
+/* ===== DFFL NEWSLETTER ===== */
+#newsletter.newsletter-dashboard{background:transparent;border:0;padding:0;box-shadow:none}
+.newsletter-shell{display:grid;gap:14px}
+.newsletter-masthead{position:relative;overflow:hidden;text-align:center;padding:26px 18px 20px;border:1px solid #334155;border-radius:18px;background:radial-gradient(circle at 92% 10%,rgba(245,158,11,.17),transparent 28%),linear-gradient(135deg,#020617,#071426 60%,#0b1f39)}
+.newsletter-kicker{display:inline-block;padding:6px 20px;margin-bottom:8px;background:linear-gradient(90deg,#b45309,#f59e0b,#b45309);color:#111827;font-weight:900;text-transform:uppercase;letter-spacing:.08em;clip-path:polygon(6% 0,94% 0,100% 50%,94% 100%,6% 100%,0 50%)}
+.newsletter-masthead h2{margin:0;color:#f8fafc;font-size:clamp(2.4rem,7vw,5.3rem);line-height:.9;letter-spacing:.025em;font-style:italic;text-transform:uppercase;text-shadow:0 8px 22px rgba(0,0,0,.45)}
+.newsletter-masthead p{margin:10px 0 0;color:#e2e8f0;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.newsletter-issue{margin-top:10px;color:#fbbf24;font-weight:900;text-transform:uppercase}
+.newsletter-intro-grid{display:grid;grid-template-columns:.9fr 1.55fr .9fr;gap:12px}
+.newsletter-panel{background:linear-gradient(180deg,#0b1626,#07111f);border:1px solid #334155;border-radius:14px;padding:16px}
+.newsletter-panel h3,.coming-soon-panel h3,.newsletter-feedback h3{margin:0 0 12px;color:#fbbf24;text-transform:uppercase;letter-spacing:.03em}
+.newsletter-panel p{color:#dbeafe;line-height:1.5}.newsletter-accent{color:#a3e635!important;font-weight:900;font-style:italic}
+.members-panel{text-align:center;background:#f8fafc;color:#0f172a}.members-panel h3{color:#0f172a}.members-panel p{color:#334155}.member-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid #94a3b8;border-bottom:1px solid #94a3b8;margin:14px 0}.member-grid span{padding:14px 6px;font-weight:900;text-transform:uppercase;font-size:1.05rem}.member-grid span:nth-child(-n+4){border-bottom:1px solid #cbd5e1}.member-note{font-size:.9rem;margin-bottom:0}
+.quick-rules-panel ul{padding-left:20px;margin:0}.quick-rules-panel li{margin:10px 0;color:#f8fafc}
+.before-week-strip{display:grid;grid-template-columns:1.1fr repeat(4,1fr);gap:10px;align-items:center;padding:13px 16px;border:1px solid #334155;border-radius:12px;background:#07111f}.before-week-strip strong{color:#fbbf24;text-transform:uppercase;font-size:1.05rem}.before-week-strip span{text-align:center;color:#e2e8f0}
+.lottery-news-card{display:grid;grid-template-columns:.95fr 1.05fr .95fr;gap:14px;padding:16px;border:1px solid #b45309;border-radius:16px;background:linear-gradient(180deg,#0b1626,#07111f);box-shadow:0 10px 24px rgba(0,0,0,.18)}.lottery-news-card h3{margin:0 0 10px;color:#fbbf24;text-transform:uppercase;letter-spacing:.03em}.lottery-news-card p{margin:0;color:#dbeafe;line-height:1.5}.lottery-col{min-width:0}.lottery-col+.lottery-col{border-left:1px solid rgba(51,65,85,.9);padding-left:14px}.lottery-rule-list,.payout-list{list-style:none;padding:0;margin:12px 0 0}.lottery-rule-list li,.payout-list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid rgba(51,65,85,.65);color:#f8fafc}.lottery-rule-list li:last-child,.payout-list li:last-child{border-bottom:0}.lottery-rule-list strong,.payout-list strong{color:#22c55e}.lottery-table{width:100%;border-collapse:collapse;margin-top:6px}.lottery-table th,.lottery-table td{padding:6px 4px;border-bottom:1px solid rgba(51,65,85,.6);text-align:left}.lottery-table th{color:#cbd5e1;font-size:.76rem;text-transform:uppercase;letter-spacing:.05em}.lottery-table td{color:#f8fafc;font-size:.92rem}.lottery-table tfoot td{font-weight:900;color:#a3e635}.lottery-note{margin-top:10px;color:#cbd5e1;font-size:.82rem}.payout-total{margin-top:12px;padding-top:10px;border-top:1px solid rgba(51,65,85,.7);font-weight:900;color:#fbbf24;text-transform:uppercase}.rankings-toggle-wrap{padding-top:2px}.rankings-toggle{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:14px 16px;border:1px solid #334155;border-radius:14px;background:linear-gradient(180deg,#0b1626,#07111f);color:#f8fafc;cursor:pointer;text-align:left}.rankings-toggle strong{display:block;font-size:clamp(1.5rem,3.6vw,2.5rem);text-transform:uppercase}.rankings-toggle small{display:block;margin-top:5px;color:#cbd5e1;font-size:.95rem}.toggle-arrow{font-size:1.55rem;color:#fbbf24;transition:transform .2s ease}.rankings-toggle.collapsed .toggle-arrow{transform:rotate(-90deg)}.preseason-rankings-content{padding-top:10px}
+.newsletter-rankings-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.division-rank-card{position:relative;overflow:hidden;background:linear-gradient(180deg,#07111f,#040b14);border:1px solid #334155;border-radius:14px;padding:12px;min-width:0}.rank-card-head{display:flex;align-items:center;gap:9px;border-bottom:1px solid #26374e;padding-bottom:8px}.rank-number{display:grid;place-items:center;width:40px;height:40px;border-radius:9px;background:#1d4ed8;font-size:1.35rem;font-weight:900}.rank-card-head h4{margin:0;text-transform:uppercase;font-size:1rem}.rank-helmet{display:block;width:100%;height:142px;object-fit:cover;border-radius:10px;margin:10px auto}.players-label{font-size:.72rem;text-transform:uppercase;color:#a3e635;font-weight:900;letter-spacing:.06em;margin-bottom:5px}.division-rank-card ul{list-style:none;padding:0;margin:0}.division-rank-card li{padding:4px 0;color:#e2e8f0;font-size:.78rem;border-bottom:1px solid rgba(51,65,85,.45)}.division-rank-card li:last-child{border-bottom:0}
+.rank-2 .rank-number{background:#15803d}.rank-3 .rank-number{background:#7e22ce}.rank-4 .rank-number{background:#0f766e}.rank-5 .rank-number{background:#a16207}.rank-6 .rank-number{background:#c2410c}.rank-7 .rank-number{background:#0369a1}.rank-8 .rank-number{background:#be123c}
+.coming-soon-panel{display:grid;grid-template-columns:1.1fr 2fr;gap:15px;align-items:center;padding:15px;border:1px solid #334155;border-radius:14px;background:linear-gradient(180deg,#0b1626,#07111f)}.coming-soon-panel p{margin:0;color:#cbd5e1;line-height:1.45}.coming-items{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.coming-items span{padding:10px 7px;border:1px solid #334155;border-radius:8px;text-align:center;font-size:.76rem;font-weight:800;color:#f8fafc}.coming-soon-panel>strong{grid-column:1/-1;text-align:center;color:#fbbf24;text-transform:uppercase;letter-spacing:.06em}
+.newsletter-feedback{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;align-items:center;padding:15px;border:1px solid #334155;border-radius:14px;background:#07111f}.newsletter-feedback p{margin:0;color:#cbd5e1}.newsletter-feedback strong{display:block;color:#fbbf24;text-transform:uppercase}.newsletter-feedback a{display:inline-block;margin-top:5px;color:#38bdf8;font-weight:800;text-decoration:none}
+.newsletter-footer-line{text-align:center;padding:14px;border-radius:12px;background:#07111f;border:1px solid #334155;font-weight:900;text-transform:uppercase;letter-spacing:.06em}.newsletter-footer-line span{color:#a3e635}
+@media(max-width:980px){.newsletter-intro-grid{grid-template-columns:1fr 1fr}.quick-rules-panel{grid-column:1/-1}.newsletter-rankings-grid{grid-template-columns:repeat(2,1fr)}.before-week-strip{grid-template-columns:repeat(2,1fr)}.before-week-strip strong{grid-column:1/-1;text-align:center}.lottery-news-card{grid-template-columns:1fr}.lottery-col+.lottery-col{border-left:0;border-top:1px solid rgba(51,65,85,.9);padding-left:0;padding-top:14px}.coming-soon-panel{grid-template-columns:1fr}.coming-items{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.newsletter-intro-grid{grid-template-columns:1fr}.member-grid{grid-template-columns:repeat(2,1fr)}.member-grid span:nth-child(-n+6){border-bottom:1px solid #cbd5e1}.member-grid span:nth-child(odd){border-right:1px solid #cbd5e1}.newsletter-rankings-grid{grid-template-columns:1fr}.rank-helmet{height:auto;max-height:220px}.before-week-strip{grid-template-columns:1fr}.coming-items{grid-template-columns:repeat(2,1fr)}.newsletter-feedback{grid-template-columns:1fr}.newsletter-masthead{padding:22px 12px}.newsletter-masthead h2{font-size:2.8rem}.newsletter-masthead p{font-size:.72rem}.rankings-toggle{padding:12px}.rankings-toggle strong{font-size:1.45rem}.rankings-toggle small{font-size:.84rem}}
+
+/* ===== DFFL RULES & SCORING ===== */
+#rules.rules-dashboard{background:transparent;border:0;padding:0;box-shadow:none}
+.rules-shell{display:grid;gap:16px}
+.rules-hero{padding:24px;border:1px solid #334155;border-radius:18px;background:radial-gradient(circle at 92% 12%,rgba(56,189,248,.16),transparent 28%),linear-gradient(135deg,#020617,#081527 60%,#0b1f39);text-align:center}
+.rules-kicker{display:inline-block;padding:5px 12px;border-radius:999px;background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.35);color:#7dd3fc;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.rules-hero h2{margin:12px 0 8px;color:#f8fafc;font-size:clamp(2rem,5vw,3.4rem);text-transform:uppercase}
+.rules-hero p{max-width:820px;margin:0 auto;color:#cbd5e1;line-height:1.55}
+.rules-jumpbar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rules-jumpbar button{border-radius:12px;padding:12px 10px;font-weight:800;background:linear-gradient(180deg,#172033,#0b1220)}
+.rules-jumpbar button:hover{border-color:#38bdf8;color:#7dd3fc}
+.rules-section-card{background:linear-gradient(180deg,#101b2b,#07111f);border:1px solid #334155;border-radius:16px;padding:17px;scroll-margin-top:90px}
+.rules-section-title{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.rules-icon{font-size:1.65rem}
+.rules-section-title h3{margin:0;color:#f8fafc;text-transform:uppercase;letter-spacing:.03em}
+.rules-section-title p{margin:5px 0 0;color:#94a3b8;font-size:.9rem}
+.rules-metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rules-metric{background:#07111f;border:1px solid #26374e;border-radius:12px;padding:12px;text-align:center}
+.rules-metric span{display:block;font-size:1.2rem}.rules-metric b{display:block;font-size:1.55rem;margin:4px 0;color:#38bdf8}.rules-metric small{color:#cbd5e1}
+.rules-note{margin-top:12px;padding:11px 12px;border-radius:10px;background:rgba(56,189,248,.08);border:1px solid rgba(56,189,248,.22);color:#cbd5e1;font-size:.88rem;line-height:1.5}
+.rules-note b{color:#f8fafc}
+.rules-two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+.rules-table{margin-top:0;background:#07111f;border:1px solid #26374e}
+.rules-table th{background:#050d19}.rules-table td:last-child,.rules-table th:last-child{text-align:right}
+.rules-total-row td{font-weight:900;color:#a3e635}
+.deadline-card{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#07111f;border:1px solid #26374e;border-radius:14px;padding:18px}
+.deadline-icon{font-size:2rem}.deadline-card small{color:#94a3b8;text-transform:uppercase;letter-spacing:.08em;margin-top:5px}.deadline-card strong{font-size:2rem;margin-top:6px}.deadline-card b{font-size:1.45rem;color:#38bdf8}.deadline-card span{color:#cbd5e1}.deadline-card p{max-width:460px;color:#94a3b8;font-size:.82rem;line-height:1.45;margin:12px 0 0}
+.roster-rule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.roster-rule-card{border:1px solid #334155;border-radius:14px;padding:14px;background:#07111f}
+.roster-rule-card.normal{border-color:rgba(34,197,94,.38)}.roster-rule-card.one-bye{border-color:rgba(245,158,11,.42)}.roster-rule-card.two-bye{border-color:rgba(239,68,68,.42)}
+.roster-rule-head{display:flex;align-items:center;gap:9px}.roster-rule-head>span{font-size:1.25rem}.roster-rule-head b{display:block}.roster-rule-head small{display:block;color:#94a3b8;margin-top:2px}
+.roster-rule-card ul{padding-left:18px;color:#dbeafe;font-size:.85rem;line-height:1.5}.rule-example{margin-top:10px;padding-top:9px;border-top:1px solid #26374e;color:#cbd5e1;font-size:.82rem}.rule-example b{color:#f8fafc}
+.advance-submit{display:flex;gap:12px;margin-top:14px;padding:13px 14px;border:1px solid rgba(168,85,247,.34);border-radius:12px;background:rgba(88,28,135,.10)}
+.advance-submit>span{font-size:1.45rem}.advance-submit b{color:#d8b4fe}.advance-submit p{margin:4px 0 0;color:#cbd5e1;font-size:.85rem;line-height:1.45}
+.scoring-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.scoring-card{background:#07111f;border:1px solid #26374e;border-radius:14px;padding:13px}
+.scoring-card h4{margin:0 0 9px;color:#7dd3fc}
+.score-line{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid #1f2d40;font-size:.82rem}.score-line:last-child{border-bottom:0}.score-line span{color:#cbd5e1}.score-line b{white-space:nowrap}
+.points-allowed-wrap{margin-top:14px}.subheading{margin:0 0 8px;color:#f8fafc}
+.scoring-example{background:#07111f;border:1px solid rgba(34,197,94,.34);border-radius:14px;padding:16px}
+.scoring-example small{color:#94a3b8;text-transform:uppercase;letter-spacing:.07em}.scoring-example h4{margin:5px 0 12px;color:#a3e635}
+.scoring-example div{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #253247;color:#cbd5e1}.scoring-example strong{display:block;margin-top:12px;text-align:right;font-size:1.2rem;color:#a3e635}
+.playoff-rules-box,.tiebreaker-box{background:#07111f;border:1px solid #26374e;border-radius:14px;padding:14px}
+.playoff-rules-box h4,.tiebreaker-box h4{margin:0 0 10px;color:#f8fafc}
+.playoff-rule-row{display:grid;grid-template-columns:105px 1fr;gap:9px;padding:9px 0;border-bottom:1px solid #253247}.playoff-rule-row:last-child{border-bottom:0}.playoff-rule-row b{color:#38bdf8}.playoff-rule-row span{color:#cbd5e1;font-size:.86rem}
+.tiebreaker-box ol{margin:0;padding-left:22px}.tiebreaker-box li{padding:8px 0;border-bottom:1px solid #253247;color:#dbeafe}.tiebreaker-box li:last-child{border-bottom:0}.tiebreaker-box li span{display:block;color:#94a3b8;font-size:.79rem;margin-top:3px}
+.point-diff-example{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;margin-top:14px;padding:13px;border:1px solid rgba(56,189,248,.25);border-radius:12px;background:rgba(56,189,248,.06)}
+.point-diff-example>div:not(.vs-pill){background:#07111f;border:1px solid #26374e;border-radius:10px;padding:11px}.point-diff-example small{display:block;color:#94a3b8}.point-diff-example b{display:block;margin:4px 0}.point-diff-example span{color:#cbd5e1;font-size:.86rem}.point-diff-example strong{color:#a3e635}.vs-pill{font-weight:900;color:#38bdf8}.point-diff-example p{grid-column:1/-1;margin:0;text-align:center;color:#cbd5e1;font-size:.85rem}
+.faq-list{display:grid;gap:8px}.faq-list details{background:#07111f;border:1px solid #26374e;border-radius:10px;padding:11px 13px}.faq-list summary{cursor:pointer;font-weight:800}.faq-list p{margin:9px 0 0;color:#cbd5e1;font-size:.86rem;line-height:1.5}
+@media(max-width:980px){.rules-metric-grid{grid-template-columns:repeat(2,1fr)}.scoring-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.rules-jumpbar{grid-template-columns:repeat(2,1fr)}.rules-two-col,.roster-rule-grid{grid-template-columns:1fr}.scoring-grid{grid-template-columns:1fr}.point-diff-example{grid-template-columns:1fr}.vs-pill{text-align:center}.rules-metric-grid{grid-template-columns:repeat(2,1fr)}.rules-section-card{padding:13px}.rules-hero{padding:20px 14px}}
+
+
+/* ===== HOME SEASON COUNTDOWN ===== */
+.season-countdown{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 16px;border:1px solid #334155;border-radius:14px;background:linear-gradient(180deg,#101b2b,#07111f)}
+.season-countdown-copy{min-width:0}.season-countdown-kicker{display:block;color:#38bdf8;font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.season-countdown-copy strong{display:block;margin-top:3px;font-size:1rem}.season-countdown-copy small{display:block;margin-top:3px;color:#94a3b8;font-size:.72rem}
+.season-countdown-clock{display:grid;grid-template-columns:repeat(4,minmax(54px,1fr));gap:7px;flex:0 1 360px}
+.season-countdown-clock div{text-align:center;padding:7px 8px;border:1px solid #26374e;border-radius:9px;background:#050d19}
+.season-countdown-clock b{display:block;font-size:1.2rem;line-height:1;color:#f8fafc}.season-countdown-clock span{display:block;margin-top:4px;color:#94a3b8;font-size:.58rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+@media(max-width:640px){.season-countdown{display:block;text-align:center}.season-countdown-clock{margin-top:10px;grid-template-columns:repeat(4,1fr)}.season-countdown-clock div{padding:7px 4px}.season-countdown-clock b{font-size:1.05rem}}
+
+</style>
+</head>
+<body>
+<header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
+<nav class="tabs"><button class='tab-btn' type='button' onclick="window.location.href='index.html#overview'">Home</button><button class='tab-btn' type='button' onclick="window.location.href='standings.html'">Standings</button><button class='tab-btn' type='button' onclick="window.location.href='index.html#submit'">Roster Submissions</button><button class='tab-btn' type='button' onclick="window.location.href='matchups.html'">Weekly Matchups</button><button class='tab-btn' type='button' onclick="window.location.href='lastweek.html'">Last Week</button><button class='tab-btn' type='button' onclick="window.location.href='playoffs.html'">Playoffs</button><button class='tab-btn' type='button' onclick="window.location.href='newsletter.html'">Newsletter</button><button class='tab-btn' type='button' onclick="window.location.href='schedule.html'">Schedule</button><button class='tab-btn active' type='button' onclick="window.location.href='rules.html'">Rules</button></nav>
+<main><section class="rules-dashboard">
+<div class="rules-shell">
+<div class="rules-hero">
+<div class="rules-kicker">Official 2026 League Handbook</div>
+<h2>📖 DFFL Rules &amp; Scoring</h2>
+<p>Eight owners. Eight NFL divisions. One 8-player lineup each week. Owners build rosters only from the NFL teams inside the division they control.</p>
+</div>
+<div class="rules-jumpbar">
+<button data-rule-target="rules-format" type="button">📖 League Rules</button>
+<button data-rule-target="rules-roster" type="button">⚖️ Roster Rules</button>
+<button data-rule-target="rules-scoring" type="button">📊 Scoring</button>
+<button data-rule-target="rules-playoffs" type="button">🏆 Playoffs</button>
+</div>
+<div class="rules-section-card" id="rules-format">
+<div class="rules-section-title">
+<span class="rules-icon">🏈</span>
+<div>
+<h3>League Format</h3>
+<p>Unlike traditional fantasy football, DFFL owners draft an NFL division rather than individual players.</p>
+</div>
+</div>
+<div class="rules-metric-grid">
+<div class="rules-metric"><span>👥</span><b>8</b><small>Owners</small></div>
+<div class="rules-metric"><span>🏈</span><b>8</b><small>NFL Divisions</small></div>
+<div class="rules-metric"><span>📅</span><b>10</b><small>Regular Season Games</small></div>
+<div class="rules-metric"><span>😴</span><b>11</b><small>League Off Week</small></div>
+<div class="rules-metric"><span>🏆</span><b>12</b><small>Quarterfinals</small></div>
+<div class="rules-metric"><span>⏸️</span><b>13–14</b><small>Playoff Break</small></div>
+<div class="rules-metric"><span>🥇</span><b>15</b><small>Semifinals</small></div>
+<div class="rules-metric"><span>👑</span><b>16</b><small>DFFL Super Bowl</small></div>
+</div>
+<div class="rules-note">
+<b>Player Pool:</b> There are no traditional free agents, waivers, or player trades. Your available player pool comes from the four NFL teams in the division you own.
+    </div>
+</div>
+<div class="rules-section-card" id="rules-roster">
+<div class="rules-section-title">
+<span class="rules-icon">👥</span>
+<div>
+<h3>Weekly Lineup</h3>
+<p>Every official DFFL lineup contains exactly 8 starters.</p>
+</div>
+</div>
+<div class="rules-two-col">
+<div>
+<table class="rules-table">
+<thead><tr><th>Position</th><th>Starters</th></tr></thead>
+<tbody>
+<tr><td>QB</td><td>1</td></tr>
+<tr><td>RB</td><td>2</td></tr>
+<tr><td>WR</td><td>2</td></tr>
+<tr><td>TE</td><td>1</td></tr>
+<tr><td>FLEX</td><td>1</td></tr>
+<tr><td>DEF/ST</td><td>1</td></tr>
+<tr class="rules-total-row"><td>TOTAL</td><td>8</td></tr>
+</tbody>
+</table>
+<div class="rules-note"><b>FLEX:</b> RB, WR, or TE   •   <b>No Kickers</b></div>
+</div>
+<div class="deadline-card">
+<div class="deadline-icon">🕛</div>
+<small>Weekly Roster Deadline</small>
+<strong>Thursday</strong>
+<b>12:00 PM</b>
+<span>Central Time</span>
+<p>No point penalties are used. Owners may submit future weeks in advance and replace a future roster any time before that week's deadline.</p>
+</div>
+</div>
+<div class="roster-rule-grid">
+<div class="roster-rule-card normal">
+<div class="roster-rule-head"><span>🟢</span><div><b>4 Active Teams</b><small>Normal Week</small></div></div>
+<ul>
+<li>Minimum <b>1 player</b> from each NFL team.</li>
+<li>Maximum <b>3 players</b> from any one NFL team.</li>
+</ul>
+<div class="rule-example">Valid: <b>3 + 2 + 2 + 1 = 8</b></div>
+</div>
+<div class="roster-rule-card one-bye">
+<div class="roster-rule-head"><span>🟡</span><div><b>3 Active Teams</b><small>One Team on Bye</small></div></div>
+<ul>
+<li>Minimum <b>2 players</b> from each active team.</li>
+<li>Maximum <b>4 players</b> from any one active team.</li>
+</ul>
+<div class="rule-example">Valid: <b>4 + 2 + 2 = 8</b></div>
+</div>
+<div class="roster-rule-card two-bye">
+<div class="roster-rule-head"><span>🔴</span><div><b>2 Active Teams</b><small>Two Teams on Bye</small></div></div>
+<ul>
+<li>Exactly <b>4 players</b> from each active NFL team.</li>
+</ul>
+<div class="rule-example">Required: <b>4 + 4 = 8</b></div>
+</div>
+</div>
+<div class="advance-submit">
+<span>📅</span>
+<div>
+<b>Advance Roster Submissions</b>
+<p>Owners may submit lineups for future weeks at any time as a backup for travel, work, vacations, or simply to avoid missing a deadline. The most recent valid submission before Thursday at noon Central Time becomes the official roster for that week.</p>
+</div>
+</div>
+</div>
+<div class="rules-section-card" id="rules-scoring">
+<div class="rules-section-title">
+<span class="rules-icon">📊</span>
+<div>
+<h3>Official Yahoo-Style Scoring</h3>
+<p>DFFL uses standard Yahoo-style half-PPR fantasy scoring.</p>
+</div>
+</div>
+<div class="scoring-grid">
+<div class="scoring-card">
+<h4>🎯 Passing</h4>
+<div class="score-line"><span>Passing Yards</span><b>1 / 25 yds</b></div>
+<div class="score-line"><span>Passing TD</span><b>+4</b></div>
+<div class="score-line"><span>Interception</span><b>-1</b></div>
+<div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
+</div>
+<div class="scoring-card">
+<h4>🏃 Rushing</h4>
+<div class="score-line"><span>Rushing Yards</span><b>1 / 10 yds</b></div>
+<div class="score-line"><span>Rushing TD</span><b>+6</b></div>
+<div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
+<div class="score-line"><span>Fumble Lost</span><b>-2</b></div>
+</div>
+<div class="scoring-card">
+<h4>🙌 Receiving</h4>
+<div class="score-line"><span>Reception</span><b>+0.5</b></div>
+<div class="score-line"><span>Receiving Yards</span><b>1 / 10 yds</b></div>
+<div class="score-line"><span>Receiving TD</span><b>+6</b></div>
+<div class="score-line"><span>2-Point Conversion</span><b>+2</b></div>
+<div class="score-line"><span>Fumble Lost</span><b>-2</b></div>
+</div>
+<div class="scoring-card">
+<h4>🛡️ Defense / ST</h4>
+<div class="score-line"><span>Sack</span><b>+1</b></div>
+<div class="score-line"><span>Interception</span><b>+2</b></div>
+<div class="score-line"><span>Fumble Recovery</span><b>+2</b></div>
+<div class="score-line"><span>Safety</span><b>+2</b></div>
+<div class="score-line"><span>Blocked Kick</span><b>+2</b></div>
+<div class="score-line"><span>Defensive TD</span><b>+6</b></div>
+<div class="score-line"><span>Kick/Punt Return TD</span><b>+6</b></div>
+</div>
+</div>
+<div class="rules-two-col points-allowed-wrap">
+<div>
+<h4 class="subheading">Defense — Points Allowed</h4>
+<table class="rules-table">
+<thead><tr><th>NFL Points Allowed</th><th>Fantasy Points</th></tr></thead>
+<tbody>
+<tr><td>0</td><td>+10</td></tr>
+<tr><td>1–6</td><td>+7</td></tr>
+<tr><td>7–13</td><td>+4</td></tr>
+<tr><td>14–20</td><td>+1</td></tr>
+<tr><td>21–27</td><td>0</td></tr>
+<tr><td>28–34</td><td>-1</td></tr>
+<tr><td>35+</td><td>-4</td></tr>
+</tbody>
+</table>
+</div>
+<div class="scoring-example">
+<small>Example</small>
+<h4>WR scores 17.5 points</h4>
+<div><span>6 receptions</span><b>3.0</b></div>
+<div><span>85 receiving yards</span><b>8.5</b></div>
+<div><span>1 receiving TD</span><b>6.0</b></div>
+<strong>Total: 17.5</strong>
+</div>
+</div>
+</div>
+<div class="rules-section-card" id="rules-playoffs">
+<div class="rules-section-title">
+<span class="rules-icon">🏆</span>
+<div>
+<h3>Playoffs &amp; Tiebreakers</h3>
+<p>All eight divisions reach the quarterfinal bracket, seeded by the final regular-season standings.</p>
+</div>
+</div>
+<div class="rules-two-col">
+<div class="playoff-rules-box">
+<h4>2026 Playoff Schedule</h4>
+<div class="playoff-rule-row"><b>Week 12</b><span>Quarterfinals — 1v8, 2v7, 3v6, 4v5</span></div>
+<div class="playoff-rule-row"><b>Weeks 13–14</b><span>Playoff break</span></div>
+<div class="playoff-rule-row"><b>Week 15</b><span>Semifinals</span></div>
+<div class="playoff-rule-row"><b>Week 16</b><span>DFFL Super Bowl</span></div>
+</div>
+<div class="tiebreaker-box">
+<h4>Standings Tiebreakers</h4>
+<ol>
+<li><b>Head-to-Head Record</b></li>
+<li><b>Divisional Record</b></li>
+<li><b>Point Differential</b><span>Points Scored − Points Against. Largest positive margin wins.</span></li>
+<li><b>Total Fantasy Points Scored</b></li>
+<li><b>Coin Flip</b></li>
+</ol>
+</div>
+</div>
+<div class="point-diff-example">
+<div>
+<small>Point Differential Example</small>
+<b>AFC East</b>
+<span>1,486 For − 1,401 Against = <strong>+85</strong></span>
+</div>
+<div class="vs-pill">VS</div>
+<div>
+<small>Point Differential Example</small>
+<b>NFC West</b>
+<span>1,521 For − 1,470 Against = <strong>+51</strong></span>
+</div>
+<p>AFC East wins the tiebreaker because <b>+85</b> is the larger point differential.</p>
+</div>
+</div>
+<div class="rules-section-card">
+<div class="rules-section-title">
+<span class="rules-icon">❓</span>
+<div>
+<h3>Frequently Asked Questions</h3>
+<p>Quick answers to common league questions.</p>
+</div>
+</div>
+<div class="faq-list">
+<details>
+<summary>Can I submit future lineups?</summary>
+<p>Yes. Owners may submit future weeks in advance and update them until Thursday at 12:00 PM Central Time for that week.</p>
+</details>
+<details>
+<summary>What happens if I miss the deadline?</summary>
+<p>There are no point penalties. Only a valid roster submitted by the weekly deadline can become the official lineup for that week.</p>
+</details>
+<details>
+<summary>How do bye weeks work?</summary>
+<p>Roster balance automatically changes based on whether 4, 3, or 2 NFL teams in your division are active.</p>
+</details>
+<details>
+<summary>Can I use the same player every week?</summary>
+<p>Yes, as long as the player remains eligible within your division and the weekly roster satisfies all lineup and team-balance rules.</p>
+</details>
+<details>
+<summary>How are standings ties broken?</summary>
+<p>Head-to-head, divisional record, point differential, total fantasy points scored, then coin flip.</p>
+</details>
+</div>
+</div>
+</div>
+</section></main>
+<div class="footer">DFFL Interactive League Hub</div>
+<script>
+function scrollToRule(id){
+  const el=document.getElementById(id);
+  if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+}
+</script>
+</body>
+</html>
