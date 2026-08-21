@@ -535,6 +535,71 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .home-news-detail-line b{font-size:.74rem;color:#f8fafc;white-space:nowrap}
 .mini-standing small{color:#94a3b8;font-size:.72rem}
 @media(max-width:640px){.home-news-detail-line,.home-news-detail-line span,.home-news-detail-line b{font-size:.72rem!important}}
+
+/* ===== ROSTER SUBMISSION PROGRESS STATUS ===== */
+.roster-progress-status{
+  margin:0 0 14px;
+  padding:11px 13px;
+  border:1px solid rgba(239,68,68,.42);
+  border-radius:12px;
+  background:rgba(239,68,68,.08);
+}
+.roster-progress-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.roster-progress-top strong{
+  display:block;
+  font-size:.88rem;
+  letter-spacing:.03em;
+}
+.roster-progress-top small{
+  display:block;
+  margin-top:3px;
+  color:#cbd5e1;
+  font-size:.76rem;
+}
+.roster-progress-top>span{
+  font-size:.78rem;
+  font-weight:900;
+  color:#fca5a5;
+}
+.roster-progress-track{
+  height:8px;
+  margin-top:9px;
+  overflow:hidden;
+  border-radius:999px;
+  background:#020617;
+  border:1px solid rgba(148,163,184,.20);
+}
+.roster-progress-fill{
+  width:0%;
+  height:100%;
+  border-radius:999px;
+  background:#ef4444;
+  transition:width .2s ease, background-color .2s ease;
+}
+.roster-progress-status.in-progress{
+  border-color:rgba(245,158,11,.46);
+  background:rgba(245,158,11,.08);
+}
+.roster-progress-status.in-progress .roster-progress-top>span{color:#fbbf24}
+.roster-progress-status.in-progress .roster-progress-fill{background:#f59e0b}
+.roster-progress-status.ready{
+  border-color:rgba(34,197,94,.48);
+  background:rgba(34,197,94,.08);
+}
+.roster-progress-status.ready .roster-progress-top>span{color:#86efac}
+.roster-progress-status.ready .roster-progress-fill{background:#22c55e}
+.roster-progress-status.league-bye{
+  border-color:rgba(148,163,184,.40);
+  background:rgba(71,85,105,.10);
+}
+.roster-progress-status.league-bye .roster-progress-top>span{color:#cbd5e1}
+.roster-progress-status.league-bye .roster-progress-fill{background:#64748b}
+
 </style>
 </head>
 <body>
@@ -691,7 +756,18 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 <p class="small" style="margin:12px 0 0;color:#cbd5e1;">Bye-week rules are based on the active NFL teams available in your selected division for that week.</p>
 </div>
-<div class="form-row"><div><label>Week</label><select id="weekSelect"></select></div><div><label>Division</label><select id="divisionSelect"></select></div><div><label>Owner Name</label><input id="ownerName" placeholder="Owner name"/></div><div><label>Owner Email</label><input id="ownerEmail" placeholder="owner@email.com" type="email"/></div><div><label>Other Submission (Optional)</label><textarea id="otherSubmission" placeholder="Player Name, NFL Team, Position Filled" rows="3" style="width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--input);color:var(--text)"></textarea></div></div><div aria-live="polite" class="week-availability green" id="weekAvailability"></div><div id="validationSummary"></div><div class="card division-card"><h3 id="rosterTitle">Roster</h3><p class="small" id="availableTeams"></p><table><thead><tr><th>Position</th><th>Team</th><th>Player</th><th>Pts</th></tr></thead><tbody id="rosterBody"></tbody></table><div class="total-line">Total: <span id="totalScore">0.0</span></div></div>
+<div class="form-row"><div><label>Week</label><select id="weekSelect"></select></div><div><label>Division</label><select id="divisionSelect"></select></div><div><label>Owner Name</label><input id="ownerName" placeholder="Owner name"/></div><div><label>Owner Email</label><input id="ownerEmail" placeholder="owner@email.com" type="email"/></div><div><label>Other Submission (Optional)</label><textarea id="otherSubmission" placeholder="Player Name, NFL Team, Position Filled" rows="3" style="width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);background:var(--input);color:var(--text)"></textarea></div></div><div aria-live="polite" class="week-availability green" id="weekAvailability"></div><div aria-live="polite" class="roster-progress-status not-ready" id="rosterProgressStatus">
+<div class="roster-progress-top">
+<div>
+<strong id="rosterProgressLabel">🔴 NOT READY</strong>
+<small id="rosterProgressDetail">0 of 8 roster spots filled</small>
+</div>
+<span id="rosterProgressPercent">0%</span>
+</div>
+<div aria-hidden="true" class="roster-progress-track">
+<div class="roster-progress-fill" id="rosterProgressFill"></div>
+</div>
+</div><div id="validationSummary"></div><div class="card division-card"><h3 id="rosterTitle">Roster</h3><p class="small" id="availableTeams"></p><table><thead><tr><th>Position</th><th>Team</th><th>Player</th><th>Pts</th></tr></thead><tbody id="rosterBody"></tbody></table><div class="total-line">Total: <span id="totalScore">0.0</span></div></div>
 <div class="warning-box" style="margin-top:20px;">
 <strong>Before submitting:</strong>
 <ul>
@@ -1002,6 +1078,12 @@ function validateRoster(){
     if(r.team && counts[r.team] !== undefined) counts[r.team]++;
   });
 
+  const selectedPlayers=data.rows
+    .map(r=>r.player)
+    .filter(Boolean);
+  const duplicatePlayers=[...new Set(selectedPlayers.filter((player,index)=>selectedPlayers.indexOf(player)!==index))];
+  duplicatePlayers.forEach(player=>issues.push("Duplicate player selected: "+player));
+
   if(activeTeams.length===4){
     Object.entries(counts).forEach(([t,c])=>{
       if(c<1) issues.push("Need at least 1 player from "+t);
@@ -1190,4 +1272,107 @@ document.querySelectorAll('.rules-jumpbar [data-rule-target]').forEach(function(
   }
 })();
 </script>
+
+<script>
+(function(){
+  function updateRosterProgress(){
+    var box = document.getElementById('rosterProgressStatus');
+    var label = document.getElementById('rosterProgressLabel');
+    var detail = document.getElementById('rosterProgressDetail');
+    var percentEl = document.getElementById('rosterProgressPercent');
+    var fill = document.getElementById('rosterProgressFill');
+
+    if(!box || !label || !detail || !percentEl || !fill) return;
+
+    var week = (typeof getWeekNumber === 'function') ? getWeekNumber() : 1;
+
+    if(typeof leagueByeWeeks !== 'undefined' && leagueByeWeeks.has(week)){
+      box.className = 'roster-progress-status league-bye';
+      label.textContent = '⏸️ NO ROSTER REQUIRED';
+      detail.textContent = 'DFFL league-bye week';
+      percentEl.textContent = '—';
+      fill.style.width = '0%';
+      return;
+    }
+
+    var teamSelects = Array.from(document.querySelectorAll('#rosterBody .teamSel'));
+    var playerSelects = Array.from(document.querySelectorAll('#rosterBody .playerSel'));
+    var totalSlots = 8;
+    var completed = 0;
+    var counts = {};
+    var activeTeams = (typeof getActiveTeams === 'function') ? getActiveTeams() : [];
+
+    activeTeams.forEach(function(team){ counts[team] = 0; });
+
+    for(var i=0; i<totalSlots; i++){
+      var team = teamSelects[i] ? teamSelects[i].value : '';
+      var player = playerSelects[i] ? playerSelects[i].value : '';
+
+      if(team && player){
+        completed++;
+        if(Object.prototype.hasOwnProperty.call(counts, team)){
+          counts[team]++;
+        }
+      }
+    }
+
+    var distributionValid = false;
+
+    if(completed === totalSlots){
+      if(activeTeams.length === 4){
+        distributionValid = activeTeams.every(function(team){
+          return counts[team] >= 1 && counts[team] <= 3;
+        });
+      } else if(activeTeams.length === 3){
+        distributionValid = activeTeams.every(function(team){
+          return counts[team] >= 2 && counts[team] <= 4;
+        });
+      } else if(activeTeams.length === 2){
+        distributionValid = activeTeams.every(function(team){
+          return counts[team] === 4;
+        });
+      }
+    }
+
+    var percent = Math.round((completed / totalSlots) * 100);
+    fill.style.width = percent + '%';
+    percentEl.textContent = percent + '%';
+
+    if(completed === 0){
+      box.className = 'roster-progress-status not-ready';
+      label.textContent = '🔴 NOT READY';
+      detail.textContent = '0 of 8 roster spots filled';
+    } else if(completed === totalSlots && distributionValid){
+      box.className = 'roster-progress-status ready';
+      label.textContent = '🟢 READY TO SUBMIT';
+      detail.textContent = '8 of 8 roster spots filled • roster rule satisfied';
+    } else {
+      box.className = 'roster-progress-status in-progress';
+      label.textContent = '🟡 IN PROGRESS';
+      detail.textContent = completed + ' of 8 roster spots filled' +
+        (completed === totalSlots ? ' • team-balance rule still needs correction' : '');
+    }
+  }
+
+  document.addEventListener('change', function(event){
+    if(event.target.closest('#submit')){
+      setTimeout(updateRosterProgress, 0);
+    }
+  });
+
+  document.addEventListener('input', function(event){
+    if(event.target.closest('#submit')){
+      setTimeout(updateRosterProgress, 0);
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', function(){
+    setTimeout(updateRosterProgress, 0);
+  });
+
+  /* init() has already run in the main script by the time this block is reached. */
+  setTimeout(updateRosterProgress, 0);
+})();
+</script>
+
 </body></html>
