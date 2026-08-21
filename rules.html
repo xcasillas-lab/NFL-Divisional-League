@@ -168,6 +168,70 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .roster-rule-card ul{padding-left:18px;color:#dbeafe;font-size:.85rem;line-height:1.5}.rule-example{margin-top:10px;padding-top:9px;border-top:1px solid #26374e;color:#cbd5e1;font-size:.82rem}.rule-example b{color:#f8fafc}
 .advance-submit{display:flex;gap:12px;margin-top:14px;padding:13px 14px;border:1px solid rgba(168,85,247,.34);border-radius:12px;background:rgba(88,28,135,.10)}
 .advance-submit>span{font-size:1.45rem}.advance-submit b{color:#d8b4fe}.advance-submit p{margin:4px 0 0;color:#cbd5e1;font-size:.85rem;line-height:1.45}
+
+.late-injury-rule{
+  margin-top:14px;
+  padding:15px 16px;
+  border:1px solid rgba(239,68,68,.42);
+  border-radius:12px;
+  background:linear-gradient(180deg,rgba(127,29,29,.18),rgba(69,10,10,.08));
+}
+.late-injury-rule-head{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  margin-bottom:10px;
+}
+.late-injury-rule-head>span{
+  font-size:1.5rem;
+  line-height:1;
+}
+.late-injury-rule-head b{
+  display:block;
+  color:#fecaca;
+  font-size:1rem;
+}
+.late-injury-rule p{
+  margin:8px 0;
+  color:#dbeafe;
+  font-size:.86rem;
+  line-height:1.55;
+}
+.late-injury-rule ol{
+  margin:10px 0 12px;
+  padding-left:22px;
+  color:#dbeafe;
+  font-size:.86rem;
+  line-height:1.55;
+}
+.late-injury-rule li{
+  margin:7px 0;
+}
+.late-injury-rule ul{
+  margin:5px 0 0;
+  padding-left:20px;
+}
+.late-injury-example{
+  margin-top:12px;
+  padding:12px;
+  border-radius:10px;
+  background:#07111f;
+  border:1px solid rgba(248,113,113,.30);
+}
+.late-injury-example h4{
+  margin:0 0 8px;
+  color:#fca5a5;
+}
+.late-injury-example strong{
+  color:#fff;
+}
+.late-injury-warning{
+  margin-top:12px !important;
+  padding-top:10px;
+  border-top:1px solid rgba(248,113,113,.22);
+  color:#f8fafc !important;
+  font-weight:700;
+}
 .scoring-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .scoring-card{background:#07111f;border:1px solid #26374e;border-radius:14px;padding:13px}
 .scoring-card h4{margin:0 0 9px;color:#7dd3fc}
@@ -300,6 +364,41 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p>Owners may submit lineups for future weeks at any time as a backup for travel, work, vacations, or simply to avoid missing a deadline. The most recent valid submission before Thursday at noon Central Time becomes the official roster for that week.</p>
 </div>
 </div>
+<div class="late-injury-rule">
+<div class="late-injury-rule-head">
+<span>🚑</span>
+<div>
+<b>Late Injury Replacement Rule</b>
+</div>
+</div>
+
+<p>If a player on an owner’s official DFFL roster is ruled out, injured, inactive, or otherwise unable to play <strong>after the Thursday 12:00 PM Central roster deadline</strong>, the owner may request a replacement.</p>
+
+<p><strong>To make the change official:</strong></p>
+
+<ol>
+<li>The owner must <strong>submit the roster again with the injured/inactive player still listed in the original roster spot</strong>.</li>
+<li>In the <strong>additional submission/message field</strong>, the owner must clearly identify:
+  <ul>
+    <li>The injured or inactive player being replaced.</li>
+    <li>The replacement player who should be used instead.</li>
+  </ul>
+</li>
+<li>The replacement request must be submitted <strong>at least 5 minutes before the scheduled kickoff of that injured player’s NFL game</strong>.</li>
+<li>The replacement player must still satisfy all normal DFFL roster rules, including position eligibility, division eligibility, duplicate-player rules, and the applicable 4-, 3-, or 2-active-team roster requirements.</li>
+<li>Once the affected NFL game begins, <strong>no replacement may be made for that player</strong>.</li>
+</ol>
+
+<div class="late-injury-example">
+<h4>Example</h4>
+<p>An owner submitted <strong>Chris Olave</strong> in their official Thursday roster. On Sunday morning, Olave is ruled out.</p>
+<p>The owner should resubmit the roster with <strong>Chris Olave still shown in the official WR spot</strong>, then use the replacement notification to state:</p>
+<p><strong>Chris Olave OUT — replace with Rashid Shaheed.</strong></p>
+<p>That replacement submission must be received <strong>at least 5 minutes before the scheduled kickoff of the Saints game</strong>.</p>
+</div>
+
+<p class="late-injury-warning">This rule is intended only for players who become unavailable after the normal weekly roster deadline and does not reopen the entire roster for general lineup changes.</p>
+</div>
 </div>
 <div class="rules-section-card" id="rules-scoring">
 <div class="rules-section-title">
@@ -427,6 +526,10 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <details>
 <summary>What happens if I miss the deadline?</summary>
 <p>There are no point penalties. Only a valid roster submitted by the weekly deadline can become the official lineup for that week.</p>
+</details>
+<details>
+<summary>What if one of my players is ruled out after Thursday's deadline?</summary>
+<p>You may use the Late Injury Replacement Rule. Resubmit the roster with the injured or inactive player still in the original roster spot, identify the replacement in the additional submission/message field, and submit the request at least 5 minutes before that player’s scheduled NFL kickoff.</p>
 </details>
 <details>
 <summary>How do bye weeks work?</summary>
