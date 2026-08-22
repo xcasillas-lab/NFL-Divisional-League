@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-08-22T15:43:46-05:00",
+  "lastUpdated": "2026-08-22T15:54:39-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 0.0,
-      "rightTotal": 4.7
+      "rightTotal": 7.5
     },
     "2": {
       "leftOwner": "Juan",
@@ -36,6 +36,7 @@
         "nflTeam": "KC",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -55,6 +56,7 @@
         "nflTeam": "DEN",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -74,6 +76,7 @@
         "nflTeam": "LV",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -93,6 +96,7 @@
         "nflTeam": "DEN",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -112,6 +116,7 @@
         "nflTeam": "LV",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -131,6 +136,7 @@
         "nflTeam": "LAC",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -150,6 +156,7 @@
         "nflTeam": "LAC",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -190,6 +197,7 @@
         "nflTeam": "DET",
         "points": 3.74,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 86.0,
           "passingTouchdowns": 0.0,
@@ -209,6 +217,7 @@
         "nflTeam": "GB",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -228,6 +237,7 @@
         "nflTeam": "MIN",
         "points": 4.1,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -247,6 +257,7 @@
         "nflTeam": "CHI",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -266,6 +277,7 @@
         "nflTeam": "DET",
         "points": 1.1,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -285,6 +297,7 @@
         "nflTeam": "CHI",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -304,6 +317,7 @@
         "nflTeam": "MIN",
         "points": 2.6,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -334,6 +348,7 @@
         "nflTeam": "DAL",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -353,6 +368,7 @@
         "nflTeam": "DAL",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -372,6 +388,7 @@
         "nflTeam": "NYG",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -391,6 +408,7 @@
         "nflTeam": "DAL",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -410,6 +428,7 @@
         "nflTeam": "PHI",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -429,6 +448,7 @@
         "nflTeam": "PHI",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -448,6 +468,7 @@
         "nflTeam": "NYG",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -488,6 +509,7 @@
         "nflTeam": "CLE",
         "points": 0.0,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -507,6 +529,7 @@
         "nflTeam": "CIN",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -526,6 +549,7 @@
         "nflTeam": "PIT",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -545,6 +569,7 @@
         "nflTeam": "CIN",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -564,6 +589,7 @@
         "nflTeam": "BAL",
         "points": 10.9,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -583,6 +609,7 @@
         "nflTeam": "BAL",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -602,6 +629,7 @@
         "nflTeam": "CLE",
         "points": 10.1,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -632,6 +660,7 @@
         "nflTeam": "NE",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -651,6 +680,7 @@
         "nflTeam": "MIA",
         "points": 1.9,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -670,6 +700,7 @@
         "nflTeam": "NYJ",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -689,6 +720,7 @@
         "nflTeam": "NE",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -708,6 +740,7 @@
         "nflTeam": "BUF",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -727,6 +760,7 @@
         "nflTeam": "BUF",
         "points": 0.7,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -746,6 +780,7 @@
         "nflTeam": "NYJ",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -766,7 +801,7 @@
         "points": 4.0,
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
+          "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
@@ -786,6 +821,7 @@
         "nflTeam": "SEA",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -803,13 +839,14 @@
         "position": "RB",
         "name": "Jarquez Hunter",
         "nflTeam": "LAR",
-        "points": 1.1,
+        "points": 2.5,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 11.0,
+          "rushingYards": 25.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -824,6 +861,7 @@
         "nflTeam": "SF",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -841,16 +879,17 @@
         "position": "WR",
         "name": "Brennan Presley",
         "nflTeam": "LAR",
-        "points": 3.6,
+        "points": 5.0,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 5.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 21.0,
+          "receptions": 3.0,
+          "receivingYards": 30.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -862,6 +901,7 @@
         "nflTeam": "SF",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -881,6 +921,7 @@
         "nflTeam": "ARI",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -900,6 +941,7 @@
         "nflTeam": "ARI",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -930,6 +972,7 @@
         "nflTeam": "JAC",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -949,6 +992,7 @@
         "nflTeam": "HOU",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -968,6 +1012,7 @@
         "nflTeam": "IND",
         "points": 3.7,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -987,6 +1032,7 @@
         "nflTeam": "HOU",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1006,6 +1052,7 @@
         "nflTeam": "JAC",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1025,6 +1072,7 @@
         "nflTeam": "TEN",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1044,6 +1092,7 @@
         "nflTeam": "IND",
         "points": 0.0,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1074,6 +1123,7 @@
         "nflTeam": "ATL",
         "points": 3.44,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 86.0,
           "passingTouchdowns": 0.0,
@@ -1093,6 +1143,7 @@
         "nflTeam": "ATL",
         "points": 12.8,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1112,6 +1163,7 @@
         "nflTeam": "NO",
         "points": 1.4,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1131,6 +1183,7 @@
         "nflTeam": "ATL",
         "points": 4.7,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1150,6 +1203,7 @@
         "nflTeam": "NO",
         "points": 1.0,
         "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1169,6 +1223,7 @@
         "nflTeam": "TB",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1188,6 +1243,7 @@
         "nflTeam": "TB",
         "points": 0.0,
         "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
