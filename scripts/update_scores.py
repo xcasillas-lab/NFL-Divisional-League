@@ -21,11 +21,6 @@ SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/sco
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
 
 CT = ZoneInfo("America/Chicago")
-SESSION = requests.Session()
-SESSION.headers.update({
-    "User-Agent": "DFFL-Live-Scoring-Test/1.0",
-    "Accept": "application/json",
-})
 
 def normalize_name(name: str) -> str:
     name = unicodedata.normalize("NFKD", name or "")
@@ -41,7 +36,7 @@ def normalize_team(team: str) -> str:
     return aliases.get(team, team)
 
 def fetch_json(url, params=None):
-    r = SESSION.get(url, params=params, timeout=25)
+    r = requests.get(url, params=params, timeout=25)
     r.raise_for_status()
     return r.json()
 
