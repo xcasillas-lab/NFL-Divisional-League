@@ -640,6 +640,17 @@ function dfflPlayerScore(scoreData, owner, rosterPlayer, index){
     );
     if (byName) return byName.points ?? byName.fantasyPoints ?? byName.score ?? null;
   }
+  // Do not fall back to roster index when the score JSON contains named player rows.
+  // This prevents one scored player (for example Tyler Goodson) from being copied
+  // onto a different roster slot such as Cooper Rush.
+  const hasNamedRows = list.some(p =>
+    p && typeof p === "object" &&
+    String(p.name || p.player || "").trim() !== ""
+  );
+  if (hasNamedRows) return null;
+
+  // Index fallback is only for future score feeds that intentionally store
+  // anonymous rows in the exact same order as the roster.
   const item = list[index];
   if (item == null) return null;
   if (typeof item === "number") return item;
