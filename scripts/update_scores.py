@@ -22,6 +22,11 @@ SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summar
 
 CT = ZoneInfo("America/Chicago")
 
+TEAM_ALIASES = {
+    "WSH": "WAS",
+    "JAX": "JAC"
+}
+
 def normalize_name(name: str) -> str:
     name = unicodedata.normalize("NFKD", name or "")
     name = "".join(ch for ch in name if not unicodedata.combining(ch))
@@ -32,8 +37,7 @@ def normalize_name(name: str) -> str:
 
 def normalize_team(team: str) -> str:
     team = (team or "").strip().upper()
-    aliases = {"WSH": "WAS", "JAX": "JAC"}
-    return aliases.get(team, team)
+    return TEAM_ALIASES.get(team, team)
 
 def fetch_json(url, params=None):
     r = requests.get(url, params=params, timeout=25)
@@ -81,19 +85,11 @@ def blank_raw():
         "twoPointConversions": 0.0,
     }
 
-def mapped_row(category):
-    keys = category.get("keys") or []
-    labels = category.get("labels") or []
-    names = keys if keys else labels
-    return names
-
 def get_mapped_value(mapped, *candidates):
-    # Exact match first.
     for candidate in candidates:
         if candidate in mapped:
             return to_float(mapped[candidate])
 
-    # Case-insensitive/fuzzy fallback.
     lowered = {str(k).lower(): v for k, v in mapped.items()}
     for candidate in candidates:
         c = candidate.lower()
@@ -106,10 +102,6 @@ def get_mapped_value(mapped, *candidates):
     return 0.0
 
 def player_stats_from_summary(summary):
-    """
-    Return:
-      {(TEAM, normalized player name): raw stat dict}
-    """
     out = {}
 
     for team_block in (summary.get("boxscore") or {}).get("players") or []:
@@ -117,7 +109,9 @@ def player_stats_from_summary(summary):
 
         for category in team_block.get("statistics") or []:
             cat = str(category.get("name") or category.get("displayName") or "").lower()
-            field_names = mapped_row(category)
+            keys = category.get("keys") or []
+            labels = category.get("labels") or []
+            field_names = keys if keys else labels
 
             for row in category.get("athletes") or []:
                 athlete = row.get("athlete") or {}
@@ -132,50 +126,22 @@ def player_stats_from_summary(summary):
                 mapped = dict(zip(field_names, stats))
 
                 if "pass" in cat:
-                    raw["passingYards"] = max(
-                        raw["passingYards"],
-                        get_mapped_value(mapped, "passingYards", "YDS")
-                    )
-                    raw["passingTouchdowns"] = max(
-                        raw["passingTouchdowns"],
-                        get_mapped_value(mapped, "passingTouchdowns", "TD")
-                    )
-                    raw["interceptions"] = max(
-                        raw["interceptions"],
-                        get_mapped_value(mapped, "interceptions", "INT")
-                    )
+                    raw["passingYards"] = max(raw["passingYards"], get_mapped_value(mapped, "passingYards", "YDS"))
+                    raw["passingTouchdowns"] = max(raw["passingTouchdowns"], get_mapped_value(mapped, "passingTouchdowns", "TD"))
+                    raw["interceptions"] = max(raw["interceptions"], get_mapped_value(mapped, "interceptions", "INT"))
 
                 elif "rush" in cat:
-                    raw["rushingYards"] = max(
-                        raw["rushingYards"],
-                        get_mapped_value(mapped, "rushingYards", "YDS")
-                    )
-                    raw["rushingTouchdowns"] = max(
-                        raw["rushingTouchdowns"],
-                        get_mapped_value(mapped, "rushingTouchdowns", "TD")
-                    )
+                    raw["rushingYards"] = max(raw["rushingYards"], get_mapped_value(mapped, "rushingYards", "YDS"))
+                    raw["rushingTouchdowns"] = max(raw["rushingTouchdowns"], get_mapped_value(mapped, "rushingTouchdowns", "TD"))
 
                 elif "receiv" in cat:
-                    raw["receptions"] = max(
-                        raw["receptions"],
-                        get_mapped_value(mapped, "receptions", "REC")
-                    )
-                    raw["receivingYards"] = max(
-                        raw["receivingYards"],
-                        get_mapped_value(mapped, "receivingYards", "YDS")
-                    )
-                    raw["receivingTouchdowns"] = max(
-                        raw["receivingTouchdowns"],
-                        get_mapped_value(mapped, "receivingTouchdowns", "TD")
-                    )
+                    raw["receptions"] = max(raw["receptions"], get_mapped_value(mapped, "receptions", "REC"))
+                    raw["receivingYards"] = max(raw["receivingYards"], get_mapped_value(mapped, "receivingYards", "YDS"))
+                    raw["receivingTouchdowns"] = max(raw["receivingTouchdowns"], get_mapped_value(mapped, "receivingTouchdowns", "TD"))
 
                 elif "fumble" in cat:
-                    raw["fumblesLost"] = max(
-                        raw["fumblesLost"],
-                        get_mapped_value(mapped, "fumblesLost", "LOST")
-                    )
+                    raw["fumblesLost"] = max(raw["fumblesLost"], get_mapped_value(mapped, "fumblesLost", "LOST"))
 
-                # Some ESPN feeds expose two-point conversions in a dedicated category.
                 if "two" in cat and "point" in cat:
                     raw["twoPointConversions"] = max(
                         raw["twoPointConversions"],
@@ -185,53 +151,131 @@ def player_stats_from_summary(summary):
     return out
 
 def dffl_offensive_points(raw):
-    # DFFL/Yahoo rules currently being tested:
-    # Passing: 1 pt / 25 yds, 4 / pass TD, -1 / INT
-    # Rushing: 1 pt / 10 yds, 6 / rush TD
-    # Receiving: 0.5 / reception, 1 pt / 10 yds, 6 / rec TD
-    # Fumble lost: -2
-    # Two-point conversion: +2
     points = 0.0
     points += raw["passingYards"] / 25.0
     points += raw["passingTouchdowns"] * 4.0
     points -= raw["interceptions"] * 1.0
-
     points += raw["rushingYards"] / 10.0
     points += raw["rushingTouchdowns"] * 6.0
-
     points += raw["receptions"] * 0.5
     points += raw["receivingYards"] / 10.0
     points += raw["receivingTouchdowns"] * 6.0
-
     points -= raw["fumblesLost"] * 2.0
     points += raw["twoPointConversions"] * 2.0
-
     return round(points + 1e-9, 2)
 
+def game_scores(summary):
+    scores = {}
+    competitions = (summary.get("header") or {}).get("competitions") or []
+
+    if competitions:
+        for competitor in competitions[0].get("competitors") or []:
+            abbr = normalize_team((((competitor.get("team") or {}).get("abbreviation")) or ""))
+            if abbr:
+                scores[abbr] = int(to_float(competitor.get("score")))
+
+    return scores
+
+def points_allowed_score(points_allowed):
+    if points_allowed == 0:
+        return 10.0
+    if 1 <= points_allowed <= 6:
+        return 7.0
+    if 7 <= points_allowed <= 13:
+        return 4.0
+    if 14 <= points_allowed <= 20:
+        return 1.0
+    if 21 <= points_allowed <= 27:
+        return 0.0
+    if 28 <= points_allowed <= 34:
+        return -1.0
+    return -4.0
+
+def find_team_stat(stats, *candidates):
+    for stat in stats:
+        names = [
+            stat.get("name"),
+            stat.get("label"),
+            stat.get("displayName")
+        ]
+        flat = " ".join(str(x or "") for x in names).lower().replace(" ", "")
+
+        for candidate in candidates:
+            c = candidate.lower().replace(" ", "")
+            if c and c in flat:
+                return to_float(stat.get("value", stat.get("displayValue")))
+
+    return 0.0
+
+def defense_from_summary(summary, target_team):
+    target_team = normalize_team(target_team)
+
+    scores = game_scores(summary)
+    if target_team not in scores:
+        return None
+
+    opponent_teams = [team for team in scores if team != target_team]
+    opponent = opponent_teams[0] if opponent_teams else None
+    points_allowed = scores.get(opponent, 0) if opponent else 0
+
+    team_stats = []
+    for team_block in (summary.get("boxscore") or {}).get("teams") or []:
+        abbr = normalize_team((((team_block.get("team") or {}).get("abbreviation")) or ""))
+        if abbr == target_team:
+            team_stats = team_block.get("statistics") or []
+            break
+
+    sacks = find_team_stat(team_stats, "sacks")
+    interceptions = find_team_stat(team_stats, "interceptions")
+    fumble_recoveries = find_team_stat(team_stats, "fumblesrecovered", "fumbles recovered")
+    safeties = find_team_stat(team_stats, "safeties")
+
+    score = points_allowed_score(points_allowed)
+    score += sacks * 1.0
+    score += interceptions * 2.0
+    score += fumble_recoveries * 2.0
+    score += safeties * 2.0
+
+    return {
+        "points": round(score + 1e-9, 2),
+        "raw": {
+            "pointsAllowed": points_allowed,
+            "pointsAllowedFantasy": points_allowed_score(points_allowed),
+            "sacks": sacks,
+            "interceptions": interceptions,
+            "fumbleRecoveries": fumble_recoveries,
+            "safeties": safeties
+        }
+    }
+
 def main():
-    print("DFFL two-owner offensive scoring test started")
+    print("DFFL Step 3 offense + basic D/ST scoring test started")
     print(f"Test date: {TEST_DATE}")
-    print(f"Owners: {', '.join(TARGET_OWNERS)}")
 
     roster_data = json.loads(ROSTER_FILE.read_text(encoding="utf-8"))
     score_data = json.loads(SCORE_FILE.read_text(encoding="utf-8"))
 
-    # Collect only the NFL teams needed for Juan and Xavier's current rosters.
     needed_teams = set()
+    defense_teams = set()
+
     for owner in TARGET_OWNERS:
-        for p in roster_data["rosters"][owner]["players"]:
-            if p.get("position") != "DEF" and p.get("nflTeam"):
-                needed_teams.add(normalize_team(p["nflTeam"]))
+        for player in roster_data["rosters"][owner]["players"]:
+            team = normalize_team(player.get("nflTeam") or "")
+            if team:
+                needed_teams.add(team)
+            if player.get("position") == "DEF" and team:
+                defense_teams.add(team)
 
     print(f"Needed NFL teams: {sorted(needed_teams)}")
+    print(f"Defense teams: {sorted(defense_teams)}")
 
     board = fetch_json(SCOREBOARD_URL, {"dates": TEST_DATE, "limit": 100})
     events = board.get("events", [])
     print(f"ESPN events found: {len(events)}")
 
-    # Download each relevant game summary once.
     summaries = []
     relevant_statuses = []
+    summary_by_team = {}
 
     for event in events:
         teams = event_teams(event)
@@ -243,10 +287,13 @@ def main():
             continue
 
         print(f"Relevant event: {event.get('name')} | id={event_id}")
-        summaries.append(fetch_json(SUMMARY_URL, {"event": event_id}))
+        summary = fetch_json(SUMMARY_URL, {"event": event_id})
+        summaries.append(summary)
         relevant_statuses.append(event_status(event))
 
-    # Merge all player stat rows from relevant games.
+        for team in teams:
+            summary_by_team[team] = summary
+
     all_stats = {}
     for summary in summaries:
         all_stats.update(player_stats_from_summary(summary))
@@ -265,17 +312,31 @@ def main():
             name = player.get("name") or ""
             team = normalize_team(player.get("nflTeam") or "")
 
-            # DEF is intentionally left at zero in Step 2.
             if position == "DEF":
+                summary = summary_by_team.get(team)
+                defense = defense_from_summary(summary, team) if summary else None
+
+                if defense:
+                    points = defense["points"]
+                    found = True
+                    raw = defense["raw"]
+                else:
+                    points = 0.0
+                    found = False
+                    raw = {}
+
                 rows.append({
                     "position": position,
                     "name": name,
                     "nflTeam": team,
-                    "points": 0.0,
-                    "foundInFeed": False,
-                    "note": "DEF scoring will be added in Step 3."
+                    "points": points,
+                    "foundInFeed": found,
+                    "raw": raw,
+                    "note": "Basic D/ST: points allowed, sacks, INT, fumble recoveries, safeties."
                 })
-                print(f"{position:4} {name}: 0.00 (DEF deferred to Step 3)")
+
+                total += points
+                print(f"{position:4} {name}: {points:.2f} | found={found} | raw={raw}")
                 continue
 
             raw = all_stats.get((team, normalize_name(name)), blank_raw())
@@ -297,9 +358,8 @@ def main():
         total = round(total, 2)
         owner_totals[owner] = total
         score_data.setdefault("players", {})[owner] = rows
-        print(f"{owner} offensive total: {total:.2f}")
+        print(f"{owner} total including basic D/ST: {total:.2f}")
 
-    # Update only Matchup 2 (Juan vs Xavier) totals.
     for matchup in score_data.get("matchups", {}).values():
         left = matchup.get("leftOwner")
         right = matchup.get("rightOwner")
@@ -320,9 +380,10 @@ def main():
     score_data["source"] = {
         "primary": "ESPN public NFL JSON",
         "date": TEST_DATE,
-        "testStage": "two-owner-offensive-scoring",
+        "testStage": "two-owner-offense-plus-basic-defense",
         "owners": TARGET_OWNERS,
-        "defenseIncluded": False
+        "defenseIncluded": True,
+        "defenseNote": "Basic D/ST only; defensive TD, return TD and blocked-kick scoring are not yet included."
     }
 
     SCORE_FILE.write_text(
@@ -335,7 +396,7 @@ def main():
     print(f"Juan: {owner_totals.get('Juan', 0):.2f}")
     print(f"Xavier: {owner_totals.get('Xavier', 0):.2f}")
     print(f"Updated: {SCORE_FILE}")
-    print("DFFL two-owner offensive scoring test completed successfully")
+    print("DFFL Step 3 completed successfully")
 
 if __name__ == "__main__":
     main()
