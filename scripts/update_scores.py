@@ -3,7 +3,7 @@
 import os
 import requests
 
-TEST_DATE = os.environ.get("DFFL_TEST_DATE", "20260820")
+TEST_DATE = "20260820"  # Fixed diagnostic date: Raiders at Texans
 TARGET_TEAM = "LV"
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
