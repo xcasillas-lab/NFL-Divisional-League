@@ -207,10 +207,107 @@ def find_team_stat(stats, *candidates):
 
     return 0.0
 
+def player_return_and_defense_tds(summary, target_team):
+    """
+    Sum D/ST touchdown categories from ESPN player box-score rows:
+      - interception return TD
+      - fumble return TD
+      - kick return TD
+      - punt return TD
+
+    Returns:
+      defensive_td_count, return_td_count
+    """
+    target_team = normalize_team(target_team)
+    defensive_tds = 0.0
+    return_tds = 0.0
+
+    for team_block in (summary.get("boxscore") or {}).get("players") or []:
+        team = normalize_team((((team_block.get("team") or {}).get("abbreviation")) or ""))
+        if team != target_team:
+            continue
+
+        for category in team_block.get("statistics") or []:
+            cat = str(category.get("name") or category.get("displayName") or "").lower()
+            keys = category.get("keys") or []
+            labels = category.get("labels") or []
+            field_names = keys if keys else labels
+
+            for row in category.get("athletes") or []:
+                stats = row.get("stats") or []
+                mapped = dict(zip(field_names, stats))
+
+                # Defensive TDs.
+                if "interception" in cat:
+                    defensive_tds += get_mapped_value(
+                        mapped,
+                        "interceptionTouchdowns",
+                        "interceptionReturnTouchdowns",
+                        "TD"
+                    )
+
+                elif "fumble" in cat:
+                    defensive_tds += get_mapped_value(
+                        mapped,
+                        "fumbleReturnTouchdowns",
+                        "fumbleTouchdowns",
+                        "TD"
+                    )
+
+                # Special-teams return TDs.
+                elif "kickreturn" in cat or "kick return" in cat:
+                    return_tds += get_mapped_value(
+                        mapped,
+                        "kickReturnTouchdowns",
+                        "TD"
+                    )
+
+                elif "puntreturn" in cat or "punt return" in cat:
+                    return_tds += get_mapped_value(
+                        mapped,
+                        "puntReturnTouchdowns",
+                        "TD"
+                    )
+
+    return defensive_tds, return_tds
+
+def blocked_kicks_from_team_stats(team_stats):
+    """
+    ESPN labels vary. Count blocked punts, field goals and PATs when present.
+    Avoid counting the same stat twice by reading one matching value per label.
+    """
+    blocked = 0.0
+    seen_labels = set()
+
+    for stat in team_stats:
+        names = [
+            stat.get("name"),
+            stat.get("label"),
+            stat.get("displayName")
+        ]
+        label = " ".join(str(x or "") for x in names).lower().replace(" ", "")
+
+        if not label or label in seen_labels:
+            continue
+
+        if (
+            "blockedpunt" in label
+            or "puntsblocked" in label
+            or "blockedfieldgoal" in label
+            or "fieldgoalsblocked" in label
+            or "blockedpat" in label
+            or "extrapointsblocked" in label
+            or "blockedkick" in label
+        ):
+            blocked += to_float(stat.get("value", stat.get("displayValue")))
+            seen_labels.add(label)
+
+    return blocked
+
 def defense_from_summary(summary, target_team, game_status):
     target_team = normalize_team(target_team)
 
-    # Important: a defense should NOT receive the +10 shutout bonus before kickoff.
+    # A defense should not receive the +10 shutout bonus before kickoff.
     if game_status == "pre-game":
         return {
             "points": 0.0,
@@ -220,7 +317,10 @@ def defense_from_summary(summary, target_team, game_status):
                 "sacks": 0.0,
                 "interceptions": 0.0,
                 "fumbleRecoveries": 0.0,
-                "safeties": 0.0
+                "safeties": 0.0,
+                "blockedKicks": 0.0,
+                "defensiveTD": 0.0,
+                "returnTD": 0.0
             },
             "note": "Game has not started; D/ST score remains 0.00."
         }
@@ -244,12 +344,18 @@ def defense_from_summary(summary, target_team, game_status):
     interceptions = find_team_stat(team_stats, "interceptions")
     fumble_recoveries = find_team_stat(team_stats, "fumblesrecovered", "fumbles recovered")
     safeties = find_team_stat(team_stats, "safeties")
+    blocked_kicks = blocked_kicks_from_team_stats(team_stats)
+
+    defensive_tds, return_tds = player_return_and_defense_tds(summary, target_team)
 
     score = points_allowed_score(points_allowed)
     score += sacks * 1.0
     score += interceptions * 2.0
     score += fumble_recoveries * 2.0
     score += safeties * 2.0
+    score += blocked_kicks * 2.0
+    score += defensive_tds * 6.0
+    score += return_tds * 6.0
 
     return {
         "points": round(score + 1e-9, 2),
@@ -259,12 +365,16 @@ def defense_from_summary(summary, target_team, game_status):
             "sacks": sacks,
             "interceptions": interceptions,
             "fumbleRecoveries": fumble_recoveries,
-            "safeties": safeties
-        }
+            "safeties": safeties,
+            "blockedKicks": blocked_kicks,
+            "defensiveTD": defensive_tds,
+            "returnTD": return_tds
+        },
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
     }
 
 def main():
-    print("DFFL Step 3 offense + basic D/ST scoring test started")
+    print("DFFL Step 3B full D/ST scoring test started")
     print(f"Test date: {TEST_DATE}")
 
     roster_data = json.loads(ROSTER_FILE.read_text(encoding="utf-8"))
@@ -351,7 +461,7 @@ def main():
                     "points": points,
                     "foundInFeed": found,
                     "raw": raw,
-                    "note": defense.get("note", "Basic D/ST: points allowed, sacks, INT, fumble recoveries, safeties.") if defense else "No game data found."
+                    "note": defense.get("note", "Full D/ST scoring.") if defense else "No game data found."
                 })
 
                 total += points
@@ -399,10 +509,10 @@ def main():
     score_data["source"] = {
         "primary": "ESPN public NFL JSON",
         "date": TEST_DATE,
-        "testStage": "two-owner-offense-plus-basic-defense",
+        "testStage": "two-owner-offense-plus-full-defense",
         "owners": TARGET_OWNERS,
         "defenseIncluded": True,
-        "defenseNote": "Basic D/ST only; defensive TD, return TD and blocked-kick scoring are not yet included."
+        "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
     }
 
     SCORE_FILE.write_text(
@@ -415,7 +525,7 @@ def main():
     print(f"Juan: {owner_totals.get('Juan', 0):.2f}")
     print(f"Xavier: {owner_totals.get('Xavier', 0):.2f}")
     print(f"Updated: {SCORE_FILE}")
-    print("DFFL Step 3 completed successfully")
+    print("DFFL Step 3B full D/ST completed successfully")
 
 if __name__ == "__main__":
     main()
