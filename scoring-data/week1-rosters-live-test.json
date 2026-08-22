@@ -187,18 +187,18 @@
       "players": [
         {
           "position": "QB",
-          "name": "Jayden Daniels",
-          "nflTeam": "WAS"
-        },
-        {
-          "position": "RB",
-          "name": "Tyrone Tracy Jr.",
-          "nflTeam": "NYG"
-        },
-        {
-          "position": "RB",
-          "name": "Israel Abanikanda",
+          "name": "Joe Milton III",
           "nflTeam": "DAL"
+        },
+        {
+          "position": "RB",
+          "name": "Malik Davis",
+          "nflTeam": "DAL"
+        },
+        {
+          "position": "RB",
+          "name": "Eric Gray",
+          "nflTeam": "NYG"
         },
         {
           "position": "WR",
@@ -207,23 +207,23 @@
         },
         {
           "position": "WR",
-          "name": "Stefon Diggs",
-          "nflTeam": "WAS"
-        },
-        {
-          "position": "TE",
-          "name": "Isaiah Likely",
-          "nflTeam": "NYG"
-        },
-        {
-          "position": "FLEX",
           "name": "Darius Cooper",
           "nflTeam": "PHI"
         },
         {
-          "position": "DEF",
-          "name": "Philadelphia Eagles",
+          "position": "TE",
+          "name": "Johnny Mundt",
           "nflTeam": "PHI"
+        },
+        {
+          "position": "FLEX",
+          "name": "Malachi Fields",
+          "nflTeam": "NYG"
+        },
+        {
+          "position": "DEF",
+          "name": "Washington Commanders",
+          "nflTeam": "WAS"
         }
       ]
     },
@@ -282,13 +282,13 @@
         },
         {
           "position": "RB",
-          "name": "Kendre Miller",
-          "nflTeam": "NO"
+          "name": "Tyler Goodson",
+          "nflTeam": "ATL"
         },
         {
           "position": "RB",
-          "name": "Sean Tucker",
-          "nflTeam": "TB"
+          "name": "Kendre Miller",
+          "nflTeam": "NO"
         },
         {
           "position": "WR",
@@ -302,7 +302,7 @@
         },
         {
           "position": "TE",
-          "name": "Bauer Sharp",
+          "name": "Payne Durham",
           "nflTeam": "TB"
         },
         {
@@ -312,8 +312,8 @@
         },
         {
           "position": "DEF",
-          "name": "Atlanta Falcons",
-          "nflTeam": "ATL"
+          "name": "Tampa Bay Buccaneers",
+          "nflTeam": "TB"
         }
       ]
     },
