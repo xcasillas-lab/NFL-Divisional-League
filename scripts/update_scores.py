@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ROSTER_FILE = ROOT / "scoring-data" / "week1-rosters-live-test.json"
 SCORE_FILE = ROOT / "scoring-data" / "week1-scores-live-test.json"
 
-TEST_DATE = os.environ.get("DFFL_TEST_DATE", "20260822")
+TEST_DATES = ["20260819", "20260820", "20260821", "20260822", "20260823"]
 TARGET_OWNERS = ["Dallas", "Ben", "Juan", "Xavier", "Joshua", "Kendall", "Brian", "JetLiX"]
 
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
@@ -430,7 +430,7 @@ def defense_from_summary(summary, target_team, game_status):
 
 def main():
     print("DFFL Step 4 all-8-owner scoring test started")
-    print(f"Test date: {TEST_DATE}")
+    print(f"Test dates scanned: {TEST_DATES}")
 
     roster_data = json.loads(ROSTER_FILE.read_text(encoding="utf-8"))
     score_data = json.loads(SCORE_FILE.read_text(encoding="utf-8"))
@@ -448,10 +448,21 @@ def main():
 
     print(f"Needed NFL teams: {sorted(needed_teams)}")
     print(f"Defense teams: {sorted(defense_teams)}")
+    events = []
+    seen_event_ids = set()
 
-    board = fetch_json(SCOREBOARD_URL, {"dates": TEST_DATE, "limit": 100})
-    events = board.get("events", [])
-    print(f"ESPN events found: {len(events)}")
+    for date_value in TEST_DATES:
+        board = fetch_json(SCOREBOARD_URL, {"dates": date_value, "limit": 100})
+        day_events = board.get("events", [])
+        print(f"ESPN events found for {date_value}: {len(day_events)}")
+
+        for event in day_events:
+            event_id = str(event.get("id") or "")
+            if event_id and event_id not in seen_event_ids:
+                seen_event_ids.add(event_id)
+                events.append(event)
+
+    print(f"Unique ESPN events scanned across Wednesday-Sunday: {len(events)}")
 
     summaries = []
     relevant_statuses = []
@@ -572,7 +583,7 @@ def main():
     score_data["lastUpdated"] = datetime.now(CT).isoformat(timespec="seconds")
     score_data["source"] = {
         "primary": "ESPN public NFL JSON",
-        "date": TEST_DATE,
+        "dates": TEST_DATES,
         "testStage": "all-eight-owners-full-scoring",
         "owners": TARGET_OWNERS,
         "defenseIncluded": True,
