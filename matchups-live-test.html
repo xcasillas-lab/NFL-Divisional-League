@@ -679,7 +679,10 @@ function dfflSetHelmet(img, division){
   if (!img || !division) return;
   img.dataset.helmet = division;
   img.alt = `${division} helmet`;
-  if (window.DFFL_APPROVED_HELMETS && DFFL_APPROVED_HELMETS[division]){
+
+  // DFFL_APPROVED_HELMETS is declared with const, so it is NOT a window property.
+  // Read the constant directly every time the matchup owner/division changes.
+  if (typeof DFFL_APPROVED_HELMETS !== "undefined" && DFFL_APPROVED_HELMETS[division]){
     img.src = DFFL_APPROVED_HELMETS[division];
   }
 }
