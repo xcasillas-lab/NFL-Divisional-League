@@ -1,0 +1,366 @@
+{
+  "week": 1,
+  "locked": false,
+  "rosters": {
+    "Dallas": {
+      "division": "AFC West",
+      "players": [
+        {
+          "position": "QB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "TE",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "FLEX",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "DEF",
+          "name": "",
+          "nflTeam": ""
+        }
+      ]
+    },
+    "Brian": {
+      "division": "AFC North",
+      "players": [
+        {
+          "position": "QB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "TE",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "FLEX",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "DEF",
+          "name": "",
+          "nflTeam": ""
+        }
+      ]
+    },
+    "Joshua": {
+      "division": "AFC East",
+      "players": [
+        {
+          "position": "QB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "TE",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "FLEX",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "DEF",
+          "name": "",
+          "nflTeam": ""
+        }
+      ]
+    },
+    "Kendall": {
+      "division": "AFC South",
+      "players": [
+        {
+          "position": "QB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "TE",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "FLEX",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "DEF",
+          "name": "",
+          "nflTeam": ""
+        }
+      ]
+    },
+    "Juan": {
+      "division": "NFC East",
+      "players": [
+        {
+          "position": "QB",
+          "name": "Jayden Daniels",
+          "nflTeam": "WAS"
+        },
+        {
+          "position": "RB",
+          "name": "Tyrone Tracy Jr.",
+          "nflTeam": "NYG"
+        },
+        {
+          "position": "RB",
+          "name": "Israel Abanikanda",
+          "nflTeam": "DAL"
+        },
+        {
+          "position": "WR",
+          "name": "Camden Brown",
+          "nflTeam": "DAL"
+        },
+        {
+          "position": "WR",
+          "name": "Stefon Diggs",
+          "nflTeam": "WAS"
+        },
+        {
+          "position": "TE",
+          "name": "Isaiah Likely",
+          "nflTeam": "NYG"
+        },
+        {
+          "position": "FLEX",
+          "name": "Darius Cooper",
+          "nflTeam": "PHI"
+        },
+        {
+          "position": "DEF",
+          "name": "Philadelphia Eagles",
+          "nflTeam": "PHI"
+        }
+      ]
+    },
+    "JetLiX": {
+      "division": "NFC North",
+      "players": [
+        {
+          "position": "QB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "TE",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "FLEX",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "DEF",
+          "name": "",
+          "nflTeam": ""
+        }
+      ]
+    },
+    "Xavier": {
+      "division": "NFC South",
+      "players": [
+        {
+          "position": "QB",
+          "name": "Cooper Rush",
+          "nflTeam": "ATL"
+        },
+        {
+          "position": "RB",
+          "name": "Kendre Miller",
+          "nflTeam": "NO"
+        },
+        {
+          "position": "RB",
+          "name": "Sean Tucker",
+          "nflTeam": "TB"
+        },
+        {
+          "position": "WR",
+          "name": "Chris Blair",
+          "nflTeam": "ATL"
+        },
+        {
+          "position": "WR",
+          "name": "Bub Means",
+          "nflTeam": "NO"
+        },
+        {
+          "position": "TE",
+          "name": "Bauer Sharp",
+          "nflTeam": "TB"
+        },
+        {
+          "position": "FLEX",
+          "name": "Ted Hurst III",
+          "nflTeam": "TB"
+        },
+        {
+          "position": "DEF",
+          "name": "Atlanta Falcons",
+          "nflTeam": "ATL"
+        }
+      ]
+    },
+    "Ben": {
+      "division": "NFC West",
+      "players": [
+        {
+          "position": "QB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "RB",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "WR",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "TE",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "FLEX",
+          "name": "",
+          "nflTeam": ""
+        },
+        {
+          "position": "DEF",
+          "name": "",
+          "nflTeam": ""
+        }
+      ]
+    }
+  }
+}
