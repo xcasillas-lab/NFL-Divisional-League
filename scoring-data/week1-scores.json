@@ -2,5 +2,40 @@
   "week": 1,
   "status": "pre-game",
   "lastUpdated": null,
-  "matchups": {}
+  "matchups": {
+    "1": {
+      "leftOwner": "Dallas",
+      "rightOwner": "JetLiX",
+      "leftTotal": 0,
+      "rightTotal": 0
+    },
+    "2": {
+      "leftOwner": "Juan",
+      "rightOwner": "Brian",
+      "leftTotal": 0,
+      "rightTotal": 0
+    },
+    "3": {
+      "leftOwner": "Joshua",
+      "rightOwner": "Ben",
+      "leftTotal": 0,
+      "rightTotal": 0
+    },
+    "4": {
+      "leftOwner": "Kendall",
+      "rightOwner": "Xavier",
+      "leftTotal": 0,
+      "rightTotal": 0
+    }
+  },
+  "players": {
+    "Dallas": [],
+    "JetLiX": [],
+    "Juan": [],
+    "Brian": [],
+    "Joshua": [],
+    "Ben": [],
+    "Kendall": [],
+    "Xavier": []
+  }
 }
