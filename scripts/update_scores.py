@@ -35,6 +35,61 @@ def normalize_name(name: str) -> str:
     name = re.sub(r"[^a-z0-9]+", " ", name)
     return " ".join(name.split())
 
+
+def name_parts(name: str):
+    cleaned = normalize_name(name)
+    parts = cleaned.split()
+    return parts
+
+def player_name_matches(roster_name: str, feed_name: str) -> bool:
+    """
+    Match Yahoo/DFFL full names to abbreviated NFL/ESPN names.
+
+    Examples:
+      Mike Washington Jr.  <-> M Washington
+      Joe Milton III       <-> J Milton
+
+    Matching priority:
+      1) Normalized full-name exact match.
+      2) Same last name + same first initial.
+    """
+    a = normalize_name(roster_name)
+    b = normalize_name(feed_name)
+
+    if not a or not b:
+        return False
+
+    if a == b:
+        return True
+
+    ap = name_parts(roster_name)
+    bp = name_parts(feed_name)
+
+    if len(ap) >= 2 and len(bp) >= 2:
+        same_last = ap[-1] == bp[-1]
+        same_initial = ap[0][0] == bp[0][0]
+        if same_last and same_initial:
+            return True
+
+    return False
+
+def find_player_stats(all_stats, team: str, roster_name: str):
+    """
+    First try exact normalized name. If that misses, fall back to
+    first-initial + last-name matching within the same NFL team.
+    """
+    exact_key = (team, normalize_name(roster_name))
+    if exact_key in all_stats:
+        return all_stats[exact_key], True, "exact"
+
+    for (feed_team, feed_name), raw in all_stats.items():
+        if feed_team != team:
+            continue
+        if player_name_matches(roster_name, feed_name):
+            return raw, True, "initial-last"
+
+    return blank_raw(), False, "not-found"
+
 def normalize_team(team: str) -> str:
     team = (team or "").strip().upper()
     return TEAM_ALIASES.get(team, team)
@@ -468,8 +523,7 @@ def main():
                 print(f"{position:4} {name}: {points:.2f} | found={found} | raw={raw}")
                 continue
 
-            raw = all_stats.get((team, normalize_name(name)), blank_raw())
-            found = (team, normalize_name(name)) in all_stats
+            raw, found, match_method = find_player_stats(all_stats, team, name)
             points = dffl_offensive_points(raw)
 
             rows.append({
@@ -478,11 +532,12 @@ def main():
                 "nflTeam": team,
                 "points": points,
                 "foundInFeed": found,
+                "matchMethod": match_method,
                 "raw": raw
             })
 
             total += points
-            print(f"{position:4} {name}: {points:.2f} | found={found}")
+            print(f"{position:4} {name}: {points:.2f} | found={found} | match={match_method}")
 
         total = round(total, 2)
         owner_totals[owner] = total
