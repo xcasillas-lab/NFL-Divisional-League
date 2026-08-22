@@ -1,7 +1,7 @@
 {
   "week": 1,
-  "status": "live",
-  "lastUpdated": "2026-08-22T14:51:40-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-08-22T15:05:24-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,8 +12,8 @@
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 0,
-      "rightTotal": 12.8
+      "leftTotal": 0.0,
+      "rightTotal": 20.94
     },
     "3": {
       "leftOwner": "Joshua",
@@ -31,24 +31,305 @@
   "players": {
     "Dallas": [],
     "JetLiX": [],
-    "Juan": [],
+    "Juan": [
+      {
+        "position": "QB",
+        "name": "Joe Milton III",
+        "nflTeam": "DAL",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Malik Davis",
+        "nflTeam": "DAL",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Eric Gray",
+        "nflTeam": "NYG",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Camden Brown",
+        "nflTeam": "DAL",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Darius Cooper",
+        "nflTeam": "PHI",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Johnny Mundt",
+        "nflTeam": "PHI",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Malachi Fields",
+        "nflTeam": "NYG",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Washington Commanders",
+        "nflTeam": "WAS",
+        "points": 0.0,
+        "foundInFeed": false,
+        "note": "DEF scoring will be added in Step 3."
+      }
+    ],
     "Brian": [],
     "Joshua": [],
     "Ben": [],
     "Kendall": [],
     "Xavier": [
       {
+        "position": "QB",
+        "name": "Cooper Rush",
+        "nflTeam": "ATL",
+        "points": 3.44,
+        "foundInFeed": true,
+        "raw": {
+          "passingYards": 86.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
         "position": "RB",
         "name": "Tyler Goodson",
         "nflTeam": "ATL",
-        "points": 12.8
+        "points": 12.8,
+        "foundInFeed": true,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 59.0,
+          "rushingTouchdowns": 1.0,
+          "receptions": 1.0,
+          "receivingYards": 4.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Kendre Miller",
+        "nflTeam": "NO",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Chris Blair",
+        "nflTeam": "ATL",
+        "points": 4.7,
+        "foundInFeed": true,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 2.0,
+          "receivingYards": 37.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Bub Means",
+        "nflTeam": "NO",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Payne Durham",
+        "nflTeam": "TB",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Ted Hurst III",
+        "nflTeam": "TB",
+        "points": 0.0,
+        "foundInFeed": false,
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Tampa Bay Buccaneers",
+        "nflTeam": "TB",
+        "points": 0.0,
+        "foundInFeed": false,
+        "note": "DEF scoring will be added in Step 3."
       }
     ]
   },
   "source": {
     "primary": "ESPN public NFL JSON",
     "date": "20260822",
-    "testStage": "single-player-scoring",
-    "targetPlayer": "Tyler Goodson"
+    "testStage": "two-owner-offensive-scoring",
+    "owners": [
+      "Juan",
+      "Xavier"
+    ],
+    "defenseIncluded": false
   }
 }
