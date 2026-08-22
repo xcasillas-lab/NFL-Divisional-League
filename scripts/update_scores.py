@@ -15,7 +15,7 @@ ROSTER_FILE = ROOT / "scoring-data" / "week1-rosters-live-test.json"
 SCORE_FILE = ROOT / "scoring-data" / "week1-scores-live-test.json"
 
 TEST_DATE = os.environ.get("DFFL_TEST_DATE", "20260822")
-TARGET_OWNERS = ["Juan", "Xavier"]
+TARGET_OWNERS = ["Dallas", "Ben", "Juan", "Xavier", "Joshua", "Kendall", "Brian", "JetLiX"]
 
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
@@ -374,7 +374,7 @@ def defense_from_summary(summary, target_team, game_status):
     }
 
 def main():
-    print("DFFL Step 3B full D/ST scoring test started")
+    print("DFFL Step 4 all-8-owner scoring test started")
     print(f"Test date: {TEST_DATE}")
 
     roster_data = json.loads(ROSTER_FILE.read_text(encoding="utf-8"))
@@ -489,14 +489,23 @@ def main():
         score_data.setdefault("players", {})[owner] = rows
         print(f"{owner} total including basic D/ST: {total:.2f}")
 
-    for matchup in score_data.get("matchups", {}).values():
-        left = matchup.get("leftOwner")
-        right = matchup.get("rightOwner")
+    # Force the TEST-ONLY matchup pairings requested for the all-8 test.
+    test_matchups = {
+        "1": ("Dallas", "Ben"),
+        "2": ("Juan", "Xavier"),
+        "3": ("Joshua", "Kendall"),
+        "4": ("Brian", "JetLiX"),
+    }
 
-        if left in owner_totals:
-            matchup["leftTotal"] = owner_totals[left]
-        if right in owner_totals:
-            matchup["rightTotal"] = owner_totals[right]
+    score_data.setdefault("matchups", {})
+
+    for matchup_id, (left_owner, right_owner) in test_matchups.items():
+        score_data["matchups"][matchup_id] = {
+            "leftOwner": left_owner,
+            "rightOwner": right_owner,
+            "leftTotal": owner_totals.get(left_owner, 0.0),
+            "rightTotal": owner_totals.get(right_owner, 0.0)
+        }
 
     if "live" in relevant_statuses:
         score_data["status"] = "live"
@@ -509,7 +518,7 @@ def main():
     score_data["source"] = {
         "primary": "ESPN public NFL JSON",
         "date": TEST_DATE,
-        "testStage": "two-owner-offense-plus-full-defense",
+        "testStage": "all-eight-owners-full-scoring",
         "owners": TARGET_OWNERS,
         "defenseIncluded": True,
         "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
@@ -521,11 +530,14 @@ def main():
     )
 
     print("")
-    print("===== MATCHUP TOTALS =====")
-    print(f"Juan: {owner_totals.get('Juan', 0):.2f}")
-    print(f"Xavier: {owner_totals.get('Xavier', 0):.2f}")
+    print("===== TEST MATCHUP TOTALS =====")
+    print(f"Matchup 1 - Dallas vs Ben: {owner_totals.get('Dallas', 0):.2f} - {owner_totals.get('Ben', 0):.2f}")
+    print(f"Matchup 2 - Juan vs Xavier: {owner_totals.get('Juan', 0):.2f} - {owner_totals.get('Xavier', 0):.2f}")
+    print(f"Matchup 3 - Joshua vs Kendall: {owner_totals.get('Joshua', 0):.2f} - {owner_totals.get('Kendall', 0):.2f}")
+    print(f"Matchup 4 - Brian vs JetLiX: {owner_totals.get('Brian', 0):.2f} - {owner_totals.get('JetLiX', 0):.2f}")
+
     print(f"Updated: {SCORE_FILE}")
-    print("DFFL Step 3B full D/ST completed successfully")
+    print("DFFL Step 4 all-8-owner scoring test completed successfully")
 
 if __name__ == "__main__":
     main()
