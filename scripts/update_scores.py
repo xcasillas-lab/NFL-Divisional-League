@@ -207,8 +207,23 @@ def find_team_stat(stats, *candidates):
 
     return 0.0
 
-def defense_from_summary(summary, target_team):
+def defense_from_summary(summary, target_team, game_status):
     target_team = normalize_team(target_team)
+
+    # Important: a defense should NOT receive the +10 shutout bonus before kickoff.
+    if game_status == "pre-game":
+        return {
+            "points": 0.0,
+            "raw": {
+                "pointsAllowed": 0,
+                "pointsAllowedFantasy": 0.0,
+                "sacks": 0.0,
+                "interceptions": 0.0,
+                "fumbleRecoveries": 0.0,
+                "safeties": 0.0
+            },
+            "note": "Game has not started; D/ST score remains 0.00."
+        }
 
     scores = game_scores(summary)
     if target_team not in scores:
@@ -276,6 +291,7 @@ def main():
     summaries = []
     relevant_statuses = []
     summary_by_team = {}
+    status_by_team = {}
 
     for event in events:
         teams = event_teams(event)
@@ -291,8 +307,10 @@ def main():
         summaries.append(summary)
         relevant_statuses.append(event_status(event))
 
+        game_status = event_status(event)
         for team in teams:
             summary_by_team[team] = summary
+            status_by_team[team] = game_status
 
     all_stats = {}
     for summary in summaries:
@@ -314,7 +332,8 @@ def main():
 
             if position == "DEF":
                 summary = summary_by_team.get(team)
-                defense = defense_from_summary(summary, team) if summary else None
+                game_status = status_by_team.get(team, "pre-game")
+                defense = defense_from_summary(summary, team, game_status) if summary else None
 
                 if defense:
                     points = defense["points"]
@@ -332,7 +351,7 @@ def main():
                     "points": points,
                     "foundInFeed": found,
                     "raw": raw,
-                    "note": "Basic D/ST: points allowed, sacks, INT, fumble recoveries, safeties."
+                    "note": defense.get("note", "Basic D/ST: points allowed, sacks, INT, fumble recoveries, safeties.") if defense else "No game data found."
                 })
 
                 total += points
