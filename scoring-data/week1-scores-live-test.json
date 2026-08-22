@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-08-22T15:14:50-05:00",
+  "lastUpdated": "2026-08-22T15:18:09-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
       "leftTotal": 1.0,
-      "rightTotal": 20.94
+      "rightTotal": 22.34
     },
     "3": {
       "leftOwner": "Joshua",
@@ -177,9 +177,12 @@
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
-          "safeties": 0.0
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
         },
-        "note": "Basic D/ST: points allowed, sacks, INT, fumble recoveries, safeties."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Brian": [],
@@ -229,13 +232,13 @@
         "position": "RB",
         "name": "Kendre Miller",
         "nflTeam": "NO",
-        "points": 0.0,
-        "foundInFeed": false,
+        "points": 1.4,
+        "foundInFeed": true,
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 14.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -332,7 +335,10 @@
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
-          "safeties": 0.0
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
         },
         "note": "Game has not started; D/ST score remains 0.00."
       }
@@ -341,12 +347,12 @@
   "source": {
     "primary": "ESPN public NFL JSON",
     "date": "20260822",
-    "testStage": "two-owner-offense-plus-basic-defense",
+    "testStage": "two-owner-offense-plus-full-defense",
     "owners": [
       "Juan",
       "Xavier"
     ],
     "defenseIncluded": true,
-    "defenseNote": "Basic D/ST only; defensive TD, return TD and blocked-kick scoring are not yet included."
+    "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
   }
 }
