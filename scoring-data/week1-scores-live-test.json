@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-08-22T15:10:15-05:00",
+  "lastUpdated": "2026-08-22T15:14:50-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
       "leftTotal": 1.0,
-      "rightTotal": 30.94
+      "rightTotal": 20.94
     },
     "3": {
       "leftOwner": "Joshua",
@@ -324,17 +324,17 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers",
         "nflTeam": "TB",
-        "points": 10.0,
+        "points": 0.0,
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0
         },
-        "note": "Basic D/ST: points allowed, sacks, INT, fumble recoveries, safeties."
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ]
   },
