@@ -2,6 +2,10 @@ name: DFFL live scoring test
 
 on:
   workflow_dispatch:
+  schedule:
+    # GitHub cron is UTC. Run every 15 minutes, then let the Central-time
+    # gate below decide whether scoring should actually run.
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -11,27 +15,67 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check Central scoring window
+        id: window
+        shell: bash
+        run: |
+          export TZ=America/Chicago
+          DAY=$(date +%u)      # Mon=1 ... Sun=7
+          HOUR=$(date +%H)
+          MINUTE=$(date +%M)
+
+          echo "Central time: $(date)"
+          echo "day=$DAY hour=$HOUR minute=$MINUTE"
+
+          RUN=false
+
+          # Thursday: start at 3:00 PM Central
+          if [ "$DAY" -eq 4 ] && [ "$HOUR" -ge 15 ]; then
+            RUN=true
+          fi
+
+          # Friday, Saturday, Sunday, Monday: all day
+          if [ "$DAY" -ge 5 ] || [ "$DAY" -eq 1 ]; then
+            RUN=true
+          fi
+
+          # Tuesday: run through 1:59 AM Central; stop at 2:00 AM
+          if [ "$DAY" -eq 2 ] && [ "$HOUR" -lt 2 ]; then
+            RUN=true
+          fi
+
+          # Wednesday: never run automatically
+          if [ "$DAY" -eq 3 ]; then
+            RUN=false
+          fi
+
+          echo "run_scoring=$RUN" >> "$GITHUB_OUTPUT"
+
       - name: Check out repository
+        if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/checkout@v4
 
       - name: Set up Python
+        if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install dependency
+        if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         run: pip install requests
 
       - name: Update live-test scores
-        env:
-          DFFL_TEST_DATE: "20260822"
+        if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         run: python scripts/update_scores.py
 
       - name: Commit score update
+        if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "dffl-scorebot"
           git config user.email "actions@users.noreply.github.com"
           git add scoring-data/week1-scores-live-test.json
+
           if git diff --cached --quiet; then
             echo "No score changes to commit."
           else
