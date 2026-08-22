@@ -1,4 +1,110 @@
 {
   "week": 1,
-  "rosters": {}
+  "locked": false,
+  "rosters": {
+    "Dallas": {
+      "division": "AFC West",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "Brian": {
+      "division": "AFC North",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "Joshua": {
+      "division": "AFC East",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "Kendall": {
+      "division": "AFC South",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "Juan": {
+      "division": "NFC East",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "JetLiX": {
+      "division": "NFC North",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "Xavier": {
+      "division": "NFC South",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    },
+    "Ben": {
+      "division": "NFC West",
+      "players": [
+        { "position": "QB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "RB", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "WR", "name": "", "nflTeam": "" },
+        { "position": "TE", "name": "", "nflTeam": "" },
+        { "position": "FLEX", "name": "", "nflTeam": "" },
+        { "position": "DEF", "name": "", "nflTeam": "" }
+      ]
+    }
+  }
 }
