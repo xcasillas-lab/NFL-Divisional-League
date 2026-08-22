@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "pre-game",
-  "lastUpdated": null,
+  "lastUpdated": "2026-08-22T14:32:58-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -37,5 +37,11 @@
     "Ben": [],
     "Kendall": [],
     "Xavier": []
+  },
+  "source": {
+    "primary": "ESPN public NFL JSON",
+    "date": "20260822",
+    "eventCount": 10,
+    "testStage": "connection-check"
   }
 }
