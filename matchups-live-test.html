@@ -373,6 +373,36 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   color:#38bdf8;
   margin-top:3px;
 }
+
+/* ===== PLAYER GAME STATUS + LAST UPDATED ===== */
+.player-status{
+  display:inline-block;
+  margin-left:6px;
+  padding:2px 6px;
+  border-radius:999px;
+  font-size:.52rem;
+  line-height:1.35;
+  font-weight:900;
+  letter-spacing:.04em;
+  vertical-align:1px;
+  white-space:nowrap;
+}
+.player-status.live{background:rgba(34,197,94,.18);border:1px solid rgba(34,197,94,.55);color:#86efac}
+.player-status.final{background:rgba(100,116,139,.18);border:1px solid rgba(148,163,184,.42);color:#cbd5e1}
+.player-status.upcoming{background:rgba(245,158,11,.14);border:1px solid rgba(245,158,11,.45);color:#fbbf24}
+.last-updated{
+  display:block;
+  margin-top:4px;
+  color:#94a3b8;
+  font-size:.60rem;
+  text-transform:none;
+  letter-spacing:0;
+}
+@media(max-width:640px){
+  .player-status{font-size:.48rem;padding:1px 5px;margin-left:4px}
+  .last-updated{font-size:.56rem}
+}
+
 </style>
 </head>
 <body>
@@ -641,6 +671,52 @@ function dfflFormatPoints(value){
   return Number.isFinite(n) ? n.toFixed(2) : "—";
 }
 
+function dfflStatusLabel(status){
+  const s = String(status || "pre-game").toLowerCase();
+  if (s === "live" || s === "in-progress") return {label:"LIVE", cls:"live"};
+  if (s === "final" || s === "post") return {label:"FINAL", cls:"final"};
+  return {label:"UPCOMING", cls:"upcoming"};
+}
+
+function dfflFormatUpdated(value){
+  if (!value) return "";
+  const dt = new Date(value);
+  if (Number.isNaN(dt.getTime())) return "";
+  return new Intl.DateTimeFormat("en-US", {
+    timeZone:"America/Chicago",
+    hour:"numeric",
+    minute:"2-digit",
+    hour12:true
+  }).format(dt) + " CT";
+}
+
+function dfflFindPlayerRow(scoreData, owner, rosterPlayer){
+  const list = scoreData?.players?.[owner];
+  if (!Array.isArray(list)) return null;
+  const rosterName = String(rosterPlayer?.name || "").trim().toLowerCase();
+  if (!rosterName) return null;
+  return list.find(p =>
+    p && typeof p === "object" &&
+    String(p.name || p.player || "").trim().toLowerCase() === rosterName
+  ) || null;
+}
+
+function dfflSetPlayerCell(cell, player, scoreData, owner){
+  if (!cell) return;
+  cell.textContent = "";
+  const text = document.createElement("span");
+  text.textContent = dfflDisplayPlayer(player);
+  cell.appendChild(text);
+
+  if (!player) return;
+  const scoreRow = dfflFindPlayerRow(scoreData, owner, player);
+  const state = dfflStatusLabel(scoreRow?.gameStatus);
+  const badge = document.createElement("span");
+  badge.className = `player-status ${state.cls}`;
+  badge.textContent = state.label;
+  cell.appendChild(badge);
+}
+
 function dfflDisplayPlayer(player){
   if (!player || !player.name) return "TBD";
   return player.nflTeam ? `${player.name} (${player.nflTeam})` : player.name;
@@ -712,10 +788,12 @@ function dfflUpdateCard(matchupNumber, matchup, rosterData, scoreData){
   const time = card.querySelector(".matchup-time");
   if (time){
     const status = String(scoreData?.status || "pre-game").toLowerCase();
-    time.textContent =
+    const mainLabel =
       status === "pre-game" ? "Pending kickoff" :
       (status === "live" || status === "in-progress") ? "Live scoring" :
       status === "final" ? "Final" : status.replace(/-/g, " ");
+    const updated = dfflFormatUpdated(scoreData?.lastUpdated);
+    time.innerHTML = `${mainLabel}${updated ? `<span class="last-updated">Updated ${updated}</span>` : ""}`;
   }
 }
 
@@ -767,6 +845,15 @@ function dfflUpdateDetail(matchupNumber, matchup, rosterData, scoreData){
       status === "pre-game" ? "PREVIEW" :
       (status === "live" || status === "in-progress") ? "LIVE" :
       status === "final" ? "FINAL" : status.toUpperCase();
+
+    let updateEl = panel.querySelector(".detail-center .last-updated");
+    if (!updateEl){
+      updateEl = document.createElement("span");
+      updateEl.className = "last-updated";
+      panel.querySelector(".detail-center")?.appendChild(updateEl);
+    }
+    const updated = dfflFormatUpdated(scoreData?.lastUpdated);
+    if (updateEl) updateEl.textContent = updated ? `Updated ${updated}` : "";
   }
 
   const headers = panel.querySelectorAll(".matchup-player-table thead th");
@@ -782,11 +869,11 @@ function dfflUpdateDetail(matchupNumber, matchup, rosterData, scoreData){
     const lp = leftRoster?.players?.[index] || null;
     const rp = rightRoster?.players?.[index] || null;
     const position = lp?.position || rp?.position || cells[2].textContent.trim();
-    cells[0].textContent = dfflDisplayPlayer(lp);
+    dfflSetPlayerCell(cells[0], lp, scoreData, leftOwner);
     cells[1].textContent = dfflFormatPoints(dfflPlayerScore(scoreData, leftOwner, lp, index));
     cells[2].textContent = position || "";
     cells[3].textContent = dfflFormatPoints(dfflPlayerScore(scoreData, rightOwner, rp, index));
-    cells[4].textContent = dfflDisplayPlayer(rp);
+    dfflSetPlayerCell(cells[4], rp, scoreData, rightOwner);
   });
 
   const totalRow = panel.querySelector(".matchup-player-table .total-row");
