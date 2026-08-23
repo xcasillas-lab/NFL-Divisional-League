@@ -1,18 +1,18 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-08-22T21:54:55-05:00",
+  "lastUpdated": "2026-08-22T22:27:43-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 20.26,
-      "rightTotal": 37.0
+      "rightTotal": 39.8
     },
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 39.1,
+      "leftTotal": 57.26,
       "rightTotal": 25.14
     },
     "3": {
@@ -372,16 +372,16 @@
         "position": "QB",
         "name": "Joe Milton III",
         "nflTeam": "DAL",
-        "points": 12.0,
+        "points": 21.46,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 95.0,
+          "passingYards": 179.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 2.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 3.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
@@ -435,7 +435,7 @@
         "position": "WR",
         "name": "Camden Brown",
         "nflTeam": "DAL",
-        "points": 0.0,
+        "points": 8.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -445,8 +445,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 2.0,
+          "receivingYards": 77.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -984,7 +984,7 @@
         "position": "TE",
         "name": "Rivaldo Fairweather",
         "nflTeam": "ARI",
-        "points": 2.1,
+        "points": 4.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -994,8 +994,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 11.0,
+          "receptions": 4.0,
+          "receivingYards": 29.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
