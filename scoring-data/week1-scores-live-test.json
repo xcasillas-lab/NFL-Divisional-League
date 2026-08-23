@@ -1,18 +1,18 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-08-22T22:27:43-05:00",
+  "lastUpdated": "2026-08-22T23:08:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 20.26,
-      "rightTotal": 39.8
+      "rightTotal": 41.3
     },
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 57.26,
+      "leftTotal": 57.16,
       "rightTotal": 25.14
     },
     "3": {
@@ -372,7 +372,7 @@
         "position": "QB",
         "name": "Joe Milton III",
         "nflTeam": "DAL",
-        "points": 21.46,
+        "points": 21.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -380,7 +380,7 @@
           "passingYards": 179.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 3.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -984,7 +984,7 @@
         "position": "TE",
         "name": "Rivaldo Fairweather",
         "nflTeam": "ARI",
-        "points": 4.9,
+        "points": 6.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -994,8 +994,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 29.0,
+          "receptions": 5.0,
+          "receivingYards": 39.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
