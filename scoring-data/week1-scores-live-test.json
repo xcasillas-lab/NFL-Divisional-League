@@ -1,7 +1,7 @@
 {
   "week": 1,
-  "status": "live",
-  "lastUpdated": "2026-08-22T23:50:21-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-08-23T00:01:51-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -373,7 +373,7 @@
         "name": "Joe Milton III",
         "nflTeam": "DAL",
         "points": 21.36,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -394,7 +394,7 @@
         "name": "Malik Davis",
         "nflTeam": "DAL",
         "points": 10.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -436,7 +436,7 @@
         "name": "Camden Brown",
         "nflTeam": "DAL",
         "points": 8.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -985,7 +985,7 @@
         "name": "Rivaldo Fairweather",
         "nflTeam": "ARI",
         "points": 6.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1006,7 +1006,7 @@
         "name": "Jalen Brooks",
         "nflTeam": "ARI",
         "points": 2.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
