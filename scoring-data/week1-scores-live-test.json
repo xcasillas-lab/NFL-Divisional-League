@@ -1,13 +1,13 @@
 {
   "week": 1,
-  "status": "live",
-  "lastUpdated": "2026-08-23T21:17:51-05:00",
+  "status": "final",
+  "lastUpdated": "2026-08-23T22:29:10-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 20.26,
-      "rightTotal": 54.22
+      "rightTotal": 55.22
     },
     "2": {
       "leftOwner": "Juan",
@@ -880,7 +880,7 @@
         "name": "Drew Lock",
         "nflTeam": "SEA",
         "points": 8.92,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1026,14 +1026,14 @@
         "position": "DEF",
         "name": "Seattle Seahawks",
         "nflTeam": "SEA",
-        "points": 4.0,
-        "gameStatus": "live",
+        "points": 5.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 9,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 19,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
@@ -1154,7 +1154,7 @@
         "name": "Daniel Bellinger",
         "nflTeam": "TEN",
         "points": 1.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1196,7 +1196,7 @@
         "name": "Tennessee Titans",
         "nflTeam": "TEN",
         "points": 1.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 16,
