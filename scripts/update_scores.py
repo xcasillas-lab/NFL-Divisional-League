@@ -11,10 +11,10 @@ from zoneinfo import ZoneInfo
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
-ROSTER_FILE = ROOT / "scoring-data" / "week1-rosters-live-test.json"
-SCORE_FILE = ROOT / "scoring-data" / "week1-scores-live-test.json"
+ROSTER_FILE = ROOT / "scoring-data" / "week1-rosters.json"
+SCORE_FILE = ROOT / "scoring-data" / "week1-scores.json"
 
-TEST_DATES = ["20260819", "20260820", "20260821", "20260822", "20260823"]
+WEEK_DATES = ["20260910", "20260911", "20260912", "20260913", "20260914"]
 TARGET_OWNERS = ["Dallas", "Ben", "Juan", "Xavier", "Joshua", "Kendall", "Brian", "JetLiX"]
 
 SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard"
@@ -429,8 +429,8 @@ def defense_from_summary(summary, target_team, game_status):
     }
 
 def main():
-    print("DFFL Step 4 all-8-owner scoring test started")
-    print(f"Test dates scanned: {TEST_DATES}")
+    print("DFFL 2026 Week 1 production scoring started")
+    print(f"Week 1 dates scanned: {WEEK_DATES}")
 
     roster_data = json.loads(ROSTER_FILE.read_text(encoding="utf-8"))
     score_data = json.loads(SCORE_FILE.read_text(encoding="utf-8"))
@@ -451,7 +451,7 @@ def main():
     events = []
     seen_event_ids = set()
 
-    for date_value in TEST_DATES:
+    for date_value in WEEK_DATES:
         board = fetch_json(SCOREBOARD_URL, {"dates": date_value, "limit": 100})
         day_events = board.get("events", [])
         print(f"ESPN events found for {date_value}: {len(day_events)}")
@@ -557,17 +557,17 @@ def main():
         score_data.setdefault("players", {})[owner] = rows
         print(f"{owner} total including basic D/ST: {total:.2f}")
 
-    # Force the TEST-ONLY matchup pairings requested for the all-8 test.
-    test_matchups = {
-        "1": ("Dallas", "Ben"),
-        "2": ("Juan", "Xavier"),
-        "3": ("Joshua", "Kendall"),
-        "4": ("Brian", "JetLiX"),
+    # Official 2026 DFFL Week 1 regular-season matchups.
+    week1_matchups = {
+        "1": ("Dallas", "JetLiX"),
+        "2": ("Juan", "Brian"),
+        "3": ("Joshua", "Ben"),
+        "4": ("Kendall", "Xavier"),
     }
 
     score_data.setdefault("matchups", {})
 
-    for matchup_id, (left_owner, right_owner) in test_matchups.items():
+    for matchup_id, (left_owner, right_owner) in week1_matchups.items():
         score_data["matchups"][matchup_id] = {
             "leftOwner": left_owner,
             "rightOwner": right_owner,
@@ -585,8 +585,8 @@ def main():
     score_data["lastUpdated"] = datetime.now(CT).isoformat(timespec="seconds")
     score_data["source"] = {
         "primary": "ESPN public NFL JSON",
-        "dates": TEST_DATES,
-        "testStage": "all-eight-owners-full-scoring",
+        "dates": WEEK_DATES,
+        "stage": "2026-week1-production",
         "owners": TARGET_OWNERS,
         "defenseIncluded": True,
         "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
@@ -598,14 +598,14 @@ def main():
     )
 
     print("")
-    print("===== TEST MATCHUP TOTALS =====")
-    print(f"Matchup 1 - Dallas vs Ben: {owner_totals.get('Dallas', 0):.2f} - {owner_totals.get('Ben', 0):.2f}")
-    print(f"Matchup 2 - Juan vs Xavier: {owner_totals.get('Juan', 0):.2f} - {owner_totals.get('Xavier', 0):.2f}")
-    print(f"Matchup 3 - Joshua vs Kendall: {owner_totals.get('Joshua', 0):.2f} - {owner_totals.get('Kendall', 0):.2f}")
-    print(f"Matchup 4 - Brian vs JetLiX: {owner_totals.get('Brian', 0):.2f} - {owner_totals.get('JetLiX', 0):.2f}")
+    print("===== WEEK 1 MATCHUP TOTALS =====")
+    print(f"Matchup 1 - Dallas vs JetLiX: {owner_totals.get('Dallas', 0):.2f} - {owner_totals.get('JetLiX', 0):.2f}")
+    print(f"Matchup 2 - Juan vs Brian: {owner_totals.get('Juan', 0):.2f} - {owner_totals.get('Brian', 0):.2f}")
+    print(f"Matchup 3 - Joshua vs Ben: {owner_totals.get('Joshua', 0):.2f} - {owner_totals.get('Ben', 0):.2f}")
+    print(f"Matchup 4 - Kendall vs Xavier: {owner_totals.get('Kendall', 0):.2f} - {owner_totals.get('Xavier', 0):.2f}")
 
     print(f"Updated: {SCORE_FILE}")
-    print("DFFL Step 4 all-8-owner scoring test completed successfully")
+    print("DFFL 2026 Week 1 production scoring completed successfully")
 
 if __name__ == "__main__":
     main()
