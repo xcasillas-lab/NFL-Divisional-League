@@ -373,6 +373,23 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   color:#38bdf8;
   margin-top:3px;
 }
+
+/* Entire collapsed matchup card is clickable/tappable */
+.featured-matchup{
+  cursor:pointer;
+  -webkit-tap-highlight-color:rgba(56,189,248,.12);
+}
+.featured-matchup:focus-visible{
+  outline:2px solid #38bdf8;
+  outline-offset:3px;
+}
+@media (hover:hover) and (pointer:fine){
+  .featured-matchup:hover{
+    border-color:#38bdf8;
+    background:#071525;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -387,7 +404,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 <div class="current-week-panel">
 <span class="current-week-label">This Week</span><span class="current-week-sub">Week 1 Preview</span>
-<div class="matchups-current-grid"><div class="featured-matchup" id="featured-matchup-1"><div class="full-division" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-1" onclick="toggleMatchupDetail(1)" onkeydown="if(event.key===&quot;Enter&quot;||event.key===&quot; &quot;){event.preventDefault();toggleMatchupDetail(1);}">Matchup 1</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Dallas</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">JetLiX</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div><div class="featured-matchup" id="featured-matchup-2"><div class="full-division" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-2" onclick="toggleMatchupDetail(2)" onkeydown="if(event.key===&quot;Enter&quot;||event.key===&quot; &quot;){event.preventDefault();toggleMatchupDetail(2);}">Matchup 2</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Juan</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Brian</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div><div class="featured-matchup" id="featured-matchup-3"><div class="full-division" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-3" onclick="toggleMatchupDetail(3)" onkeydown="if(event.key===&quot;Enter&quot;||event.key===&quot; &quot;){event.preventDefault();toggleMatchupDetail(3);}">Matchup 3</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Joshua</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Ben</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div><div class="featured-matchup" id="featured-matchup-4"><div class="full-division" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-4" onclick="toggleMatchupDetail(4)" onkeydown="if(event.key===&quot;Enter&quot;||event.key===&quot; &quot;){event.preventDefault();toggleMatchupDetail(4);}">Matchup 4</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Kendall</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Xavier</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div></div>
+<div class="matchups-current-grid"><div class="featured-matchup" id="featured-matchup-1" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-1" aria-label="Open Matchup 1 details"><div class="full-division" aria-expanded="false" aria-controls="matchup-detail-1">Matchup 1</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Dallas</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">JetLiX</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div><div class="featured-matchup" id="featured-matchup-2" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-2" aria-label="Open Matchup 2 details"><div class="full-division" aria-expanded="false" aria-controls="matchup-detail-2">Matchup 2</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Juan</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Brian</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div><div class="featured-matchup" id="featured-matchup-3" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-3" aria-label="Open Matchup 3 details"><div class="full-division" aria-expanded="false" aria-controls="matchup-detail-3">Matchup 3</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Joshua</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Ben</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div><div class="featured-matchup" id="featured-matchup-4" role="button" tabindex="0" aria-expanded="false" aria-controls="matchup-detail-4" aria-label="Open Matchup 4 details"><div class="full-division" aria-expanded="false" aria-controls="matchup-detail-4">Matchup 4</div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Kendall</div><div class="owner-score">—</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Xavier</div><div class="owner-score">—</div></div></div><div class="matchup-time">Pending kickoff</div></div></div>
 
 <div class="matchup-detail-panel" id="matchup-detail-1">
   <div class="matchup-detail-top">
@@ -603,9 +620,29 @@ function toggleMatchupDetail(matchupNumber, forceOpen){
 
   panel.classList.toggle('active', shouldOpen);
   card.classList.toggle('is-open', shouldOpen);
+  card.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
   const header = card.querySelector('.full-division');
   if(header) header.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
 }
+</script>
+
+
+<script>
+document.querySelectorAll('.featured-matchup').forEach(function(card){
+  const num = card.id.replace('featured-matchup-','');
+
+  card.addEventListener('click', function(event){
+    if(event.target.closest('button, a, input, select, textarea')) return;
+    toggleMatchupDetail(num);
+  });
+
+  card.addEventListener('keydown', function(event){
+    if(event.key === 'Enter' || event.key === ' '){
+      event.preventDefault();
+      toggleMatchupDetail(num);
+    }
+  });
+});
 </script>
 
 <script id="approvedHelmetAssets">
