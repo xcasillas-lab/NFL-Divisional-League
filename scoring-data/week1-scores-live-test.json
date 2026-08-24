@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-08-23T19:44:44-05:00",
+  "lastUpdated": "2026-08-23T19:50:07-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 20.26,
-      "rightTotal": 55.84
+      "rightTotal": 56.2
     },
     "2": {
       "leftOwner": "Juan",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 30.14,
-      "rightTotal": 13.8
+      "rightTotal": 10.8
     },
     "4": {
       "leftOwner": "Brian",
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Drew Lock",
         "nflTeam": "SEA",
-        "points": 7.54,
+        "points": 7.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 66.0,
+          "passingYards": 75.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 9.0,
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Tennessee Titans",
         "nflTeam": "TEN",
-        "points": 4.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 13,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 16,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
