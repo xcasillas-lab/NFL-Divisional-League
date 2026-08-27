@@ -1,4 +1,4 @@
-name: DFFL live scoring test
+name: DFFL live scoring
 
 on:
   workflow_dispatch:
@@ -65,7 +65,7 @@ jobs:
         if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         run: pip install requests
 
-      - name: Update live-test scores
+      - name: Update DFFL scores
         if: steps.window.outputs.run_scoring == 'true' || github.event_name == 'workflow_dispatch'
         run: python scripts/update_scores.py
 
@@ -74,11 +74,11 @@ jobs:
         run: |
           git config user.name "dffl-scorebot"
           git config user.email "actions@users.noreply.github.com"
-          git add scoring-data/week1-scores-live-test.json
+          git add scoring-data/week1-scores.json
 
           if git diff --cached --quiet; then
             echo "No score changes to commit."
           else
-            git commit -m "Update DFFL live-test scores"
+            git commit -m "Update DFFL Week 1 scores"
             git push
           fi
