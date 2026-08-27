@@ -293,6 +293,24 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .season-panel.active{display:block}
 @media(max-width:700px){.season-switcher{display:grid;grid-template-columns:1fr 1fr}.season-tab{width:100%;padding:10px 8px}}
 
+
+/* ===== 2026 STANDINGS TEAM NAMES ===== */
+.standings-owner-cell{display:flex;align-items:center;gap:9px}
+.standings-owner-cell img{width:44px;height:44px;object-fit:cover;border-radius:9px;border:1px solid #26374e;flex:0 0 auto}
+.standings-team-name{font-weight:700;color:#f8fafc}
+.standings-table col.seed-col{width:7%}
+.standings-table col.owner-col{width:17%}
+.standings-table col.team-col{width:22%}
+.standings-table col.division-col{width:14%}
+.standings-table col.small-col{width:6%}
+.standings-table col.divrec-col{width:10%}
+.standings-table col.points-col{width:9%}
+.standings-table{min-width:1050px;table-layout:fixed}
+.advanced-stats-table{min-width:900px;table-layout:fixed}
+.advanced-team-cell{display:flex;align-items:center;gap:8px}
+.advanced-team-cell img{width:32px;height:32px;object-fit:cover;border-radius:7px;border:1px solid #26374e}
+@media(max-width:700px){.standings-table{min-width:980px}.advanced-stats-table{min-width:820px}}
+
 </style>
 </head>
 <body>
@@ -313,17 +331,52 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="season-panel active" id="seasonPanel2026" role="tabpanel" aria-labelledby="seasonTab2026">
 <div class="standings-table-wrap">
 <table class="standings-table">
-<thead><tr><th>Seed</th><th>Owner</th><th>Division</th><th>W</th><th>L</th><th>Div Rec</th><th>PF</th><th>PA</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>Owner 1</td><td>AFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>2</td><td>Owner 2</td><td>AFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>3</td><td>Owner 3</td><td>AFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>4</td><td>Owner 4</td><td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>5</td><td>Owner 5</td><td>NFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>6</td><td>Owner 6</td><td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>7</td><td>Owner 7</td><td>NFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-<tr><td>8</td><td>Owner 8</td><td>NFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td></tr>
-</tbody>
+<colgroup>
+<col class="seed-col"/><col class="owner-col"/><col class="team-col"/><col class="division-col"/>
+<col class="small-col"/><col class="small-col"/><col class="divrec-col"/><col class="points-col"/><col class="points-col"/>
+</colgroup>
+<thead><tr><th>Seed</th><th>Owner</th><th>Team Name</th><th>Division</th><th>W</th><th>L</th><th>Div Rec</th><th>PF</th><th>PA</th></tr></thead>
+<tbody><tr>
+<td>1</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>Joshua</span></div></td>
+<td class="standings-team-name">The Fighting Josh Allen's</td>
+<td>AFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>2</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
+<td class="standings-team-name">Brian</td>
+<td>AFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>3</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>Kendall</span></div></td>
+<td class="standings-team-name">KVR1</td>
+<td>AFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>4</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC West" alt="AFC West DFFL helmet"/><span>Dallas</span></div></td>
+<td class="standings-team-name">Mahomies Homie</td>
+<td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>5</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Juan</span></div></td>
+<td class="standings-team-name">Coast Killers Amigos</td>
+<td>NFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>6</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC North" alt="NFC North DFFL helmet"/><span>JetLiX</span></div></td>
+<td class="standings-team-name">JetLiX</td>
+<td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>7</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Xavier</span></div></td>
+<td class="standings-team-name">Bandwagon Elites</td>
+<td>NFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr><tr>
+<td>8</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC West" alt="NFC West DFFL helmet"/><span>Ben</span></div></td>
+<td class="standings-team-name">Ben</td>
+<td>NFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
+</tr></tbody>
 </table>
 </div>
 
@@ -341,17 +394,40 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 
 <div class="advanced-stats-panel" id="advancedStatsPanel">
 <table class="advanced-stats-table">
-<thead><tr><th>Seed</th><th>Owner</th><th>Division</th><th>Avg Pts/G</th><th>Avg Margin (W)</th><th>Avg Margin (L)</th></tr></thead>
-<tbody>
-<tr><td>1</td><td>Owner 1</td><td>AFC East</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>2</td><td>Owner 2</td><td>AFC North</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>3</td><td>Owner 3</td><td>AFC South</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>4</td><td>Owner 4</td><td>AFC West</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>5</td><td>Owner 5</td><td>NFC East</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>6</td><td>Owner 6</td><td>NFC North</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>7</td><td>Owner 7</td><td>NFC South</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-<tr><td>8</td><td>Owner 8</td><td>NFC West</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td></tr>
-</tbody>
+<thead><tr><th>Seed</th><th>Owner</th><th>Team Name</th><th>Division</th><th>Avg Pts/G</th><th>Avg Margin (W)</th><th>Avg Margin (L)</th></tr></thead>
+<tbody><tr>
+<td>1</td><td>Joshua</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>The Fighting Josh Allen's</span></div></td>
+<td>AFC East</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>2</td><td>Brian</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
+<td>AFC North</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>3</td><td>Kendall</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>KVR1</span></div></td>
+<td>AFC South</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>4</td><td>Dallas</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC West" alt="AFC West DFFL helmet"/><span>Mahomies Homie</span></div></td>
+<td>AFC West</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>5</td><td>Juan</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Coast Killers Amigos</span></div></td>
+<td>NFC East</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>6</td><td>JetLiX</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC North" alt="NFC North DFFL helmet"/><span>JetLiX</span></div></td>
+<td>NFC North</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>7</td><td>Xavier</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Bandwagon Elites</span></div></td>
+<td>NFC South</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr><tr>
+<td>8</td><td>Ben</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC West" alt="NFC West DFFL helmet"/><span>Ben</span></div></td>
+<td>NFC West</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
+</tr></tbody>
 </table>
 <p class="advanced-help">Avg Pts/G = total points scored divided by games played. Win and loss margins show the average point differential in games won or lost.</p>
 </div>
@@ -802,6 +878,22 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       const panel=document.getElementById('seasonPanel'+tab.dataset.season);
       if(panel) panel.classList.add('active');
     });
+  });
+})();
+</script>
+
+
+<script>
+(function(){
+  const sourceByDivision = {};
+  document.querySelectorAll('#seasonPanel2025 .division-cell img').forEach(img=>{
+    const alt = img.getAttribute('alt') || '';
+    const division = alt.replace(' DFFL helmet','').trim();
+    if(division && img.src) sourceByDivision[division] = img.src;
+  });
+  document.querySelectorAll('.js-2026-helmet').forEach(img=>{
+    const division = img.dataset.division;
+    if(sourceByDivision[division]) img.src = sourceByDivision[division];
   });
 })();
 </script>
