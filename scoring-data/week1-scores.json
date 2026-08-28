@@ -1,31 +1,31 @@
 {
   "week": 1,
   "status": "pre-game",
-  "lastUpdated": null,
+  "lastUpdated": "2026-08-27T20:28:56-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 0,
-      "rightTotal": 0
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
     },
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Brian",
-      "leftTotal": 0,
-      "rightTotal": 0
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 0,
-      "rightTotal": 0
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Xavier",
-      "leftTotal": 0,
-      "rightTotal": 0
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
     }
   },
   "players": {
@@ -37,5 +37,28 @@
     "Ben": [],
     "Kendall": [],
     "Xavier": []
+  },
+  "source": {
+    "primary": "ESPN public NFL JSON",
+    "dates": [
+      "20260910",
+      "20260911",
+      "20260912",
+      "20260913",
+      "20260914"
+    ],
+    "stage": "2026-week1-production",
+    "owners": [
+      "Dallas",
+      "Ben",
+      "Juan",
+      "Xavier",
+      "Joshua",
+      "Kendall",
+      "Brian",
+      "JetLiX"
+    ],
+    "defenseIncluded": true,
+    "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
   }
 }
