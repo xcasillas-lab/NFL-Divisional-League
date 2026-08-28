@@ -390,6 +390,183 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   }
 }
 
+
+/* ===== DFFL WEEKLY MATCHUP ANALYSIS MODAL ===== */
+.preview-analysis-btn{
+  border:0;
+  padding:4px 10px;
+  border-radius:7px;
+  background:#14532d;
+  color:#86efac;
+  font-size:.68rem;
+  font-weight:900;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.preview-analysis-btn:hover{background:#166534}
+.preview-modal-backdrop{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background:rgba(2,6,23,.84);
+  backdrop-filter:blur(5px);
+  padding:24px;
+  overflow-y:auto;
+}
+.preview-modal-backdrop.active{display:block}
+.preview-modal{
+  width:min(860px,100%);
+  margin:30px auto;
+  border:1px solid #38bdf8;
+  border-radius:18px;
+  overflow:hidden;
+  background:linear-gradient(180deg,#0b1626,#050d19);
+  box-shadow:0 28px 80px rgba(0,0,0,.55);
+}
+.preview-modal-head{
+  display:flex;
+  justify-content:space-between;
+  gap:14px;
+  align-items:flex-start;
+  padding:18px 20px;
+  border-bottom:1px solid #26374e;
+  background:linear-gradient(135deg,#07111f,#0b2343);
+}
+.preview-modal-kicker{
+  color:#7dd3fc;
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.preview-modal-head h3{
+  margin:5px 0 0;
+  color:#f8fafc;
+  font-size:1.4rem;
+  text-transform:uppercase;
+}
+.preview-modal-close{
+  width:36px;
+  height:36px;
+  padding:0;
+  border-radius:50%;
+  border:1px solid #475569;
+  background:#07111f;
+  color:#f8fafc;
+  font-size:1.25rem;
+}
+.preview-modal-body{padding:18px 20px 22px}
+.preview-score-card{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:12px;
+  align-items:center;
+  padding:15px;
+  border:1px solid #26374e;
+  border-radius:14px;
+  background:#07111f;
+  text-align:center;
+}
+.preview-score-team b{display:block;font-size:.95rem}
+.preview-score-team span{display:block;margin-top:4px;color:#94a3b8;font-size:.75rem}
+.preview-score-number{font-size:2rem;font-weight:900;color:#38bdf8}
+.preview-score-team.right .preview-score-number{color:#f8fafc}
+.preview-score-vs{color:#94a3b8;font-size:.72rem;font-weight:900}
+.preview-edge{
+  margin-top:10px;
+  text-align:center;
+  color:#a3e635;
+  font-weight:900;
+  font-size:.82rem;
+  text-transform:uppercase;
+}
+.preview-section{
+  margin-top:16px;
+  padding-top:15px;
+  border-top:1px solid #26374e;
+}
+.preview-section h4{
+  margin:0 0 9px;
+  color:#38bdf8;
+  font-size:.8rem;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+.preview-section p{
+  margin:0;
+  color:#dbeafe;
+  font-size:.88rem;
+  line-height:1.55;
+}
+.preview-player-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.preview-player-box{
+  border:1px solid #26374e;
+  border-radius:12px;
+  background:#07111f;
+  padding:12px;
+}
+.preview-player-box b{
+  display:block;
+  margin-bottom:7px;
+  color:#f8fafc;
+  font-size:.8rem;
+  text-transform:uppercase;
+}
+.preview-player-box span{
+  display:block;
+  padding:4px 0;
+  color:#cbd5e1;
+  font-size:.8rem;
+}
+.draft-storyline{
+  margin-top:17px;
+  padding:15px;
+  border:1px solid rgba(245,158,11,.45);
+  border-radius:13px;
+  background:rgba(120,53,15,.12);
+}
+.draft-storyline h4{
+  margin:0 0 8px;
+  color:#fbbf24;
+  text-transform:uppercase;
+  font-size:.78rem;
+  letter-spacing:.06em;
+}
+.draft-storyline strong{
+  display:block;
+  margin-bottom:8px;
+  color:#f8fafc;
+  font-size:1.02rem;
+  text-align:center;
+}
+.draft-storyline p{
+  margin:0;
+  color:#fde68a;
+  font-size:.84rem;
+  line-height:1.5;
+}
+.preview-disclaimer{
+  margin-top:14px;
+  text-align:center;
+  color:#64748b;
+  font-size:.68rem;
+  font-style:italic;
+}
+@media(max-width:640px){
+  .preview-modal-backdrop{padding:10px}
+  .preview-modal{margin:10px auto}
+  .preview-modal-head,.preview-modal-body{padding:14px}
+  .preview-modal-head h3{font-size:1.08rem}
+  .preview-player-grid{grid-template-columns:1fr}
+  .preview-score-card{grid-template-columns:1fr 52px 1fr;padding:11px 7px}
+  .preview-score-number{font-size:1.55rem}
+}
+
 </style>
 </head>
 <body>
@@ -421,7 +598,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <span class="status">PREVIEW</span>
+      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(1)">PREVIEW</button>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -464,7 +641,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <span class="status">PREVIEW</span>
+      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(2)">PREVIEW</button>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -507,7 +684,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <span class="status">PREVIEW</span>
+      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(3)">PREVIEW</button>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -550,7 +727,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <span class="status">PREVIEW</span>
+      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(4)">PREVIEW</button>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -593,6 +770,196 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </section>
 </main>
+
+<!-- ===== WEEK 1 DFFL MATCHUP PREVIEW MODALS ===== -->
+<div class="preview-modal-backdrop" id="preview-modal-1" aria-hidden="true" onclick="previewBackdropClose(event,1)">
+  <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-1">
+    <div class="preview-modal-head">
+      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-1">Mahomies Homie vs JetLiX</h3></div>
+      <button class="preview-modal-close" type="button" onclick="closePreviewModal(1)" aria-label="Close preview">×</button>
+    </div>
+    <div class="preview-modal-body">
+      <div class="preview-score-card">
+        <div class="preview-score-team"><b>AFC WEST</b><span>Dallas • Mahomies Homie</span><div class="preview-score-number">108.7</div></div>
+        <div class="preview-score-vs">VS</div>
+        <div class="preview-score-team right"><b>NFC NORTH</b><span>JetLiX</span><div class="preview-score-number">116.4</div></div>
+      </div>
+      <div class="preview-edge">Prediction: NFC North by 7.7</div>
+
+      <div class="preview-section">
+        <h4>Matchup Outlook</h4>
+        <p>This could be one of Week 1's highest-scoring matchups. The NFC North enters the season as the DFFL preseason #1 division, with elite fantasy firepower throughout Detroit, Green Bay, Minnesota and Chicago. Dallas has plenty of upside in the AFC West, but Mahomies Homie may need its biggest stars to hit their ceilings to keep pace.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>3 Players to Watch</h4>
+        <div class="preview-player-grid">
+          <div class="preview-player-box"><b>AFC West</b><span>Patrick Mahomes — KC</span><span>Brock Bowers — LV</span><span>Ladd McConkey — LAC</span></div>
+          <div class="preview-player-box"><b>NFC North</b><span>Jahmyr Gibbs — DET</span><span>Justin Jefferson — MIN</span><span>Amon-Ra St. Brown — DET</span></div>
+        </div>
+      </div>
+
+      <div class="preview-section">
+        <h4>2025 Division DNA</h4>
+        <p>The NFC North went a combined 38-29-1, scored 1,657 points and allowed 1,521. The AFC West finished 34-34, scoring 1,372 and allowing 1,411. That gives the NFC North a substantial 285-point offensive advantage based on last season's combined NFL results.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>DFFL Take</h4>
+        <p>Dallas has enough star power to win this matchup, but JetLiX has the deeper collection of potential difference-makers. The 2025 numbers and the preseason DFFL model both lean toward the NFC North.</p>
+      </div>
+
+      <div class="draft-storyline">
+        <h4>🏈 Draft Day Storyline</h4>
+        <strong>#7 DRAFTED AFC WEST vs #1 DRAFTED NFC NORTH</strong>
+        <p>Dallas gets an immediate opportunity to prove the seventh division off the board was undervalued. JetLiX gets the opposite challenge: defend the division that went #1 overall in the inaugural DFFL division draft.</p>
+      </div>
+      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+    </div>
+  </div>
+</div>
+
+<div class="preview-modal-backdrop" id="preview-modal-2" aria-hidden="true" onclick="previewBackdropClose(event,2)">
+  <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-2">
+    <div class="preview-modal-head">
+      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-2">Coast Killers Amigos vs Brian</h3></div>
+      <button class="preview-modal-close" type="button" onclick="closePreviewModal(2)" aria-label="Close preview">×</button>
+    </div>
+    <div class="preview-modal-body">
+      <div class="preview-score-card">
+        <div class="preview-score-team"><b>NFC EAST</b><span>Juan • Coast Killers Amigos</span><div class="preview-score-number">104.2</div></div>
+        <div class="preview-score-vs">VS</div>
+        <div class="preview-score-team right"><b>AFC NORTH</b><span>Brian</span><div class="preview-score-number">109.8</div></div>
+      </div>
+      <div class="preview-edge">Prediction: AFC North by 5.6</div>
+
+      <div class="preview-section">
+        <h4>Matchup Outlook</h4>
+        <p>This feels like the Week 1 grinder. Both divisions have high-end individual fantasy stars, but neither has the same across-the-board depth as the preseason favorites. One or two monster performances could decide this matchup.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>3 Players to Watch</h4>
+        <div class="preview-player-grid">
+          <div class="preview-player-box"><b>NFC East</b><span>CeeDee Lamb — DAL</span><span>Saquon Barkley — PHI</span><span>Jalen Hurts — PHI</span></div>
+          <div class="preview-player-box"><b>AFC North</b><span>Ja'Marr Chase — CIN</span><span>Lamar Jackson — BAL</span><span>Derrick Henry — BAL</span></div>
+        </div>
+      </div>
+
+      <div class="preview-section">
+        <h4>2025 Division DNA</h4>
+        <p>The AFC North went 29-39 with 1,514 points scored, while the NFC East went 27-40-1 with 1,587 points scored. The NFC East produced more offense, but also surrendered 1,726 points compared with the AFC North's 1,656.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>DFFL Take</h4>
+        <p>Juan has several players capable of exploding in any given week. Brian's AFC North, however, offers a dangerous combination of elite quarterback, running back and wide receiver options. Slight edge to the AFC North.</p>
+      </div>
+
+      <div class="draft-storyline">
+        <h4>🏈 Draft Day Storyline</h4>
+        <strong>#4 DRAFTED NFC EAST vs #3 DRAFTED AFC NORTH</strong>
+        <p>These divisions were selected back-to-back. Brian took the AFC North third, and Juan followed with the NFC East fourth. Week 1 gives us an immediate head-to-head test of those draft-day decisions.</p>
+      </div>
+      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+    </div>
+  </div>
+</div>
+
+<div class="preview-modal-backdrop" id="preview-modal-3" aria-hidden="true" onclick="previewBackdropClose(event,3)">
+  <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-3">
+    <div class="preview-modal-head">
+      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-3">The Fighting Josh Allen's vs Ben</h3></div>
+      <button class="preview-modal-close" type="button" onclick="closePreviewModal(3)" aria-label="Close preview">×</button>
+    </div>
+    <div class="preview-modal-body">
+      <div class="preview-score-card">
+        <div class="preview-score-team"><b>AFC EAST</b><span>Joshua • The Fighting Josh Allen's</span><div class="preview-score-number">110.1</div></div>
+        <div class="preview-score-vs">VS</div>
+        <div class="preview-score-team right"><b>NFC WEST</b><span>Ben</span><div class="preview-score-number">113.6</div></div>
+      </div>
+      <div class="preview-edge">Prediction: NFC West by 3.5</div>
+
+      <div class="preview-section">
+        <h4>Matchup Outlook</h4>
+        <p>This is the Week 1 matchup to watch. The AFC East has Josh Allen plus an increasingly dangerous group of fantasy options, while the NFC West brings some of the league's most productive skill players and gives Ben several different ways to construct a high-ceiling lineup.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>3 Players to Watch</h4>
+        <div class="preview-player-grid">
+          <div class="preview-player-box"><b>AFC East</b><span>Josh Allen — BUF</span><span>James Cook — BUF</span><span>Breece Hall — NYJ</span></div>
+          <div class="preview-player-box"><b>NFC West</b><span>Puka Nacua — LAR</span><span>Christian McCaffrey — SF</span><span>Jaxon Smith-Njigba — SEA</span></div>
+        </div>
+      </div>
+
+      <div class="preview-section">
+        <h4>2025 Division DNA</h4>
+        <p>The AFC East finished 36-32 with 1,618 points scored, but the NFC West was spectacular at 41-27 with 1,793 points scored and only 1,497 allowed. The NFC West was the strongest combined NFL division of this matchup based on last season's results.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>DFFL Take</h4>
+        <p>Josh Allen can single-handedly swing a fantasy matchup, but Ben's NFC West has an exceptional menu of skill-position talent. This one looks close enough that a single late-game touchdown could flip the result.</p>
+      </div>
+
+      <div class="draft-storyline">
+        <h4>🏈 Draft Day Storyline</h4>
+        <strong>#5 DRAFTED AFC EAST vs #2 DRAFTED NFC WEST</strong>
+        <p>Ben grabbed the NFC West second after its four teams combined for 41 NFL victories and 1,793 points in 2025. Joshua waited until fifth and built his division around the AFC East. Week 1 asks whether the gap between pick #2 and pick #5 was justified.</p>
+      </div>
+      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+    </div>
+  </div>
+</div>
+
+<div class="preview-modal-backdrop" id="preview-modal-4" aria-hidden="true" onclick="previewBackdropClose(event,4)">
+  <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-4">
+    <div class="preview-modal-head">
+      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-4">KVR1 vs Bandwagon Elites</h3></div>
+      <button class="preview-modal-close" type="button" onclick="closePreviewModal(4)" aria-label="Close preview">×</button>
+    </div>
+    <div class="preview-modal-body">
+      <div class="preview-score-card">
+        <div class="preview-score-team"><b>AFC SOUTH</b><span>Kendall • KVR1</span><div class="preview-score-number">103.8</div></div>
+        <div class="preview-score-vs">VS</div>
+        <div class="preview-score-team right"><b>NFC SOUTH</b><span>Xavier • Bandwagon Elites</span><div class="preview-score-number">115.9</div></div>
+      </div>
+      <div class="preview-edge">Prediction: NFC South by 12.1</div>
+
+      <div class="preview-section">
+        <h4>Matchup Outlook</h4>
+        <p>This is the largest projected spread of Week 1. The AFC South has several major individual weapons, but the NFC South enters the preseason DFFL model near the top of the league and offers multiple ways to build a high-upside lineup.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>3 Players to Watch</h4>
+        <div class="preview-player-grid">
+          <div class="preview-player-box"><b>AFC South</b><span>Jonathan Taylor — IND</span><span>Brian Thomas Jr. — JAX</span><span>Nico Collins — HOU</span></div>
+          <div class="preview-player-box"><b>NFC South</b><span>Bijan Robinson — ATL</span><span>Drake London — ATL</span><span>Mike Evans — TB</span></div>
+        </div>
+      </div>
+
+      <div class="preview-section">
+        <h4>2025 Division DNA</h4>
+        <p>The AFC South had the stronger combined 2025 NFL season at 36-32 with 1,628 points scored and 1,521 allowed. The NFC South went 30-38 with 1,350 points scored and 1,575 allowed. On pure NFL results, Kendall's division enters with the stronger résumé.</p>
+      </div>
+
+      <div class="preview-section">
+        <h4>DFFL Take</h4>
+        <p>This may be Week 1's best test of NFL strength versus fantasy strength. Kendall owns the division with the better 2025 NFL résumé, while Xavier owns the division the DFFL preseason model believes is much better suited to this fantasy format.</p>
+      </div>
+
+      <div class="draft-storyline">
+        <h4>🏈 Draft Day Storyline</h4>
+        <strong>#8 DRAFTED AFC SOUTH vs #6 DRAFTED NFC SOUTH</strong>
+        <p>Two of the final three divisions selected meet immediately. Kendall has a perfect “you guys got this wrong” opportunity: the AFC South was drafted last despite winning six more combined NFL games and scoring 278 more points than the NFC South in 2025.</p>
+      </div>
+      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+    </div>
+  </div>
+</div>
+
 <div class="footer">DFFL Interactive League Hub</div>
 
 
@@ -642,6 +1009,42 @@ document.querySelectorAll('.featured-matchup').forEach(function(card){
       toggleMatchupDetail(num);
     }
   });
+});
+</script>
+
+
+<script>
+function openPreviewModal(matchupNumber){
+  document.querySelectorAll('.preview-modal-backdrop.active').forEach(function(modal){
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden','true');
+  });
+  const modal = document.getElementById('preview-modal-' + matchupNumber);
+  if(!modal) return;
+  modal.classList.add('active');
+  modal.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+  const closeBtn = modal.querySelector('.preview-modal-close');
+  if(closeBtn) closeBtn.focus();
+}
+function closePreviewModal(matchupNumber){
+  const modal = document.getElementById('preview-modal-' + matchupNumber);
+  if(!modal) return;
+  modal.classList.remove('active');
+  modal.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+function previewBackdropClose(event, matchupNumber){
+  if(event.target === event.currentTarget) closePreviewModal(matchupNumber);
+}
+document.addEventListener('keydown', function(event){
+  if(event.key === 'Escape'){
+    const activeModal = document.querySelector('.preview-modal-backdrop.active');
+    if(activeModal){
+      const num = activeModal.id.replace('preview-modal-','');
+      closePreviewModal(num);
+    }
+  }
 });
 </script>
 
