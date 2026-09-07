@@ -3,8 +3,9 @@ name: DFFL live scoring
 on:
   workflow_dispatch:
   schedule:
-    # GitHub cron is UTC. Run every 15 minutes, then let the Central-time
-    # gate below decide whether scoring should actually run.
+    # GitHub cron uses UTC.
+    # Run every 15 minutes, then let the Central-time gate below
+    # decide whether the DFFL scorer should actually run.
     - cron: "*/15 * * * *"
 
 permissions:
@@ -20,6 +21,7 @@ jobs:
         shell: bash
         run: |
           export TZ=America/Chicago
+
           DAY=$(date +%u)      # Mon=1 ... Sun=7
           HOUR=$(date +%H)
           MINUTE=$(date +%M)
@@ -29,24 +31,25 @@ jobs:
 
           RUN=false
 
-          # Thursday: start at 3:00 PM Central
-          if [ "$DAY" -eq 4 ] && [ "$HOUR" -ge 15 ]; then
+          # Wednesday: start at 3:00 PM Central
+          if [ "$DAY" -eq 3 ] && [ "$HOUR" -ge 15 ]; then
             RUN=true
           fi
 
-          # Friday, Saturday, Sunday, Monday: all day
-          if [ "$DAY" -ge 5 ] || [ "$DAY" -eq 1 ]; then
+          # Thursday, Friday, Saturday and Sunday: all day
+          if [ "$DAY" -ge 4 ]; then
             RUN=true
           fi
 
-          # Tuesday: run through 1:59 AM Central; stop at 2:00 AM
+          # Monday: all day
+          if [ "$DAY" -eq 1 ]; then
+            RUN=true
+          fi
+
+          # Tuesday: run through 1:59 AM Central.
+          # Stop automatically beginning at 2:00 AM.
           if [ "$DAY" -eq 2 ] && [ "$HOUR" -lt 2 ]; then
             RUN=true
-          fi
-
-          # Wednesday: never run automatically
-          if [ "$DAY" -eq 3 ]; then
-            RUN=false
           fi
 
           echo "run_scoring=$RUN" >> "$GITHUB_OUTPUT"
@@ -74,6 +77,7 @@ jobs:
         run: |
           git config user.name "dffl-scorebot"
           git config user.email "actions@users.noreply.github.com"
+
           git add scoring-data/week1-scores.json
 
           if git diff --cached --quiet; then
