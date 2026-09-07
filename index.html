@@ -831,6 +831,140 @@ const rosterDB = {"AFC East": {"Buffalo Bills": {"QB": ["Josh Allen", "Mitchell 
 const positions = ["QB","RB","RB","WR","WR","TE","FLEX","DEF"];
 const commissionerEmail = "xcasillas@gmail.com";
 
+/* ===== 2026 NFL FULL-ROSTER SYNC =====
+   DFFL roster policy:
+   - Team membership controls availability, not weekly injury availability.
+   - IR/PUP/suspended players who still belong to the NFL club remain in the pool.
+   - Practice-squad/free-agent/waived/retired players are not treated as club-roster players.
+   - QB/RB/WR/TE are selectable individually; FLEX = every RB + WR + TE.
+   - DEF remains one team-defense selection.
+   - The complete processed club roster is also retained in fullRosterDB for maintenance/auditing.
+   Source: Sleeper public NFL player map, refreshed at most once every 24 hours per browser.
+*/
+const fullRosterDB = {};
+const NFL_ROSTER_CACHE_KEY = "dffl_2026_full_roster_cache_v1";
+const NFL_ROSTER_CACHE_MS = 24 * 60 * 60 * 1000;
+const NFL_PLAYER_SOURCE = "https://api.sleeper.app/v1/players/nfl";
+
+const nflTeamCodeToName = {
+  ARI:"Arizona Cardinals", ATL:"Atlanta Falcons", BAL:"Baltimore Ravens", BUF:"Buffalo Bills",
+  CAR:"Carolina Panthers", CHI:"Chicago Bears", CIN:"Cincinnati Bengals", CLE:"Cleveland Browns",
+  DAL:"Dallas Cowboys", DEN:"Denver Broncos", DET:"Detroit Lions", GB:"Green Bay Packers",
+  HOU:"Houston Texans", IND:"Indianapolis Colts", JAX:"Jacksonville Jaguars", JAC:"Jacksonville Jaguars",
+  KC:"Kansas City Chiefs", LV:"Las Vegas Raiders", LAC:"Los Angeles Chargers", LAR:"Los Angeles Rams", LA:"Los Angeles Rams",
+  MIA:"Miami Dolphins", MIN:"Minnesota Vikings", NE:"New England Patriots", NO:"New Orleans Saints",
+  NYG:"New York Giants", NYJ:"New York Jets", PHI:"Philadelphia Eagles", PIT:"Pittsburgh Steelers",
+  SF:"San Francisco 49ers", SEA:"Seattle Seahawks", TB:"Tampa Bay Buccaneers", TEN:"Tennessee Titans",
+  WAS:"Washington Commanders", WSH:"Washington Commanders"
+};
+
+function isExcludedRosterStatus(status){
+  const value = String(status || "").toLowerCase();
+  return value.includes("practice squad") || value.includes("practice-squad") ||
+         value.includes("free agent") || value === "fa" || value.includes("waived") ||
+         value.includes("retired");
+}
+
+function buildRosterSnapshotFromSleeper(playerMap){
+  const snapshot = {};
+  Object.keys(rosterDB).forEach(division=>{
+    Object.keys(rosterDB[division]).forEach(team=>{
+      snapshot[team] = {full:[], QB:[], RB:[], WR:[], TE:[]};
+    });
+  });
+
+  Object.values(playerMap || {}).forEach(player=>{
+    if(!player || !player.team) return;
+    const teamName = nflTeamCodeToName[String(player.team).toUpperCase()];
+    if(!teamName || !snapshot[teamName]) return;
+    if(isExcludedRosterStatus(player.status)) return;
+
+    const name = (player.full_name || [player.first_name,player.last_name].filter(Boolean).join(" ")).trim();
+    if(!name) return;
+    const position = String(player.position || "").toUpperCase();
+    const jersey = player.number ?? null;
+    const status = player.status || "Rostered";
+    const depth = Number.isFinite(Number(player.depth_chart_order)) ? Number(player.depth_chart_order) : 999;
+
+    snapshot[teamName].full.push({name,position,jersey,status,depth});
+    if(["QB","RB","WR","TE"].includes(position)){
+      snapshot[teamName][position].push({name,depth});
+    }
+  });
+
+  Object.values(snapshot).forEach(team=>{
+    const seenFull = new Set();
+    team.full = team.full
+      .sort((a,b)=>(a.position||"").localeCompare(b.position||"") || a.depth-b.depth || a.name.localeCompare(b.name))
+      .filter(p=>{ const k=(p.name+"|"+p.position).toLowerCase(); if(seenFull.has(k)) return false; seenFull.add(k); return true; });
+
+    ["QB","RB","WR","TE"].forEach(pos=>{
+      const seen = new Set();
+      team[pos] = team[pos]
+        .sort((a,b)=>a.depth-b.depth || a.name.localeCompare(b.name))
+        .filter(p=>{ const k=p.name.toLowerCase(); if(seen.has(k)) return false; seen.add(k); return true; })
+        .map(p=>p.name);
+    });
+  });
+  return snapshot;
+}
+
+function applyRosterSnapshot(snapshot){
+  if(!snapshot || typeof snapshot !== "object") return false;
+  let teamsUpdated = 0;
+  let fullPlayerCount = 0;
+
+  Object.keys(rosterDB).forEach(division=>{
+    Object.keys(rosterDB[division]).forEach(teamName=>{
+      const sourceTeam = snapshot[teamName];
+      if(!sourceTeam || !Array.isArray(sourceTeam.full) || sourceTeam.full.length < 20) return;
+      fullRosterDB[teamName] = sourceTeam.full;
+      fullPlayerCount += sourceTeam.full.length;
+      ["QB","RB","WR","TE"].forEach(pos=>{
+        if(Array.isArray(sourceTeam[pos]) && sourceTeam[pos].length){
+          rosterDB[division][teamName][pos] = sourceTeam[pos].slice();
+        }
+      });
+      rosterDB[division][teamName].DEF = [teamName + " DEF"];
+      teamsUpdated++;
+    });
+  });
+
+  return teamsUpdated >= 30 && fullPlayerCount >= 1200;
+}
+
+async function refresh2026NFLRosters(){
+  let usedCache = false;
+  try{
+    const cachedRaw = localStorage.getItem(NFL_ROSTER_CACHE_KEY);
+    if(cachedRaw){
+      const cached = JSON.parse(cachedRaw);
+      if(cached && cached.savedAt && cached.snapshot && (Date.now() - cached.savedAt) < NFL_ROSTER_CACHE_MS){
+        usedCache = applyRosterSnapshot(cached.snapshot);
+      }
+    }
+  }catch(e){ /* cache is optional */ }
+
+  if(usedCache){
+    buildRosterTable(true);
+    return;
+  }
+
+  try{
+    const response = await fetch(NFL_PLAYER_SOURCE, {cache:"no-store"});
+    if(!response.ok) throw new Error("NFL player source returned " + response.status);
+    const playerMap = await response.json();
+    const snapshot = buildRosterSnapshotFromSleeper(playerMap);
+    if(!applyRosterSnapshot(snapshot)) throw new Error("Roster validation threshold not met");
+    try{
+      localStorage.setItem(NFL_ROSTER_CACHE_KEY, JSON.stringify({savedAt:Date.now(),snapshot}));
+    }catch(e){ /* page still works without caching */ }
+    buildRosterTable(true);
+  }catch(error){
+    console.warn("DFFL roster refresh unavailable; using built-in roster fallback.", error);
+  }
+}
+
 /* 2026 NFL bye schedule supplied for DFFL roster management. */
 const byeTeamsByWeek = {
   1: [], 2: [], 3: [], 4: [],
@@ -951,6 +1085,7 @@ function init(){
   ownerName.oninput=saveDataSilent;
   ownerEmail.oninput=saveDataSilent;
   buildRosterTable(false);
+  refresh2026NFLRosters();
 }
 
 function buildRosterTable(preserveOwner=true){
