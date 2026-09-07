@@ -1055,5 +1055,211 @@ document.querySelectorAll('img[data-helmet]').forEach((img) => {
   if (approved) img.src = approved;
 });
 </script>
+
+
+<script id="dfflWeek1LiveProduction">
+/* ===== DFFL WEEK 1 PRODUCTION JSON CONNECTOR ===== */
+const DFFL_ROSTER_URL = "/scoring-data/week1-rosters.json";
+const DFFL_SCORE_URL = "/scoring-data/week1-scores.json";
+const DFFL_REFRESH_MS = 15 * 60 * 1000;
+
+function dfflFormatPoints(value){
+  const n = Number(value);
+  return Number.isFinite(n) ? n.toFixed(2) : "0.00";
+}
+
+function dfflNormalizeName(value){
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\b(jr|sr|ii|iii|iv)\.?\b/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function dfflFindScoreRow(scoreRows, rosterPlayer){
+  const targetName = dfflNormalizeName(rosterPlayer && rosterPlayer.name);
+  const targetTeam = String((rosterPlayer && rosterPlayer.nflTeam) || "").toUpperCase();
+  const targetPosition = String((rosterPlayer && rosterPlayer.position) || "").toUpperCase();
+
+  return (scoreRows || []).find(function(row){
+    const sameName = dfflNormalizeName(row.name) === targetName;
+    const sameTeam = String(row.nflTeam || "").toUpperCase() === targetTeam;
+    const samePosition = String(row.position || "").toUpperCase() === targetPosition;
+    return sameName && sameTeam && samePosition;
+  }) || null;
+}
+
+function dfflMatchupStatus(leftRows, rightRows){
+  const rows = [...(leftRows || []), ...(rightRows || [])];
+  if(!rows.length) return "PENDING KICKOFF";
+
+  const statuses = rows.map(function(row){
+    return String(row.gameStatus || "pre-game").toLowerCase();
+  });
+
+  if(statuses.includes("live")) return "LIVE";
+  if(statuses.every(function(status){ return status === "final"; })) return "FINAL";
+  if(statuses.some(function(status){ return status === "final"; })) return "IN PROGRESS";
+  return "PENDING KICKOFF";
+}
+
+function dfflBuildPlayerTable(panel, leftRoster, rightRoster, leftScores, rightScores, leftTotal, rightTotal){
+  const tbody = panel.querySelector(".matchup-player-table tbody");
+  if(!tbody) return;
+
+  const leftPlayers = (leftRoster && leftRoster.players) || [];
+  const rightPlayers = (rightRoster && rightRoster.players) || [];
+  const rowCount = Math.max(leftPlayers.length, rightPlayers.length);
+  const rows = [];
+
+  for(let i = 0; i < rowCount; i++){
+    const leftPlayer = leftPlayers[i] || {};
+    const rightPlayer = rightPlayers[i] || {};
+    const leftScore = dfflFindScoreRow(leftScores, leftPlayer);
+    const rightScore = dfflFindScoreRow(rightScores, rightPlayer);
+
+    const leftPosition = leftPlayer.position || "";
+    const rightPosition = rightPlayer.position || "";
+    const centerPosition = leftPosition || rightPosition || "";
+
+    const leftName = leftPlayer.name || "—";
+    const rightName = rightPlayer.name || "—";
+
+    rows.push(`
+      <tr>
+        <td>${leftPosition ? leftPosition + " — " : ""}${leftName}</td>
+        <td class="left-pts">${dfflFormatPoints(leftScore ? leftScore.points : 0)}</td>
+        <td class="pos-cell">${centerPosition}</td>
+        <td class="right-pts">${dfflFormatPoints(rightScore ? rightScore.points : 0)}</td>
+        <td>${rightName}${rightPosition ? " — " + rightPosition : ""}</td>
+      </tr>
+    `);
+  }
+
+  rows.push(`
+    <tr class="total-row">
+      <td>TOTAL</td>
+      <td class="left-pts">${dfflFormatPoints(leftTotal)}</td>
+      <td></td>
+      <td class="right-pts">${dfflFormatPoints(rightTotal)}</td>
+      <td>TOTAL</td>
+    </tr>
+  `);
+
+  tbody.innerHTML = rows.join("");
+}
+
+function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
+  const card = document.getElementById("featured-matchup-" + matchupId);
+  const panel = document.getElementById("matchup-detail-" + matchupId);
+  if(!card || !panel || !matchupData) return;
+
+  const leftOwner = matchupData.leftOwner;
+  const rightOwner = matchupData.rightOwner;
+  const leftTotal = Number(matchupData.leftTotal || 0);
+  const rightTotal = Number(matchupData.rightTotal || 0);
+
+  const leftRoster = rosterData.rosters && rosterData.rosters[leftOwner];
+  const rightRoster = rosterData.rosters && rosterData.rosters[rightOwner];
+  const leftScores = (scoreData.players && scoreData.players[leftOwner]) || [];
+  const rightScores = (scoreData.players && scoreData.players[rightOwner]) || [];
+
+  const cardTeams = card.querySelectorAll(".featured-team");
+  if(cardTeams[0]){
+    const owner = cardTeams[0].querySelector(".owner-label");
+    const score = cardTeams[0].querySelector(".owner-score");
+    if(owner) owner.textContent = leftOwner;
+    if(score) score.textContent = dfflFormatPoints(leftTotal);
+  }
+  if(cardTeams[1]){
+    const owner = cardTeams[1].querySelector(".owner-label");
+    const score = cardTeams[1].querySelector(".owner-score");
+    if(owner) owner.textContent = rightOwner;
+    if(score) score.textContent = dfflFormatPoints(rightTotal);
+  }
+
+  const detailTeams = panel.querySelectorAll(".detail-team");
+  if(detailTeams[0]){
+    const owner = detailTeams[0].querySelector(".detail-team-name span");
+    const score = detailTeams[0].querySelector(".detail-total");
+    if(owner) owner.textContent = leftOwner;
+    if(score) score.textContent = dfflFormatPoints(leftTotal);
+  }
+  if(detailTeams[1]){
+    const owner = detailTeams[1].querySelector(".detail-team-name span");
+    const score = detailTeams[1].querySelector(".detail-total");
+    if(owner) owner.textContent = rightOwner;
+    if(score) score.textContent = dfflFormatPoints(rightTotal);
+  }
+
+  const matchupStatus = dfflMatchupStatus(leftScores, rightScores);
+  const statusNode = card.querySelector(".matchup-time");
+  if(statusNode) statusNode.textContent = matchupStatus;
+
+  dfflBuildPlayerTable(
+    panel,
+    leftRoster,
+    rightRoster,
+    leftScores,
+    rightScores,
+    leftTotal,
+    rightTotal
+  );
+}
+
+async function dfflLoadWeek1Production(){
+  try{
+    const cacheBust = Date.now();
+    const [rosterResponse, scoreResponse] = await Promise.all([
+      fetch(DFFL_ROSTER_URL + "?v=" + cacheBust, { cache: "no-store" }),
+      fetch(DFFL_SCORE_URL + "?v=" + cacheBust, { cache: "no-store" })
+    ]);
+
+    if(!rosterResponse.ok){
+      throw new Error("Roster JSON returned HTTP " + rosterResponse.status);
+    }
+    if(!scoreResponse.ok){
+      throw new Error("Score JSON returned HTTP " + scoreResponse.status);
+    }
+
+    const rosterData = await rosterResponse.json();
+    const scoreData = await scoreResponse.json();
+
+    const matchups = scoreData.matchups || {};
+    Object.keys(matchups).forEach(function(matchupId){
+      dfflUpdateMatchup(matchupId, matchups[matchupId], rosterData, scoreData);
+    });
+
+    const weekLabel = document.querySelector(".current-week-sub");
+    if(weekLabel){
+      if(scoreData.lastUpdated){
+        const updated = new Date(scoreData.lastUpdated);
+        const formatted = Number.isNaN(updated.getTime())
+          ? scoreData.lastUpdated
+          : updated.toLocaleString("en-US", {
+              timeZone: "America/Chicago",
+              month: "short",
+              day: "numeric",
+              hour: "numeric",
+              minute: "2-digit"
+            });
+        weekLabel.textContent = "Week 1 • Updated " + formatted + " CT";
+      }else{
+        weekLabel.textContent = "Week 1 Preview";
+      }
+    }
+
+    console.log("DFFL Week 1 production data loaded", scoreData.lastUpdated || "pre-game");
+  }catch(error){
+    console.error("DFFL Week 1 production data load failed:", error);
+  }
+}
+
+dfflLoadWeek1Production();
+setInterval(dfflLoadWeek1Production, DFFL_REFRESH_MS);
+</script>
+
 </body>
 </html>
