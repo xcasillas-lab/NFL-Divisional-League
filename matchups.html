@@ -567,6 +567,31 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   .preview-score-number{font-size:1.55rem}
 }
 
+
+/* ===== PER-PLAYER NFL GAME STATUS ===== */
+.player-game-status{
+  display:block;
+  margin-top:3px;
+  font-size:.56rem;
+  line-height:1.15;
+  font-weight:900;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:#fbbf24;
+}
+.player-game-status.live{color:#4ade80}
+.player-game-status.final{color:#94a3b8}
+.player-game-status.pending{color:#fbbf24}
+.matchup-player-table td:last-child .player-game-status{text-align:right}
+
+@media(max-width:640px){
+  .player-game-status{
+    margin-top:2px;
+    font-size:.49rem;
+    letter-spacing:.03em;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -612,14 +637,14 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <tr><th>AFC WEST PLAYER</th><th>PTS</th><th>POS</th><th>PTS</th><th>NFC NORTH PLAYER</th></tr>
     </thead>
     <tbody>
-      <tr><td>QB — Patrick Mahomes</td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Caleb Williams — QB</td></tr>
-<tr><td>RB — Kenneth Walker III</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Jahmyr Gibbs — RB</td></tr>
-<tr><td>RB — Ashton Jeanty</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Josh Jacobs — RB</td></tr>
-<tr><td>WR — Jaylen Waddle</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Amon-Ra St. Brown — WR</td></tr>
-<tr><td>WR — Rashee Rice</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Justin Jefferson — WR</td></tr>
-<tr><td>TE — Brock Bowers</td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Tucker Kraft — TE</td></tr>
-<tr><td>FLEX — Omarion Hampton</td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Jameson Williams — FLEX</td></tr>
-<tr><td>DEF — Los Angeles Chargers DEF</td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Minnesota Vikings DEF — DEF</td></tr>
+      <tr><td>QB — Patrick Mahomes<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Caleb Williams — QB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — Kenneth Walker III<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Jahmyr Gibbs — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — Ashton Jeanty<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Josh Jacobs — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — Jaylen Waddle<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Amon-Ra St. Brown — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — Rashee Rice<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Justin Jefferson — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>TE — Brock Bowers<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Tucker Kraft — TE<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>FLEX — Omarion Hampton<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Jameson Williams — FLEX<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>DEF — Los Angeles Chargers DEF<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Minnesota Vikings DEF — DEF<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
       <tr class="total-row"><td>TOTAL</td><td class="left-pts">—</td><td></td><td class="right-pts">—</td><td>TOTAL</td></tr>
     </tbody>
   </table>
@@ -655,14 +680,14 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <tr><th>NFC EAST PLAYER</th><th>PTS</th><th>POS</th><th>PTS</th><th>AFC NORTH PLAYER</th></tr>
     </thead>
     <tbody>
-      <tr><td>QB — Dak Prescott</td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Joe Burrow — QB</td></tr>
-<tr><td>RB — Saquon Barkley</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Derrick Henry — RB</td></tr>
-<tr><td>RB — Javonte Williams</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Chase Brown — RB</td></tr>
-<tr><td>WR — CeeDee Lamb</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Ja'Marr Chase — WR</td></tr>
-<tr><td>WR — Malik Nabers</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Zay Flowers — WR</td></tr>
-<tr><td>TE — Isaiah Likely</td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Harold Fannin Jr. — TE</td></tr>
-<tr><td>FLEX — Terry McLaurin</td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Quinshon Judkins — FLEX</td></tr>
-<tr><td>DEF — Philadelphia Eagles DEF</td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Pittsburgh Steelers DEF — DEF</td></tr>
+      <tr><td>QB — Dak Prescott<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Joe Burrow — QB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — Saquon Barkley<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Derrick Henry — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — Javonte Williams<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Chase Brown — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — CeeDee Lamb<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Ja'Marr Chase — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — Malik Nabers<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Zay Flowers — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>TE — Isaiah Likely<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Harold Fannin Jr. — TE<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>FLEX — Terry McLaurin<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Quinshon Judkins — FLEX<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>DEF — Philadelphia Eagles DEF<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Pittsburgh Steelers DEF — DEF<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
       <tr class="total-row"><td>TOTAL</td><td class="left-pts">—</td><td></td><td class="right-pts">—</td><td>TOTAL</td></tr>
     </tbody>
   </table>
@@ -698,14 +723,14 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <tr><th>AFC EAST PLAYER</th><th>PTS</th><th>POS</th><th>PTS</th><th>NFC WEST PLAYER</th></tr>
     </thead>
     <tbody>
-      <tr><td>QB — Drake Maye</td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Matthew Stafford — QB</td></tr>
-<tr><td>RB — De'Von Achane</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Christian McCaffrey — RB</td></tr>
-<tr><td>RB — James Cook</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Kyren Williams — RB</td></tr>
-<tr><td>WR — Garrett Wilson</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Jaxon Smith-Njigba — WR</td></tr>
-<tr><td>WR — DJ Moore</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Puka Nacua — WR</td></tr>
-<tr><td>TE — Hunter Henry</td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Trey McBride — TE</td></tr>
-<tr><td>FLEX — Breece Hall</td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Marvin Harrison Jr. — FLEX</td></tr>
-<tr><td>DEF — New York Jets DEF</td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Seattle Seahawks DEF — DEF</td></tr>
+      <tr><td>QB — Drake Maye<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Matthew Stafford — QB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — De'Von Achane<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Christian McCaffrey — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — James Cook<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Kyren Williams — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — Garrett Wilson<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Jaxon Smith-Njigba — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — DJ Moore<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Puka Nacua — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>TE — Hunter Henry<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Trey McBride — TE<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>FLEX — Breece Hall<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Marvin Harrison Jr. — FLEX<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>DEF — New York Jets DEF<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Seattle Seahawks DEF — DEF<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
       <tr class="total-row"><td>TOTAL</td><td class="left-pts">—</td><td></td><td class="right-pts">—</td><td>TOTAL</td></tr>
     </tbody>
   </table>
@@ -741,14 +766,14 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <tr><th>AFC SOUTH PLAYER</th><th>PTS</th><th>POS</th><th>PTS</th><th>NFC SOUTH PLAYER</th></tr>
     </thead>
     <tbody>
-      <tr><td>QB — Trevor Lawrence</td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Baker Mayfield — QB</td></tr>
-<tr><td>RB — Jonathan Taylor</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Chuba Hubbard — RB</td></tr>
-<tr><td>RB — David Montgomery</td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Bijan Robinson — RB</td></tr>
-<tr><td>WR — Nico Collins</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Emeka Egbuka — WR</td></tr>
-<tr><td>WR — Brian Thomas Jr.</td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Drake London — WR</td></tr>
-<tr><td>TE — Gunnar Helm</td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Cade Otton — TE</td></tr>
-<tr><td>FLEX — Carnell Tate</td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Chris Olave — FLEX</td></tr>
-<tr><td>DEF — Houston Texans DEF</td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Carolina Panthers DEF — DEF</td></tr>
+      <tr><td>QB — Trevor Lawrence<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">QB</td><td class="right-pts">—</td><td>Baker Mayfield — QB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — Jonathan Taylor<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Chuba Hubbard — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>RB — David Montgomery<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">RB</td><td class="right-pts">—</td><td>Bijan Robinson — RB<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — Nico Collins<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Emeka Egbuka — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>WR — Brian Thomas Jr.<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">WR</td><td class="right-pts">—</td><td>Drake London — WR<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>TE — Gunnar Helm<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">TE</td><td class="right-pts">—</td><td>Cade Otton — TE<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>FLEX — Carnell Tate<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">FLEX</td><td class="right-pts">—</td><td>Chris Olave — FLEX<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
+<tr><td>DEF — Houston Texans DEF<span class="player-game-status pending">PENDING KICKOFF</span></td><td class="left-pts">—</td><td class="pos-cell">DEF</td><td class="right-pts">—</td><td>Carolina Panthers DEF — DEF<span class="player-game-status pending">PENDING KICKOFF</span></td></tr>
       <tr class="total-row"><td>TOTAL</td><td class="left-pts">—</td><td></td><td class="right-pts">—</td><td>TOTAL</td></tr>
     </tbody>
   </table>
@@ -1091,6 +1116,20 @@ function dfflFindScoreRow(scoreRows, rosterPlayer){
   }) || null;
 }
 
+function dfflPlayerStatus(row){
+  const status = String((row && row.gameStatus) || "pre-game").toLowerCase();
+
+  if(status === "live"){
+    return { label: "LIVE", cssClass: "live" };
+  }
+
+  if(status === "final"){
+    return { label: "FINAL", cssClass: "final" };
+  }
+
+  return { label: "PENDING KICKOFF", cssClass: "pending" };
+}
+
 function dfflMatchupStatus(leftRows, rightRows){
   const rows = [...(leftRows || []), ...(rightRows || [])];
   if(!rows.length) return "PENDING KICKOFF";
@@ -1127,13 +1166,22 @@ function dfflBuildPlayerTable(panel, leftRoster, rightRoster, leftScores, rightS
     const leftName = leftPlayer.name || "—";
     const rightName = rightPlayer.name || "—";
 
+    const leftStatus = dfflPlayerStatus(leftScore);
+    const rightStatus = dfflPlayerStatus(rightScore);
+
     rows.push(`
       <tr>
-        <td>${leftPosition ? leftPosition + " — " : ""}${leftName}</td>
+        <td>
+          ${leftPosition ? leftPosition + " — " : ""}${leftName}
+          <span class="player-game-status ${leftStatus.cssClass}">${leftStatus.label}</span>
+        </td>
         <td class="left-pts">${dfflFormatPoints(leftScore ? leftScore.points : 0)}</td>
         <td class="pos-cell">${centerPosition}</td>
         <td class="right-pts">${dfflFormatPoints(rightScore ? rightScore.points : 0)}</td>
-        <td>${rightName}${rightPosition ? " — " + rightPosition : ""}</td>
+        <td>
+          ${rightName}${rightPosition ? " — " + rightPosition : ""}
+          <span class="player-game-status ${rightStatus.cssClass}">${rightStatus.label}</span>
+        </td>
       </tr>
     `);
   }
