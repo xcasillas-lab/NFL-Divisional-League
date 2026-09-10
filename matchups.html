@@ -1283,7 +1283,6 @@ async function dfflLoadWeek1Production(){
     Object.keys(matchups).forEach(function(matchupId){
       dfflUpdateMatchup(matchupId, matchups[matchupId], rosterData, scoreData);
     });
-    }
 
     const weekLabel = document.querySelector(".current-week-sub");
     if(weekLabel){
