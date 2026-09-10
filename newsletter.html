@@ -346,6 +346,124 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   .analysis-tiers span{display:block;margin-top:4px;text-align:left}
 }
 
+
+/* ===== WEEK 1 NEWSLETTER COLLAPSIBLE SECTIONS ===== */
+.newsletter-collapse{border:1px solid #334155;border-radius:14px;background:linear-gradient(180deg,#0b1626,#07111f);overflow:hidden}
+.newsletter-collapse-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 16px;border:0;border-radius:0;background:#07111f;color:#f8fafc;text-align:left;cursor:pointer}
+.newsletter-collapse-toggle:hover{background:#0b1626}
+.newsletter-collapse-toggle strong{display:block;font-size:1.05rem;text-transform:uppercase;letter-spacing:.04em;color:#fbbf24}
+.newsletter-collapse-toggle small{display:block;margin-top:4px;color:#94a3b8;font-size:.78rem;line-height:1.35}
+.newsletter-collapse-toggle .toggle-arrow{flex:0 0 auto}
+.newsletter-collapse-toggle.collapsed .toggle-arrow{transform:rotate(-90deg)}
+.newsletter-collapse-content{padding:14px 16px 16px;border-top:1px solid #253247}
+.newsletter-collapse-content[hidden]{display:none}
+
+.payout-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.payout-item{display:flex;justify-content:space-between;gap:12px;padding:10px 12px;border:1px solid #26374e;border-radius:10px;background:#050d19}
+.payout-item span{color:#dbeafe;font-size:.82rem}
+.payout-item strong{color:#22c55e;white-space:nowrap}
+.payout-total-line{margin-top:10px;padding-top:10px;border-top:1px solid #334155;text-align:right;color:#fbbf24;font-weight:900}
+
+.watch-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.watch-card{border:1px solid #334155;border-radius:12px;background:#050d19;padding:14px}
+.watch-kicker{font-size:.68rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#38bdf8}
+.watch-card h4{margin:5px 0 4px;color:#f8fafc;font-size:1.05rem}
+.watch-impact{color:#fbbf24;font-size:.75rem;font-weight:800;text-transform:uppercase}
+.watch-card p{margin:9px 0 0;color:#cbd5e1;font-size:.84rem;line-height:1.48}
+.watch-card b{color:#f8fafc}
+.around-league{margin-top:12px;border-top:1px solid #334155;padding-top:12px}
+.around-league h4{margin:0 0 8px;color:#fbbf24;text-transform:uppercase}
+.around-news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.around-news-item{padding:10px 12px;border:1px solid #26374e;border-radius:10px;background:#07111f}
+.around-news-item b{display:block;color:#f8fafc;font-size:.82rem}
+.around-news-item span{display:block;margin-top:4px;color:#94a3b8;font-size:.76rem;line-height:1.4}
+.week1-sources{margin-top:10px;color:#64748b;font-size:.68rem}
+.week1-sources a{color:#38bdf8;text-decoration:none}
+
+.latest-news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.latest-news-card{padding:11px 12px;border:1px solid #26374e;border-radius:10px;background:#050d19}
+.latest-news-card b{display:block;color:#f8fafc;font-size:.84rem}
+.latest-news-card span{display:block;margin-top:4px;color:#94a3b8;font-size:.76rem;line-height:1.4}
+
+.quick-standings-table{margin:0;background:#050d19;border:1px solid #26374e}
+.quick-standings-table th{font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:#fbbf24}
+.quick-standings-table td{font-size:.82rem}
+.quick-standings-table td:last-child,.quick-standings-table th:last-child{text-align:right}
+.quick-standings-note{margin:9px 0 0;color:#94a3b8;font-size:.75rem}
+
+@media(max-width:700px){
+  .payout-grid,.watch-grid,.around-news-grid,.latest-news-grid{grid-template-columns:1fr}
+  .newsletter-collapse-toggle{padding:12px 13px}
+  .newsletter-collapse-content{padding:12px 13px 14px}
+  .watch-card{padding:12px}
+}
+
+
+/* ===== LATEST UPDATE EMPHASIS ===== */
+.latest-new-badge{
+  display:inline-block;
+  margin-left:7px;
+  padding:2px 7px;
+  border-radius:999px;
+  background:#22c55e;
+  color:#052e16;
+  font-size:.62rem;
+  font-weight:900;
+  letter-spacing:.07em;
+  vertical-align:middle;
+  animation:dfflNewBlink 1.05s ease-in-out infinite;
+  box-shadow:0 0 10px rgba(34,197,94,.45);
+}
+@keyframes dfflNewBlink{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.3;transform:scale(.94)}
+}
+@media (prefers-reduced-motion:reduce){
+  .latest-new-badge{animation:none}
+}
+.draft-collapse .draft-board{
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  padding:4px 0 0;
+  background:transparent;
+}
+
+.combined-update-divider{
+  margin:14px 0 12px;
+  padding-top:12px;
+  border-top:1px solid #334155;
+  color:#fbbf24;
+  font-size:.78rem;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.07em;
+}
+
+/* ===== UNIFORM NEWSLETTER SECTION HEADING SIZES ===== */
+.lottery-toggle strong,
+.rankings-toggle strong{
+  font-size:1.05rem !important;
+  line-height:1.2;
+  letter-spacing:.04em;
+  color:#f8fafc;
+}
+.lottery-toggle small,
+.rankings-toggle small{
+  font-size:.78rem;
+  line-height:1.35;
+}
+@media(max-width:640px){
+  .lottery-toggle strong,
+  .rankings-toggle strong{
+    font-size:1.05rem !important;
+  }
+  .lottery-toggle small,
+  .rankings-toggle small{
+    font-size:.78rem;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -357,35 +475,43 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="newsletter-kicker">Founding Edition</div>
 <h2>DFFL HUDDLE</h2>
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
-<div class="newsletter-issue">August 19, 2026</div>
+<div class="newsletter-issue">September 9, 2026</div>
+</div><div class="newsletter-collapse"><button aria-controls="latestUpdatesContent" aria-expanded="true" class="newsletter-collapse-toggle" onclick="toggleNewsletterSection(this)" type="button"><span><strong>📣 Latest Updates &amp; Week 1 — What to Watch <span class="latest-new-badge">NEW</span></strong><small>The newest DFFL league updates, tonight's opener, tomorrow's game and key NFL news.</small></span><span aria-hidden="true" class="toggle-arrow">▾</span></button><div class="newsletter-collapse-content" id="latestUpdatesContent">
+<div class="latest-news-grid">
+<div class="latest-news-card"><b>2026 Division Draft Finalized</b><span>All eight owners officially have their divisions for the inaugural DFFL season.</span></div>
+<div class="latest-news-card"><b>Week 1 Is Here</b><span>The 2026 NFL season opens tonight, officially putting the first DFFL matchup week in motion.</span></div>
+<div class="latest-news-card"><b>All Eight Week 1 Lineups Submitted</b><span>The opening-week rosters are in and the league is ready for live scoring.</span></div>
+<div class="latest-news-card"><b>Matchup Status Tracking Ready</b><span>The Weekly Matchups page can show player game status as Pending Kickoff, Live or Final.</span></div>
 </div>
-<div class="newsletter-intro-grid">
-<article class="newsletter-panel welcome-panel">
-<h3>Welcome to DFFL!</h3>
-<p>We’re excited to kick off the inaugural season of the Divisional Fantasy Football League.</p>
-<p><strong>Eight owners. Eight divisions. One champion.</strong></p>
-<p class="newsletter-accent">Let the competition begin!</p>
+<div class="combined-update-divider">WEEK 1 — WHAT TO WATCH</div>
+<div class="watch-grid">
+<article class="watch-card">
+<div class="watch-kicker">Tonight • Wednesday, Sept. 9</div>
+<h4>Patriots at Seahawks</h4>
+<div class="watch-impact">DFFL Impact: AFC East vs. NFC West</div>
+<p>New England opens Week 1 without <b>TreVeyon Henderson</b>, who is out with an ankle injury. That creates an immediate backfield storyline for Joshua's AFC East. Seattle also enters the opener with secondary concerns, including <b>Ty Okada out</b> and <b>Nick Emmanwori questionable</b>.</p>
+<p><b>What to watch:</b> New England's backfield workload, Seattle's passing-game rhythm, and which offense looks more trustworthy coming out of the opener.</p>
 </article>
-<article class="newsletter-panel members-panel">
-<h3>Inaugural Members • Class of 2026</h3>
-<p>The following owners make up the Inaugural Class of the Divisional Fantasy Football League.</p>
-<div class="member-grid">
-<span>Ben</span><span>Brian</span><span>Dallas</span><span>JetLiX</span>
-<span>Joshua</span><span>Juan</span><span>Kendall</span><span>Xavier</span>
+<article class="watch-card">
+<div class="watch-kicker">Tomorrow • Thursday, Sept. 10</div>
+<h4>49ers vs. Rams — Melbourne</h4>
+<div class="watch-impact">DFFL Impact: NFC West Spotlight</div>
+<p>Ben gets an early all-NFC West showcase in the NFL's first regular-season game in Australia. San Francisco enters the matchup after losing defensive tackle <b>Alfred Collins</b> for the season, putting additional pressure on an already-thin defensive front.</p>
+<p><b>What to watch:</b> Whether the Rams exploit San Francisco up front, how Christian McCaffrey is used, and which NFC West offense looks most explosive.</p>
+</article>
 </div>
-<p class="member-note">Thank you for being part of DFFL history. Best of luck in the race to become our first-ever DFFL Champion.</p>
-</article>
-<article class="newsletter-panel quick-rules-panel">
-<h3>DFFL in 30 Seconds</h3>
-<ul>
-<li>Draft an entire NFL division</li>
-<li>No waivers</li>
-<li>No trades</li>
-<li>No free agents</li>
-<li>Weekly lineup decisions matter</li>
-</ul>
-</article>
-</div><div class="draft-board">
+<div class="around-league">
+<h4>📰 Around the League</h4>
+<div class="around-news-grid">
+<div class="around-news-item"><b>Patriots backfield changes immediately</b><span>TreVeyon Henderson is out for the opener, increasing the importance of New England's remaining running backs.</span></div>
+<div class="around-news-item"><b>Seattle's secondary is already being tested</b><span>Ty Okada is out, while Nick Emmanwori entered the opener with an ankle issue.</span></div>
+<div class="around-news-item"><b>49ers lose Alfred Collins for the season</b><span>The starting defensive tackle tore his patellar tendon in Melbourne ahead of Thursday's Rams matchup.</span></div>
+<div class="around-news-item"><b>Historic Thursday night in Australia</b><span>49ers-Rams will be the NFL's first regular-season game played in Australia.</span></div>
+</div>
+<div class="week1-sources">Week 1 news sources: <a href="https://www.nfl.com/news/nfl-week-1-injury-report-2026-season" rel="noopener" target="_blank">NFL.com Injury Report</a> • <a href="https://www.reuters.com/sports/49ers-lose-defensive-tackle-collins-season-with-knee-injury-2026-09-09/" rel="noopener" target="_blank">Reuters</a></div>
+</div>
+</div></div>
+<div class="newsletter-collapse draft-collapse"><button aria-controls="divisionDraftContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button"><span><strong>🏈 2026 Division Draft</strong><small>Draft order &amp; division selections — finalized for all eight owners.</small></span><span aria-hidden="true" class="toggle-arrow">▾</span></button><div class="newsletter-collapse-content" hidden="" id="divisionDraftContent"><div class="draft-board">
 <div class="draft-board-head">
 <div>
 <span class="draft-kicker">🏈 2026 DFFL Division Draft</span>
@@ -421,7 +547,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <h4 class="ai-ranking-heading">
 <span>AI 2026 Preseason Rankings</span>
 <span class="ai-heading-separator"> - </span>
-<button class="ai-analysis-link" type="button" onclick="openAdvancedAnalysis()">Advance Analysis</button>
+<button class="ai-analysis-link" onclick="openAdvancedAnalysis()" type="button">Advance Analysis</button>
 </h4>
 <div class="ai-rank-row"><span class="ai-rank-num">1</span><b class="ai-rank-division">NFC North</b><span class="ai-rank-reason">Best overall offensive talent/depth</span></div>
 <div class="ai-rank-row"><span class="ai-rank-num">2</span><b class="ai-rank-division">NFC South</b><span class="ai-rank-reason">Elite usable skill-position concentration</span></div>
@@ -433,14 +559,14 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="ai-rank-row"><span class="ai-rank-num">8</span><b class="ai-rank-division">AFC South</b><span class="ai-rank-reason">Excellent schedule profile, lower superstar concentration</span></div>
 </div>
 </div>
-</div>
+</div></div></div>
 <div class="lottery-toggle-wrap">
 <button aria-controls="lotteryOddsContent" aria-expanded="false" class="lottery-toggle collapsed" onclick="toggleLotteryOdds(this)" type="button">
 <span><strong>Lottery Balls &amp; Draft Odds</strong><small>The 2026 DFFL lottery is complete. View the final entry weights and odds.</small></span>
 <span aria-hidden="true" class="toggle-arrow">▾</span>
 </button>
 </div>
-<div class="lottery-collapse-content" id="lotteryOddsContent" hidden>
+<div class="lottery-collapse-content" hidden="" id="lotteryOddsContent">
 <div class="draft-odds-feature">
 <div class="draft-odds-heading">
 <div>
@@ -477,13 +603,22 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </div>
 </div>
-
-<div class="before-week-strip">
-<strong>Before Week 1</strong>
-<a class="newsletter-action-link" href="index.html#submit">Submit your roster</a>
-<a class="newsletter-action-link" href="index.html#rules">Review the rules</a>
-<a class="newsletter-action-link" href="index.html#schedule">Check NFL bye weeks</a>
-<a class="newsletter-kickoff-link" href="index.html#overview">Get ready for kickoff!</a>
+<div class="newsletter-collapse">
+<button aria-controls="prizePayoutsContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>💰 Prize Payouts</strong><small>2026 DFFL prize categories and award amounts.</small></span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="prizePayoutsContent">
+<div class="payout-grid">
+<div class="payout-item"><span>DFFL Champion</span><strong>$300</strong></div>
+<div class="payout-item"><span>Runner-Up</span><strong>$40</strong></div>
+<div class="payout-item"><span>Highest Single-Week Regular-Season Score</span><strong>$40</strong></div>
+<div class="payout-item"><span>Biggest Regular-Season Win Margin</span><strong>$40</strong></div>
+<div class="payout-item"><span>Closest Regular-Season Win</span><strong>$40</strong></div>
+<div class="payout-item"><span>Highest Single-Game Playoff Score</span><strong>$40</strong></div>
+</div>
+<div class="payout-total-line">Planned Prize Payouts: $500</div>
+</div>
 </div>
 <div class="rankings-toggle-wrap">
 <button aria-controls="preseasonRankingsContent" aria-expanded="false" class="rankings-toggle collapsed" onclick="togglePreseasonRankings(this)" type="button">
@@ -491,7 +626,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <span aria-hidden="true" class="toggle-arrow">▾</span>
 </button>
 </div>
-<div class="preseason-rankings-content" id="preseasonRankingsContent" hidden>
+<div class="preseason-rankings-content" hidden="" id="preseasonRankingsContent">
 <div class="newsletter-rankings-grid">
 <article class="division-rank-card rank-1">
 <div class="rank-card-head"><span class="rank-number">1</span><h4>AFC East</h4></div>
@@ -535,6 +670,12 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <ul><li>QB — Baker Mayfield</li><li>RB — Bijan Robinson</li><li>WR — Drake London</li><li>WR — Mike Evans</li><li>TE — Kyle Pitts</li></ul></article>
 </div>
 </div>
+<div class="newsletter-collapse">
+<button aria-controls="comingAfterWeek1Content" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>📈 Coming After Week 1</strong><small>Division movement, risers, fallers and weekly DFFL storylines.</small></span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="comingAfterWeek1Content">
 <div class="coming-soon-panel">
 <div>
 <h3>Coming After Week 1</h3>
@@ -545,50 +686,58 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 <strong>The rankings begin once the games begin.</strong>
 </div>
+</div>
+</div>
+<div class="newsletter-collapse">
+<button aria-controls="ownerFeedbackContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>💬 Owner Feedback</strong><small>Questions, suggestions or website feedback for the commissioner.</small></span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="ownerFeedbackContent">
 <div class="newsletter-feedback">
 <div><h3>Owner Feedback</h3><p>Have an idea to improve the league? Questions, suggestions, or found a website issue?</p></div>
 <div><strong>Email Commissioner Xavier</strong><a href="mailto:xcasillas@gmail.com">xcasillas@gmail.com</a></div>
+</div>
+</div>
 </div>
 <div class="newsletter-footer-line">Eight Owners. Eight Divisions. One Champion.<br/><span>Let the inaugural season begin!</span></div>
 </div>
 </section>
 <div aria-hidden="true" class="ai-analysis-modal" id="aiAnalysisModal" onclick="if(event.target===this)closeAdvancedAnalysis()">
-  <div aria-labelledby="aiAnalysisTitle" aria-modal="true" class="ai-analysis-dialog" role="dialog">
-    <div class="ai-analysis-modal-head">
-      <div>
-        <h3 id="aiAnalysisTitle">AI 2026 Preseason Rankings — Advance Analysis</h3>
-        <p>Detailed DFFL preseason methodology, division-by-division analysis and tiers.</p>
-      </div>
-      <button aria-label="Close advance analysis" class="ai-analysis-close" onclick="closeAdvancedAnalysis()" type="button">×</button>
-    </div>
-    <div class="ai-analysis-content">
+<div aria-labelledby="aiAnalysisTitle" aria-modal="true" class="ai-analysis-dialog" role="dialog">
+<div class="ai-analysis-modal-head">
+<div>
+<h3 id="aiAnalysisTitle">AI 2026 Preseason Rankings — Advance Analysis</h3>
+<p>Detailed DFFL preseason methodology, division-by-division analysis and tiers.</p>
+</div>
+<button aria-label="Close advance analysis" class="ai-analysis-close" onclick="closeAdvancedAnalysis()" type="button">×</button>
+</div>
+<div class="ai-analysis-content">
 <div class="analysis-article">
-  <h2>2026 DFFL Preseason Power Rankings</h2>
-  <p class="analysis-lede">With all eight divisions officially assigned, the inaugural DFFL season finally has a full preseason field. These rankings are built specifically for DFFL — not simply around which NFL division looks strongest on paper.</p>
-
-  <h3>How the model works</h3>
-  <p>The preseason model blends fantasy upside, roster-building flexibility, DFFL schedule context and playoff positioning. The goal is to estimate which divisions are best equipped to produce strong weekly lineups across the full DFFL season.</p>
-  <ul>
-    <li><strong>35% — Fantasy talent:</strong> ceiling, depth and DFFL-relevant elite players</li>
-    <li><strong>20% — Four-team roster construction:</strong> ability to create a strong legal 8-player lineup</li>
-    <li><strong>15% — DFFL-week defensive matchups / SAFPA</strong></li>
-    <li><strong>10% — DFFL opponent-strength adjustment</strong></li>
-    <li><strong>10% — DFFL playoff outlook:</strong> Weeks 12, 15 and 16</li>
-    <li><strong>5% — NFL strength of schedule</strong></li>
-    <li><strong>5% — Bye-week alignment</strong></li>
-  </ul>
-  <p>The model also applies a <strong>one-QB adjustment</strong>. Divisions do not receive excessive credit simply because they have multiple good quarterbacks when DFFL lineups only start one.</p>
-
-  <h3>Official preseason ranking</h3>
-  <div class="analysis-table-wrap">
-    <table class="analysis-rank-table">
-      <thead>
-        <tr>
-          <th>Rank</th><th>Division</th><th>Owner</th><th>Grade</th><th>Score</th><th>Primary reason</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>1</td><td><strong>NFC North</strong></td><td>JetLiX</td><td>A+</td><td>94</td><td>Best overall offensive talent/depth</td></tr>
+<h2>2026 DFFL Preseason Power Rankings</h2>
+<p class="analysis-lede">With all eight divisions officially assigned, the inaugural DFFL season finally has a full preseason field. These rankings are built specifically for DFFL — not simply around which NFL division looks strongest on paper.</p>
+<h3>How the model works</h3>
+<p>The preseason model blends fantasy upside, roster-building flexibility, DFFL schedule context and playoff positioning. The goal is to estimate which divisions are best equipped to produce strong weekly lineups across the full DFFL season.</p>
+<ul>
+<li><strong>35% — Fantasy talent:</strong> ceiling, depth and DFFL-relevant elite players</li>
+<li><strong>20% — Four-team roster construction:</strong> ability to create a strong legal 8-player lineup</li>
+<li><strong>15% — DFFL-week defensive matchups / SAFPA</strong></li>
+<li><strong>10% — DFFL opponent-strength adjustment</strong></li>
+<li><strong>10% — DFFL playoff outlook:</strong> Weeks 12, 15 and 16</li>
+<li><strong>5% — NFL strength of schedule</strong></li>
+<li><strong>5% — Bye-week alignment</strong></li>
+</ul>
+<p>The model also applies a <strong>one-QB adjustment</strong>. Divisions do not receive excessive credit simply because they have multiple good quarterbacks when DFFL lineups only start one.</p>
+<h3>Official preseason ranking</h3>
+<div class="analysis-table-wrap">
+<table class="analysis-rank-table">
+<thead>
+<tr>
+<th>Rank</th><th>Division</th><th>Owner</th><th>Grade</th><th>Score</th><th>Primary reason</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td><strong>NFC North</strong></td><td>JetLiX</td><td>A+</td><td>94</td><td>Best overall offensive talent/depth</td></tr>
 <tr><td>2</td><td><strong>NFC South</strong></td><td>Xavier</td><td>A</td><td>91</td><td>Elite usable skill-position concentration</td></tr>
 <tr><td>3</td><td><strong>AFC West</strong></td><td>Dallas</td><td>A</td><td>89</td><td>Tremendous depth + Bowers, but difficult schedule</td></tr>
 <tr><td>4</td><td><strong>NFC West</strong></td><td>Ben</td><td>A−</td><td>88</td><td>Excellent high-end talent and strong QB situation</td></tr>
@@ -596,69 +745,70 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <tr><td>6</td><td><strong>AFC East</strong></td><td>Joshua</td><td>B+</td><td>84</td><td>Elite pieces but difficult schedules/bye considerations</td></tr>
 <tr><td>7</td><td><strong>NFC East</strong></td><td>Juan</td><td>B+</td><td>82</td><td>Strong top-end players, less balanced across four teams</td></tr>
 <tr><td>8</td><td><strong>AFC South</strong></td><td>Kendall</td><td>B+</td><td>81</td><td>Excellent schedule profile, lower superstar concentration</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="analysis-note"><strong>Note:</strong> The 0–100 scores are composite DFFL model scores, not published NFL statistics. They are intended to compare divisions against one another and will evolve as real 2026 data becomes available.</p>
-
-  <h3>1. NFC North — JetLiX</h3>
-  <p>The NFC North opens the year at No. 1 because it offers the strongest blend of elite talent and usable depth. Jahmyr Gibbs and Justin Jefferson headline a division that can pull fantasy production from Detroit, Minnesota, Green Bay and Chicago.</p>
-  <p>The biggest concern is schedule and bye-week pressure. Chicago and Green Bay face difficult slates, and DFFL Week 6 is especially challenging with both Detroit and Minnesota unavailable.</p>
-  <p><strong>DFFL profile:</strong> The highest floor in the league with championship-level ceiling, but a few vulnerable bye-week spots.</p>
-
-  <h3>2. NFC South — Xavier</h3>
-  <p>The NFC South grades much better in DFFL than it might in a traditional NFL division ranking. Bijan Robinson and Drake London anchor a strong skill-position group, while the one-QB format minimizes what would otherwise be the division's biggest weakness.</p>
-  <p>The schedule profile is also favorable overall, and Atlanta's Week 11 bye lands on a DFFL league bye. That combination gives the NFC South one of the cleanest roster-construction paths in the league.</p>
-  <p><strong>DFFL profile:</strong> Elite usable skill talent with fewer lineup-building problems than its quarterback reputation suggests.</p>
-
-  <h3>3. AFC West — Dallas</h3>
-  <p>The AFC West may have the league's deepest toolbox. Brock Bowers creates a major advantage at tight end, and the division has plenty of high-end options across the lineup.</p>
-  <p>The tradeoff is schedule difficulty. Kansas City, Las Vegas, the Chargers and Denver all face above-.500 opponent winning percentages, which gives this division one of the tougher overall paths.</p>
-  <p><strong>DFFL profile:</strong> Outstanding weekly flexibility and star power, but some of that depth is redundant at quarterback and the schedule is demanding.</p>
-
-  <h3>4. NFC West — Ben</h3>
-  <p>The NFC West is one of the most dangerous divisions in the field. It has premium quarterback depth, strong surrounding talent and one of the best bye-week alignments in DFFL.</p>
-  <p>The key advantage is timing: the Rams and Seattle both take their NFL byes during DFFL's Week 11 league bye, leaving San Francisco's Week 8 bye as the main regular-season hit.</p>
-  <p><strong>DFFL profile:</strong> A balanced contender with an underrated structural advantage created by the bye calendar.</p>
-
-  <h3>5. AFC North — Brian</h3>
-  <p>The AFC North combines a high fantasy ceiling with a much friendlier overall schedule than several divisions ranked above it. Cincinnati and Cleveland in particular draw favorable NFL slates.</p>
-  <p>The bye setup is manageable as well, with only Cincinnati in Week 6 and Pittsburgh in Week 9 directly affecting the DFFL regular season.</p>
-  <p><strong>DFFL profile:</strong> A legitimate sleeper with enough star power to outperform a No. 5 preseason ranking.</p>
-
-  <h3>6. AFC East — Joshua</h3>
-  <p>The AFC East has plenty of premium fantasy pieces, but the surrounding environment is less favorable. Miami, New England, Buffalo and the Jets all face difficult schedules compared with much of the league.</p>
-  <p>Miami's Week 6 bye and Buffalo's Week 7 bye also create back-to-back lineup pressure during the heart of the DFFL regular season.</p>
-  <p><strong>DFFL profile:</strong> High-end firepower, but fewer easy weeks and more schedule resistance.</p>
-
-  <h3>7. NFC East — Juan</h3>
-  <p>The NFC East has enough elite players to produce explosive weeks, but its four-team balance is less consistent than the divisions above it.</p>
-  <p>The biggest concern is bye-week distribution: Washington, the Giants and Philadelphia each miss different DFFL regular-season weeks, creating three separate lineup-management challenges.</p>
-  <p><strong>DFFL profile:</strong> Dangerous top-end talent, but more matchup-dependent roster construction.</p>
-
-  <h3>8. AFC South — Kendall</h3>
-  <p>The AFC South ranks eighth, but it may be the division most capable of beating its preseason projection. Its overall NFL schedule is excellent, and earlier DFFL-week defensive analysis also favored the division.</p>
-  <p>The limitation is superstar concentration. Compared with the top divisions, there are fewer players currently viewed as weekly matchup-breaking fantasy assets.</p>
-  <p><strong>DFFL profile:</strong> A consistency-and-matchup division that could outperform expectations without needing overwhelming star power.</p>
-
-  <h3>Preseason tiers</h3>
-  <div class="analysis-tiers">
-    <div><strong>🏆 Championship favorites</strong><span>NFC North, NFC South</span></div>
-    <div><strong>🔥 Strong contenders</strong><span>AFC West, NFC West, AFC North</span></div>
-    <div><strong>⚔️ Playoff contenders</strong><span>AFC East, NFC East, AFC South</span></div>
-  </div>
-
-  <h3>What changes once the season starts?</h3>
-  <p>These rankings are a preseason snapshot. Beginning in Week 1, the model can gradually replace assumptions with real 2026 data — including SAFPA, player fantasy points per game, targets and touches, injuries, Vegas implied totals and actual DFFL scoring.</p>
-  <p>By Weeks 3–4, the power rankings should become far more predictive than the preseason version and can evolve into a true weekly DFFL power index.</p>
+</tbody>
+</table>
+</div>
+<p class="analysis-note"><strong>Note:</strong> The 0–100 scores are composite DFFL model scores, not published NFL statistics. They are intended to compare divisions against one another and will evolve as real 2026 data becomes available.</p>
+<h3>1. NFC North — JetLiX</h3>
+<p>The NFC North opens the year at No. 1 because it offers the strongest blend of elite talent and usable depth. Jahmyr Gibbs and Justin Jefferson headline a division that can pull fantasy production from Detroit, Minnesota, Green Bay and Chicago.</p>
+<p>The biggest concern is schedule and bye-week pressure. Chicago and Green Bay face difficult slates, and DFFL Week 6 is especially challenging with both Detroit and Minnesota unavailable.</p>
+<p><strong>DFFL profile:</strong> The highest floor in the league with championship-level ceiling, but a few vulnerable bye-week spots.</p>
+<h3>2. NFC South — Xavier</h3>
+<p>The NFC South grades much better in DFFL than it might in a traditional NFL division ranking. Bijan Robinson and Drake London anchor a strong skill-position group, while the one-QB format minimizes what would otherwise be the division's biggest weakness.</p>
+<p>The schedule profile is also favorable overall, and Atlanta's Week 11 bye lands on a DFFL league bye. That combination gives the NFC South one of the cleanest roster-construction paths in the league.</p>
+<p><strong>DFFL profile:</strong> Elite usable skill talent with fewer lineup-building problems than its quarterback reputation suggests.</p>
+<h3>3. AFC West — Dallas</h3>
+<p>The AFC West may have the league's deepest toolbox. Brock Bowers creates a major advantage at tight end, and the division has plenty of high-end options across the lineup.</p>
+<p>The tradeoff is schedule difficulty. Kansas City, Las Vegas, the Chargers and Denver all face above-.500 opponent winning percentages, which gives this division one of the tougher overall paths.</p>
+<p><strong>DFFL profile:</strong> Outstanding weekly flexibility and star power, but some of that depth is redundant at quarterback and the schedule is demanding.</p>
+<h3>4. NFC West — Ben</h3>
+<p>The NFC West is one of the most dangerous divisions in the field. It has premium quarterback depth, strong surrounding talent and one of the best bye-week alignments in DFFL.</p>
+<p>The key advantage is timing: the Rams and Seattle both take their NFL byes during DFFL's Week 11 league bye, leaving San Francisco's Week 8 bye as the main regular-season hit.</p>
+<p><strong>DFFL profile:</strong> A balanced contender with an underrated structural advantage created by the bye calendar.</p>
+<h3>5. AFC North — Brian</h3>
+<p>The AFC North combines a high fantasy ceiling with a much friendlier overall schedule than several divisions ranked above it. Cincinnati and Cleveland in particular draw favorable NFL slates.</p>
+<p>The bye setup is manageable as well, with only Cincinnati in Week 6 and Pittsburgh in Week 9 directly affecting the DFFL regular season.</p>
+<p><strong>DFFL profile:</strong> A legitimate sleeper with enough star power to outperform a No. 5 preseason ranking.</p>
+<h3>6. AFC East — Joshua</h3>
+<p>The AFC East has plenty of premium fantasy pieces, but the surrounding environment is less favorable. Miami, New England, Buffalo and the Jets all face difficult schedules compared with much of the league.</p>
+<p>Miami's Week 6 bye and Buffalo's Week 7 bye also create back-to-back lineup pressure during the heart of the DFFL regular season.</p>
+<p><strong>DFFL profile:</strong> High-end firepower, but fewer easy weeks and more schedule resistance.</p>
+<h3>7. NFC East — Juan</h3>
+<p>The NFC East has enough elite players to produce explosive weeks, but its four-team balance is less consistent than the divisions above it.</p>
+<p>The biggest concern is bye-week distribution: Washington, the Giants and Philadelphia each miss different DFFL regular-season weeks, creating three separate lineup-management challenges.</p>
+<p><strong>DFFL profile:</strong> Dangerous top-end talent, but more matchup-dependent roster construction.</p>
+<h3>8. AFC South — Kendall</h3>
+<p>The AFC South ranks eighth, but it may be the division most capable of beating its preseason projection. Its overall NFL schedule is excellent, and earlier DFFL-week defensive analysis also favored the division.</p>
+<p>The limitation is superstar concentration. Compared with the top divisions, there are fewer players currently viewed as weekly matchup-breaking fantasy assets.</p>
+<p><strong>DFFL profile:</strong> A consistency-and-matchup division that could outperform expectations without needing overwhelming star power.</p>
+<h3>Preseason tiers</h3>
+<div class="analysis-tiers">
+<div><strong>🏆 Championship favorites</strong><span>NFC North, NFC South</span></div>
+<div><strong>🔥 Strong contenders</strong><span>AFC West, NFC West, AFC North</span></div>
+<div><strong>⚔️ Playoff contenders</strong><span>AFC East, NFC East, AFC South</span></div>
+</div>
+<h3>What changes once the season starts?</h3>
+<p>These rankings are a preseason snapshot. Beginning in Week 1, the model can gradually replace assumptions with real 2026 data — including SAFPA, player fantasy points per game, targets and touches, injuries, Vegas implied totals and actual DFFL scoring.</p>
+<p>By Weeks 3–4, the power rankings should become far more predictive than the preseason version and can evolve into a true weekly DFFL power index.</p>
 </div>
 </div>
-  </div>
 </div>
-
+</div>
 </main>
 <div class="footer">DFFL Interactive League Hub</div>
 <script>
+
+function toggleNewsletterSection(btn){
+  const id = btn.getAttribute('aria-controls');
+  const content = document.getElementById(id);
+  if (!content) return;
+  const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+  const shouldExpand = !isExpanded;
+  btn.setAttribute('aria-expanded', String(shouldExpand));
+  btn.classList.toggle('collapsed', !shouldExpand);
+  content.hidden = !shouldExpand;
+}
+
 function toggleLotteryOdds(btn){
   const content = document.getElementById('lotteryOddsContent');
   if (!content) return;
@@ -683,7 +833,6 @@ function togglePreseasonRankings(btn){
   content.hidden = !shouldExpand;
 }
 </script>
-
 <script>
 function openAdvancedAnalysis(){
   const modal=document.getElementById('aiAnalysisModal');
@@ -703,6 +852,5 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape') closeAdvancedAnalysis();
 });
 </script>
-
 </body>
 </html>
