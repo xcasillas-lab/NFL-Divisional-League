@@ -1,7 +1,7 @@
 {
   "week": 1,
-  "status": "live",
-  "lastUpdated": "2026-09-09T22:17:20-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-09T22:26:01-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 16.8,
-      "rightTotal": 32.2
+      "leftTotal": 16.92,
+      "rightTotal": 35.2
     },
     "4": {
       "leftOwner": "Kendall",
@@ -710,15 +710,15 @@
         "position": "QB",
         "name": "Drake Maye",
         "nflTeam": "NE",
-        "points": 12.7,
-        "gameStatus": "live",
+        "points": 12.82,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 165.0,
+          "passingYards": 178.0,
           "passingTouchdowns": 1.0,
-          "interceptions": 2.0,
-          "rushingYards": 41.0,
+          "interceptions": 3.0,
+          "rushingYards": 47.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -816,7 +816,7 @@
         "name": "Hunter Henry",
         "nflTeam": "NE",
         "points": 4.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -943,7 +943,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 22.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1026,14 +1026,14 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 10.0,
-        "gameStatus": "live",
+        "points": 13.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 2.0,
-          "interceptions": 2.0,
+          "sacks": 3.0,
+          "interceptions": 3.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
