@@ -419,6 +419,95 @@ def find_team_stat(stats, *candidates):
     return 0.0
 
 
+
+def defense_stats_from_player_boxscore(summary, target_team):
+    """
+    Fallback D/ST parser using ESPN player box-score categories.
+
+    ESPN's live team-stat block does not always expose sacks/interceptions/
+    recoveries under the labels we expect. This function reads the defensive
+    player categories instead and totals team defensive events.
+
+    It is used only as a fallback/max source so we do not double-count stats
+    that were already found in the team-stat block.
+    """
+    target_team = normalize_team(target_team)
+
+    sacks = 0.0
+    interceptions = 0.0
+    fumble_recoveries = 0.0
+    safeties = 0.0
+
+    for team_block in (summary.get("boxscore") or {}).get("players") or []:
+        team = normalize_team(
+            (((team_block.get("team") or {}).get("abbreviation")) or "")
+        )
+
+        if team != target_team:
+            continue
+
+        for category in team_block.get("statistics") or []:
+            cat = str(
+                category.get("name")
+                or category.get("displayName")
+                or ""
+            ).lower()
+
+            keys = category.get("keys") or []
+            labels = category.get("labels") or []
+            field_names = keys if keys else labels
+
+            for row in category.get("athletes") or []:
+                stats = row.get("stats") or []
+                mapped = dict(zip(field_names, stats))
+
+                if "defens" in cat:
+                    sacks += get_mapped_value(
+                        mapped,
+                        "sacks",
+                        "SACKS"
+                    )
+
+                    fumble_recoveries += get_mapped_value(
+                        mapped,
+                        "fumbleRecoveries",
+                        "fumblesRecovered",
+                        "FR"
+                    )
+
+                    safeties += get_mapped_value(
+                        mapped,
+                        "safeties",
+                        "SAF"
+                    )
+
+                if "interception" in cat:
+                    interceptions += get_mapped_value(
+                        mapped,
+                        "interceptions",
+                        "INT"
+                    )
+
+                    fumble_recoveries += get_mapped_value(
+                        mapped,
+                        "fumbleRecoveries",
+                        "fumblesRecovered",
+                        "FR"
+                    )
+
+                    safeties += get_mapped_value(
+                        mapped,
+                        "safeties",
+                        "SAF"
+                    )
+
+    return {
+        "sacks": sacks,
+        "interceptions": interceptions,
+        "fumbleRecoveries": fumble_recoveries,
+        "safeties": safeties
+    }
+
 def player_return_and_defense_tds(summary, target_team):
     """
     Sum D/ST touchdown categories from ESPN player box-score rows:
@@ -611,6 +700,33 @@ def defense_from_summary(summary, target_team, game_status):
     safeties = find_team_stat(
         team_stats,
         "safeties"
+    )
+
+    # ESPN's live team-stat block can omit or label defensive stats
+    # differently. Use the defensive player box score as a fallback.
+    player_defense = defense_stats_from_player_boxscore(
+        summary,
+        target_team
+    )
+
+    sacks = max(
+        sacks,
+        player_defense["sacks"]
+    )
+
+    interceptions = max(
+        interceptions,
+        player_defense["interceptions"]
+    )
+
+    fumble_recoveries = max(
+        fumble_recoveries,
+        player_defense["fumbleRecoveries"]
+    )
+
+    safeties = max(
+        safeties,
+        player_defense["safeties"]
     )
 
     blocked_kicks = blocked_kicks_from_team_stats(
