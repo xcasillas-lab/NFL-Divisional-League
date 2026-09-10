@@ -6,7 +6,7 @@ on:
     # GitHub cron uses UTC.
     # Run every 15 minutes, then let the Central-time gate below
     # decide whether the DFFL scorer should actually run.
-    - cron: "7,22,28,37,43,52 * * * *"
+    - cron: "7,17,22,28,37,43,52 * * * *"
 
 permissions:
   contents: write
