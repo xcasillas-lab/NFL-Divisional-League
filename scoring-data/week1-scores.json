@@ -1,7 +1,7 @@
 {
   "week": 1,
-  "status": "pre-game",
-  "lastUpdated": "2026-09-09T19:48:05-05:00",
+  "status": "live",
+  "lastUpdated": "2026-09-09T19:57:12-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 0.0,
-      "rightTotal": 0.0
+      "leftTotal": 2.04,
+      "rightTotal": 13.1
     },
     "4": {
       "leftOwner": "Kendall",
@@ -183,9 +183,19 @@
         "nflTeam": "LAC",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
     "JetLiX": [
@@ -342,9 +352,19 @@
         "nflTeam": "MIN",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
     "Juan": [
@@ -501,9 +521,19 @@
         "nflTeam": "PHI",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
     "Brian": [
@@ -660,9 +690,19 @@
         "nflTeam": "PIT",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
     "Joshua": [
@@ -670,15 +710,15 @@
         "position": "QB",
         "name": "Drake Maye",
         "nflTeam": "NE",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 2.04,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
-          "passingYards": 0.0,
+          "passingYards": 16.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 14.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -776,7 +816,7 @@
         "name": "Hunter Henry",
         "nflTeam": "NE",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -819,9 +859,19 @@
         "nflTeam": "NYJ",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
     "Ben": [
@@ -892,18 +942,18 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 3.1,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 2.0,
+          "receivingYards": 21.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -976,11 +1026,21 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "points": 10.0,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 10.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Kendall": [
@@ -1137,9 +1197,19 @@
         "nflTeam": "HOU",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
     "Xavier": [
@@ -1296,9 +1366,19 @@
         "nflTeam": "CAR",
         "points": 0.0,
         "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "raw": {},
-        "note": "No game data found."
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
       }
     ]
   },
