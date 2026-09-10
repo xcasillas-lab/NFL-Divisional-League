@@ -708,9 +708,7 @@ def main():
             SCOREBOARD_URL,
             {
                 "dates": date_value,
-                "limit": 100,
-                "seasontype": 2,
-                "week": 1
+                "limit": 100
             }
         )
 
