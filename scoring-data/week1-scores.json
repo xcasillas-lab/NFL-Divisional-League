@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "pre-game",
-  "lastUpdated": "2026-09-09T17:44:52-05:00",
+  "lastUpdated": "2026-09-09T19:11:12-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -116,8 +116,8 @@
       },
       {
         "position": "WR",
-        "name": "Rashee Rice",
-        "nflTeam": "KC",
+        "name": "Ladd McConkey",
+        "nflTeam": "LAC",
         "points": 0.0,
         "gameStatus": "pre-game",
         "foundInFeed": false,
@@ -137,8 +137,8 @@
       },
       {
         "position": "TE",
-        "name": "Brock Bowers",
-        "nflTeam": "LV",
+        "name": "Travis Kelce",
+        "nflTeam": "KC",
         "points": 0.0,
         "gameStatus": "pre-game",
         "foundInFeed": false,
