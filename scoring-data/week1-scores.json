@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-09T19:57:12-05:00",
+  "lastUpdated": "2026-09-09T20:09:28-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 2.04,
-      "rightTotal": 13.1
+      "leftTotal": 7.76,
+      "rightTotal": 7.1
     },
     "4": {
       "leftOwner": "Kendall",
@@ -710,15 +710,15 @@
         "position": "QB",
         "name": "Drake Maye",
         "nflTeam": "NE",
-        "points": 2.04,
+        "points": 7.76,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 16.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 44.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 14.0,
+          "rushingYards": 20.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1026,12 +1026,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 10.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
