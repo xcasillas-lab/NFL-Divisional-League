@@ -35,16 +35,16 @@
         },
         {
           "position": "WR",
-          "name": "Rashee Rice",
-          "nflTeam": "KC",
-          "nflTeamName": "Kansas City Chiefs",
+          "name": "Ladd McConkey",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
           "jersey": null
         },
         {
           "position": "TE",
-          "name": "Brock Bowers",
-          "nflTeam": "LV",
-          "nflTeamName": "Las Vegas Raiders",
+          "name": "Travis Kelce",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
           "jersey": null
         },
         {
@@ -63,7 +63,6 @@
         }
       ]
     },
-
     "Brian": {
       "division": "AFC North",
       "players": [
@@ -125,7 +124,6 @@
         }
       ]
     },
-
     "Joshua": {
       "division": "AFC East",
       "players": [
@@ -187,7 +185,6 @@
         }
       ]
     },
-
     "Kendall": {
       "division": "AFC South",
       "players": [
@@ -249,7 +246,6 @@
         }
       ]
     },
-
     "Juan": {
       "division": "NFC East",
       "players": [
@@ -311,7 +307,6 @@
         }
       ]
     },
-
     "JetLiX": {
       "division": "NFC North",
       "players": [
@@ -373,7 +368,6 @@
         }
       ]
     },
-
     "Xavier": {
       "division": "NFC South",
       "players": [
@@ -435,7 +429,6 @@
         }
       ]
     },
-
     "Ben": {
       "division": "NFC West",
       "players": [
