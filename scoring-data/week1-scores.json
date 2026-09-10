@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-09T21:39:12-05:00",
+  "lastUpdated": "2026-09-09T21:46:25-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 15.28,
-      "rightTotal": 11.8
+      "leftTotal": 14.28,
+      "rightTotal": 24.6
     },
     "4": {
       "leftOwner": "Kendall",
@@ -710,14 +710,14 @@
         "position": "QB",
         "name": "Drake Maye",
         "nflTeam": "NE",
-        "points": 12.68,
+        "points": 11.68,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 127.0,
           "passingTouchdowns": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 36.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
@@ -942,7 +942,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 7.8,
+        "points": 20.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -952,9 +952,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 53.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 7.0,
+          "receivingYards": 111.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
