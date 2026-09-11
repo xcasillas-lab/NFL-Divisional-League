@@ -232,13 +232,10 @@ def player_stats_from_summary(summary):
                 mapped = dict(zip(field_names, stats))
 
                 if "pass" in cat:
-                    raw["passingYards"] = max(
-                        raw["passingYards"],
-                        get_mapped_value(
-                            mapped,
-                            "passingYards",
-                            "YDS"
-                        )
+                    raw["passingYards"] = get_mapped_value(
+                        mapped,
+                        "passingYards",
+                        "YDS"
                     )
 
                     raw["passingTouchdowns"] = max(
@@ -260,13 +257,10 @@ def player_stats_from_summary(summary):
                     )
 
                 elif "rush" in cat:
-                    raw["rushingYards"] = max(
-                        raw["rushingYards"],
-                        get_mapped_value(
-                            mapped,
-                            "rushingYards",
-                            "YDS"
-                        )
+                    raw["rushingYards"] = get_mapped_value(
+                        mapped,
+                        "rushingYards",
+                        "YDS"
                     )
 
                     raw["rushingTouchdowns"] = max(
@@ -288,13 +282,10 @@ def player_stats_from_summary(summary):
                         )
                     )
 
-                    raw["receivingYards"] = max(
-                        raw["receivingYards"],
-                        get_mapped_value(
-                            mapped,
-                            "receivingYards",
-                            "YDS"
-                        )
+                    raw["receivingYards"] = get_mapped_value(
+                        mapped,
+                        "receivingYards",
+                        "YDS"
                     )
 
                     raw["receivingTouchdowns"] = max(
