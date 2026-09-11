@@ -1,7 +1,7 @@
 {
   "week": 1,
-  "status": "live",
-  "lastUpdated": "2026-09-10T22:20:20-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-10T22:25:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -880,7 +880,7 @@
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
         "points": 5.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -901,7 +901,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 11.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -922,7 +922,7 @@
         "name": "Kyren Williams",
         "nflTeam": "LAR",
         "points": 14.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Puka Nacua",
         "nflTeam": "LAR",
         "points": 9.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
