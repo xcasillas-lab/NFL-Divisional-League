@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-10T20:10:22-05:00",
+  "lastUpdated": "2026-09-10T20:15:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
       "leftTotal": 16.92,
-      "rightTotal": 47.36
+      "rightTotal": 55.26
     },
     "4": {
       "leftOwner": "Kendall",
@@ -900,7 +900,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 1.9,
+        "points": 3.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -908,10 +908,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 6.0,
+          "rushingYards": 10.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 8.0,
+          "receptions": 2.0,
+          "receivingYards": 13.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -921,7 +921,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 2.8,
+        "points": 9.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -929,8 +929,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 19.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 24.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 4.0,
           "receivingTouchdowns": 0.0,
