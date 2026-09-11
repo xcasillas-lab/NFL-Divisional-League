@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-10T21:45:54-05:00",
+  "lastUpdated": "2026-09-10T21:50:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
       "leftTotal": 16.92,
-      "rightTotal": 70.74
+      "rightTotal": 70.86
     },
     "4": {
       "leftOwner": "Kendall",
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 3.84,
+        "points": 3.96,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 121.0,
+          "passingYards": 124.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
