@@ -1,12 +1,12 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T17:40:19-05:00",
+  "lastUpdated": "2026-09-13T17:45:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 54.2,
+      "leftTotal": 55.5,
       "rightTotal": 156.56
     },
     "2": {
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 28.4,
+        "points": 29.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -86,8 +86,8 @@
           "interceptions": 0.0,
           "rushingYards": 102.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 37.0,
+          "receptions": 6.0,
+          "receivingYards": 45.0,
           "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
