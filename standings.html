@@ -322,6 +322,10 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   <div>
     <h2>Standings</h2>
     <p class="standings-subtitle">All 8 teams make the playoffs. Regular-season standings determine playoff seeding.</p>
+<div id="week1StandingsStatus" style="margin:8px 0 12px;padding:9px 11px;border:1px solid #334155;border-radius:10px;background:#07111f;color:#cbd5e1;font-size:.82rem">
+  Week 1 preview: Kendall (AFC South) 1-0, Xavier (NFC South) 0-1. Loading official fantasy totals from the live DFFL score feed…
+</div>
+
   </div>
 </div>
 <div class="season-switcher" role="tablist" aria-label="Standings season">
@@ -336,47 +340,56 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <col class="small-col"/><col class="small-col"/><col class="divrec-col"/><col class="points-col"/><col class="points-col"/>
 </colgroup>
 <thead><tr><th>Seed</th><th>Owner</th><th>Team Name</th><th>Division</th><th>W</th><th>L</th><th>Div Rec</th><th>PF</th><th>PA</th></tr></thead>
-<tbody><tr>
+<tbody>
+<tr data-owner="Kendall">
 <td>1</td>
-<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>Joshua</span></div></td>
-<td class="standings-team-name">The Fighting Josh Allen's</td>
-<td>AFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
-<td>2</td>
-<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
-<td class="standings-team-name">Brian</td>
-<td>AFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
-<td>3</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>Kendall</span></div></td>
 <td class="standings-team-name">KVR1</td>
-<td>AFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
+<td>AFC South</td><td>1</td><td>0</td><td>0-0</td><td class="js-pf">—</td><td class="js-pa">—</td>
+</tr>
+<tr data-owner="Joshua">
+<td>2</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>Joshua</span></div></td>
+<td class="standings-team-name">The Fighting Josh Allen's</td>
+<td>AFC East</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+</tr>
+<tr data-owner="Brian">
+<td>3</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
+<td class="standings-team-name">Brian</td>
+<td>AFC North</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+</tr>
+<tr data-owner="Dallas">
 <td>4</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC West" alt="AFC West DFFL helmet"/><span>Dallas</span></div></td>
 <td class="standings-team-name">Mahomies Homie</td>
-<td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
+<td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+</tr>
+<tr data-owner="Juan">
 <td>5</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Juan</span></div></td>
 <td class="standings-team-name">Coast Killers Amigos</td>
-<td>NFC East</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
+<td>NFC East</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+</tr>
+<tr data-owner="JetLiX">
 <td>6</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC North" alt="NFC North DFFL helmet"/><span>JetLiX</span></div></td>
 <td class="standings-team-name">JetLiX</td>
-<td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
+<td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+</tr>
+<tr data-owner="Ben">
 <td>7</td>
-<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Xavier</span></div></td>
-<td class="standings-team-name">Bandwagon Elites</td>
-<td>NFC South</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr><tr>
-<td>8</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC West" alt="NFC West DFFL helmet"/><span>Ben</span></div></td>
 <td class="standings-team-name">Ben</td>
-<td>NFC West</td><td>0</td><td>0</td><td>0-0</td><td>0.0</td><td>0.0</td>
-</tr></tbody>
+<td>NFC West</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+</tr>
+<tr data-owner="Xavier">
+<td>8</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Xavier</span></div></td>
+<td class="standings-team-name">Bandwagon Elites</td>
+<td>NFC South</td><td>0</td><td>1</td><td>0-0</td><td class="js-pf">—</td><td class="js-pa">—</td>
+</tr>
+</tbody>
 </table>
 </div>
 
@@ -395,39 +408,48 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="advanced-stats-panel" id="advancedStatsPanel">
 <table class="advanced-stats-table">
 <thead><tr><th>Seed</th><th>Owner</th><th>Team Name</th><th>Division</th><th>Avg Pts/G</th><th>Avg Margin (W)</th><th>Avg Margin (L)</th></tr></thead>
-<tbody><tr>
-<td>1</td><td>Joshua</td>
-<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>The Fighting Josh Allen's</span></div></td>
-<td>AFC East</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
-<td>2</td><td>Brian</td>
-<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
-<td>AFC North</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
-<td>3</td><td>Kendall</td>
+<tbody>
+<tr data-owner="Kendall">
+<td>1</td><td>Kendall</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>KVR1</span></div></td>
-<td>AFC South</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
+<td>AFC South</td><td class="js-avg">—</td><td class="win-margin js-win-margin">—</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="Joshua">
+<td>2</td><td>Joshua</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>The Fighting Josh Allen's</span></div></td>
+<td>AFC East</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="Brian">
+<td>3</td><td>Brian</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
+<td>AFC North</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="Dallas">
 <td>4</td><td>Dallas</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC West" alt="AFC West DFFL helmet"/><span>Mahomies Homie</span></div></td>
-<td>AFC West</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
+<td>AFC West</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="Juan">
 <td>5</td><td>Juan</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Coast Killers Amigos</span></div></td>
-<td>NFC East</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
+<td>NFC East</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="JetLiX">
 <td>6</td><td>JetLiX</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC North" alt="NFC North DFFL helmet"/><span>JetLiX</span></div></td>
-<td>NFC North</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
-<td>7</td><td>Xavier</td>
-<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Bandwagon Elites</span></div></td>
-<td>NFC South</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr><tr>
-<td>8</td><td>Ben</td>
+<td>NFC North</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="Ben">
+<td>7</td><td>Ben</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC West" alt="NFC West DFFL helmet"/><span>Ben</span></div></td>
-<td>NFC West</td><td>0.0</td><td class="win-margin">0.0</td><td class="loss-margin">0.0</td>
-</tr></tbody>
+<td>NFC West</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+</tr>
+<tr data-owner="Xavier">
+<td>8</td><td>Xavier</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Bandwagon Elites</span></div></td>
+<td>NFC South</td><td class="js-avg">—</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">—</td>
+</tr>
+</tbody>
 </table>
 <p class="advanced-help">Avg Pts/G = total points scored divided by games played. Win and loss margins show the average point differential in games won or lost.</p>
 </div>
@@ -895,6 +917,75 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     const division = img.dataset.division;
     if(sourceByDivision[division]) img.src = sourceByDivision[division];
   });
+})();
+</script>
+
+
+<script id="dfflWeek1StandingsPreview">
+(function(){
+  const SCORE_URL = "https://dff-league.com/scoring-data/week1-scores.json";
+  const fmt = v => {
+    const n = Number(v);
+    return Number.isFinite(n) ? n.toFixed(2) : "0.00";
+  };
+  const row = (table, owner) =>
+    document.querySelector(table + ' tr[data-owner="' + owner + '"]');
+  const put = (r, sel, val) => {
+    const e = r && r.querySelector(sel);
+    if(e) e.textContent = val;
+  };
+
+  async function loadWeek1(){
+    const status = document.getElementById("week1StandingsStatus");
+    try{
+      const res = await fetch(SCORE_URL, {cache:"no-store"});
+      if(!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      let game = null;
+      Object.values((data && data.matchups) || {}).forEach(m => {
+        if(!m) return;
+        const a = String(m.leftOwner || "");
+        const b = String(m.rightOwner || "");
+        if((a==="Kendall" && b==="Xavier") || (a==="Xavier" && b==="Kendall")) game = m;
+      });
+      if(!game) throw new Error("Kendall/Xavier matchup not found");
+
+      const kp = Number(game.leftOwner === "Kendall" ? game.leftTotal : game.rightTotal);
+      const xp = Number(game.leftOwner === "Xavier" ? game.leftTotal : game.rightTotal);
+      if(!Number.isFinite(kp) || !Number.isFinite(xp)) throw new Error("Scores unavailable");
+
+      const kMain = row(".standings-table","Kendall");
+      const xMain = row(".standings-table","Xavier");
+      put(kMain,".js-pf",fmt(kp)); put(kMain,".js-pa",fmt(xp));
+      put(xMain,".js-pf",fmt(xp)); put(xMain,".js-pa",fmt(kp));
+
+      const margin = kp - xp;
+      const kAdv = row(".advanced-stats-table","Kendall");
+      const xAdv = row(".advanced-stats-table","Xavier");
+      put(kAdv,".js-avg",fmt(kp));
+      put(kAdv,".js-win-margin",fmt(margin));
+      put(kAdv,".js-loss-margin","0.00");
+      put(xAdv,".js-avg",fmt(xp));
+      put(xAdv,".js-win-margin","0.00");
+      put(xAdv,".js-loss-margin",fmt(-Math.abs(margin)));
+
+      if(status){
+        status.innerHTML =
+          '<b style="color:#22c55e">Week 1 final loaded:</b> Kendall ' +
+          fmt(kp) + ' – Xavier ' + fmt(xp) +
+          ' &nbsp;•&nbsp; Cross-division game, so both division records remain 0-0.';
+      }
+    }catch(err){
+      if(status){
+        status.innerHTML =
+          '<b style="color:#f59e0b">Preview note:</b> Records and seeds are updated. ' +
+          'Your browser blocked the local preview from reading the live DFFL score JSON. ' +
+          'PF/PA and advanced values are wired to the same Week 1 score feed used by the matchup page.';
+      }
+      console.warn(err);
+    }
+  }
+  loadWeek1();
 })();
 </script>
 
