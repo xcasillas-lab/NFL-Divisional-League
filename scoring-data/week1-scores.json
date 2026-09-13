@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T16:45:18-05:00",
+  "lastUpdated": "2026-09-13T16:50:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
       "leftTotal": 33.4,
-      "rightTotal": 143.46
+      "rightTotal": 156.06
     },
     "2": {
       "leftOwner": "Juan",
@@ -287,7 +287,7 @@
         "position": "WR",
         "name": "Justin Jefferson",
         "nflTeam": "MIN",
-        "points": 3.5,
+        "points": 16.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -297,9 +297,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 20.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 5.0,
+          "receivingYards": 76.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
