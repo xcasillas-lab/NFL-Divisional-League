@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T17:05:19-05:00",
+  "lastUpdated": "2026-09-13T17:10:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,14 +12,14 @@
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Brian",
-      "leftTotal": 10.4,
+      "leftTotal": 10.3,
       "rightTotal": 119.06
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
       "leftTotal": 86.72,
-      "rightTotal": 85.4
+      "rightTotal": 89.2
     },
     "4": {
       "leftOwner": "Kendall",
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 6.4,
+        "points": 6.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -401,7 +401,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 64.0,
+          "rushingYards": 63.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1005,7 +1005,7 @@
         "position": "FLEX",
         "name": "Marvin Harrison Jr.",
         "nflTeam": "ARI",
-        "points": 0.0,
+        "points": 3.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1015,8 +1015,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 33.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
