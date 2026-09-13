@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T16:55:18-05:00",
+  "lastUpdated": "2026-09-13T17:00:23-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 33.4,
-      "rightTotal": 158.86
+      "leftTotal": 34.9,
+      "rightTotal": 155.86
     },
     "2": {
       "leftOwner": "Juan",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 13.8,
+        "points": 14.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 43.0,
+          "rushingYards": 46.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 20.0,
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 6.2,
+        "points": 7.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 22.0,
+          "rushingYards": 34.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -350,12 +350,12 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 6.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 12,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 19,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
