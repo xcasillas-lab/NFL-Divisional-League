@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T18:30:19-05:00",
+  "lastUpdated": "2026-09-13T18:35:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
       "leftTotal": 57.7,
-      "rightTotal": 168.66
+      "rightTotal": 169.66
     },
     "2": {
       "leftOwner": "Juan",
@@ -350,13 +350,13 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 5.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 22,
           "pointsAllowedFantasy": 0.0,
-          "sacks": 3.0,
+          "sacks": 4.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
