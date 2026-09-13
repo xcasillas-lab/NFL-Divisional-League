@@ -594,6 +594,20 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   }
 }
 
+
+/* ===== HIDDEN PLAYER -> ESPN BOXSCORE LINKS ===== */
+.matchup-player-table tbody tr:not(.total-row) td:first-child,
+.matchup-player-table tbody tr:not(.total-row) td:last-child{
+  cursor:pointer;
+  -webkit-tap-highlight-color:rgba(56,189,248,.12);
+}
+@media (hover:hover) and (pointer:fine){
+  .matchup-player-table tbody tr:not(.total-row) td:first-child:hover,
+  .matchup-player-table tbody tr:not(.total-row) td:last-child:hover{
+    background:rgba(56,189,248,.06);
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1311,6 +1325,131 @@ async function dfflLoadWeek1Production(){
 
 dfflLoadWeek1Production();
 setInterval(dfflLoadWeek1Production, DFFL_REFRESH_MS);
+</script>
+
+
+<script id="dfflPlayerBoxscoreLinks">
+/* ===== HIDDEN PLAYER -> ESPN BOXSCORE LINKS =====
+   Visual design is unchanged. Tapping/clicking a player cell opens that
+   player's Week 1 NFL game box score in a new tab.
+*/
+const DFFL_ESPN_WEEK1_DATES = [
+  "20260909","20260910","20260911","20260912","20260913","20260914"
+];
+
+const DFFL_NFL_TEAM_CODES = new Set([
+  "ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE",
+  "DAL","DEN","DET","GB","HOU","IND","JAX","KC",
+  "LAC","LAR","LV","MIA","MIN","NE","NO","NYG",
+  "NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"
+]);
+
+let dfflEspnGameMapPromise = null;
+
+function dfflExtractTeamCodeFromPlayerCell(cell){
+  if(!cell) return "";
+  const text = String(cell.innerText || cell.textContent || "").toUpperCase();
+  const tokens = text.match(/\b[A-Z]{2,3}\b/g) || [];
+  for(const token of tokens){
+    if(DFFL_NFL_TEAM_CODES.has(token)) return token;
+  }
+  return "";
+}
+
+function dfflBuildEspnGameMap(){
+  if(dfflEspnGameMapPromise) return dfflEspnGameMapPromise;
+
+  dfflEspnGameMapPromise = Promise.all(
+    DFFL_ESPN_WEEK1_DATES.map(async function(date){
+      try{
+        const url =
+          "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=" +
+          date;
+        const response = await fetch(url, { cache:"no-store" });
+        if(!response.ok) return [];
+        const data = await response.json();
+        return Array.isArray(data.events) ? data.events : [];
+      }catch(error){
+        console.warn("DFFL ESPN boxscore lookup failed for", date, error);
+        return [];
+      }
+    })
+  ).then(function(eventGroups){
+    const gameMap = {};
+
+    eventGroups.flat().forEach(function(event){
+      if(!event || !event.id) return;
+
+      const competition =
+        event.competitions && event.competitions[0]
+          ? event.competitions[0]
+          : null;
+
+      const competitors =
+        competition && Array.isArray(competition.competitors)
+          ? competition.competitors
+          : [];
+
+      competitors.forEach(function(competitor){
+        const team = competitor && competitor.team ? competitor.team : {};
+        const abbr = String(team.abbreviation || "").toUpperCase();
+        if(abbr){
+          gameMap[abbr] =
+            "https://www.espn.com/nfl/boxscore/_/gameId/" + event.id;
+        }
+      });
+    });
+
+    return gameMap;
+  });
+
+  return dfflEspnGameMapPromise;
+}
+
+/* Prefetch the Week 1 ESPN game map so player taps open immediately. */
+dfflBuildEspnGameMap();
+
+document.addEventListener("click", function(event){
+  const cell = event.target.closest(
+    ".matchup-player-table tbody tr:not(.total-row) td:first-child, " +
+    ".matchup-player-table tbody tr:not(.total-row) td:last-child"
+  );
+
+  if(!cell) return;
+
+  const teamCode = dfflExtractTeamCodeFromPlayerCell(cell);
+  if(!teamCode) return;
+
+  /* Open the tab immediately from the user gesture so mobile browsers
+     do not block it while the ESPN lookup finishes. */
+  const newTab = window.open("", "_blank");
+  if(!newTab) return;
+
+  try{
+    newTab.document.title = "Opening ESPN Box Score";
+    newTab.document.body.innerHTML =
+      '<div style="font-family:Arial,sans-serif;padding:24px">' +
+      'Opening ESPN box score…</div>';
+  }catch(error){}
+
+  dfflBuildEspnGameMap().then(function(gameMap){
+    const boxscoreUrl = gameMap[teamCode];
+
+    if(boxscoreUrl){
+      newTab.location.replace(boxscoreUrl);
+      return;
+    }
+
+    /* Safe fallback if ESPN's scoreboard lookup is temporarily unavailable. */
+    newTab.location.replace(
+      "https://www.espn.com/nfl/scoreboard/_/week/1/year/2026/seasontype/2"
+    );
+  }).catch(function(){
+    newTab.location.replace(
+      "https://www.espn.com/nfl/scoreboard/_/week/1/year/2026/seasontype/2"
+    );
+  });
+});
 </script>
 
 </body>
