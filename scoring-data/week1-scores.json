@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T14:45:18-05:00",
+  "lastUpdated": "2026-09-13T14:50:42-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Brian",
       "leftTotal": 0.0,
-      "rightTotal": 113.1
+      "rightTotal": 112.96
     },
     "3": {
       "leftOwner": "Joshua",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Xavier",
-      "leftTotal": 105.0,
-      "rightTotal": 75.98
+      "leftTotal": 110.2,
+      "rightTotal": 79.22
     }
   },
   "players": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 13.2,
+        "points": 13.16,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 205.0,
+          "passingYards": 204.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 20.0,
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Chase Brown",
         "nflTeam": "CIN",
-        "points": 16.0,
+        "points": 15.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -594,7 +594,7 @@
           "rushingYards": 52.0,
           "rushingTouchdowns": 1.0,
           "receptions": 5.0,
-          "receivingYards": 23.0,
+          "receivingYards": 22.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -647,7 +647,7 @@
         "name": "Harold Fannin Jr.",
         "nflTeam": "CLE",
         "points": 3.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -668,7 +668,7 @@
         "name": "Quinshon Judkins",
         "nflTeam": "CLE",
         "points": 6.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1049,7 +1049,7 @@
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
         "points": 26.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1111,7 +1111,7 @@
         "position": "WR",
         "name": "Nico Collins",
         "nflTeam": "HOU",
-        "points": 14.2,
+        "points": 16.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1121,8 +1121,8 @@
           "interceptions": 0.0,
           "rushingYards": 7.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 55.0,
+          "receptions": 6.0,
+          "receivingYards": 63.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1133,7 +1133,7 @@
         "name": "Brian Thomas Jr.",
         "nflTeam": "JAX",
         "points": 5.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1153,7 +1153,7 @@
         "position": "TE",
         "name": "Gunnar Helm",
         "nflTeam": "TEN",
-        "points": 3.4,
+        "points": 4.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1163,8 +1163,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 19.0,
+          "receptions": 4.0,
+          "receivingYards": 29.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Carnell Tate",
         "nflTeam": "TEN",
-        "points": 3.9,
+        "points": 5.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,8 +1184,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 24.0,
+          "receptions": 4.0,
+          "receivingYards": 38.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "Baker Mayfield",
         "nflTeam": "TB",
-        "points": 2.38,
+        "points": 3.82,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 177.0,
+          "passingYards": 213.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 13.0,
@@ -1238,7 +1238,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 18.4,
+        "points": 18.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1246,7 +1246,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 45.0,
+          "rushingYards": 49.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 9.0,
@@ -1343,7 +1343,7 @@
         "position": "FLEX",
         "name": "Chris Olave",
         "nflTeam": "NO",
-        "points": 13.3,
+        "points": 14.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1353,8 +1353,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 103.0,
+          "receptions": 7.0,
+          "receivingYards": 112.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1368,7 +1368,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 38,
+          "pointsAllowed": 45,
           "pointsAllowedFantasy": -4.0,
           "sacks": 2.0,
           "interceptions": 1.0,
