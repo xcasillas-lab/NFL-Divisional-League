@@ -1,12 +1,12 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T17:10:19-05:00",
+  "lastUpdated": "2026-09-13T17:15:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 34.9,
+      "leftTotal": 41.3,
       "rightTotal": 155.86
     },
     "2": {
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 14.1,
+        "points": 23.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,11 +84,11 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 46.0,
+          "rushingYards": 62.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 20.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 4.0,
+          "receivingYards": 33.0,
+          "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Los Angeles Chargers DEF",
         "nflTeam": "LAC",
-        "points": 4.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 13,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 16,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
