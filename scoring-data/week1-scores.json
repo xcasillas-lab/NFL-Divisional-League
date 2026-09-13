@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T13:40:22-05:00",
+  "lastUpdated": "2026-09-13T13:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Xavier",
-      "leftTotal": 74.14,
-      "rightTotal": 47.98
+      "leftTotal": 82.5,
+      "rightTotal": 49.98
     }
   },
   "players": {
@@ -1048,13 +1048,13 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 18.84,
+        "points": 25.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 166.0,
-          "passingTouchdowns": 3.0,
+          "passingYards": 220.0,
+          "passingTouchdowns": 4.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Carnell Tate",
         "nflTeam": "TEN",
-        "points": 1.7,
+        "points": 3.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,8 +1184,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 12.0,
+          "receptions": 3.0,
+          "receivingYards": 24.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1364,14 +1364,14 @@
         "position": "DEF",
         "name": "Carolina Panthers DEF",
         "nflTeam": "CAR",
-        "points": 0.0,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 30,
+          "pointsAllowed": 31,
           "pointsAllowedFantasy": -1.0,
           "sacks": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
