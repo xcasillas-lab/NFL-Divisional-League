@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T15:15:18-05:00",
+  "lastUpdated": "2026-09-13T15:20:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -753,7 +753,7 @@
         "name": "James Cook",
         "nflTeam": "BUF",
         "points": 8.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -795,7 +795,7 @@
         "name": "DJ Moore",
         "nflTeam": "BUF",
         "points": 18.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1091,7 +1091,7 @@
         "name": "David Montgomery",
         "nflTeam": "HOU",
         "points": 27.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1112,7 +1112,7 @@
         "name": "Nico Collins",
         "nflTeam": "HOU",
         "points": 17.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1196,7 +1196,7 @@
         "name": "Houston Texans DEF",
         "nflTeam": "HOU",
         "points": -2.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 36,
