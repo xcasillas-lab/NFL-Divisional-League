@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T17:35:17-05:00",
+  "lastUpdated": "2026-09-13T17:40:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 54.1,
-      "rightTotal": 157.56
+      "leftTotal": 54.2,
+      "rightTotal": 156.56
     },
     "2": {
       "leftOwner": "Juan",
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 8.0,
+        "points": 8.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 40.0,
+          "rushingYards": 41.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -350,12 +350,12 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 3.0,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 19,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 22,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 0.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
