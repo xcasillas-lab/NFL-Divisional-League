@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T17:00:23-05:00",
+  "lastUpdated": "2026-09-13T17:05:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 86.22,
+      "leftTotal": 86.72,
       "rightTotal": 85.4
     },
     "4": {
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "De'Von Achane",
         "nflTeam": "MIA",
-        "points": 5.7,
+        "points": 6.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 26.0,
+          "rushingYards": 31.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 21.0,
