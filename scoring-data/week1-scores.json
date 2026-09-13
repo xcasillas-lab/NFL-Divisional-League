@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T18:20:54-05:00",
+  "lastUpdated": "2026-09-13T18:25:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Brian",
-      "leftTotal": 11.8,
+      "leftTotal": 12.9,
       "rightTotal": 119.06
     },
     "3": {
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Terry McLaurin",
         "nflTeam": "WAS",
-        "points": 1.3,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -508,8 +508,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 8.0,
+          "receptions": 2.0,
+          "receivingYards": 14.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
