@@ -195,40 +195,515 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .season-countdown-clock b{display:block;font-size:1.2rem;line-height:1;color:#f8fafc}.season-countdown-clock span{display:block;margin-top:4px;color:#94a3b8;font-size:.58rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
 @media(max-width:640px){.season-countdown{display:block;text-align:center}.season-countdown-clock{margin-top:10px;grid-template-columns:repeat(4,1fr)}.season-countdown-clock div{padding:7px 4px}.season-countdown-clock b{font-size:1.05rem}}
 
+
+/* ===== LAST WEEK / WEEKLY RECAP ===== */
+.recap-shell{display:grid;gap:16px}
+.recap-hero{
+  padding:18px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:linear-gradient(180deg,#101b2b,#07111f);
+}
+.recap-kicker{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:7px;
+  background:linear-gradient(180deg,#3b82f6,#1d4ed8);
+  font-size:.72rem;
+  font-weight:900;
+  text-transform:uppercase;
+}
+.recap-title-row{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+  margin-top:10px;
+}
+.recap-title-row h2{
+  margin:0;
+  color:#f8fafc;
+  font-size:clamp(1.7rem,4vw,2.35rem);
+  text-transform:uppercase;
+}
+.recap-date{
+  color:#7dd3fc;
+  font-size:.9rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.recap-sub{
+  margin:7px 0 0;
+  color:#94a3b8;
+  font-size:.86rem;
+}
+.recap-matchup-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+}
+.recap-matchup{
+  appearance:none;
+  width:100%;
+  border:1px solid #334155;
+  border-radius:14px;
+  background:#050d19;
+  padding:11px;
+  color:#f8fafc;
+  text-align:center;
+  cursor:pointer;
+  transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.recap-matchup:hover{
+  border-color:#38bdf8;
+  transform:translateY(-1px);
+}
+.recap-matchup.active{
+  border-color:#38bdf8;
+  box-shadow:0 0 0 1px rgba(56,189,248,.25),0 10px 24px rgba(0,0,0,.24);
+}
+.recap-matchup-label{
+  color:#38bdf8;
+  font-size:.74rem;
+  font-weight:900;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.recap-helmet-vs{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);
+  align-items:center;
+  gap:5px;
+}
+.recap-team img{
+  width:100%;
+  height:82px;
+  object-fit:cover;
+  border-radius:9px;
+  border:1px solid #182438;
+}
+.recap-team-name{
+  margin-top:7px;
+  font-size:.82rem;
+  font-weight:900;
+}
+.recap-score{
+  margin-top:2px;
+  color:#38bdf8;
+  font-size:1.05rem;
+  font-weight:900;
+}
+.recap-vs{
+  font-weight:900;
+  color:#f8fafc;
+}
+.recap-status{
+  margin-top:10px;
+  padding-top:8px;
+  border-top:1px solid #1e293b;
+  color:#cbd5e1;
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+}
+.recap-status.final{color:#22c55e;font-weight:900}
+.recap-status.live{color:#f59e0b;font-weight:900}
+
+.recap-detail{
+  display:none;
+  border:1px solid #334155;
+  border-radius:16px;
+  background:linear-gradient(180deg,#0b1626,#050d19);
+  overflow:hidden;
+}
+.recap-detail.open{display:block}
+.recap-detail-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:14px 16px;
+  border-bottom:1px solid #26374e;
+}
+.recap-detail-head strong{
+  color:#38bdf8;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.recap-detail-close{
+  border-radius:8px;
+  padding:7px 10px;
+  background:#111827;
+}
+.recap-detail-body{
+  min-height:220px;
+  padding:18px;
+}
+
+@media(max-width:980px){
+  .recap-matchup-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .recap-matchup-grid{grid-template-columns:1fr}
+  .recap-team img{height:108px}
+  .recap-detail-body{min-height:180px}
+}
+
+
+/* ===== WEEK 1 OVERALL RECAP ===== */
+.week-overall{
+  border:1px solid #334155;
+  border-radius:16px;
+  background:linear-gradient(180deg,#0b1626,#050d19);
+  overflow:hidden;
+}
+.week-overall-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:14px 16px;
+  border-bottom:1px solid #26374e;
+}
+.week-overall-head strong{
+  color:#38bdf8;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.week-overall-head span{
+  color:#94a3b8;
+  font-size:.76rem;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.week-overall-body{
+  min-height:150px;
+  padding:18px;
+}
+@media(max-width:640px){
+  .week-overall-head{
+    align-items:flex-start;
+    flex-direction:column;
+    gap:5px;
+  }
+  .week-overall-body{min-height:130px}
+}
+
+
+/* ===== COLLAPSIBLE WEEK RECAP ===== */
+.week-recap-card{
+  border:1px solid #334155;
+  border-radius:16px;
+  background:linear-gradient(180deg,#101b2b,#07111f);
+  overflow:hidden;
+}
+.week-recap-toggle{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:16px 18px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  color:#f8fafc;
+  text-align:left;
+}
+.week-recap-toggle:hover{background:rgba(56,189,248,.04)}
+.week-recap-heading{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.week-recap-heading strong{
+  color:#38bdf8;
+  font-size:1.05rem;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+.week-recap-heading span{
+  color:#94a3b8;
+  font-size:.76rem;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.week-recap-control{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex:0 0 auto;
+}
+.week-recap-control-text{
+  color:#cbd5e1;
+  font-size:.78rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.week-recap-arrow{
+  color:#38bdf8;
+  font-size:1.2rem;
+  transition:transform .18s ease;
+}
+.week-recap-toggle[aria-expanded="true"] .week-recap-arrow{
+  transform:rotate(180deg);
+}
+.week-recap-body{
+  display:none;
+  padding:0 18px 18px;
+}
+.week-recap-body.open{display:block}
+.week-recap-inner{
+  display:grid;
+  gap:16px;
+}
+@media(max-width:640px){
+  .week-recap-toggle{padding:14px}
+  .week-recap-body{padding:0 12px 12px}
+  .week-recap-control-text{display:none}
+}
+
+
+/* ===== DIVISION + TEAM NAME LABELS ===== */
+.recap-division-code{
+  margin-top:7px;
+  color:#f8fafc;
+  font-size:.84rem;
+  font-weight:900;
+  letter-spacing:.03em;
+}
+.recap-team-name{
+  margin-top:2px;
+  color:#94a3b8;
+  font-size:.68rem;
+  font-weight:700;
+  line-height:1.2;
+  min-height:1.65em;
+}
+.recap-score{
+  margin-top:4px;
+}
+@media(max-width:640px){
+  .recap-division-code{font-size:.92rem}
+  .recap-team-name{font-size:.72rem}
+}
+
+
+.week-overall-storylines{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.week-overall-storylines div{
+  padding:12px 14px;
+  border:1px solid #26374e;
+  border-radius:10px;
+  background:#07111f;
+}
+.week-overall-storylines strong{
+  color:#f8fafc;
+}
+.week-overall-storylines span{
+  color:#f59e0b;
+  font-weight:800;
+}
+@media(max-width:640px){
+  .week-overall-storylines{grid-template-columns:1fr}
+}
+
 </style>
 </head>
 <body>
 <header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
 <nav class="tabs"><button class='tab-btn' type='button' onclick="window.location.href='index.html#overview'">Home</button><button class='tab-btn' type='button' onclick="window.location.href='standings.html'">Standings</button><button class='tab-btn' type='button' onclick="window.location.href='index.html#submit'">Roster Submissions</button><button class='tab-btn' type='button' onclick="window.location.href='matchups.html'">Weekly Matchups</button><button class='tab-btn active' type='button' onclick="window.location.href='lastweek.html'">Last Week</button><button class='tab-btn' type='button' onclick="window.location.href='index.html#playoffs'">Playoffs</button><button class='tab-btn' type='button' onclick="window.location.href='index.html#newsletter'">Newsletter</button><button class='tab-btn' type='button' onclick="window.location.href='index.html#schedule'">Schedule</button><button class='tab-btn' type='button' onclick="window.location.href='index.html#rules'">Rules</button></nav>
+
 <main>
 <section class="">
-<h2>Previous Week Recap</h2>
-<p class="note">Commissioner update area. Add final scores, box scores, and weekly notes here after games are completed.</p>
-<div class="grid">
-<div class="card">
-<h3>Week 1 Box Scores</h3>
-<table>
-<thead><tr><th>Matchup</th><th>Score</th><th>Winner</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>AFC South vs AFC West</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-<tr><td>AFC East vs AFC North</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-<tr><td>NFC East vs NFC North</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-<tr><td>NFC South vs NFC West</td><td>Pending</td><td>Pending</td><td>Add top performer and key moment.</td></tr>
-</tbody>
-</table>
+<div class="recap-shell">
+
+<div class="week-recap-card">
+  <button class="week-recap-toggle" id="week1Toggle" type="button"
+          aria-expanded="false" aria-controls="week1Body">
+    <span class="week-recap-heading">
+      <strong>Week 1 Recap</strong>
+      <span>September 9 – September 14</span>
+    </span>
+    <span class="week-recap-control">
+      <span class="week-recap-control-text" id="week1ControlText">Open</span>
+      <span class="week-recap-arrow">▼</span>
+    </span>
+  </button>
+
+  <div class="week-recap-body" id="week1Body">
+    <div class="week-recap-inner">
+  <div class="recap-matchup-grid">
+
+    <button class="recap-matchup" type="button" data-matchup="1" data-title="Matchup 1 — AFCW Mahomies Homie vs NFCN JetLiX">
+      <div class="recap-matchup-label">Matchup 1</div>
+      <div class="recap-helmet-vs">
+        <div class="recap-team">
+          <img src="/assets/images/helmets/AFCW.png" alt="AFC West DFFL helmet"/>
+          <div class="recap-division-code">AFCW</div><div class="recap-team-name">Mahomies Homie</div>
+          <div class="recap-score">34.90</div>
+        </div>
+        <div class="recap-vs">VS</div>
+        <div class="recap-team">
+          <img src="/assets/images/helmets/NFCN.png" alt="NFC North DFFL helmet"/>
+          <div class="recap-division-code">NFCN</div><div class="recap-team-name">JetLiX</div>
+          <div class="recap-score">155.66</div>
+        </div>
+      </div>
+      <div class="recap-status live">Live</div>
+    </button>
+
+    <button class="recap-matchup" type="button" data-matchup="2" data-title="Matchup 2 — NFCE Coast Killers Amigos vs AFCN Brian">
+      <div class="recap-matchup-label">Matchup 2</div>
+      <div class="recap-helmet-vs">
+        <div class="recap-team">
+          <img src="/assets/images/helmets/NFCE.png" alt="NFC East DFFL helmet"/>
+          <div class="recap-division-code">NFCE</div><div class="recap-team-name">Coast Killers Amigos</div>
+          <div class="recap-score">10.40</div>
+        </div>
+        <div class="recap-vs">VS</div>
+        <div class="recap-team">
+          <img src="/assets/images/helmets/AFCN.png" alt="AFC North DFFL helmet"/>
+          <div class="recap-division-code">AFCN</div><div class="recap-team-name">Brian</div>
+          <div class="recap-score">119.06</div>
+        </div>
+      </div>
+      <div class="recap-status live">Live</div>
+    </button>
+
+    <button class="recap-matchup" type="button" data-matchup="3" data-title="Matchup 3 — AFCE The Fighting Josh Allen&#39;s vs NFCW Ben">
+      <div class="recap-matchup-label">Matchup 3</div>
+      <div class="recap-helmet-vs">
+        <div class="recap-team">
+          <img src="/assets/images/helmets/AFCE.png" alt="AFC East DFFL helmet"/>
+          <div class="recap-division-code">AFCE</div><div class="recap-team-name">The Fighting Josh Allen&#39;s</div>
+          <div class="recap-score">86.72</div>
+        </div>
+        <div class="recap-vs">VS</div>
+        <div class="recap-team">
+          <img src="/assets/images/helmets/NFCW.png" alt="NFC West DFFL helmet"/>
+          <div class="recap-division-code">NFCW</div><div class="recap-team-name">Ben</div>
+          <div class="recap-score">85.40</div>
+        </div>
+      </div>
+      <div class="recap-status live">Live</div>
+    </button>
+
+    <button class="recap-matchup" type="button" data-matchup="4" data-title="Matchup 4 — AFCS KVR1 vs NFCS Bandwagon Elites">
+      <div class="recap-matchup-label">Matchup 4</div>
+      <div class="recap-helmet-vs">
+        <div class="recap-team">
+          <img src="/assets/images/helmets/AFCS.png" alt="AFC South DFFL helmet"/>
+          <div class="recap-division-code">AFCS</div><div class="recap-team-name">KVR1</div>
+          <div class="recap-score">108.90</div>
+        </div>
+        <div class="recap-vs">VS</div>
+        <div class="recap-team">
+          <img src="/assets/images/helmets/NFCS.png" alt="NFC South DFFL helmet"/>
+          <div class="recap-division-code">NFCS</div><div class="recap-team-name">Bandwagon Elites</div>
+          <div class="recap-score">101.74</div>
+        </div>
+      </div>
+      <div class="recap-status final">Final</div>
+    </button>
+
+  </div>
+
+
+  <div class="week-overall" id="weekOverall">
+    <div class="week-overall-head">
+      <strong>Week 1 Overall</strong>
+      <span>September 9 – September 14</span>
+    </div>
+    <div class="week-overall-body" id="weekOverallBody">
+  <div class="week-overall-storylines">
+    <div><strong>Game of the Week:</strong> <span>Pending</span></div>
+    <div><strong>Division Week MVP:</strong> <span>Pending</span></div>
+    <div><strong>Biggest Surprise:</strong> <span>Pending</span></div>
+    <div><strong>Toughest Loss:</strong> <span>Pending</span></div>
+  </div>
 </div>
-<div class="card">
-<h3>Weekly Storylines</h3>
-<ul>
-<li><strong>Game of the Week:</strong> Pending</li>
-<li><strong>Division MVP:</strong> Pending</li>
-<li><strong>Biggest Surprise:</strong> Pending</li>
-<li><strong>Toughest Loss:</strong> Pending</li>
-</ul>
+  </div>
+
+  <div class="recap-detail" id="recapDetail">
+    <div class="recap-detail-head">
+      <strong id="recapDetailTitle">Matchup Recap</strong>
+      <button class="recap-detail-close" id="recapDetailClose" type="button">Close</button>
+    </div>
+    <div class="recap-detail-body" id="recapDetailBody"></div>
+  </div>
+
+
+    </div>
+  </div>
 </div>
+
 </div>
 </section>
 </main>
+
 <div class="footer">DFFL Interactive League Hub</div>
+
+<script>
+(function(){
+  const cards = document.querySelectorAll('.recap-matchup');
+  const panel = document.getElementById('recapDetail');
+  const title = document.getElementById('recapDetailTitle');
+  const closeBtn = document.getElementById('recapDetailClose');
+
+  cards.forEach(card=>{
+    card.addEventListener('click',()=>{
+      cards.forEach(c=>c.classList.remove('active'));
+      card.classList.add('active');
+      title.textContent = card.dataset.title || 'Matchup Recap';
+      panel.classList.add('open');
+      panel.scrollIntoView({behavior:'smooth',block:'nearest'});
+    });
+  });
+
+  closeBtn.addEventListener('click',()=>{
+    panel.classList.remove('open');
+    cards.forEach(c=>c.classList.remove('active'));
+  });
+})();
+</script>
+
+
+<script id="week1CollapseScript">
+(function(){
+  const weekToggle = document.getElementById('week1Toggle');
+  const weekBody = document.getElementById('week1Body');
+  const controlText = document.getElementById('week1ControlText');
+  const recapPanel = document.getElementById('recapDetail');
+  const matchupCards = document.querySelectorAll('.recap-matchup');
+
+  if(!weekToggle || !weekBody) return;
+
+  function closeMatchupRecap(){
+    if(recapPanel) recapPanel.classList.remove('open');
+    matchupCards.forEach(c=>c.classList.remove('active'));
+  }
+
+  function setWeek(open){
+    weekToggle.setAttribute('aria-expanded', String(open));
+    weekBody.classList.toggle('open', open);
+    if(controlText) controlText.textContent = open ? 'Close' : 'Open';
+    if(!open) closeMatchupRecap();
+  }
+
+  weekToggle.addEventListener('click', ()=>{
+    const isOpen = weekToggle.getAttribute('aria-expanded') === 'true';
+    setWeek(!isOpen);
+  });
+
+  // Default page state: all weeks collapsed.
+  setWeek(false);
+})();
+</script>
+
 </body>
 </html>
