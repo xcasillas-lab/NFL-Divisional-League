@@ -1,13 +1,13 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T16:00:22-05:00",
+  "lastUpdated": "2026-09-13T16:05:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 23.4,
-      "rightTotal": 138.66
+      "leftTotal": 22.8,
+      "rightTotal": 139.96
     },
     "2": {
       "leftOwner": "Juan",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 3.5,
+        "points": 5.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 25.0,
+          "rushingYards": 43.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 5.0,
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 8.4,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,12 +168,12 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 24.0,
+          "rushingYards": 20.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
@@ -287,7 +287,7 @@
         "position": "WR",
         "name": "Justin Jefferson",
         "nflTeam": "MIN",
-        "points": 2.2,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -297,8 +297,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 12.0,
+          "receptions": 3.0,
+          "receivingYards": 20.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
