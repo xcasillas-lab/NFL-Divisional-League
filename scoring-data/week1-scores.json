@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T16:10:17-05:00",
+  "lastUpdated": "2026-09-13T16:15:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,14 +12,14 @@
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Brian",
-      "leftTotal": 8.0,
+      "leftTotal": 8.4,
       "rightTotal": 119.06
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Ben",
-      "leftTotal": 84.02,
-      "rightTotal": 82.4
+      "leftTotal": 85.52,
+      "rightTotal": 83.5
     },
     "4": {
       "leftOwner": "Kendall",
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 1.0,
+        "points": 1.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -401,7 +401,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 10.0,
+          "rushingYards": 14.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "De'Von Achane",
         "nflTeam": "MIA",
-        "points": 3.5,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
+          "rushingYards": 19.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 21.0,
@@ -984,7 +984,7 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 6.9,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -994,8 +994,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 54.0,
+          "receptions": 4.0,
+          "receivingYards": 60.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
