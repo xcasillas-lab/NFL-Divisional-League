@@ -608,6 +608,43 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   }
 }
 
+
+/* ===== SIMPLE FINAL MATCHUP RECAP BUTTON ===== */
+.detail-center{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.detail-action-stack{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:5px;
+  width:76px;
+}
+.detail-action-stack .preview-analysis-btn,
+.detail-action-stack .recap-link-btn{
+  width:100%;
+  min-width:76px;
+  box-sizing:border-box;
+  text-align:center;
+}
+.recap-link-btn{
+  display:none;
+  border:0;
+  padding:4px 10px;
+  border-radius:7px;
+  background:#1d4ed8;
+  color:#dbeafe;
+  font-size:.68rem;
+  font-weight:900;
+  text-transform:uppercase;
+  text-decoration:none;
+  cursor:pointer;
+}
+.recap-link-btn:hover{background:#2563eb}
+.recap-link-btn.show{display:block}
+
 </style>
 </head>
 <body>
@@ -639,7 +676,10 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(1)">PREVIEW</button>
+      <div class="detail-action-stack">
+        <a class="recap-link-btn" href="lastweek.html" onclick="event.stopPropagation()">RECAP</a>
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(1)">PREVIEW</button>
+      </div>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -682,7 +722,10 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(2)">PREVIEW</button>
+      <div class="detail-action-stack">
+        <a class="recap-link-btn" href="lastweek.html" onclick="event.stopPropagation()">RECAP</a>
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(2)">PREVIEW</button>
+      </div>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -725,7 +768,10 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(3)">PREVIEW</button>
+      <div class="detail-action-stack">
+        <a class="recap-link-btn" href="lastweek.html" onclick="event.stopPropagation()">RECAP</a>
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(3)">PREVIEW</button>
+      </div>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -768,7 +814,10 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
       <div class="detail-total">—</div>
     </div>
     <div class="detail-center">
-      <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(4)">PREVIEW</button>
+      <div class="detail-action-stack">
+        <a class="recap-link-btn" href="lastweek.html" onclick="event.stopPropagation()">RECAP</a>
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(4)">PREVIEW</button>
+      </div>
       <small>8 Starting Players</small>
     </div>
     <div class="detail-team right">
@@ -1263,6 +1312,11 @@ function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
   const matchupStatus = dfflMatchupStatus(leftScores, rightScores);
   const statusNode = card.querySelector(".matchup-time");
   if(statusNode) statusNode.textContent = matchupStatus;
+
+  const recapButton = panel.querySelector(".recap-link-btn");
+  if(recapButton){
+    recapButton.classList.toggle("show", matchupStatus === "FINAL");
+  }
 
   dfflBuildPlayerTable(
     panel,
