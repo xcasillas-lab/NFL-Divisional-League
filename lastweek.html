@@ -587,13 +587,13 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="AFC East DFFL helmet" data-helmet="AFC East"/>
           <div class="recap-division-code">AFCE</div><div class="recap-team-name">The Fighting Josh Allen&#39;s</div>
-          <div class="recap-score">0.00</div>
+          <div class="recap-score">89.12</div>
         </div>
         <div class="recap-vs">VS</div>
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="NFC West DFFL helmet" data-helmet="NFC West"/>
           <div class="recap-division-code">NFCW</div><div class="recap-team-name">Ben</div>
-          <div class="recap-score">0.00</div>
+          <div class="recap-score">99.30</div>
         </div>
       </div>
       <div class="recap-status live">Live</div>
@@ -605,13 +605,13 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="AFC South DFFL helmet" data-helmet="AFC South"/>
           <div class="recap-division-code">AFCS</div><div class="recap-team-name">KVR1</div>
-          <div class="recap-score">0.00</div>
+          <div class="recap-score">108.90</div>
         </div>
         <div class="recap-vs">VS</div>
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="NFC South DFFL helmet" data-helmet="NFC South"/>
           <div class="recap-division-code">NFCS</div><div class="recap-team-name">Bandwagon Elites</div>
-          <div class="recap-score">0.00</div>
+          <div class="recap-score">101.74</div>
         </div>
       </div>
       <div class="recap-status final">Final</div>
@@ -801,10 +801,6 @@ document.querySelectorAll('img[data-helmet]').forEach((img) => {
 
         paintStatus(card, matchupStatus(leftRows, rightRows));
 
-        // Keep Last Week scores intentionally at zero.
-        card.querySelectorAll(".recap-score").forEach(score => {
-          score.textContent = "0.00";
-        });
       });
     }catch(error){
       console.warn("DFFL Last Week status update failed:", error);
