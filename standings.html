@@ -309,7 +309,34 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .advanced-stats-table{min-width:900px;table-layout:fixed}
 .advanced-team-cell{display:flex;align-items:center;gap:8px}
 .advanced-team-cell img{width:32px;height:32px;object-fit:cover;border-radius:7px;border:1px solid #26374e}
-@media(max-width:700px){.standings-table{min-width:980px}.advanced-stats-table{min-width:820px}}
+
+.standings-table td.point-diff-pos{color:var(--good);font-weight:800}
+.standings-table td.point-diff-neg{color:var(--bad);font-weight:800}
+.standings-table td.point-diff-zero{color:var(--muted);font-weight:700}
+
+@media(max-width:700px){.standings-table{min-width:1080px}.advanced-stats-table{min-width:820px}}
+
+
+/* ===== SORTABLE 2026 STANDINGS ===== */
+.sortable-2026 th{
+  cursor:pointer;
+  user-select:none;
+  position:relative;
+  padding-right:20px;
+}
+.sortable-2026 th::after{
+  content:"↕";
+  position:absolute;
+  right:6px;
+  top:50%;
+  transform:translateY(-50%);
+  opacity:.32;
+  font-size:.7rem;
+}
+.sortable-2026 th.sort-asc::after{content:"▲";opacity:1}
+.sortable-2026 th.sort-desc::after{content:"▼";opacity:1}
+.sortable-2026 th.no-sort{cursor:default}
+.sortable-2026 th.no-sort::after{content:""}
 
 </style>
 </head>
@@ -322,10 +349,8 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   <div>
     <h2>Standings</h2>
     <p class="standings-subtitle">All 8 teams make the playoffs. Regular-season standings determine playoff seeding.</p>
-<div id="week1StandingsStatus" style="margin:8px 0 12px;padding:9px 11px;border:1px solid #334155;border-radius:10px;background:#07111f;color:#cbd5e1;font-size:.82rem">
-  <span style="color:#22c55e;font-weight:800">Week 1 finals loaded:</span>
-  Kendall 108.90 – Xavier 101.74 &nbsp;•&nbsp; Ben 99.30 – Joshua 89.12.
-  &nbsp;•&nbsp; Both were cross-division games, so all four division records remain 0-0.
+<div id="standingsTiebreakerNote" style="margin:0 0 12px;padding:9px 11px;border:1px solid #334155;border-radius:10px;background:#0b1220;color:#cbd5e1;font-size:.8rem">
+  <strong style="color:#38bdf8">Standings tiebreakers:</strong> Head-to-Head Record → Divisional Record → Point Differential (PF − PA) → Total Fantasy Points Scored → Coin Flip.
 </div>
 
   </div>
@@ -336,60 +361,71 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 <div class="season-panel active" id="seasonPanel2026" role="tabpanel" aria-labelledby="seasonTab2026">
 <div class="standings-table-wrap">
-<table class="standings-table">
+<table class="standings-table sortable-2026">
 <colgroup>
 <col class="seed-col"/><col class="owner-col"/><col class="team-col"/><col class="division-col"/>
-<col class="small-col"/><col class="small-col"/><col class="divrec-col"/><col class="points-col"/><col class="points-col"/>
+<col class="small-col"/><col class="small-col"/><col class="divrec-col"/><col class="points-col"/><col class="points-col"/><col class="points-col"/>
 </colgroup>
-<thead><tr><th>Seed</th><th>Owner</th><th>Team Name</th><th>Division</th><th>W</th><th>L</th><th>Div Rec</th><th>PF</th><th>PA</th></tr></thead>
+<thead><tr>
+<th data-type="number">Seed</th>
+<th data-type="text">Owner</th>
+<th data-type="text">Team Name</th>
+<th data-type="text">Division</th>
+<th data-type="number">W</th>
+<th data-type="number">L</th>
+<th data-type="record">Div Rec</th>
+<th data-type="number">PF</th>
+<th data-type="number">PA</th>
+<th data-type="number">Pt Diff</th>
+</tr></thead>
 <tbody>
-<tr data-owner="Kendall">
+<tr data-owner="Brian">
 <td>1</td>
-<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>Kendall</span></div></td>
-<td class="standings-team-name">KVR1</td>
-<td>AFC South</td><td>1</td><td>0</td><td>0-0</td><td class="js-pf">108.90</td><td class="js-pa">101.74</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
+<td class="standings-team-name">Brian</td>
+<td>AFC North</td><td>1</td><td>0</td><td>0-0</td><td class="js-pf">119.06</td><td class="js-pa">95.60</td><td class="point-diff-pos">+23.46</td>
 </tr>
 <tr data-owner="Ben">
 <td>2</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC West" alt="NFC West DFFL helmet"/><span>Ben</span></div></td>
 <td class="standings-team-name">&nbsp;</td>
-<td>NFC West</td><td>1</td><td>0</td><td>0-0</td><td class="js-pf">99.30</td><td class="js-pa">89.12</td>
+<td>NFC West</td><td>1</td><td>0</td><td>0-0</td><td class="js-pf">99.30</td><td class="js-pa">89.12</td><td class="point-diff-pos">+10.18</td>
 </tr>
-<tr data-owner="Brian">
+<tr data-owner="Kendall">
 <td>3</td>
-<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
-<td class="standings-team-name">Brian</td>
-<td>AFC North</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>Kendall</span></div></td>
+<td class="standings-team-name">KVR1</td>
+<td>AFC South</td><td>1</td><td>0</td><td>0-0</td><td class="js-pf">108.90</td><td class="js-pa">101.74</td><td class="point-diff-pos">+7.16</td>
 </tr>
 <tr data-owner="Dallas">
 <td>4</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC West" alt="AFC West DFFL helmet"/><span>Dallas</span></div></td>
 <td class="standings-team-name">Mahomies Homie</td>
-<td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
-</tr>
-<tr data-owner="Juan">
-<td>5</td>
-<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Juan</span></div></td>
-<td class="standings-team-name">Coast Killers Amigos</td>
-<td>NFC East</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+<td>AFC West</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td><td class="point-diff-zero">0.00</td>
 </tr>
 <tr data-owner="JetLiX">
-<td>6</td>
+<td>5</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC North" alt="NFC North DFFL helmet"/><span>JetLiX</span></div></td>
 <td class="standings-team-name">JetLiX</td>
-<td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td>
+<td>NFC North</td><td>0</td><td>0</td><td>0-0</td><td class="js-pf">0.0</td><td class="js-pa">0.0</td><td class="point-diff-zero">0.00</td>
 </tr>
 <tr data-owner="Xavier">
-<td>7</td>
+<td>6</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Xavier</span></div></td>
 <td class="standings-team-name">Bandwagon Elites</td>
-<td>NFC South</td><td>0</td><td>1</td><td>0-0</td><td class="js-pf">101.74</td><td class="js-pa">108.90</td>
+<td>NFC South</td><td>0</td><td>1</td><td>0-0</td><td class="js-pf">101.74</td><td class="js-pa">108.90</td><td class="point-diff-neg">-7.16</td>
 </tr>
 <tr data-owner="Joshua">
-<td>8</td>
+<td>7</td>
 <td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>Joshua</span></div></td>
 <td class="standings-team-name">The Fighting Josh Allen's</td>
-<td>AFC East</td><td>0</td><td>1</td><td>0-0</td><td class="js-pf">89.12</td><td class="js-pa">99.30</td>
+<td>AFC East</td><td>0</td><td>1</td><td>0-0</td><td class="js-pf">89.12</td><td class="js-pa">99.30</td><td class="point-diff-neg">-10.18</td>
+</tr>
+<tr data-owner="Juan">
+<td>8</td>
+<td><div class="standings-owner-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Juan</span></div></td>
+<td class="standings-team-name">Coast Killers Amigos</td>
+<td>NFC East</td><td>0</td><td>1</td><td>0-0</td><td class="js-pf">95.60</td><td class="js-pa">119.06</td><td class="point-diff-neg">-23.46</td>
 </tr>
 </tbody>
 </table>
@@ -408,48 +444,56 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </button>
 
 <div class="advanced-stats-panel" id="advancedStatsPanel">
-<table class="advanced-stats-table">
-<thead><tr><th>Seed</th><th>Owner</th><th>Team Name</th><th>Division</th><th>Avg Pts/G</th><th>Avg Margin (W)</th><th>Avg Margin (L)</th></tr></thead>
+<table class="advanced-stats-table sortable-2026">
+<thead><tr>
+<th data-type="number">Seed</th>
+<th data-type="text">Owner</th>
+<th data-type="text">Team Name</th>
+<th data-type="text">Division</th>
+<th data-type="number">Avg Pts/G</th>
+<th data-type="number">Avg Margin (W)</th>
+<th data-type="number">Avg Margin (L)</th>
+</tr></thead>
 <tbody>
-<tr data-owner="Kendall">
-<td>1</td><td>Kendall</td>
-<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>KVR1</span></div></td>
-<td>AFC South</td><td class="js-avg">108.90</td><td class="win-margin js-win-margin">+7.16</td><td class="loss-margin js-loss-margin">—</td>
+<tr data-owner="Brian">
+<td>1</td><td>Brian</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
+<td>AFC North</td><td class="js-avg">119.06</td><td class="win-margin js-win-margin">+23.46</td><td class="loss-margin js-loss-margin">—</td>
 </tr>
 <tr data-owner="Ben">
 <td>2</td><td>Ben</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC West" alt="NFC West DFFL helmet"/><span>&nbsp;</span></div></td>
 <td>NFC West</td><td class="js-avg">99.30</td><td class="win-margin js-win-margin">+10.18</td><td class="loss-margin js-loss-margin">—</td>
 </tr>
-<tr data-owner="Brian">
-<td>3</td><td>Brian</td>
-<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC North" alt="AFC North DFFL helmet"/><span>Brian</span></div></td>
-<td>AFC North</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
+<tr data-owner="Kendall">
+<td>3</td><td>Kendall</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC South" alt="AFC South DFFL helmet"/><span>KVR1</span></div></td>
+<td>AFC South</td><td class="js-avg">108.90</td><td class="win-margin js-win-margin">+7.16</td><td class="loss-margin js-loss-margin">—</td>
 </tr>
 <tr data-owner="Dallas">
 <td>4</td><td>Dallas</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC West" alt="AFC West DFFL helmet"/><span>Mahomies Homie</span></div></td>
 <td>AFC West</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
 </tr>
-<tr data-owner="Juan">
-<td>5</td><td>Juan</td>
-<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Coast Killers Amigos</span></div></td>
-<td>NFC East</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
-</tr>
 <tr data-owner="JetLiX">
-<td>6</td><td>JetLiX</td>
+<td>5</td><td>JetLiX</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC North" alt="NFC North DFFL helmet"/><span>JetLiX</span></div></td>
 <td>NFC North</td><td class="js-avg">0.0</td><td class="win-margin js-win-margin">0.0</td><td class="loss-margin js-loss-margin">0.0</td>
 </tr>
 <tr data-owner="Xavier">
-<td>7</td><td>Xavier</td>
+<td>6</td><td>Xavier</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC South" alt="NFC South DFFL helmet"/><span>Bandwagon Elites</span></div></td>
 <td>NFC South</td><td class="js-avg">101.74</td><td class="win-margin js-win-margin">—</td><td class="loss-margin js-loss-margin">-7.16</td>
 </tr>
 <tr data-owner="Joshua">
-<td>8</td><td>Joshua</td>
+<td>7</td><td>Joshua</td>
 <td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="AFC East" alt="AFC East DFFL helmet"/><span>The Fighting Josh Allen's</span></div></td>
 <td>AFC East</td><td class="js-avg">89.12</td><td class="win-margin js-win-margin">—</td><td class="loss-margin js-loss-margin">-10.18</td>
+</tr>
+<tr data-owner="Juan">
+<td>8</td><td>Juan</td>
+<td><div class="advanced-team-cell"><img class="js-2026-helmet" data-division="NFC East" alt="NFC East DFFL helmet"/><span>Coast Killers Amigos</span></div></td>
+<td>NFC East</td><td class="js-avg">95.60</td><td class="win-margin js-win-margin">—</td><td class="loss-margin js-loss-margin">-23.46</td>
 </tr>
 </tbody>
 </table>
@@ -988,6 +1032,67 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     }
   }
   loadWeek1();
+})();
+</script>
+
+
+<script id="sortable2026Tables">
+(function(){
+  function cleanText(value){
+    return String(value == null ? "" : value).replace(/\s+/g," ").trim();
+  }
+
+  function numericValue(text){
+    const cleaned = cleanText(text).replace(/,/g,"").replace(/^\+/, "");
+    if(cleaned === "" || cleaned === "—" || cleaned === "-") return Number.NEGATIVE_INFINITY;
+    const n = parseFloat(cleaned);
+    return Number.isNaN(n) ? Number.NEGATIVE_INFINITY : n;
+  }
+
+  function recordValue(text){
+    const m = cleanText(text).match(/(\d+)\s*-\s*(\d+)/);
+    if(!m) return 0;
+    return (parseInt(m[1],10) * 1000) - parseInt(m[2],10);
+  }
+
+  document.querySelectorAll("table.sortable-2026").forEach(table => {
+    const tbody = table.tBodies[0];
+    if(!tbody) return;
+
+    table.querySelectorAll("thead th").forEach((th, colIndex) => {
+      th.addEventListener("click", () => {
+        if(th.classList.contains("no-sort")) return;
+
+        const type = th.dataset.type || "text";
+        const ascending = !th.classList.contains("sort-asc");
+
+        table.querySelectorAll("thead th").forEach(h => {
+          h.classList.remove("sort-asc","sort-desc");
+        });
+        th.classList.add(ascending ? "sort-asc" : "sort-desc");
+
+        const rows = Array.from(tbody.rows);
+
+        rows.sort((a,b) => {
+          const aText = cleanText(a.cells[colIndex]?.innerText);
+          const bText = cleanText(b.cells[colIndex]?.innerText);
+
+          let cmp = 0;
+          if(type === "number"){
+            cmp = numericValue(aText) - numericValue(bText);
+          }else if(type === "record"){
+            cmp = recordValue(aText) - recordValue(bText);
+          }else{
+            cmp = aText.localeCompare(bText, undefined, {numeric:true, sensitivity:"base"});
+          }
+
+          return ascending ? cmp : -cmp;
+        });
+
+        rows.forEach(row => tbody.appendChild(row));
+      });
+    });
+  });
 })();
 </script>
 
