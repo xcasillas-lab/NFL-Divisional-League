@@ -1,7 +1,7 @@
 {
   "week": 1,
-  "status": "live",
-  "lastUpdated": "2026-09-13T22:25:19-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-13T22:30:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -373,7 +373,7 @@
         "name": "Dak Prescott",
         "nflTeam": "DAL",
         "points": 15.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -415,7 +415,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 21.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -436,7 +436,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 12.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -457,7 +457,7 @@
         "name": "Malik Nabers",
         "nflTeam": "NYG",
         "points": 9.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -478,7 +478,7 @@
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
         "points": 23.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
