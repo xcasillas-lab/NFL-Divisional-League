@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-13T19:40:20-05:00",
+  "lastUpdated": "2026-09-13T19:45:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Juan",
       "rightOwner": "Brian",
-      "leftTotal": 15.42,
+      "leftTotal": 15.52,
       "rightTotal": 119.06
     },
     "3": {
@@ -477,7 +477,7 @@
         "position": "TE",
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
-        "points": 1.7,
+        "points": 1.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -488,7 +488,7 @@
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
-          "receivingYards": 12.0,
+          "receivingYards": 13.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
