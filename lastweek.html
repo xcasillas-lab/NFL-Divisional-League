@@ -551,13 +551,13 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="AFC West DFFL helmet" data-helmet="AFC West"/>
           <div class="recap-division-code">AFCW</div><div class="recap-team-name">Mahomies Homie</div>
-          <div class="recap-score">34.90</div>
+          <div class="recap-score">0.00</div>
         </div>
         <div class="recap-vs">VS</div>
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="NFC North DFFL helmet" data-helmet="NFC North"/>
           <div class="recap-division-code">NFCN</div><div class="recap-team-name">JetLiX</div>
-          <div class="recap-score">155.66</div>
+          <div class="recap-score">0.00</div>
         </div>
       </div>
       <div class="recap-status live">Live</div>
@@ -569,13 +569,13 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="NFC East DFFL helmet" data-helmet="NFC East"/>
           <div class="recap-division-code">NFCE</div><div class="recap-team-name">Coast Killers Amigos</div>
-          <div class="recap-score">10.40</div>
+          <div class="recap-score">0.00</div>
         </div>
         <div class="recap-vs">VS</div>
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="AFC North DFFL helmet" data-helmet="AFC North"/>
           <div class="recap-division-code">AFCN</div><div class="recap-team-name">Brian</div>
-          <div class="recap-score">119.06</div>
+          <div class="recap-score">0.00</div>
         </div>
       </div>
       <div class="recap-status live">Live</div>
@@ -587,13 +587,13 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="AFC East DFFL helmet" data-helmet="AFC East"/>
           <div class="recap-division-code">AFCE</div><div class="recap-team-name">The Fighting Josh Allen&#39;s</div>
-          <div class="recap-score">86.72</div>
+          <div class="recap-score">0.00</div>
         </div>
         <div class="recap-vs">VS</div>
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="NFC West DFFL helmet" data-helmet="NFC West"/>
           <div class="recap-division-code">NFCW</div><div class="recap-team-name">Ben</div>
-          <div class="recap-score">85.40</div>
+          <div class="recap-score">0.00</div>
         </div>
       </div>
       <div class="recap-status live">Live</div>
@@ -605,13 +605,13 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="AFC South DFFL helmet" data-helmet="AFC South"/>
           <div class="recap-division-code">AFCS</div><div class="recap-team-name">KVR1</div>
-          <div class="recap-score">108.90</div>
+          <div class="recap-score">0.00</div>
         </div>
         <div class="recap-vs">VS</div>
         <div class="recap-team">
           <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" alt="NFC South DFFL helmet" data-helmet="NFC South"/>
           <div class="recap-division-code">NFCS</div><div class="recap-team-name">Bandwagon Elites</div>
-          <div class="recap-score">101.74</div>
+          <div class="recap-score">0.00</div>
         </div>
       </div>
       <div class="recap-status final">Final</div>
@@ -733,6 +733,87 @@ document.querySelectorAll('img[data-helmet]').forEach((img) => {
         String(card.dataset.matchup)==='4' ? 'block' : 'none';
     });
   });
+})();
+</script>
+
+
+<script id="dfflLastWeekStatusOnly">
+/* ===== LAST WEEK: LIVE STATUS ONLY =====
+   Scores stay at 0.00 by design.
+   Statuses come from the same Week 1 score JSON used by matchups.html.
+*/
+(function(){
+  const SCORE_URL = "/scoring-data/week1-scores.json";
+  const REFRESH_MS = 10 * 60 * 1000; // 10 minutes
+
+  function normalizeStatus(value){
+    return String(value || "pre-game").toLowerCase();
+  }
+
+  function matchupStatus(leftRows, rightRows){
+    const rows = [...(leftRows || []), ...(rightRows || [])];
+    if(!rows.length) return "PENDING KICKOFF";
+
+    const statuses = rows.map(row => normalizeStatus(row && row.gameStatus));
+
+    if(statuses.includes("live")) return "LIVE";
+    if(statuses.every(status => status === "final")) return "FINAL";
+    if(statuses.some(status => status === "final")) return "IN PROGRESS";
+    return "PENDING KICKOFF";
+  }
+
+  function paintStatus(card, label){
+    const node = card && card.querySelector(".recap-status");
+    if(!node) return;
+
+    node.textContent = label;
+    node.classList.remove("live", "final");
+
+    if(label === "FINAL"){
+      node.classList.add("final");
+    }else if(label === "LIVE" || label === "IN PROGRESS"){
+      node.classList.add("live");
+    }
+  }
+
+  async function updateStatuses(){
+    try{
+      const response = await fetch(SCORE_URL + "?v=" + Date.now(), {
+        cache: "no-store"
+      });
+      if(!response.ok){
+        throw new Error("Week 1 score JSON returned HTTP " + response.status);
+      }
+
+      const scoreData = await response.json();
+      const matchups = scoreData.matchups || {};
+      const players = scoreData.players || {};
+
+      document.querySelectorAll(".recap-matchup[data-matchup]").forEach(card => {
+        const matchupId = String(card.dataset.matchup || "");
+        const matchup = matchups[matchupId];
+        if(!matchup) return;
+
+        const leftOwner = matchup.leftOwner;
+        const rightOwner = matchup.rightOwner;
+        const leftRows = players[leftOwner] || [];
+        const rightRows = players[rightOwner] || [];
+
+        paintStatus(card, matchupStatus(leftRows, rightRows));
+
+        // Keep Last Week scores intentionally at zero.
+        card.querySelectorAll(".recap-score").forEach(score => {
+          score.textContent = "0.00";
+        });
+      });
+    }catch(error){
+      console.warn("DFFL Last Week status update failed:", error);
+      // Leave the existing status text in place if the JSON cannot be reached.
+    }
+  }
+
+  updateStatuses();
+  setInterval(updateStatuses, REFRESH_MS);
 })();
 </script>
 
