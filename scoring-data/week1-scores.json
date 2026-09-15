@@ -1,12 +1,12 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-14T21:55:16-05:00",
+  "lastUpdated": "2026-09-14T22:00:35-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 121.9,
+      "leftTotal": 122.66,
       "rightTotal": 169.66
     },
     "2": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 22.3,
+        "points": 23.06,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 165.0,
+          "passingYards": 184.0,
           "passingTouchdowns": 2.0,
           "interceptions": 1.0,
           "rushingYards": 27.0,
