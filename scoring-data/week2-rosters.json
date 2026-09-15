@@ -1,0 +1,38 @@
+{
+  "week": 2,
+  "locked": false,
+  "rosters": {
+    "Dallas": {
+      "division": "AFC West",
+      "players": []
+    },
+    "Brian": {
+      "division": "AFC North",
+      "players": []
+    },
+    "Joshua": {
+      "division": "AFC East",
+      "players": []
+    },
+    "Kendall": {
+      "division": "AFC South",
+      "players": []
+    },
+    "Juan": {
+      "division": "NFC East",
+      "players": []
+    },
+    "JetLiX": {
+      "division": "NFC North",
+      "players": []
+    },
+    "Xavier": {
+      "division": "NFC South",
+      "players": []
+    },
+    "Ben": {
+      "division": "NFC West",
+      "players": []
+    }
+  }
+}

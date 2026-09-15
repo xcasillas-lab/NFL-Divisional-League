@@ -1,0 +1,58 @@
+{
+  "week": 2,
+  "status": "pending",
+  "lastUpdated": null,
+  "matchups": {
+    "1": {
+      "leftOwner": "Dallas",
+      "rightOwner": "Brian",
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
+    },
+    "2": {
+      "leftOwner": "JetLiX",
+      "rightOwner": "Ben",
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
+    },
+    "3": {
+      "leftOwner": "Juan",
+      "rightOwner": "Xavier",
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
+    },
+    "4": {
+      "leftOwner": "Joshua",
+      "rightOwner": "Kendall",
+      "leftTotal": 0.0,
+      "rightTotal": 0.0
+    }
+  },
+  "players": {
+    "Dallas": [],
+    "Brian": [],
+    "Joshua": [],
+    "Kendall": [],
+    "Juan": [],
+    "JetLiX": [],
+    "Xavier": [],
+    "Ben": []
+  },
+  "source": {
+    "primary": "ESPN public NFL JSON",
+    "dates": [],
+    "stage": "2026-week2-production",
+    "owners": [
+      "Dallas",
+      "Brian",
+      "Joshua",
+      "Kendall",
+      "Juan",
+      "JetLiX",
+      "Xavier",
+      "Ben"
+    ],
+    "defenseIncluded": true,
+    "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
+  }
+}
