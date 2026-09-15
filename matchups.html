@@ -1629,7 +1629,7 @@ const DFFL_WEEK1_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"JetLiX","leftD
     if(totals[0]) totals[0].textContent=fmt(d.leftTotal);
     if(totals[1]) totals[1].textContent=fmt(d.rightTotal);
 
-    // Center buttons: RECAP + PREVIEW exactly like the normal detail box.
+    // Week 1 is historical: keep RECAP, remove PREVIEW so it cannot open current-week content.
     const recap=panel.querySelector(".recap-link-btn");
     if(recap){
       recap.classList.add("show");
@@ -1638,7 +1638,7 @@ const DFFL_WEEK1_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"JetLiX","leftD
     }
     const preview=panel.querySelector(".preview-analysis-btn");
     if(preview){
-      preview.onclick=function(e){e.stopPropagation();openPreviewModal(Number(id));};
+      preview.remove();
     }
 
     // Hard-code all 8 final player rows.
