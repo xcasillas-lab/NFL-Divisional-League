@@ -1,12 +1,12 @@
 {
   "week": 1,
-  "status": "pre-game",
-  "lastUpdated": "2026-09-14T19:15:18-05:00",
+  "status": "live",
+  "lastUpdated": "2026-09-14T19:20:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 57.7,
+      "leftTotal": 57.9,
       "rightTotal": 169.66
     },
     "2": {
@@ -35,7 +35,7 @@
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -55,15 +55,15 @@
         "position": "RB",
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.2,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -98,7 +98,7 @@
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -140,7 +140,7 @@
         "name": "Travis Kelce",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
