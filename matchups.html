@@ -1197,6 +1197,53 @@ const DFFL_ROSTER_URL = "/scoring-data/week2-rosters.json";
 const DFFL_SCORE_URL = "/scoring-data/week2-scores.json";
 const DFFL_REFRESH_MS = 2 * 60 * 1000;
 
+/* Authoritative Week 2 DFFL matchup mapping.
+   Do not depend on historical panel markup or matchup IDs stored in an older score file. */
+const DFFL_WEEK2_MATCHUPS = {
+  "1": { leftOwner: "Dallas",  rightOwner: "Brian"   },
+  "2": { leftOwner: "JetLiX",  rightOwner: "Ben"     },
+  "3": { leftOwner: "Juan",    rightOwner: "Xavier"  },
+  "4": { leftOwner: "Joshua",  rightOwner: "Kendall" }
+};
+
+const DFFL_OWNER_DIVISION = {
+  "Dallas":  { abbr: "AFCW", division: "AFC West" },
+  "Brian":   { abbr: "AFCN", division: "AFC North" },
+  "JetLiX":  { abbr: "NFCN", division: "NFC North" },
+  "Ben":     { abbr: "NFCW", division: "NFC West" },
+  "Juan":    { abbr: "NFCE", division: "NFC East" },
+  "Xavier":  { abbr: "NFCS", division: "NFC South" },
+  "Joshua":  { abbr: "AFCE", division: "AFC East" },
+  "Kendall": { abbr: "AFCS", division: "AFC South" }
+};
+
+function dfflFindMatchupScore(scoreData, leftOwner, rightOwner){
+  const matchups = (scoreData && scoreData.matchups) || {};
+  const values = Object.values(matchups);
+  const found = values.find(function(m){
+    return m && (
+      (m.leftOwner === leftOwner && m.rightOwner === rightOwner) ||
+      (m.leftOwner === rightOwner && m.rightOwner === leftOwner)
+    );
+  });
+
+  if(!found){
+    return { leftTotal: 0, rightTotal: 0 };
+  }
+
+  if(found.leftOwner === leftOwner){
+    return {
+      leftTotal: Number(found.leftTotal || 0),
+      rightTotal: Number(found.rightTotal || 0)
+    };
+  }
+
+  return {
+    leftTotal: Number(found.rightTotal || 0),
+    rightTotal: Number(found.leftTotal || 0)
+  };
+}
+
 function dfflFormatPoints(value){
   const n = Number(value);
   return Number.isFinite(n) ? n.toFixed(2) : "0.00";
@@ -1325,18 +1372,39 @@ function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
   const leftScores = (scoreData.players && scoreData.players[leftOwner]) || [];
   const rightScores = (scoreData.players && scoreData.players[rightOwner]) || [];
 
+  const leftDivision = DFFL_OWNER_DIVISION[leftOwner] || {};
+  const rightDivision = DFFL_OWNER_DIVISION[rightOwner] || {};
+
   const cardTeams = card.querySelectorAll(".featured-team");
   if(cardTeams[0]){
     const owner = cardTeams[0].querySelector(".owner-label");
     const score = cardTeams[0].querySelector(".owner-score");
     if(owner) owner.textContent = leftOwner;
     if(score) score.textContent = dfflFormatPoints(leftTotal);
+    const divisionLabel = cardTeams[0].querySelector(".division-label");
+    if(divisionLabel && leftDivision.abbr) divisionLabel.textContent = leftDivision.abbr;
+    const helmet = cardTeams[0].querySelector("img[data-helmet]");
+    if(helmet && leftDivision.abbr){
+      helmet.dataset.helmet = leftDivision.abbr;
+      if(typeof DFFL_APPROVED_HELMETS !== "undefined" && DFFL_APPROVED_HELMETS[leftDivision.abbr]){
+        helmet.src = DFFL_APPROVED_HELMETS[leftDivision.abbr];
+      }
+    }
   }
   if(cardTeams[1]){
     const owner = cardTeams[1].querySelector(".owner-label");
     const score = cardTeams[1].querySelector(".owner-score");
     if(owner) owner.textContent = rightOwner;
     if(score) score.textContent = dfflFormatPoints(rightTotal);
+    const divisionLabel = cardTeams[1].querySelector(".division-label");
+    if(divisionLabel && rightDivision.abbr) divisionLabel.textContent = rightDivision.abbr;
+    const helmet = cardTeams[1].querySelector("img[data-helmet]");
+    if(helmet && rightDivision.abbr){
+      helmet.dataset.helmet = rightDivision.abbr;
+      if(typeof DFFL_APPROVED_HELMETS !== "undefined" && DFFL_APPROVED_HELMETS[rightDivision.abbr]){
+        helmet.src = DFFL_APPROVED_HELMETS[rightDivision.abbr];
+      }
+    }
   }
 
   const detailTeams = panel.querySelectorAll(".detail-team");
@@ -1392,9 +1460,25 @@ async function dfflLoadWeek2Production(){
     const rosterData = await rosterResponse.json();
     const scoreData = await scoreResponse.json();
 
-    const matchups = scoreData.matchups || {};
-    Object.keys(matchups).forEach(function(matchupId){
-      dfflUpdateMatchup(matchupId, matchups[matchupId], rosterData, scoreData);
+    Object.keys(DFFL_WEEK2_MATCHUPS).forEach(function(matchupId){
+      const pairing = DFFL_WEEK2_MATCHUPS[matchupId];
+      const totals = dfflFindMatchupScore(
+        scoreData,
+        pairing.leftOwner,
+        pairing.rightOwner
+      );
+
+      dfflUpdateMatchup(
+        matchupId,
+        {
+          leftOwner: pairing.leftOwner,
+          rightOwner: pairing.rightOwner,
+          leftTotal: totals.leftTotal,
+          rightTotal: totals.rightTotal
+        },
+        rosterData,
+        scoreData
+      );
     });
     /* Week 1 season archive stays hardcoded; do not overwrite it with Week 2 live data. */
 
