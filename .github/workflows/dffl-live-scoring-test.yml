@@ -76,11 +76,11 @@ jobs:
           git config user.name "dffl-scorebot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add scoring-data/week1-scores.json
+          git add scoring-data/week*-scores.json
 
           if git diff --cached --quiet; then
             echo "No score changes to commit."
           else
-            git commit -m "Update DFFL Week 1 scores"
+            git commit -m "Update DFFL live scores"
             git push
           fi
