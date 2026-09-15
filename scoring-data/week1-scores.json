@@ -1,12 +1,12 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-14T21:50:20-05:00",
+  "lastUpdated": "2026-09-14T21:55:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 118.36,
+      "leftTotal": 121.9,
       "rightTotal": 169.66
     },
     "2": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 22.06,
+        "points": 22.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 159.0,
+          "passingYards": 165.0,
           "passingTouchdowns": 2.0,
           "interceptions": 1.0,
           "rushingYards": 27.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
-        "points": 30.4,
+        "points": 32.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 151.0,
+          "rushingYards": 173.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 18.0,
@@ -139,7 +139,7 @@
         "position": "TE",
         "name": "Travis Kelce",
         "nflTeam": "KC",
-        "points": 7.5,
+        "points": 8.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -149,8 +149,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 65.0,
+          "receptions": 3.0,
+          "receivingYards": 71.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
