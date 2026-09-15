@@ -1,12 +1,12 @@
 {
   "week": 1,
   "status": "live",
-  "lastUpdated": "2026-09-14T19:55:21-05:00",
+  "lastUpdated": "2026-09-14T19:59:45-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "JetLiX",
-      "leftTotal": 68.76,
+      "leftTotal": 69.66,
       "rightTotal": 169.66
     },
     "2": {
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
-        "points": 3.2,
+        "points": 4.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 32.0,
+          "rushingYards": 41.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
