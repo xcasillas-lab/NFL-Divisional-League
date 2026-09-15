@@ -1445,21 +1445,46 @@ function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
 async function dfflLoadWeek2Production(){
   try{
     const cacheBust = Date.now();
-    const [rosterResponse, scoreResponse] = await Promise.all([
-      fetch(DFFL_ROSTER_URL + "?v=" + cacheBust, { cache: "no-store" }),
-      fetch(DFFL_SCORE_URL + "?v=" + cacheBust, { cache: "no-store" })
-    ]);
+
+    /* ROSTERS LOAD FIRST AND INDEPENDENTLY.
+       This makes submitted players appear even if the Week 2 score file is still
+       empty, stale, or temporarily unavailable before live scoring starts. */
+    const rosterResponse = await fetch(
+      DFFL_ROSTER_URL + "?v=" + cacheBust,
+      { cache: "no-store" }
+    );
 
     if(!rosterResponse.ok){
       throw new Error("Roster JSON returned HTTP " + rosterResponse.status);
     }
-    if(!scoreResponse.ok){
-      throw new Error("Score JSON returned HTTP " + scoreResponse.status);
-    }
 
     const rosterData = await rosterResponse.json();
-    const scoreData = await scoreResponse.json();
 
+    /* Scores are optional at page-load time. Start with a clean Week 2 shell. */
+    let scoreData = {
+      week: 2,
+      lastUpdated: null,
+      matchups: {},
+      players: {}
+    };
+
+    try{
+      const scoreResponse = await fetch(
+        DFFL_SCORE_URL + "?v=" + cacheBust,
+        { cache: "no-store" }
+      );
+
+      if(scoreResponse.ok){
+        scoreData = await scoreResponse.json();
+      }else{
+        console.warn("Week 2 score JSON returned HTTP " + scoreResponse.status + "; showing rosters with 0.00 scores.");
+      }
+    }catch(scoreError){
+      console.warn("Week 2 score JSON unavailable; showing rosters with 0.00 scores.", scoreError);
+    }
+
+    /* Always render all four authoritative Week 2 pairings from the roster file.
+       Live totals are layered on only when matching Week 2 score data exists. */
     Object.keys(DFFL_WEEK2_MATCHUPS).forEach(function(matchupId){
       const pairing = DFFL_WEEK2_MATCHUPS[matchupId];
       const totals = dfflFindMatchupScore(
@@ -1480,8 +1505,8 @@ async function dfflLoadWeek2Production(){
         scoreData
       );
     });
-    /* Week 1 season archive stays hardcoded; do not overwrite it with Week 2 live data. */
 
+    /* Week 1 season archive stays hardcoded; do not overwrite it with Week 2 live data. */
     const weekLabel = document.querySelector(".current-week-sub");
     if(weekLabel){
       if(scoreData.lastUpdated){
@@ -1501,9 +1526,9 @@ async function dfflLoadWeek2Production(){
       }
     }
 
-    console.log("DFFL Week 2 production data loaded", scoreData.lastUpdated || "pre-game");
+    console.log("DFFL Week 2 rosters loaded successfully.");
   }catch(error){
-    console.error("DFFL Week 2 production data load failed:", error);
+    console.error("DFFL Week 2 roster load failed:", error);
   }
 }
 
