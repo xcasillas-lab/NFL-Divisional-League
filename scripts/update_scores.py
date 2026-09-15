@@ -11,19 +11,102 @@ from zoneinfo import ZoneInfo
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
-ROSTER_FILE = ROOT / "scoring-data" / "week1-rosters.json"
-SCORE_FILE = ROOT / "scoring-data" / "week1-scores.json"
 
-# 2026 NFL Week 1 regular-season scoring window:
-# Wednesday, September 9 through Monday, September 14.
-WEEK_DATES = [
-    "20260909",
-    "20260910",
-    "20260911",
-    "20260912",
-    "20260913",
-    "20260914"
-]
+# DFFL 2026 regular-season configuration.
+# The scorer automatically selects the active DFFL week using Central Time.
+# Each week explicitly lists the ESPN scoreboard dates and DFFL owner matchups.
+WEEK_CONFIG = {
+    1: {
+        "dates": ["20260909", "20260910", "20260911", "20260912", "20260913", "20260914"],
+        "matchups": {
+            "1": ("Dallas", "JetLiX"),
+            "2": ("Juan", "Brian"),
+            "3": ("Joshua", "Ben"),
+            "4": ("Kendall", "Xavier"),
+        },
+    },
+    2: {
+        "dates": ["20260917", "20260918", "20260919", "20260920", "20260921"],
+        "matchups": {
+            "1": ("Dallas", "Brian"),
+            "2": ("JetLiX", "Ben"),
+            "3": ("Juan", "Xavier"),
+            "4": ("Joshua", "Kendall"),
+        },
+    },
+    3: {
+        "dates": ["20260924", "20260925", "20260926", "20260927", "20260928"],
+        "matchups": {
+            "1": ("Dallas", "Ben"),
+            "2": ("Brian", "Xavier"),
+            "3": ("JetLiX", "Kendall"),
+            "4": ("Juan", "Joshua"),
+        },
+    },
+    4: {
+        "dates": ["20261001", "20261002", "20261003", "20261004", "20261005"],
+        "matchups": {
+            "1": ("Dallas", "Xavier"),
+            "2": ("Ben", "Kendall"),
+            "3": ("Brian", "Joshua"),
+            "4": ("JetLiX", "Juan"),
+        },
+    },
+    5: {
+        "dates": ["20261008", "20261009", "20261010", "20261011", "20261012"],
+        "matchups": {
+            "1": ("Dallas", "Kendall"),
+            "2": ("Xavier", "Joshua"),
+            "3": ("Ben", "Juan"),
+            "4": ("Brian", "JetLiX"),
+        },
+    },
+    6: {
+        "dates": ["20261015", "20261016", "20261017", "20261018", "20261019"],
+        "matchups": {
+            "1": ("Dallas", "Joshua"),
+            "2": ("Kendall", "Juan"),
+            "3": ("Xavier", "JetLiX"),
+            "4": ("Ben", "Brian"),
+        },
+    },
+    7: {
+        "dates": ["20261022", "20261023", "20261024", "20261025", "20261026"],
+        "matchups": {
+            "1": ("Dallas", "Juan"),
+            "2": ("Joshua", "JetLiX"),
+            "3": ("Kendall", "Brian"),
+            "4": ("Xavier", "Ben"),
+        },
+    },
+    8: {
+        "dates": ["20261029", "20261030", "20261031", "20261101", "20261102"],
+        "matchups": {
+            "1": ("Dallas", "Brian"),
+            "2": ("JetLiX", "Ben"),
+            "3": ("Juan", "Xavier"),
+            "4": ("Joshua", "Kendall"),
+        },
+    },
+    9: {
+        "dates": ["20261105", "20261106", "20261107", "20261108", "20261109"],
+        "matchups": {
+            "1": ("Dallas", "Xavier"),
+            "2": ("Ben", "Kendall"),
+            "3": ("Brian", "Joshua"),
+            "4": ("JetLiX", "Juan"),
+        },
+    },
+    10: {
+        "dates": ["20261112", "20261113", "20261114", "20261115", "20261116"],
+        "matchups": {
+            "1": ("Dallas", "Joshua"),
+            "2": ("Kendall", "Juan"),
+            "3": ("Xavier", "JetLiX"),
+            "4": ("Ben", "Brian"),
+        },
+    },
+}
 
 TARGET_OWNERS = [
     "Dallas",
@@ -40,6 +123,18 @@ SCOREBOARD_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/sco
 SUMMARY_URL = "https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary"
 
 CT = ZoneInfo("America/Chicago")
+
+
+def get_active_week(now=None):
+    """Return the active DFFL week number using America/Chicago calendar dates."""
+    now = now or datetime.now(CT)
+    today = now.strftime("%Y%m%d")
+
+    for week, config in WEEK_CONFIG.items():
+        if today in config["dates"]:
+            return week
+
+    return None
 
 TEAM_ALIASES = {
     "WSH": "WAS",
@@ -765,17 +860,39 @@ def defense_from_summary(summary, target_team, game_status):
 
 
 def main():
-    print("DFFL 2026 Week 1 production scoring started")
-    print(f"Week 1 dates scanned: {WEEK_DATES}")
+    active_week = get_active_week()
+
+    if active_week is None:
+        today_ct = datetime.now(CT).strftime("%Y-%m-%d")
+        print(f"No active DFFL scoring week for {today_ct} CT. Nothing to update.")
+        return
+
+    config = WEEK_CONFIG[active_week]
+    week_dates = config["dates"]
+    week_matchups = config["matchups"]
+
+    roster_file = ROOT / "scoring-data" / f"week{active_week}-rosters.json"
+    score_file = ROOT / "scoring-data" / f"week{active_week}-scores.json"
+
+    if not roster_file.exists():
+        raise FileNotFoundError(f"Roster file not found: {roster_file}")
+
+    if not score_file.exists():
+        raise FileNotFoundError(f"Score file not found: {score_file}")
+
+    print(f"DFFL 2026 Week {active_week} production scoring started")
+    print(f"Week {active_week} dates scanned: {week_dates}")
+    print(f"Roster file: {roster_file.name}")
+    print(f"Score file: {score_file.name}")
 
     roster_data = json.loads(
-        ROSTER_FILE.read_text(
+        roster_file.read_text(
             encoding="utf-8"
         )
     )
 
     score_data = json.loads(
-        SCORE_FILE.read_text(
+        score_file.read_text(
             encoding="utf-8"
         )
     )
@@ -809,7 +926,7 @@ def main():
     events = []
     seen_event_ids = set()
 
-    for date_value in WEEK_DATES:
+    for date_value in week_dates:
 
         board = fetch_json(
             SCOREBOARD_URL,
@@ -849,7 +966,7 @@ def main():
 
     print(
         f"Unique ESPN events scanned "
-        f"across Wednesday-Monday: "
+        f"for Week {active_week}: "
         f"{len(events)}"
     )
 
@@ -1079,26 +1196,7 @@ def main():
             f"{total:.2f}"
         )
 
-    # Official 2026 DFFL Week 1 regular-season matchups.
-    week1_matchups = {
-        "1": (
-            "Dallas",
-            "JetLiX"
-        ),
-        "2": (
-            "Juan",
-            "Brian"
-        ),
-        "3": (
-            "Joshua",
-            "Ben"
-        ),
-        "4": (
-            "Kendall",
-            "Xavier"
-        ),
-    }
-
+    # Official DFFL matchups for the automatically selected week.
     score_data.setdefault(
         "matchups",
         {}
@@ -1107,7 +1205,7 @@ def main():
     for matchup_id, (
         left_owner,
         right_owner
-    ) in week1_matchups.items():
+    ) in week_matchups.items():
 
         score_data["matchups"][
             matchup_id
@@ -1160,8 +1258,8 @@ def main():
         "source"
     ] = {
         "primary": "ESPN public NFL JSON",
-        "dates": WEEK_DATES,
-        "stage": "2026-week1-production",
+        "dates": week_dates,
+        "stage": f"2026-week{active_week}-production",
         "owners": TARGET_OWNERS,
         "defenseIncluded": True,
         "defenseNote": (
@@ -1171,7 +1269,7 @@ def main():
         )
     }
 
-    SCORE_FILE.write_text(
+    score_file.write_text(
         json.dumps(
             score_data,
             indent=2
@@ -1181,39 +1279,22 @@ def main():
 
     print("")
     print(
-        "===== WEEK 1 MATCHUP TOTALS ====="
+        f"===== WEEK {active_week} MATCHUP TOTALS ====="
+    )
+
+    for matchup_id, (left_owner, right_owner) in week_matchups.items():
+        print(
+            f"Matchup {matchup_id} - {left_owner} vs {right_owner}: "
+            f"{owner_totals.get(left_owner, 0):.2f} - "
+            f"{owner_totals.get(right_owner, 0):.2f}"
+        )
+
+    print(
+        f"Updated: {score_file}"
     )
 
     print(
-        f"Matchup 1 - Dallas vs JetLiX: "
-        f"{owner_totals.get('Dallas', 0):.2f} - "
-        f"{owner_totals.get('JetLiX', 0):.2f}"
-    )
-
-    print(
-        f"Matchup 2 - Juan vs Brian: "
-        f"{owner_totals.get('Juan', 0):.2f} - "
-        f"{owner_totals.get('Brian', 0):.2f}"
-    )
-
-    print(
-        f"Matchup 3 - Joshua vs Ben: "
-        f"{owner_totals.get('Joshua', 0):.2f} - "
-        f"{owner_totals.get('Ben', 0):.2f}"
-    )
-
-    print(
-        f"Matchup 4 - Kendall vs Xavier: "
-        f"{owner_totals.get('Kendall', 0):.2f} - "
-        f"{owner_totals.get('Xavier', 0):.2f}"
-    )
-
-    print(
-        f"Updated: {SCORE_FILE}"
-    )
-
-    print(
-        "DFFL 2026 Week 1 production "
+        f"DFFL 2026 Week {active_week} production "
         "scoring completed successfully"
     )
 
