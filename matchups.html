@@ -1702,6 +1702,143 @@ const DFFL_WEEK1_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"JetLiX","leftD
 })();
 </script>
 
+
+<script id="dfflWeek2EmptyRosterPatch">
+(function(){
+  const W2 = {
+    1:["AFC WEST","Dallas","AFC NORTH","Brian"],
+    2:["NFC NORTH","JetLiX","NFC WEST","Ben"],
+    3:["NFC EAST","Juan","NFC SOUTH","Xavier"],
+    4:["AFC EAST","Joshua","AFC SOUTH","Kendall"]
+  };
+
+  function blankPanel(id){
+    const panel=document.getElementById("matchup-detail-"+id);
+    const d=W2[id];
+    if(!panel||!d)return;
+
+    // Title / team labels / owners
+    const title=panel.querySelector(".detail-title");
+    if(title) title.textContent=d[0]+" VS "+d[2];
+
+    const teamBlocks=panel.querySelectorAll(".detail-team");
+    if(teamBlocks[0]){
+      const strong=teamBlocks[0].querySelector("strong");
+      const span=teamBlocks[0].querySelector("span");
+      if(strong) strong.textContent=d[0];
+      if(span) span.textContent=d[1];
+    }
+    if(teamBlocks[1]){
+      const strong=teamBlocks[1].querySelector("strong");
+      const span=teamBlocks[1].querySelector("span");
+      if(strong) strong.textContent=d[2];
+      if(span) span.textContent=d[3];
+    }
+
+    // No roster totals yet.
+    panel.querySelectorAll(".detail-total").forEach(function(el){el.textContent="—";});
+
+    // Table headings should reflect Week 2 divisions.
+    const heads=panel.querySelectorAll(".matchup-player-table thead th");
+    if(heads.length>=5){
+      heads[0].textContent=d[0]+" PLAYER";
+      heads[4].textContent=d[2]+" PLAYER";
+    }
+
+    // Leave 8 roster slots visible but empty.
+    const rows=Array.from(panel.querySelectorAll(".matchup-player-table tbody tr:not(.total-row)"));
+    rows.forEach(function(row){
+      const c=row.children;
+      if(c.length>=5){
+        c[0].innerHTML="&nbsp;";
+        c[1].textContent="—";
+        // Keep position slot labels if they already exist (QB/RB/RB/WR/WR/TE/FLEX/DEF)
+        c[3].textContent="—";
+        c[4].innerHTML="&nbsp;";
+      }
+    });
+
+    const total=panel.querySelector(".total-row");
+    if(total){
+      const c=total.children;
+      if(c.length>=5){
+        c[0].textContent="TOTAL";
+        c[1].textContent="—";
+        c[2].textContent="";
+        c[3].textContent="—";
+        c[4].textContent="TOTAL";
+      }
+    }
+
+    // Week 2 is not recap-ready.
+    const recap=panel.querySelector(".recap-link-btn");
+    if(recap) recap.classList.remove("show");
+  }
+
+  function apply(){
+    [1,2,3,4].forEach(blankPanel);
+  }
+
+  document.addEventListener("DOMContentLoaded",apply);
+  setTimeout(apply,100);
+  setTimeout(apply,500);
+})();
+</script>
+
+
+<script id="dfflWeek2BlankPreviewPatch">
+(function(){
+  function blankWeek2Previews(){
+    for(let id=1; id<=4; id++){
+      const panel=document.getElementById("matchup-detail-"+id);
+      if(!panel) continue;
+
+      const btn=panel.querySelector(".preview-analysis-btn");
+      if(!btn) continue;
+
+      // Keep the same Preview button/design, but prevent Week 1 preview data
+      // from opening until Week 2 preview information is available.
+      btn.onclick=function(e){
+        e.preventDefault();
+        e.stopPropagation();
+
+        // If the site's preview modal exists, open it with a clean Week 2 placeholder.
+        const modal =
+          document.getElementById("preview-modal") ||
+          document.getElementById("previewModal") ||
+          document.querySelector(".preview-modal");
+
+        if(modal){
+          const body =
+            modal.querySelector(".preview-modal-body") ||
+            modal.querySelector(".modal-body") ||
+            modal.querySelector(".preview-content");
+
+          if(body){
+            body.innerHTML =
+              '<div style="text-align:center;padding:32px 18px;">' +
+              '<div style="font-weight:800;font-size:18px;margin-bottom:8px;">WEEK 2 PREVIEW</div>' +
+              '<div style="opacity:.75;">Preview coming soon.</div>' +
+              '</div>';
+          }
+
+          modal.classList.add("open","show","active");
+          modal.style.display="";
+          modal.setAttribute("aria-hidden","false");
+          document.body.style.overflow="hidden";
+        }
+        // If the existing modal structure cannot be found, intentionally do nothing.
+        // Most importantly, never call the Week 1 preview-data function.
+      };
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded",blankWeek2Previews);
+  setTimeout(blankWeek2Previews,150);
+  setTimeout(blankWeek2Previews,600);
+})();
+</script>
+
 </body>
 </html>
 <style id="week2SchedulePreviewCleanup">
