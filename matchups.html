@@ -1735,30 +1735,45 @@ const DFFL_WEEK1_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"JetLiX","leftD
       preview.onclick=function(e){e.stopPropagation();openPreviewModal(Number(id));};
     }
 
-    // Hard-code all 8 final player rows.
-    const rows=Array.from(panel.querySelectorAll(".matchup-player-table tbody tr:not(.total-row)"));
-    for(let i=0;i<8;i++){
-      const row=rows[i], l=d.left[i], r=d.right[i];
-      if(!row || !l || !r)continue;
-      const cells=row.children;
-      setPlayerCell(cells[0],l,"left");
-      cells[1].textContent=fmt(l[3]);
-      cells[1].className="left-pts";
-      cells[2].textContent=l[0];
-      cells[2].className="pos-cell";
-      cells[3].textContent=fmt(r[3]);
-      cells[3].className="right-pts";
-      setPlayerCell(cells[4],r,"right");
-    }
+    // WEEK 1 ARCHIVE FIX:
+    // Rebuild the entire tbody from the hardcoded Week 1 final data.
+    // Do NOT depend on the live Week 2 detail table rows being present.
+    // On the production site the Week 2 JSON renderer can legitimately replace
+    // those source rows before this popup opens.
+    const tbody=panel.querySelector(".matchup-player-table tbody");
+    if(tbody){
+      tbody.innerHTML="";
 
-    const totalRow=panel.querySelector(".total-row");
-    if(totalRow){
-      const c=totalRow.children;
-      c[0].textContent="TOTAL";
-      c[1].textContent=fmt(d.leftTotal); c[1].className="left-pts";
-      c[2].textContent="";
-      c[3].textContent=fmt(d.rightTotal); c[3].className="right-pts";
-      c[4].textContent="TOTAL";
+      for(let i=0;i<8;i++){
+        const l=d.left[i], r=d.right[i];
+        if(!l || !r)continue;
+
+        const row=document.createElement("tr");
+        row.innerHTML =
+          '<td></td>' +
+          '<td class="left-pts"></td>' +
+          '<td class="pos-cell"></td>' +
+          '<td class="right-pts"></td>' +
+          '<td></td>';
+
+        const cells=row.children;
+        setPlayerCell(cells[0],l,"left");
+        cells[1].textContent=fmt(l[3]);
+        cells[2].textContent=l[0];
+        cells[3].textContent=fmt(r[3]);
+        setPlayerCell(cells[4],r,"right");
+        tbody.appendChild(row);
+      }
+
+      const totalRow=document.createElement("tr");
+      totalRow.className="total-row";
+      totalRow.innerHTML =
+        '<td>TOTAL</td>' +
+        '<td class="left-pts">'+fmt(d.leftTotal)+'</td>' +
+        '<td></td>' +
+        '<td class="right-pts">'+fmt(d.rightTotal)+'</td>' +
+        '<td>TOTAL</td>';
+      tbody.appendChild(totalRow);
     }
 
     const holder=document.getElementById("week1FinalContent");
