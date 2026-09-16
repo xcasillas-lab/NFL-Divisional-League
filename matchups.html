@@ -711,7 +711,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     </div>
     <div class="detail-center">
       <div class="detail-action-stack">
-        
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(1)">PREVIEW</button>
       </div>
       <small>8 Starting Players</small>
     </div>
@@ -755,7 +755,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     </div>
     <div class="detail-center">
       <div class="detail-action-stack">
-        
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(2)">PREVIEW</button>
       </div>
       <small>8 Starting Players</small>
     </div>
@@ -843,7 +843,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     </div>
     <div class="detail-center">
       <div class="detail-action-stack">
-        
+        <button class="preview-analysis-btn" type="button" onclick="openPreviewModal(4)">PREVIEW</button>
       </div>
       <small>8 Starting Players</small>
     </div>
@@ -891,97 +891,51 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="preview-modal-backdrop" id="preview-modal-1" aria-hidden="true" onclick="previewBackdropClose(event,1)">
   <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-1">
     <div class="preview-modal-head">
-      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-1">Mahomies Homie vs JetLiX</h3></div>
+      <div><div class="preview-modal-kicker">DFFL Week 2 Division Preview</div><h3 id="preview-title-1">AFC West vs AFC North</h3></div>
       <button class="preview-modal-close" type="button" onclick="closePreviewModal(1)" aria-label="Close preview">×</button>
     </div>
     <div class="preview-modal-body">
       <div class="preview-score-card">
-        <div class="preview-score-team"><b>AFC WEST</b><span>Dallas • Mahomies Homie</span><div class="preview-score-number">108.7</div></div>
+        <div class="preview-score-team"><b>AFC WEST</b><span>Dallas</span><div class="preview-score-number">124.6</div></div>
         <div class="preview-score-vs">VS</div>
-        <div class="preview-score-team right"><b>NFC NORTH</b><span>JetLiX</span><div class="preview-score-number">116.4</div></div>
+        <div class="preview-score-team right"><b>AFC NORTH</b><span>Brian</span><div class="preview-score-number">117.2</div></div>
       </div>
-      <div class="preview-edge">Prediction: NFC North by 7.7</div>
-
-      <div class="preview-section">
-        <h4>Matchup Outlook</h4>
-        <p>This could be one of Week 1's highest-scoring matchups. The NFC North enters the season as the DFFL preseason #1 division, with elite fantasy firepower throughout Detroit, Green Bay, Minnesota and Chicago. Dallas has plenty of upside in the AFC West, but Mahomies Homie may need its biggest stars to hit their ceilings to keep pace.</p>
-      </div>
-
-      <div class="preview-section">
-        <h4>3 Players to Watch</h4>
-        <div class="preview-player-grid">
-          <div class="preview-player-box"><b>AFC West</b><span>Patrick Mahomes — KC</span><span>Brock Bowers — LV</span><span>Ladd McConkey — LAC</span></div>
-          <div class="preview-player-box"><b>NFC North</b><span>Jahmyr Gibbs — DET</span><span>Justin Jefferson — MIN</span><span>Amon-Ra St. Brown — DET</span></div>
-        </div>
-      </div>
-
-      <div class="preview-section">
-        <h4>2025 Division DNA</h4>
-        <p>The NFC North went a combined 38-29-1, scored 1,657 points and allowed 1,521. The AFC West finished 34-34, scoring 1,372 and allowing 1,411. That gives the NFC North a substantial 285-point offensive advantage based on last season's combined NFL results.</p>
-      </div>
-
-      <div class="preview-section">
-        <h4>DFFL Take</h4>
-        <p>Dallas has enough star power to win this matchup, but JetLiX has the deeper collection of potential difference-makers. The 2025 numbers and the preseason DFFL model both lean toward the NFC North.</p>
-      </div>
-
-      <div class="draft-storyline">
-        <h4>🏈 Draft Day Storyline</h4>
-        <strong>#7 DRAFTED AFC WEST vs #1 DRAFTED NFC NORTH</strong>
-        <p>Dallas gets an immediate opportunity to prove the seventh division off the board was undervalued. JetLiX gets the opposite challenge: defend the division that went #1 overall in the inaugural DFFL division draft.</p>
-      </div>
-      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+      <div class="preview-edge">DFFL Forecast: AFC West by 7.4</div>
+      <div class="preview-section"><h4>DIVISION MATCHUP OUTLOOK</h4><p>This forecast looks at the full AFC West and AFC North player pools for Week 2—not the owners’ submitted eight-player rosters. The AFC West brings one of the deeper collections of explosive offensive talent, particularly from Kansas City and the Chargers, while Las Vegas and Denver add additional lineup possibilities. The AFC North counters with premium stars from Baltimore and Cincinnati and several high-upside options from Pittsburgh and Cleveland.</p></div>
+      <div class="preview-section"><h4>🔥 AFC WEST — PLAYERS TO WATCH</h4><div class="preview-two-col"><div class="preview-box"><b>AFC WEST</b><div>Patrick Mahomes — KC</div><div>Justin Herbert — LAC</div><div>Ashton Jeanty — LV</div><div>Ladd McConkey — LAC</div></div><div class="preview-box"><b>DIVISION STRENGTH</b><div>Deep QB options</div><div>Multiple explosive offenses</div><div>Strong RB/WR flexibility</div><div>High weekly scoring ceiling</div></div></div><p><b>Game to watch:</b> Chargers vs Raiders. With two AFC West teams sharing the same NFL game, Dallas has opportunities on both sides. A high-scoring divisional game could create several viable RB, WR and FLEX options.</p></div>
+      <div class="preview-section"><h4>🔥 AFC NORTH — PLAYERS TO WATCH</h4><div class="preview-two-col"><div class="preview-box"><b>AFC NORTH</b><div>Lamar Jackson — BAL</div><div>Derrick Henry — BAL</div><div>Ja’Marr Chase — CIN</div><div>Joe Burrow — CIN</div></div><div class="preview-box"><b>DIVISION STRENGTH</b><div>Elite QB ceiling</div><div>Premium RB/WR stars</div><div>Multiple stacking paths</div><div>Big-play upside</div></div></div><p><b>Game to watch:</b> Baltimore vs Cleveland. Baltimore carries several of the AFC North’s highest-ceiling fantasy options. If the Ravens offense controls the matchup, Brian could have multiple premium choices from the same NFL game.</p></div>
+      <div class="preview-section"><h4>⚠️ MATCHUPS TO MONITOR</h4><p><b>AFC West:</b> Chargers–Raiders offers both opportunity and risk because so much divisional talent is concentrated in one game. Kansas City’s offensive stars provide another route if that matchup produces more scoring.<br><b>AFC North:</b> Baltimore–Cleveland puts a large portion of the division’s upside into one matchup, while Cincinnati’s stars give Brian an alternative source of premium production.</p></div>
+      <div class="preview-section"><h4>🎯 DIVISION X-FACTORS</h4><p><b>AFC West:</b> Chargers/Raiders. A shootout would dramatically expand Dallas’ usable player pool.<br><b>AFC North:</b> Baltimore’s offense. Strong production from Jackson, Henry and the Ravens’ supporting cast could push the North’s ceiling significantly higher.</p></div>
+      <div class="preview-section"><h4>PATH TO VICTORY</h4><p><b>AFC West:</b> Take advantage of the division’s QB depth and find the best combination of Chargers, Raiders and Chiefs skill players without becoming overly dependent on one offense.<br><b>AFC North:</b> Get premium production from the Baltimore/Cincinnati stars and capitalize on the North’s elite individual scoring ceiling.</p></div>
+      <div class="preview-final"><b>🏆 DFFL FORECAST</b><strong>AFC WEST 124.6 — AFC NORTH 117.2</strong><p>The AFC West gets the projected edge because of its depth and the number of viable combinations available across Kansas City, Los Angeles and Las Vegas. The AFC North has enough elite talent to flip the matchup quickly if its top stars deliver ceiling performances.</p></div>
+      <div class="preview-disclaimer">Projection is based on overall Week 2 division strength and NFL matchups, not submitted DFFL rosters. Actual DFFL scoring comes only from the owners’ official eight-player lineups.</div>
     </div>
   </div>
 </div>
-
 <div class="preview-modal-backdrop" id="preview-modal-2" aria-hidden="true" onclick="previewBackdropClose(event,2)">
   <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-2">
     <div class="preview-modal-head">
-      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-2">Coast Killers Amigos vs Brian</h3></div>
+      <div><div class="preview-modal-kicker">DFFL Week 2 Division Preview</div><h3 id="preview-title-2">NFC North vs NFC West</h3></div>
       <button class="preview-modal-close" type="button" onclick="closePreviewModal(2)" aria-label="Close preview">×</button>
     </div>
     <div class="preview-modal-body">
       <div class="preview-score-card">
-        <div class="preview-score-team"><b>NFC EAST</b><span>Juan • Coast Killers Amigos</span><div class="preview-score-number">104.2</div></div>
+        <div class="preview-score-team"><b>NFC NORTH</b><span>JetLiX</span><div class="preview-score-number">127.5</div></div>
         <div class="preview-score-vs">VS</div>
-        <div class="preview-score-team right"><b>AFC NORTH</b><span>Brian</span><div class="preview-score-number">109.8</div></div>
+        <div class="preview-score-team right"><b>NFC WEST</b><span>Ben</span><div class="preview-score-number">119.8</div></div>
       </div>
-      <div class="preview-edge">Prediction: AFC North by 5.6</div>
-
-      <div class="preview-section">
-        <h4>Matchup Outlook</h4>
-        <p>This feels like the Week 1 grinder. Both divisions have high-end individual fantasy stars, but neither has the same across-the-board depth as the preseason favorites. One or two monster performances could decide this matchup.</p>
-      </div>
-
-      <div class="preview-section">
-        <h4>3 Players to Watch</h4>
-        <div class="preview-player-grid">
-          <div class="preview-player-box"><b>NFC East</b><span>CeeDee Lamb — DAL</span><span>Saquon Barkley — PHI</span><span>Jalen Hurts — PHI</span></div>
-          <div class="preview-player-box"><b>AFC North</b><span>Ja'Marr Chase — CIN</span><span>Lamar Jackson — BAL</span><span>Derrick Henry — BAL</span></div>
-        </div>
-      </div>
-
-      <div class="preview-section">
-        <h4>2025 Division DNA</h4>
-        <p>The AFC North went 29-39 with 1,514 points scored, while the NFC East went 27-40-1 with 1,587 points scored. The NFC East produced more offense, but also surrendered 1,726 points compared with the AFC North's 1,656.</p>
-      </div>
-
-      <div class="preview-section">
-        <h4>DFFL Take</h4>
-        <p>Juan has several players capable of exploding in any given week. Brian's AFC North, however, offers a dangerous combination of elite quarterback, running back and wide receiver options. Slight edge to the AFC North.</p>
-      </div>
-
-      <div class="draft-storyline">
-        <h4>🏈 Draft Day Storyline</h4>
-        <strong>#4 DRAFTED NFC EAST vs #3 DRAFTED AFC NORTH</strong>
-        <p>These divisions were selected back-to-back. Brian took the AFC North third, and Juan followed with the NFC East fourth. Week 1 gives us an immediate head-to-head test of those draft-day decisions.</p>
-      </div>
-      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+      <div class="preview-edge">DFFL Forecast: NFC North by 7.7</div>
+      <div class="preview-section"><h4>DIVISION MATCHUP OUTLOOK</h4><p>This forecast looks at the full NFC North and NFC West player pools for Week 2—not the owners’ submitted eight-player rosters. The NFC North enters with tremendous offensive depth across Detroit, Green Bay, Chicago and Minnesota. The NFC West counters with high-end fantasy talent from the Rams, 49ers, Seahawks and Cardinals, giving Ben plenty of ways to build a competitive lineup.</p></div>
+      <div class="preview-section"><h4>🔥 NFC NORTH — PLAYERS TO WATCH</h4><div class="preview-two-col"><div class="preview-box"><b>NFC NORTH</b><div>Jahmyr Gibbs — DET</div><div>Amon-Ra St. Brown — DET</div><div>Justin Jefferson — MIN</div><div>Jordan Love — GB</div></div><div class="preview-box"><b>DIVISION STRENGTH</b><div>Exceptional RB/WR depth</div><div>Multiple viable quarterbacks</div><div>Strong stacking options</div><div>High overall scoring ceiling</div></div></div><p><b>Game to watch:</b> Packers vs Commanders. Green Bay gives JetLiX several possible sources of production, while the rest of the NFC North provides enough depth that he doesn’t have to rely heavily on a single NFL matchup.</p></div>
+      <div class="preview-section"><h4>🔥 NFC WEST — PLAYERS TO WATCH</h4><div class="preview-two-col"><div class="preview-box"><b>NFC WEST</b><div>Christian McCaffrey — SF</div><div>Puka Nacua — LAR</div><div>Jaxon Smith-Njigba — SEA</div><div>Trey McBride — ARI</div></div><div class="preview-box"><b>DIVISION STRENGTH</b><div>Elite skill-position talent</div><div>Strong RB ceiling</div><div>Premium WR/TE options</div><div>Four-team lineup flexibility</div></div></div><p><b>Game to watch:</b> Rams vs Titans. The Rams’ offensive pieces give Ben a potentially important source of Week 2 production, particularly through their passing game.</p></div>
+      <div class="preview-section"><h4>⚠️ MATCHUPS TO MONITOR</h4><p><b>NFC North:</b> The biggest question is not whether the division has enough talent, but which combination produces the best eight-player lineup. With four useful NFL offenses, leaving points on the bench becomes a real possibility.<br><b>NFC West:</b> San Francisco’s matchup and McCaffrey’s production can substantially affect the division’s ceiling. Ben also needs the Rams, Seattle and Arizona stars to keep pace with the North’s depth.</p></div>
+      <div class="preview-section"><h4>🎯 DIVISION X-FACTORS</h4><p><b>NFC North:</b> Detroit’s stars. Big performances from Gibbs and St. Brown could give JetLiX a major scoring foundation.<br><b>NFC West:</b> Christian McCaffrey. A ceiling game from CMC can erase a significant projected deficit almost by himself.</p></div>
+      <div class="preview-section"><h4>PATH TO VICTORY</h4><p><b>NFC North:</b> Lean on the division’s exceptional RB/WR depth and select the strongest eight-player combination rather than forcing too many players from one NFL offense.<br><b>NFC West:</b> Get elite production from McCaffrey and combine it with strong performances from the Rams, Seahawks and Cardinals receiving options.</p></div>
+      <div class="preview-final"><b>🏆 DFFL FORECAST</b><strong>NFC NORTH 127.5 — NFC WEST 119.8</strong><p>The NFC North gets the projected edge because of the sheer depth of its player pool across all four teams. The NFC West has enough elite individual talent to make this extremely competitive, particularly if McCaffrey and its top receivers produce ceiling games.</p></div>
+      <div class="preview-disclaimer">Projection is based on overall Week 2 division strength and NFL matchups, not submitted DFFL rosters. Actual DFFL scoring comes only from the owners’ official eight-player lineups.</div>
     </div>
   </div>
 </div>
-
 <div class="preview-modal-backdrop" id="preview-modal-3" aria-hidden="true" onclick="previewBackdropClose(event,3)">
   <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-3">
     <div class="preview-modal-head">
@@ -1050,53 +1004,27 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="preview-modal-backdrop" id="preview-modal-4" aria-hidden="true" onclick="previewBackdropClose(event,4)">
   <div class="preview-modal" role="dialog" aria-modal="true" aria-labelledby="preview-title-4">
     <div class="preview-modal-head">
-      <div><div class="preview-modal-kicker">DFFL Week 1 Game Preview</div><h3 id="preview-title-4">KVR1 vs Bandwagon Elites</h3></div>
+      <div><div class="preview-modal-kicker">DFFL Week 2 Division Preview</div><h3 id="preview-title-4">AFC East vs AFC South</h3></div>
       <button class="preview-modal-close" type="button" onclick="closePreviewModal(4)" aria-label="Close preview">×</button>
     </div>
     <div class="preview-modal-body">
       <div class="preview-score-card">
-        <div class="preview-score-team"><b>AFC SOUTH</b><span>Kendall • KVR1</span><div class="preview-score-number">103.8</div></div>
+        <div class="preview-score-team"><b>AFC EAST</b><span>Joshua</span><div class="preview-score-number">116.7</div></div>
         <div class="preview-score-vs">VS</div>
-        <div class="preview-score-team right"><b>NFC SOUTH</b><span>Xavier • Bandwagon Elites</span><div class="preview-score-number">115.9</div></div>
+        <div class="preview-score-team right"><b>AFC SOUTH</b><span>Kendall</span><div class="preview-score-number">118.9</div></div>
       </div>
-      <div class="preview-edge">Prediction: NFC South by 12.1</div>
-
-      <div class="preview-section">
-        <h4>Matchup Outlook</h4>
-        <p>This is the largest projected spread of Week 1. The AFC South has several major individual weapons, but the NFC South enters the preseason DFFL model near the top of the league and offers multiple ways to build a high-upside lineup.</p>
-      </div>
-
-      <div class="preview-section">
-        <h4>3 Players to Watch</h4>
-        <div class="preview-player-grid">
-          <div class="preview-player-box"><b>AFC South</b><span>Jonathan Taylor — IND</span><span>Brian Thomas Jr. — JAX</span><span>Nico Collins — HOU</span></div>
-          <div class="preview-player-box"><b>NFC South</b><span>Bijan Robinson — ATL</span><span>Drake London — ATL</span><span>Mike Evans — TB</span></div>
-        </div>
-      </div>
-
-      <div class="preview-section">
-        <h4>2025 Division DNA</h4>
-        <p>The AFC South had the stronger combined 2025 NFL season at 36-32 with 1,628 points scored and 1,521 allowed. The NFC South went 30-38 with 1,350 points scored and 1,575 allowed. On pure NFL results, Kendall's division enters with the stronger résumé.</p>
-      </div>
-
-      <div class="preview-section">
-        <h4>DFFL Take</h4>
-        <p>This may be Week 1's best test of NFL strength versus fantasy strength. Kendall owns the division with the better 2025 NFL résumé, while Xavier owns the division the DFFL preseason model believes is much better suited to this fantasy format.</p>
-      </div>
-
-      <div class="draft-storyline">
-        <h4>🏈 Draft Day Storyline</h4>
-        <strong>#8 DRAFTED AFC SOUTH vs #6 DRAFTED NFC SOUTH</strong>
-        <p>Two of the final three divisions selected meet immediately. Kendall has a perfect “you guys got this wrong” opportunity: the AFC South was drafted last despite winning six more combined NFL games and scoring 278 more points than the NFC South in 2025.</p>
-      </div>
-      <div class="preview-disclaimer">DFFL projection generated before official weekly rosters are submitted.</div>
+      <div class="preview-edge">DFFL Forecast: AFC South by 2.2</div>
+      <div class="preview-section"><h4>DIVISION MATCHUP OUTLOOK</h4><p>This forecast looks at the full AFC East and AFC South player pools for Week 2—not the owners’ submitted eight-player rosters. The AFC East brings explosive skill talent from Buffalo, Miami and the Jets, while New England adds additional possibilities. The AFC South counters with strong RB depth and several potentially productive passing-game options from Jacksonville, Indianapolis, Houston and Tennessee.</p></div>
+      <div class="preview-section"><h4>🔥 AFC EAST — PLAYERS TO WATCH</h4><div class="preview-two-col"><div class="preview-box"><b>AFC EAST</b><div>Josh Allen — BUF</div><div>De’Von Achane — MIA</div><div>James Cook — BUF</div><div>Garrett Wilson — NYJ</div></div><div class="preview-box"><b>DIVISION STRENGTH</b><div>Elite QB ceiling</div><div>Explosive RB options</div><div>Big-play potential</div><div>Multiple offensive paths</div></div></div><p><b>Game to watch:</b> Bills vs Jets. Two AFC East teams meet in the same NFL game, giving Joshua opportunities to benefit from production on both sides. A competitive, high-scoring game could generate several DFFL lineup candidates.</p></div>
+      <div class="preview-section"><h4>🔥 AFC SOUTH — PLAYERS TO WATCH</h4><div class="preview-two-col"><div class="preview-box"><b>AFC SOUTH</b><div>Jonathan Taylor — IND</div><div>Nico Collins — HOU</div><div>Brian Thomas Jr. — JAX</div><div>Trevor Lawrence — JAX</div></div><div class="preview-box"><b>DIVISION STRENGTH</b><div>Excellent RB depth</div><div>Strong WR upside</div><div>Balanced four-team pool</div><div>Several FLEX possibilities</div></div></div><p><b>Game to watch:</b> Jaguars vs Bengals. Jacksonville’s offense provides several important AFC South options, and a productive passing environment could give Kendall useful choices at QB, WR and FLEX.</p></div>
+      <div class="preview-section"><h4>⚠️ MATCHUPS TO MONITOR</h4><p><b>AFC East:</b> Bills–Jets creates opportunity but also concentrates several important players into one divisional matchup. Miami’s explosive offense could become especially important if Buffalo–New York turns defensive.<br><b>AFC South:</b> Jacksonville and Houston carry significant receiving upside, while Indianapolis provides a potentially strong rushing foundation. The division needs enough passing production to complement its RB strength.</p></div>
+      <div class="preview-section"><h4>🎯 DIVISION X-FACTORS</h4><p><b>AFC East:</b> Josh Allen. His combination of passing and rushing production gives Joshua access to one of the highest individual ceilings in the matchup.<br><b>AFC South:</b> Jonathan Taylor. A dominant rushing performance could provide Kendall with the scoring anchor needed in what projects as a very close matchup.</p></div>
+      <div class="preview-section"><h4>PATH TO VICTORY</h4><p><b>AFC East:</b> Get a ceiling performance at QB and combine Buffalo/Miami’s explosive backs with the best receiving production available across the division.<br><b>AFC South:</b> Use the division’s RB strength as the foundation and get enough production from Jacksonville and Houston’s passing games to create a balanced lineup.</p></div>
+      <div class="preview-final"><b>🏆 DFFL FORECAST</b><strong>AFC EAST 116.7 — AFC SOUTH 118.9</strong><p>This projects as the closest matchup of Week 2. The AFC South gets a narrow projected edge from its balanced RB/WR pool, while the AFC East has the kind of explosive individual talent that could swing the matchup with only one or two huge performances.</p></div>
+      <div class="preview-disclaimer">Projection is based on overall Week 2 division strength and NFL matchups, not submitted DFFL rosters. Actual DFFL scoring comes only from the owners’ official eight-player lineups.</div>
     </div>
   </div>
 </div>
-
-<div class="footer">DFFL Interactive League Hub</div>
-
-
 <script>
 function toggleMatchupDetail(matchupNumber, forceOpen){
   const panel = document.getElementById('matchup-detail-' + matchupNumber);
