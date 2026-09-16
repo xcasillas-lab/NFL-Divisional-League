@@ -1436,9 +1436,9 @@ html, body{
 <div class="home-tape-wrap">
   <div class="home-tape-head">
     <h3>🏈 THIS WEEK’S MATCHUPS</h3>
-    <span>Week 1 • Live Score Ticker</span>
+    <span>Week 2 • Live Score Ticker</span>
   </div>
-  <div class="home-tape-window" aria-label="Week 1 DFFL matchup ticker">
+  <div class="home-tape-window" aria-label="Week 2 DFFL matchup ticker">
     <div class="home-tape-track" id="homeMatchupTickerTrack"></div>
   </div>
 </div>
@@ -2263,7 +2263,7 @@ document.addEventListener('keydown',function(e){
 <script>
 /* ===== DFFL NYSE-STYLE TICKER + LIVE-ONLY 10 MIN REFRESH ===== */
 (function(){
-  const CURRENT_DFFL_WEEK = 1;
+  const CURRENT_DFFL_WEEK = 2;
   const SCORE_URL = "/scoring-data/week" + CURRENT_DFFL_WEEK + "-scores.json";
   const TEN_MINUTES = 10 * 60 * 1000;
 
@@ -2281,10 +2281,10 @@ document.addEventListener('keydown',function(e){
   };
 
   const fallbackMatchups = [
-    {leftOwner:"Dallas",rightOwner:"JetLiX",leftTotal:0,rightTotal:0,status:"pending"},
-    {leftOwner:"Juan",rightOwner:"Brian",leftTotal:0,rightTotal:0,status:"pending"},
-    {leftOwner:"Joshua",rightOwner:"Ben",leftTotal:0,rightTotal:0,status:"pending"},
-    {leftOwner:"Kendall",rightOwner:"Xavier",leftTotal:0,rightTotal:0,status:"pending"}
+    {leftOwner:"Dallas",rightOwner:"Brian",leftTotal:0,rightTotal:0,status:"pending"},
+    {leftOwner:"JetLiX",rightOwner:"Ben",leftTotal:0,rightTotal:0,status:"pending"},
+    {leftOwner:"Juan",rightOwner:"Xavier",leftTotal:0,rightTotal:0,status:"pending"},
+    {leftOwner:"Joshua",rightOwner:"Kendall",leftTotal:0,rightTotal:0,status:"pending"}
   ];
 
   function score(v){
