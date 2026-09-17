@@ -69,11 +69,125 @@
     },
     "Joshua": {
       "division": "AFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Josh Allen",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "James Cook",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "De'Von Achane",
+          "nflTeam": "MIA",
+          "nflTeamName": "Miami Dolphins",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "DJ Moore",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Garrett Wilson",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Hunter Henry",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Breece Hall",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "New England Patriots DEF",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Trevor Lawrence",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "David Montgomery",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jonathan Taylor",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Nico Collins",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Parker Washington",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Tyler Warren",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Tony Pollard",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Houston Texans DEF",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        }
+      ]
     },
     "Juan": {
       "division": "NFC East",
