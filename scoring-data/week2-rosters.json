@@ -195,7 +195,64 @@
     },
     "JetLiX": {
       "division": "NFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Caleb Williams",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jahmyr Gibbs",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "D'Andre Swift",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Amon-Ra St. Brown",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Justin Jefferson",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Tucker Kraft",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Jameson Williams",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Minnesota Vikings DEF",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        }
+      ]
     },
     "Xavier": {
       "division": "NFC South",
