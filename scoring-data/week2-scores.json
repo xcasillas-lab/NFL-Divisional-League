@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-17T20:20:19-05:00",
+  "lastUpdated": "2026-09-17T20:25:24-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 33.44,
+      "leftTotal": 38.08,
       "rightTotal": 0.0
     }
   },
@@ -204,13 +204,13 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 23.44,
+        "points": 28.08,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 136.0,
-          "passingTouchdowns": 2.0,
+          "passingYards": 152.0,
+          "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 40.0,
           "rushingTouchdowns": 1.0,
