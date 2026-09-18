@@ -1459,18 +1459,18 @@ html, body{
 
 
 <div class="news-item">
-  <b><span class="new-pill">NEW</span>Week 1 Is Here</b>
-  <span>The inaugural DFFL season is officially underway, with all eight owners locked in and live scoring ready.</span>
+  <b><span class="new-pill">NEW</span>Week 2 Starts With Fireworks</b>
+  <span>Buffalo beat Detroit 41–31 Thursday night as Josh Allen accounted for five touchdowns in a 72-point shootout.</span>
 </div>
 
 <div class="news-item">
-  <b>🏈 NFC West Spotlight</b>
-  <span>The NFC West gets an early test with 49ers vs. Rams, while Seattle already opened Week 1 with a win.</span>
+  <b>📊 Week 1 By the Numbers</b>
+  <span>The eight DFFL divisions combined for 905.64 fantasy points in Week 1 — an average of 113.21 points per owner.</span>
 </div>
 
 <div class="news-item">
-  <b>🏈 AFC North Spotlight</b>
-  <span>The AFC North faces a tough Week 1 slate, with Baltimore visiting Indianapolis and Cincinnati hosting Tampa Bay.</span>
+  <b>🥊 Heavyweight Matchup</b>
+  <span>JetLiX vs. Ben puts two 1–0 divisions head-to-head. JetLiX enters Week 2 after posting a league-best 169.66 points in the opener.</span>
 </div>
 
 <button class="panel-link" onclick="window.location.href='newsletter.html'">View Newsletter →</button>
@@ -1642,7 +1642,8 @@ html, body{
 <li>Changes after submission require commissioner approval.</li>
 </ul>
 </div>
-<div class="tools" style="justify-content:center; margin-top:20px;">
+<div class="tools" style="justify-content:center; margin-top:20px; gap:12px; flex-wrap:wrap;">
+<button onclick="clearRosterForm()" style="font-size:16px;padding:14px 24px;background:#334155;font-weight:bold;" type="button">Clear Roster / Start Fresh</button>
 <button onclick="submitToGoogleForm()" style="font-size:20px;padding:16px 40px;background:#22c55e;font-weight:bold;" type="button">Submit Official Roster</button>
 </div>
 <p class="small" style="text-align:center; margin-top:10px;">Clicking Submit will open the official DFFL Google Form with your roster details.</p>
@@ -1927,8 +1928,8 @@ function init(){
   Object.keys(rosterDB).forEach(d=>divisionSelect.innerHTML+=`<option value="${d}">${d}</option>`);
   divisionSelect.onchange=()=>buildRosterTable(true);
   weekSelect.onchange=()=>buildRosterTable(true);
-  ownerName.oninput=saveDataSilent;
-  ownerEmail.oninput=saveDataSilent;
+  ownerName.oninput=saveOwnerIdentity;
+  ownerEmail.oninput=saveOwnerIdentity;
   buildRosterTable(false);
   refresh2026NFLRosters();
 }
@@ -1983,6 +1984,8 @@ function populatePlayers(i){
   arr.forEach(p=>ps.innerHTML+=`<option>${p}</option>`);
 }
 
+const DFFL_OWNER_IDENTITY_KEY = "dffl_owner_identity";
+
 function key(){return "dffl_"+weekSelect.value+"_"+divisionSelect.value}
 
 function collect(){
@@ -1996,62 +1999,74 @@ function collect(){
   return {week:weekSelect.value,division:divisionSelect.value,owner:ownerName.value,email:ownerEmail.value,rows};
 }
 
+function saveOwnerIdentity(){
+  try{
+    localStorage.setItem(DFFL_OWNER_IDENTITY_KEY, JSON.stringify({
+      owner: ownerName.value || "",
+      email: ownerEmail.value || ""
+    }));
+  }catch(e){ /* page still works without browser storage */ }
+}
+
+function loadOwnerIdentity(){
+  try{
+    const raw = localStorage.getItem(DFFL_OWNER_IDENTITY_KEY);
+    if(!raw) return;
+    const data = JSON.parse(raw);
+    if(data){
+      if(!ownerName.value) ownerName.value = data.owner || "";
+      if(!ownerEmail.value) ownerEmail.value = data.email || "";
+    }
+  }catch(e){ /* optional convenience only */ }
+}
+
 function saveDataSilent(){
-  if(leagueByeWeeks.has(getWeekNumber())) return;
-  localStorage.setItem(key(),JSON.stringify(collect()));
+  // Roster selections are intentionally NOT stored in the browser.
+  // Only owner name/email are remembered so each week opens as a clean slate.
+  saveOwnerIdentity();
   updateTotal();
 }
-function saveData(){saveDataSilent();alert("Saved to this browser.");}
+
+function saveData(){
+  saveOwnerIdentity();
+  alert("Owner name and email saved. Roster selections are not cached.");
+}
+
+function clearRosterForm(showMessage=true){
+  document.querySelectorAll(".teamSel").forEach(x=>x.value="");
+  document.querySelectorAll(".playerSel").forEach(x=>x.innerHTML='<option value="">Select player</option>');
+  document.querySelectorAll(".pts").forEach(x=>x.value="0.0");
+  const otherBox = document.getElementById("otherSubmission");
+  if(otherBox) otherBox.value="";
+  updateTotal();
+  validationSummary.innerHTML="";
+  renderWeekAvailability();
+
+  // Remove old roster caches created by earlier versions of the page.
+  try{
+    Object.keys(localStorage).forEach(k=>{
+      if(k.startsWith("dffl_") && k !== DFFL_OWNER_IDENTITY_KEY && k !== NFL_ROSTER_CACHE_KEY){
+        localStorage.removeItem(k);
+      }
+    });
+  }catch(e){}
+
+  if(showMessage){
+    validationSummary.innerHTML='<div class="success-box">Roster cleared. You are starting with a clean lineup.</div>';
+  }
+}
 
 function loadData(){
   renderWeekAvailability();
+  loadOwnerIdentity();
 
   if(leagueByeWeeks.has(getWeekNumber())){
     updateTotal();
     return;
   }
 
-  const active = new Set(getActiveTeams());
-  const s=localStorage.getItem(key());
-  let removedTeams=[];
-
-  if(!s){
-    document.querySelectorAll(".teamSel").forEach(x=>x.value="");
-    document.querySelectorAll(".playerSel").forEach(x=>x.innerHTML='<option value="">Select player</option>');
-    document.querySelectorAll(".pts").forEach(x=>x.value="0.0");
-    updateTotal();
-    renderWeekAvailability();
-    validationSummary.innerHTML="";
-    return;
-  }
-
-  const data=JSON.parse(s);
-  ownerName.value=data.owner||ownerName.value||"";
-  ownerEmail.value=data.email||ownerEmail.value||"";
-
-  (data.rows||[]).forEach((r,i)=>{
-    const teamSel=document.querySelector(`.teamSel[data-row="${i}"]`);
-    if(!teamSel) return;
-
-    if(r.team && !active.has(r.team)){
-      removedTeams.push(r.team);
-      teamSel.value="";
-      document.querySelector(`.playerSel[data-row="${i}"]`).innerHTML='<option value="">Select player</option>';
-      document.querySelector(`.pts[data-row="${i}"]`).value="0.0";
-      return;
-    }
-
-    teamSel.value=r.team||"";
-    populatePlayers(i);
-    const playerSel=document.querySelector(`.playerSel[data-row="${i}"]`);
-    if(playerSel) playerSel.value=r.player||"";
-    const pts=document.querySelector(`.pts[data-row="${i}"]`);
-    if(pts) pts.value=r.points||"0.0";
-  });
-
-  updateTotal();
-  renderWeekAvailability([...new Set(removedTeams)]);
-  if(removedTeams.length) saveDataSilent();
+  // Always start roster selections blank. Old week/division lineup caches are ignored and removed.
+  clearRosterForm(false);
 }
 
 function updateTotal(){
@@ -2130,6 +2145,7 @@ function submitToGoogleForm(){
     return;
   }
   const d = collect();
+  saveOwnerIdentity();
 
   let otherSubmission = "";
   const otherBox = document.getElementById("otherSubmission");
