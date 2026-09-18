@@ -4,7 +4,64 @@
   "rosters": {
     "Dallas": {
       "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kenneth Walker",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Rashee Rice",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Quentin Johnston",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Evan Engram",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Omarion Hampton",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Los Angeles Chargers DEF",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        }
+      ]
     },
     "Brian": {
       "division": "AFC North",
