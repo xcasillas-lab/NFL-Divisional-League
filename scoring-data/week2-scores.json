@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-17T21:40:17-05:00",
+  "lastUpdated": "2026-09-17T21:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 40.5,
+      "leftTotal": 42.3,
       "rightTotal": 0.0
     },
     "3": {
@@ -564,7 +564,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 18.5,
+        "points": 18.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -572,7 +572,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 51.0,
+          "rushingYards": 53.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 49.0,
@@ -606,7 +606,7 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 19.9,
+        "points": 21.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -616,8 +616,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 7.0,
-          "receivingYards": 104.0,
+          "receptions": 8.0,
+          "receivingYards": 115.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
