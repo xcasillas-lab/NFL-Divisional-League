@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-17T19:40:19-05:00",
+  "lastUpdated": "2026-09-17T19:45:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 0.0,
+      "leftTotal": 2.5,
       "rightTotal": 0.0
     },
     "3": {
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 14.86,
+      "leftTotal": 20.58,
       "rightTotal": 0.0
     }
   },
@@ -204,13 +204,13 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 12.16,
+        "points": 17.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 54.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 97.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 40.0,
           "rushingTouchdowns": 1.0,
@@ -564,7 +564,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 0.0,
+        "points": 2.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -572,7 +572,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 25.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
