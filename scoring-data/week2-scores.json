@@ -1,7 +1,7 @@
 {
   "week": 2,
-  "status": "live",
-  "lastUpdated": "2026-09-17T22:25:18-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-17T22:30:23-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 61.32,
+      "leftTotal": 61.12,
       "rightTotal": 0.0
     }
   },
@@ -204,15 +204,15 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 41.12,
-        "gameStatus": "live",
+        "points": 40.82,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 248.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
-          "rushingYards": 72.0,
+          "rushingYards": 69.0,
           "rushingTouchdowns": 2.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -225,15 +225,15 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 20.3,
-        "gameStatus": "live",
+        "points": 20.4,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 134.0,
+          "rushingYards": 135.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 4.0,
@@ -268,7 +268,7 @@
         "name": "DJ Moore",
         "nflTeam": "BUF",
         "points": -0.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -565,7 +565,7 @@
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
         "points": 20.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -607,7 +607,7 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 30.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -670,7 +670,7 @@
         "name": "Jameson Williams",
         "nflTeam": "DET",
         "points": 4.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
