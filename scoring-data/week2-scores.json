@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-17T19:30:21-05:00",
+  "lastUpdated": "2026-09-17T19:35:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -566,8 +566,8 @@
         "nflTeam": "DET",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
