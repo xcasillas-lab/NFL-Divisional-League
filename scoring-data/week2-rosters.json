@@ -211,9 +211,9 @@
         },
         {
           "position": "WR",
-          "name": "Nico Collins",
-          "nflTeam": "HOU",
-          "nflTeamName": "Houston Texans",
+          "name": "Keenan Allen",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
           "jersey": null
         },
         {
@@ -225,9 +225,9 @@
         },
         {
           "position": "TE",
-          "name": "Tyler Warren",
-          "nflTeam": "IND",
-          "nflTeamName": "Indianapolis Colts",
+          "name": "Dalton Schultz",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
           "jersey": null
         },
         {
@@ -248,7 +248,64 @@
     },
     "Juan": {
       "division": "NFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Jalen Hurts",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Javonte Williams",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Saquon Barkley",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "CeeDee Lamb",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "DeVonta Smith",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Isaiah Likely",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Cam Skattebo",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Washington Commanders DEF",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": null
+        }
+      ]
     },
     "JetLiX": {
       "division": "NFC North",
