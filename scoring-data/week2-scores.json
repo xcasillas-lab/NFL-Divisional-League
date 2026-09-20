@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T13:35:21-05:00",
+  "lastUpdated": "2026-09-20T13:40:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,14 +12,14 @@
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 83.3,
+      "leftTotal": 84.5,
       "rightTotal": 0.0
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 24.74,
-      "rightTotal": 43.06
+      "leftTotal": 25.26,
+      "rightTotal": 49.66
     },
     "4": {
       "leftOwner": "Joshua",
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Jalen Hurts",
         "nflTeam": "PHI",
-        "points": 9.64,
+        "points": 10.16,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 141.0,
+          "passingYards": 154.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 10.0,
@@ -921,7 +921,7 @@
         "position": "RB",
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
-        "points": 5.8,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -929,7 +929,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 22.0,
+          "rushingYards": 34.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 21.0,
@@ -1048,13 +1048,13 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 9.56,
+        "points": 16.16,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 139.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 204.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
