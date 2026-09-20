@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T14:35:17-05:00",
+  "lastUpdated": "2026-09-20T14:40:23-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 101.12,
+      "leftTotal": 101.22,
       "rightTotal": 23.9
     }
   },
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Breece Hall",
         "nflTeam": "NYJ",
-        "points": 11.2,
+        "points": 11.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -506,7 +506,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 24.0,
+          "rushingYards": 25.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 63.0,
