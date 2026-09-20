@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T17:50:20-05:00",
+  "lastUpdated": "2026-09-20T17:55:14-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 33.1,
+      "leftTotal": 32.1,
       "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 114.18
+      "rightTotal": 115.18
     },
     "3": {
       "leftOwner": "Juan",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Los Angeles Chargers DEF",
         "nflTeam": "LAC",
-        "points": 5.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 17,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 24,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -1364,13 +1364,13 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 7.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
