@@ -1,31 +1,31 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T14:00:22-05:00",
+  "lastUpdated": "2026-09-20T14:05:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
       "leftTotal": 0.0,
-      "rightTotal": 70.5
+      "rightTotal": 70.58
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 85.62,
+      "leftTotal": 85.9,
       "rightTotal": 0.0
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
       "leftTotal": 27.8,
-      "rightTotal": 60.38
+      "rightTotal": 65.98
     },
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 84.52,
-      "rightTotal": 20.7
+      "rightTotal": 21.2
     }
   },
   "players": {
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 14.5,
+        "points": 14.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 210.0,
+          "passingYards": 207.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 21.0,
@@ -224,7 +224,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 15.8,
+        "points": 16.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -234,8 +234,8 @@
           "interceptions": 0.0,
           "rushingYards": 66.0,
           "rushingTouchdowns": 1.0,
-          "receptions": 2.0,
-          "receivingYards": 22.0,
+          "receptions": 3.0,
+          "receivingYards": 19.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -667,7 +667,7 @@
         "position": "FLEX",
         "name": "Tony Pollard",
         "nflTeam": "TEN",
-        "points": 2.6,
+        "points": 3.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -675,7 +675,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 20.0,
+          "rushingYards": 25.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 1.0,
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Caleb Williams",
         "nflTeam": "CHI",
-        "points": 5.92,
+        "points": 6.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 68.0,
+          "passingYards": 75.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 42.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 16.88,
+        "points": 18.08,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 222.0,
+          "passingYards": 252.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -1132,7 +1132,7 @@
         "position": "WR",
         "name": "Tetairoa McMillan",
         "nflTeam": "CAR",
-        "points": 9.3,
+        "points": 12.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1142,8 +1142,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 73.0,
+          "receptions": 5.0,
+          "receivingYards": 102.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "New Orleans Saints DEF",
         "nflTeam": "NO",
-        "points": 3.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 17,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 2.0,
+          "sacks": 3.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
