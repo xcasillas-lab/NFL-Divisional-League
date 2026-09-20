@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T16:15:20-05:00",
+  "lastUpdated": "2026-09-20T16:20:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 24.0,
+      "leftTotal": 25.8,
       "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 55.4
+      "rightTotal": 55.46
     },
     "3": {
       "leftOwner": "Juan",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 112.42,
-      "rightTotal": 45.96
+      "rightTotal": 48.0
     }
   },
   "players": {
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 12.8,
+        "points": 13.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 45.0,
+          "rushingYards": 53.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 18.0,
@@ -181,13 +181,13 @@
         "position": "DEF",
         "name": "Los Angeles Chargers DEF",
         "nflTeam": "LAC",
-        "points": 7.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 3.46,
+        "points": 3.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 79.0,
+          "passingYards": 90.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 3.0,
@@ -625,7 +625,7 @@
         "position": "WR",
         "name": "Parker Washington",
         "nflTeam": "JAX",
-        "points": 6.1,
+        "points": 7.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -635,8 +635,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 46.0,
+          "receptions": 4.0,
+          "receivingYards": 57.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 12.0,
+        "points": 11.96,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 75.0,
+          "passingYards": 74.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 30.0,
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 10.9,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,7 +1267,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 12.0,
+          "rushingYards": 13.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 27.0,
