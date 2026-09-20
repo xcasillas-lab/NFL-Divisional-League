@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T18:05:17-05:00",
+  "lastUpdated": "2026-09-20T18:10:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -185,7 +185,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 24,
+          "pointsAllowed": 26,
           "pointsAllowedFantasy": 0.0,
           "sacks": 2.0,
           "interceptions": 2.0,
