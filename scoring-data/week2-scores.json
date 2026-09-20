@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T14:45:21-05:00",
+  "lastUpdated": "2026-09-20T14:50:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
       "leftTotal": 0.0,
-      "rightTotal": 85.36
+      "rightTotal": 87.76
     },
     "2": {
       "leftOwner": "JetLiX",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 102.22,
-      "rightTotal": 24.2
+      "rightTotal": 25.6
     }
   },
   "players": {
@@ -308,7 +308,7 @@
         "position": "TE",
         "name": "Harold Fannin",
         "nflTeam": "CLE",
-        "points": 5.5,
+        "points": 7.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -318,8 +318,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 40.0,
+          "receptions": 5.0,
+          "receivingYards": 54.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -646,7 +646,7 @@
         "position": "TE",
         "name": "Dalton Schultz",
         "nflTeam": "HOU",
-        "points": 8.8,
+        "points": 10.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -656,8 +656,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 68.0,
+          "receptions": 5.0,
+          "receivingYards": 77.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
