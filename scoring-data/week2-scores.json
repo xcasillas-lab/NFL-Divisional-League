@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T17:05:15-05:00",
+  "lastUpdated": "2026-09-20T17:10:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 32.6,
+      "leftTotal": 29.6,
       "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 74.18
+      "rightTotal": 78.5
     },
     "3": {
       "leftOwner": "Juan",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 115.62,
-      "rightTotal": 56.74
+      "rightTotal": 55.74
     }
   },
   "players": {
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Los Angeles Chargers DEF",
         "nflTeam": "LAC",
-        "points": 8.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 10,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 17,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -541,14 +541,14 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 7.04,
+        "points": 6.04,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 161.0,
           "passingTouchdowns": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 6.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
@@ -1217,13 +1217,13 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 20.68,
+        "points": 25.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 192.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 200.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 30.0,
           "rushingTouchdowns": 1.0,
