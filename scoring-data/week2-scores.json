@@ -1,12 +1,12 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T15:50:17-05:00",
+  "lastUpdated": "2026-09-20T15:55:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 17.9,
+      "leftTotal": 12.1,
       "rightTotal": 90.6
     },
     "2": {
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 110.72,
+      "leftTotal": 111.22,
       "rightTotal": 45.96
     }
   },
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 1.5,
+        "points": 1.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 17.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Los Angeles Chargers DEF",
         "nflTeam": "LAC",
-        "points": 13.0,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 1.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "De'Von Achane",
         "nflTeam": "MIA",
-        "points": 5.2,
+        "points": 5.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,7 +422,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 41.0,
+          "rushingYards": 46.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 6.0,
