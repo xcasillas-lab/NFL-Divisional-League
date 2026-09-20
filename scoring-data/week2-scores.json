@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T18:20:22-05:00",
+  "lastUpdated": "2026-09-20T18:25:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 72.86,
+      "leftTotal": 79.06,
       "rightTotal": 80.98
     },
     "4": {
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 6.1,
+        "points": 6.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 26.0,
+          "rushingYards": 29.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 20.0,
@@ -773,7 +773,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 22.4,
+        "points": 31.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -783,9 +783,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 7.0,
-          "receivingYards": 129.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 8.0,
+          "receivingYards": 153.0,
+          "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
-        "points": 1.0,
+        "points": -2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 30,
-          "pointsAllowedFantasy": -1.0,
+          "pointsAllowed": 37,
+          "pointsAllowedFantasy": -4.0,
           "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1302,7 +1302,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 38.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1323,7 +1323,7 @@
         "name": "Trey McBride",
         "nflTeam": "ARI",
         "points": 14.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1365,7 +1365,7 @@
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
         "points": 8.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
