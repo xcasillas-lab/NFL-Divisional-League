@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T16:45:20-05:00",
+  "lastUpdated": "2026-09-20T16:50:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 27.6,
+      "leftTotal": 28.7,
       "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 59.62
+      "rightTotal": 61.72
     },
     "3": {
       "leftOwner": "Juan",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 3.1,
+        "points": 3.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -86,8 +86,8 @@
           "interceptions": 0.0,
           "rushingYards": 21.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 5.0,
+          "receptions": 2.0,
+          "receivingYards": 6.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 15.3,
+        "points": 15.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 70.0,
+          "rushingYards": 75.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 18.0,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 11.92,
+        "points": 13.52,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 73.0,
+          "passingYards": 113.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 30.0,
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 11.0,
+        "points": 11.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,7 +1267,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 13.0,
+          "rushingYards": 18.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 27.0,
