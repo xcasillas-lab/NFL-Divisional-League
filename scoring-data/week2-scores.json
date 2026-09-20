@@ -1,24 +1,24 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T15:00:26-05:00",
+  "lastUpdated": "2026-09-20T15:06:33-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
       "leftTotal": 0.0,
-      "rightTotal": 90.4
+      "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 95.92,
+      "leftTotal": 96.92,
       "rightTotal": 0.0
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 39.24,
+      "leftTotal": 43.36,
       "rightTotal": 80.08
     },
     "4": {
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Chase Brown",
         "nflTeam": "CIN",
-        "points": 9.5,
+        "points": 9.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 78.0,
+          "rushingYards": 80.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 2.0,
@@ -668,7 +668,7 @@
         "name": "Tony Pollard",
         "nflTeam": "TEN",
         "points": 7.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -710,13 +710,13 @@
         "position": "QB",
         "name": "Jalen Hurts",
         "nflTeam": "PHI",
-        "points": 14.04,
-        "gameStatus": "live",
+        "points": 18.16,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 261.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 264.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 2.0,
           "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
@@ -753,7 +753,7 @@
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
         "points": 2.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -795,7 +795,7 @@
         "name": "DeVonta Smith",
         "nflTeam": "PHI",
         "points": 22.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -880,7 +880,7 @@
         "name": "Caleb Williams",
         "nflTeam": "CHI",
         "points": 8.72,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -922,7 +922,7 @@
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
         "points": 10.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Justin Jefferson",
         "nflTeam": "MIN",
         "points": 7.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1026,13 +1026,13 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 12.0,
-        "gameStatus": "live",
+        "points": 13.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 3,
           "pointsAllowedFantasy": 7.0,
-          "sacks": 3.0,
+          "sacks": 4.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
