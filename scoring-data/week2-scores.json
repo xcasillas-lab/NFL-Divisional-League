@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T17:10:18-05:00",
+  "lastUpdated": "2026-09-20T17:15:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,18 +13,18 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 78.5
+      "rightTotal": 85.7
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
       "leftTotal": 65.76,
-      "rightTotal": 80.08
+      "rightTotal": 80.98
     },
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 115.62,
+      "leftTotal": 116.12,
       "rightTotal": 55.74
     }
   },
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "De'Von Achane",
         "nflTeam": "MIA",
-        "points": 10.1,
+        "points": 10.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,7 +422,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 67.0,
+          "rushingYards": 72.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 19.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Bucky Irving",
         "nflTeam": "TB",
-        "points": 10.1,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 80.0,
+          "rushingYards": 89.0,
           "rushingTouchdowns": 0.0,
           "receptions": 4.0,
           "receivingYards": 1.0,
@@ -1301,7 +1301,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 18.8,
+        "points": 26.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1311,9 +1311,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 108.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 5.0,
+          "receivingYards": 115.0,
+          "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
