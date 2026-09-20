@@ -1,7 +1,7 @@
 {
   "week": 2,
-  "status": "live",
-  "lastUpdated": "2026-09-20T18:30:24-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-20T18:35:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -732,7 +732,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 6.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 31.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -858,7 +858,7 @@
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
         "points": -2.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 37,
