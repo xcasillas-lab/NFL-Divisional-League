@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T17:00:26-05:00",
+  "lastUpdated": "2026-09-20T17:05:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 31.3,
+      "leftTotal": 32.6,
       "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 69.22
+      "rightTotal": 74.18
     },
     "3": {
       "leftOwner": "Juan",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 115.62,
-      "rightTotal": 56.66
+      "rightTotal": 56.74
     }
   },
   "players": {
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 4.7,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 24.0,
+          "rushingYards": 37.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 8.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 6.96,
+        "points": 7.04,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 159.0,
+          "passingYards": 161.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 6.0,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 18.32,
+        "points": 20.68,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 133.0,
+          "passingYards": 192.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 30.0,
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 12.8,
+        "points": 13.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,7 +1267,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 18.0,
+          "rushingYards": 22.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 35.0,
@@ -1343,7 +1343,7 @@
         "position": "FLEX",
         "name": "Mike Evans",
         "nflTeam": "SF",
-        "points": 1.5,
+        "points": 3.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1353,8 +1353,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 10.0,
+          "receptions": 2.0,
+          "receivingYards": 27.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
