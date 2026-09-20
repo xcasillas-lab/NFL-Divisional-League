@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T17:15:19-05:00",
+  "lastUpdated": "2026-09-20T17:20:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 29.6,
+      "leftTotal": 29.5,
       "rightTotal": 90.6
     },
     "2": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 85.7
+      "rightTotal": 87.7
     },
     "3": {
       "leftOwner": "Juan",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 6.0,
+        "points": 5.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 37.0,
+          "rushingYards": 36.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 8.0,
@@ -309,7 +309,7 @@
         "name": "Harold Fannin",
         "nflTeam": "CLE",
         "points": 7.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1091,7 +1091,7 @@
         "name": "Bucky Irving",
         "nflTeam": "TB",
         "points": 11.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1175,7 +1175,7 @@
         "name": "Emeka Egbuka",
         "nflTeam": "TB",
         "points": 8.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1364,14 +1364,14 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 5.0,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
           "sacks": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
