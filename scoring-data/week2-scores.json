@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T12:50:53-05:00",
+  "lastUpdated": "2026-09-20T12:55:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
       "leftTotal": 0.0,
-      "rightTotal": 35.6
+      "rightTotal": 36.0
     },
     "2": {
       "leftOwner": "JetLiX",
@@ -18,14 +18,14 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 9.34,
-      "rightTotal": 24.96
+      "leftTotal": 10.24,
+      "rightTotal": 26.88
     },
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 79.02,
-      "rightTotal": 19.1
+      "rightTotal": 20.1
     }
   },
   "players": {
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Chase Brown",
         "nflTeam": "CIN",
-        "points": 3.7,
+        "points": 4.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -255,8 +255,8 @@
           "interceptions": 0.0,
           "rushingYards": 26.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 6.0,
+          "receptions": 2.0,
+          "receivingYards": 5.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -688,13 +688,13 @@
         "position": "DEF",
         "name": "Houston Texans DEF",
         "nflTeam": "HOU",
-        "points": 11.0,
+        "points": 12.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
           "pointsAllowedFantasy": 10.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -710,15 +710,15 @@
         "position": "QB",
         "name": "Jalen Hurts",
         "nflTeam": "PHI",
-        "points": 2.94,
+        "points": 3.84,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 101.0,
+          "passingYards": 106.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
-          "rushingYards": -1.0,
+          "rushingYards": 6.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 5.96,
+        "points": 6.28,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 49.0,
+          "passingYards": 57.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Bucky Irving",
         "nflTeam": "TB",
-        "points": 6.0,
+        "points": 6.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 50.0,
+          "rushingYards": 53.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 0.0,
@@ -1132,7 +1132,7 @@
         "position": "WR",
         "name": "Tetairoa McMillan",
         "nflTeam": "CAR",
-        "points": 3.1,
+        "points": 4.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1142,8 +1142,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 26.0,
+          "receptions": 2.0,
+          "receivingYards": 34.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
