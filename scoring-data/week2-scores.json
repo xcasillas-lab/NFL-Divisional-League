@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T12:40:17-05:00",
+  "lastUpdated": "2026-09-20T12:45:28-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
       "leftTotal": 0.0,
-      "rightTotal": 30.32
+      "rightTotal": 32.3
     },
     "2": {
       "leftOwner": "JetLiX",
@@ -19,13 +19,13 @@
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
       "leftTotal": 6.32,
-      "rightTotal": 20.96
+      "rightTotal": 21.96
     },
     "4": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 78.42,
-      "rightTotal": 17.8
+      "leftTotal": 79.32,
+      "rightTotal": 19.1
     }
   },
   "players": {
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 4.12,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 103.0,
+          "passingYards": 125.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -224,7 +224,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 12.5,
+        "points": 12.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -235,7 +235,7 @@
           "rushingYards": 34.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
-          "receivingYards": 21.0,
+          "receivingYards": 22.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -350,13 +350,13 @@
         "position": "DEF",
         "name": "Pittsburgh Steelers DEF",
         "nflTeam": "PIT",
-        "points": 5.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -477,7 +477,7 @@
         "position": "TE",
         "name": "Hunter Henry",
         "nflTeam": "NE",
-        "points": 3.4,
+        "points": 4.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -487,8 +487,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 29.0,
+          "receptions": 2.0,
+          "receivingYards": 33.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -667,7 +667,7 @@
         "position": "FLEX",
         "name": "Tony Pollard",
         "nflTeam": "TEN",
-        "points": 0.9,
+        "points": 2.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -675,7 +675,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 3.0,
+          "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 1.0,
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "New Orleans Saints DEF",
         "nflTeam": "NO",
-        "points": 4.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
