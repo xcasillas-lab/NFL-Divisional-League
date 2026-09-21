@@ -1,12 +1,12 @@
 {
   "week": 2,
-  "status": "live",
-  "lastUpdated": "2026-09-20T22:50:22-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-20T22:55:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 91.2,
+      "leftTotal": 94.98,
       "rightTotal": 90.6
     },
     "2": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 28.1,
-        "gameStatus": "live",
+        "points": 28.98,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 360.0,
+          "passingYards": 382.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 17.0,
@@ -55,18 +55,18 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 17.9,
-        "gameStatus": "live",
+        "points": 20.8,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 115.0,
+          "rushingYards": 117.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 39.0,
+          "receptions": 6.0,
+          "receivingYards": 61.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -98,7 +98,7 @@
         "name": "Rashee Rice",
         "nflTeam": "KC",
         "points": 10.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -584,7 +584,7 @@
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
         "points": 27.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "Keenan Allen",
         "nflTeam": "IND",
         "points": 1.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
