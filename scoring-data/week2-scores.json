@@ -1,7 +1,7 @@
 {
   "week": 2,
-  "status": "pre-game",
-  "lastUpdated": "2026-09-20T19:20:22-05:00",
+  "status": "live",
+  "lastUpdated": "2026-09-20T19:25:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 116.32,
-      "rightTotal": 56.86
+      "rightTotal": 57.76
     }
   },
   "players": {
@@ -35,7 +35,7 @@
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -56,7 +56,7 @@
         "name": "Kenneth Walker",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -98,7 +98,7 @@
         "name": "Rashee Rice",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -583,15 +583,15 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.9,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 9.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -605,7 +605,7 @@
         "name": "Keenan Allen",
         "nflTeam": "IND",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
