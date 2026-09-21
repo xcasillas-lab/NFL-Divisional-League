@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "pre-game",
-  "lastUpdated": "2026-09-21T16:00:24-05:00",
+  "lastUpdated": "2026-09-21T16:05:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -1278,7 +1278,7 @@
       },
       {
         "position": "WR",
-        "name": "Puka Nacua",
+        "name": "Davante Adams",
         "nflTeam": "LAR",
         "points": 0.0,
         "gameStatus": "pre-game",
