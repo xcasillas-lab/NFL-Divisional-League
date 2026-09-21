@@ -1,12 +1,12 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T20:45:19-05:00",
+  "lastUpdated": "2026-09-20T20:50:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Brian",
-      "leftTotal": 60.3,
+      "leftTotal": 60.62,
       "rightTotal": 90.6
     },
     "2": {
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 116.32,
-      "rightTotal": 71.16
+      "rightTotal": 71.26
     }
   },
   "players": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 13.2,
+        "points": 13.52,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 130.0,
+          "passingYards": 138.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 14.3,
+        "points": 14.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 74.0,
+          "rushingYards": 75.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 4.0,
