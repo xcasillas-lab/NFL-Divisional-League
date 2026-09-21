@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T21:45:55-05:00",
+  "lastUpdated": "2026-09-20T21:50:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 116.32,
-      "rightTotal": 74.66
+      "rightTotal": 75.76
     }
   },
   "players": {
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 17.8,
+        "points": 17.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 77.0,
+          "rushingYards": 78.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 26.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "Keenan Allen",
         "nflTeam": "IND",
-        "points": 0.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -614,8 +614,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 5.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
