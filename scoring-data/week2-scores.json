@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-20T22:05:52-05:00",
+  "lastUpdated": "2026-09-20T22:10:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 116.32,
-      "rightTotal": 82.26
+      "rightTotal": 84.76
     }
   },
   "players": {
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 24.4,
+        "points": 26.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,10 +591,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 83.0,
+          "rushingYards": 89.0,
           "rushingTouchdowns": 2.0,
-          "receptions": 3.0,
-          "receivingYards": 26.0,
+          "receptions": 4.0,
+          "receivingYards": 40.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
