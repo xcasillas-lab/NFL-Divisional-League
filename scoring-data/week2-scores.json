@@ -1,7 +1,7 @@
 {
   "week": 2,
-  "status": "live",
-  "lastUpdated": "2026-09-21T22:10:27-05:00",
+  "status": "final",
+  "lastUpdated": "2026-09-21T22:15:25-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -816,7 +816,7 @@
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
         "points": 5.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -837,7 +837,7 @@
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
         "points": 7.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1239,7 +1239,7 @@
         "name": "Kyren Williams",
         "nflTeam": "LAR",
         "points": 14.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1281,7 +1281,7 @@
         "name": "Davante Adams",
         "nflTeam": "LAR",
         "points": 35.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
