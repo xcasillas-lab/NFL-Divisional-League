@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-21T19:45:39-05:00",
+  "lastUpdated": "2026-09-21T19:50:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 96.92,
-      "rightTotal": 119.58
+      "rightTotal": 129.08
     },
     "3": {
       "leftOwner": "Juan",
@@ -1280,7 +1280,7 @@
         "position": "WR",
         "name": "Davante Adams",
         "nflTeam": "LAR",
-        "points": 2.5,
+        "points": 12.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1290,9 +1290,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 20.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 2.0,
+          "receivingYards": 50.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
