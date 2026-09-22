@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "lastUpdated": "2026-09-21T20:21:15-05:00",
+  "lastUpdated": "2026-09-21T20:25:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 83.56,
+      "leftTotal": 85.96,
       "rightTotal": 80.98
     },
     "4": {
@@ -836,7 +836,7 @@
         "position": "FLEX",
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
-        "points": 2.5,
+        "points": 4.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -846,8 +846,8 @@
           "interceptions": 0.0,
           "rushingYards": 18.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 2.0,
+          "receptions": 2.0,
+          "receivingYards": 21.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
