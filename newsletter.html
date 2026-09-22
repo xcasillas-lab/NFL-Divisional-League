@@ -483,19 +483,144 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   .division-news-grid{grid-template-columns:1fr}
   .payout-watch-card{grid-template-columns:1fr auto}
 }
+
+.newsletter-power-link{
+  display:inline-block;
+  margin-top:8px;
+  color:#38bdf8;
+  font-size:.74rem;
+  font-weight:900;
+  text-decoration:none;
+}
+.newsletter-power-link:hover{
+  color:#7dd3fc;
+  text-decoration:underline;
+}
 </style>
 </head>
 <body>
 <header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
-<nav class="tabs"><button class="tab-btn" onclick="window.location.href='index.html#overview'" type="button">Home</button><button class="tab-btn" onclick="window.location.href='standings.html'" type="button">Standings</button><button class="tab-btn" onclick="window.location.href='index.html#submit'" type="button">Roster Submissions</button><button class="tab-btn" onclick="window.location.href='matchups.html'" type="button">Weekly Matchups</button><button class="tab-btn" onclick="window.location.href='lastweek.html'" type="button">Last Week</button><button class="tab-btn" onclick="window.location.href='playoffs.html'" type="button">Playoffs</button><button class="tab-btn active" onclick="window.location.href='newsletter.html'" type="button">Newsletter</button><button class="tab-btn" onclick="window.location.href='schedule.html'" type="button">Schedule</button><button class="tab-btn" onclick="window.location.href='rules.html'" type="button">Rules</button></nav>
+<nav class="tabs"><button class="tab-btn" onclick="window.location.href='index.html#overview'" type="button">Home</button><button class="tab-btn" onclick="window.location.href='standings.html'" type="button">Standings</button><button class="tab-btn" onclick="window.location.href='index.html#submit'" type="button">Roster Submissions</button><button class="tab-btn" onclick="window.location.href='matchups.html'" type="button">Weekly Matchups</button><button class="tab-btn" onclick="window.location.href='lastweek.html'" type="button">Last Week</button><button class="tab-btn" onclick="window.location.href='playoffs.html'" type="button">Playoffs</button><button class="tab-btn active" onclick="window.location.href='newsletter.html'" type="button">Newsletter</button><button class="tab-btn" onclick="window.location.href='index.html#schedule'" type="button">Schedule</button><button class="tab-btn" onclick="window.location.href='index.html#rules'" type="button">Rules</button></nav>
 <main><section class="newsletter-dashboard">
 <div class="newsletter-shell">
 <div class="newsletter-masthead">
 <div class="newsletter-kicker">Founding Edition</div>
 <h2>DFFL HUDDLE</h2>
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
-<div class="newsletter-issue">September 15, 2026</div>
-</div><div class="newsletter-collapse"><button aria-controls="week2UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button"><span><strong>📣 Week 2 — Latest Updates &amp; What to Watch <span class="latest-new-badge">NEW</span></strong><small>The newest Week 2 DFFL updates, matchup storylines and NFL news.</small></span><span aria-hidden="true" class="toggle-arrow">▾</span></button><div class="newsletter-collapse-content" hidden="" id="week2UpdatesContent">
+<div class="newsletter-issue">September 22, 2026</div>
+</div>
+<div class="newsletter-collapse">
+<button aria-controls="week3UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span>
+<strong>📣 Week 3 — Latest Updates &amp; What to Watch
+        <span class="latest-new-badge">NEW</span>
+</strong>
+<small>The newest Week 3 DFFL updates, payout leaders, injury watch and division storylines.</small>
+</span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="week3UpdatesContent">
+<div class="week2-section-block">
+<div class="combined-update-divider">LEAGUE UPDATES &amp; REMINDERS</div>
+<div class="latest-news-grid">
+<div class="latest-news-card">
+<b>📋 Advanced Roster Submissions Are Open</b>
+<span>Owners can submit rosters for future DFFL weeks in advance. If an injury, matchup or strategy changes later, simply submit an updated roster again as the week gets closer. The most recent valid submission is the one that should be used.</span>
+</div>
+<div class="latest-news-card">
+<b>📝 Week 2 Recaps Are Ready</b>
+<span>Week 2 is in the books. Use the <strong>Last Week</strong> page to review final scores, standout performances, matchup recaps and the latest award movement before setting your Week 3 lineup.</span>
+</div>
+<div class="latest-news-card">
+<b>🔄 Check Back Before Lock</b>
+<span>Submitting early does not lock you into that roster. Review injuries, depth-chart changes and NFL game status again before the DFFL roster deadline.</span>
+</div>
+<div class="latest-news-card"><b>📊 Power Rankings Are Heating Up</b><span>Two weeks are in the books, and the DFFL pecking order is starting to take shape. Preseason expectations are now being tested by actual scoring, wins, injuries and lineup performance. Some divisions are climbing, others are under pressure, and Week 3 could shake things up again.</span><a class="newsletter-power-link" href="index.html">See Who’s Rising &amp; Falling →</a></div>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">💰 PAYOUT WATCH</div>
+<div class="payout-watch-card">
+<div>
+<span class="payout-watch-kicker">HIGHEST SINGLE-WEEK SCORE</span>
+<strong>JetLiX</strong>
+<small>NFC North • 169.66 pts</small>
+</div>
+<div class="payout-watch-amount">$40</div>
+<p>JetLiX still owns the season's highest single-week score at <strong>169.66 points</strong>.</p>
+</div>
+<div class="payout-watch-card" style="margin-top:8px">
+<div>
+<span class="payout-watch-kicker">BIGGEST REGULAR-SEASON WIN MARGIN</span>
+<strong>Ben</strong>
+<small>NFC West • +69.36 pts</small>
+</div>
+<div class="payout-watch-amount">$40</div>
+<p>Ben now leads the biggest-win category after a <strong>+69.36-point</strong> victory.</p>
+</div>
+<div class="payout-watch-card" style="margin-top:8px">
+<div>
+<span class="payout-watch-kicker">CLOSEST REGULAR-SEASON WIN</span>
+<strong>Dallas</strong>
+<small>AFC West • +4.38 pts</small>
+</div>
+<div class="payout-watch-amount">$40</div>
+<p>Dallas currently holds the closest-win award with a margin of just <strong>+4.38 points</strong>. The championship, runner-up and playoff scoring awards remain open.</p>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">🏥 WEEK 3 INJURY WATCH</div>
+<div class="division-news-grid">
+<div class="division-news-card"><b>AFC East — Joshua</b><span>Buffalo WR <strong>DJ Moore</strong> is dealing with an AC-joint shoulder sprain. His Week 3 availability is worth monitoring before the Bills face the Chargers.</span></div>
+<div class="division-news-card"><b>AFC North — Brian</b><span>Baltimore WR <strong>Zay Flowers</strong> missed Week 2 with the hamstring injury he aggravated in the opener. His status remains one of the biggest AFC North fantasy items to watch entering the Ravens' Week 3 trip to Dallas.</span></div>
+<div class="division-news-card"><b>AFC South — Kendall</b><span>Indianapolis WR <strong>Alec Pierce</strong> is expected to miss several weeks after aggravating a heel injury. The Colts will have to redistribute downfield targets while he recovers.</span></div>
+<div class="division-news-card"><b>AFC West — Dallas</b><span>Las Vegas TE <strong>Brock Bowers</strong> is expected back at practice after missing the first two games following a meniscus procedure. The Chargers are also dealing with multiple injuries around the offensive line and tight-end group.</span></div>
+<div class="division-news-card"><b>NFC East — Juan</b><span>Washington QB <strong>Jayden Daniels</strong> will miss Week 3 with a dislocated left elbow, and Marcus Mariota will start. Philadelphia TE <strong>Dallas Goedert</strong> is also expected to miss time with an MCL sprain.</span></div>
+<div class="division-news-card"><b>NFC North — JetLiX</b><span>Minnesota QB <strong>Kyler Murray</strong> has cleared concussion protocol and is expected to start. Chicago QB <strong>Caleb Williams</strong> is considered week to week with a hamstring injury, while Green Bay WR <strong>Jayden Reed</strong> is being evaluated for a back injury.</span></div>
+<div class="division-news-card"><b>NFC South — Xavier</b><span>Atlanta gets QB <strong>Michael Penix Jr.</strong> back as the Week 3 starter. The Falcons are still monitoring CB <strong>A.J. Terrell</strong>, while Carolina RB <strong>Jonathon Brooks</strong> is being evaluated for a groin injury.</span></div>
+<div class="division-news-card"><b>NFC West — Ben</b><span>Rams WR <strong>Puka Nacua</strong> missed Monday night with hip/groin soreness and is a key Week 3 status to follow. Seattle QB <strong>Sam Darnold</strong> is expected to return to practice in some capacity after missing Week 2.</span></div>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">🌎 AROUND THE LEAGUE — DIVISION SNAPSHOT</div>
+<div class="division-news-grid">
+<div class="division-news-card"><b>AFC East — Joshua</b><span>Buffalo is 2-0 after putting up 41 points against Detroit. Week 3 brings another test against the Chargers and another chance for the AFC East's top offense to set the fantasy pace.</span></div>
+<div class="division-news-card"><b>AFC North — Brian</b><span>Baltimore enters Week 3 at 1-1 after falling to New Orleans. The Ravens now head to Rio to face Dallas, making Flowers' health and Baltimore's offensive response major DFFL storylines.</span></div>
+<div class="division-news-card"><b>AFC South — Kendall</b><span>The AFC South continues to look more like a consistency division than a star-power division. Pierce's injury adds another roster-construction question as Kendall looks for dependable weekly production.</span></div>
+<div class="division-news-card"><b>AFC West — Dallas</b><span>Las Vegas has opened 2-0 while the Chargers are still looking for their first win. Bowers' possible return could give Dallas another premium lineup option just as Week 3 begins.</span></div>
+<div class="division-news-card"><b>NFC East — Juan</b><span>Philadelphia is 2-0, while Washington enters Week 3 without Jayden Daniels. The division still has explosive upside, but quarterback and tight-end injuries are beginning to reshape Juan's available options.</span></div>
+<div class="division-news-card"><b>NFC North — JetLiX</b><span>Minnesota is 2-0 and Murray is cleared, but Chicago and Green Bay both have important injury questions. JetLiX still has outstanding depth, though Week 3 will test how well that depth absorbs missing pieces.</span></div>
+<div class="division-news-card"><b>NFC South — Xavier</b><span>Michael Penix Jr. returns for Atlanta on Thursday night at Green Bay, giving the NFC South the first chance to put Week 3 DFFL points on the board. His return could change the outlook for Atlanta's skill players.</span></div>
+<div class="division-news-card"><b>NFC West — Ben</b><span>San Francisco and Seattle are both 2-0, while the Rams just earned a Monday-night win. The NFC West continues to look deeper than its preseason ranking, but Nacua's health is an important Week 3 variable.</span></div>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">👀 WEEK 3 — WHAT TO WATCH</div>
+<div class="latest-news-grid">
+<div class="latest-news-card">
+<b>Thursday — Falcons at Packers</b>
+<span><strong>DFFL: NFC South vs. NFC North.</strong> Michael Penix Jr. returns for Atlanta. Watch Bijan Robinson, Drake London and Green Bay's skill players in the first Week 3 scoring opportunity.</span>
+</div>
+<div class="latest-news-card">
+<b>Sunday — Ravens at Cowboys • Rio</b>
+<span><strong>DFFL: AFC North vs. NFC East.</strong> Baltimore's receiver health meets a Dallas offense coming off a Week 2 win. This international matchup could have major DFFL scoring impact.</span>
+</div>
+<div class="latest-news-card">
+<b>Sunday Night — Rams at Broncos</b>
+<span><strong>DFFL: NFC West vs. AFC West.</strong> Puka Nacua's availability is the key question for Los Angeles, while Denver gets a prime-time opportunity to change the AFC West fantasy picture.</span>
+</div>
+<div class="latest-news-card">
+<b>Monday Night — Eagles at Bears</b>
+<span><strong>DFFL: NFC East vs. NFC North.</strong> Philadelphia closes Week 3 in prime time, while Chicago's quarterback situation could significantly affect JetLiX's final scoring options.</span>
+</div>
+</div>
+</div>
+<div class="week2-sources">
+      Week 3 news check: NFL.com team/news reports and current Week 3 schedule information as of Sept. 22, 2026.
+    </div>
+</div>
+</div>
+<div class="newsletter-collapse"><button aria-controls="week2UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button"><span><strong>📣 Week 2 — Latest Updates &amp; What to Watch </strong><small>The newest Week 2 DFFL updates, matchup storylines and NFL news.</small></span><span aria-hidden="true" class="toggle-arrow">▾</span></button><div class="newsletter-collapse-content" hidden="" id="week2UpdatesContent">
 <div class="week2-section-block">
 <div class="combined-update-divider">LEAGUE UPDATES &amp; REMINDERS</div>
 <div class="latest-news-grid">
