@@ -1129,6 +1129,22 @@ const DFFL_OWNER_DIVISION = {
   "Kendall": { abbr: "AFCS", division: "AFC South" }
 };
 
+const DFFL_WEEK3_RECORDS = {
+  "Dallas": "1-1",
+  "Brian": "1-1",
+  "JetLiX": "1-1",
+  "Ben": "2-0",
+  "Juan": "1-1",
+  "Xavier": "0-2",
+  "Joshua": "1-1",
+  "Kendall": "1-1"
+};
+
+function dfflOwnerLabel(owner){
+  const record = DFFL_WEEK3_RECORDS[owner];
+  return record ? owner + " (" + record + ")" : owner;
+}
+
 function dfflFindMatchupScore(scoreData, leftOwner, rightOwner){
   const matchups = (scoreData && scoreData.matchups) || {};
   const values = Object.values(matchups);
@@ -1292,7 +1308,7 @@ function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
   if(cardTeams[0]){
     const owner = cardTeams[0].querySelector(".owner-label");
     const score = cardTeams[0].querySelector(".owner-score");
-    if(owner) owner.textContent = leftOwner;
+    if(owner) owner.textContent = dfflOwnerLabel(leftOwner);
     if(score) score.textContent = dfflFormatPoints(leftTotal);
     const divisionLabel = cardTeams[0].querySelector(".division-label");
     if(divisionLabel && leftDivision.abbr) divisionLabel.textContent = leftDivision.abbr;
@@ -1307,7 +1323,7 @@ function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
   if(cardTeams[1]){
     const owner = cardTeams[1].querySelector(".owner-label");
     const score = cardTeams[1].querySelector(".owner-score");
-    if(owner) owner.textContent = rightOwner;
+    if(owner) owner.textContent = dfflOwnerLabel(rightOwner);
     if(score) score.textContent = dfflFormatPoints(rightTotal);
     const divisionLabel = cardTeams[1].querySelector(".division-label");
     if(divisionLabel && rightDivision.abbr) divisionLabel.textContent = rightDivision.abbr;
@@ -1322,15 +1338,19 @@ function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
 
   const detailTeams = panel.querySelectorAll(".detail-team");
   if(detailTeams[0]){
+    const division = detailTeams[0].querySelector(".detail-team-name b");
     const owner = detailTeams[0].querySelector(".detail-team-name span");
     const score = detailTeams[0].querySelector(".detail-total");
-    if(owner) owner.textContent = leftOwner;
+    if(division && leftDivision.division) division.textContent = leftDivision.division.toUpperCase();
+    if(owner) owner.textContent = dfflOwnerLabel(leftOwner);
     if(score) score.textContent = dfflFormatPoints(leftTotal);
   }
   if(detailTeams[1]){
+    const division = detailTeams[1].querySelector(".detail-team-name b");
     const owner = detailTeams[1].querySelector(".detail-team-name span");
     const score = detailTeams[1].querySelector(".detail-total");
-    if(owner) owner.textContent = rightOwner;
+    if(division && rightDivision.division) division.textContent = rightDivision.division.toUpperCase();
+    if(owner) owner.textContent = dfflOwnerLabel(rightOwner);
     if(score) score.textContent = dfflFormatPoints(rightTotal);
   }
 
