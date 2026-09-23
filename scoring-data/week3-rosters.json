@@ -16,7 +16,64 @@
     },
     "Juan": {
       "division": "NFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Dak Prescott",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": 4
+        },
+        {
+          "position": "RB",
+          "name": "Javonte Williams",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": 33
+        },
+        {
+          "position": "RB",
+          "name": "Saquon Barkley",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": 26
+        },
+        {
+          "position": "WR",
+          "name": "CeeDee Lamb",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": 88
+        },
+        {
+          "position": "WR",
+          "name": "DeVonta Smith",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": 6
+        },
+        {
+          "position": "TE",
+          "name": "Isaiah Likely",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": 9
+        },
+        {
+          "position": "FLEX",
+          "name": "Stefon Diggs",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": 3
+        },
+        {
+          "position": "DEF",
+          "name": "Philadelphia Eagles DEF",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": null
+        }
+      ]
     },
     "JetLiX": {
       "division": "NFC North",
@@ -28,7 +85,64 @@
     },
     "Dallas": {
       "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": 15
+        },
+        {
+          "position": "RB",
+          "name": "Kenneth Walker",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": 9
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": 2
+        },
+        {
+          "position": "WR",
+          "name": "Jaylen Waddle",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": 17
+        },
+        {
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": 15
+        },
+        {
+          "position": "TE",
+          "name": "Travis Kelce",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": 87
+        },
+        {
+          "position": "FLEX",
+          "name": "Tre Tucker",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": 1
+        },
+        {
+          "position": "DEF",
+          "name": "Las Vegas Raiders DEF",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",

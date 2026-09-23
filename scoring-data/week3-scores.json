@@ -1,29 +1,29 @@
 {
   "week": 3,
-  "status": "pending",
+  "status": "pre-game",
   "lastUpdated": null,
   "matchups": {
     "1": {
-      "leftOwner": "Dallas",
-      "rightOwner": "Ben",
+      "leftOwner": "Kendall",
+      "rightOwner": "Dallas",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     },
     "2": {
-      "leftOwner": "Brian",
-      "rightOwner": "Xavier",
+      "leftOwner": "Joshua",
+      "rightOwner": "Brian",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     },
     "3": {
-      "leftOwner": "JetLiX",
-      "rightOwner": "Kendall",
+      "leftOwner": "Xavier",
+      "rightOwner": "Ben",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     },
     "4": {
       "leftOwner": "Juan",
-      "rightOwner": "Joshua",
+      "rightOwner": "JetLiX",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     }
@@ -40,7 +40,13 @@
   },
   "source": {
     "primary": "ESPN public NFL JSON",
-    "dates": [],
+    "dates": [
+      "20260924",
+      "20260925",
+      "20260926",
+      "20260927",
+      "20260928"
+    ],
     "stage": "2026-week3-production",
     "owners": [
       "Ben",
