@@ -81,7 +81,64 @@
     },
     "Xavier": {
       "division": "NFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Bryce Young",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": 9
+        },
+        {
+          "position": "RB",
+          "name": "Bijan Robinson",
+          "nflTeam": "ATL",
+          "nflTeamName": "Atlanta Falcons",
+          "jersey": 7
+        },
+        {
+          "position": "RB",
+          "name": "Chuba Hubbard",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": 30
+        },
+        {
+          "position": "WR",
+          "name": "Chris Olave",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": 12
+        },
+        {
+          "position": "WR",
+          "name": "Jalen Coker",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": 18
+        },
+        {
+          "position": "TE",
+          "name": "Juwan Johnson",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": 83
+        },
+        {
+          "position": "FLEX",
+          "name": "Alvin Kamara",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": 41
+        },
+        {
+          "position": "DEF",
+          "name": "Tampa Bay Buccaneers DEF",
+          "nflTeam": "TB",
+          "nflTeamName": "Tampa Bay Buccaneers",
+          "jersey": null
+        }
+      ]
     },
     "Dallas": {
       "division": "AFC West",
