@@ -4,7 +4,64 @@
   "rosters": {
     "Ben": {
       "division": "NFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Brock Purdy",
+          "nflTeam": "SF",
+          "nflTeamName": "San Francisco 49ers",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Christian McCaffrey",
+          "nflTeam": "SF",
+          "nflTeamName": "San Francisco 49ers",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kyren Williams",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Puka Nacua",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jaxon Smith-Njigba",
+          "nflTeam": "SEA",
+          "nflTeamName": "Seattle Seahawks",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Trey McBride",
+          "nflTeam": "ARI",
+          "nflTeamName": "Arizona Cardinals",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Davante Adams",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Seattle Seahawks DEF",
+          "nflTeam": "SEA",
+          "nflTeamName": "Seattle Seahawks",
+          "jersey": null
+        }
+      ]
     },
     "Brian": {
       "division": "AFC North",
