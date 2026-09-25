@@ -14,23 +14,16 @@
         },
         {
           "position": "RB",
-          "name": "Christian McCaffrey",
-          "nflTeam": "SF",
-          "nflTeamName": "San Francisco 49ers",
-          "jersey": null
-        },
-        {
-          "position": "RB",
           "name": "Kyren Williams",
           "nflTeam": "LAR",
           "nflTeamName": "Los Angeles Rams",
           "jersey": null
         },
         {
-          "position": "WR",
-          "name": "Puka Nacua",
-          "nflTeam": "LAR",
-          "nflTeamName": "Los Angeles Rams",
+          "position": "RB",
+          "name": "Christian McCaffrey",
+          "nflTeam": "SF",
+          "nflTeamName": "San Francisco 49ers",
           "jersey": null
         },
         {
@@ -38,6 +31,13 @@
           "name": "Jaxon Smith-Njigba",
           "nflTeam": "SEA",
           "nflTeamName": "Seattle Seahawks",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Davante Adams",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
           "jersey": null
         },
         {
