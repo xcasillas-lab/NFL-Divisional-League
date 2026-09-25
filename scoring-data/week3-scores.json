@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-24T20:35:18-05:00",
+  "lastUpdated": "2026-09-24T20:40:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 19.0,
+      "leftTotal": 19.3,
       "rightTotal": 0.0
     },
     "4": {
@@ -900,7 +900,7 @@
         "position": "RB",
         "name": "Bijan Robinson",
         "nflTeam": "ATL",
-        "points": 19.0,
+        "points": 19.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -908,7 +908,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 108.0,
+          "rushingYards": 111.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 17.0,
