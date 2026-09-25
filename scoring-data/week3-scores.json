@@ -1,7 +1,7 @@
 {
   "week": 3,
-  "status": "live",
-  "lastUpdated": "2026-09-24T22:15:20-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-24T22:20:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 0.0,
-      "rightTotal": 25.08
+      "rightTotal": 24.08
     }
   },
   "players": {
@@ -710,14 +710,14 @@
         "position": "QB",
         "name": "Jordan Love",
         "nflTeam": "GB",
-        "points": 20.48,
-        "gameStatus": "live",
+        "points": 19.48,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 312.0,
           "passingTouchdowns": 2.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
@@ -816,7 +816,7 @@
         "name": "Tucker Kraft",
         "nflTeam": "GB",
         "points": 4.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -901,7 +901,7 @@
         "name": "Bijan Robinson",
         "nflTeam": "ATL",
         "points": 34.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
