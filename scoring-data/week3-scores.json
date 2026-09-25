@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "pre-game",
-  "lastUpdated": "2026-09-25T15:55:16-05:00",
+  "lastUpdated": "2026-09-25T16:00:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -158,8 +158,8 @@
       },
       {
         "position": "FLEX",
-        "name": "Davante Adams",
-        "nflTeam": "LAR",
+        "name": "Mike Evans",
+        "nflTeam": "SF",
         "points": 0.0,
         "gameStatus": "pre-game",
         "foundInFeed": false,
