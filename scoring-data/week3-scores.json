@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-24T21:25:19-05:00",
+  "lastUpdated": "2026-09-24T21:30:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 0.0,
-      "rightTotal": 13.96
+      "rightTotal": 15.22
     }
   },
   "players": {
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Jordan Love",
         "nflTeam": "GB",
-        "points": 10.16,
+        "points": 10.92,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 154.0,
+          "passingYards": 173.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -815,7 +815,7 @@
         "position": "TE",
         "name": "Tucker Kraft",
         "nflTeam": "GB",
-        "points": 3.8,
+        "points": 4.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -823,7 +823,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 5.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 23.0,
