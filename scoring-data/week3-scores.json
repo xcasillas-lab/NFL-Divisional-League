@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "pre-game",
-  "lastUpdated": "2026-09-25T20:55:18-05:00",
+  "lastUpdated": "2026-09-25T21:00:23-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -1212,7 +1212,175 @@
         "note": "Game has not started; D/ST score remains 0.00."
       }
     ],
-    "Kendall": []
+    "Kendall": [
+      {
+        "position": "QB",
+        "name": "C.J. Stroud",
+        "nflTeam": "HOU",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "David Montgomery",
+        "nflTeam": "HOU",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Jonathan Taylor",
+        "nflTeam": "IND",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Carnell Tate",
+        "nflTeam": "TEN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Josh Downs",
+        "nflTeam": "IND",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Dalton Schultz",
+        "nflTeam": "HOU",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Tony Pollard",
+        "nflTeam": "TEN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Jacksonville Jaguars DEF",
+        "nflTeam": "JAX",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ]
   },
   "source": {
     "primary": "ESPN public NFL JSON",
