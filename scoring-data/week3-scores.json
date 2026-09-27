@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T17:55:19-05:00",
+  "lastUpdated": "2026-09-27T18:00:23-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,18 +13,18 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 93.86
+      "rightTotal": 93.66
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 98.64,
-      "rightTotal": 94.9
+      "leftTotal": 101.24,
+      "rightTotal": 96.6
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 43.04,
+      "leftTotal": 43.14,
       "rightTotal": 97.98
     }
   },
@@ -139,7 +139,7 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 8.9,
+        "points": 10.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -149,8 +149,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 59.0,
+          "receptions": 8.0,
+          "receivingYards": 66.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 20.4,
+        "points": 20.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 79.0,
+          "rushingYards": 77.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 0.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 17.1,
+        "points": 17.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 96.0,
+          "rushingYards": 97.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 5.0,
@@ -942,7 +942,7 @@
         "position": "WR",
         "name": "Chris Olave",
         "nflTeam": "NO",
-        "points": 8.4,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -952,8 +952,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 59.0,
+          "receptions": 6.0,
+          "receivingYards": 70.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1026,13 +1026,13 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
-        "points": 5.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 17,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 2.0,
+          "sacks": 3.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
