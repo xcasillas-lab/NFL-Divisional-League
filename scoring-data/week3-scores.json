@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T16:20:22-05:00",
+  "lastUpdated": "2026-09-27T16:25:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,7 +13,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 76.62
+      "rightTotal": 78.76
     },
     "3": {
       "leftOwner": "Xavier",
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 3.62,
+        "points": 3.86,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 38.0,
+          "passingYards": 44.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 21.0,
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 16.1,
+        "points": 16.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 36.0,
+          "rushingYards": 44.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 0.0,
@@ -266,18 +266,18 @@
         "position": "WR",
         "name": "Rashod Bateman",
         "nflTeam": "BAL",
-        "points": 0.0,
+        "points": 1.1,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 6.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
