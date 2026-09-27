@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T16:30:25-05:00",
+  "lastUpdated": "2026-09-27T16:35:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,13 +19,13 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 83.74,
-      "rightTotal": 70.86
+      "rightTotal": 72.22
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 23.36,
-      "rightTotal": 93.98
+      "leftTotal": 23.6,
+      "rightTotal": 94.98
     }
   },
   "players": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 14.8,
+        "points": 16.16,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 170.0,
+          "passingYards": 204.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 2.16,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 54.0,
+          "passingYards": 60.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -857,13 +857,13 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 11.0,
+        "points": 12.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
