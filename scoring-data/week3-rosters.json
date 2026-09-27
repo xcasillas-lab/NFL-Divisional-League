@@ -136,23 +136,16 @@
         },
         {
           "position": "RB",
-          "name": "James Cook",
-          "nflTeam": "BUF",
-          "nflTeamName": "Buffalo Bills",
-          "jersey": null
-        },
-        {
-          "position": "RB",
           "name": "De'Von Achane",
           "nflTeam": "MIA",
           "nflTeamName": "Miami Dolphins",
           "jersey": null
         },
         {
-          "position": "WR",
-          "name": "A.J. Brown",
-          "nflTeam": "NE",
-          "nflTeamName": "New England Patriots",
+          "position": "RB",
+          "name": "James Cook",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
           "jersey": null
         },
         {
@@ -160,6 +153,13 @@
           "name": "Garrett Wilson",
           "nflTeam": "NYJ",
           "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Romeo Doubs",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
           "jersey": null
         },
         {
