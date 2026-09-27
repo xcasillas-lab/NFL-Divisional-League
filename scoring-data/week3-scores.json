@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T18:40:19-05:00",
+  "lastUpdated": "2026-09-27T18:45:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,12 +13,12 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 102.36
+      "rightTotal": 103.4
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 109.94,
+      "leftTotal": 110.84,
       "rightTotal": 109.14
     },
     "4": {
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 19.36,
+        "points": 20.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 159.0,
+          "passingYards": 185.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 50.0,
@@ -942,8 +942,8 @@
         "position": "WR",
         "name": "Chris Olave",
         "nflTeam": "NO",
-        "points": 12.8,
-        "gameStatus": "live",
+        "points": 15.2,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -952,8 +952,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 8.0,
-          "receivingYards": 88.0,
+          "receptions": 9.0,
+          "receivingYards": 107.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -984,8 +984,8 @@
         "position": "TE",
         "name": "Juwan Johnson",
         "nflTeam": "NO",
-        "points": 20.8,
-        "gameStatus": "live",
+        "points": 19.3,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -994,10 +994,10 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 7.0,
+          "receptions": 8.0,
           "receivingYards": 53.0,
           "receivingTouchdowns": 2.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
@@ -1006,7 +1006,7 @@
         "name": "Alvin Kamara",
         "nflTeam": "NO",
         "points": 4.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1091,7 +1091,7 @@
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
         "points": 10.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1175,7 +1175,7 @@
         "name": "Tre Tucker",
         "nflTeam": "LV",
         "points": 6.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1196,7 +1196,7 @@
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
         "points": 4.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 27,
