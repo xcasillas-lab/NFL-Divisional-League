@@ -1,31 +1,31 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T15:25:16-05:00",
+  "lastUpdated": "2026-09-27T15:30:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 73.78,
-      "rightTotal": 58.74
+      "rightTotal": 68.64
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 56.9
+      "rightTotal": 57.5
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 69.7,
+      "leftTotal": 68.74,
       "rightTotal": 43.64
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 7.6,
-      "rightTotal": 98.98
+      "leftTotal": 8.76,
+      "rightTotal": 92.98
     }
   },
   "players": {
@@ -98,7 +98,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 30.36,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -182,7 +182,7 @@
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
         "points": 5.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 33,
@@ -204,9 +204,9 @@
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -245,15 +245,15 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.6,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 6.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -267,7 +267,7 @@
         "name": "Rashod Bateman",
         "nflTeam": "BAL",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -309,7 +309,7 @@
         "name": "Harold Fannin",
         "nflTeam": "CLE",
         "points": 20.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -330,7 +330,7 @@
         "name": "Denzel Boston",
         "nflTeam": "CLE",
         "points": 5.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.36,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
-          "passingYards": 0.0,
+          "passingYards": 9.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -562,15 +562,15 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.8,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 8.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -605,7 +605,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -668,7 +668,7 @@
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
         "points": 5.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 16.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -879,14 +879,14 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 15.6,
-        "gameStatus": "live",
+        "points": 14.64,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 290.0,
+          "passingYards": 291.0,
           "passingTouchdowns": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
@@ -922,7 +922,7 @@
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
         "points": 13.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -943,7 +943,7 @@
         "name": "Chris Olave",
         "nflTeam": "NO",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Jalen Coker",
         "nflTeam": "CAR",
         "points": 2.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -985,7 +985,7 @@
         "name": "Juwan Johnson",
         "nflTeam": "NO",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1006,7 +1006,7 @@
         "name": "Alvin Kamara",
         "nflTeam": "NO",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1090,15 +1090,15 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": -0.1,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": -1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1175,7 +1175,7 @@
         "name": "Tre Tucker",
         "nflTeam": "LV",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1209,7 +1209,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Kendall": [
