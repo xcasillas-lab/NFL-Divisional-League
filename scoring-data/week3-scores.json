@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T15:15:23-05:00",
+  "lastUpdated": "2026-09-27T15:20:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -18,14 +18,14 @@
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 71.18,
+      "leftTotal": 68.5,
       "rightTotal": 35.36
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 7.7,
-      "rightTotal": 92.98
+      "leftTotal": 7.6,
+      "rightTotal": 98.98
     }
   },
   "players": {
@@ -36,8 +36,8 @@
         "nflTeam": "SF",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -162,8 +162,8 @@
         "nflTeam": "SF",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -667,7 +667,7 @@
         "position": "FLEX",
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
-        "points": 5.4,
+        "points": 5.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -678,7 +678,7 @@
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 4.0,
-          "receivingYards": 34.0,
+          "receivingYards": 33.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -857,7 +857,7 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 10.0,
+        "points": 16.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
@@ -869,7 +869,7 @@
           "safeties": 0.0,
           "blockedKicks": 0.0,
           "defensiveTD": 0.0,
-          "returnTD": 0.0
+          "returnTD": 1.0
         },
         "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 14.08,
+        "points": 14.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 252.0,
+          "passingYards": 260.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -1026,12 +1026,12 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
-        "points": 7.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 3,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 9,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
