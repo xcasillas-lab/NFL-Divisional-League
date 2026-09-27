@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T16:05:29-05:00",
+  "lastUpdated": "2026-09-27T16:10:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,13 +13,13 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 70.04
+      "rightTotal": 70.32
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 80.24,
-      "rightTotal": 63.7
+      "leftTotal": 80.94,
+      "rightTotal": 67.3
     },
     "4": {
       "leftOwner": "Juan",
@@ -139,7 +139,7 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 0.0,
+        "points": 3.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -149,8 +149,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 2.0,
+          "receivingYards": 26.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 3.34,
+        "points": 3.62,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 31.0,
+          "passingYards": 38.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 21.0,
@@ -1005,18 +1005,18 @@
         "position": "FLEX",
         "name": "Alvin Kamara",
         "nflTeam": "NO",
-        "points": 0.0,
+        "points": 0.7,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": -3.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 5.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
