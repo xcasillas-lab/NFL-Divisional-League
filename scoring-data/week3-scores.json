@@ -1,19 +1,19 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T17:30:19-05:00",
+  "lastUpdated": "2026-09-27T17:35:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 73.78,
-      "rightTotal": 66.54
+      "rightTotal": 67.24
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 82.22
+      "rightTotal": 87.58
     },
     "3": {
       "leftOwner": "Xavier",
@@ -203,15 +203,15 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 4.52,
+        "points": 9.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 58.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 62.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 22.0,
+          "rushingYards": 34.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 4.9,
+        "points": 5.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 24.0,
+          "rushingYards": 31.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 15.0,
@@ -1199,7 +1199,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 26,
+          "pointsAllowed": 27,
           "pointsAllowedFantasy": 0.0,
           "sacks": 0.0,
           "interceptions": 0.0,
