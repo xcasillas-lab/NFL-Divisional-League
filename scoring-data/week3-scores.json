@@ -1,13 +1,13 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T17:20:28-05:00",
+  "lastUpdated": "2026-09-27T17:25:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 73.78,
-      "rightTotal": 70.54
+      "rightTotal": 67.54
     },
     "2": {
       "leftOwner": "Joshua",
@@ -18,14 +18,14 @@
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 88.74,
-      "rightTotal": 84.26
+      "leftTotal": 95.34,
+      "rightTotal": 85.86
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 33.0,
-      "rightTotal": 97.98
+      "leftTotal": 36.02,
+      "rightTotal": 98.98
     }
   },
   "players": {
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 13.6,
+        "points": 15.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 31.0,
+          "rushingYards": 47.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 30.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 4.9,
+        "points": 5.42,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 105.0,
+          "passingYards": 118.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 7.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 13.1,
+        "points": 15.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 56.0,
+          "rushingYards": 81.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 5.0,
@@ -857,13 +857,13 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 15.0,
+        "points": 16.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 3.0,
+          "sacks": 4.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -984,7 +984,7 @@
         "position": "TE",
         "name": "Juwan Johnson",
         "nflTeam": "NO",
-        "points": 11.4,
+        "points": 18.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -994,9 +994,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 34.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 5.0,
+          "receivingYards": 35.0,
+          "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
-        "points": 4.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 13,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 20,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
