@@ -1,30 +1,30 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T18:05:17-05:00",
+  "lastUpdated": "2026-09-27T18:10:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 73.78,
-      "rightTotal": 72.24
+      "rightTotal": 75.14
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 93.66
+      "rightTotal": 93.86
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 102.74,
-      "rightTotal": 99.54
+      "rightTotal": 107.84
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 51.9,
+      "leftTotal": 52.0,
       "rightTotal": 97.98
     }
   },
@@ -34,15 +34,15 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 23.08,
+        "points": 31.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 277.0,
-          "passingTouchdowns": 3.0,
+          "passingYards": 297.0,
+          "passingTouchdowns": 4.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 35.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 11.86,
+        "points": 12.06,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 114.0,
+          "passingYards": 119.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 33.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 17.2,
+        "points": 17.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 97.0,
+          "rushingYards": 98.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 5.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 8.2,
+        "points": 9.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 30.0,
+          "rushingYards": 39.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 37.0,
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Tre Tucker",
         "nflTeam": "LV",
-        "points": 4.3,
+        "points": 6.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,8 +1184,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 28.0,
+          "receptions": 4.0,
+          "receivingYards": 43.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
