@@ -1,7 +1,7 @@
 {
   "week": 3,
-  "status": "live",
-  "lastUpdated": "2026-09-27T18:45:17-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-09-27T18:50:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,7 +13,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 103.4
+      "rightTotal": 103.44
     },
     "3": {
       "leftOwner": "Xavier",
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 20.4,
-        "gameStatus": "live",
+        "points": 20.44,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 185.0,
+          "passingYards": 186.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 50.0,
@@ -246,7 +246,7 @@
         "name": "Derrick Henry",
         "nflTeam": "BAL",
         "points": 21.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -267,7 +267,7 @@
         "name": "Rashod Bateman",
         "nflTeam": "BAL",
         "points": 4.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -542,7 +542,7 @@
         "name": "Dak Prescott",
         "nflTeam": "DAL",
         "points": 16.94,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -563,7 +563,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 17.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 14.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
