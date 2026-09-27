@@ -1,19 +1,19 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T18:30:21-05:00",
+  "lastUpdated": "2026-09-27T18:35:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 73.78,
-      "rightTotal": 79.34
+      "rightTotal": 79.84
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 98.28
+      "rightTotal": 102.36
     },
     "3": {
       "leftOwner": "Xavier",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 52.3,
+      "leftTotal": 55.64,
       "rightTotal": 99.98
     }
   },
@@ -203,13 +203,13 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 15.28,
+        "points": 19.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 157.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 159.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 50.0,
           "rushingTouchdowns": 0.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 14.6,
+        "points": 16.04,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 240.0,
+          "passingYards": 276.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 10.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 12.8,
+        "points": 14.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -614,8 +614,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 98.0,
+          "receptions": 7.0,
+          "receivingYards": 112.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 10.3,
+        "points": 10.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 51.0,
+          "rushingYards": 56.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 37.0,
