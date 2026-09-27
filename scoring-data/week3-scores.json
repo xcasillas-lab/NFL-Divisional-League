@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T17:45:17-05:00",
+  "lastUpdated": "2026-09-27T17:50:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,19 +13,19 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 78.96,
-      "rightTotal": 87.58
+      "rightTotal": 93.76
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.14,
-      "rightTotal": 88.2
+      "rightTotal": 92.6
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 43.04,
-      "rightTotal": 99.98
+      "rightTotal": 100.98
     }
   },
   "players": {
@@ -34,13 +34,13 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 18.24,
+        "points": 22.64,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 256.0,
-          "passingTouchdowns": 2.0,
+          "passingYards": 266.0,
+          "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
-        "points": 9.88,
+        "points": 11.96,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 62.0,
+          "passingYards": 114.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 34.0,
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 19.7,
+        "points": 20.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 72.0,
+          "rushingYards": 77.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 0.0,
@@ -266,7 +266,7 @@
         "position": "WR",
         "name": "Rashod Bateman",
         "nflTeam": "BAL",
-        "points": 1.1,
+        "points": 4.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -276,8 +276,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 6.0,
+          "receptions": 2.0,
+          "receivingYards": 37.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -857,13 +857,13 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 17.0,
+        "points": 18.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 5.0,
+          "sacks": 6.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
