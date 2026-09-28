@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T21:45:19-05:00",
+  "lastUpdated": "2026-09-27T21:50:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 110.84,
-      "rightTotal": 131.84
+      "rightTotal": 133.04
     },
     "4": {
       "leftOwner": "Juan",
@@ -118,7 +118,7 @@
         "position": "WR",
         "name": "Davante Adams",
         "nflTeam": "LAR",
-        "points": 9.1,
+        "points": 10.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -128,8 +128,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 71.0,
+          "receptions": 5.0,
+          "receivingYards": 78.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
