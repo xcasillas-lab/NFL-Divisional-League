@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T20:05:20-05:00",
+  "lastUpdated": "2026-09-27T20:10:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 110.84,
-      "rightTotal": 117.34
+      "rightTotal": 120.44
     },
     "4": {
       "leftOwner": "Juan",
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 5.5,
+        "points": 8.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,10 +63,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 45.0,
+          "rushingYards": 53.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 5.0,
+          "receptions": 2.0,
+          "receivingYards": 23.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
