@@ -1,13 +1,13 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T21:40:17-05:00",
+  "lastUpdated": "2026-09-27T21:45:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 73.78,
-      "rightTotal": 81.84
+      "rightTotal": 83.24
     },
     "2": {
       "leftOwner": "Joshua",
@@ -1111,7 +1111,7 @@
         "position": "WR",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 2.0,
+        "points": 3.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1119,7 +1119,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 14.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 10.0,
