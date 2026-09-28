@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-27T19:50:18-05:00",
+  "lastUpdated": "2026-09-27T19:55:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -1113,8 +1113,8 @@
         "nflTeam": "DEN",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
