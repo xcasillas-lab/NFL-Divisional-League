@@ -1,7 +1,7 @@
 {
   "week": 3,
-  "status": "pre-game",
-  "lastUpdated": "2026-09-27T19:20:19-05:00",
+  "status": "live",
+  "lastUpdated": "2026-09-27T19:25:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 110.84,
-      "rightTotal": 109.14
+      "rightTotal": 109.44
     },
     "4": {
       "leftOwner": "Juan",
@@ -55,15 +55,15 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.3,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 3.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -119,7 +119,7 @@
         "name": "Davante Adams",
         "nflTeam": "LAR",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1112,7 +1112,7 @@
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
