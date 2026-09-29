@@ -1435,6 +1435,10 @@ html, body{
 .power-team b{display:block;font-size:.78rem}
 .power-team small{display:block;margin-top:2px;color:#94a3b8;font-size:.64rem}
 .power-score{text-align:right;color:#38bdf8;font-weight:950;font-size:.8rem}
+.power-move{display:inline-block;margin-left:5px;font-size:.62rem;font-weight:950;vertical-align:1px}
+.power-move-up{color:#86efac}
+.power-move-down{color:#fca5a5}
+.power-move-same{color:#94a3b8}
 .power-details-btn{margin-top:10px}
 
 
@@ -1596,9 +1600,9 @@ html, body{
 <div class="home-tape-wrap">
   <div class="home-tape-head">
     <h3>🏈 THIS WEEK’S MATCHUPS</h3>
-    <span>Week 3 • Live Score Ticker</span>
+    <span>Week 4 • Live Score Ticker</span>
   </div>
-  <div class="home-tape-window" aria-label="Week 3 DFFL matchup ticker">
+  <div class="home-tape-window" aria-label="Week 4 DFFL matchup ticker">
     <div class="home-tape-track" id="homeMatchupTickerTrack"></div>
   </div>
 </div>
@@ -1656,52 +1660,53 @@ html, body{
 <div class="power-toolbar">
   <label for="homePowerWeek">Power Rankings:</label>
   <select id="homePowerWeek" aria-label="Select historical power rankings week">
-    <option value="3" selected>Week 3</option>
+    <option value="4" selected>Week 4</option>
+    <option value="3">Week 3</option>
   </select>
 </div>
-<div class="power-table" id="homePowerRankings" role="table" aria-label="DFFL Week 3 power rankings">
+<div class="power-table" id="homePowerRankings" role="table" aria-label="DFFL Week 4 power rankings">
   <div class="power-row power-head" role="row">
     <span>#</span><span>Division / Owner</span><span>Rating</span>
   </div>
     <div class="power-row" data-rank="1">
       <span class="power-rank">1</span>
-      <span class="power-team"><b>NFCW</b><small>Ben • 2-0</small></span>
-      <span class="power-score">147.5</span>
+      <span class="power-team"><b>NFCW</b><small>Ben • 3-0 <span class="power-move power-move-same">—</span></small></span>
+      <span class="power-score">1.18</span>
     </div>
     <div class="power-row" data-rank="2">
       <span class="power-rank">2</span>
-      <span class="power-team"><b>NFCN</b><small>JetLiX • 1-1</small></span>
-      <span class="power-score">287.5</span>
+      <span class="power-team"><b>NFCN</b><small>JetLiX • 2-1 <span class="power-move power-move-same">—</span></small></span>
+      <span class="power-score">2.38</span>
     </div>
     <div class="power-row" data-rank="3">
       <span class="power-rank">3</span>
-      <span class="power-team"><b>AFCW</b><small>Dallas • 1-1</small></span>
-      <span class="power-score">372.5</span>
+      <span class="power-team"><b>AFCN</b><small>Brian • 2-1 <span class="power-move power-move-up">▲3</span></small></span>
+      <span class="power-score">3.17</span>
     </div>
     <div class="power-row" data-rank="4">
       <span class="power-rank">4</span>
-      <span class="power-team"><b>NFCE</b><small>Juan • 1-1</small></span>
-      <span class="power-score">402.5</span>
+      <span class="power-team"><b>AFCW</b><small>Dallas • 2-1 <span class="power-move power-move-down">▼1</span></small></span>
+      <span class="power-score">3.35</span>
     </div>
     <div class="power-row" data-rank="5">
       <span class="power-rank">5</span>
-      <span class="power-team"><b>AFCE</b><small>Joshua • 1-1</small></span>
-      <span class="power-score">415.0</span>
+      <span class="power-team"><b>AFCE</b><small>Joshua • 1-2 <span class="power-move power-move-same">—</span></small></span>
+      <span class="power-score">5.92</span>
     </div>
     <div class="power-row" data-rank="6">
       <span class="power-rank">6</span>
-      <span class="power-team"><b>AFCN</b><small>Brian • 1-1</small></span>
-      <span class="power-score">417.5</span>
+      <span class="power-team"><b>AFCS</b><small>Kendall • 1-2 <span class="power-move power-move-up">▲1</span></small></span>
+      <span class="power-score">6.05</span>
     </div>
     <div class="power-row" data-rank="7">
       <span class="power-rank">7</span>
-      <span class="power-team"><b>AFCS</b><small>Kendall • 1-1</small></span>
-      <span class="power-score">535.0</span>
+      <span class="power-team"><b>NFCE</b><small>Juan • 1-2 <span class="power-move power-move-down">▼3</span></small></span>
+      <span class="power-score">6.12</span>
     </div>
     <div class="power-row" data-rank="8">
       <span class="power-rank">8</span>
-      <span class="power-team"><b>NFCS</b><small>Xavier • 0-2</small></span>
-      <span class="power-score">665.0</span>
+      <span class="power-team"><b>NFCS</b><small>Xavier • 0-3 <span class="power-move power-move-same">—</span></small></span>
+      <span class="power-score">6.17</span>
     </div>
 </div>
 <button class="panel-link power-details-btn" type="button" onclick="openPowerRankingsDetails()">More Details →</button>
@@ -2512,7 +2517,7 @@ document.addEventListener('keydown',function(e){
 <script>
 /* ===== DFFL NYSE-STYLE TICKER + LIVE-ONLY 10 MIN REFRESH ===== */
 (function(){
-  const CURRENT_DFFL_WEEK = 3;
+  const CURRENT_DFFL_WEEK = 4;
   const SCORE_URL = "/scoring-data/week" + CURRENT_DFFL_WEEK + "-scores.json";
   const TEN_MINUTES = 10 * 60 * 1000;
 
@@ -2530,21 +2535,21 @@ document.addEventListener('keydown',function(e){
   };
 
   const fallbackMatchups = [
-    {leftOwner:"Kendall",rightOwner:"Dallas",leftTotal:0,rightTotal:0,status:"pending"},
-    {leftOwner:"Joshua",rightOwner:"Brian",leftTotal:0,rightTotal:0,status:"pending"},
-    {leftOwner:"Xavier",rightOwner:"Ben",leftTotal:0,rightTotal:0,status:"pending"},
-    {leftOwner:"Juan",rightOwner:"JetLiX",leftTotal:0,rightTotal:0,status:"pending"}
+    {leftOwner:"Joshua",rightOwner:"Dallas",leftTotal:0,rightTotal:0,status:"pending"},
+    {leftOwner:"Brian",rightOwner:"Kendall",leftTotal:0,rightTotal:0,status:"pending"},
+    {leftOwner:"Juan",rightOwner:"Ben",leftTotal:0,rightTotal:0,status:"pending"},
+    {leftOwner:"JetLiX",rightOwner:"Xavier",leftTotal:0,rightTotal:0,status:"pending"}
   ];
 
   const ownerRecord = {
-    "Dallas":"1-1",
-    "Brian":"1-1",
-    "JetLiX":"1-1",
-    "Ben":"2-0",
-    "Juan":"1-1",
-    "Xavier":"0-2",
-    "Joshua":"1-1",
-    "Kendall":"1-1"
+    "Dallas":"2-1",
+    "Brian":"2-1",
+    "JetLiX":"2-1",
+    "Ben":"3-0",
+    "Juan":"1-2",
+    "Xavier":"0-3",
+    "Joshua":"1-2",
+    "Kendall":"1-2"
   };
 
   function score(v){
@@ -2667,7 +2672,7 @@ document.addEventListener('keydown',function(e){
     <button class="power-modal-close" type="button" aria-label="Close Power Rankings" onclick="closePowerRankingsDetails()">×</button>
     <div class="power-modal-header">
       <div class="eyebrow">DFFL Analytics</div>
-      <h2 id="powerRankingsTitle">Power Rankings — Week 3</h2>
+      <h2 id="powerRankingsTitle">Power Rankings — Week 4</h2>
       <p>Historical snapshots are frozen week by week. Click any stat header below to sort the eight divisions.</p>
 <div class="power-rating-explainer">
   <div><strong>What the rating means</strong><span>The Power Rating is the weighted average of each division’s 1–8 category ranks.</span></div>
@@ -2681,7 +2686,8 @@ document.addEventListener('keydown',function(e){
       <div>
         <label for="powerModalWeek">Historical Week</label>
         <select id="powerModalWeek">
-          <option value="3" selected>Week 3</option>
+          <option value="4" selected>Week 4</option>
+          <option value="3">Week 3</option>
         </select>
       </div>
       <div class="power-formula">
@@ -2694,6 +2700,7 @@ document.addEventListener('keydown',function(e){
         <thead>
           <tr>
             <th data-key="rank" data-type="number">Power Rank <span class="sort-arrow">↕</span></th>
+            <th data-key="movement" data-type="number">Move <span class="sort-arrow">↕</span></th>
             <th data-key="division" data-type="text">Division <span class="sort-arrow">↕</span></th>
             <th data-key="record" data-type="record">Record <span class="sort-arrow">↕</span></th>
             <th data-key="avgPts" data-type="number">Avg Pts <span class="sort-arrow">↕</span></th>
@@ -2711,7 +2718,7 @@ document.addEventListener('keydown',function(e){
       </table>
     </div>
 
-    <div class="power-note">
+    <div class="power-note" id="powerConsistencyNote">
       <b>Scoring Consistency</b> measures how strong a division's lower-end weekly scoring has been relative to the rest of the league. For Week 3, with only two completed weeks, it uses each division's lower weekly score. <b>Lower Power Rating is better.</b>
     </div>
 
@@ -2735,9 +2742,9 @@ document.addEventListener('keydown',function(e){
 
 <script id="dfflPowerRankingsScript">
 (function(){
-  const POWER_HISTORY = {"3":[{"rank":1,"division":"NFCW","divisionName":"NFC West","owner":"Ben","record":"2-0","avgPts":132.79,"avgDiff":39.77,"consistency":99.3,"nflTDs":21,"offRank":13.0,"defRank":9.5,"madden90":16,"streak":"W2","powerScore":147.5},{"rank":2,"division":"NFCN","divisionName":"NFC North","owner":"JetLiX","record":"1-1","avgPts":133.29,"avgDiff":-10.98,"consistency":96.92,"nflTDs":25,"offRank":15.75,"defRank":17.0,"madden90":14,"streak":"L1","powerScore":287.5},{"rank":3,"division":"AFCW","divisionName":"AFC West","owner":"Dallas","record":"1-1","avgPts":108.62,"avgDiff":-21.51,"consistency":94.98,"nflTDs":20,"offRank":19.75,"defRank":12.5,"madden90":16,"streak":"W1","powerScore":372.5},{"rank":4,"division":"NFCE","divisionName":"NFC East","owner":"Juan","record":"1-1","avgPts":94.03,"avgDiff":-5.99,"consistency":92.46,"nflTDs":22,"offRank":11.25,"defRank":25.25,"madden90":11,"streak":"W1","powerScore":402.5},{"rank":5,"division":"AFCE","divisionName":"AFC East","owner":"Joshua","record":"1-1","avgPts":102.72,"avgDiff":10.54,"consistency":89.12,"nflTDs":19,"offRank":18.5,"defRank":17.0,"madden90":6,"streak":"W1","powerScore":415.0},{"rank":6,"division":"AFCN","divisionName":"AFC North","owner":"Brian","record":"1-1","avgPts":104.83,"avgDiff":9.54,"consistency":90.6,"nflTDs":17,"offRank":20.25,"defRank":14.0,"madden90":14,"streak":"L1","powerScore":417.5},{"rank":7,"division":"AFCS","divisionName":"AFC South","owner":"Kendall","record":"1-1","avgPts":96.98,"avgDiff":-12.05,"consistency":85.06,"nflTDs":18,"offRank":14.25,"defRank":22.25,"madden90":9,"streak":"L1","powerScore":535.0},{"rank":8,"division":"NFCS","divisionName":"NFC South","owner":"Xavier","record":"0-2","avgPts":91.36,"avgDiff":-9.32,"consistency":80.98,"nflTDs":20,"offRank":19.25,"defRank":14.5,"madden90":8,"streak":"L2","powerScore":665.0}]};
-  const POWER_CATEGORY_RANKS = {"NFCW":{"winPct":1,"avgPts":2,"avgDiff":1,"consistency":1,"nflTDs":3,"offRank":2,"defRank":1,"madden90":1,"streak":1},"NFCN":{"winPct":2,"avgPts":1,"avgDiff":6,"consistency":2,"nflTDs":1,"offRank":4,"defRank":5,"madden90":3,"streak":5},"AFCW":{"winPct":2,"avgPts":3,"avgDiff":8,"consistency":3,"nflTDs":4,"offRank":7,"defRank":2,"madden90":1,"streak":2},"NFCE":{"winPct":2,"avgPts":7,"avgDiff":4,"consistency":4,"nflTDs":2,"offRank":1,"defRank":8,"madden90":5,"streak":2},"AFCE":{"winPct":2,"avgPts":5,"avgDiff":2,"consistency":6,"nflTDs":6,"offRank":5,"defRank":5,"madden90":8,"streak":2},"AFCN":{"winPct":2,"avgPts":4,"avgDiff":3,"consistency":5,"nflTDs":8,"offRank":8,"defRank":3,"madden90":3,"streak":5},"AFCS":{"winPct":2,"avgPts":6,"avgDiff":7,"consistency":7,"nflTDs":7,"offRank":3,"defRank":7,"madden90":6,"streak":5},"NFCS":{"winPct":8,"avgPts":8,"avgDiff":5,"consistency":8,"nflTDs":4,"offRank":6,"defRank":4,"madden90":7,"streak":8}};
-  const DEFAULT_WEEK = "3";
+  const POWER_HISTORY = {"3":[{"rank":1,"division":"NFCW","divisionName":"NFC West","owner":"Ben","record":"2-0","avgPts":132.79,"avgDiff":39.77,"consistency":99.3,"nflTDs":21,"offRank":13.0,"defRank":9.5,"madden90":16,"streak":"W2","movement":0,"powerScore":147.5},{"rank":2,"division":"NFCN","divisionName":"NFC North","owner":"JetLiX","record":"1-1","avgPts":133.29,"avgDiff":-10.98,"consistency":96.92,"nflTDs":25,"offRank":15.75,"defRank":17.0,"madden90":14,"streak":"L1","movement":0,"powerScore":287.5},{"rank":3,"division":"AFCW","divisionName":"AFC West","owner":"Dallas","record":"1-1","avgPts":108.62,"avgDiff":-21.51,"consistency":94.98,"nflTDs":20,"offRank":19.75,"defRank":12.5,"madden90":16,"streak":"W1","movement":0,"powerScore":372.5},{"rank":4,"division":"NFCE","divisionName":"NFC East","owner":"Juan","record":"1-1","avgPts":94.03,"avgDiff":-5.99,"consistency":92.46,"nflTDs":22,"offRank":11.25,"defRank":25.25,"madden90":11,"streak":"W1","movement":0,"powerScore":402.5},{"rank":5,"division":"AFCE","divisionName":"AFC East","owner":"Joshua","record":"1-1","avgPts":102.72,"avgDiff":10.54,"consistency":89.12,"nflTDs":19,"offRank":18.5,"defRank":17.0,"madden90":6,"streak":"W1","movement":0,"powerScore":415.0},{"rank":6,"division":"AFCN","divisionName":"AFC North","owner":"Brian","record":"1-1","avgPts":104.83,"avgDiff":9.54,"consistency":90.6,"nflTDs":17,"offRank":20.25,"defRank":14.0,"madden90":14,"streak":"L1","movement":0,"powerScore":417.5},{"rank":7,"division":"AFCS","divisionName":"AFC South","owner":"Kendall","record":"1-1","avgPts":96.98,"avgDiff":-12.05,"consistency":85.06,"nflTDs":18,"offRank":14.25,"defRank":22.25,"madden90":9,"streak":"L1","movement":0,"powerScore":535.0},{"rank":8,"division":"NFCS","divisionName":"NFC South","owner":"Xavier","record":"0-2","avgPts":91.36,"avgDiff":-9.32,"consistency":80.98,"nflTDs":20,"offRank":19.25,"defRank":14.5,"madden90":8,"streak":"L2","movement":0,"powerScore":665.0}],"4":[{"rank":1,"division":"NFCW","divisionName":"NFC West","owner":"Ben","record":"3-0","avgPts":136.91,"avgDiff":37.95,"consistency":122.22,"nflTDs":35,"offRank":13.25,"defRank":10.75,"madden90":16,"streak":"W3","movement":0,"powerScore":117.5},{"rank":2,"division":"NFCN","divisionName":"NFC North","owner":"JetLiX","record":"2-1","avgPts":125.45,"avgDiff":3.09,"consistency":103.35,"nflTDs":36,"offRank":11.5,"defRank":17.5,"madden90":14,"streak":"W1","movement":0,"powerScore":237.5},{"rank":3,"division":"AFCN","divisionName":"AFC North","owner":"Brian","record":"2-1","avgPts":104.37,"avgDiff":14.52,"consistency":97.02,"nflTDs":29,"offRank":16.5,"defRank":15.75,"madden90":14,"streak":"W1","movement":3,"powerScore":317.5},{"rank":4,"division":"AFCW","divisionName":"AFC West","owner":"Dallas","record":"2-1","avgPts":100.16,"avgDiff":-11.19,"consistency":89.11,"nflTDs":32,"offRank":16.0,"defRank":12.0,"madden90":16,"streak":"W2","movement":-1,"powerScore":335.0},{"rank":5,"division":"AFCE","divisionName":"AFC East","owner":"Joshua","record":"1-2","avgPts":94.8,"avgDiff":-1.13,"consistency":84.04,"nflTDs":26,"offRank":20.0,"defRank":16.75,"madden90":6,"streak":"L1","movement":0,"powerScore":592.5},{"rank":6,"division":"AFCS","divisionName":"AFC South","owner":"Kendall","record":"1-2","avgPts":89.25,"avgDiff":-11.19,"consistency":79.42,"nflTDs":27,"offRank":19.75,"defRank":14.75,"madden90":9,"streak":"L2","movement":1,"powerScore":605.0},{"rank":7,"division":"NFCE","divisionName":"NFC East","owner":"Juan","record":"1-2","avgPts":88.87,"avgDiff":-14.41,"consistency":85.5,"nflTDs":30,"offRank":17.75,"defRank":20.25,"madden90":11,"streak":"L1","movement":-3,"powerScore":612.5},{"rank":8,"division":"NFCS","divisionName":"NFC South","owner":"Xavier","record":"0-3","avgPts":97.85,"avgDiff":-17.65,"consistency":91.36,"nflTDs":30,"offRank":15.5,"defRank":22.5,"madden90":8,"streak":"L3","movement":0,"powerScore":617.5}]};
+  const POWER_CATEGORY_RANKS = {"3":{"NFCW":{"winPct":1,"avgPts":2,"avgDiff":1,"consistency":1,"nflTDs":3,"offRank":2,"defRank":1,"madden90":1,"streak":1},"NFCN":{"winPct":2,"avgPts":1,"avgDiff":6,"consistency":2,"nflTDs":1,"offRank":4,"defRank":5,"madden90":3,"streak":5},"AFCW":{"winPct":2,"avgPts":3,"avgDiff":8,"consistency":3,"nflTDs":4,"offRank":7,"defRank":2,"madden90":1,"streak":2},"NFCE":{"winPct":2,"avgPts":7,"avgDiff":4,"consistency":4,"nflTDs":2,"offRank":1,"defRank":8,"madden90":5,"streak":2},"AFCE":{"winPct":2,"avgPts":5,"avgDiff":2,"consistency":6,"nflTDs":6,"offRank":5,"defRank":5,"madden90":8,"streak":2},"AFCN":{"winPct":2,"avgPts":4,"avgDiff":3,"consistency":5,"nflTDs":8,"offRank":8,"defRank":3,"madden90":3,"streak":5},"AFCS":{"winPct":2,"avgPts":6,"avgDiff":7,"consistency":7,"nflTDs":7,"offRank":3,"defRank":7,"madden90":6,"streak":5},"NFCS":{"winPct":8,"avgPts":8,"avgDiff":5,"consistency":8,"nflTDs":4,"offRank":6,"defRank":4,"madden90":7,"streak":8}},"4":{"NFCW":{"winPct":1,"avgPts":1,"avgDiff":1,"consistency":1,"nflTDs":2,"offRank":2,"defRank":1,"madden90":1,"streak":1},"NFCN":{"winPct":2,"avgPts":2,"avgDiff":3,"consistency":2,"nflTDs":1,"offRank":1,"defRank":6,"madden90":3,"streak":3},"AFCN":{"winPct":2,"avgPts":3,"avgDiff":2,"consistency":3,"nflTDs":6,"offRank":5,"defRank":4,"madden90":3,"streak":3},"AFCW":{"winPct":2,"avgPts":4,"avgDiff":5,"consistency":5,"nflTDs":3,"offRank":4,"defRank":2,"madden90":1,"streak":2},"AFCE":{"winPct":5,"avgPts":6,"avgDiff":4,"consistency":7,"nflTDs":8,"offRank":8,"defRank":5,"madden90":8,"streak":5},"AFCS":{"winPct":5,"avgPts":7,"avgDiff":5,"consistency":8,"nflTDs":7,"offRank":7,"defRank":3,"madden90":6,"streak":7},"NFCE":{"winPct":5,"avgPts":8,"avgDiff":7,"consistency":6,"nflTDs":4,"offRank":6,"defRank":7,"madden90":5,"streak":5},"NFCS":{"winPct":8,"avgPts":5,"avgDiff":8,"consistency":4,"nflTDs":4,"offRank":3,"defRank":8,"madden90":7,"streak":8}}};
+  const DEFAULT_WEEK = "4";
   let activeWeek = DEFAULT_WEEK;
   let activeSort = {key:"rank", dir:"asc"};
 
@@ -2785,6 +2792,13 @@ document.addEventListener('keydown',function(e){
     return (n>0?"+":"")+n.toFixed(2);
   }
 
+  function movementHtml(v){
+    const n=Number(v||0);
+    if(n>0) return '<span class="power-move power-move-up">▲'+n+'</span>';
+    if(n<0) return '<span class="power-move power-move-down">▼'+Math.abs(n)+'</span>';
+    return '<span class="power-move power-move-same">—</span>';
+  }
+
   function renderHome(week){
     const container=document.getElementById("homePowerRankings");
     if(!container) return;
@@ -2796,7 +2810,7 @@ document.addEventListener('keydown',function(e){
       row.dataset.rank=r.rank;
       row.innerHTML=
         '<span class="power-rank">'+r.rank+'</span>'+
-        '<span class="power-team"><b>'+r.division+'</b><small>'+r.owner+' • '+r.record+'</small></span>'+
+        '<span class="power-team"><b>'+r.division+'</b><small>'+r.owner+' • '+r.record+' '+movementHtml(r.movement)+'</small></span>'+
         '<span class="power-score">'+(Number(r.powerScore)/100).toFixed(2)+'</span>';
       container.appendChild(row);
     });
@@ -2821,6 +2835,7 @@ document.addEventListener('keydown',function(e){
       const tr=document.createElement("tr");
       tr.innerHTML=
         '<td>#'+r.rank+'</td>'+
+        '<td>'+movementHtml(r.movement)+'</td>'+
         '<td><b>'+r.division+'</b> — '+r.owner+'</td>'+
         '<td>'+r.record+'</td>'+
         '<td>'+Number(r.avgPts).toFixed(2)+'</td>'+
@@ -2836,6 +2851,12 @@ document.addEventListener('keydown',function(e){
     });
     const title=document.getElementById("powerRankingsTitle");
     if(title) title.textContent="Power Rankings — Week "+activeWeek;
+    const note=document.getElementById("powerConsistencyNote");
+    if(note){
+      note.innerHTML = activeWeek==="3"
+        ? '<b>Scoring Consistency</b> measures how strong a division\'s lower-end weekly scoring has been relative to the rest of the league. For Week 3, with only two completed weeks, it uses each division\'s lower weekly score. <b>Lower Power Rating is better.</b>'
+        : '<b>Scoring Consistency</b> measures how strong a division\'s lower-end weekly scoring has been relative to the rest of the league. For Week 4, it uses the average of each division\'s two lowest weekly scores through three completed weeks. <b>Lower Power Rating is better.</b>';
+    }
     updateSortArrows();
   }
 
@@ -2844,7 +2865,7 @@ document.addEventListener('keydown',function(e){
     if(!body) return;
     body.innerHTML="";
     (POWER_HISTORY[activeWeek]||[]).slice().sort((a,b)=>a.rank-b.rank).forEach(function(r){
-      const c=POWER_CATEGORY_RANKS[r.division]||{};
+      const c=((POWER_CATEGORY_RANKS[activeWeek]||{})[r.division])||{};
       const tr=document.createElement("tr");
       tr.innerHTML=
         '<td><strong>'+r.division+'</strong></td>'+
