@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-28T19:25:23-05:00",
+  "lastUpdated": "2026-09-28T19:30:27-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 63.54,
+      "leftTotal": 61.74,
       "rightTotal": 101.38
     }
   },
@@ -583,15 +583,15 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 0.0,
+        "points": 1.2,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 12.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -688,12 +688,12 @@
         "position": "DEF",
         "name": "Philadelphia Eagles DEF",
         "nflTeam": "PHI",
-        "points": 7.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 6,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
