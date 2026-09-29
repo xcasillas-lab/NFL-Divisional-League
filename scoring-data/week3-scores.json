@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-28T20:25:18-05:00",
+  "lastUpdated": "2026-09-28T20:30:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -692,7 +692,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
+          "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 1.0,
