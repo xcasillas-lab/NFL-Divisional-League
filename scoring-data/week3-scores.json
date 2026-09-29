@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-28T20:00:24-05:00",
+  "lastUpdated": "2026-09-28T20:05:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 62.14,
+      "leftTotal": 64.94,
       "rightTotal": 103.18
     }
   },
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 1.6,
+        "points": 2.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 16.0,
+          "rushingYards": 26.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -625,18 +625,18 @@
         "position": "WR",
         "name": "DeVonta Smith",
         "nflTeam": "PHI",
-        "points": 0.0,
+        "points": 1.8,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 13.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
