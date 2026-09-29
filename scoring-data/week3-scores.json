@@ -1,7 +1,7 @@
 {
   "week": 3,
-  "status": "pre-game",
-  "lastUpdated": "2026-09-28T19:15:19-05:00",
+  "status": "live",
+  "lastUpdated": "2026-09-28T19:20:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 56.54,
-      "rightTotal": 99.98
+      "leftTotal": 66.54,
+      "rightTotal": 101.28
     }
   },
   "players": {
@@ -584,7 +584,7 @@
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -626,7 +626,7 @@
         "name": "DeVonta Smith",
         "nflTeam": "PHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -688,12 +688,12 @@
         "position": "DEF",
         "name": "Philadelphia Eagles DEF",
         "nflTeam": "PHI",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -702,7 +702,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "JetLiX": [
@@ -752,15 +752,15 @@
         "position": "RB",
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 1.3,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 13.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
