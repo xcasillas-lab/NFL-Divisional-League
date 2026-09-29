@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-28T19:45:16-05:00",
+  "lastUpdated": "2026-09-28T19:50:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 62.14,
-      "rightTotal": 103.08
+      "rightTotal": 103.38
     }
   },
   "players": {
@@ -752,7 +752,7 @@
         "position": "RB",
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
-        "points": 3.1,
+        "points": 3.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -760,7 +760,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 22.0,
+          "rushingYards": 25.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 4.0,
