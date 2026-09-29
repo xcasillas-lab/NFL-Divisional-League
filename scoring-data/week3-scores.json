@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-28T21:05:16-05:00",
+  "lastUpdated": "2026-09-28T21:10:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 79.44,
+      "leftTotal": 79.54,
       "rightTotal": 104.48
     }
   },
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 8.3,
+        "points": 8.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 80.0,
+          "rushingYards": 81.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": -2.0,
@@ -692,7 +692,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 10,
+          "pointsAllowed": 13,
           "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 1.0,
