@@ -1,7 +1,7 @@
 {
   "week": 3,
-  "status": "live",
-  "lastUpdated": "2026-09-28T22:10:20-05:00",
+  "status": "final",
+  "lastUpdated": "2026-09-28T22:13:45-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -584,7 +584,7 @@
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
         "points": 8.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -626,7 +626,7 @@
         "name": "DeVonta Smith",
         "nflTeam": "PHI",
         "points": 9.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -689,7 +689,7 @@
         "name": "Philadelphia Eagles DEF",
         "nflTeam": "PHI",
         "points": 4.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 27,
@@ -753,7 +753,7 @@
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
         "points": 9.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
