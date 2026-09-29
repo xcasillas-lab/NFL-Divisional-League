@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "lastUpdated": "2026-09-28T21:45:20-05:00",
+  "lastUpdated": "2026-09-28T21:50:54-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 79.54,
-      "rightTotal": 104.78
+      "leftTotal": 78.54,
+      "rightTotal": 105.58
     }
   },
   "players": {
@@ -688,12 +688,12 @@
         "position": "DEF",
         "name": "Philadelphia Eagles DEF",
         "nflTeam": "PHI",
-        "points": 5.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 20,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 26,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 0.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
@@ -752,7 +752,7 @@
         "position": "RB",
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
-        "points": 4.8,
+        "points": 5.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -760,7 +760,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 34.0,
+          "rushingYards": 42.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 4.0,
