@@ -2924,4 +2924,190 @@ document.addEventListener('keydown',function(e){
 })();
 </script>
 
+
+
+<script id="dfflHomeQuickStandingsAuto">
+(function(){
+  const BASE_URL = "https://dff-league.com/scoring-data/";
+  const MAX_WEEK = 10;
+  const REFRESH_MS = 10 * 60 * 1000;
+
+  const OWNER_DIVISION = {
+    "Ben":"NFC West",
+    "Brian":"AFC North",
+    "Joshua":"AFC East",
+    "Juan":"NFC East",
+    "JetLiX":"NFC North",
+    "Xavier":"NFC South",
+    "Dallas":"AFC West",
+    "Kendall":"AFC South"
+  };
+  const OWNERS = Object.keys(OWNER_DIVISION);
+
+  // Offline/local fallbacks only. Live JSON replaces these whenever available.
+  const BUILT_IN = {
+    1:{status:"final",matchups:{
+      matchup1:{leftOwner:"Dallas",rightOwner:"JetLiX",leftTotal:122.26,rightTotal:169.66},
+      matchup2:{leftOwner:"Juan",rightOwner:"Brian",leftTotal:95.60,rightTotal:119.06},
+      matchup3:{leftOwner:"Joshua",rightOwner:"Ben",leftTotal:89.12,rightTotal:99.30},
+      matchup4:{leftOwner:"Kendall",rightOwner:"Xavier",leftTotal:108.90,rightTotal:101.74}
+    }},
+    2:{status:"final",matchups:{
+      matchup1:{leftOwner:"Dallas",rightOwner:"Brian",leftTotal:94.98,rightTotal:90.60},
+      matchup2:{leftOwner:"JetLiX",rightOwner:"Ben",leftTotal:96.92,rightTotal:166.28},
+      matchup3:{leftOwner:"Juan",rightOwner:"Xavier",leftTotal:92.46,rightTotal:80.98},
+      matchup4:{leftOwner:"Joshua",rightOwner:"Kendall",leftTotal:116.32,rightTotal:85.06}
+    }},
+    3:{status:"final",matchups:{
+      matchup1:{leftOwner:"Kendall",rightOwner:"Dallas",leftTotal:73.78,rightTotal:83.24},
+      matchup2:{leftOwner:"Joshua",rightOwner:"Brian",leftTotal:78.96,rightTotal:103.44},
+      matchup3:{leftOwner:"Xavier",rightOwner:"Ben",leftTotal:110.84,rightTotal:145.14},
+      matchup4:{leftOwner:"Juan",rightOwner:"JetLiX",leftTotal:78.54,rightTotal:109.78}
+    }}
+  };
+
+  const conference = owner => (OWNER_DIVISION[owner] || "").split(" ")[0];
+  const isFinal = data => String(data && data.status || "").toLowerCase() === "final";
+
+  function getQuickStandingsPanel(){
+    const heading = Array.from(document.querySelectorAll(".home-panel h3"))
+      .find(h => h.textContent.trim().includes("Quick Standings"));
+    return heading ? heading.closest(".home-panel") : null;
+  }
+
+  function captureRows(panel){
+    const map = {};
+    if(!panel) return map;
+    panel.querySelectorAll(".mini-standing").forEach(row=>{
+      const owner = row.querySelector("small")?.textContent.trim();
+      if(owner) map[owner] = row;
+    });
+    return map;
+  }
+
+  async function getWeek(week){
+    try{
+      const res = await fetch(BASE_URL + "week" + week + "-scores.json", {cache:"no-store"});
+      if(res.ok){
+        const data = await res.json();
+        if(data && data.matchups) return data;
+      }
+    }catch(e){}
+    return BUILT_IN[week] || null;
+  }
+
+  function blankStats(){
+    const out = {};
+    OWNERS.forEach(owner=>{
+      out[owner] = {
+        owner, w:0, l:0, divW:0, divL:0, pf:0, pa:0, games:[]
+      };
+    });
+    return out;
+  }
+
+  function addGame(stats, week, m){
+    const a = String(m.leftOwner || "").trim();
+    const b = String(m.rightOwner || "").trim();
+    const ap = Number(m.leftTotal);
+    const bp = Number(m.rightTotal);
+    if(!stats[a] || !stats[b] || !Number.isFinite(ap) || !Number.isFinite(bp)) return;
+
+    stats[a].pf += ap; stats[a].pa += bp;
+    stats[b].pf += bp; stats[b].pa += ap;
+
+    const sameConf = conference(a) === conference(b);
+
+    if(ap > bp){
+      stats[a].w++; stats[b].l++;
+      if(sameConf){ stats[a].divW++; stats[b].divL++; }
+    }else if(bp > ap){
+      stats[b].w++; stats[a].l++;
+      if(sameConf){ stats[b].divW++; stats[a].divL++; }
+    }
+
+    stats[a].games.push({week, opp:b, pf:ap, pa:bp});
+    stats[b].games.push({week, opp:a, pf:bp, pa:ap});
+  }
+
+  function h2h(a,b){
+    const games = a.games.filter(g => g.opp === b.owner);
+    if(!games.length) return 0;
+    let aw = 0, bw = 0;
+    games.forEach(g=>{
+      if(g.pf > g.pa) aw++;
+      else if(g.pa > g.pf) bw++;
+    });
+    return aw - bw;
+  }
+
+  // Mirrors the current Standings page:
+  // overall record → head-to-head → divisional record → point differential → points scored.
+  function rank(stats){
+    return Object.values(stats).sort((a,b)=>{
+      if(a.w !== b.w) return b.w - a.w;
+      if(a.l !== b.l) return a.l - b.l;
+
+      const head = h2h(a,b);
+      if(head) return -head;
+
+      const aDiv = a.divW - a.divL;
+      const bDiv = b.divW - b.divL;
+      if(aDiv !== bDiv) return bDiv - aDiv;
+      if(a.divW !== b.divW) return b.divW - a.divW;
+
+      const aDiff = a.pf - a.pa;
+      const bDiff = b.pf - b.pa;
+      if(Math.abs(aDiff - bDiff) > 0.0001) return bDiff - aDiff;
+
+      if(Math.abs(a.pf - b.pf) > 0.0001) return b.pf - a.pf;
+
+      // Official final fallback is coin flip; alphabetical keeps the display stable until needed.
+      return a.owner.localeCompare(b.owner);
+    });
+  }
+
+  async function refreshQuickStandings(){
+    const panel = getQuickStandingsPanel();
+    if(!panel) return;
+
+    const rowsByOwner = captureRows(panel);
+    if(Object.keys(rowsByOwner).length !== OWNERS.length) return;
+
+    const stats = blankStats();
+
+    // Only completed regular-season weeks count. Weeks 11+ are never read.
+    for(let week=1; week<=MAX_WEEK; week++){
+      const data = await getWeek(week);
+      if(!data || !isFinal(data)) continue;
+      Object.values(data.matchups || {}).forEach(m => addGame(stats, week, m));
+    }
+
+    const ordered = rank(stats);
+    const fullStandingsButton = panel.querySelector(".panel-link");
+
+    ordered.forEach((st, i)=>{
+      const row = rowsByOwner[st.owner];
+      if(!row) return;
+
+      const seed = row.querySelector(".seed");
+      const record = row.querySelector(".record");
+      const division = row.querySelector("b");
+
+      if(seed) seed.textContent = String(i + 1);
+      if(record) record.textContent = st.w + "-" + st.l;
+      if(division) division.textContent = OWNER_DIVISION[st.owner];
+
+      if(fullStandingsButton) panel.insertBefore(row, fullStandingsButton);
+      else panel.appendChild(row);
+    });
+  }
+
+  refreshQuickStandings();
+
+  // If the page stays open through the final game, standings update without a full-page reload.
+  window.setInterval(refreshQuickStandings, REFRESH_MS);
+})();
+</script>
+
 </body></html>
