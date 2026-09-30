@@ -24,11 +24,125 @@
     },
     "Xavier": {
       "division": "NFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Bryce Young",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bijan Robinson",
+          "nflTeam": "ATL",
+          "nflTeamName": "Atlanta Falcons",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Chuba Hubbard",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Chris Olave",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jalen Coker",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Juwan Johnson",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Bucky Irving",
+          "nflTeam": "TB",
+          "nflTeamName": "Tampa Bay Buccaneers",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Tampa Bay Buccaneers DEF",
+          "nflTeam": "TB",
+          "nflTeamName": "Tampa Bay Buccaneers",
+          "jersey": null
+        }
+      ]
     },
     "Dallas": {
       "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kenneth Walker",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Rashee Rice",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Brock Bowers",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Jaylen Waddle",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Las Vegas Raiders DEF",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",
