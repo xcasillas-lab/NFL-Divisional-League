@@ -8,11 +8,125 @@
     },
     "Brian": {
       "division": "AFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Lamar Jackson",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Derrick Henry",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jaylen Warren",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ja'Marr Chase",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Zay Flowers",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Harold Fannin",
+          "nflTeam": "CLE",
+          "nflTeamName": "Cleveland Browns",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Tee Higgins",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Pittsburgh Steelers DEF",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        }
+      ]
     },
     "Joshua": {
       "division": "AFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Josh Allen",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "James Cook",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ollie Gordon",
+          "nflTeam": "MIA",
+          "nflTeamName": "Miami Dolphins",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Garrett Wilson",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "DJ Moore",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Kenyon Sadiq",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "TreVeyon Henderson",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "New England Patriots DEF",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        }
+      ]
     },
     "Juan": {
       "division": "NFC East",
