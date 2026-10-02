@@ -1,7 +1,7 @@
 {
   "week": 4,
-  "status": "live",
-  "lastUpdated": "2026-10-01T22:40:19-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-01T22:45:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
-      "leftTotal": 28.3,
+      "leftTotal": 30.3,
       "rightTotal": 0.0
     },
     "3": {
@@ -246,7 +246,7 @@
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
         "points": 14.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -309,7 +309,7 @@
         "name": "Harold Fannin",
         "nflTeam": "CLE",
         "points": 10.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -350,14 +350,14 @@
         "position": "DEF",
         "name": "Pittsburgh Steelers DEF",
         "nflTeam": "PIT",
-        "points": 4.0,
-        "gameStatus": "live",
+        "points": 6.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 27,
           "pointsAllowedFantasy": 0.0,
           "sacks": 2.0,
-          "interceptions": 1.0,
+          "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
