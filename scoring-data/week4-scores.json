@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-01T22:05:20-05:00",
+  "lastUpdated": "2026-10-01T22:10:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -354,7 +354,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 21,
+          "pointsAllowed": 24,
           "pointsAllowedFantasy": 0.0,
           "sacks": 1.0,
           "interceptions": 1.0,
