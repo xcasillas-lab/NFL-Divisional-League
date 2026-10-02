@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-01T22:00:20-05:00",
+  "lastUpdated": "2026-10-01T22:05:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
-      "leftTotal": 24.1,
+      "leftTotal": 25.1,
       "rightTotal": 0.0
     },
     "3": {
@@ -350,13 +350,13 @@
         "position": "DEF",
         "name": "Pittsburgh Steelers DEF",
         "nflTeam": "PIT",
-        "points": 2.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 21,
           "pointsAllowedFantasy": 0.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
