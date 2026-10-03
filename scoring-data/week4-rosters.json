@@ -248,7 +248,64 @@
     },
     "JetLiX": {
       "division": "NFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Jared Goff",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jahmyr Gibbs",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "D'Andre Swift",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Amon-Ra St. Brown",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Christian Watson",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "T.J. Hockenson",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Rome Odunze",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Minnesota Vikings DEF",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        }
+      ]
     },
     "Xavier": {
       "division": "NFC South",
@@ -374,7 +431,64 @@
     },
     "Kendall": {
       "division": "AFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Trevor Lawrence",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "David Montgomery",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jonathan Taylor",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Nico Collins",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Parker Washington",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Gunnar Helm",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Bhayshul Tuten",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Houston Texans DEF",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        }
+      ]
     }
   }
 }
