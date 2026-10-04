@@ -1,7 +1,7 @@
 {
   "week": 4,
-  "status": "live",
-  "lastUpdated": "2026-10-04T11:40:17-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-04T11:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -626,7 +626,7 @@
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
         "points": 6.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -689,7 +689,7 @@
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
         "points": 3.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 30,
@@ -1260,7 +1260,7 @@
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
         "points": 22.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
