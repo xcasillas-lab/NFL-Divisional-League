@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T15:25:16-05:00",
+  "lastUpdated": "2026-10-04T15:30:23-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 48.42,
-      "rightTotal": 0.0
+      "leftTotal": 50.62,
+      "rightTotal": 11.3
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 66.7
+      "rightTotal": 78.7
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -35,7 +35,7 @@
         "name": "Brock Purdy",
         "nflTeam": "SF",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -56,7 +56,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -98,7 +98,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -181,21 +181,21 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 12.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Brian": [
@@ -414,17 +414,17 @@
         "position": "RB",
         "name": "Ollie Gordon",
         "nflTeam": "MIA",
-        "points": 0.0,
+        "points": 2.2,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 12.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
+          "receptions": 2.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
@@ -1049,9 +1049,9 @@
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -1069,15 +1069,15 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.6,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 6.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1091,7 +1091,7 @@
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1112,7 +1112,7 @@
         "name": "Rashee Rice",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1133,7 +1133,7 @@
         "name": "Ladd McConkey",
         "nflTeam": "LAC",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1154,7 +1154,7 @@
         "name": "Brock Bowers",
         "nflTeam": "LV",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1174,18 +1174,18 @@
         "position": "FLEX",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.7,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 2.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1209,7 +1209,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Kendall": [
