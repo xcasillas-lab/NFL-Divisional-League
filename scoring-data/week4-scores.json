@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T16:15:20-05:00",
+  "lastUpdated": "2026-10-04T16:20:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 50.92,
-      "rightTotal": 22.48
+      "rightTotal": 24.48
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 81.12
+      "rightTotal": 82.12
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -181,13 +181,13 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 9.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 3,
           "pointsAllowedFantasy": 7.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 0.4,
+        "points": 1.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
+          "rushingYards": 12.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1153,7 +1153,7 @@
         "position": "TE",
         "name": "Brock Bowers",
         "nflTeam": "LV",
-        "points": 2.3,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1163,8 +1163,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 18.0,
+          "receptions": 2.0,
+          "receivingYards": 25.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
