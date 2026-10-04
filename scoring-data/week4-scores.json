@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T14:55:22-05:00",
+  "lastUpdated": "2026-10-04T15:00:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -13,12 +13,12 @@
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 111.28,
-      "rightTotal": 78.34
+      "rightTotal": 78.9
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 84.94,
+      "leftTotal": 87.28,
       "rightTotal": 52.6
     },
     "4": {
@@ -436,7 +436,7 @@
         "name": "Garrett Wilson",
         "nflTeam": "NYJ",
         "points": 4.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -478,7 +478,7 @@
         "name": "Kenyon Sadiq",
         "nflTeam": "NYJ",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 11.14,
+        "points": 11.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 261.0,
+          "passingYards": 267.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 7.0,
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
-        "points": 6.6,
+        "points": 7.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 53.0,
+          "rushingYards": 58.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 8.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 20.2,
+        "points": 21.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -614,8 +614,8 @@
           "interceptions": 0.0,
           "rushingYards": -6.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 12.0,
-          "receivingYards": 148.0,
+          "receptions": 14.0,
+          "receivingYards": 154.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -753,7 +753,7 @@
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
         "points": 6.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -795,7 +795,7 @@
         "name": "Christian Watson",
         "nflTeam": "GB",
         "points": 6.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -837,7 +837,7 @@
         "name": "Rome Odunze",
         "nflTeam": "CHI",
         "points": 12.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1006,7 +1006,7 @@
         "name": "Bucky Irving",
         "nflTeam": "TB",
         "points": 6.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1027,7 +1027,7 @@
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
         "points": 5.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 17,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 12.24,
+        "points": 13.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 201.0,
+          "passingYards": 220.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
@@ -1343,7 +1343,7 @@
         "position": "FLEX",
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
-        "points": 10.3,
+        "points": 10.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1351,7 +1351,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 75.0,
+          "rushingYards": 73.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 18.0,
