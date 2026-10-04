@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T10:40:16-05:00",
+  "lastUpdated": "2026-10-04T10:45:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 30.3,
-      "rightTotal": 17.9
+      "rightTotal": 18.1
     },
     "3": {
       "leftOwner": "Juan",
@@ -692,7 +692,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 17,
+          "pointsAllowed": 20,
           "pointsAllowedFantasy": 1.0,
           "sacks": 2.0,
           "interceptions": 1.0,
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 17.9,
+        "points": 18.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,7 +1267,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 52.0,
+          "rushingYards": 54.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
