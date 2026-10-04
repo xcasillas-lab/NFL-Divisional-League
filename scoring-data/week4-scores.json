@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T16:00:23-05:00",
+  "lastUpdated": "2026-10-04T16:05:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 50.92,
-      "rightTotal": 13.22
+      "rightTotal": 18.3
     },
     "2": {
       "leftOwner": "Brian",
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 6.62,
+        "points": 6.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 63.0,
+          "passingYards": 65.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 1.5,
+        "points": 5.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,10 +1077,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 47.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 2.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 0.7,
+        "points": 1.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,8 +1184,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 2.0,
+          "receptions": 2.0,
+          "receivingYards": 8.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
