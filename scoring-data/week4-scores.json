@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T18:35:17-05:00",
+  "lastUpdated": "2026-10-04T18:40:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 118.12
+      "rightTotal": 117.92
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -34,15 +34,15 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 19.82,
-        "gameStatus": "live",
+        "points": 19.62,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 218.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 31.0,
+          "rushingYards": 29.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -56,7 +56,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 14.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1175,7 +1175,7 @@
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
         "points": 12.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
