@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T17:05:17-05:00",
+  "lastUpdated": "2026-10-04T17:10:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 56.92,
-      "rightTotal": 37.16
+      "rightTotal": 38.44
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 97.66
+      "rightTotal": 97.76
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -34,7 +34,7 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 5.26,
+        "points": 5.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -42,7 +42,7 @@
           "passingYards": 89.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 17.0,
+          "rushingYards": 18.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 9.66,
+        "points": 10.34,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 139.0,
+          "passingYards": 156.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 6.9,
+        "points": 7.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 62.0,
+          "rushingYards": 68.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
