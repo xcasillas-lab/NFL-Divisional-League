@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T17:55:16-05:00",
+  "lastUpdated": "2026-10-04T18:00:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 65.42,
-      "rightTotal": 53.66
+      "rightTotal": 53.9
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,12 +19,12 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 103.76
+      "rightTotal": 105.94
     },
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 47.1,
+      "leftTotal": 49.4,
       "rightTotal": 11.1
     }
   },
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 11.66,
+        "points": 12.34,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 119.0,
+          "passingYards": 136.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 29.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 5.3,
+        "points": 6.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 34.0,
+          "rushingYards": 49.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 9.0,
@@ -815,7 +815,7 @@
         "position": "TE",
         "name": "T.J. Hockenson",
         "nflTeam": "MIN",
-        "points": 16.1,
+        "points": 18.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -825,8 +825,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 11.0,
-          "receivingYards": 106.0,
+          "receptions": 13.0,
+          "receivingYards": 119.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 14.66,
+        "points": 14.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 164.0,
+          "passingYards": 170.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
