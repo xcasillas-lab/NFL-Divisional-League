@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T17:20:19-05:00",
+  "lastUpdated": "2026-10-04T17:25:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 57.12,
-      "rightTotal": 39.84
+      "leftTotal": 65.22,
+      "rightTotal": 40.14
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,12 +19,12 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 100.26
+      "rightTotal": 100.56
     },
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 42.4,
+      "leftTotal": 40.7,
       "rightTotal": 11.1
     }
   },
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 5.1,
+        "points": 5.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 32.0,
+          "rushingYards": 35.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 9.0,
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "Ollie Gordon",
         "nflTeam": "MIA",
-        "points": 8.7,
+        "points": 16.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,8 +422,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 77.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 98.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
@@ -815,7 +815,7 @@
         "position": "TE",
         "name": "T.J. Hockenson",
         "nflTeam": "MIN",
-        "points": 8.4,
+        "points": 9.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -825,8 +825,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 54.0,
+          "receptions": 7.0,
+          "receivingYards": 62.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Minnesota Vikings DEF",
         "nflTeam": "MIN",
-        "points": 9.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 3,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 10,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 7.5,
+        "points": 7.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 68.0,
+          "rushingYards": 71.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
