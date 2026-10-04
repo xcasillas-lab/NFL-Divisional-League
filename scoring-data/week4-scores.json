@@ -1,25 +1,25 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T15:10:19-05:00",
+  "lastUpdated": "2026-10-04T15:15:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 48.22,
+      "leftTotal": 48.42,
       "rightTotal": 0.0
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 111.28,
-      "rightTotal": 81.68
+      "rightTotal": 81.38
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 59.9
+      "rightTotal": 66.6
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 24.9,
+        "points": 31.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,8 +84,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 73.0,
-          "rushingTouchdowns": 1.0,
+          "rushingYards": 80.0,
+          "rushingTouchdowns": 2.0,
           "receptions": 10.0,
           "receivingYards": 66.0,
           "receivingTouchdowns": 0.0,
@@ -140,7 +140,7 @@
         "name": "Trey McBride",
         "nflTeam": "ARI",
         "points": 6.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -373,7 +373,7 @@
         "name": "Josh Allen",
         "nflTeam": "BUF",
         "points": 19.52,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -394,7 +394,7 @@
         "name": "James Cook",
         "nflTeam": "BUF",
         "points": 15.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -457,7 +457,7 @@
         "name": "DJ Moore",
         "nflTeam": "BUF",
         "points": 2.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -498,15 +498,15 @@
         "position": "FLEX",
         "name": "TreVeyon Henderson",
         "nflTeam": "NE",
-        "points": 4.0,
-        "gameStatus": "live",
+        "points": 4.2,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 40.0,
+          "rushingYards": 42.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -520,7 +520,7 @@
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
         "points": 3.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 26,
@@ -542,7 +542,7 @@
         "name": "Dak Prescott",
         "nflTeam": "DAL",
         "points": 18.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -563,7 +563,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 28.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -584,7 +584,7 @@
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
         "points": 7.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 32.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -647,7 +647,7 @@
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
         "points": 10.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1217,7 +1217,7 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 13.28,
+        "points": 12.98,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1225,7 +1225,7 @@
           "passingYards": 227.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 2.0,
+          "rushingYards": -1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1239,7 +1239,7 @@
         "name": "David Montgomery",
         "nflTeam": "HOU",
         "points": 4.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1281,7 +1281,7 @@
         "name": "Nico Collins",
         "nflTeam": "HOU",
         "points": 27.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1365,7 +1365,7 @@
         "name": "Houston Texans DEF",
         "nflTeam": "HOU",
         "points": 2.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 34,
