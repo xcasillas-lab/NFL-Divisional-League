@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T17:40:17-05:00",
+  "lastUpdated": "2026-10-04T17:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 65.42,
-      "rightTotal": 49.84
+      "rightTotal": 51.16
     },
     "2": {
       "leftOwner": "Brian",
@@ -1048,13 +1048,13 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 10.34,
+        "points": 14.66,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 156.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 164.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
           "rushingTouchdowns": 0.0,
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
-        "points": 6.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 10,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 17,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
