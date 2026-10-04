@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T18:10:19-05:00",
+  "lastUpdated": "2026-10-04T18:15:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 65.42,
-      "rightTotal": 59.5
+      "rightTotal": 67.3
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 113.72
+      "rightTotal": 110.72
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 11.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 13,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 20,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 3.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 3.2,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,9 +1184,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 17.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 4.0,
+          "receivingYards": 30.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
