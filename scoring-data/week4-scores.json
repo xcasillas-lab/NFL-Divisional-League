@@ -1,7 +1,7 @@
 {
   "week": 4,
-  "status": "pre-game",
-  "lastUpdated": "2026-10-04T08:30:24-05:00",
+  "status": "live",
+  "lastUpdated": "2026-10-04T08:35:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 0.0,
+      "leftTotal": 11.0,
       "rightTotal": 0.0
     },
     "4": {
@@ -626,7 +626,7 @@
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -688,13 +688,13 @@
         "position": "DEF",
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 11.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
-          "sacks": 0.0,
+          "pointsAllowedFantasy": 10.0,
+          "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -702,7 +702,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "JetLiX": [
@@ -1260,9 +1260,9 @@
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
