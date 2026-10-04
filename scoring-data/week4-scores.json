@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T15:50:17-05:00",
+  "lastUpdated": "2026-10-04T15:55:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 50.92,
-      "rightTotal": 15.14
+      "rightTotal": 13.22
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 77.8
+      "rightTotal": 78.16
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 0.6,
+        "points": 0.76,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 10.0,
+          "passingYards": 14.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 1.5,
+        "points": 1.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 17.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1048,13 +1048,13 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 2.54,
+        "points": 6.62,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 61.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 63.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
           "rushingTouchdowns": 0.0,
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
-        "points": 10.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
