@@ -1,12 +1,12 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T16:45:19-05:00",
+  "lastUpdated": "2026-10-04T16:50:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 50.92,
+      "leftTotal": 51.42,
       "rightTotal": 32.56
     },
     "2": {
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 89.82
+      "rightTotal": 92.58
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 3.12,
+        "points": 4.08,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 48.0,
+          "passingYards": 72.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 12.0,
@@ -97,7 +97,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 5.8,
+        "points": 7.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -107,8 +107,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 43.0,
+          "receptions": 4.0,
+          "receivingYards": 56.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "Ollie Gordon",
         "nflTeam": "MIA",
-        "points": 2.5,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,7 +422,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 20.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 0.0,
