@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T18:30:22-05:00",
+  "lastUpdated": "2026-10-04T18:35:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 65.42,
-      "rightTotal": 90.8
+      "rightTotal": 92.0
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 119.12
+      "rightTotal": 118.12
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 8.0,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 20,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 23,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 3.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 30.2,
+        "points": 30.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 175.0,
+          "rushingYards": 177.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 11.0,
+        "points": 12.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,8 +1184,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 30.0,
+          "receptions": 5.0,
+          "receivingYards": 35.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
