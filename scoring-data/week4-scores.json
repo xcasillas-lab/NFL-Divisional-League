@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T16:55:16-05:00",
+  "lastUpdated": "2026-10-04T16:59:49-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 56.92,
-      "rightTotal": 32.56
+      "rightTotal": 33.86
     },
     "2": {
       "leftOwner": "Brian",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 39.4,
+      "leftTotal": 41.4,
       "rightTotal": 11.1
     }
   },
@@ -815,7 +815,7 @@
         "position": "TE",
         "name": "T.J. Hockenson",
         "nflTeam": "MIN",
-        "points": 5.4,
+        "points": 7.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -825,8 +825,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 39.0,
+          "receptions": 5.0,
+          "receivingYards": 49.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 2.2,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 13.0,
+          "rushingYards": 26.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 4.0,
