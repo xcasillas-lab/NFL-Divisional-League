@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T17:10:20-05:00",
+  "lastUpdated": "2026-10-04T17:15:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 56.92,
-      "rightTotal": 38.44
+      "leftTotal": 57.12,
+      "rightTotal": 39.44
     },
     "2": {
       "leftOwner": "Brian",
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "Ollie Gordon",
         "nflTeam": "MIA",
-        "points": 8.5,
+        "points": 8.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,7 +422,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 75.0,
+          "rushingYards": 77.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 0.0,
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "Las Vegas Raiders DEF",
         "nflTeam": "LV",
-        "points": 5.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
