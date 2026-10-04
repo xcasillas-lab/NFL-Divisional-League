@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T10:20:18-05:00",
+  "lastUpdated": "2026-10-04T10:25:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -13,12 +13,12 @@
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 30.3,
-      "rightTotal": 10.3
+      "rightTotal": 16.8
     },
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 12.5,
+      "leftTotal": 9.5,
       "rightTotal": 0.0
     },
     "4": {
@@ -688,12 +688,12 @@
         "position": "DEF",
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
-        "points": 8.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 10,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 17,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 10.3,
+        "points": 16.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,8 +1267,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 36.0,
-          "rushingTouchdowns": 1.0,
+          "rushingYards": 41.0,
+          "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
           "receivingTouchdowns": 0.0,
