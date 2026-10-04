@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T16:05:17-05:00",
+  "lastUpdated": "2026-10-04T16:10:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 50.92,
-      "rightTotal": 18.3
+      "rightTotal": 18.78
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 79.86
+      "rightTotal": 80.02
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 0.76,
+        "points": 0.92,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 14.0,
+          "passingYards": 18.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 6.7,
+        "points": 7.18,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 65.0,
+          "passingYards": 77.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
@@ -1134,8 +1134,8 @@
         "nflTeam": "LAC",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
