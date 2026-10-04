@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T11:25:20-05:00",
+  "lastUpdated": "2026-10-04T11:30:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 8.5,
+      "leftTotal": 7.5,
       "rightTotal": 0.0
     },
     "4": {
@@ -688,12 +688,12 @@
         "position": "DEF",
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
-        "points": 4.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 27,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowed": 30,
+          "pointsAllowedFantasy": -1.0,
           "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
