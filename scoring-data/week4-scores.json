@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T15:15:17-05:00",
+  "lastUpdated": "2026-10-04T15:20:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 111.28,
-      "rightTotal": 81.38
+      "rightTotal": 81.48
     },
     "3": {
       "leftOwner": "Juan",
@@ -77,7 +77,7 @@
         "name": "Kyren Williams",
         "nflTeam": "LAR",
         "points": 31.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -119,7 +119,7 @@
         "name": "Puka Nacua",
         "nflTeam": "LAR",
         "points": 23.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -161,7 +161,7 @@
         "name": "Davante Adams",
         "nflTeam": "LAR",
         "points": 5.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -267,7 +267,7 @@
         "name": "Ja'Marr Chase",
         "nflTeam": "CIN",
         "points": 4.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -330,7 +330,7 @@
         "name": "Tee Higgins",
         "nflTeam": "CIN",
         "points": 21.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -668,7 +668,7 @@
         "name": "DeVonta Smith",
         "nflTeam": "PHI",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1217,15 +1217,15 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 12.98,
-        "gameStatus": "live",
+        "points": 13.08,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 227.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": -1.0,
+          "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1302,7 +1302,7 @@
         "name": "Parker Washington",
         "nflTeam": "JAX",
         "points": 1.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1344,7 +1344,7 @@
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
         "points": 10.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
