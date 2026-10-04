@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T17:35:51-05:00",
+  "lastUpdated": "2026-10-04T17:40:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 65.22,
-      "rightTotal": 42.24
+      "leftTotal": 65.42,
+      "rightTotal": 49.84
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 105.9,
-      "rightTotal": 106.12
+      "rightTotal": 103.12
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 13.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 6,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 13,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 2.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "Ollie Gordon",
         "nflTeam": "MIA",
-        "points": 16.8,
+        "points": 17.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,7 +422,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 98.0,
+          "rushingYards": 100.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 0.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 7.8,
+        "points": 15.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 71.0,
+          "rushingYards": 147.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
