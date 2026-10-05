@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T20:35:19-05:00",
+  "lastUpdated": "2026-10-04T20:40:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
       "leftTotal": 70.16,
-      "rightTotal": 30.84
+      "rightTotal": 31.28
     }
   },
   "players": {
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 10.34,
+        "points": 10.78,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 141.0,
+          "passingYards": 152.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 7.0,
