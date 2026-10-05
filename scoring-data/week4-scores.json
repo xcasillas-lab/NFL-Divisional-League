@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-04T19:30:20-05:00",
+  "lastUpdated": "2026-10-04T19:35:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
       "leftTotal": 53.66,
-      "rightTotal": 11.1
+      "rightTotal": 10.9
     }
   },
   "players": {
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 0.0,
+        "points": 0.2,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
-          "passingYards": 0.0,
+          "passingYards": 5.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -921,15 +921,15 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 0.0,
+        "points": -0.4,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": -4.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
