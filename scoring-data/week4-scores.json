@@ -1,7 +1,7 @@
 {
   "week": 4,
-  "status": "live",
-  "lastUpdated": "2026-10-04T22:40:18-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-04T22:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
       "leftTotal": 97.08,
-      "rightTotal": 58.16
+      "rightTotal": 57.96
     }
   },
   "players": {
@@ -711,7 +711,7 @@
         "name": "Jared Goff",
         "nflTeam": "DET",
         "points": 20.48,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -732,7 +732,7 @@
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
         "points": 15.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 11.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -879,15 +879,15 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 21.66,
-        "gameStatus": "live",
+        "points": 21.46,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 329.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 5.0,
+          "rushingYards": 3.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -922,7 +922,7 @@
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
         "points": 25.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Jalen Coker",
         "nflTeam": "CAR",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
