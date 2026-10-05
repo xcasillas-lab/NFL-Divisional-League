@@ -1,7 +1,7 @@
 {
   "week": 4,
-  "status": "pre-game",
-  "lastUpdated": "2026-10-04T19:20:17-05:00",
+  "status": "live",
+  "lastUpdated": "2026-10-04T19:25:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -711,7 +711,7 @@
         "name": "Jared Goff",
         "nflTeam": "DET",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -732,7 +732,7 @@
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -880,7 +880,7 @@
         "name": "Bryce Young",
         "nflTeam": "CAR",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -922,7 +922,7 @@
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Jalen Coker",
         "nflTeam": "CAR",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
