@@ -1,7 +1,7 @@
 {
   "week": 4,
-  "status": "pre-game",
-  "lastUpdated": "2026-10-05T19:15:23-05:00",
+  "status": "live",
+  "lastUpdated": "2026-10-05T19:20:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -901,7 +901,7 @@
         "name": "Bijan Robinson",
         "nflTeam": "ATL",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -943,7 +943,7 @@
         "name": "Chris Olave",
         "nflTeam": "NO",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -985,7 +985,7 @@
         "name": "Juwan Johnson",
         "nflTeam": "NO",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
