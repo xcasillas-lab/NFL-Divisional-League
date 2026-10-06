@@ -5,25 +5,25 @@
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
-      "rightOwner": "Kendall",
+      "rightOwner": "Ben",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     },
     "2": {
-      "leftOwner": "Xavier",
-      "rightOwner": "Joshua",
+      "leftOwner": "Brian",
+      "rightOwner": "Xavier",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     },
     "3": {
-      "leftOwner": "Ben",
-      "rightOwner": "Juan",
+      "leftOwner": "Joshua",
+      "rightOwner": "JetLiX",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     },
     "4": {
-      "leftOwner": "Brian",
-      "rightOwner": "JetLiX",
+      "leftOwner": "Kendall",
+      "rightOwner": "Juan",
       "leftTotal": 0.0,
       "rightTotal": 0.0
     }
