@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "lastUpdated": "2026-10-05T22:05:16-05:00",
+  "lastUpdated": "2026-10-05T22:10:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
       "leftTotal": 97.08,
-      "rightTotal": 103.76
+      "rightTotal": 104.86
     }
   },
   "players": {
@@ -984,7 +984,7 @@
         "position": "TE",
         "name": "Juwan Johnson",
         "nflTeam": "NO",
-        "points": 7.8,
+        "points": 8.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -994,8 +994,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 53.0,
+          "receptions": 6.0,
+          "receivingYards": 59.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
