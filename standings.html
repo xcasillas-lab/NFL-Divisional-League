@@ -342,6 +342,99 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 /* ===== ADVANCED STATS OWNER HELMETS ===== */
 .advanced-owner-cell img{width:32px;height:32px;border-radius:7px}
 .advanced-owner-cell{gap:8px}
+
+/* ===== ADVANCED DIVISION REPORT  ===== */
+.adv-report-wrap{margin-top:10px}
+.adv-report-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 15px;border-radius:12px;border:1px solid var(--border);background:linear-gradient(180deg,#172033,#0b1220);color:var(--text);font-weight:800;text-align:left}
+.adv-report-toggle-left{display:flex;align-items:center;gap:10px}
+.adv-report-toggle-copy{display:flex;flex-direction:column;gap:2px}
+.adv-report-toggle-copy small{color:var(--muted);font-weight:400}
+.adv-report-arrow{font-size:1.2rem;color:var(--accent);transition:transform .2s ease}
+.adv-report-toggle[aria-expanded="true"] .adv-report-arrow{transform:rotate(180deg)}
+.adv-report-panel{display:none;margin-top:10px;padding:14px;border:1px solid var(--border);border-radius:14px;background:#07111f}
+.adv-report-panel.open{display:block}
+.adv-report-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:12px;flex-wrap:wrap}
+.adv-report-head h3{margin:0;color:#f8fafc}
+.adv-report-head p{margin:4px 0 0;color:var(--muted);font-size:.82rem}
+.adv-report-badge{padding:6px 9px;border-radius:999px;border:1px solid rgba(56,189,248,.35);background:rgba(56,189,248,.08);color:#7dd3fc;font-size:.7rem;font-weight:800}
+.adv-filter-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.adv-filter-box{border:1px solid #26374e;border-radius:11px;background:#050d19;padding:10px}
+.adv-filter-box summary{cursor:pointer;font-weight:800;color:#e2e8f0;list-style:none;display:flex;justify-content:space-between;gap:8px}
+.adv-filter-box summary::-webkit-details-marker{display:none}
+.adv-filter-count{color:#38bdf8;font-size:.75rem;font-weight:800}
+.adv-filter-actions{display:flex;gap:6px;margin:9px 0 7px}
+.adv-filter-actions button{padding:5px 8px;border-radius:7px;font-size:.7rem}
+.adv-check-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.adv-check{display:flex;align-items:center;gap:6px;color:#cbd5e1;font-size:.76rem;min-width:0}
+.adv-check input{width:auto;margin:0}
+.adv-control-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.adv-control-row label{display:block;color:#cbd5e1;font-size:.75rem;font-weight:800}
+.adv-control-row select{margin-top:5px}
+.adv-summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:12px}
+.adv-summary-card{border:1px solid #26374e;border-radius:11px;background:#050d19;padding:10px;text-align:center}
+.adv-summary-card small{display:block;color:#94a3b8;text-transform:uppercase;letter-spacing:.04em;font-size:.62rem}
+.adv-summary-card strong{display:block;margin-top:5px;font-size:1.15rem;color:#f8fafc}
+.adv-summary-card span{display:block;margin-top:3px;color:#38bdf8;font-size:.7rem}
+.adv-report-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.adv-report-table{min-width:970px;margin-top:0;background:#050d19;border:1px solid #26374e}
+.adv-report-table th{white-space:nowrap;cursor:pointer;user-select:none}
+.adv-report-table td:nth-child(n+7),.adv-report-table th:nth-child(n+7){text-align:right}
+.adv-report-table .rank-cell{font-weight:900;color:#38bdf8}
+.adv-report-table .player-cell{font-weight:800}
+.adv-report-empty{text-align:center;color:#94a3b8;padding:18px!important}
+.adv-report-foot{margin:9px 2px 0;color:#94a3b8;font-size:.76rem;line-height:1.45}
+@media(max-width:850px){.adv-filter-grid{grid-template-columns:1fr 1fr}.adv-summary-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.adv-filter-grid,.adv-control-row{grid-template-columns:1fr}.adv-check-grid{grid-template-columns:1fr 1fr}.adv-report-panel{padding:10px}}
+
+
+/* ===== ADVANCED DIVISION SHARE REPORT  ===== */
+.adv-division-share-wrap{margin-top:10px}
+.adv-division-share-toggle{width:100%;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:13px 15px;border-radius:12px;border:1px solid var(--border);background:linear-gradient(180deg,#172033,#0b1220);color:var(--text);font-weight:800;text-align:left}
+.adv-division-share-toggle-left{display:flex;align-items:center;gap:10px}
+.adv-division-share-toggle-copy{display:flex;flex-direction:column;gap:2px}
+.adv-division-share-toggle-copy small{color:var(--muted);font-weight:400}
+.adv-division-share-arrow{font-size:1.2rem;color:var(--accent);transition:transform .2s ease}
+.adv-division-share-toggle[aria-expanded="true"] .adv-division-share-arrow{transform:rotate(180deg)}
+.adv-division-share-panel{display:none;margin-top:10px;padding:14px;border:1px solid var(--border);border-radius:14px;background:#07111f}
+.adv-division-share-panel.open{display:block}
+.adv-division-share-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.adv-division-share-head h3{margin:0;color:#f8fafc}
+.adv-division-share-head p{margin:4px 0 0;color:var(--muted);font-size:.82rem}
+.adv-share-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px}
+.adv-share-card{border:1px solid #26374e;border-radius:11px;background:#050d19;padding:10px;text-align:center}
+.adv-share-card small{display:block;color:#94a3b8;text-transform:uppercase;letter-spacing:.04em;font-size:.62rem}
+.adv-share-card strong{display:block;margin-top:5px;font-size:1.12rem;color:#f8fafc}
+.adv-share-card span{display:block;margin-top:3px;color:#38bdf8;font-size:.7rem}
+.adv-share-list{display:grid;gap:8px}
+.adv-share-row{display:grid;grid-template-columns:140px 1fr 74px 80px;gap:10px;align-items:center;padding:9px 10px;border:1px solid #26374e;border-radius:10px;background:#050d19}
+.adv-share-division{font-weight:900;color:#f8fafc}
+.adv-share-bar-track{height:12px;border-radius:999px;background:#111827;border:1px solid #26374e;overflow:hidden}
+.adv-share-bar-fill{height:100%;background:linear-gradient(90deg,#0284c7,#38bdf8);border-radius:999px}
+.adv-share-count,.adv-share-pct{text-align:right;font-weight:800}
+.adv-share-pct{color:#7dd3fc}
+.adv-share-empty{text-align:center;color:#94a3b8;padding:18px;border:1px solid #26374e;border-radius:10px;background:#050d19}
+.adv-share-foot{margin:9px 2px 0;color:#94a3b8;font-size:.76rem;line-height:1.45}
+@media(max-width:650px){
+  .adv-share-summary{grid-template-columns:1fr}
+  .adv-share-row{grid-template-columns:104px 1fr 58px 60px;gap:7px;padding:8px}
+}
+
+
+.adv-control-row input[type="number"]{
+  width:100%;
+  margin-top:5px;
+  padding:8px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:var(--input);
+  color:var(--text);
+}
+
+
+@media(max-width:700px){
+  .adv-control-row[style]{grid-template-columns:1fr!important}
+}
+
 </style>
 </head>
 <body>
@@ -497,6 +590,131 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p class="advanced-help">Avg Pts/G = total points scored divided by games played. Win and loss margins show the average point differential in games won or lost.</p>
 </div>
 </div>
+
+<div class="adv-report-wrap">
+  <button class="adv-report-toggle" id="advDivisionToggle" type="button" aria-expanded="false" aria-controls="advDivisionPanel">
+    <span class="adv-report-toggle-left">
+      <span class="advanced-toggle-icon">📈</span>
+      <span class="adv-report-toggle-copy">
+        <span>Advanced Players Report</span>
+        <small>Player rankings, weekly production and positional comparisons</small>
+      </span>
+    </span>
+    <span class="adv-report-arrow">▼</span>
+  </button>
+
+  <div class="adv-report-panel" id="advDivisionPanel">
+    <div class="adv-report-head">
+      <div>
+        <h3>Advanced Players Report</h3>
+        <p>Choose none, one, several, or all filters. Rankings update instantly.</p>
+      </div>
+      <div class="adv-report-badge" id="advStatsThrough">Stats through Week 4</div>
+    </div>
+
+    <div class="adv-filter-grid">
+      <details class="adv-filter-box" open>
+        <summary>Divisions <span class="adv-filter-count" id="divisionCount">8 selected</span></summary>
+        <div class="adv-filter-actions">
+          <button type="button" data-filter-action="all" data-filter-group="division">Select All</button>
+          <button type="button" data-filter-action="none" data-filter-group="division">Clear All</button>
+        </div>
+        <div class="adv-check-grid" id="divisionFilters"></div>
+      </details>
+<details class="adv-filter-box">
+        <summary>Positions <span class="adv-filter-count" id="positionCount">4 selected</span></summary>
+        <div class="adv-filter-actions">
+          <button type="button" data-filter-action="all" data-filter-group="position">Select All</button>
+          <button type="button" data-filter-action="none" data-filter-group="position">Clear All</button>
+        </div>
+        <div class="adv-check-grid" id="positionFilters"></div>
+      </details>
+
+      <details class="adv-filter-box">
+        <summary>Weeks <span class="adv-filter-count" id="weekCount">4 selected</span></summary>
+        <div class="adv-filter-actions">
+          <button type="button" data-filter-action="all" data-filter-group="week">Select All</button>
+          <button type="button" data-filter-action="none" data-filter-group="week">Clear All</button>
+        </div>
+        <div class="adv-check-grid" id="weekFilters"></div>
+      </details>
+    </div>
+
+    <div class="adv-control-row" style="grid-template-columns:repeat(3,1fr)">
+      <label>Rank players by
+        <select id="advRankMetric">
+          <option value="avg" selected>Average Points</option>
+          <option value="total">Total Points</option>
+          <option value="best">Best Week</option>
+        </select>
+      </label>
+      <label>Players to show
+        <select id="advRowLimit">
+          <option value="10">Top 10</option>
+          <option value="20" selected>Top 20</option>
+          <option value="50">Top 50</option>
+          <option value="all">All</option>
+        </select>
+      </label>
+      <label>Minimum Games Played
+        <input id="advMinGames" type="number" min="0" max="10" step="1" value="3" inputmode="numeric"/>
+      </label>
+    </div>
+
+    <div class="adv-summary-grid">
+      <div class="adv-summary-card"><small>Players</small><strong id="advPlayerCount">—</strong><span>matching filters</span></div>
+      <div class="adv-summary-card"><small>Average PPG</small><strong id="advOverallAvg">—</strong><span>selected weeks</span></div>
+      <div class="adv-summary-card"><small>Total Points</small><strong id="advOverallTotal">—</strong><span>selected players</span></div>
+      <div class="adv-summary-card"><small>Top Player</small><strong id="advTopPlayer">—</strong><span id="advTopPlayerValue">—</span></div>
+    </div>
+
+    <div class="adv-report-table-wrap">
+      <table class="adv-report-table">
+        <thead>
+          <tr>
+            <th>Rank</th><th>Player</th><th>Pos</th><th>NFL Team</th><th>Division</th>
+            <th>GP</th><th>Avg</th><th>Total</th><th>Best Week</th>
+          </tr>
+        </thead>
+        <tbody id="advReportBody"></tbody>
+      </table>
+    </div>
+    <p class="adv-report-foot">Live player data loads from /scoring-data/player-stats.json. Minimum Games Played applies to the currently selected weeks.</p>
+  </div>
+</div>
+
+<div class="adv-division-share-wrap">
+  <button class="adv-division-share-toggle" id="advDivisionShareToggle" type="button" aria-expanded="false" aria-controls="advDivisionSharePanel">
+    <span class="adv-division-share-toggle-left">
+      <span class="advanced-toggle-icon">📊</span>
+      <span class="adv-division-share-toggle-copy">
+        <span>Advanced Division Report</span>
+        <small>See which divisions own the largest share of the selected top players</small>
+      </span>
+    </span>
+    <span class="adv-division-share-arrow">▼</span>
+  </button>
+
+  <div class="adv-division-share-panel" id="advDivisionSharePanel">
+    <div class="adv-division-share-head">
+      <div>
+        <h3>Advanced Division Report</h3>
+        <p>Uses the current Advanced Players Report filters, Minimum Games Played, ranking metric, and Top-N setting.</p>
+      </div>
+      <div class="adv-report-badge" id="advDivisionShareBadge">Top 20 share</div>
+    </div>
+
+    <div class="adv-share-summary">
+      <div class="adv-share-card"><small>Players Analyzed</small><strong id="advShareAnalyzed">—</strong><span>selected Top-N</span></div>
+      <div class="adv-share-card"><small>Leading Division</small><strong id="advShareLeader">—</strong><span id="advShareLeaderPct">—</span></div>
+      <div class="adv-share-card"><small>Divisions Represented</small><strong id="advShareDivisions">—</strong><span>in ranked players</span></div>
+    </div>
+
+    <div class="adv-share-list" id="advDivisionShareList"></div>
+    <p class="adv-share-foot">Example: if NFC West has 5 of the selected Top 20 RBs, its share is 25%. Percentages use the actual number of ranked players returned by the current filters.</p>
+  </div>
+</div>
+
 </div>
 <div class="season-panel" id="seasonPanel2025" role="tabpanel" aria-labelledby="seasonTab2025">
 <div class="research-2025">
@@ -1102,6 +1320,344 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   }
 
   loadStandings();
+})();
+</script>
+
+
+
+<script id="advancedDivisionReport">
+(async function(){
+  const PLAYER_STATS_URL="/scoring-data/player-stats.json";
+  const OWNER_BY_DIVISION = {
+    "AFC East":"Joshua","AFC North":"Brian","AFC South":"Kendall","AFC West":"Dallas",
+    "NFC East":"Juan","NFC North":"JetLiX","NFC South":"Xavier","NFC West":"Ben"
+  };
+  const DIVISIONS = Object.keys(OWNER_BY_DIVISION);
+  const POSITIONS = ["QB","RB","WR","TE"];
+
+  const toggle=document.getElementById("advDivisionToggle");
+  const panel=document.getElementById("advDivisionPanel");
+  const shareToggle=document.getElementById("advDivisionShareToggle");
+  const sharePanel=document.getElementById("advDivisionSharePanel");
+
+  if(!toggle || !panel) return;
+
+  let PLAYER_STATS={season:2026,statsThroughWeek:0,players:[]};
+
+  function setReportStatus(message,isError=false){
+    const badge=document.getElementById("advStatsThrough");
+    if(badge){
+      badge.textContent=message;
+      if(isError){
+        badge.style.color="#fecaca";
+        badge.style.borderColor="rgba(239,68,68,.45)";
+        badge.style.background="rgba(239,68,68,.10)";
+      }
+    }
+  }
+
+  try{
+    setReportStatus("Loading player stats…");
+    const response=await fetch(PLAYER_STATS_URL,{cache:"no-store"});
+    if(!response.ok) throw new Error("HTTP "+response.status);
+    PLAYER_STATS=await response.json();
+
+    if(!PLAYER_STATS || !Array.isArray(PLAYER_STATS.players)){
+      throw new Error("Invalid player-stats.json structure");
+    }
+  }catch(err){
+    console.error("DFFL Advanced Reports: unable to load player-stats.json",err);
+    setReportStatus("Player stats unavailable",true);
+
+    const body=document.getElementById("advReportBody");
+    if(body){
+      body.innerHTML='<tr><td colspan="9" class="adv-report-empty">Unable to load /scoring-data/player-stats.json. The rest of the standings page is unaffected.</td></tr>';
+    }
+    const shareList=document.getElementById("advDivisionShareList");
+    if(shareList){
+      shareList.innerHTML='<div class="adv-share-empty">Division share data is unavailable until player-stats.json loads successfully.</div>';
+    }
+
+    toggle.addEventListener("click",()=>{
+      const open=toggle.getAttribute("aria-expanded")==="true";
+      toggle.setAttribute("aria-expanded",String(!open));
+      panel.classList.toggle("open",!open);
+    });
+    if(shareToggle && sharePanel){
+      shareToggle.addEventListener("click",()=>{
+        const open=shareToggle.getAttribute("aria-expanded")==="true";
+        shareToggle.setAttribute("aria-expanded",String(!open));
+        sharePanel.classList.toggle("open",!open);
+      });
+    }
+    return;
+  }
+
+  const MAX_WEEK=Math.max(1,Math.min(10,Number(PLAYER_STATS.statsThroughWeek || 1)));
+  const WEEKS=Array.from({length:MAX_WEEK},(_,i)=>String(i+1));
+
+  toggle.addEventListener("click",()=>{
+    const open=toggle.getAttribute("aria-expanded")==="true";
+    toggle.setAttribute("aria-expanded",String(!open));
+    panel.classList.toggle("open",!open);
+  });
+
+  if(shareToggle && sharePanel){
+    shareToggle.addEventListener("click",()=>{
+      const open=shareToggle.getAttribute("aria-expanded")==="true";
+      shareToggle.setAttribute("aria-expanded",String(!open));
+      sharePanel.classList.toggle("open",!open);
+    });
+  }
+
+  const configs={
+    division:{values:DIVISIONS,target:"divisionFilters",count:"divisionCount"},
+    position:{values:POSITIONS,target:"positionFilters",count:"positionCount"},
+    week:{values:WEEKS,target:"weekFilters",count:"weekCount"}
+  };
+
+  function makeFilters(group){
+    const cfg=configs[group], root=document.getElementById(cfg.target);
+    if(!root) return;
+    root.innerHTML="";
+    cfg.values.forEach(value=>{
+      const label=document.createElement("label");
+      label.className="adv-check";
+
+      const input=document.createElement("input");
+      input.type="checkbox";
+      input.checked=true;
+      input.value=value;
+      input.dataset.group=group;
+      input.addEventListener("change",render);
+
+      const span=document.createElement("span");
+      span.textContent=group==="week" ? "Week "+value : value;
+
+      label.append(input,span);
+      root.appendChild(label);
+    });
+  }
+
+  Object.keys(configs).forEach(makeFilters);
+
+  function selected(group){
+    return Array.from(document.querySelectorAll('input[data-group="'+group+'"]:checked')).map(x=>x.value);
+  }
+
+  function updateCount(group){
+    const cfg=configs[group];
+    const el=document.getElementById(cfg.count);
+    if(el) el.textContent=selected(group).length+" selected";
+  }
+
+  function syncCounts(){
+    Object.keys(configs).forEach(updateCount);
+  }
+
+  document.querySelectorAll("[data-filter-action]").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      const group=btn.dataset.filterGroup;
+      if(!configs[group]) return;
+      const checked=btn.dataset.filterAction==="all";
+      document.querySelectorAll('input[data-group="'+group+'"]').forEach(x=>x.checked=checked);
+      render();
+    });
+  });
+
+  document.getElementById("advRankMetric").addEventListener("change",render);
+  document.getElementById("advRowLimit").addEventListener("change",render);
+
+  const minGamesInput=document.getElementById("advMinGames");
+  minGamesInput.addEventListener("input",()=>{
+    let v=parseInt(minGamesInput.value,10);
+    if(Number.isNaN(v)) v=0;
+    if(v<0) v=0;
+    if(v>10) v=10;
+    minGamesInput.value=String(v);
+    render();
+  });
+
+  function calcPlayer(p,weeks){
+    const vals=weeks
+      .filter(w=>Object.prototype.hasOwnProperty.call(p.weeklyPoints||{},w))
+      .map(w=>Number(p.weeklyPoints[w]))
+      .filter(Number.isFinite);
+
+    const total=vals.reduce((a,b)=>a+b,0);
+    const gp=vals.length;
+    const avg=gp?total/gp:0;
+
+    let best=0,bestWeek=null;
+    weeks.forEach(w=>{
+      const v=Number((p.weeklyPoints||{})[w]);
+      if(Number.isFinite(v) && (bestWeek===null || v>best)){
+        best=v;
+        bestWeek=w;
+      }
+    });
+
+    return {
+      ...p,
+      selectedGP:gp,
+      selectedTotal:total,
+      selectedAvg:avg,
+      selectedBest:best,
+      selectedBestWeek:bestWeek
+    };
+  }
+
+  function fmt(n){return Number(n).toFixed(2);}
+
+  function render(){
+    syncCounts();
+
+    const divs=selected("division");
+    const positions=selected("position");
+    const weeks=selected("week");
+    const metric=document.getElementById("advRankMetric").value;
+    const limitValue=document.getElementById("advRowLimit").value;
+
+    let minGames=parseInt(document.getElementById("advMinGames").value,10);
+    if(Number.isNaN(minGames)) minGames=0;
+    minGames=Math.max(0,Math.min(10,minGames));
+
+    let rows=(PLAYER_STATS.players||[])
+      .filter(p=>divs.includes(p.division))
+      .filter(p=>positions.includes(p.position))
+      .map(p=>calcPlayer(p,weeks))
+      .filter(p=>p.selectedGP>0)
+      .filter(p=>p.selectedGP>=minGames);
+
+    const key=metric==="total" ? "selectedTotal" : metric==="best" ? "selectedBest" : "selectedAvg";
+    rows.sort((a,b)=>(b[key]-a[key]) || a.name.localeCompare(b.name));
+
+    const allRows=rows.slice();
+    const shown=limitValue==="all" ? rows : rows.slice(0,Number(limitValue));
+    const body=document.getElementById("advReportBody");
+    body.innerHTML="";
+
+    if(!shown.length){
+      const tr=document.createElement("tr");
+      const td=document.createElement("td");
+      td.colSpan=9;
+      td.className="adv-report-empty";
+      td.textContent="No players match the current filter combination.";
+      tr.appendChild(td);
+      body.appendChild(tr);
+    }else{
+      shown.forEach((p,i)=>{
+        const tr=document.createElement("tr");
+        const cells=[
+          i+1,
+          p.name,
+          p.position,
+          p.nflTeam,
+          p.division,
+          p.selectedGP,
+          fmt(p.selectedAvg),
+          fmt(p.selectedTotal),
+          p.selectedBestWeek ? "W"+p.selectedBestWeek+" • "+fmt(p.selectedBest) : "—"
+        ];
+
+        cells.forEach((value,idx)=>{
+          const td=document.createElement("td");
+          td.textContent=value;
+          if(idx===0) td.className="rank-cell";
+          if(idx===1) td.className="player-cell";
+          tr.appendChild(td);
+        });
+        body.appendChild(tr);
+      });
+    }
+
+    document.getElementById("advPlayerCount").textContent=allRows.length;
+
+    const totalPts=allRows.reduce((s,p)=>s+p.selectedTotal,0);
+    const totalGames=allRows.reduce((s,p)=>s+p.selectedGP,0);
+
+    document.getElementById("advOverallAvg").textContent=totalGames?fmt(totalPts/totalGames):"—";
+    document.getElementById("advOverallTotal").textContent=allRows.length?fmt(totalPts):"—";
+
+    const top=allRows[0];
+    document.getElementById("advTopPlayer").textContent=top?top.name:"—";
+    document.getElementById("advTopPlayerValue").textContent=top
+      ? (metric==="total" ? fmt(top.selectedTotal)+" total"
+        : metric==="best" ? fmt(top.selectedBest)+" best"
+        : fmt(top.selectedAvg)+" avg")
+      : "—";
+
+    renderDivisionShare(shown,limitValue);
+  }
+
+  function renderDivisionShare(rankedRows,limitValue){
+    const list=document.getElementById("advDivisionShareList");
+    if(!list) return;
+
+    const counts={};
+    rankedRows.forEach(p=>{
+      counts[p.division]=(counts[p.division]||0)+1;
+    });
+
+    const total=rankedRows.length;
+    const entries=Object.entries(counts).sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0]));
+
+    document.getElementById("advShareAnalyzed").textContent=total;
+    document.getElementById("advShareDivisions").textContent=entries.length;
+
+    const leader=entries[0];
+    document.getElementById("advShareLeader").textContent=leader?leader[0]:"—";
+    document.getElementById("advShareLeaderPct").textContent=(leader && total)
+      ? ((leader[1]/total)*100).toFixed(1)+"% of ranked players"
+      : "—";
+
+    const badge=document.getElementById("advDivisionShareBadge");
+    if(badge){
+      badge.textContent=(limitValue==="all" ? "All ranked players" : "Top "+limitValue)+" share";
+    }
+
+    list.innerHTML="";
+
+    if(!total){
+      const empty=document.createElement("div");
+      empty.className="adv-share-empty";
+      empty.textContent="No ranked players match the current filters.";
+      list.appendChild(empty);
+      return;
+    }
+
+    entries.forEach(([division,count])=>{
+      const pct=(count/total)*100;
+      const row=document.createElement("div");
+      row.className="adv-share-row";
+
+      const div=document.createElement("div");
+      div.className="adv-share-division";
+      div.textContent=division;
+
+      const track=document.createElement("div");
+      track.className="adv-share-bar-track";
+
+      const fill=document.createElement("div");
+      fill.className="adv-share-bar-fill";
+      fill.style.width=pct+"%";
+      track.appendChild(fill);
+
+      const countEl=document.createElement("div");
+      countEl.className="adv-share-count";
+      countEl.textContent=count+" player"+(count===1?"":"s");
+
+      const pctEl=document.createElement("div");
+      pctEl.className="adv-share-pct";
+      pctEl.textContent=pct.toFixed(1)+"%";
+
+      row.append(div,track,countEl,pctEl);
+      list.appendChild(row);
+    });
+  }
+
+  setReportStatus("Stats through Week "+MAX_WEEK);
+  render();
 })();
 </script>
 
