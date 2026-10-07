@@ -496,6 +496,29 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   color:#7dd3fc;
   text-decoration:underline;
 }
+
+.week5-feature-card{padding:18px;border:1px solid rgba(245,158,11,.48);border-radius:14px;background:radial-gradient(circle at 92% 10%,rgba(56,189,248,.12),transparent 28%),linear-gradient(180deg,#07111f,#050d19)}
+.week5-feature-kicker{color:#38bdf8;font-size:.7rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.week5-feature-card h3{margin:5px 0 6px;color:#fbbf24;font-size:1.5rem;text-transform:uppercase}
+.week5-feature-lede{margin:0;color:#e2e8f0;font-size:.9rem;line-height:1.5}
+.week5-question-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:14px}
+.week5-question-grid>div{padding:12px;border:1px solid #26374e;border-radius:11px;background:#07111f}
+.week5-question-grid b{display:block;color:#f8fafc;font-size:.88rem}.week5-question-grid span{display:block;margin-top:5px;color:#94a3b8;font-size:.78rem;line-height:1.45}
+.week5-feature-footer{margin-top:12px;padding-top:11px;border-top:1px solid #26374e;color:#a3e635;font-size:.82rem;font-weight:900;text-align:center}
+.week5-stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:start}
+.week5-stat-panel{min-width:0;padding:12px;border:1px solid #26374e;border-radius:12px;background:#050d19}
+.week5-stat-title{color:#f8fafc;font-size:.92rem;font-weight:900}.week5-stat-sub{margin-top:3px;color:#38bdf8;font-size:.68rem}
+.week5-mini-table{width:100%;margin-top:9px;table-layout:auto;background:transparent}.week5-mini-table th,.week5-mini-table td{padding:5px 4px;font-size:.68rem;white-space:nowrap}
+.week5-mini-table th{color:#38bdf8;background:#020617}.week5-mini-table td:first-child{color:#38bdf8;font-weight:900}.week5-mini-table td:nth-child(2){font-weight:800;color:#f8fafc}
+.week5-pie-wrap{position:relative;width:190px;height:190px;margin:14px auto 12px}.week5-pie{width:100%;height:100%;border-radius:50%;background:conic-gradient(#38bdf8 0 20%,#a78bfa 20% 34%,#22c55e 34% 48%,#f59e0b 48% 62%,#ef4444 62% 74%,#14b8a6 74% 84%,#eab308 84% 92%,#94a3b8 92% 100%)}
+.week5-pie:after{content:"";position:absolute;inset:33px;border-radius:50%;background:#050d19;border:1px solid #26374e}.week5-pie-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:2}
+.week5-pie-center b{font-size:1.65rem;color:#f8fafc}.week5-pie-center span{color:#94a3b8;font-size:.68rem;text-transform:uppercase}
+.week5-pie-legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}.week5-pie-legend div{display:grid;grid-template-columns:10px 1fr auto;gap:5px;align-items:center;font-size:.67rem}
+.week5-pie-legend i{width:8px;height:8px;border-radius:50%}.week5-pie-legend span{color:#cbd5e1}.week5-pie-legend b{color:#f8fafc}
+.w5c1{background:#38bdf8}.w5c2{background:#a78bfa}.w5c3{background:#22c55e}.w5c4{background:#f59e0b}.w5c5{background:#ef4444}.w5c6{background:#14b8a6}.w5c7{background:#eab308}.w5c8{background:#94a3b8}
+.week5-pie-note{margin-top:10px;color:#94a3b8;font-size:.72rem;line-height:1.4}.week5-pie-note strong{color:#f8fafc}.week5-source-note{margin-top:2px;color:#64748b;font-size:.68rem}
+@media(max-width:980px){.week5-stats-grid{grid-template-columns:1fr 1fr}.week5-stat-panel:last-child{grid-column:1/-1}}
+@media(max-width:700px){.week5-question-grid,.week5-stats-grid{grid-template-columns:1fr}.week5-stat-panel:last-child{grid-column:auto}.week5-mini-table th,.week5-mini-table td{font-size:.66rem}.week5-pie-wrap{width:180px;height:180px}}
 </style>
 </head>
 <body>
@@ -507,13 +530,107 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="newsletter-kicker">Founding Edition</div>
 <h2>DFFL HUDDLE</h2>
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
-<div class="newsletter-issue">September 22, 2026</div>
+<div class="newsletter-issue">October 6, 2026</div>
 </div>
+<div class="newsletter-collapse">
+<button aria-controls="week5UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>📣 Week 5 — Latest Updates &amp; Matchup Spotlight <span class="latest-new-badge">NEW</span></strong>
+<small>Battle for first place: undefeated NFC West vs. AFC West, plus the latest DFFL player and division performance leaders.</small></span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="week5UpdatesContent">
+<div class="week2-section-block">
+<div class="combined-update-divider">🏆 WEEK 5 MAIN EVENT</div>
+<div class="week5-feature-card">
+<div class="week5-feature-kicker">NO. 1 SEED vs. NO. 2 SEED</div>
+<h3>NFC West vs. AFC West</h3>
+<p class="week5-feature-lede">The biggest matchup of Week 5 is a battle for first place: Ben's undefeated NFC West (4-0) against Dallas' AFC West (3-1).</p>
+<div class="week5-question-grid">
+<div><b>Could this be a DFFL Championship preview?</b><span>Ben's NFC West has opened 4-0, while Dallas' AFC West sits right behind at 3-1. A matchup between two of the league's strongest early-season divisions could easily be a preview of a much bigger game later.</span></div>
+<div><b>Could this game decide first place?</b><span>Yes. With NFC West entering undefeated and AFC West only one game back, the Week 5 result could directly determine who sits at the top of the DFFL standings when the week is complete.</span></div>
+</div>
+<div class="week5-feature-footer">Ben (4-0) vs. Dallas (3-1). One matchup with first place on the line.</div>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">🆕 NEW: ADVANCED PLAYER &amp; DIVISION REPORTS</div>
+<div class="latest-news-card">
+<b>Deeper player and division analysis is now live</b>
+<span>
+      The DFFL now has a deeper way to evaluate players and divisions beyond just wins, losses and weekly scores.
+      The new <strong>Advanced Player Report</strong> lets owners compare players by average fantasy points, total points,
+      position, NFL team, division and best week. It also makes it easier to see who is consistently producing versus
+      who may have had just one big game.
+      <br/><br/>
+      The <strong>Advanced Division Report</strong> takes that player data one step further and shows how much of the
+      league's top talent belongs to each DFFL division. That gives owners a better picture of overall division depth,
+      not just the strength of one or two stars.
+      <br/><br/>
+      For Week 5, the early numbers already tell an interesting story: <strong>NFC West leads all divisions with 20%
+      of the current Top 50 players</strong>, while the player report shows <strong>Josh Allen as the top overall scorer
+      by average at 28.74 points per game</strong>.
+      <br/><br/>
+<strong>Why it matters:</strong> as the season moves along, these reports should become one of the best ways to spot
+      rising divisions, identify deep player pools and see whether the standings match the underlying fantasy production.
+      <br/><br/>
+<strong>Explore the full reports at the bottom of the Standings page.</strong>
+</span>
+</div>
+</div>
+
+<div class="week2-section-block">
+<div class="combined-update-divider">📊 ADVANCED PLAYER &amp; DIVISION REPORT — WEEK 5 SNAPSHOT</div>
+<div class="week5-stats-grid">
+<div class="week5-stat-panel">
+<div class="week5-stat-title">Top 10 Players Overall</div><div class="week5-stat-sub">Ranked by average fantasy points</div>
+<table class="week5-mini-table"><thead><tr><th>#</th><th>Player</th><th>Pos</th><th>Div</th><th>Avg</th></tr></thead><tbody>
+<tr><td>1</td><td>Josh Allen</td><td>QB</td><td>AFC East</td><td>28.74</td></tr>
+<tr><td>2</td><td>Jahmyr Gibbs</td><td>RB</td><td>NFC North</td><td>26.25</td></tr>
+<tr><td>3</td><td>Kenneth Walker</td><td>RB</td><td>AFC West</td><td>26.02</td></tr>
+<tr><td>4</td><td>Brock Purdy</td><td>QB</td><td>NFC West</td><td>25.37</td></tr>
+<tr><td>5</td><td>Jaxon Smith-Njigba</td><td>WR</td><td>NFC West</td><td>25.16</td></tr>
+<tr><td>6</td><td>Bijan Robinson</td><td>RB</td><td>NFC South</td><td>24.60</td></tr>
+<tr><td>7</td><td>CeeDee Lamb</td><td>WR</td><td>NFC East</td><td>23.43</td></tr>
+<tr><td>8</td><td>Bryce Young</td><td>QB</td><td>NFC South</td><td>23.16</td></tr>
+<tr><td>9</td><td>Tyler Shough</td><td>QB</td><td>NFC South</td><td>22.08</td></tr>
+<tr><td>10</td><td>Derrick Henry</td><td>RB</td><td>AFC North</td><td>21.83</td></tr>
+</tbody></table>
+</div>
+<div class="week5-stat-panel">
+<div class="week5-stat-title">Top 10 Quarterbacks</div><div class="week5-stat-sub">Ranked by average fantasy points</div>
+<table class="week5-mini-table"><thead><tr><th>#</th><th>Quarterback</th><th>Div</th><th>Avg</th></tr></thead><tbody>
+<tr><td>1</td><td>Josh Allen</td><td>AFC East</td><td>28.74</td></tr>
+<tr><td>2</td><td>Brock Purdy</td><td>NFC West</td><td>25.37</td></tr>
+<tr><td>3</td><td>Bryce Young</td><td>NFC South</td><td>23.16</td></tr>
+<tr><td>4</td><td>Tyler Shough</td><td>NFC South</td><td>22.08</td></tr>
+<tr><td>5</td><td>Jared Goff</td><td>NFC North</td><td>21.52</td></tr>
+<tr><td>6</td><td>Patrick Mahomes</td><td>AFC West</td><td>21.39</td></tr>
+<tr><td>7</td><td>Kirk Cousins</td><td>AFC West</td><td>20.71</td></tr>
+<tr><td>8</td><td>Dak Prescott</td><td>NFC East</td><td>20.55</td></tr>
+<tr><td>9</td><td>Lamar Jackson</td><td>AFC North</td><td>20.02</td></tr>
+<tr><td>10</td><td>Joe Burrow</td><td>AFC North</td><td>19.91</td></tr>
+</tbody></table>
+</div>
+<div class="week5-stat-panel">
+<div class="week5-stat-title">Top 50 Players by Division</div><div class="week5-stat-sub">Share of the current Top 50 overall</div>
+<div class="week5-pie-wrap"><div class="week5-pie"></div><div class="week5-pie-center"><b>50</b><span>players</span></div></div>
+<div class="week5-pie-legend">
+<div><i class="w5c1"></i><span>NFC West</span><b>20%</b></div><div><i class="w5c2"></i><span>AFC North</span><b>14%</b></div>
+<div><i class="w5c3"></i><span>NFC North</span><b>14%</b></div><div><i class="w5c4"></i><span>NFC South</span><b>14%</b></div>
+<div><i class="w5c5"></i><span>AFC West</span><b>12%</b></div><div><i class="w5c6"></i><span>NFC East</span><b>10%</b></div>
+<div><i class="w5c7"></i><span>AFC East</span><b>8%</b></div><div><i class="w5c8"></i><span>AFC South</span><b>8%</b></div>
+</div>
+<div class="week5-pie-note"><strong>NFC West leads the league:</strong> 10 of the current Top 50 players, or 20%.</div>
+</div>
+</div>
+</div>
+<div class="week5-source-note">Week 5 snapshot is hard-coded from the current Advanced Players Report and Advanced Division Report.</div>
+</div></div>
 <div class="newsletter-collapse">
 <button aria-controls="week3UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
 <span>
 <strong>📣 Week 3 — Latest Updates &amp; What to Watch
-        <span class="latest-new-badge">NEW</span>
+        
 </strong>
 <small>The newest Week 3 DFFL updates, payout leaders, injury watch and division storylines.</small>
 </span>
