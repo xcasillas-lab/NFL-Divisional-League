@@ -1,7 +1,7 @@
 {
   "week": 5,
-  "status": "pending",
-  "lastUpdated": null,
+  "status": "pre-game",
+  "lastUpdated": "2026-10-08T00:00:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -29,28 +29,1042 @@
     }
   },
   "players": {
-    "Ben": [],
+    "Ben": [
+      {
+        "position": "QB",
+        "name": "Matthew Stafford",
+        "nflTeam": "LAR",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Christian McCaffrey",
+        "nflTeam": "SF",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Kyren Williams",
+        "nflTeam": "LAR",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Jaxon Smith-Njigba",
+        "nflTeam": "SEA",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Puka Nacua",
+        "nflTeam": "LAR",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Trey McBride",
+        "nflTeam": "ARI",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Michael Wilson",
+        "nflTeam": "ARI",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Seattle Seahawks DEF",
+        "nflTeam": "SEA",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ],
     "Brian": [],
-    "Joshua": [],
-    "Juan": [],
-    "JetLiX": [],
-    "Xavier": [],
-    "Dallas": [],
+    "Joshua": [
+      {
+        "position": "QB",
+        "name": "Josh Allen",
+        "nflTeam": "BUF",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "James Cook",
+        "nflTeam": "BUF",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Breece Hall",
+        "nflTeam": "NYJ",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Garrett Wilson",
+        "nflTeam": "NYJ",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Mack Hollins",
+        "nflTeam": "NE",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Dalton Kincaid",
+        "nflTeam": "BUF",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Caleb Douglas",
+        "nflTeam": "MIA",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "New England Patriots DEF",
+        "nflTeam": "NE",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ],
+    "Juan": [
+      {
+        "position": "QB",
+        "name": "Dak Prescott",
+        "nflTeam": "DAL",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Javonte Williams",
+        "nflTeam": "DAL",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Cam Skattebo",
+        "nflTeam": "NYG",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Malik Nabers",
+        "nflTeam": "NYG",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "CeeDee Lamb",
+        "nflTeam": "DAL",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Chig Okonkwo",
+        "nflTeam": "WAS",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Stefon Diggs",
+        "nflTeam": "WAS",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Philadelphia Eagles DEF",
+        "nflTeam": "PHI",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ],
+    "JetLiX": [
+      {
+        "position": "QB",
+        "name": "Jared Goff",
+        "nflTeam": "DET",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Jahmyr Gibbs",
+        "nflTeam": "DET",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Aaron Jones",
+        "nflTeam": "MIN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Justin Jefferson",
+        "nflTeam": "MIN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Amon-Ra St. Brown",
+        "nflTeam": "DET",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Tucker Kraft",
+        "nflTeam": "GB",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "D'Andre Swift",
+        "nflTeam": "CHI",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Minnesota Vikings DEF",
+        "nflTeam": "MIN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ],
+    "Xavier": [
+      {
+        "position": "QB",
+        "name": "Tyler Shough",
+        "nflTeam": "NO",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Bijan Robinson",
+        "nflTeam": "ATL",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Bucky Irving",
+        "nflTeam": "TB",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Chris Olave",
+        "nflTeam": "NO",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Drake London",
+        "nflTeam": "ATL",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Juwan Johnson",
+        "nflTeam": "NO",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "Devaughn Vele",
+        "nflTeam": "NO",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Tampa Bay Buccaneers DEF",
+        "nflTeam": "TB",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ],
+    "Dallas": [
+      {
+        "position": "QB",
+        "name": "Kirk Cousins",
+        "nflTeam": "LV",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Ashton Jeanty",
+        "nflTeam": "LV",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "RB",
+        "name": "Omarion Hampton",
+        "nflTeam": "LAC",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Jaylen Waddle",
+        "nflTeam": "DEN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "WR",
+        "name": "Tre' Harris",
+        "nflTeam": "LAC",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "TE",
+        "name": "Brock Bowers",
+        "nflTeam": "LV",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "FLEX",
+        "name": "RJ Harvey",
+        "nflTeam": "DEN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
+        "raw": {
+          "passingYards": 0.0,
+          "passingTouchdowns": 0.0,
+          "interceptions": 0.0,
+          "rushingYards": 0.0,
+          "rushingTouchdowns": 0.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
+          "fumblesLost": 0.0,
+          "twoPointConversions": 0.0
+        }
+      },
+      {
+        "position": "DEF",
+        "name": "Denver Broncos DEF",
+        "nflTeam": "DEN",
+        "points": 0.0,
+        "gameStatus": "pre-game",
+        "foundInFeed": true,
+        "raw": {
+          "pointsAllowed": 0,
+          "pointsAllowedFantasy": 0.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
+          "fumbleRecoveries": 0.0,
+          "safeties": 0.0,
+          "blockedKicks": 0.0,
+          "defensiveTD": 0.0,
+          "returnTD": 0.0
+        },
+        "note": "Game has not started; D/ST score remains 0.00."
+      }
+    ],
     "Kendall": []
   },
   "source": {
     "primary": "ESPN public NFL JSON",
-    "dates": [],
+    "dates": [
+      "20261008",
+      "20261009",
+      "20261010",
+      "20261011",
+      "20261012"
+    ],
     "stage": "2026-week5-production",
     "owners": [
-      "Ben",
-      "Brian",
-      "Joshua",
-      "Juan",
-      "JetLiX",
-      "Xavier",
       "Dallas",
-      "Kendall"
+      "Ben",
+      "Juan",
+      "Xavier",
+      "Joshua",
+      "Kendall",
+      "Brian",
+      "JetLiX"
     ],
     "defenseIncluded": true,
     "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
