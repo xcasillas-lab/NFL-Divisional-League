@@ -2,33 +2,375 @@
   "week": 5,
   "locked": false,
   "rosters": {
-    "Ben": {
-      "division": "NFC West",
-      "players": []
+    "Dallas": {
+      "division": "AFC West",
+      "players": [
+        {
+          "position": "QB",
+          "name": "Kirk Cousins",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Omarion Hampton",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jaylen Waddle",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Tre' Harris",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Brock Bowers",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "RJ Harvey",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Denver Broncos DEF",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        }
+      ]
+    },
+    "Xavier": {
+      "division": "NFC South",
+      "players": [
+        {
+          "position": "QB",
+          "name": "Tyler Shough",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bijan Robinson",
+          "nflTeam": "ATL",
+          "nflTeamName": "Atlanta Falcons",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bucky Irving",
+          "nflTeam": "TB",
+          "nflTeamName": "Tampa Bay Buccaneers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Chris Olave",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Drake London",
+          "nflTeam": "ATL",
+          "nflTeamName": "Atlanta Falcons",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Juwan Johnson",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Devaughn Vele",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Tampa Bay Buccaneers DEF",
+          "nflTeam": "TB",
+          "nflTeamName": "Tampa Bay Buccaneers",
+          "jersey": null
+        }
+      ]
+    },
+    "Joshua": {
+      "division": "AFC East",
+      "players": [
+        {
+          "position": "QB",
+          "name": "Josh Allen",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "James Cook",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Breece Hall",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Garrett Wilson",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Mack Hollins",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Dalton Kincaid",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Caleb Douglas",
+          "nflTeam": "MIA",
+          "nflTeamName": "Miami Dolphins",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "New England Patriots DEF",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        }
+      ]
     },
     "Brian": {
       "division": "AFC North",
       "players": []
     },
-    "Joshua": {
-      "division": "AFC East",
-      "players": []
+    "Ben": {
+      "division": "NFC West",
+      "players": [
+        {
+          "position": "QB",
+          "name": "Matthew Stafford",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Christian McCaffrey",
+          "nflTeam": "SF",
+          "nflTeamName": "San Francisco 49ers",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kyren Williams",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jaxon Smith-Njigba",
+          "nflTeam": "SEA",
+          "nflTeamName": "Seattle Seahawks",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Puka Nacua",
+          "nflTeam": "LAR",
+          "nflTeamName": "Los Angeles Rams",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Trey McBride",
+          "nflTeam": "ARI",
+          "nflTeamName": "Arizona Cardinals",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Michael Wilson",
+          "nflTeam": "ARI",
+          "nflTeamName": "Arizona Cardinals",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Seattle Seahawks DEF",
+          "nflTeam": "SEA",
+          "nflTeamName": "Seattle Seahawks",
+          "jersey": null
+        }
+      ]
     },
     "Juan": {
       "division": "NFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Dak Prescott",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Javonte Williams",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Cam Skattebo",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Malik Nabers",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "CeeDee Lamb",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Chig Okonkwo",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Stefon Diggs",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Philadelphia Eagles DEF",
+          "nflTeam": "PHI",
+          "nflTeamName": "Philadelphia Eagles",
+          "jersey": null
+        }
+      ]
     },
     "JetLiX": {
       "division": "NFC North",
-      "players": []
-    },
-    "Xavier": {
-      "division": "NFC South",
-      "players": []
-    },
-    "Dallas": {
-      "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Jared Goff",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jahmyr Gibbs",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Aaron Jones",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Justin Jefferson",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Amon-Ra St. Brown",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Tucker Kraft",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "D'Andre Swift",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Minnesota Vikings DEF",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",
