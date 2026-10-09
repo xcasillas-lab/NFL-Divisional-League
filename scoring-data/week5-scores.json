@@ -1,7 +1,7 @@
 {
   "week": 5,
-  "status": "live",
-  "lastUpdated": "2026-10-08T22:15:24-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-08T22:20:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
       "leftTotal": 0.0,
-      "rightTotal": 31.5
+      "rightTotal": 35.5
     },
     "3": {
       "leftOwner": "Joshua",
@@ -374,7 +374,7 @@
         "name": "Dak Prescott",
         "nflTeam": "DAL",
         "points": 14.64,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -395,7 +395,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 13.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -458,7 +458,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 1.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -753,15 +753,15 @@
         "position": "RB",
         "name": "Bucky Irving",
         "nflTeam": "TB",
-        "points": 28.5,
-        "gameStatus": "live",
+        "points": 30.5,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 145.0,
+          "rushingYards": 165.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 10.0,
@@ -858,14 +858,14 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
-        "points": 3.0,
-        "gameStatus": "live",
+        "points": 5.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 16,
           "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
-          "interceptions": 1.0,
+          "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
