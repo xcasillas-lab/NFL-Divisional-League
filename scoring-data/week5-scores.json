@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-08T22:05:16-05:00",
+  "lastUpdated": "2026-10-08T22:10:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
       "leftTotal": 0.0,
-      "rightTotal": 30.9
+      "rightTotal": 31.5
     },
     "3": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 28.1
+      "rightTotal": 28.38
     }
   },
   "players": {
@@ -373,12 +373,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 13.2,
+        "points": 13.48,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 255.0,
+          "passingYards": 262.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -753,7 +753,7 @@
         "position": "RB",
         "name": "Bucky Irving",
         "nflTeam": "TB",
-        "points": 27.9,
+        "points": 28.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -761,7 +761,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 139.0,
+          "rushingYards": 145.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 10.0,
