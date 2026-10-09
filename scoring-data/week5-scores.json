@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-08T21:55:14-05:00",
+  "lastUpdated": "2026-10-08T22:00:25-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
       "leftTotal": 0.0,
-      "rightTotal": 33.8
+      "rightTotal": 30.8
     },
     "3": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 22.3
+      "rightTotal": 28.1
     }
   },
   "players": {
@@ -373,13 +373,13 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 7.4,
+        "points": 13.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 210.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 255.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
@@ -858,12 +858,12 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
-        "points": 6.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 10,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 16,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
