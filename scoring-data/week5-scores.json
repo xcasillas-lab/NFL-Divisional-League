@@ -1,7 +1,7 @@
 {
   "week": 5,
-  "status": "pre-game",
-  "lastUpdated": "2026-10-08T19:15:21-05:00",
+  "status": "live",
+  "lastUpdated": "2026-10-08T19:17:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
       "leftTotal": 0.0,
-      "rightTotal": 0.0
+      "rightTotal": 10.0
     },
     "3": {
       "leftOwner": "Joshua",
@@ -374,9 +374,9 @@
         "name": "Dak Prescott",
         "nflTeam": "DAL",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -395,7 +395,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -458,7 +458,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -754,7 +754,7 @@
         "name": "Bucky Irving",
         "nflTeam": "TB",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -858,12 +858,12 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -872,7 +872,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Dallas": [
