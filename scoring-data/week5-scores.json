@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-08T22:00:25-05:00",
+  "lastUpdated": "2026-10-08T22:05:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
       "leftTotal": 0.0,
-      "rightTotal": 30.8
+      "rightTotal": 30.9
     },
     "3": {
       "leftOwner": "Joshua",
@@ -753,7 +753,7 @@
         "position": "RB",
         "name": "Bucky Irving",
         "nflTeam": "TB",
-        "points": 27.8,
+        "points": 27.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -761,7 +761,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 138.0,
+          "rushingYards": 139.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 10.0,
