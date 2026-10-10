@@ -187,7 +187,64 @@
     },
     "Brian": {
       "division": "AFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Joe Burrow",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Chase Brown",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Derrick Henry",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ja'Marr Chase",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "DK Metcalf",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Harold Fannin",
+          "nflTeam": "CLE",
+          "nflTeamName": "Cleveland Browns",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Jaylen Warren",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Pittsburgh Steelers DEF",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        }
+      ]
     },
     "Ben": {
       "division": "NFC West",
