@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T11:05:15-05:00",
+  "lastUpdated": "2026-10-11T11:10:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 15.9,
-      "rightTotal": 35.74
+      "leftTotal": 17.9,
+      "rightTotal": 37.74
     }
   },
   "players": {
@@ -688,14 +688,14 @@
         "position": "DEF",
         "name": "Philadelphia Eagles DEF",
         "nflTeam": "PHI",
-        "points": 6.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
           "sacks": 2.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
@@ -1364,14 +1364,14 @@
         "position": "DEF",
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
-        "points": 1.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 14,
           "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
