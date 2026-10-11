@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T12:20:21-05:00",
+  "lastUpdated": "2026-10-11T12:25:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,12 +19,12 @@
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
       "leftTotal": 18.5,
-      "rightTotal": 19.8
+      "rightTotal": 21.8
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 39.82,
+      "leftTotal": 39.92,
       "rightTotal": 40.84
     }
   },
@@ -354,7 +354,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 3,
+          "pointsAllowed": 6,
           "pointsAllowedFantasy": 7.0,
           "sacks": 0.0,
           "interceptions": 0.0,
@@ -857,14 +857,14 @@
         "position": "DEF",
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
-        "points": 4.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
@@ -1238,7 +1238,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 0.4,
+        "points": 0.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1246,7 +1246,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
+          "rushingYards": 5.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
