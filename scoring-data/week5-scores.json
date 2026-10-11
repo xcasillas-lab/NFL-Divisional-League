@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T09:25:15-05:00",
+  "lastUpdated": "2026-10-11T09:30:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 22.8,
+      "leftTotal": 19.8,
       "rightTotal": 34.74
     }
   },
@@ -1364,12 +1364,12 @@
         "position": "DEF",
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
-        "points": 10.0,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 6,
+          "pointsAllowedFantasy": 7.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
