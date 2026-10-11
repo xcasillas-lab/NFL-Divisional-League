@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T12:40:17-05:00",
+  "lastUpdated": "2026-10-11T12:45:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,8 +12,8 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 32.96,
-      "rightTotal": 37.76
+      "leftTotal": 33.24,
+      "rightTotal": 41.88
     },
     "3": {
       "leftOwner": "Joshua",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 44.0,
+      "leftTotal": 44.3,
       "rightTotal": 43.34
     }
   },
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 5.56,
+        "points": 5.84,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 39.0,
+          "passingYards": 46.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -310,8 +310,8 @@
         "nflTeam": "CLE",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Tyler Shough",
         "nflTeam": "NO",
-        "points": 0.36,
+        "points": 1.08,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 9.0,
+          "passingYards": 27.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -942,7 +942,7 @@
         "position": "WR",
         "name": "Chris Olave",
         "nflTeam": "NO",
-        "points": 1.9,
+        "points": 2.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -952,8 +952,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 14.0,
+          "receptions": 2.0,
+          "receivingYards": 19.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1005,7 +1005,7 @@
         "position": "FLEX",
         "name": "Devaughn Vele",
         "nflTeam": "NO",
-        "points": 0.0,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1015,8 +1015,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 2.0,
+          "receivingYards": 14.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "David Montgomery",
         "nflTeam": "HOU",
-        "points": 0.8,
+        "points": 1.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,7 +1267,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 8.0,
+          "rushingYards": 11.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
