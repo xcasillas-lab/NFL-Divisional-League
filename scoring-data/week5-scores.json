@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T14:50:17-05:00",
+  "lastUpdated": "2026-10-11T14:55:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 77.8,
+      "leftTotal": 78.4,
       "rightTotal": 52.14
     },
     "3": {
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 94.44,
+      "leftTotal": 94.34,
       "rightTotal": 52.54
     }
   },
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 32.1,
+        "points": 32.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 84.0,
+          "rushingYards": 90.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 87.0,
@@ -816,7 +816,7 @@
         "name": "T.J. Hockenson",
         "nflTeam": "MIN",
         "points": 1.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -880,7 +880,7 @@
         "name": "Tyler Shough",
         "nflTeam": "NO",
         "points": 1.84,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -943,7 +943,7 @@
         "name": "Chris Olave",
         "nflTeam": "NO",
         "points": 6.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -985,7 +985,7 @@
         "name": "Juwan Johnson",
         "nflTeam": "NO",
         "points": 3.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1006,7 +1006,7 @@
         "name": "Devaughn Vele",
         "nflTeam": "NO",
         "points": 4.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1217,15 +1217,15 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 21.04,
-        "gameStatus": "live",
+        "points": 20.94,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 261.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 6.0,
+          "rushingYards": 5.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1260,7 +1260,7 @@
         "name": "David Montgomery",
         "nflTeam": "HOU",
         "points": 1.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1281,7 +1281,7 @@
         "name": "Nico Collins",
         "nflTeam": "HOU",
         "points": 8.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1344,7 +1344,7 @@
         "name": "Tony Pollard",
         "nflTeam": "TEN",
         "points": 5.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
