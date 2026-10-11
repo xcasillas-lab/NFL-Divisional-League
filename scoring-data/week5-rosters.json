@@ -387,16 +387,9 @@
         },
         {
           "position": "RB",
-          "name": "Aaron Jones",
-          "nflTeam": "MIN",
-          "nflTeamName": "Minnesota Vikings",
-          "jersey": null
-        },
-        {
-          "position": "WR",
-          "name": "Justin Jefferson",
-          "nflTeam": "MIN",
-          "nflTeamName": "Minnesota Vikings",
+          "name": "D'Andre Swift",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
           "jersey": null
         },
         {
@@ -407,24 +400,31 @@
           "jersey": null
         },
         {
-          "position": "TE",
-          "name": "Tucker Kraft",
-          "nflTeam": "GB",
-          "nflTeamName": "Green Bay Packers",
-          "jersey": null
-        },
-        {
-          "position": "FLEX",
-          "name": "D'Andre Swift",
+          "position": "WR",
+          "name": "Rome Odunze",
           "nflTeam": "CHI",
           "nflTeamName": "Chicago Bears",
           "jersey": null
         },
         {
-          "position": "DEF",
-          "name": "Minnesota Vikings DEF",
+          "position": "TE",
+          "name": "T.J. Hockenson",
           "nflTeam": "MIN",
           "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Christian Watson",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Chicago Bears DEF",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
           "jersey": null
         }
       ]
