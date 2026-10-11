@@ -197,16 +197,16 @@
         },
         {
           "position": "RB",
-          "name": "Chase Brown",
-          "nflTeam": "CIN",
-          "nflTeamName": "Cincinnati Bengals",
+          "name": "Derrick Henry",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
           "jersey": null
         },
         {
           "position": "RB",
-          "name": "Derrick Henry",
-          "nflTeam": "BAL",
-          "nflTeamName": "Baltimore Ravens",
+          "name": "Jaylen Warren",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
           "jersey": null
         },
         {
@@ -218,9 +218,9 @@
         },
         {
           "position": "WR",
-          "name": "DK Metcalf",
-          "nflTeam": "PIT",
-          "nflTeamName": "Pittsburgh Steelers",
+          "name": "Zay Flowers",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
           "jersey": null
         },
         {
@@ -232,9 +232,9 @@
         },
         {
           "position": "FLEX",
-          "name": "Jaylen Warren",
-          "nflTeam": "PIT",
-          "nflTeamName": "Pittsburgh Steelers",
+          "name": "Tee Higgins",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
           "jersey": null
         },
         {
