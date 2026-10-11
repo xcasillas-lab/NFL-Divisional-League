@@ -1,7 +1,7 @@
 {
   "week": 5,
-  "status": "live",
-  "lastUpdated": "2026-10-11T18:40:18-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-11T18:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -56,7 +56,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 15.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -98,7 +98,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 20.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -182,7 +182,7 @@
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
         "points": 6.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 32,
