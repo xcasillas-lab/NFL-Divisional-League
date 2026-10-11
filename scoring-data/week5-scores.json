@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T09:35:17-05:00",
+  "lastUpdated": "2026-10-11T09:40:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
       "leftTotal": 16.8,
-      "rightTotal": 34.74
+      "rightTotal": 35.74
     }
   },
   "players": {
@@ -688,13 +688,13 @@
         "position": "DEF",
         "name": "Philadelphia Eagles DEF",
         "nflTeam": "PHI",
-        "points": 5.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
