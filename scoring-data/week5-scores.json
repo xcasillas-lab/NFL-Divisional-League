@@ -1,18 +1,18 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T13:50:19-05:00",
+  "lastUpdated": "2026-10-11T13:55:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
-      "leftTotal": 26.72,
+      "leftTotal": 27.22,
       "rightTotal": 0.0
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 43.64,
+      "leftTotal": 44.14,
       "rightTotal": 45.88
     },
     "3": {
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 71.06,
-      "rightTotal": 48.44
+      "leftTotal": 77.78,
+      "rightTotal": 48.84
     }
   },
   "players": {
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 17.9,
+        "points": 18.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 13.0,
+          "rushingYards": 18.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 81.0,
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
-        "points": 1.9,
+        "points": 2.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 19.0,
+          "rushingYards": 23.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 2.9,
+        "points": 3.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 16.0,
+          "rushingYards": 21.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 8.0,
@@ -1217,16 +1217,16 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 9.16,
+        "points": 15.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 219.0,
+          "passingYards": 232.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 6.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
