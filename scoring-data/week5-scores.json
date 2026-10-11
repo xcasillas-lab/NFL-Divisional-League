@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T16:40:17-05:00",
+  "lastUpdated": "2026-10-11T16:45:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
       "leftTotal": 23.9,
-      "rightTotal": 81.5
+      "rightTotal": 85.82
     },
     "4": {
       "leftOwner": "Kendall",
@@ -710,13 +710,13 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 8.2,
+        "points": 12.52,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 105.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 113.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
