@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T16:15:20-05:00",
+  "lastUpdated": "2026-10-11T16:20:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
-      "leftTotal": 58.22,
-      "rightTotal": 18.38
+      "leftTotal": 58.32,
+      "rightTotal": 21.18
     },
     "2": {
       "leftOwner": "Brian",
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 1.7,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,10 +63,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 17.0,
+          "rushingYards": 23.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 7.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -181,13 +181,13 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 7.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -1111,7 +1111,7 @@
         "position": "WR",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 2.2,
+        "points": 2.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1119,7 +1119,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 8.0,
+          "rushingYards": 9.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 9.0,
