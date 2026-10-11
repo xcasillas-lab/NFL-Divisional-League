@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T13:20:19-05:00",
+  "lastUpdated": "2026-10-11T13:25:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 39.3,
+      "leftTotal": 40.94,
       "rightTotal": 43.08
     },
     "3": {
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 61.44,
+      "leftTotal": 61.34,
       "rightTotal": 47.24
     }
   },
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 12.4,
+        "points": 13.24,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 80.0,
+          "passingYards": 101.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 12.0,
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 17.1,
+        "points": 17.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 5.0,
+          "rushingYards": 13.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 81.0,
@@ -1217,7 +1217,7 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 6.54,
+        "points": 6.44,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1225,7 +1225,7 @@
           "passingYards": 161.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 1.0,
+          "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
