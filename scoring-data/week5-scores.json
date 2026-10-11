@@ -1,12 +1,12 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T17:10:19-05:00",
+  "lastUpdated": "2026-10-11T17:15:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
-      "leftTotal": 56.52,
+      "leftTotal": 56.32,
       "rightTotal": 26.28
     },
     "2": {
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 4.1,
+        "points": 3.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 30.0,
+          "rushingYards": 28.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 6.0,
