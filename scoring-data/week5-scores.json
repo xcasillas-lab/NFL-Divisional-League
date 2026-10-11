@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T18:25:17-05:00",
+  "lastUpdated": "2026-10-11T18:30:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 61.42,
-      "rightTotal": 57.48
+      "rightTotal": 60.48
     },
     "2": {
       "leftOwner": "Brian",
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 12.8,
+        "points": 15.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,10 +63,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 55.0,
+          "rushingYards": 68.0,
           "rushingTouchdowns": 1.0,
-          "receptions": 1.0,
-          "receivingYards": 8.0,
+          "receptions": 3.0,
+          "receivingYards": 15.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -140,7 +140,7 @@
         "name": "Trey McBride",
         "nflTeam": "ARI",
         "points": 17.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -161,7 +161,7 @@
         "name": "Michael Wilson",
         "nflTeam": "ARI",
         "points": 5.28,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -711,7 +711,7 @@
         "name": "Jared Goff",
         "nflTeam": "DET",
         "points": 28.94,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -732,7 +732,7 @@
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
         "points": 35.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 9.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
