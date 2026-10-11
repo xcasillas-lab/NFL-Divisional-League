@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T17:40:18-05:00",
+  "lastUpdated": "2026-10-11T17:45:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
       "leftTotal": 23.9,
-      "rightTotal": 101.74
+      "rightTotal": 115.68
     },
     "4": {
       "leftOwner": "Kendall",
@@ -710,16 +710,16 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 19.84,
+        "points": 27.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 196.0,
+          "passingYards": 232.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 1.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 22.8,
+        "points": 25.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 87.0,
+          "rushingYards": 110.0,
           "rushingTouchdowns": 1.0,
           "receptions": 5.0,
           "receivingYards": 56.0,
@@ -773,7 +773,7 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 2.8,
+        "points": 6.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -783,8 +783,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 13.0,
+          "receptions": 4.0,
+          "receivingYards": 49.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
