@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T15:00:22-05:00",
+  "lastUpdated": "2026-10-11T15:05:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 78.4,
+      "leftTotal": 79.0,
       "rightTotal": 52.14
     },
     "3": {
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
       "leftTotal": 94.34,
-      "rightTotal": 54.44
+      "rightTotal": 56.94
     }
   },
   "players": {
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 32.7,
+        "points": 33.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 90.0,
+          "rushingYards": 96.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 87.0,
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
-        "points": 3.3,
+        "points": 3.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,7 +591,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 23.0,
+          "rushingYards": 27.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 5.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "Malik Nabers",
         "nflTeam": "NYG",
-        "points": 8.4,
+        "points": 10.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -614,8 +614,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 54.0,
+          "receptions": 7.0,
+          "receivingYards": 70.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
