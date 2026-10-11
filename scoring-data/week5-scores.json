@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T16:55:16-05:00",
+  "lastUpdated": "2026-10-11T17:00:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
-      "leftTotal": 59.02,
-      "rightTotal": 27.28
+      "leftTotal": 56.02,
+      "rightTotal": 26.28
     },
     "2": {
       "leftOwner": "Brian",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 6.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 14,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 21,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 3.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
-        "points": 8.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 3,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 10,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
