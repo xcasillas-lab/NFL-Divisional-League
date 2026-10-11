@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T12:30:20-05:00",
+  "lastUpdated": "2026-10-11T12:35:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,19 +12,19 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 31.04,
+      "leftTotal": 31.34,
       "rightTotal": 35.3
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
       "leftTotal": 18.5,
-      "rightTotal": 21.8
+      "rightTotal": 18.8
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Juan",
-      "leftTotal": 41.48,
+      "leftTotal": 41.52,
       "rightTotal": 40.84
     }
   },
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 15.2,
+        "points": 15.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 2.0,
+          "rushingYards": 5.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 75.0,
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
-        "points": 6.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 14,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 2.08,
+        "points": 2.12,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 52.0,
+          "passingYards": 53.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
