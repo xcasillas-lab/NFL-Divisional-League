@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T15:45:19-05:00",
+  "lastUpdated": "2026-10-11T15:50:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -584,7 +584,7 @@
         "name": "Cam Skattebo",
         "nflTeam": "NYG",
         "points": 6.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "Malik Nabers",
         "nflTeam": "NYG",
         "points": 23.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -647,7 +647,7 @@
         "name": "Chig Okonkwo",
         "nflTeam": "WAS",
         "points": 8.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -668,7 +668,7 @@
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
