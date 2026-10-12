@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-11T22:35:19-05:00",
+  "lastUpdated": "2026-10-11T22:40:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Xavier",
-      "leftTotal": 107.1,
+      "leftTotal": 109.0,
       "rightTotal": 78.74
     },
     "3": {
@@ -224,7 +224,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 16.3,
+        "points": 18.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -232,7 +232,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 80.0,
+          "rushingYards": 99.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 18.0,
