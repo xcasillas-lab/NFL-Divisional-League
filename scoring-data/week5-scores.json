@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-12T22:35:18-05:00",
+  "lastUpdated": "2026-10-12T22:40:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 61.42,
-      "rightTotal": 136.4
+      "rightTotal": 137.6
     },
     "2": {
       "leftOwner": "Brian",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 27.12,
+        "points": 27.32,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 378.0,
+          "passingYards": 383.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -118,7 +118,7 @@
         "position": "WR",
         "name": "Puka Nacua",
         "nflTeam": "LAR",
-        "points": 28.2,
+        "points": 29.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -128,8 +128,8 @@
           "interceptions": 0.0,
           "rushingYards": 9.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 16.0,
-          "receivingYards": 133.0,
+          "receptions": 17.0,
+          "receivingYards": 138.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
