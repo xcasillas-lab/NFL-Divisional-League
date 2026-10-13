@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-12T21:35:17-05:00",
+  "lastUpdated": "2026-10-12T21:40:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 61.42,
-      "rightTotal": 97.52
+      "rightTotal": 108.5
     },
     "2": {
       "leftOwner": "Brian",
@@ -34,13 +34,13 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 13.04,
+        "points": 17.12,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 226.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 228.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 5.3,
+        "points": 5.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 28.0,
+          "rushingYards": 30.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 10.0,
@@ -118,7 +118,7 @@
         "position": "WR",
         "name": "Puka Nacua",
         "nflTeam": "LAR",
-        "points": 14.7,
+        "points": 21.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -128,9 +128,9 @@
           "interceptions": 0.0,
           "rushingYards": 9.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 11.0,
-          "receivingYards": 83.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 12.0,
+          "receivingYards": 85.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
