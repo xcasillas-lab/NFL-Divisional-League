@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-12T22:30:21-05:00",
+  "lastUpdated": "2026-10-12T22:35:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 61.42,
-      "rightTotal": 131.82
+      "rightTotal": 136.4
     },
     "2": {
       "leftOwner": "Brian",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
-      "leftTotal": 75.4,
+      "leftTotal": 73.4,
       "rightTotal": 130.34
     },
     "4": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 25.44,
+        "points": 27.12,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 336.0,
+          "passingYards": 378.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 16.3,
+        "points": 16.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 46.0,
+          "rushingYards": 49.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 27.0,
@@ -118,7 +118,7 @@
         "position": "WR",
         "name": "Puka Nacua",
         "nflTeam": "LAR",
-        "points": 25.6,
+        "points": 28.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -128,8 +128,8 @@
           "interceptions": 0.0,
           "rushingYards": 9.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 15.0,
-          "receivingYards": 112.0,
+          "receptions": 16.0,
+          "receivingYards": 133.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 24.0,
+        "points": 22.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -406,7 +406,7 @@
           "receptions": 1.0,
           "receivingYards": 7.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
