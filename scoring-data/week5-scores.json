@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-12T20:30:25-05:00",
+  "lastUpdated": "2026-10-12T20:35:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Ben",
       "leftTotal": 61.42,
-      "rightTotal": 82.48
+      "rightTotal": 83.0
     },
     "2": {
       "leftOwner": "Brian",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
-      "leftTotal": 42.3,
+      "leftTotal": 41.3,
       "rightTotal": 130.34
     },
     "4": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 7.4,
+        "points": 7.92,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 85.0,
+          "passingYards": 98.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -372,14 +372,14 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 4.5,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 60.0,
           "passingTouchdowns": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 21.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
