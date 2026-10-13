@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "lastUpdated": "2026-10-12T22:25:18-05:00",
+  "lastUpdated": "2026-10-12T22:30:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "JetLiX",
-      "leftTotal": 72.78,
+      "leftTotal": 75.4,
       "rightTotal": 130.34
     },
     "4": {
@@ -372,12 +372,12 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 23.98,
+        "points": 26.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 152.0,
+          "passingYards": 210.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 89.0,
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 23.7,
+        "points": 24.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -401,7 +401,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 105.0,
+          "rushingYards": 108.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 7.0,
