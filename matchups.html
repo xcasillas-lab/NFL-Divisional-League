@@ -966,20 +966,14 @@ document.querySelectorAll('img[data-helmet]').forEach((img) => {
   if (approved) img.src = approved;
 });
 </script>
-<script id="dfflWeek6LiveProduction">
-/* ===== DFFL WEEK 6 PRODUCTION JSON CONNECTOR ===== */
-const DFFL_ROSTER_URL = "/scoring-data/week6-rosters.json";
-const DFFL_SCORE_URL = "/scoring-data/week6-scores.json";
+<script id="dfflAutomaticWeeklyMatchups">
+/* ===== DFFL AUTOMATIC WEEKLY MATCHUPS: WEEKS 6-10 =====
+   - Finds the first score JSON that is not FINAL and makes it the active week.
+   - Loads that week's roster + score JSON for live scoring.
+   - Finalized prior weeks are rendered as frozen historical results in Season Matchups.
+   - Weeks after the active week remain Upcoming.
+*/
 const DFFL_REFRESH_MS = 2 * 60 * 1000;
-
-/* Authoritative Week 6 DFFL matchup mapping.
-   Do not depend on historical panel markup or matchup IDs stored in an older score file. */
-const DFFL_WEEK6_MATCHUPS = {
-  "1": { leftOwner: "Dallas", rightOwner: "Xavier" },
-  "2": { leftOwner: "Brian", rightOwner: "Ben" },
-  "3": { leftOwner: "Joshua", rightOwner: "Juan" },
-  "4": { leftOwner: "Kendall", rightOwner: "JetLiX" }
-};
 
 const DFFL_OWNER_DIVISION = {
   "Dallas":  { abbr: "AFCW", division: "AFC West" },
@@ -992,355 +986,183 @@ const DFFL_OWNER_DIVISION = {
   "Kendall": { abbr: "AFCS", division: "AFC South" }
 };
 
-const DFFL_WEEK6_RECORDS = {
-  "Dallas": "3-2",
-  "Brian": "4-1",
-  "JetLiX": "3-2",
-  "Ben": "5-0",
-  "Juan": "1-4",
-  "Xavier": "1-4",
-  "Joshua": "1-4",
-  "Kendall": "2-3"
+const DFFL_AUTOMATION_SCHEDULE = {
+  6: [["Dallas","Xavier"],["Brian","Ben"],["Joshua","Juan"],["Kendall","JetLiX"]],
+  7: [["Dallas","Juan"],["Brian","JetLiX"],["Joshua","Xavier"],["Kendall","Ben"]],
+  8: [["Kendall","Dallas"],["Joshua","Brian"],["Xavier","Ben"],["Juan","JetLiX"]],
+  9: [["Brian","Dallas"],["Joshua","Kendall"],["JetLiX","Ben"],["Juan","Xavier"]],
+  10:[["Joshua","Dallas"],["Brian","Kendall"],["Juan","Ben"],["JetLiX","Xavier"]]
 };
 
-function dfflOwnerLabel(owner){
-  const record = DFFL_WEEK6_RECORDS[owner];
-  return record ? owner + " (" + record + ")" : owner;
+const DFFL_RECORDS_AFTER_WEEK5 = {
+  "Dallas":{w:3,l:2},"Brian":{w:4,l:1},"JetLiX":{w:3,l:2},"Ben":{w:5,l:0},
+  "Juan":{w:1,l:4},"Xavier":{w:1,l:4},"Joshua":{w:1,l:4},"Kendall":{w:2,l:3}
+};
+
+window.DFFL_ACTIVE_WEEK = 6;
+window.DFFL_AUTO_WEEK_DATA = {};
+
+function dfflAutoJsonUrl(week,type){return "/scoring-data/week"+week+"-"+type+".json";}
+async function dfflAutoFetchJson(url){
+  try{
+    const r=await fetch(url+"?v="+Date.now(),{cache:"no-store"});
+    if(!r.ok)return null;
+    return await r.json();
+  }catch(e){return null;}
 }
-
-function dfflFindMatchupScore(scoreData, leftOwner, rightOwner){
-  const matchups = (scoreData && scoreData.matchups) || {};
-  const values = Object.values(matchups);
-  const found = values.find(function(m){
-    return m && (
-      (m.leftOwner === leftOwner && m.rightOwner === rightOwner) ||
-      (m.leftOwner === rightOwner && m.rightOwner === leftOwner)
-    );
-  });
-
-  if(!found){
-    return { leftTotal: 0, rightTotal: 0 };
-  }
-
-  if(found.leftOwner === leftOwner){
-    return {
-      leftTotal: Number(found.leftTotal || 0),
-      rightTotal: Number(found.rightTotal || 0)
-    };
-  }
-
-  return {
-    leftTotal: Number(found.rightTotal || 0),
-    rightTotal: Number(found.leftTotal || 0)
-  };
+function dfflAutoIsFinal(scoreData){return !!scoreData&&String(scoreData.status||"").toLowerCase()==="final";}
+function dfflAutoFindScore(scoreData,leftOwner,rightOwner){
+  const values=Object.values((scoreData&&scoreData.matchups)||{});
+  const found=values.find(m=>m&&((m.leftOwner===leftOwner&&m.rightOwner===rightOwner)||(m.leftOwner===rightOwner&&m.rightOwner===leftOwner)));
+  if(!found)return {leftTotal:0,rightTotal:0};
+  if(found.leftOwner===leftOwner)return {leftTotal:Number(found.leftTotal||0),rightTotal:Number(found.rightTotal||0)};
+  return {leftTotal:Number(found.rightTotal||0),rightTotal:Number(found.leftTotal||0)};
 }
-
-function dfflFormatPoints(value){
-  const n = Number(value);
-  return Number.isFinite(n) ? n.toFixed(2) : "0.00";
-}
-
+function dfflFormatPoints(value){const n=Number(value);return Number.isFinite(n)?n.toFixed(2):"0.00";}
 function dfflNormalizeName(value){
-  return String(value || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\b(jr|sr|ii|iii|iv)\.?\b/g, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
+  return String(value||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\b(jr|sr|ii|iii|iv)\.?\b/g,"").replace(/[^a-z0-9]+/g," ").trim();
 }
-
-function dfflFindScoreRow(scoreRows, rosterPlayer){
-  const targetName = dfflNormalizeName(rosterPlayer && rosterPlayer.name);
-  const targetTeam = String((rosterPlayer && rosterPlayer.nflTeam) || "").toUpperCase();
-  const targetPosition = String((rosterPlayer && rosterPlayer.position) || "").toUpperCase();
-
-  return (scoreRows || []).find(function(row){
-    const sameName = dfflNormalizeName(row.name) === targetName;
-    const sameTeam = String(row.nflTeam || "").toUpperCase() === targetTeam;
-    const samePosition = String(row.position || "").toUpperCase() === targetPosition;
-    return sameName && sameTeam && samePosition;
-  }) || null;
+function dfflFindScoreRow(scoreRows,rosterPlayer){
+  const targetName=dfflNormalizeName(rosterPlayer&&rosterPlayer.name);
+  const targetTeam=String((rosterPlayer&&rosterPlayer.nflTeam)||"").toUpperCase();
+  const targetPosition=String((rosterPlayer&&rosterPlayer.position)||"").toUpperCase();
+  return (scoreRows||[]).find(row=>dfflNormalizeName(row.name)===targetName&&String(row.nflTeam||"").toUpperCase()===targetTeam&&String(row.position||"").toUpperCase()===targetPosition)||null;
 }
-
 function dfflPlayerStatus(row){
-  const status = String((row && row.gameStatus) || "pre-game").toLowerCase();
-
-  if(status === "live"){
-    return { label: "LIVE", cssClass: "live" };
-  }
-
-  if(status === "final"){
-    return { label: "FINAL", cssClass: "final" };
-  }
-
-  return { label: "PENDING KICKOFF", cssClass: "pending" };
+  const status=String((row&&row.gameStatus)||"pre-game").toLowerCase();
+  if(status==="live")return {label:"LIVE",cssClass:"live"};
+  if(status==="final")return {label:"FINAL",cssClass:"final"};
+  return {label:"PENDING KICKOFF",cssClass:"pending"};
 }
-
-function dfflMatchupStatus(leftRows, rightRows){
-  const rows = [...(leftRows || []), ...(rightRows || [])];
-  if(!rows.length) return "PENDING KICKOFF";
-
-  const statuses = rows.map(function(row){
-    return String(row.gameStatus || "pre-game").toLowerCase();
-  });
-
-  if(statuses.includes("live")) return "LIVE";
-  if(statuses.every(function(status){ return status === "final"; })) return "FINAL";
-  if(statuses.some(function(status){ return status === "final"; })) return "IN PROGRESS";
+function dfflMatchupStatus(leftRows,rightRows,scoreData){
+  if(dfflAutoIsFinal(scoreData))return "FINAL";
+  const rows=[...(leftRows||[]),...(rightRows||[])];
+  if(!rows.length)return "PENDING KICKOFF";
+  const statuses=rows.map(row=>String(row.gameStatus||"pre-game").toLowerCase());
+  if(statuses.includes("live"))return "LIVE";
+  if(statuses.every(status=>status==="final"))return "FINAL";
+  if(statuses.some(status=>status==="final"))return "IN PROGRESS";
   return "PENDING KICKOFF";
 }
-
-function dfflBuildPlayerTable(panel, leftRoster, rightRoster, leftScores, rightScores, leftTotal, rightTotal){
-  const tbody = panel.querySelector(".matchup-player-table tbody");
-  if(!tbody) return;
-
-  const leftPlayers = (leftRoster && leftRoster.players) || [];
-  const rightPlayers = (rightRoster && rightRoster.players) || [];
-  const fixedPositions = ["QB","RB","RB","WR","WR","TE","FLEX","DEF"];
-  const rows = [];
-
-  for(let i = 0; i < fixedPositions.length; i++){
-    const fixedPosition = fixedPositions[i];
-    const leftPlayer = leftPlayers[i] || { position: fixedPosition };
-    const rightPlayer = rightPlayers[i] || { position: fixedPosition };
-    const leftScore = dfflFindScoreRow(leftScores, leftPlayer);
-    const rightScore = dfflFindScoreRow(rightScores, rightPlayer);
-
-    const leftPosition = leftPlayer.position || fixedPosition;
-    const rightPosition = rightPlayer.position || fixedPosition;
-    const centerPosition = fixedPosition;
-
-    const leftName = leftPlayer.name || "—";
-    const rightName = rightPlayer.name || "—";
-    const leftTeam = String(leftPlayer.nflTeam || "").toUpperCase();
-    const rightTeam = String(rightPlayer.nflTeam || "").toUpperCase();
-
-    const leftStatus = dfflPlayerStatus(leftScore);
-    const rightStatus = dfflPlayerStatus(rightScore);
-
-    rows.push(`
-      <tr>
-        <td>
-          ${leftPlayer.name ? leftName + (leftTeam ? " - " + leftTeam : "") : "&nbsp;"}
-          ${leftPlayer.name ? '<span class="player-game-status ' + leftStatus.cssClass + '">' + leftStatus.label + '</span>' : ""}
-        </td>
-        <td class="left-pts">${dfflFormatPoints(leftScore ? leftScore.points : 0)}</td>
-        <td class="pos-cell">${centerPosition}</td>
-        <td class="right-pts">${dfflFormatPoints(rightScore ? rightScore.points : 0)}</td>
-        <td>
-          ${rightPlayer.name ? rightName + (rightTeam ? " - " + rightTeam : "") : "&nbsp;"}
-          ${rightPlayer.name ? '<span class="player-game-status ' + rightStatus.cssClass + '">' + rightStatus.label + '</span>' : ""}
-        </td>
-      </tr>
-    `);
+function dfflBuildPlayerTable(panel,leftRoster,rightRoster,leftScores,rightScores,leftTotal,rightTotal){
+  const tbody=panel.querySelector(".matchup-player-table tbody");if(!tbody)return;
+  const leftPlayers=(leftRoster&&leftRoster.players)||[],rightPlayers=(rightRoster&&rightRoster.players)||[];
+  const fixed=["QB","RB","RB","WR","WR","TE","FLEX","DEF"],rows=[];
+  for(let i=0;i<fixed.length;i++){
+    const pos=fixed[i],lp=leftPlayers[i]||{position:pos},rp=rightPlayers[i]||{position:pos};
+    const ls=dfflFindScoreRow(leftScores,lp),rs=dfflFindScoreRow(rightScores,rp),lst=dfflPlayerStatus(ls),rst=dfflPlayerStatus(rs);
+    const lt=String(lp.nflTeam||"").toUpperCase(),rt=String(rp.nflTeam||"").toUpperCase();
+    rows.push(`<tr><td>${lp.name?lp.name+(lt?" - "+lt:""):"&nbsp;"}${lp.name?'<span class="player-game-status '+lst.cssClass+'">'+lst.label+'</span>':""}</td><td class="left-pts">${dfflFormatPoints(ls?ls.points:0)}</td><td class="pos-cell">${pos}</td><td class="right-pts">${dfflFormatPoints(rs?rs.points:0)}</td><td>${rp.name?rp.name+(rt?" - "+rt:""):"&nbsp;"}${rp.name?'<span class="player-game-status '+rst.cssClass+'">'+rst.label+'</span>':""}</td></tr>`);
   }
-
-  rows.push(`
-    <tr class="total-row">
-      <td>TOTAL</td>
-      <td class="left-pts">${dfflFormatPoints(leftTotal)}</td>
-      <td></td>
-      <td class="right-pts">${dfflFormatPoints(rightTotal)}</td>
-      <td>TOTAL</td>
-    </tr>
-  `);
-
-  tbody.innerHTML = rows.join("");
+  rows.push(`<tr class="total-row"><td>TOTAL</td><td class="left-pts">${dfflFormatPoints(leftTotal)}</td><td></td><td class="right-pts">${dfflFormatPoints(rightTotal)}</td><td>TOTAL</td></tr>`);
+  tbody.innerHTML=rows.join("");
 }
-
-function dfflUpdateMatchup(matchupId, matchupData, rosterData, scoreData){
-  const card = document.getElementById("featured-matchup-" + matchupId);
-  const panel = document.getElementById("matchup-detail-" + matchupId);
-  if(!card || !panel || !matchupData) return;
-
-  const leftOwner = matchupData.leftOwner;
-  const rightOwner = matchupData.rightOwner;
-  const leftTotal = Number(matchupData.leftTotal || 0);
-  const rightTotal = Number(matchupData.rightTotal || 0);
-
-  const leftRoster = rosterData.rosters && rosterData.rosters[leftOwner];
-  const rightRoster = rosterData.rosters && rosterData.rosters[rightOwner];
-  const leftScores = (scoreData.players && scoreData.players[leftOwner]) || [];
-  const rightScores = (scoreData.players && scoreData.players[rightOwner]) || [];
-
-  const leftDivision = DFFL_OWNER_DIVISION[leftOwner] || {};
-  const rightDivision = DFFL_OWNER_DIVISION[rightOwner] || {};
-
-  const cardTeams = card.querySelectorAll(".featured-team");
-  if(cardTeams[0]){
-    const owner = cardTeams[0].querySelector(".owner-label");
-    const score = cardTeams[0].querySelector(".owner-score");
-    if(owner) owner.textContent = dfflOwnerLabel(leftOwner);
-    if(score) score.textContent = dfflFormatPoints(leftTotal);
-    const divisionLabel = cardTeams[0].querySelector(".division-label");
-    if(divisionLabel && leftDivision.abbr) divisionLabel.textContent = leftDivision.abbr;
-    const helmet = cardTeams[0].querySelector("img[data-helmet]");
-    if(helmet && leftDivision.abbr){
-      helmet.dataset.helmet = leftDivision.abbr;
-      if(typeof DFFL_APPROVED_HELMETS !== "undefined" && DFFL_APPROVED_HELMETS[leftDivision.abbr]){
-        helmet.src = DFFL_APPROVED_HELMETS[leftDivision.abbr];
-      }
-    }
-  }
-  if(cardTeams[1]){
-    const owner = cardTeams[1].querySelector(".owner-label");
-    const score = cardTeams[1].querySelector(".owner-score");
-    if(owner) owner.textContent = dfflOwnerLabel(rightOwner);
-    if(score) score.textContent = dfflFormatPoints(rightTotal);
-    const divisionLabel = cardTeams[1].querySelector(".division-label");
-    if(divisionLabel && rightDivision.abbr) divisionLabel.textContent = rightDivision.abbr;
-    const helmet = cardTeams[1].querySelector("img[data-helmet]");
-    if(helmet && rightDivision.abbr){
-      helmet.dataset.helmet = rightDivision.abbr;
-      if(typeof DFFL_APPROVED_HELMETS !== "undefined" && DFFL_APPROVED_HELMETS[rightDivision.abbr]){
-        helmet.src = DFFL_APPROVED_HELMETS[rightDivision.abbr];
-      }
-    }
-  }
-
-  const detailTeams = panel.querySelectorAll(".detail-team");
-  if(detailTeams[0]){
-    const division = detailTeams[0].querySelector(".detail-team-name b");
-    const owner = detailTeams[0].querySelector(".detail-team-name span");
-    const score = detailTeams[0].querySelector(".detail-total");
-    if(division && leftDivision.division) division.textContent = leftDivision.division.toUpperCase();
-    if(owner) owner.textContent = dfflOwnerLabel(leftOwner);
-    if(score) score.textContent = dfflFormatPoints(leftTotal);
-  }
-  if(detailTeams[1]){
-    const division = detailTeams[1].querySelector(".detail-team-name b");
-    const owner = detailTeams[1].querySelector(".detail-team-name span");
-    const score = detailTeams[1].querySelector(".detail-total");
-    if(division && rightDivision.division) division.textContent = rightDivision.division.toUpperCase();
-    if(owner) owner.textContent = dfflOwnerLabel(rightOwner);
-    if(score) score.textContent = dfflFormatPoints(rightTotal);
-  }
-
-  const matchupStatus = dfflMatchupStatus(leftScores, rightScores);
-  const statusNode = card.querySelector(".matchup-time");
-  if(statusNode) statusNode.textContent = matchupStatus;
-
-  const recapButton = panel.querySelector(".recap-link-btn");
-  if(recapButton){
-    recapButton.classList.toggle("show", matchupStatus === "FINAL");
-    recapButton.setAttribute("aria-hidden", matchupStatus === "FINAL" ? "false" : "true");
-  }
-
-  dfflBuildPlayerTable(
-    panel,
-    leftRoster,
-    rightRoster,
-    leftScores,
-    rightScores,
-    leftTotal,
-    rightTotal
-  );
+function dfflCopyRecords(){const out={};Object.keys(DFFL_RECORDS_AFTER_WEEK5).forEach(owner=>out[owner]={w:DFFL_RECORDS_AFTER_WEEK5[owner].w,l:DFFL_RECORDS_AFTER_WEEK5[owner].l});return out;}
+function dfflApplyFinalResultToRecords(records,scoreData,week){
+  (DFFL_AUTOMATION_SCHEDULE[week]||[]).forEach(pair=>{
+    const totals=dfflAutoFindScore(scoreData,pair[0],pair[1]);
+    if(totals.leftTotal>totals.rightTotal){records[pair[0]].w++;records[pair[1]].l++;}
+    else if(totals.rightTotal>totals.leftTotal){records[pair[1]].w++;records[pair[0]].l++;}
+  });
 }
-
-async function dfflLoadWeek6Production(){
-  try{
-    const cacheBust = Date.now();
-
-    /* ROSTERS LOAD FIRST AND INDEPENDENTLY.
-       This makes submitted players appear even if the Week 4 score file is still
-       empty, stale, or temporarily unavailable before live scoring starts. */
-    const rosterResponse = await fetch(
-      DFFL_ROSTER_URL + "?v=" + cacheBust,
-      { cache: "no-store" }
-    );
-
-    if(!rosterResponse.ok){
-      throw new Error("Roster JSON returned HTTP " + rosterResponse.status);
-    }
-
-    const rosterData = await rosterResponse.json();
-
-    /* Scores are optional at page-load time. Start with a clean Week 6 shell. */
-    let scoreData = {
-      week: 6,
-      lastUpdated: null,
-      matchups: {},
-      players: {}
-    };
-
-    try{
-      const scoreResponse = await fetch(
-        DFFL_SCORE_URL + "?v=" + cacheBust,
-        { cache: "no-store" }
-      );
-
-      if(scoreResponse.ok){
-        scoreData = await scoreResponse.json();
-      }else{
-        console.warn("Week 6 score JSON returned HTTP " + scoreResponse.status + "; showing rosters with 0.00 scores.");
-      }
-    }catch(scoreError){
-      console.warn("Week 6 score JSON unavailable; showing rosters with 0.00 scores.", scoreError);
-    }
-
-    /* Always render all four authoritative Week 6 pairings from the roster file.
-       Live totals are layered on only when matching Week 6 score data exists. */
-    Object.keys(DFFL_WEEK6_MATCHUPS).forEach(function(matchupId){
-      const pairing = DFFL_WEEK6_MATCHUPS[matchupId];
-      const totals = dfflFindMatchupScore(
-        scoreData,
-        pairing.leftOwner,
-        pairing.rightOwner
-      );
-
-      dfflUpdateMatchup(
-        matchupId,
-        {
-          leftOwner: pairing.leftOwner,
-          rightOwner: pairing.rightOwner,
-          leftTotal: totals.leftTotal,
-          rightTotal: totals.rightTotal
-        },
-        rosterData,
-        scoreData
-      );
-    });
-
-    /* Historical season archives stay hardcoded; do not overwrite them with Week 6 live data. */
-    const weekLabel = document.querySelector(".current-week-sub");
-    if(weekLabel){
-      if(scoreData.lastUpdated){
-        const updated = new Date(scoreData.lastUpdated);
-        const formatted = Number.isNaN(updated.getTime())
-          ? scoreData.lastUpdated
-          : updated.toLocaleString("en-US", {
-              timeZone: "America/Chicago",
-              month: "short",
-              day: "numeric",
-              hour: "numeric",
-              minute: "2-digit"
-            });
-        weekLabel.textContent = "Week 6 • Updated " + formatted + " CT";
-      }else{
-        weekLabel.textContent = "Week 6 Preview";
-      }
-    }
-
-    console.log("DFFL Week 6 rosters loaded successfully.");
-  }catch(error){
-    console.error("DFFL Week 6 roster load failed:", error);
-  }
+function dfflRecordsBeforeWeek(activeWeek){
+  const records=dfflCopyRecords();
+  for(let w=6;w<activeWeek;w++){const d=window.DFFL_AUTO_WEEK_DATA[w];if(d&&dfflAutoIsFinal(d.scores))dfflApplyFinalResultToRecords(records,d.scores,w);}
+  return records;
 }
-
-/* Week 6 live production mode. The page reads the Week 6 roster and score JSON files
-   and refreshes every two minutes without touching the hardcoded historical archives. */
-dfflLoadWeek6Production();
-setInterval(dfflLoadWeek6Production, DFFL_REFRESH_MS);
+function dfflOwnerLabel(owner,records){const r=records&&records[owner];return r?owner+" ("+r.w+"-"+r.l+")":owner;}
+function dfflSetHelmet(img,owner){
+  if(!img)return;const info=DFFL_OWNER_DIVISION[owner]||{},key=info.division;
+  if(key){img.dataset.helmet=key;img.alt=key+" helmet";if(typeof DFFL_APPROVED_HELMETS!=="undefined"&&DFFL_APPROVED_HELMETS[key])img.src=DFFL_APPROVED_HELMETS[key];}
+}
+function dfflUpdateCurrentMatchup(matchupId,leftOwner,rightOwner,rosterData,scoreData,records){
+  const card=document.getElementById("featured-matchup-"+matchupId),panel=document.getElementById("matchup-detail-"+matchupId);if(!card||!panel)return;
+  const totals=dfflAutoFindScore(scoreData,leftOwner,rightOwner),leftRoster=(rosterData.rosters&&rosterData.rosters[leftOwner])||{players:[]},rightRoster=(rosterData.rosters&&rosterData.rosters[rightOwner])||{players:[]};
+  const leftScores=(scoreData.players&&scoreData.players[leftOwner])||[],rightScores=(scoreData.players&&scoreData.players[rightOwner])||[],li=DFFL_OWNER_DIVISION[leftOwner],ri=DFFL_OWNER_DIVISION[rightOwner];
+  const teams=card.querySelectorAll(".featured-team");
+  if(teams[0]){dfflSetHelmet(teams[0].querySelector("img"),leftOwner);const o=teams[0].querySelector(".owner-label"),s=teams[0].querySelector(".owner-score");if(o)o.textContent=dfflOwnerLabel(leftOwner,records);if(s)s.textContent=dfflFormatPoints(totals.leftTotal);}
+  if(teams[1]){dfflSetHelmet(teams[1].querySelector("img"),rightOwner);const o=teams[1].querySelector(".owner-label"),s=teams[1].querySelector(".owner-score");if(o)o.textContent=dfflOwnerLabel(rightOwner,records);if(s)s.textContent=dfflFormatPoints(totals.rightTotal);}
+  card.setAttribute("aria-label","Open Week "+window.DFFL_ACTIVE_WEEK+" game details");
+  const detail=panel.querySelectorAll(".detail-team");
+  [[leftOwner,li,totals.leftTotal],[rightOwner,ri,totals.rightTotal]].forEach((v,i)=>{if(!detail[i])return;dfflSetHelmet(detail[i].querySelector("img"),v[0]);const b=detail[i].querySelector(".detail-team-name b"),s=detail[i].querySelector(".detail-team-name span"),t=detail[i].querySelector(".detail-total");if(b)b.textContent=v[1].division.toUpperCase();if(s)s.textContent=dfflOwnerLabel(v[0],records);if(t)t.textContent=dfflFormatPoints(v[2]);});
+  const title=panel.querySelector(".matchup-detail-top strong");if(title)title.textContent=li.division.toUpperCase()+" VS "+ri.division.toUpperCase();
+  const headers=panel.querySelectorAll(".matchup-player-table thead th");if(headers[0])headers[0].textContent=li.division.toUpperCase()+" PLAYER";if(headers[4])headers[4].textContent=ri.division.toUpperCase()+" PLAYER";
+  const status=dfflMatchupStatus(leftScores,rightScores,scoreData),statusNode=card.querySelector(".matchup-time");if(statusNode)statusNode.textContent=status;
+  dfflBuildPlayerTable(panel,leftRoster,rightRoster,leftScores,rightScores,totals.leftTotal,totals.rightTotal);
+}
+function dfflFindSeasonRow(week){return Array.from(document.querySelectorAll(".season-week-row")).find(row=>{const s=row.querySelector(".week-block strong");return s&&Number(s.textContent.trim())===Number(week);});}
+function dfflUpdateSeasonPairings(week){
+  const row=dfflFindSeasonRow(week),schedule=DFFL_AUTOMATION_SCHEDULE[week];if(!row||!schedule)return;
+  const boxes=row.querySelectorAll(".compact-matchup");
+  schedule.forEach((pair,i)=>{const box=boxes[i];if(!box)return;const teams=box.querySelectorAll(".compact-team");[pair[0],pair[1]].forEach((owner,j)=>{if(!teams[j])return;dfflSetHelmet(teams[j].querySelector("img"),owner);const b=teams[j].querySelector("b");if(b)b.textContent=DFFL_OWNER_DIVISION[owner].abbr;const old=teams[j].querySelector(".compact-score");if(old)old.remove();});});
+}
+function dfflMarkSeasonUpcoming(week){const row=dfflFindSeasonRow(week);if(!row)return;const status=row.querySelector(".week-status");if(status){status.className="week-status";status.innerHTML='<span class="status-icon">◷</span><span>Upcoming</span>';}}
+function dfflMarkSeasonActive(week,scoreData){const row=dfflFindSeasonRow(week);if(!row)return;const status=row.querySelector(".week-status"),live=scoreData&&String(scoreData.status||"").toLowerCase()==="live";if(status){status.className=live?"week-status live":"week-status";status.innerHTML=live?'<span class="status-icon">●</span><span>LIVE</span>':'<span class="status-icon">●</span><span>THIS WEEK</span>';}}
+function dfflMarkSeasonFinal(week,scoreData){
+  const row=dfflFindSeasonRow(week);if(!row)return;row.classList.add("week1-results-row","auto-final-results-row");
+  const schedule=DFFL_AUTOMATION_SCHEDULE[week]||[],boxes=row.querySelectorAll(".compact-matchup");
+  schedule.forEach((pair,i)=>{const box=boxes[i];if(!box)return;const totals=dfflAutoFindScore(scoreData,pair[0],pair[1]),teams=box.querySelectorAll(".compact-team");[totals.leftTotal,totals.rightTotal].forEach((total,j)=>{if(!teams[j])return;let score=teams[j].querySelector(".compact-score");if(!score){score=document.createElement("span");score.className="compact-score";teams[j].appendChild(score);}score.textContent=dfflFormatPoints(total);});box.setAttribute("role","button");box.setAttribute("tabindex","0");box.onclick=e=>{e.preventDefault();e.stopPropagation();dfflOpenAutoFinal(week,i+1);};box.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();dfflOpenAutoFinal(week,i+1);}};});
+  const status=row.querySelector(".week-status");if(status){status.className="week-status final";status.innerHTML='<span class="status-icon">✓</span><span>FINAL</span>';}
+}
+async function dfflOpenAutoFinal(week,matchupId){
+  const data=window.DFFL_AUTO_WEEK_DATA[week]||{},scores=data.scores||await dfflAutoFetchJson(dfflAutoJsonUrl(week,"scores")),rosters=data.rosters||await dfflAutoFetchJson(dfflAutoJsonUrl(week,"rosters")),pair=(DFFL_AUTOMATION_SCHEDULE[week]||[])[matchupId-1];
+  if(!scores||!rosters||!pair)return;
+  const source=document.getElementById("matchup-detail-"+matchupId);if(!source)return;
+  const panel=source.cloneNode(true);panel.removeAttribute("id");panel.classList.add("active");
+  const records=dfflRecordsBeforeWeek(week),leftOwner=pair[0],rightOwner=pair[1],li=DFFL_OWNER_DIVISION[leftOwner],ri=DFFL_OWNER_DIVISION[rightOwner],totals=dfflAutoFindScore(scores,leftOwner,rightOwner),lr=(rosters.rosters&&rosters.rosters[leftOwner])||{players:[]},rr=(rosters.rosters&&rosters.rosters[rightOwner])||{players:[]},ls=(scores.players&&scores.players[leftOwner])||[],rs=(scores.players&&scores.players[rightOwner])||[];
+  const hide=panel.querySelector(".matchup-detail-hide");if(hide){hide.setAttribute("onclick","closeWeek1Final()");hide.textContent="HIDE DETAILS ⌃";}
+  const kicker=panel.querySelector(".matchup-detail-kicker");if(kicker)kicker.textContent="Week "+week+" • Matchup "+matchupId+" Final";
+  const title=panel.querySelector(".matchup-detail-top strong");if(title)title.textContent=li.division.toUpperCase()+" VS "+ri.division.toUpperCase();
+  const detail=panel.querySelectorAll(".detail-team");[[leftOwner,li,totals.leftTotal],[rightOwner,ri,totals.rightTotal]].forEach((v,i)=>{if(!detail[i])return;dfflSetHelmet(detail[i].querySelector("img"),v[0]);const b=detail[i].querySelector(".detail-team-name b"),s=detail[i].querySelector(".detail-team-name span"),t=detail[i].querySelector(".detail-total");if(b)b.textContent=v[1].division.toUpperCase();if(s)s.textContent=dfflOwnerLabel(v[0],records);if(t)t.textContent=dfflFormatPoints(v[2]);});
+  const headers=panel.querySelectorAll(".matchup-player-table thead th");if(headers[0])headers[0].textContent=li.division.toUpperCase()+" PLAYER";if(headers[4])headers[4].textContent=ri.division.toUpperCase()+" PLAYER";
+  dfflBuildPlayerTable(panel,lr,rr,ls,rs,totals.leftTotal,totals.rightTotal);
+  panel.querySelectorAll(".player-game-status").forEach(s=>{s.textContent="FINAL";s.className="player-game-status final";});
+  const holder=document.getElementById("week1FinalContent"),modal=document.getElementById("week1FinalModal");if(holder&&modal){holder.innerHTML="";holder.appendChild(panel);modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}
+}
+async function dfflDetermineActiveWeek(){
+  window.DFFL_AUTO_WEEK_DATA={};let active=6,allFinal=true;
+  for(let w=6;w<=10;w++){
+    const scores=await dfflAutoFetchJson(dfflAutoJsonUrl(w,"scores"));window.DFFL_AUTO_WEEK_DATA[w]={scores:scores,rosters:null};
+    if(!dfflAutoIsFinal(scores)){active=w;allFinal=false;break;}
+    active=w;
+  }
+  window.DFFL_ACTIVE_WEEK=active;window.DFFL_REGULAR_SEASON_COMPLETE=allFinal&&active===10;return active;
+}
+async function dfflLoadAutomaticMatchups(){
+  const active=await dfflDetermineActiveWeek();
+  for(let w=6;w<=10;w++)dfflUpdateSeasonPairings(w);
+  for(let w=6;w<active;w++){
+    let data=window.DFFL_AUTO_WEEK_DATA[w]||{};if(!data.scores)data.scores=await dfflAutoFetchJson(dfflAutoJsonUrl(w,"scores"));data.rosters=await dfflAutoFetchJson(dfflAutoJsonUrl(w,"rosters"));window.DFFL_AUTO_WEEK_DATA[w]=data;if(dfflAutoIsFinal(data.scores))dfflMarkSeasonFinal(w,data.scores);
+  }
+  if(window.DFFL_REGULAR_SEASON_COMPLETE){
+    const data=window.DFFL_AUTO_WEEK_DATA[10]||{};data.rosters=await dfflAutoFetchJson(dfflAutoJsonUrl(10,"rosters"));window.DFFL_AUTO_WEEK_DATA[10]=data;dfflMarkSeasonFinal(10,data.scores);const label=document.querySelector(".current-week-sub");if(label)label.textContent="Regular Season Complete";return;
+  }
+  const rosterData=await dfflAutoFetchJson(dfflAutoJsonUrl(active,"rosters"))||{week:active,locked:false,rosters:{}};
+  const scoreData=(window.DFFL_AUTO_WEEK_DATA[active]&&window.DFFL_AUTO_WEEK_DATA[active].scores)||await dfflAutoFetchJson(dfflAutoJsonUrl(active,"scores"))||{week:active,status:"pending",lastUpdated:null,matchups:{},players:{}};
+  window.DFFL_AUTO_WEEK_DATA[active]={scores:scoreData,rosters:rosterData};
+  const records=dfflRecordsBeforeWeek(active),schedule=DFFL_AUTOMATION_SCHEDULE[active]||[];
+  schedule.forEach((pair,i)=>dfflUpdateCurrentMatchup(String(i+1),pair[0],pair[1],rosterData,scoreData,records));
+  const label=document.querySelector(".current-week-sub");
+  if(label){
+    if(scoreData.lastUpdated){const updated=new Date(scoreData.lastUpdated),formatted=Number.isNaN(updated.getTime())?scoreData.lastUpdated:updated.toLocaleString("en-US",{timeZone:"America/Chicago",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});label.textContent="Week "+active+" • Updated "+formatted+" CT";}
+    else label.textContent="Week "+active+" Preview";
+  }
+  dfflMarkSeasonActive(active,scoreData);for(let w=active+1;w<=10;w++)dfflMarkSeasonUpcoming(w);
+}
+document.addEventListener("DOMContentLoaded",function(){dfflLoadAutomaticMatchups();setInterval(dfflLoadAutomaticMatchups,DFFL_REFRESH_MS);});
 </script>
 <script id="dfflPlayerBoxscoreLinks">
 /* ===== HIDDEN PLAYER -> ESPN BOXSCORE LINKS =====
    Visual design is unchanged. Tapping/clicking a player cell opens that
-   player's Week 6 NFL game box score in a new tab.
+   player's active-week NFL game box score in a new tab.
 */
-const DFFL_ESPN_WEEK6_DATES = [
-  "20261015","20261016","20261017","20261018","20261019"
-];
+const DFFL_ESPN_DATES_BY_WEEK = {
+  6:["20261015","20261016","20261017","20261018","20261019"],
+  7:["20261022","20261023","20261024","20261025","20261026"],
+  8:["20261029","20261030","20261031","20261101","20261102"],
+  9:["20261105","20261106","20261107","20261108","20261109"],
+  10:["20261112","20261113","20261114","20261115","20261116"]
+};
 
 const DFFL_NFL_TEAM_CODES = new Set([
   "ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE",
@@ -1365,7 +1187,7 @@ function dfflBuildEspnGameMap(){
   if(dfflEspnGameMapPromise) return dfflEspnGameMapPromise;
 
   dfflEspnGameMapPromise = Promise.all(
-    DFFL_ESPN_WEEK6_DATES.map(async function(date){
+    (DFFL_ESPN_DATES_BY_WEEK[window.DFFL_ACTIVE_WEEK || 6] || []).map(async function(date){
       try{
         const url =
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=" +
