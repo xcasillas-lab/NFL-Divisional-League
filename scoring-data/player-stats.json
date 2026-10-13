@@ -1,9 +1,9 @@
 {
   "season": 2026,
-  "statsThroughWeek": 4,
+  "statsThroughWeek": 5,
   "sourceSheet": "Combined Weeks",
   "scoringField": "DFFL Fantasy Points",
-  "playerCount": 412,
+  "playerCount": 436,
   "positionsIncluded": [
     "QB",
     "RB",
@@ -17,16 +17,17 @@
       "position": "QB",
       "nflTeam": "BUF",
       "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 114.96,
-      "avgPoints": 28.74,
+      "gamesPlayed": 5,
+      "totalPoints": 146.46,
+      "avgPoints": 29.29,
       "bestWeek": 2,
       "bestWeekPoints": 40.82,
       "weeklyPoints": {
         "1": 35.66,
         "2": 40.82,
         "3": 18.96,
-        "4": 19.52
+        "4": 19.52,
+        "5": 31.5
       }
     },
     {
@@ -34,16 +35,17 @@
       "position": "RB",
       "nflTeam": "DET",
       "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 105.0,
-      "avgPoints": 26.25,
+      "gamesPlayed": 5,
+      "totalPoints": 140.2,
+      "avgPoints": 28.04,
       "bestWeek": 3,
       "bestWeekPoints": 37.9,
       "weeklyPoints": {
         "1": 31.1,
         "2": 20.3,
         "3": 37.9,
-        "4": 15.7
+        "4": 15.7,
+        "5": 35.2
       }
     },
     {
@@ -64,85 +66,39 @@
       }
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "nflTeam": "SF",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 101.48,
-      "avgPoints": 25.37,
-      "bestWeek": 3,
-      "bestWeekPoints": 31.28,
-      "weeklyPoints": {
-        "1": 22.1,
-        "2": 28.48,
-        "3": 31.28,
-        "4": 19.62
-      }
-    },
-    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "nflTeam": "SEA",
       "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 100.66,
-      "avgPoints": 25.16,
+      "gamesPlayed": 5,
+      "totalPoints": 120.96,
+      "avgPoints": 24.19,
       "bestWeek": 2,
       "bestWeekPoints": 38.0,
       "weeklyPoints": {
         "1": 22.2,
         "2": 38.0,
         "3": 30.36,
-        "4": 10.1
+        "4": 10.1,
+        "5": 20.3
       }
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "nflTeam": "ATL",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 98.4,
-      "avgPoints": 24.6,
-      "bestWeek": 3,
-      "bestWeekPoints": 34.3,
-      "weeklyPoints": {
-        "1": 27.3,
-        "2": 9.6,
-        "3": 34.3,
-        "4": 27.2
-      }
-    },
-    {
-      "name": "Case Keenum",
+      "name": "Brock Purdy",
       "position": "QB",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 24.48,
-      "avgPoints": 24.48,
+      "nflTeam": "SF",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 118.64,
+      "avgPoints": 23.73,
       "bestWeek": 3,
-      "bestWeekPoints": 24.48,
+      "bestWeekPoints": 31.28,
       "weeklyPoints": {
-        "3": 24.48
-      }
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 93.7,
-      "avgPoints": 23.43,
-      "bestWeek": 4,
-      "bestWeekPoints": 32.8,
-      "weeklyPoints": {
-        "1": 12.9,
-        "2": 31.3,
-        "3": 16.7,
-        "4": 32.8
+        "1": 22.1,
+        "2": 28.48,
+        "3": 31.28,
+        "4": 19.62,
+        "5": 17.16
       }
     },
     {
@@ -163,6 +119,24 @@
       }
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "nflTeam": "DET",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 115.0,
+      "avgPoints": 23.0,
+      "bestWeek": 2,
+      "bestWeekPoints": 29.78,
+      "weeklyPoints": {
+        "1": 16.44,
+        "2": 29.78,
+        "3": 19.36,
+        "4": 20.48,
+        "5": 28.94
+      }
+    },
+    {
       "name": "Caleb Williams",
       "position": "QB",
       "nflTeam": "CHI",
@@ -178,35 +152,21 @@
       }
     },
     {
-      "name": "Nico Collins",
-      "position": "WR",
-      "nflTeam": "HOU",
-      "division": "AFC South",
-      "gamesPlayed": 2,
-      "totalPoints": 45.0,
-      "avgPoints": 22.5,
-      "bestWeek": 4,
-      "bestWeekPoints": 27.3,
-      "weeklyPoints": {
-        "1": 17.7,
-        "4": 27.3
-      }
-    },
-    {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "nflTeam": "NO",
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "nflTeam": "ATL",
       "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 88.32,
-      "avgPoints": 22.08,
-      "bestWeek": 1,
-      "bestWeekPoints": 25.2,
+      "gamesPlayed": 5,
+      "totalPoints": 112.2,
+      "avgPoints": 22.44,
+      "bestWeek": 3,
+      "bestWeekPoints": 34.3,
       "weeklyPoints": {
-        "1": 25.2,
-        "2": 22.38,
-        "3": 24.8,
-        "4": 15.94
+        "1": 27.3,
+        "2": 9.6,
+        "3": 34.3,
+        "4": 27.2,
+        "5": 13.8
       }
     },
     {
@@ -214,33 +174,33 @@
       "position": "RB",
       "nflTeam": "BAL",
       "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 87.3,
-      "avgPoints": 21.82,
+      "gamesPlayed": 5,
+      "totalPoints": 107.8,
+      "avgPoints": 21.56,
       "bestWeek": 1,
       "bestWeekPoints": 34.8,
       "weeklyPoints": {
         "1": 34.8,
         "2": 16.2,
         "3": 21.4,
-        "4": 14.9
+        "4": 14.9,
+        "5": 20.5
       }
     },
     {
-      "name": "Jared Goff",
+      "name": "Jayden Daniels",
       "position": "QB",
-      "nflTeam": "DET",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 86.06,
-      "avgPoints": 21.52,
-      "bestWeek": 2,
-      "bestWeekPoints": 29.78,
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 64.66,
+      "avgPoints": 21.55,
+      "bestWeek": 5,
+      "bestWeekPoints": 32.26,
       "weeklyPoints": {
-        "1": 16.44,
-        "2": 29.78,
-        "3": 19.36,
-        "4": 20.48
+        "1": 17.66,
+        "2": 14.74,
+        "5": 32.26
       }
     },
     {
@@ -261,69 +221,37 @@
       }
     },
     {
-      "name": "Kirk Cousins",
+      "name": "Joe Burrow",
       "position": "QB",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 82.84,
-      "avgPoints": 20.71,
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 104.24,
+      "avgPoints": 20.85,
       "bestWeek": 4,
-      "bestWeekPoints": 23.6,
+      "bestWeekPoints": 25.72,
       "weeklyPoints": {
-        "1": 15.8,
-        "2": 21.22,
-        "3": 22.22,
-        "4": 23.6
+        "1": 15.16,
+        "2": 16.18,
+        "3": 22.58,
+        "4": 25.72,
+        "5": 24.6
       }
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 82.2,
-      "avgPoints": 20.55,
-      "bestWeek": 2,
-      "bestWeekPoints": 29.76,
+      "name": "Puka Nacua",
+      "position": "WR",
+      "nflTeam": "LA",
+      "division": "NFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 62.3,
+      "avgPoints": 20.77,
+      "bestWeek": 5,
+      "bestWeekPoints": 29.2,
       "weeklyPoints": {
-        "1": 15.4,
-        "2": 29.76,
-        "3": 18.94,
-        "4": 18.1
-      }
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "nflTeam": "IND",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 81.2,
-      "avgPoints": 20.3,
-      "bestWeek": 2,
-      "bestWeekPoints": 27.2,
-      "weeklyPoints": {
-        "1": 23.6,
-        "2": 27.2,
-        "3": 8.2,
-        "4": 22.2
-      }
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 40.2,
-      "avgPoints": 20.1,
-      "bestWeek": 3,
-      "bestWeekPoints": 22.6,
-      "weeklyPoints": {
-        "3": 22.6,
-        "4": 17.6
+        "1": 9.9,
+        "4": 23.2,
+        "5": 29.2
       }
     },
     {
@@ -344,20 +272,73 @@
       }
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 79.64,
-      "avgPoints": 19.91,
-      "bestWeek": 4,
-      "bestWeekPoints": 25.72,
+      "name": "Brock Bowers",
+      "position": "TE",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 59.2,
+      "avgPoints": 19.73,
+      "bestWeek": 3,
+      "bestWeekPoints": 22.6,
       "weeklyPoints": {
-        "1": 15.16,
-        "2": 16.18,
-        "3": 22.58,
-        "4": 25.72
+        "3": 22.6,
+        "4": 17.6,
+        "5": 19.0
+      }
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 96.84,
+      "avgPoints": 19.37,
+      "bestWeek": 2,
+      "bestWeekPoints": 29.76,
+      "weeklyPoints": {
+        "1": 15.4,
+        "2": 29.76,
+        "3": 18.94,
+        "4": 18.1,
+        "5": 14.64
+      }
+    },
+    {
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 96.56,
+      "avgPoints": 19.31,
+      "bestWeek": 4,
+      "bestWeekPoints": 23.6,
+      "weeklyPoints": {
+        "1": 15.8,
+        "2": 21.22,
+        "3": 22.22,
+        "4": 23.6,
+        "5": 13.72
+      }
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 96.4,
+      "avgPoints": 19.28,
+      "bestWeek": 1,
+      "bestWeekPoints": 29.7,
+      "weeklyPoints": {
+        "1": 29.7,
+        "2": 12.1,
+        "3": 19.1,
+        "4": 6.2,
+        "5": 29.3
       }
     },
     {
@@ -365,66 +346,89 @@
       "position": "RB",
       "nflTeam": "LA",
       "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 79.2,
-      "avgPoints": 19.8,
+      "gamesPlayed": 5,
+      "totalPoints": 95.8,
+      "avgPoints": 19.16,
       "bestWeek": 4,
       "bestWeekPoints": 31.7,
       "weeklyPoints": {
         "1": 14.0,
         "2": 14.7,
         "3": 18.8,
-        "4": 31.7
+        "4": 31.7,
+        "5": 16.6
       }
     },
     {
-      "name": "Zay Flowers",
+      "name": "CeeDee Lamb",
       "position": "WR",
-      "nflTeam": "BAL",
-      "division": "AFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 58.2,
-      "avgPoints": 19.4,
-      "bestWeek": 1,
-      "bestWeekPoints": 23.5,
-      "weeklyPoints": {
-        "1": 23.5,
-        "3": 12.9,
-        "4": 21.8
-      }
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "nflTeam": "DET",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 75.8,
-      "avgPoints": 18.95,
-      "bestWeek": 2,
-      "bestWeekPoints": 30.7,
-      "weeklyPoints": {
-        "1": 23.7,
-        "2": 30.7,
-        "3": 9.9,
-        "4": 11.5
-      }
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
       "nflTeam": "DAL",
       "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 74.3,
-      "avgPoints": 18.57,
+      "gamesPlayed": 5,
+      "totalPoints": 95.6,
+      "avgPoints": 19.12,
       "bestWeek": 4,
-      "bestWeekPoints": 28.8,
+      "bestWeekPoints": 32.8,
       "weeklyPoints": {
-        "1": 21.7,
-        "2": 6.5,
-        "3": 17.3,
-        "4": 28.8
+        "1": 12.9,
+        "2": 31.3,
+        "3": 16.7,
+        "4": 32.8,
+        "5": 1.9
+      }
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "nflTeam": "LA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 94.98,
+      "avgPoints": 19.0,
+      "bestWeek": 2,
+      "bestWeekPoints": 27.98,
+      "weeklyPoints": {
+        "1": 5.1,
+        "2": 27.98,
+        "3": 22.9,
+        "4": 11.68,
+        "5": 27.32
+      }
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 94.22,
+      "avgPoints": 18.84,
+      "bestWeek": 5,
+      "bestWeekPoints": 39.46,
+      "weeklyPoints": {
+        "1": 12.82,
+        "2": 9.02,
+        "3": 5.76,
+        "4": 27.16,
+        "5": 39.46
+      }
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 93.12,
+      "avgPoints": 18.62,
+      "bestWeek": 5,
+      "bestWeekPoints": 25.28,
+      "weeklyPoints": {
+        "1": 20.48,
+        "2": 13.8,
+        "3": 19.48,
+        "4": 14.08,
+        "5": 25.28
       }
     },
     {
@@ -445,54 +449,198 @@
       }
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 90.9,
+      "avgPoints": 18.18,
+      "bestWeek": 2,
+      "bestWeekPoints": 27.2,
+      "weeklyPoints": {
+        "1": 23.6,
+        "2": 27.2,
+        "3": 8.2,
+        "4": 22.2,
+        "5": 9.7
+      }
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
       "nflTeam": "NO",
       "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 72.6,
-      "avgPoints": 18.15,
+      "gamesPlayed": 5,
+      "totalPoints": 90.16,
+      "avgPoints": 18.03,
       "bestWeek": 1,
-      "bestWeekPoints": 23.2,
+      "bestWeekPoints": 25.2,
       "weeklyPoints": {
-        "1": 23.2,
-        "2": 18.6,
-        "3": 15.2,
-        "4": 15.6
+        "1": 25.2,
+        "2": 22.38,
+        "3": 24.8,
+        "4": 15.94,
+        "5": 1.84
       }
     },
     {
-      "name": "Jalen Hurts",
+      "name": "Trevor Lawrence",
       "position": "QB",
-      "nflTeam": "PHI",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 89.86,
+      "avgPoints": 17.97,
+      "bestWeek": 1,
+      "bestWeekPoints": 26.1,
+      "weeklyPoints": {
+        "1": 26.1,
+        "2": 7.16,
+        "3": 20.78,
+        "4": 13.08,
+        "5": 22.74
+      }
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 89.18,
+      "avgPoints": 17.84,
+      "bestWeek": 4,
+      "bestWeekPoints": 23.08,
+      "weeklyPoints": {
+        "1": 16.46,
+        "2": 17.02,
+        "3": 11.68,
+        "4": 23.08,
+        "5": 20.94
+      }
+    },
+    {
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 88.8,
+      "avgPoints": 17.76,
+      "bestWeek": 5,
+      "bestWeekPoints": 25.78,
+      "weeklyPoints": {
+        "1": 16.48,
+        "2": 7.5,
+        "3": 25.6,
+        "4": 13.44,
+        "5": 25.78
+      }
+    },
+    {
+      "name": "Nico Collins",
+      "position": "WR",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 3,
+      "totalPoints": 53.1,
+      "avgPoints": 17.7,
+      "bestWeek": 4,
+      "bestWeekPoints": 27.3,
+      "weeklyPoints": {
+        "1": 17.7,
+        "4": 27.3,
+        "5": 8.1
+      }
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "nflTeam": "DAL",
       "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 70.02,
+      "gamesPlayed": 5,
+      "totalPoints": 87.5,
       "avgPoints": 17.5,
-      "bestWeek": 1,
-      "bestWeekPoints": 24.72,
+      "bestWeek": 4,
+      "bestWeekPoints": 28.8,
       "weeklyPoints": {
-        "1": 24.72,
-        "2": 18.16,
-        "3": 13.62,
-        "4": 13.52
+        "1": 21.7,
+        "2": 6.5,
+        "3": 17.3,
+        "4": 28.8,
+        "5": 13.2
       }
     },
     {
-      "name": "Deshaun Watson",
+      "name": "Aaron Rodgers",
       "position": "QB",
-      "nflTeam": "CLE",
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 87.16,
+      "avgPoints": 17.43,
+      "bestWeek": 4,
+      "bestWeekPoints": 23.96,
+      "weeklyPoints": {
+        "1": 12.54,
+        "2": 4.98,
+        "3": 23.68,
+        "4": 23.96,
+        "5": 22.0
+      }
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "nflTeam": "BAL",
       "division": "AFC North",
       "gamesPlayed": 4,
-      "totalPoints": 68.9,
-      "avgPoints": 17.23,
-      "bestWeek": 3,
-      "bestWeekPoints": 20.26,
+      "totalPoints": 68.8,
+      "avgPoints": 17.2,
+      "bestWeek": 1,
+      "bestWeekPoints": 23.5,
       "weeklyPoints": {
-        "1": 15.0,
-        "2": 19.72,
-        "3": 20.26,
-        "4": 13.92
+        "1": 23.5,
+        "3": 12.9,
+        "4": 21.8,
+        "5": 10.6
+      }
+    },
+    {
+      "name": "James Cook",
+      "position": "RB",
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 85.8,
+      "avgPoints": 17.16,
+      "bestWeek": 5,
+      "bestWeekPoints": 22.3,
+      "weeklyPoints": {
+        "1": 8.4,
+        "2": 20.4,
+        "3": 19.4,
+        "4": 15.3,
+        "5": 22.3
+      }
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "nflTeam": "DET",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 85.7,
+      "avgPoints": 17.14,
+      "bestWeek": 2,
+      "bestWeekPoints": 30.7,
+      "weeklyPoints": {
+        "1": 23.7,
+        "2": 30.7,
+        "3": 9.9,
+        "4": 11.5,
+        "5": 9.9
       }
     },
     {
@@ -511,103 +659,39 @@
       }
     },
     {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "nflTeam": "HOU",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 68.24,
-      "avgPoints": 17.06,
-      "bestWeek": 4,
-      "bestWeekPoints": 23.08,
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 83.5,
+      "avgPoints": 16.7,
+      "bestWeek": 5,
+      "bestWeekPoints": 33.8,
       "weeklyPoints": {
-        "1": 16.46,
-        "2": 17.02,
-        "3": 11.68,
-        "4": 23.08
-      }
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "nflTeam": "GB",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 67.84,
-      "avgPoints": 16.96,
-      "bestWeek": 1,
-      "bestWeekPoints": 20.48,
-      "weeklyPoints": {
-        "1": 20.48,
-        "2": 13.8,
-        "3": 19.48,
-        "4": 14.08
-      }
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "nflTeam": "LA",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 67.66,
-      "avgPoints": 16.91,
-      "bestWeek": 2,
-      "bestWeekPoints": 27.98,
-      "weeklyPoints": {
-        "1": 5.1,
-        "2": 27.98,
-        "3": 22.9,
-        "4": 11.68
-      }
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 67.12,
-      "avgPoints": 16.78,
-      "bestWeek": 1,
-      "bestWeekPoints": 26.1,
-      "weeklyPoints": {
-        "1": 26.1,
-        "2": 7.16,
-        "3": 20.78,
-        "4": 13.08
-      }
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "nflTeam": "GB",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 67.1,
-      "avgPoints": 16.77,
-      "bestWeek": 1,
-      "bestWeekPoints": 29.7,
-      "weeklyPoints": {
-        "1": 29.7,
-        "2": 12.1,
+        "1": 7.8,
+        "2": 8.7,
         "3": 19.1,
-        "4": 6.2
+        "4": 14.1,
+        "5": 33.8
       }
     },
     {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "nflTeam": "LA",
-      "division": "NFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 33.1,
-      "avgPoints": 16.55,
-      "bestWeek": 4,
-      "bestWeekPoints": 23.2,
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "nflTeam": "PHI",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 83.02,
+      "avgPoints": 16.6,
+      "bestWeek": 1,
+      "bestWeekPoints": 24.72,
       "weeklyPoints": {
-        "1": 9.9,
-        "4": 23.2
+        "1": 24.72,
+        "2": 18.16,
+        "3": 13.62,
+        "4": 13.52,
+        "5": 13.0
       }
     },
     {
@@ -615,99 +699,17 @@
       "position": "RB",
       "nflTeam": "SF",
       "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 66.0,
-      "avgPoints": 16.5,
+      "gamesPlayed": 5,
+      "totalPoints": 81.8,
+      "avgPoints": 16.36,
       "bestWeek": 2,
       "bestWeekPoints": 20.6,
       "weeklyPoints": {
         "1": 11.3,
         "2": 20.6,
         "3": 19.6,
-        "4": 14.5
-      }
-    },
-    {
-      "name": "Aaron Rodgers",
-      "position": "QB",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 65.16,
-      "avgPoints": 16.29,
-      "bestWeek": 4,
-      "bestWeekPoints": 23.96,
-      "weeklyPoints": {
-        "1": 12.54,
-        "2": 4.98,
-        "3": 23.68,
-        "4": 23.96
-      }
-    },
-    {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 32.4,
-      "avgPoints": 16.2,
-      "bestWeek": 1,
-      "bestWeekPoints": 17.66,
-      "weeklyPoints": {
-        "1": 17.66,
-        "2": 14.74
-      }
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 64.4,
-      "avgPoints": 16.1,
-      "bestWeek": 1,
-      "bestWeekPoints": 29.7,
-      "weeklyPoints": {
-        "1": 29.7,
-        "2": 8.3,
-        "3": 10.8,
-        "4": 15.6
-      }
-    },
-    {
-      "name": "James Cook",
-      "position": "RB",
-      "nflTeam": "BUF",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 63.5,
-      "avgPoints": 15.88,
-      "bestWeek": 2,
-      "bestWeekPoints": 20.4,
-      "weeklyPoints": {
-        "1": 8.4,
-        "2": 20.4,
-        "3": 19.4,
-        "4": 15.3
-      }
-    },
-    {
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 63.02,
-      "avgPoints": 15.76,
-      "bestWeek": 3,
-      "bestWeekPoints": 25.6,
-      "weeklyPoints": {
-        "1": 16.48,
-        "2": 7.5,
-        "3": 25.6,
-        "4": 13.44
+        "4": 14.5,
+        "5": 15.8
       }
     },
     {
@@ -715,16 +717,53 @@
       "position": "WR",
       "nflTeam": "LA",
       "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 62.0,
-      "avgPoints": 15.5,
+      "gamesPlayed": 5,
+      "totalPoints": 81.6,
+      "avgPoints": 16.32,
       "bestWeek": 2,
       "bestWeekPoints": 35.5,
       "weeklyPoints": {
         "1": 4.1,
         "2": 35.5,
         "3": 17.2,
-        "4": 5.2
+        "4": 5.2,
+        "5": 19.6
+      }
+    },
+    {
+      "name": "Deshaun Watson",
+      "position": "QB",
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 81.1,
+      "avgPoints": 16.22,
+      "bestWeek": 3,
+      "bestWeekPoints": 20.26,
+      "weeklyPoints": {
+        "1": 15.0,
+        "2": 19.72,
+        "3": 20.26,
+        "4": 13.92,
+        "5": 12.2
+      }
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "nflTeam": "NO",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 79.2,
+      "avgPoints": 15.84,
+      "bestWeek": 1,
+      "bestWeekPoints": 23.2,
+      "weeklyPoints": {
+        "1": 23.2,
+        "2": 18.6,
+        "3": 15.2,
+        "4": 15.6,
+        "5": 6.6
       }
     },
     {
@@ -745,104 +784,53 @@
       }
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "nflTeam": "DEN",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 60.26,
-      "avgPoints": 15.06,
-      "bestWeek": 3,
-      "bestWeekPoints": 25.14,
-      "weeklyPoints": {
-        "1": 6.44,
-        "2": 15.12,
-        "3": 25.14,
-        "4": 13.56
-      }
-    },
-    {
-      "name": "Geno Smith",
-      "position": "QB",
-      "nflTeam": "NYJ",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 59.68,
-      "avgPoints": 14.92,
-      "bestWeek": 3,
-      "bestWeekPoints": 26.04,
-      "weeklyPoints": {
-        "1": 9.3,
-        "2": 15.58,
-        "3": 26.04,
-        "4": 8.76
-      }
-    },
-    {
-      "name": "Sam Darnold",
-      "position": "QB",
-      "nflTeam": "SEA",
-      "division": "NFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 44.5,
-      "avgPoints": 14.83,
-      "bestWeek": 3,
-      "bestWeekPoints": 29.66,
-      "weeklyPoints": {
-        "1": 0.52,
-        "3": 29.66,
-        "4": 14.32
-      }
-    },
-    {
-      "name": "Cameron Ward",
-      "position": "QB",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 58.74,
-      "avgPoints": 14.69,
-      "bestWeek": 2,
-      "bestWeekPoints": 20.02,
-      "weeklyPoints": {
-        "1": 11.7,
-        "2": 20.02,
-        "3": 10.44,
-        "4": 16.58
-      }
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 58.6,
-      "avgPoints": 14.65,
-      "bestWeek": 4,
-      "bestWeekPoints": 21.2,
-      "weeklyPoints": {
-        "1": 7.4,
-        "2": 12.0,
-        "3": 18.0,
-        "4": 21.2
-      }
-    },
-    {
       "name": "D'Andre Swift",
       "position": "RB",
       "nflTeam": "CHI",
       "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 58.5,
-      "avgPoints": 14.62,
+      "gamesPlayed": 5,
+      "totalPoints": 73.8,
+      "avgPoints": 14.76,
       "bestWeek": 1,
       "bestWeekPoints": 31.9,
       "weeklyPoints": {
         "1": 31.9,
         "2": 10.4,
         "3": 9.8,
-        "4": 6.4
+        "4": 6.4,
+        "5": 15.3
+      }
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 73.6,
+      "avgPoints": 14.72,
+      "bestWeek": 1,
+      "bestWeekPoints": 29.7,
+      "weeklyPoints": {
+        "1": 29.7,
+        "2": 8.3,
+        "3": 10.8,
+        "4": 15.6,
+        "5": 9.2
+      }
+    },
+    {
+      "name": "Teagan Quitoriano",
+      "position": "TE",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 14.5,
+      "avgPoints": 14.5,
+      "bestWeek": 5,
+      "bestWeekPoints": 14.5,
+      "weeklyPoints": {
+        "5": 14.5
       }
     },
     {
@@ -862,18 +850,21 @@
       }
     },
     {
-      "name": "Noah Fant",
-      "position": "TE",
-      "nflTeam": "NO",
+      "name": "Mar'Keise Irving",
+      "position": "RB",
+      "nflTeam": "TB",
       "division": "NFC South",
-      "gamesPlayed": 2,
-      "totalPoints": 28.6,
-      "avgPoints": 14.3,
-      "bestWeek": 3,
-      "bestWeekPoints": 17.3,
+      "gamesPlayed": 5,
+      "totalPoints": 71.2,
+      "avgPoints": 14.24,
+      "bestWeek": 5,
+      "bestWeekPoints": 30.5,
       "weeklyPoints": {
-        "1": 11.3,
-        "3": 17.3
+        "1": 16.8,
+        "2": 11.0,
+        "3": 6.8,
+        "4": 6.1,
+        "5": 30.5
       }
     },
     {
@@ -894,20 +885,54 @@
       }
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "nflTeam": "SF",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 56.4,
-      "avgPoints": 14.1,
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 70.9,
+      "avgPoints": 14.18,
       "bestWeek": 3,
-      "bestWeekPoints": 23.2,
+      "bestWeekPoints": 21.7,
       "weeklyPoints": {
-        "1": 2.2,
-        "2": 16.0,
-        "3": 23.2,
-        "4": 15.0
+        "1": 10.9,
+        "2": 14.2,
+        "3": 21.7,
+        "4": 4.2,
+        "5": 19.9
+      }
+    },
+    {
+      "name": "Parker Washington",
+      "position": "WR",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 70.5,
+      "avgPoints": 14.1,
+      "bestWeek": 5,
+      "bestWeekPoints": 27.4,
+      "weeklyPoints": {
+        "1": 16.8,
+        "2": 13.3,
+        "3": 11.5,
+        "4": 1.5,
+        "5": 27.4
+      }
+    },
+    {
+      "name": "Tyler Huntley",
+      "position": "QB",
+      "nflTeam": "BAL",
+      "division": "AFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 28.16,
+      "avgPoints": 14.08,
+      "bestWeek": 5,
+      "bestWeekPoints": 24.04,
+      "weeklyPoints": {
+        "4": 4.12,
+        "5": 24.04
       }
     },
     {
@@ -915,14 +940,86 @@
       "position": "QB",
       "nflTeam": "ATL",
       "division": "NFC South",
-      "gamesPlayed": 2,
-      "totalPoints": 27.76,
-      "avgPoints": 13.88,
+      "gamesPlayed": 3,
+      "totalPoints": 42.16,
+      "avgPoints": 14.05,
       "bestWeek": 3,
       "bestWeekPoints": 15.04,
       "weeklyPoints": {
         "3": 15.04,
-        "4": 12.72
+        "4": 12.72,
+        "5": 14.4
+      }
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 69.8,
+      "avgPoints": 13.96,
+      "bestWeek": 1,
+      "bestWeekPoints": 20.0,
+      "weeklyPoints": {
+        "1": 20.0,
+        "2": 14.1,
+        "3": 12.0,
+        "4": 6.6,
+        "5": 17.1
+      }
+    },
+    {
+      "name": "Geno Smith",
+      "position": "QB",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 69.66,
+      "avgPoints": 13.93,
+      "bestWeek": 3,
+      "bestWeekPoints": 26.04,
+      "weeklyPoints": {
+        "1": 9.3,
+        "2": 15.58,
+        "3": 26.04,
+        "4": 8.76,
+        "5": 9.98
+      }
+    },
+    {
+      "name": "Jameis Winston",
+      "position": "QB",
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 55.4,
+      "avgPoints": 13.85,
+      "bestWeek": 5,
+      "bestWeekPoints": 25.74,
+      "weeklyPoints": {
+        "2": 3.54,
+        "3": 6.12,
+        "4": 20.0,
+        "5": 25.74
+      }
+    },
+    {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 68.9,
+      "avgPoints": 13.78,
+      "bestWeek": 5,
+      "bestWeekPoints": 26.9,
+      "weeklyPoints": {
+        "1": 23.8,
+        "2": 5.8,
+        "3": 2.3,
+        "4": 10.1,
+        "5": 26.9
       }
     },
     {
@@ -941,20 +1038,71 @@
       }
     },
     {
-      "name": "Drake Maye",
+      "name": "Sam Darnold",
       "position": "QB",
-      "nflTeam": "NE",
-      "division": "AFC East",
+      "nflTeam": "SEA",
+      "division": "NFC West",
       "gamesPlayed": 4,
-      "totalPoints": 54.76,
-      "avgPoints": 13.69,
-      "bestWeek": 4,
-      "bestWeekPoints": 27.16,
+      "totalPoints": 54.8,
+      "avgPoints": 13.7,
+      "bestWeek": 3,
+      "bestWeekPoints": 29.66,
       "weeklyPoints": {
-        "1": 12.82,
-        "2": 9.02,
-        "3": 5.76,
-        "4": 27.16
+        "1": 0.52,
+        "3": 29.66,
+        "4": 14.32,
+        "5": 10.3
+      }
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 68.18,
+      "avgPoints": 13.64,
+      "bestWeek": 3,
+      "bestWeekPoints": 25.14,
+      "weeklyPoints": {
+        "1": 6.44,
+        "2": 15.12,
+        "3": 25.14,
+        "4": 13.56,
+        "5": 7.92
+      }
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 4,
+      "totalPoints": 54.2,
+      "avgPoints": 13.55,
+      "bestWeek": 1,
+      "bestWeekPoints": 27.2,
+      "weeklyPoints": {
+        "1": 27.2,
+        "2": 7.0,
+        "3": 4.2,
+        "5": 15.8
+      }
+    },
+    {
+      "name": "Darius Cooper",
+      "position": "WR",
+      "nflTeam": "PHI",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 40.5,
+      "avgPoints": 13.5,
+      "bestWeek": 4,
+      "bestWeekPoints": 16.8,
+      "weeklyPoints": {
+        "2": 9.6,
+        "4": 16.8,
+        "5": 14.1
       }
     },
     {
@@ -972,35 +1120,39 @@
       }
     },
     {
-      "name": "Darius Cooper",
+      "name": "Ja'Marr Chase",
       "position": "WR",
-      "nflTeam": "PHI",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 26.4,
-      "avgPoints": 13.2,
-      "bestWeek": 4,
-      "bestWeekPoints": 16.8,
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 66.4,
+      "avgPoints": 13.28,
+      "bestWeek": 2,
+      "bestWeekPoints": 23.0,
       "weeklyPoints": {
-        "2": 9.6,
-        "4": 16.8
+        "1": 2.2,
+        "2": 23.0,
+        "3": 20.3,
+        "4": 4.2,
+        "5": 16.7
       }
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 52.7,
-      "avgPoints": 13.18,
-      "bestWeek": 1,
-      "bestWeekPoints": 20.0,
+      "name": "Matthew Golden",
+      "position": "WR",
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 66.3,
+      "avgPoints": 13.26,
+      "bestWeek": 3,
+      "bestWeekPoints": 18.5,
       "weeklyPoints": {
-        "1": 20.0,
-        "2": 14.1,
-        "3": 12.0,
-        "4": 6.6
+        "1": 12.5,
+        "2": 7.8,
+        "3": 18.5,
+        "4": 10.2,
+        "5": 17.3
       }
     },
     {
@@ -1020,6 +1172,21 @@
       }
     },
     {
+      "name": "Case Keenum",
+      "position": "QB",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 26.2,
+      "avgPoints": 13.1,
+      "bestWeek": 3,
+      "bestWeekPoints": 24.48,
+      "weeklyPoints": {
+        "3": 24.48,
+        "5": 1.72
+      }
+    },
+    {
       "name": "DeVonta Smith",
       "position": "WR",
       "nflTeam": "PHI",
@@ -1036,35 +1203,75 @@
       }
     },
     {
-      "name": "Mike Gesicki",
-      "position": "TE",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 39.0,
-      "avgPoints": 13.0,
-      "bestWeek": 1,
-      "bestWeekPoints": 16.3,
+      "name": "Cameron Ward",
+      "position": "QB",
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 64.74,
+      "avgPoints": 12.95,
+      "bestWeek": 2,
+      "bestWeekPoints": 20.02,
       "weeklyPoints": {
-        "1": 16.3,
-        "3": 11.2,
-        "4": 11.5
+        "1": 11.7,
+        "2": 20.02,
+        "3": 10.44,
+        "4": 16.58,
+        "5": 6.0
       }
     },
     {
-      "name": "Justin Jefferson",
+      "name": "Mike Evans",
       "position": "WR",
+      "nflTeam": "SF",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 64.6,
+      "avgPoints": 12.92,
+      "bestWeek": 5,
+      "bestWeekPoints": 22.8,
+      "weeklyPoints": {
+        "1": 13.9,
+        "2": 6.9,
+        "3": 10.9,
+        "4": 10.1,
+        "5": 22.8
+      }
+    },
+    {
+      "name": "Malik Willis",
+      "position": "QB",
+      "nflTeam": "MIA",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 64.56,
+      "avgPoints": 12.91,
+      "bestWeek": 5,
+      "bestWeekPoints": 20.88,
+      "weeklyPoints": {
+        "1": 17.7,
+        "2": 12.48,
+        "3": 11.0,
+        "4": 2.5,
+        "5": 20.88
+      }
+    },
+    {
+      "name": "Aaron Jones",
+      "position": "RB",
       "nflTeam": "MIN",
       "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 38.4,
-      "avgPoints": 12.8,
-      "bestWeek": 1,
-      "bestWeekPoints": 27.2,
+      "gamesPlayed": 5,
+      "totalPoints": 64.2,
+      "avgPoints": 12.84,
+      "bestWeek": 5,
+      "bestWeekPoints": 17.2,
       "weeklyPoints": {
-        "1": 27.2,
-        "2": 7.0,
-        "3": 4.2
+        "1": 10.0,
+        "2": 10.5,
+        "3": 11.7,
+        "4": 14.8,
+        "5": 17.2
       }
     },
     {
@@ -1083,53 +1290,39 @@
       }
     },
     {
-      "name": "Romeo Doubs",
-      "position": "WR",
-      "nflTeam": "NE",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 38.3,
-      "avgPoints": 12.77,
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "nflTeam": "DET",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 63.1,
+      "avgPoints": 12.62,
       "bestWeek": 4,
-      "bestWeekPoints": 20.8,
+      "bestWeekPoints": 18.4,
       "weeklyPoints": {
-        "2": 11.1,
-        "3": 6.4,
-        "4": 20.8
-      }
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "nflTeam": "NYJ",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 51.0,
-      "avgPoints": 12.75,
-      "bestWeek": 3,
-      "bestWeekPoints": 21.7,
-      "weeklyPoints": {
-        "1": 10.9,
+        "1": 7.3,
         "2": 14.2,
-        "3": 21.7,
-        "4": 4.2
+        "3": 5.9,
+        "4": 18.4,
+        "5": 17.3
       }
     },
     {
-      "name": "Deebo Samuel",
-      "position": "RB",
-      "nflTeam": "SF",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 50.9,
-      "avgPoints": 12.72,
-      "bestWeek": 4,
-      "bestWeekPoints": 15.5,
+      "name": "Drake London",
+      "position": "WR",
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 62.7,
+      "avgPoints": 12.54,
+      "bestWeek": 3,
+      "bestWeekPoints": 23.9,
       "weeklyPoints": {
-        "1": 15.0,
-        "2": 5.0,
-        "3": 15.4,
-        "4": 15.5
+        "1": 4.5,
+        "2": 6.9,
+        "3": 23.9,
+        "4": 12.1,
+        "5": 15.3
       }
     },
     {
@@ -1149,57 +1342,6 @@
       }
     },
     {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 49.7,
-      "avgPoints": 12.43,
-      "bestWeek": 2,
-      "bestWeekPoints": 23.0,
-      "weeklyPoints": {
-        "1": 2.2,
-        "2": 23.0,
-        "3": 20.3,
-        "4": 4.2
-      }
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 49.7,
-      "avgPoints": 12.43,
-      "bestWeek": 3,
-      "bestWeekPoints": 19.1,
-      "weeklyPoints": {
-        "1": 7.8,
-        "2": 8.7,
-        "3": 19.1,
-        "4": 14.1
-      }
-    },
-    {
-      "name": "Juwan Johnson",
-      "position": "TE",
-      "nflTeam": "NO",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 49.7,
-      "avgPoints": 12.43,
-      "bestWeek": 3,
-      "bestWeekPoints": 19.3,
-      "weeklyPoints": {
-        "1": 12.9,
-        "2": 8.6,
-        "3": 19.3,
-        "4": 8.9
-      }
-    },
-    {
       "name": "Baker Mayfield",
       "position": "QB",
       "nflTeam": "TB",
@@ -1216,37 +1358,39 @@
       }
     },
     {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "nflTeam": "LAC",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 49.44,
+      "name": "Tee Higgins",
+      "position": "WR",
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 61.8,
       "avgPoints": 12.36,
-      "bestWeek": 1,
-      "bestWeekPoints": 14.26,
+      "bestWeek": 4,
+      "bestWeekPoints": 21.2,
       "weeklyPoints": {
-        "1": 14.26,
-        "2": 9.88,
-        "3": 13.74,
-        "4": 11.56
+        "1": 7.4,
+        "2": 12.0,
+        "3": 18.0,
+        "4": 21.2,
+        "5": 3.2
       }
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "nflTeam": "GB",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 49.0,
-      "avgPoints": 12.25,
+      "name": "George Kittle",
+      "position": "TE",
+      "nflTeam": "SF",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 61.3,
+      "avgPoints": 12.26,
       "bestWeek": 3,
-      "bestWeekPoints": 18.5,
+      "bestWeekPoints": 23.2,
       "weeklyPoints": {
-        "1": 12.5,
-        "2": 7.8,
-        "3": 18.5,
-        "4": 10.2
+        "1": 2.2,
+        "2": 16.0,
+        "3": 23.2,
+        "4": 15.0,
+        "5": 4.9
       }
     },
     {
@@ -1254,33 +1398,35 @@
       "position": "WR",
       "nflTeam": "CLE",
       "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 48.9,
-      "avgPoints": 12.22,
+      "gamesPlayed": 5,
+      "totalPoints": 61.0,
+      "avgPoints": 12.2,
       "bestWeek": 2,
       "bestWeekPoints": 18.0,
       "weeklyPoints": {
         "1": 12.9,
         "2": 18.0,
         "3": 7.1,
-        "4": 10.9
+        "4": 10.9,
+        "5": 12.1
       }
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 48.6,
-      "avgPoints": 12.15,
-      "bestWeek": 3,
-      "bestWeekPoints": 16.0,
+      "name": "Justin Herbert",
+      "position": "QB",
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 60.68,
+      "avgPoints": 12.14,
+      "bestWeek": 1,
+      "bestWeekPoints": 14.26,
       "weeklyPoints": {
-        "1": 9.3,
-        "2": 13.2,
-        "3": 16.0,
-        "4": 10.1
+        "1": 14.26,
+        "2": 9.88,
+        "3": 13.74,
+        "4": 11.56,
+        "5": 11.24
       }
     },
     {
@@ -1312,71 +1458,39 @@
       }
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 47.5,
-      "avgPoints": 11.88,
-      "bestWeek": 1,
-      "bestWeekPoints": 16.3,
-      "weeklyPoints": {
-        "1": 16.3,
-        "2": 9.7,
-        "3": 7.9,
-        "4": 13.6
-      }
-    },
-    {
-      "name": "Drake London",
+      "name": "Malik Nabers",
       "position": "WR",
-      "nflTeam": "ATL",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 47.4,
-      "avgPoints": 11.85,
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 59.4,
+      "avgPoints": 11.88,
+      "bestWeek": 5,
+      "bestWeekPoints": 23.6,
+      "weeklyPoints": {
+        "1": 9.9,
+        "2": 0.6,
+        "3": 5.1,
+        "4": 20.2,
+        "5": 23.6
+      }
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 59.2,
+      "avgPoints": 11.84,
       "bestWeek": 3,
-      "bestWeekPoints": 23.9,
+      "bestWeekPoints": 16.0,
       "weeklyPoints": {
-        "1": 4.5,
-        "2": 6.9,
-        "3": 23.9,
-        "4": 12.1
-      }
-    },
-    {
-      "name": "Aaron Jones",
-      "position": "RB",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 47.0,
-      "avgPoints": 11.75,
-      "bestWeek": 4,
-      "bestWeekPoints": 14.8,
-      "weeklyPoints": {
-        "1": 10.0,
-        "2": 10.5,
-        "3": 11.7,
-        "4": 14.8
-      }
-    },
-    {
-      "name": "Brian Robinson",
-      "position": "RB",
-      "nflTeam": "ATL",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 47.0,
-      "avgPoints": 11.75,
-      "bestWeek": 4,
-      "bestWeekPoints": 25.2,
-      "weeklyPoints": {
-        "1": 3.1,
-        "2": 7.7,
-        "3": 11.0,
-        "4": 25.2
+        "1": 9.3,
+        "2": 13.2,
+        "3": 16.0,
+        "4": 10.1,
+        "5": 10.6
       }
     },
     {
@@ -1396,52 +1510,37 @@
       }
     },
     {
-      "name": "Sam LaPorta",
+      "name": "Mike Gesicki",
       "position": "TE",
-      "nflTeam": "DET",
-      "division": "NFC North",
+      "nflTeam": "CIN",
+      "division": "AFC North",
       "gamesPlayed": 4,
-      "totalPoints": 45.8,
-      "avgPoints": 11.45,
+      "totalPoints": 45.9,
+      "avgPoints": 11.47,
+      "bestWeek": 1,
+      "bestWeekPoints": 16.3,
+      "weeklyPoints": {
+        "1": 16.3,
+        "3": 11.2,
+        "4": 11.5,
+        "5": 6.9
+      }
+    },
+    {
+      "name": "Ollie Gordon",
+      "position": "RB",
+      "nflTeam": "MIA",
+      "division": "AFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 45.5,
+      "avgPoints": 11.38,
       "bestWeek": 4,
-      "bestWeekPoints": 18.4,
+      "bestWeekPoints": 17.0,
       "weeklyPoints": {
-        "1": 7.3,
-        "2": 14.2,
-        "3": 5.9,
-        "4": 18.4
-      }
-    },
-    {
-      "name": "Dallas Goedert",
-      "position": "TE",
-      "nflTeam": "PHI",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 22.6,
-      "avgPoints": 11.3,
-      "bestWeek": 1,
-      "bestWeekPoints": 21.7,
-      "weeklyPoints": {
-        "1": 21.7,
-        "2": 0.9
-      }
-    },
-    {
-      "name": "Devaughn Vele",
-      "position": "WR",
-      "nflTeam": "NO",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 45.1,
-      "avgPoints": 11.28,
-      "bestWeek": 1,
-      "bestWeekPoints": 16.4,
-      "weeklyPoints": {
-        "1": 16.4,
-        "2": 8.9,
-        "3": 5.4,
-        "4": 14.4
+        "2": 0.7,
+        "3": 13.0,
+        "4": 17.0,
+        "5": 14.8
       }
     },
     {
@@ -1462,20 +1561,21 @@
       }
     },
     {
-      "name": "Michael Wilson",
+      "name": "George Pickens",
       "position": "WR",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 44.3,
-      "avgPoints": 11.07,
-      "bestWeek": 3,
-      "bestWeekPoints": 20.4,
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 55.0,
+      "avgPoints": 11.0,
+      "bestWeek": 5,
+      "bestWeekPoints": 23.5,
       "weeklyPoints": {
-        "1": 8.1,
-        "2": 2.8,
-        "3": 20.4,
-        "4": 13.0
+        "1": 4.3,
+        "2": 7.0,
+        "3": 11.7,
+        "4": 8.5,
+        "5": 23.5
       }
     },
     {
@@ -1496,104 +1596,75 @@
       }
     },
     {
-      "name": "Malik Willis",
-      "position": "QB",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 43.68,
-      "avgPoints": 10.92,
-      "bestWeek": 1,
-      "bestWeekPoints": 17.7,
-      "weeklyPoints": {
-        "1": 17.7,
-        "2": 12.48,
-        "3": 11.0,
-        "4": 2.5
-      }
-    },
-    {
-      "name": "Kenyon Sadiq",
+      "name": "Tyler Warren",
       "position": "TE",
-      "nflTeam": "NYJ",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 32.6,
-      "avgPoints": 10.87,
-      "bestWeek": 3,
-      "bestWeekPoints": 20.0,
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 54.9,
+      "avgPoints": 10.98,
+      "bestWeek": 5,
+      "bestWeekPoints": 17.9,
       "weeklyPoints": {
-        "1": 9.9,
-        "2": 2.7,
-        "3": 20.0
+        "1": 8.8,
+        "2": 11.4,
+        "3": 10.2,
+        "4": 6.6,
+        "5": 17.9
       }
     },
     {
-      "name": "Jeremiyah Love",
-      "position": "RB",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 43.4,
-      "avgPoints": 10.85,
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "nflTeam": "NO",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 53.3,
+      "avgPoints": 10.66,
       "bestWeek": 3,
-      "bestWeekPoints": 19.4,
+      "bestWeekPoints": 19.3,
+      "weeklyPoints": {
+        "1": 12.9,
+        "2": 8.6,
+        "3": 19.3,
+        "4": 8.9,
+        "5": 3.6
+      }
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 53.3,
+      "avgPoints": 10.66,
+      "bestWeek": 4,
+      "bestWeekPoints": 16.9,
       "weeklyPoints": {
         "1": 12.0,
-        "2": 6.0,
-        "3": 19.4,
-        "4": 6.0
+        "2": 3.1,
+        "3": 5.3,
+        "4": 16.9,
+        "5": 16.0
       }
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 43.1,
-      "avgPoints": 10.78,
-      "bestWeek": 1,
-      "bestWeekPoints": 16.8,
-      "weeklyPoints": {
-        "1": 16.8,
-        "2": 13.3,
-        "3": 11.5,
-        "4": 1.5
-      }
-    },
-    {
-      "name": "Omarion Hampton",
+      "name": "Chase Brown",
       "position": "RB",
-      "nflTeam": "LAC",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 42.7,
-      "avgPoints": 10.68,
-      "bestWeek": 2,
-      "bestWeekPoints": 16.5,
-      "weeklyPoints": {
-        "1": 8.3,
-        "2": 16.5,
-        "3": 5.6,
-        "4": 12.3
-      }
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 42.0,
-      "avgPoints": 10.5,
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 53.0,
+      "avgPoints": 10.6,
       "bestWeek": 1,
-      "bestWeekPoints": 23.8,
+      "bestWeekPoints": 16.3,
       "weeklyPoints": {
-        "1": 23.8,
-        "2": 5.8,
-        "3": 2.3,
-        "4": 10.1
+        "1": 16.3,
+        "2": 9.7,
+        "3": 7.9,
+        "4": 13.6,
+        "5": 5.5
       }
     },
     {
@@ -1613,104 +1684,74 @@
       }
     },
     {
-      "name": "Harold Fannin",
-      "position": "TE",
-      "nflTeam": "CLE",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 41.8,
-      "avgPoints": 10.45,
-      "bestWeek": 3,
-      "bestWeekPoints": 20.6,
-      "weeklyPoints": {
-        "1": 3.1,
-        "2": 7.9,
-        "3": 20.6,
-        "4": 10.2
-      }
-    },
-    {
-      "name": "Mike Evans",
-      "position": "WR",
+      "name": "Deebo Samuel",
+      "position": "RB",
       "nflTeam": "SF",
       "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 52.4,
+      "avgPoints": 10.48,
+      "bestWeek": 4,
+      "bestWeekPoints": 15.5,
+      "weeklyPoints": {
+        "1": 15.0,
+        "2": 5.0,
+        "3": 15.4,
+        "4": 15.5,
+        "5": 1.5
+      }
+    },
+    {
+      "name": "Kyler Murray",
+      "position": "QB",
+      "nflTeam": "MIN",
+      "division": "NFC North",
       "gamesPlayed": 4,
-      "totalPoints": 41.8,
+      "totalPoints": 41.78,
       "avgPoints": 10.45,
-      "bestWeek": 1,
-      "bestWeekPoints": 13.9,
+      "bestWeek": 5,
+      "bestWeekPoints": 18.26,
       "weeklyPoints": {
-        "1": 13.9,
-        "2": 6.9,
-        "3": 10.9,
-        "4": 10.1
+        "1": 0.62,
+        "3": 11.42,
+        "4": 11.48,
+        "5": 18.26
       }
     },
     {
-      "name": "Ollie Gordon",
-      "position": "RB",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 30.7,
-      "avgPoints": 10.23,
-      "bestWeek": 4,
-      "bestWeekPoints": 17.0,
-      "weeklyPoints": {
-        "2": 0.7,
-        "3": 13.0,
-        "4": 17.0
-      }
-    },
-    {
-      "name": "David Montgomery",
-      "position": "RB",
-      "nflTeam": "HOU",
+      "name": "Daniel Jones",
+      "position": "QB",
+      "nflTeam": "IND",
       "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 40.9,
-      "avgPoints": 10.22,
-      "bestWeek": 1,
-      "bestWeekPoints": 27.4,
+      "gamesPlayed": 5,
+      "totalPoints": 51.34,
+      "avgPoints": 10.27,
+      "bestWeek": 2,
+      "bestWeekPoints": 12.4,
       "weeklyPoints": {
-        "1": 27.4,
-        "2": 3.4,
-        "3": 5.8,
-        "4": 4.3
-      }
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "nflTeam": "CLE",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 40.8,
-      "avgPoints": 10.2,
-      "bestWeek": 4,
-      "bestWeekPoints": 18.6,
-      "weeklyPoints": {
-        "1": 6.0,
-        "2": 7.3,
+        "1": 10.04,
+        "2": 12.4,
         "3": 8.9,
-        "4": 18.6
+        "4": 8.92,
+        "5": 11.08
       }
     },
     {
-      "name": "Mar'Keise Irving",
-      "position": "RB",
-      "nflTeam": "TB",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 40.7,
-      "avgPoints": 10.18,
-      "bestWeek": 1,
-      "bestWeekPoints": 16.8,
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 50.8,
+      "avgPoints": 10.16,
+      "bestWeek": 5,
+      "bestWeekPoints": 19.0,
       "weeklyPoints": {
-        "1": 16.8,
-        "2": 11.0,
-        "3": 6.8,
-        "4": 6.1
+        "1": 13.1,
+        "2": 5.4,
+        "3": 4.1,
+        "4": 9.2,
+        "5": 19.0
       }
     },
     {
@@ -1730,150 +1771,160 @@
       }
     },
     {
-      "name": "Daniel Jones",
-      "position": "QB",
-      "nflTeam": "IND",
-      "division": "AFC South",
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "nflTeam": "NE",
+      "division": "AFC East",
       "gamesPlayed": 4,
-      "totalPoints": 40.26,
-      "avgPoints": 10.06,
-      "bestWeek": 2,
-      "bestWeekPoints": 12.4,
-      "weeklyPoints": {
-        "1": 10.04,
-        "2": 12.4,
-        "3": 8.9,
-        "4": 8.92
-      }
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 40.2,
-      "avgPoints": 10.05,
-      "bestWeek": 1,
-      "bestWeekPoints": 14.1,
-      "weeklyPoints": {
-        "1": 14.1,
-        "2": 7.5,
-        "3": 11.5,
-        "4": 7.1
-      }
-    },
-    {
-      "name": "Jameis Winston",
-      "position": "QB",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 29.66,
-      "avgPoints": 9.89,
+      "totalPoints": 40.4,
+      "avgPoints": 10.1,
       "bestWeek": 4,
-      "bestWeekPoints": 20.0,
+      "bestWeekPoints": 20.8,
       "weeklyPoints": {
-        "2": 3.54,
-        "3": 6.12,
-        "4": 20.0
+        "2": 11.1,
+        "3": 6.4,
+        "4": 20.8,
+        "5": 2.1
       }
     },
     {
-      "name": "Alvin Kamara",
-      "position": "RB",
+      "name": "Devaughn Vele",
+      "position": "WR",
+      "nflTeam": "NO",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 49.7,
+      "avgPoints": 9.94,
+      "bestWeek": 1,
+      "bestWeekPoints": 16.4,
+      "weeklyPoints": {
+        "1": 16.4,
+        "2": 8.9,
+        "3": 5.4,
+        "4": 14.4,
+        "5": 4.6
+      }
+    },
+    {
+      "name": "Noah Fant",
+      "position": "TE",
       "nflTeam": "NO",
       "division": "NFC South",
       "gamesPlayed": 3,
-      "totalPoints": 29.6,
-      "avgPoints": 9.87,
-      "bestWeek": 4,
-      "bestWeekPoints": 20.3,
-      "weeklyPoints": {
-        "2": 4.7,
-        "3": 4.6,
-        "4": 20.3
-      }
-    },
-    {
-      "name": "Treylon Burks",
-      "position": "WR",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 19.5,
-      "avgPoints": 9.75,
-      "bestWeek": 4,
-      "bestWeekPoints": 11.2,
-      "weeklyPoints": {
-        "3": 8.3,
-        "4": 11.2
-      }
-    },
-    {
-      "name": "Cody White",
-      "position": "WR",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 28.9,
-      "avgPoints": 9.63,
-      "bestWeek": 2,
-      "bestWeekPoints": 15.4,
-      "weeklyPoints": {
-        "2": 15.4,
-        "3": 6.9,
-        "4": 6.6
-      }
-    },
-    {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "nflTeam": "BUF",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 38.5,
-      "avgPoints": 9.62,
-      "bestWeek": 2,
-      "bestWeekPoints": 19.0,
-      "weeklyPoints": {
-        "1": 15.5,
-        "2": 19.0,
-        "3": 2.8,
-        "4": 1.2
-      }
-    },
-    {
-      "name": "Kalif Raymond",
-      "position": "WR",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 38.5,
-      "avgPoints": 9.62,
+      "totalPoints": 29.8,
+      "avgPoints": 9.93,
       "bestWeek": 3,
-      "bestWeekPoints": 18.0,
+      "bestWeekPoints": 17.3,
       "weeklyPoints": {
-        "1": 12.4,
-        "2": 6.5,
-        "3": 18.0,
-        "4": 1.6
+        "1": 11.3,
+        "3": 17.3,
+        "5": 1.2
       }
     },
     {
-      "name": "Rashod Bateman",
+      "name": "Michael Wilson",
       "position": "WR",
-      "nflTeam": "BAL",
-      "division": "AFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 28.6,
-      "avgPoints": 9.53,
-      "bestWeek": 2,
-      "bestWeekPoints": 18.3,
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 49.58,
+      "avgPoints": 9.92,
+      "bestWeek": 3,
+      "bestWeekPoints": 20.4,
       "weeklyPoints": {
-        "2": 18.3,
-        "3": 4.7,
-        "4": 5.6
+        "1": 8.1,
+        "2": 2.8,
+        "3": 20.4,
+        "4": 13.0,
+        "5": 5.28
+      }
+    },
+    {
+      "name": "Dallas Goedert",
+      "position": "TE",
+      "nflTeam": "PHI",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 29.4,
+      "avgPoints": 9.8,
+      "bestWeek": 1,
+      "bestWeekPoints": 21.7,
+      "weeklyPoints": {
+        "1": 21.7,
+        "2": 0.9,
+        "5": 6.8
+      }
+    },
+    {
+      "name": "Brian Robinson",
+      "position": "RB",
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 48.6,
+      "avgPoints": 9.72,
+      "bestWeek": 4,
+      "bestWeekPoints": 25.2,
+      "weeklyPoints": {
+        "1": 3.1,
+        "2": 7.7,
+        "3": 11.0,
+        "4": 25.2,
+        "5": 1.6
+      }
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "nflTeam": "SEA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 48.6,
+      "avgPoints": 9.72,
+      "bestWeek": 4,
+      "bestWeekPoints": 25.5,
+      "weeklyPoints": {
+        "1": 0.3,
+        "2": 9.2,
+        "3": 1.4,
+        "4": 25.5,
+        "5": 12.2
+      }
+    },
+    {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "nflTeam": "DET",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 48.6,
+      "avgPoints": 9.72,
+      "bestWeek": 5,
+      "bestWeekPoints": 17.7,
+      "weeklyPoints": {
+        "1": 6.5,
+        "2": 4.3,
+        "3": 6.9,
+        "4": 13.2,
+        "5": 17.7
+      }
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 47.3,
+      "avgPoints": 9.46,
+      "bestWeek": 4,
+      "bestWeekPoints": 18.6,
+      "weeklyPoints": {
+        "1": 6.0,
+        "2": 7.3,
+        "3": 8.9,
+        "4": 18.6,
+        "5": 6.5
       }
     },
     {
@@ -1894,53 +1945,38 @@
       }
     },
     {
-      "name": "RJ Harvey",
+      "name": "Omarion Hampton",
       "position": "RB",
-      "nflTeam": "DEN",
+      "nflTeam": "LAC",
       "division": "AFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 28.1,
-      "avgPoints": 9.37,
-      "bestWeek": 4,
-      "bestWeekPoints": 14.3,
+      "gamesPlayed": 5,
+      "totalPoints": 47.1,
+      "avgPoints": 9.42,
+      "bestWeek": 2,
+      "bestWeekPoints": 16.5,
       "weeklyPoints": {
-        "1": 6.1,
-        "3": 7.7,
-        "4": 14.3
+        "1": 8.3,
+        "2": 16.5,
+        "3": 5.6,
+        "4": 12.3,
+        "5": 4.4
       }
     },
     {
-      "name": "Luther Burden",
+      "name": "Rashod Bateman",
       "position": "WR",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 37.4,
-      "avgPoints": 9.35,
-      "bestWeek": 3,
-      "bestWeekPoints": 16.3,
-      "weeklyPoints": {
-        "1": 7.0,
-        "2": 4.7,
-        "3": 16.3,
-        "4": 9.4
-      }
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "nflTeam": "NE",
-      "division": "AFC East",
+      "nflTeam": "BAL",
+      "division": "AFC North",
       "gamesPlayed": 4,
       "totalPoints": 37.3,
       "avgPoints": 9.32,
-      "bestWeek": 4,
-      "bestWeekPoints": 16.9,
+      "bestWeek": 2,
+      "bestWeekPoints": 18.3,
       "weeklyPoints": {
-        "1": 12.0,
-        "2": 3.1,
-        "3": 5.3,
-        "4": 16.9
+        "2": 18.3,
+        "3": 4.7,
+        "4": 5.6,
+        "5": 8.7
       }
     },
     {
@@ -1959,20 +1995,21 @@
       }
     },
     {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "nflTeam": "IND",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 37.0,
-      "avgPoints": 9.25,
-      "bestWeek": 2,
-      "bestWeekPoints": 11.4,
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 46.3,
+      "avgPoints": 9.26,
+      "bestWeek": 1,
+      "bestWeekPoints": 14.1,
       "weeklyPoints": {
-        "1": 8.8,
-        "2": 11.4,
-        "3": 10.2,
-        "4": 6.6
+        "1": 14.1,
+        "2": 7.5,
+        "3": 11.5,
+        "4": 7.1,
+        "5": 6.1
       }
     },
     {
@@ -1992,189 +2029,21 @@
       }
     },
     {
-      "name": "Tre Tucker",
-      "position": "WR",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 36.8,
-      "avgPoints": 9.2,
-      "bestWeek": 2,
-      "bestWeekPoints": 20.4,
-      "weeklyPoints": {
-        "1": 3.7,
-        "2": 20.4,
-        "3": 6.3,
-        "4": 6.4
-      }
-    },
-    {
-      "name": "T.J. Hockenson",
-      "position": "TE",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 36.5,
-      "avgPoints": 9.12,
-      "bestWeek": 4,
-      "bestWeekPoints": 18.4,
-      "weeklyPoints": {
-        "1": 11.6,
-        "2": 4.4,
-        "3": 2.1,
-        "4": 18.4
-      }
-    },
-    {
-      "name": "Emanuel Wilson",
+      "name": "Jeremiyah Love",
       "position": "RB",
-      "nflTeam": "SEA",
+      "nflTeam": "ARI",
       "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 36.4,
-      "avgPoints": 9.1,
-      "bestWeek": 4,
-      "bestWeekPoints": 25.5,
-      "weeklyPoints": {
-        "1": 0.3,
-        "2": 9.2,
-        "3": 1.4,
-        "4": 25.5
-      }
-    },
-    {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "nflTeam": "DEN",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 35.9,
-      "avgPoints": 8.97,
-      "bestWeek": 2,
-      "bestWeekPoints": 17.8,
-      "weeklyPoints": {
-        "1": 0.7,
-        "2": 17.8,
-        "3": 5.4,
-        "4": 12.0
-      }
-    },
-    {
-      "name": "Carnell Tate",
-      "position": "WR",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 35.8,
-      "avgPoints": 8.95,
-      "bestWeek": 4,
-      "bestWeekPoints": 17.0,
-      "weeklyPoints": {
-        "1": 5.8,
-        "2": 4.2,
-        "3": 8.8,
-        "4": 17.0
-      }
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 35.8,
-      "avgPoints": 8.95,
-      "bestWeek": 4,
-      "bestWeekPoints": 20.2,
-      "weeklyPoints": {
-        "1": 9.9,
-        "2": 0.6,
-        "3": 5.1,
-        "4": 20.2
-      }
-    },
-    {
-      "name": "D.K. Metcalf",
-      "position": "WR",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 35.3,
-      "avgPoints": 8.82,
-      "bestWeek": 4,
-      "bestWeekPoints": 14.0,
-      "weeklyPoints": {
-        "1": 6.0,
-        "2": 4.7,
-        "3": 10.6,
-        "4": 14.0
-      }
-    },
-    {
-      "name": "Jakobi Meyers",
-      "position": "WR",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 35.2,
-      "avgPoints": 8.8,
+      "gamesPlayed": 5,
+      "totalPoints": 45.6,
+      "avgPoints": 9.12,
       "bestWeek": 3,
-      "bestWeekPoints": 15.9,
+      "bestWeekPoints": 19.4,
       "weeklyPoints": {
-        "1": 11.2,
-        "2": 3.3,
-        "3": 15.9,
-        "4": 4.8
-      }
-    },
-    {
-      "name": "Keon Coleman",
-      "position": "WR",
-      "nflTeam": "BUF",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 34.7,
-      "avgPoints": 8.68,
-      "bestWeek": 4,
-      "bestWeekPoints": 20.6,
-      "weeklyPoints": {
-        "1": 0.6,
-        "2": 9.3,
-        "3": 4.2,
-        "4": 20.6
-      }
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 34.5,
-      "avgPoints": 8.62,
-      "bestWeek": 4,
-      "bestWeekPoints": 12.0,
-      "weeklyPoints": {
-        "1": 3.9,
-        "2": 7.0,
-        "3": 11.6,
-        "4": 12.0
-      }
-    },
-    {
-      "name": "Rachaad White",
-      "position": "RB",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 25.6,
-      "avgPoints": 8.53,
-      "bestWeek": 2,
-      "bestWeekPoints": 11.3,
-      "weeklyPoints": {
-        "1": 3.7,
-        "2": 11.3,
-        "3": 10.6
+        "1": 12.0,
+        "2": 6.0,
+        "3": 19.4,
+        "4": 6.0,
+        "5": 2.2
       }
     },
     {
@@ -2182,15 +2051,138 @@
       "position": "TE",
       "nflTeam": "LA",
       "division": "NFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 25.6,
-      "avgPoints": 8.53,
+      "gamesPlayed": 4,
+      "totalPoints": 36.4,
+      "avgPoints": 9.1,
       "bestWeek": 3,
       "bestWeekPoints": 16.2,
       "weeklyPoints": {
         "1": 0.2,
         "3": 16.2,
-        "4": 9.2
+        "4": 9.2,
+        "5": 10.8
+      }
+    },
+    {
+      "name": "Jalon Daniels",
+      "position": "QB",
+      "nflTeam": "TB",
+      "division": "NFC South",
+      "gamesPlayed": 3,
+      "totalPoints": 27.18,
+      "avgPoints": 9.06,
+      "bestWeek": 5,
+      "bestWeekPoints": 13.86,
+      "weeklyPoints": {
+        "3": -0.1,
+        "4": 13.42,
+        "5": 13.86
+      }
+    },
+    {
+      "name": "Luther Burden",
+      "position": "WR",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 44.3,
+      "avgPoints": 8.86,
+      "bestWeek": 3,
+      "bestWeekPoints": 16.3,
+      "weeklyPoints": {
+        "1": 7.0,
+        "2": 4.7,
+        "3": 16.3,
+        "4": 9.4,
+        "5": 6.9
+      }
+    },
+    {
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 35.3,
+      "avgPoints": 8.82,
+      "bestWeek": 3,
+      "bestWeekPoints": 16.7,
+      "weeklyPoints": {
+        "1": 2.4,
+        "2": 6.0,
+        "3": 16.7,
+        "5": 10.2
+      }
+    },
+    {
+      "name": "Cody White",
+      "position": "WR",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 4,
+      "totalPoints": 34.3,
+      "avgPoints": 8.57,
+      "bestWeek": 2,
+      "bestWeekPoints": 15.4,
+      "weeklyPoints": {
+        "2": 15.4,
+        "3": 6.9,
+        "4": 6.6,
+        "5": 5.4
+      }
+    },
+    {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "nflTeam": "TB",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 42.8,
+      "avgPoints": 8.56,
+      "bestWeek": 5,
+      "bestWeekPoints": 14.2,
+      "weeklyPoints": {
+        "1": 8.8,
+        "2": 8.8,
+        "3": 8.7,
+        "4": 2.3,
+        "5": 14.2
+      }
+    },
+    {
+      "name": "Harold Fannin",
+      "position": "TE",
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 42.7,
+      "avgPoints": 8.54,
+      "bestWeek": 3,
+      "bestWeekPoints": 20.6,
+      "weeklyPoints": {
+        "1": 3.1,
+        "2": 7.9,
+        "3": 20.6,
+        "4": 10.2,
+        "5": 0.9
+      }
+    },
+    {
+      "name": "Jacory Croskey-Merritt",
+      "position": "RB",
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 42.4,
+      "avgPoints": 8.48,
+      "bestWeek": 5,
+      "bestWeekPoints": 14.2,
+      "weeklyPoints": {
+        "1": 12.1,
+        "2": 5.3,
+        "3": 4.8,
+        "4": 6.0,
+        "5": 14.2
       }
     },
     {
@@ -2207,6 +2199,24 @@
         "1": 11.3,
         "2": 6.1,
         "3": 8.0
+      }
+    },
+    {
+      "name": "Tre Tucker",
+      "position": "WR",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 42.3,
+      "avgPoints": 8.46,
+      "bestWeek": 2,
+      "bestWeekPoints": 20.4,
+      "weeklyPoints": {
+        "1": 3.7,
+        "2": 20.4,
+        "3": 6.3,
+        "4": 6.4,
+        "5": 5.5
       }
     },
     {
@@ -2240,19 +2250,55 @@
       }
     },
     {
-      "name": "Terry McLaurin",
-      "position": "WR",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 25.1,
-      "avgPoints": 8.37,
-      "bestWeek": 3,
-      "bestWeekPoints": 16.7,
+      "name": "David Montgomery",
+      "position": "RB",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 42.0,
+      "avgPoints": 8.4,
+      "bestWeek": 1,
+      "bestWeekPoints": 27.4,
       "weeklyPoints": {
-        "1": 2.4,
-        "2": 6.0,
-        "3": 16.7
+        "1": 27.4,
+        "2": 3.4,
+        "3": 5.8,
+        "4": 4.3,
+        "5": 1.1
+      }
+    },
+    {
+      "name": "Kimani Vidal",
+      "position": "WR",
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 25.2,
+      "avgPoints": 8.4,
+      "bestWeek": 5,
+      "bestWeekPoints": 12.1,
+      "weeklyPoints": {
+        "3": 2.5,
+        "4": 10.6,
+        "5": 12.1
+      }
+    },
+    {
+      "name": "Keon Coleman",
+      "position": "WR",
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 41.9,
+      "avgPoints": 8.38,
+      "bestWeek": 4,
+      "bestWeekPoints": 20.6,
+      "weeklyPoints": {
+        "1": 0.6,
+        "2": 9.3,
+        "3": 4.2,
+        "4": 20.6,
+        "5": 7.2
       }
     },
     {
@@ -2268,6 +2314,24 @@
       "weeklyPoints": {
         "2": 14.2,
         "3": 2.5
+      }
+    },
+    {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 41.7,
+      "avgPoints": 8.34,
+      "bestWeek": 2,
+      "bestWeekPoints": 19.0,
+      "weeklyPoints": {
+        "1": 15.5,
+        "2": 19.0,
+        "3": 2.8,
+        "4": 1.2,
+        "5": 3.2
       }
     },
     {
@@ -2288,20 +2352,21 @@
       }
     },
     {
-      "name": "Michael Mayer",
-      "position": "TE",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 32.9,
-      "avgPoints": 8.22,
-      "bestWeek": 4,
-      "bestWeekPoints": 12.2,
+      "name": "Braelon Allen",
+      "position": "RB",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 41.0,
+      "avgPoints": 8.2,
+      "bestWeek": 5,
+      "bestWeekPoints": 18.1,
       "weeklyPoints": {
-        "1": 6.2,
-        "2": 3.8,
-        "3": 10.7,
-        "4": 12.2
+        "1": 4.0,
+        "2": 8.0,
+        "3": 3.2,
+        "4": 7.7,
+        "5": 18.1
       }
     },
     {
@@ -2309,50 +2374,17 @@
       "position": "WR",
       "nflTeam": "TEN",
       "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 32.4,
-      "avgPoints": 8.1,
+      "gamesPlayed": 5,
+      "totalPoints": 40.7,
+      "avgPoints": 8.14,
       "bestWeek": 3,
       "bestWeekPoints": 15.2,
       "weeklyPoints": {
         "1": 6.3,
         "2": 1.4,
         "3": 15.2,
-        "4": 9.5
-      }
-    },
-    {
-      "name": "Dalton Schultz",
-      "position": "TE",
-      "nflTeam": "HOU",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 31.9,
-      "avgPoints": 7.97,
-      "bestWeek": 2,
-      "bestWeekPoints": 20.0,
-      "weeklyPoints": {
-        "1": 5.5,
-        "2": 20.0,
-        "3": 4.5,
-        "4": 1.9
-      }
-    },
-    {
-      "name": "Pat Freiermuth",
-      "position": "TE",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 31.8,
-      "avgPoints": 7.95,
-      "bestWeek": 1,
-      "bestWeekPoints": 13.1,
-      "weeklyPoints": {
-        "1": 13.1,
-        "2": 5.4,
-        "3": 4.1,
-        "4": 9.2
+        "4": 9.5,
+        "5": 8.3
       }
     },
     {
@@ -2360,16 +2392,124 @@
       "position": "WR",
       "nflTeam": "PHI",
       "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 31.7,
-      "avgPoints": 7.92,
+      "gamesPlayed": 5,
+      "totalPoints": 40.5,
+      "avgPoints": 8.1,
       "bestWeek": 1,
       "bestWeekPoints": 14.3,
       "weeklyPoints": {
         "1": 14.3,
         "2": 9.9,
         "3": 4.2,
-        "4": 3.3
+        "4": 3.3,
+        "5": 8.8
+      }
+    },
+    {
+      "name": "Kalif Raymond",
+      "position": "WR",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 40.4,
+      "avgPoints": 8.08,
+      "bestWeek": 3,
+      "bestWeekPoints": 18.0,
+      "weeklyPoints": {
+        "1": 12.4,
+        "2": 6.5,
+        "3": 18.0,
+        "4": 1.6,
+        "5": 1.9
+      }
+    },
+    {
+      "name": "Brenton Strange",
+      "position": "TE",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 40.0,
+      "avgPoints": 8.0,
+      "bestWeek": 4,
+      "bestWeekPoints": 13.0,
+      "weeklyPoints": {
+        "1": 9.3,
+        "2": 2.7,
+        "3": 4.7,
+        "4": 13.0,
+        "5": 10.3
+      }
+    },
+    {
+      "name": "Jakobi Meyers",
+      "position": "WR",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 39.9,
+      "avgPoints": 7.98,
+      "bestWeek": 3,
+      "bestWeekPoints": 15.9,
+      "weeklyPoints": {
+        "1": 11.2,
+        "2": 3.3,
+        "3": 15.9,
+        "4": 4.8,
+        "5": 4.7
+      }
+    },
+    {
+      "name": "Kenyon Sadiq",
+      "position": "TE",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 31.9,
+      "avgPoints": 7.97,
+      "bestWeek": 3,
+      "bestWeekPoints": 20.0,
+      "weeklyPoints": {
+        "1": 9.9,
+        "2": 2.7,
+        "3": 20.0,
+        "5": -0.7
+      }
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 39.7,
+      "avgPoints": 7.94,
+      "bestWeek": 2,
+      "bestWeekPoints": 17.8,
+      "weeklyPoints": {
+        "1": 0.7,
+        "2": 17.8,
+        "3": 5.4,
+        "4": 12.0,
+        "5": 3.8
+      }
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 39.7,
+      "avgPoints": 7.94,
+      "bestWeek": 4,
+      "bestWeekPoints": 12.0,
+      "weeklyPoints": {
+        "1": 3.9,
+        "2": 7.0,
+        "3": 11.6,
+        "4": 12.0,
+        "5": 5.2
       }
     },
     {
@@ -2388,36 +2528,56 @@
       }
     },
     {
-      "name": "George Pickens",
+      "name": "D.K. Metcalf",
       "position": "WR",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 31.5,
-      "avgPoints": 7.88,
-      "bestWeek": 3,
-      "bestWeekPoints": 11.7,
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 39.1,
+      "avgPoints": 7.82,
+      "bestWeek": 4,
+      "bestWeekPoints": 14.0,
       "weeklyPoints": {
-        "1": 4.3,
-        "2": 7.0,
-        "3": 11.7,
-        "4": 8.5
+        "1": 6.0,
+        "2": 4.7,
+        "3": 10.6,
+        "4": 14.0,
+        "5": 3.8
       }
     },
     {
-      "name": "Kyler Murray",
-      "position": "QB",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 23.52,
-      "avgPoints": 7.84,
+      "name": "Alvin Kamara",
+      "position": "RB",
+      "nflTeam": "NO",
+      "division": "NFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 31.2,
+      "avgPoints": 7.8,
       "bestWeek": 4,
-      "bestWeekPoints": 11.48,
+      "bestWeekPoints": 20.3,
       "weeklyPoints": {
-        "1": 0.62,
-        "3": 11.42,
-        "4": 11.48
+        "2": 4.7,
+        "3": 4.6,
+        "4": 20.3,
+        "5": 1.6
+      }
+    },
+    {
+      "name": "Malik Washington",
+      "position": "WR",
+      "nflTeam": "MIA",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 38.7,
+      "avgPoints": 7.74,
+      "bestWeek": 4,
+      "bestWeekPoints": 9.5,
+      "weeklyPoints": {
+        "1": 4.8,
+        "2": 6.7,
+        "3": 8.6,
+        "4": 9.5,
+        "5": 9.1
       }
     },
     {
@@ -2437,20 +2597,19 @@
       }
     },
     {
-      "name": "Jameson Williams",
+      "name": "Treylon Burks",
       "position": "WR",
-      "nflTeam": "DET",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 30.9,
-      "avgPoints": 7.72,
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 23.1,
+      "avgPoints": 7.7,
       "bestWeek": 4,
-      "bestWeekPoints": 13.2,
+      "bestWeekPoints": 11.2,
       "weeklyPoints": {
-        "1": 6.5,
-        "2": 4.3,
-        "3": 6.9,
-        "4": 13.2
+        "3": 8.3,
+        "4": 11.2,
+        "5": 3.6
       }
     },
     {
@@ -2471,87 +2630,93 @@
       }
     },
     {
-      "name": "Jake Ferguson",
-      "position": "TE",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 30.3,
-      "avgPoints": 7.58,
-      "bestWeek": 2,
-      "bestWeekPoints": 18.3,
+      "name": "Jaylin Noel",
+      "position": "WR",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 37.8,
+      "avgPoints": 7.56,
+      "bestWeek": 5,
+      "bestWeekPoints": 12.7,
       "weeklyPoints": {
-        "1": 1.6,
-        "2": 18.3,
-        "3": 7.8,
-        "4": 2.6
+        "1": 6.3,
+        "2": 4.9,
+        "3": 3.5,
+        "4": 10.4,
+        "5": 12.7
       }
     },
     {
-      "name": "Rome Odunze",
-      "position": "WR",
-      "nflTeam": "CHI",
+      "name": "Jo'quavious Marks",
+      "position": "RB",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 37.8,
+      "avgPoints": 7.56,
+      "bestWeek": 5,
+      "bestWeekPoints": 10.5,
+      "weeklyPoints": {
+        "1": 4.5,
+        "2": 6.0,
+        "3": 8.6,
+        "4": 8.2,
+        "5": 10.5
+      }
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "nflTeam": "GB",
       "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 30.3,
-      "avgPoints": 7.58,
-      "bestWeek": 4,
-      "bestWeekPoints": 12.4,
+      "gamesPlayed": 5,
+      "totalPoints": 37.7,
+      "avgPoints": 7.54,
+      "bestWeek": 5,
+      "bestWeekPoints": 16.2,
       "weeklyPoints": {
-        "1": 6.2,
-        "2": 5.8,
-        "3": 5.9,
-        "4": 12.4
+        "1": 3.7,
+        "2": 7.6,
+        "3": 2.8,
+        "4": 7.4,
+        "5": 16.2
       }
     },
     {
-      "name": "Keenan Allen",
-      "position": "WR",
-      "nflTeam": "IND",
-      "division": "AFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 22.5,
-      "avgPoints": 7.5,
-      "bestWeek": 3,
-      "bestWeekPoints": 15.3,
-      "weeklyPoints": {
-        "1": 6.2,
-        "2": 1.0,
-        "3": 15.3
-      }
-    },
-    {
-      "name": "Mark Andrews",
+      "name": "T.J. Hockenson",
       "position": "TE",
-      "nflTeam": "BAL",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 29.9,
-      "avgPoints": 7.47,
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 37.7,
+      "avgPoints": 7.54,
       "bestWeek": 4,
-      "bestWeekPoints": 11.2,
+      "bestWeekPoints": 18.4,
       "weeklyPoints": {
-        "1": 6.9,
-        "2": 7.9,
-        "3": 3.9,
-        "4": 11.2
+        "1": 11.6,
+        "2": 4.4,
+        "3": 2.1,
+        "4": 18.4,
+        "5": 1.2
       }
     },
     {
-      "name": "Brenton Strange",
+      "name": "Tucker Kraft",
       "position": "TE",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 29.7,
-      "avgPoints": 7.42,
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 37.7,
+      "avgPoints": 7.54,
       "bestWeek": 4,
-      "bestWeekPoints": 13.0,
+      "bestWeekPoints": 13.5,
       "weeklyPoints": {
-        "1": 9.3,
-        "2": 2.7,
-        "3": 4.7,
-        "4": 13.0
+        "1": 8.0,
+        "2": 2.5,
+        "3": 4.6,
+        "4": 13.5,
+        "5": 9.1
       }
     },
     {
@@ -2570,23 +2735,6 @@
       }
     },
     {
-      "name": "Malik Washington",
-      "position": "WR",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 29.6,
-      "avgPoints": 7.4,
-      "bestWeek": 4,
-      "bestWeekPoints": 9.5,
-      "weeklyPoints": {
-        "1": 4.8,
-        "2": 6.7,
-        "3": 8.6,
-        "4": 9.5
-      }
-    },
-    {
       "name": "Xavier Legette",
       "position": "WR",
       "nflTeam": "CAR",
@@ -2601,19 +2749,72 @@
       }
     },
     {
-      "name": "Josh Cameron",
+      "name": "Carnell Tate",
       "position": "WR",
-      "nflTeam": "JAX",
+      "nflTeam": "TEN",
       "division": "AFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 21.9,
-      "avgPoints": 7.3,
-      "bestWeek": 1,
-      "bestWeekPoints": 9.0,
+      "gamesPlayed": 5,
+      "totalPoints": 36.9,
+      "avgPoints": 7.38,
+      "bestWeek": 4,
+      "bestWeekPoints": 17.0,
       "weeklyPoints": {
-        "1": 9.0,
-        "3": 7.7,
-        "4": 5.2
+        "1": 5.8,
+        "2": 4.2,
+        "3": 8.8,
+        "4": 17.0,
+        "5": 1.1
+      }
+    },
+    {
+      "name": "Keenan Allen",
+      "position": "WR",
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 29.5,
+      "avgPoints": 7.38,
+      "bestWeek": 3,
+      "bestWeekPoints": 15.3,
+      "weeklyPoints": {
+        "1": 6.2,
+        "2": 1.0,
+        "3": 15.3,
+        "5": 7.0
+      }
+    },
+    {
+      "name": "Kyle Williams",
+      "position": "WR",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 22.0,
+      "avgPoints": 7.33,
+      "bestWeek": 5,
+      "bestWeekPoints": 16.6,
+      "weeklyPoints": {
+        "2": 1.5,
+        "3": 3.9,
+        "5": 16.6
+      }
+    },
+    {
+      "name": "Dalton Schultz",
+      "position": "TE",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 36.4,
+      "avgPoints": 7.28,
+      "bestWeek": 2,
+      "bestWeekPoints": 20.0,
+      "weeklyPoints": {
+        "1": 5.5,
+        "2": 20.0,
+        "3": 4.5,
+        "4": 1.9,
+        "5": 4.5
       }
     },
     {
@@ -2632,20 +2833,48 @@
       }
     },
     {
-      "name": "Josh Downs",
+      "name": "Brandin Cooks",
       "position": "WR",
-      "nflTeam": "IND",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 28.7,
-      "avgPoints": 7.17,
-      "bestWeek": 2,
-      "bestWeekPoints": 10.7,
+      "nflTeam": "SF",
+      "division": "NFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 7.2,
+      "avgPoints": 7.2,
+      "bestWeek": 5,
+      "bestWeekPoints": 7.2,
       "weeklyPoints": {
-        "1": 4.7,
-        "2": 10.7,
-        "3": 10.2,
-        "4": 3.1
+        "5": 7.2
+      }
+    },
+    {
+      "name": "Hayden Rucci",
+      "position": "TE",
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 7.2,
+      "avgPoints": 7.2,
+      "bestWeek": 5,
+      "bestWeekPoints": 7.2,
+      "weeklyPoints": {
+        "5": 7.2
+      }
+    },
+    {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 4,
+      "totalPoints": 28.8,
+      "avgPoints": 7.2,
+      "bestWeek": 4,
+      "bestWeekPoints": 14.3,
+      "weeklyPoints": {
+        "1": 6.1,
+        "3": 7.7,
+        "4": 14.3,
+        "5": 0.7
       }
     },
     {
@@ -2665,40 +2894,6 @@
       }
     },
     {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "nflTeam": "TB",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 28.6,
-      "avgPoints": 7.15,
-      "bestWeek": 1,
-      "bestWeekPoints": 8.8,
-      "weeklyPoints": {
-        "1": 8.8,
-        "2": 8.8,
-        "3": 8.7,
-        "4": 2.3
-      }
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "nflTeam": "GB",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 28.6,
-      "avgPoints": 7.15,
-      "bestWeek": 4,
-      "bestWeekPoints": 13.5,
-      "weeklyPoints": {
-        "1": 8.0,
-        "2": 2.5,
-        "3": 4.6,
-        "4": 13.5
-      }
-    },
-    {
       "name": "Mack Hollins",
       "position": "WR",
       "nflTeam": "NE",
@@ -2713,39 +2908,6 @@
         "2": 2.8,
         "3": 11.7,
         "4": 6.8
-      }
-    },
-    {
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "nflTeam": "NE",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 21.2,
-      "avgPoints": 7.07,
-      "bestWeek": 2,
-      "bestWeekPoints": 13.6,
-      "weeklyPoints": {
-        "2": 13.6,
-        "3": 3.4,
-        "4": 4.2
-      }
-    },
-    {
-      "name": "Jacory Croskey-Merritt",
-      "position": "RB",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 28.2,
-      "avgPoints": 7.05,
-      "bestWeek": 1,
-      "bestWeekPoints": 12.1,
-      "weeklyPoints": {
-        "1": 12.1,
-        "2": 5.3,
-        "3": 4.8,
-        "4": 6.0
       }
     },
     {
@@ -2780,6 +2942,23 @@
       }
     },
     {
+      "name": "Rachaad White",
+      "position": "RB",
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 28.1,
+      "avgPoints": 7.03,
+      "bestWeek": 2,
+      "bestWeekPoints": 11.3,
+      "weeklyPoints": {
+        "1": 3.7,
+        "2": 11.3,
+        "3": 10.6,
+        "5": 2.5
+      }
+    },
+    {
       "name": "Jordan Watkins",
       "position": "WR",
       "nflTeam": "SF",
@@ -2794,17 +2973,56 @@
       }
     },
     {
-      "name": "Sean Tucker",
+      "name": "Blake Corum",
       "position": "RB",
-      "nflTeam": "TB",
-      "division": "NFC South",
-      "gamesPlayed": 1,
-      "totalPoints": 7.0,
-      "avgPoints": 7.0,
-      "bestWeek": 4,
-      "bestWeekPoints": 7.0,
+      "nflTeam": "LA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 34.9,
+      "avgPoints": 6.98,
+      "bestWeek": 5,
+      "bestWeekPoints": 14.7,
       "weeklyPoints": {
-        "4": 7.0
+        "1": 5.4,
+        "2": 9.7,
+        "3": 2.5,
+        "4": 2.6,
+        "5": 14.7
+      }
+    },
+    {
+      "name": "Josh Downs",
+      "position": "WR",
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 34.9,
+      "avgPoints": 6.98,
+      "bestWeek": 2,
+      "bestWeekPoints": 10.7,
+      "weeklyPoints": {
+        "1": 4.7,
+        "2": 10.7,
+        "3": 10.2,
+        "4": 3.1,
+        "5": 6.2
+      }
+    },
+    {
+      "name": "Josh Cameron",
+      "position": "WR",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 27.7,
+      "avgPoints": 6.92,
+      "bestWeek": 1,
+      "bestWeekPoints": 9.0,
+      "weeklyPoints": {
+        "1": 9.0,
+        "3": 7.7,
+        "4": 5.2,
+        "5": 5.8
       }
     },
     {
@@ -2825,37 +3043,21 @@
       }
     },
     {
-      "name": "Tre Harris",
+      "name": "Rome Odunze",
       "position": "WR",
-      "nflTeam": "LAC",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 27.4,
-      "avgPoints": 6.85,
-      "bestWeek": 3,
-      "bestWeekPoints": 10.6,
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 33.8,
+      "avgPoints": 6.76,
+      "bestWeek": 4,
+      "bestWeekPoints": 12.4,
       "weeklyPoints": {
-        "1": 3.5,
+        "1": 6.2,
         "2": 5.8,
-        "3": 10.6,
-        "4": 7.5
-      }
-    },
-    {
-      "name": "Jo'quavious Marks",
-      "position": "RB",
-      "nflTeam": "HOU",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 27.3,
-      "avgPoints": 6.83,
-      "bestWeek": 3,
-      "bestWeekPoints": 8.6,
-      "weeklyPoints": {
-        "1": 4.5,
-        "2": 6.0,
-        "3": 8.6,
-        "4": 8.2
+        "3": 5.9,
+        "4": 12.4,
+        "5": 3.5
       }
     },
     {
@@ -2871,6 +3073,24 @@
       "weeklyPoints": {
         "2": 9.7,
         "4": 3.8
+      }
+    },
+    {
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 33.7,
+      "avgPoints": 6.74,
+      "bestWeek": 2,
+      "bestWeekPoints": 18.3,
+      "weeklyPoints": {
+        "1": 1.6,
+        "2": 18.3,
+        "3": 7.8,
+        "4": 2.6,
+        "5": 3.4
       }
     },
     {
@@ -2890,6 +3110,42 @@
       }
     },
     {
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 33.6,
+      "avgPoints": 6.72,
+      "bestWeek": 5,
+      "bestWeekPoints": 14.4,
+      "weeklyPoints": {
+        "1": 3.6,
+        "2": 3.6,
+        "3": 5.8,
+        "4": 6.2,
+        "5": 14.4
+      }
+    },
+    {
+      "name": "Michael Mayer",
+      "position": "TE",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 33.6,
+      "avgPoints": 6.72,
+      "bestWeek": 4,
+      "bestWeekPoints": 12.2,
+      "weeklyPoints": {
+        "1": 6.2,
+        "2": 3.8,
+        "3": 10.7,
+        "4": 12.2,
+        "5": 0.7
+      }
+    },
+    {
       "name": "Tory Horton",
       "position": "WR",
       "nflTeam": "SEA",
@@ -2902,21 +3158,6 @@
       "weeklyPoints": {
         "3": 6.3,
         "4": 7.1
-      }
-    },
-    {
-      "name": "Jalon Daniels",
-      "position": "QB",
-      "nflTeam": "TB",
-      "division": "NFC South",
-      "gamesPlayed": 2,
-      "totalPoints": 13.32,
-      "avgPoints": 6.66,
-      "bestWeek": 4,
-      "bestWeekPoints": 13.42,
-      "weeklyPoints": {
-        "3": -0.1,
-        "4": 13.42
       }
     },
     {
@@ -2935,6 +3176,24 @@
       }
     },
     {
+      "name": "Demario Douglas",
+      "position": "WR",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 33.2,
+      "avgPoints": 6.64,
+      "bestWeek": 5,
+      "bestWeekPoints": 20.5,
+      "weeklyPoints": {
+        "1": 4.5,
+        "2": 1.4,
+        "3": 4.3,
+        "4": 2.5,
+        "5": 20.5
+      }
+    },
+    {
       "name": "Jahdae Walker",
       "position": "WR",
       "nflTeam": "CHI",
@@ -2949,20 +3208,20 @@
       }
     },
     {
-      "name": "Keaton Mitchell",
-      "position": "RB",
-      "nflTeam": "LAC",
-      "division": "AFC West",
+      "name": "Kendrick Bourne",
+      "position": "WR",
+      "nflTeam": "ARI",
+      "division": "NFC West",
       "gamesPlayed": 4,
       "totalPoints": 26.3,
       "avgPoints": 6.58,
-      "bestWeek": 3,
-      "bestWeekPoints": 12.2,
+      "bestWeek": 1,
+      "bestWeekPoints": 11.5,
       "weeklyPoints": {
-        "1": 0.9,
-        "2": 4.4,
-        "3": 12.2,
-        "4": 8.8
+        "1": 11.5,
+        "2": 2.1,
+        "3": 3.2,
+        "5": 9.5
       }
     },
     {
@@ -2983,51 +3242,55 @@
       }
     },
     {
-      "name": "Kimani Vidal",
-      "position": "WR",
-      "nflTeam": "LAC",
-      "division": "AFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 13.1,
-      "avgPoints": 6.55,
-      "bestWeek": 4,
-      "bestWeekPoints": 10.6,
-      "weeklyPoints": {
-        "3": 2.5,
-        "4": 10.6
-      }
-    },
-    {
-      "name": "Dohnte Meyers",
-      "position": "WR",
-      "nflTeam": "CIN",
+      "name": "Mark Andrews",
+      "position": "TE",
+      "nflTeam": "BAL",
       "division": "AFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 19.4,
-      "avgPoints": 6.47,
+      "gamesPlayed": 5,
+      "totalPoints": 32.7,
+      "avgPoints": 6.54,
       "bestWeek": 4,
-      "bestWeekPoints": 11.7,
+      "bestWeekPoints": 11.2,
       "weeklyPoints": {
-        "1": 3.3,
-        "3": 4.4,
-        "4": 11.7
+        "1": 6.9,
+        "2": 7.9,
+        "3": 3.9,
+        "4": 11.2,
+        "5": 2.8
       }
     },
     {
-      "name": "Isaiah Williams",
-      "position": "WR",
-      "nflTeam": "NYJ",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 25.9,
-      "avgPoints": 6.47,
+      "name": "Elijah Higgins",
+      "position": "TE",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 19.6,
+      "avgPoints": 6.53,
       "bestWeek": 4,
-      "bestWeekPoints": 14.3,
+      "bestWeekPoints": 8.9,
       "weeklyPoints": {
-        "1": 1.2,
-        "2": 7.8,
-        "3": 2.6,
-        "4": 14.3
+        "3": 3.5,
+        "4": 8.9,
+        "5": 7.2
+      }
+    },
+    {
+      "name": "Khalil Shakir",
+      "position": "WR",
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 32.6,
+      "avgPoints": 6.52,
+      "bestWeek": 4,
+      "bestWeekPoints": 9.7,
+      "weeklyPoints": {
+        "1": 7.0,
+        "2": 5.3,
+        "3": 1.1,
+        "4": 9.7,
+        "5": 9.5
       }
     },
     {
@@ -3047,38 +3310,6 @@
       }
     },
     {
-      "name": "Tyler Allgeier",
-      "position": "WR",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 25.7,
-      "avgPoints": 6.42,
-      "bestWeek": 4,
-      "bestWeekPoints": 11.9,
-      "weeklyPoints": {
-        "1": 8.0,
-        "2": 2.9,
-        "3": 2.9,
-        "4": 11.9
-      }
-    },
-    {
-      "name": "Cole Kmet",
-      "position": "TE",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 2,
-      "totalPoints": 12.8,
-      "avgPoints": 6.4,
-      "bestWeek": 1,
-      "bestWeekPoints": 10.5,
-      "weeklyPoints": {
-        "1": 10.5,
-        "4": 2.3
-      }
-    },
-    {
       "name": "Mitchell Tinsley",
       "position": "WR",
       "nflTeam": "CIN",
@@ -3093,84 +3324,108 @@
       }
     },
     {
-      "name": "Jaylin Noel",
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 25.5,
+      "avgPoints": 6.38,
+      "bestWeek": 2,
+      "bestWeekPoints": 13.6,
+      "weeklyPoints": {
+        "2": 13.6,
+        "3": 3.4,
+        "4": 4.2,
+        "5": 4.3
+      }
+    },
+    {
+      "name": "Xavier Hutchinson",
       "position": "WR",
       "nflTeam": "HOU",
       "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 25.1,
-      "avgPoints": 6.28,
-      "bestWeek": 4,
-      "bestWeekPoints": 10.4,
+      "gamesPlayed": 5,
+      "totalPoints": 31.5,
+      "avgPoints": 6.3,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.5,
       "weeklyPoints": {
-        "1": 6.3,
-        "2": 4.9,
-        "3": 3.5,
-        "4": 10.4
+        "1": 4.7,
+        "2": 5.2,
+        "3": 7.0,
+        "4": 6.1,
+        "5": 8.5
       }
     },
     {
-      "name": "Elijah Higgins",
+      "name": "Hunter Henry",
       "position": "TE",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 12.4,
-      "avgPoints": 6.2,
-      "bestWeek": 4,
-      "bestWeekPoints": 8.9,
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 31.2,
+      "avgPoints": 6.24,
+      "bestWeek": 5,
+      "bestWeekPoints": 11.9,
       "weeklyPoints": {
-        "3": 3.5,
-        "4": 8.9
+        "1": 4.1,
+        "2": 5.5,
+        "3": 1.0,
+        "4": 8.7,
+        "5": 11.9
       }
     },
     {
-      "name": "Antonio Williams",
+      "name": "Keaton Mitchell",
+      "position": "RB",
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 30.7,
+      "avgPoints": 6.14,
+      "bestWeek": 3,
+      "bestWeekPoints": 12.2,
+      "weeklyPoints": {
+        "1": 0.9,
+        "2": 4.4,
+        "3": 12.2,
+        "4": 8.8,
+        "5": 4.4
+      }
+    },
+    {
+      "name": "Ty Johnson",
       "position": "WR",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 24.4,
-      "avgPoints": 6.1,
-      "bestWeek": 1,
-      "bestWeekPoints": 14.4,
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 18.4,
+      "avgPoints": 6.13,
+      "bestWeek": 5,
+      "bestWeekPoints": 9.2,
       "weeklyPoints": {
-        "1": 14.4,
-        "2": 3.9,
-        "3": 2.5,
-        "4": 3.6
+        "3": 7.0,
+        "4": 2.2,
+        "5": 9.2
       }
     },
     {
-      "name": "Tyson Bagent",
-      "position": "QB",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 2,
-      "totalPoints": 11.98,
-      "avgPoints": 5.99,
-      "bestWeek": 4,
-      "bestWeekPoints": 9.82,
-      "weeklyPoints": {
-        "2": 2.16,
-        "4": 9.82
-      }
-    },
-    {
-      "name": "Chris Godwin",
+      "name": "Tre Harris",
       "position": "WR",
-      "nflTeam": "TB",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 23.7,
-      "avgPoints": 5.92,
-      "bestWeek": 2,
-      "bestWeekPoints": 7.3,
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 30.0,
+      "avgPoints": 6.0,
+      "bestWeek": 3,
+      "bestWeekPoints": 10.6,
       "weeklyPoints": {
-        "1": 6.3,
-        "2": 7.3,
-        "3": 4.0,
-        "4": 6.1
+        "1": 3.5,
+        "2": 5.8,
+        "3": 10.6,
+        "4": 7.5,
+        "5": 2.6
       }
     },
     {
@@ -3189,118 +3444,56 @@
       }
     },
     {
-      "name": "Ian Thomas",
-      "position": "TE",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 11.8,
-      "avgPoints": 5.9,
-      "bestWeek": 4,
-      "bestWeekPoints": 10.2,
-      "weeklyPoints": {
-        "2": 1.6,
-        "4": 10.2
-      }
-    },
-    {
-      "name": "Chris Bell",
+      "name": "Chris Godwin",
       "position": "WR",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 11.7,
-      "avgPoints": 5.85,
-      "bestWeek": 3,
-      "bestWeekPoints": 8.7,
-      "weeklyPoints": {
-        "1": 3.0,
-        "3": 8.7
-      }
-    },
-    {
-      "name": "Cade Otton",
-      "position": "TE",
       "nflTeam": "TB",
       "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 23.2,
-      "avgPoints": 5.8,
-      "bestWeek": 3,
-      "bestWeekPoints": 7.1,
+      "gamesPlayed": 5,
+      "totalPoints": 29.2,
+      "avgPoints": 5.84,
+      "bestWeek": 2,
+      "bestWeekPoints": 7.3,
       "weeklyPoints": {
-        "1": 4.1,
-        "2": 6.3,
-        "3": 7.1,
-        "4": 5.7
+        "1": 6.3,
+        "2": 7.3,
+        "3": 4.0,
+        "4": 6.1,
+        "5": 5.5
       }
     },
     {
-      "name": "Khalil Shakir",
+      "name": "Antonio Williams",
       "position": "WR",
-      "nflTeam": "BUF",
-      "division": "AFC East",
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 29.0,
+      "avgPoints": 5.8,
+      "bestWeek": 1,
+      "bestWeekPoints": 14.4,
+      "weeklyPoints": {
+        "1": 14.4,
+        "2": 3.9,
+        "3": 2.5,
+        "4": 3.6,
+        "5": 4.6
+      }
+    },
+    {
+      "name": "Evan Engram",
+      "position": "TE",
+      "nflTeam": "DEN",
+      "division": "AFC West",
       "gamesPlayed": 4,
       "totalPoints": 23.1,
       "avgPoints": 5.78,
-      "bestWeek": 4,
-      "bestWeekPoints": 9.7,
+      "bestWeek": 1,
+      "bestWeekPoints": 12.3,
       "weeklyPoints": {
-        "1": 7.0,
-        "2": 5.3,
-        "3": 1.1,
-        "4": 9.7
-      }
-    },
-    {
-      "name": "Xavier Hutchinson",
-      "position": "WR",
-      "nflTeam": "HOU",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 23.0,
-      "avgPoints": 5.75,
-      "bestWeek": 3,
-      "bestWeekPoints": 7.0,
-      "weeklyPoints": {
-        "1": 4.7,
-        "2": 5.2,
-        "3": 7.0,
-        "4": 6.1
-      }
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "nflTeam": "NYJ",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 22.9,
-      "avgPoints": 5.72,
-      "bestWeek": 2,
-      "bestWeekPoints": 8.0,
-      "weeklyPoints": {
-        "1": 4.0,
-        "2": 8.0,
-        "3": 3.2,
-        "4": 7.7
-      }
-    },
-    {
-      "name": "Christopher Rodriguez",
-      "position": "RB",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 22.8,
-      "avgPoints": 5.7,
-      "bestWeek": 3,
-      "bestWeekPoints": 9.7,
-      "weeklyPoints": {
-        "1": 2.3,
-        "2": 1.3,
-        "3": 9.7,
-        "4": 9.5
+        "1": 12.3,
+        "2": 2.2,
+        "4": 1.1,
+        "5": 7.5
       }
     },
     {
@@ -3337,36 +3530,161 @@
       }
     },
     {
-      "name": "Malachi Fields",
+      "name": "Isaiah Williams",
       "position": "WR",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 22.6,
-      "avgPoints": 5.65,
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 28.3,
+      "avgPoints": 5.66,
       "bestWeek": 4,
-      "bestWeekPoints": 12.2,
+      "bestWeekPoints": 14.3,
       "weeklyPoints": {
-        "1": 3.5,
-        "2": 4.0,
-        "3": 2.9,
-        "4": 12.2
+        "1": 1.2,
+        "2": 7.8,
+        "3": 2.6,
+        "4": 14.3,
+        "5": 2.4
       }
     },
     {
-      "name": "Kendrick Bourne",
+      "name": "Tyler Allgeier",
       "position": "WR",
       "nflTeam": "ARI",
       "division": "NFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 16.8,
-      "avgPoints": 5.6,
-      "bestWeek": 1,
-      "bestWeekPoints": 11.5,
+      "gamesPlayed": 5,
+      "totalPoints": 28.3,
+      "avgPoints": 5.66,
+      "bestWeek": 4,
+      "bestWeekPoints": 11.9,
       "weeklyPoints": {
-        "1": 11.5,
-        "2": 2.1,
-        "3": 3.2
+        "1": 8.0,
+        "2": 2.9,
+        "3": 2.9,
+        "4": 11.9,
+        "5": 2.6
+      }
+    },
+    {
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 27.4,
+      "avgPoints": 5.48,
+      "bestWeek": 5,
+      "bestWeekPoints": 10.5,
+      "weeklyPoints": {
+        "1": 3.2,
+        "2": 4.8,
+        "3": 3.2,
+        "4": 5.7,
+        "5": 10.5
+      }
+    },
+    {
+      "name": "Kyle Pitts",
+      "position": "TE",
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 21.9,
+      "avgPoints": 5.47,
+      "bestWeek": 5,
+      "bestWeekPoints": 12.7,
+      "weeklyPoints": {
+        "2": 2.0,
+        "3": 1.0,
+        "4": 6.2,
+        "5": 12.7
+      }
+    },
+    {
+      "name": "Kendre Miller",
+      "position": "RB",
+      "nflTeam": "NO",
+      "division": "NFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 21.8,
+      "avgPoints": 5.45,
+      "bestWeek": 1,
+      "bestWeekPoints": 9.0,
+      "weeklyPoints": {
+        "1": 9.0,
+        "3": 2.9,
+        "4": 0.9,
+        "5": 9.0
+      }
+    },
+    {
+      "name": "Cade Otton",
+      "position": "TE",
+      "nflTeam": "TB",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 27.2,
+      "avgPoints": 5.44,
+      "bestWeek": 3,
+      "bestWeekPoints": 7.1,
+      "weeklyPoints": {
+        "1": 4.1,
+        "2": 6.3,
+        "3": 7.1,
+        "4": 5.7,
+        "5": 4.0
+      }
+    },
+    {
+      "name": "Dohnte Meyers",
+      "position": "WR",
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 4,
+      "totalPoints": 21.6,
+      "avgPoints": 5.4,
+      "bestWeek": 4,
+      "bestWeekPoints": 11.7,
+      "weeklyPoints": {
+        "1": 3.3,
+        "3": 4.4,
+        "4": 11.7,
+        "5": 2.2
+      }
+    },
+    {
+      "name": "Samaje Perine",
+      "position": "RB",
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 26.6,
+      "avgPoints": 5.32,
+      "bestWeek": 5,
+      "bestWeekPoints": 14.8,
+      "weeklyPoints": {
+        "1": 6.5,
+        "2": 2.7,
+        "3": 1.9,
+        "4": 0.7,
+        "5": 14.8
+      }
+    },
+    {
+      "name": "Greg Dulcich",
+      "position": "TE",
+      "nflTeam": "MIA",
+      "division": "AFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 21.2,
+      "avgPoints": 5.3,
+      "bestWeek": 3,
+      "bestWeekPoints": 8.0,
+      "weeklyPoints": {
+        "1": 2.8,
+        "2": 2.7,
+        "3": 8.0,
+        "5": 7.7
       }
     },
     {
@@ -3374,83 +3692,33 @@
       "position": "WR",
       "nflTeam": "IND",
       "division": "AFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 16.8,
-      "avgPoints": 5.6,
+      "gamesPlayed": 4,
+      "totalPoints": 21.2,
+      "avgPoints": 5.3,
       "bestWeek": 2,
       "bestWeekPoints": 7.6,
       "weeklyPoints": {
         "2": 7.6,
         "3": 2.5,
-        "4": 6.7
+        "4": 6.7,
+        "5": 4.4
       }
     },
     {
-      "name": "Cooper Kupp",
+      "name": "Efton Chism",
       "position": "WR",
-      "nflTeam": "SEA",
-      "division": "NFC West",
+      "nflTeam": "NE",
+      "division": "AFC East",
       "gamesPlayed": 4,
-      "totalPoints": 21.9,
-      "avgPoints": 5.47,
-      "bestWeek": 3,
-      "bestWeekPoints": 12.6,
-      "weeklyPoints": {
-        "1": 4.5,
-        "2": 3.0,
-        "3": 12.6,
-        "4": 1.8
-      }
-    },
-    {
-      "name": "KC Concepcion",
-      "position": "WR",
-      "nflTeam": "CLE",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 21.8,
-      "avgPoints": 5.45,
+      "totalPoints": 21.14,
+      "avgPoints": 5.29,
       "bestWeek": 4,
-      "bestWeekPoints": 8.9,
+      "bestWeekPoints": 11.2,
       "weeklyPoints": {
-        "1": 5.8,
-        "2": 5.2,
-        "3": 1.9,
-        "4": 8.9
-      }
-    },
-    {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "nflTeam": "GB",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 21.5,
-      "avgPoints": 5.38,
-      "bestWeek": 2,
-      "bestWeekPoints": 7.6,
-      "weeklyPoints": {
-        "1": 3.7,
-        "2": 7.6,
-        "3": 2.8,
-        "4": 7.4
-      }
-    },
-    {
-      "name": "Darnell Washington",
-      "position": "TE",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 21.2,
-      "avgPoints": 5.3,
-      "bestWeek": 4,
-      "bestWeekPoints": 10.2,
-      "weeklyPoints": {
-        "1": 2.8,
-        "2": 0.0,
-        "3": 8.2,
-        "4": 10.2
+        "2": 0.3,
+        "3": 1.24,
+        "4": 11.2,
+        "5": 8.4
       }
     },
     {
@@ -3488,36 +3756,36 @@
       }
     },
     {
-      "name": "AJ Barner",
-      "position": "TE",
-      "nflTeam": "SEA",
-      "division": "NFC West",
+      "name": "Germie Bernard",
+      "position": "WR",
+      "nflTeam": "PIT",
+      "division": "AFC North",
       "gamesPlayed": 4,
-      "totalPoints": 20.8,
-      "avgPoints": 5.2,
-      "bestWeek": 3,
-      "bestWeekPoints": 9.4,
+      "totalPoints": 20.9,
+      "avgPoints": 5.22,
+      "bestWeek": 5,
+      "bestWeekPoints": 11.4,
       "weeklyPoints": {
-        "1": 2.3,
-        "2": 7.4,
-        "3": 9.4,
-        "4": 1.7
+        "2": 5.5,
+        "3": 1.9,
+        "4": 2.1,
+        "5": 11.4
       }
     },
     {
-      "name": "Evan Engram",
-      "position": "TE",
-      "nflTeam": "DEN",
-      "division": "AFC West",
+      "name": "Devontez Walker",
+      "position": "WR",
+      "nflTeam": "BAL",
+      "division": "AFC North",
       "gamesPlayed": 3,
-      "totalPoints": 15.6,
-      "avgPoints": 5.2,
-      "bestWeek": 1,
-      "bestWeekPoints": 12.3,
+      "totalPoints": 15.5,
+      "avgPoints": 5.17,
+      "bestWeek": 5,
+      "bestWeekPoints": 7.9,
       "weeklyPoints": {
-        "1": 12.3,
-        "2": 2.2,
-        "4": 1.1
+        "2": 5.2,
+        "4": 2.4,
+        "5": 7.9
       }
     },
     {
@@ -3537,37 +3805,21 @@
       }
     },
     {
-      "name": "Rashid Shaheed",
+      "name": "Malachi Fields",
       "position": "WR",
-      "nflTeam": "SEA",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 20.5,
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 25.6,
       "avgPoints": 5.12,
       "bestWeek": 4,
-      "bestWeekPoints": 11.8,
+      "bestWeekPoints": 12.2,
       "weeklyPoints": {
-        "1": 0.9,
-        "2": 5.4,
-        "3": 2.4,
-        "4": 11.8
-      }
-    },
-    {
-      "name": "Blake Corum",
-      "position": "RB",
-      "nflTeam": "LA",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 20.2,
-      "avgPoints": 5.05,
-      "bestWeek": 2,
-      "bestWeekPoints": 9.7,
-      "weeklyPoints": {
-        "1": 5.4,
-        "2": 9.7,
-        "3": 2.5,
-        "4": 2.6
+        "1": 3.5,
+        "2": 4.0,
+        "3": 2.9,
+        "4": 12.2,
+        "5": 3.0
       }
     },
     {
@@ -3586,18 +3838,36 @@
       }
     },
     {
-      "name": "Dyami Brown",
-      "position": "WR",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 10.1,
+      "name": "Tyson Bagent",
+      "position": "QB",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 3,
+      "totalPoints": 15.16,
       "avgPoints": 5.05,
       "bestWeek": 4,
-      "bestWeekPoints": 8.0,
+      "bestWeekPoints": 9.82,
       "weeklyPoints": {
-        "2": 2.1,
-        "4": 8.0
+        "2": 2.16,
+        "4": 9.82,
+        "5": 3.18
+      }
+    },
+    {
+      "name": "Eli Raridon",
+      "position": "TE",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 20.1,
+      "avgPoints": 5.03,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.2,
+      "weeklyPoints": {
+        "1": 6.7,
+        "2": 3.5,
+        "4": 1.7,
+        "5": 8.2
       }
     },
     {
@@ -3615,20 +3885,21 @@
       }
     },
     {
-      "name": "Elic Ayomanor",
+      "name": "Jahan Dotson",
       "position": "WR",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 19.8,
-      "avgPoints": 4.95,
-      "bestWeek": 2,
-      "bestWeekPoints": 7.9,
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 24.9,
+      "avgPoints": 4.98,
+      "bestWeek": 4,
+      "bestWeekPoints": 12.4,
       "weeklyPoints": {
-        "1": 7.6,
-        "2": 7.9,
+        "1": 2.4,
+        "2": 2.1,
         "3": 1.6,
-        "4": 2.7
+        "4": 12.4,
+        "5": 6.4
       }
     },
     {
@@ -3648,19 +3919,57 @@
       }
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 14.6,
-      "avgPoints": 4.87,
-      "bestWeek": 4,
-      "bestWeekPoints": 8.7,
+      "name": "Christopher Rodriguez",
+      "position": "RB",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 24.4,
+      "avgPoints": 4.88,
+      "bestWeek": 3,
+      "bestWeekPoints": 9.7,
       "weeklyPoints": {
-        "2": 0.8,
-        "3": 5.1,
-        "4": 8.7
+        "1": 2.3,
+        "2": 1.3,
+        "3": 9.7,
+        "4": 9.5,
+        "5": 1.6
+      }
+    },
+    {
+      "name": "Cooper Kupp",
+      "position": "WR",
+      "nflTeam": "SEA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 24.4,
+      "avgPoints": 4.88,
+      "bestWeek": 3,
+      "bestWeekPoints": 12.6,
+      "weeklyPoints": {
+        "1": 4.5,
+        "2": 3.0,
+        "3": 12.6,
+        "4": 1.8,
+        "5": 2.5
+      }
+    },
+    {
+      "name": "AJ Barner",
+      "position": "TE",
+      "nflTeam": "SEA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 24.3,
+      "avgPoints": 4.86,
+      "bestWeek": 3,
+      "bestWeekPoints": 9.4,
+      "weeklyPoints": {
+        "1": 2.3,
+        "2": 7.4,
+        "3": 9.4,
+        "4": 1.7,
+        "5": 3.5
       }
     },
     {
@@ -3694,54 +4003,86 @@
       }
     },
     {
-      "name": "Hunter Henry",
-      "position": "TE",
-      "nflTeam": "NE",
+      "name": "Chris Bell",
+      "position": "WR",
+      "nflTeam": "MIA",
       "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 19.3,
-      "avgPoints": 4.83,
-      "bestWeek": 4,
+      "gamesPlayed": 3,
+      "totalPoints": 14.3,
+      "avgPoints": 4.77,
+      "bestWeek": 3,
       "bestWeekPoints": 8.7,
       "weeklyPoints": {
-        "1": 4.1,
-        "2": 5.5,
-        "3": 1.0,
-        "4": 8.7
+        "1": 3.0,
+        "3": 8.7,
+        "5": 2.6
       }
     },
     {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "nflTeam": "DEN",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 19.2,
-      "avgPoints": 4.8,
-      "bestWeek": 4,
-      "bestWeekPoints": 6.2,
-      "weeklyPoints": {
-        "1": 3.6,
-        "2": 3.6,
-        "3": 5.8,
-        "4": 6.2
-      }
-    },
-    {
-      "name": "Jahan Dotson",
+      "name": "Rashid Shaheed",
       "position": "WR",
-      "nflTeam": "ATL",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 18.5,
-      "avgPoints": 4.62,
+      "nflTeam": "SEA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 23.8,
+      "avgPoints": 4.76,
       "bestWeek": 4,
-      "bestWeekPoints": 12.4,
+      "bestWeekPoints": 11.8,
       "weeklyPoints": {
-        "1": 2.4,
-        "2": 2.1,
-        "3": 1.6,
-        "4": 12.4
+        "1": 0.9,
+        "2": 5.4,
+        "3": 2.4,
+        "4": 11.8,
+        "5": 3.3
+      }
+    },
+    {
+      "name": "Cole Kmet",
+      "position": "TE",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 3,
+      "totalPoints": 14.1,
+      "avgPoints": 4.7,
+      "bestWeek": 1,
+      "bestWeekPoints": 10.5,
+      "weeklyPoints": {
+        "1": 10.5,
+        "4": 2.3,
+        "5": 1.3
+      }
+    },
+    {
+      "name": "Darnell Washington",
+      "position": "TE",
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 23.4,
+      "avgPoints": 4.68,
+      "bestWeek": 4,
+      "bestWeekPoints": 10.2,
+      "weeklyPoints": {
+        "1": 2.8,
+        "2": 0.0,
+        "3": 8.2,
+        "4": 10.2,
+        "5": 2.2
+      }
+    },
+    {
+      "name": "Roschon Johnson",
+      "position": "RB",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 9.3,
+      "avgPoints": 4.65,
+      "bestWeek": 5,
+      "bestWeekPoints": 6.5,
+      "weeklyPoints": {
+        "4": 2.8,
+        "5": 6.5
       }
     },
     {
@@ -3776,18 +4117,21 @@
       }
     },
     {
-      "name": "Ty Johnson",
+      "name": "KC Concepcion",
       "position": "WR",
-      "nflTeam": "BUF",
-      "division": "AFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 9.2,
-      "avgPoints": 4.6,
-      "bestWeek": 3,
-      "bestWeekPoints": 7.0,
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 22.8,
+      "avgPoints": 4.56,
+      "bestWeek": 4,
+      "bestWeekPoints": 8.9,
       "weeklyPoints": {
-        "3": 7.0,
-        "4": 2.2
+        "1": 5.8,
+        "2": 5.2,
+        "3": 1.9,
+        "4": 8.9,
+        "5": 1.0
       }
     },
     {
@@ -3806,81 +4150,19 @@
       }
     },
     {
-      "name": "Austin Ekeler",
-      "position": "RB",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 1,
-      "totalPoints": 4.5,
-      "avgPoints": 4.5,
-      "bestWeek": 4,
-      "bestWeekPoints": 4.5,
-      "weeklyPoints": {
-        "4": 4.5
-      }
-    },
-    {
-      "name": "Greg Dulcich",
-      "position": "TE",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 13.5,
-      "avgPoints": 4.5,
-      "bestWeek": 3,
-      "bestWeekPoints": 8.0,
-      "weeklyPoints": {
-        "1": 2.8,
-        "2": 2.7,
-        "3": 8.0
-      }
-    },
-    {
       "name": "Theo Johnson",
       "position": "TE",
       "nflTeam": "NYG",
       "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 9.0,
+      "gamesPlayed": 3,
+      "totalPoints": 13.5,
       "avgPoints": 4.5,
       "bestWeek": 4,
       "bestWeekPoints": 7.6,
       "weeklyPoints": {
         "1": 1.4,
-        "4": 7.6
-      }
-    },
-    {
-      "name": "Darnell Mooney",
-      "position": "WR",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 13.4,
-      "avgPoints": 4.47,
-      "bestWeek": 2,
-      "bestWeekPoints": 5.8,
-      "weeklyPoints": {
-        "1": 3.7,
-        "2": 5.8,
-        "3": 3.9
-      }
-    },
-    {
-      "name": "Mike Washington",
-      "position": "RB",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 17.7,
-      "avgPoints": 4.42,
-      "bestWeek": 3,
-      "bestWeekPoints": 11.4,
-      "weeklyPoints": {
-        "1": 4.1,
-        "2": 0.0,
-        "3": 11.4,
-        "4": 2.2
+        "4": 7.6,
+        "5": 4.5
       }
     },
     {
@@ -3898,50 +4180,123 @@
       }
     },
     {
-      "name": "Jerry Jeudy",
+      "name": "Elic Ayomanor",
       "position": "WR",
-      "nflTeam": "CLE",
-      "division": "AFC North",
-      "gamesPlayed": 2,
-      "totalPoints": 8.7,
-      "avgPoints": 4.35,
-      "bestWeek": 4,
-      "bestWeekPoints": 5.1,
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 22.0,
+      "avgPoints": 4.4,
+      "bestWeek": 2,
+      "bestWeekPoints": 7.9,
       "weeklyPoints": {
-        "1": 3.6,
-        "4": 5.1
+        "1": 7.6,
+        "2": 7.9,
+        "3": 1.6,
+        "4": 2.7,
+        "5": 2.2
       }
     },
     {
-      "name": "Kendre Miller",
+      "name": "Ian Thomas",
+      "position": "TE",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 13.2,
+      "avgPoints": 4.4,
+      "bestWeek": 4,
+      "bestWeekPoints": 10.2,
+      "weeklyPoints": {
+        "2": 1.6,
+        "4": 10.2,
+        "5": 1.4
+      }
+    },
+    {
+      "name": "Sean Tucker",
       "position": "RB",
-      "nflTeam": "NO",
+      "nflTeam": "TB",
       "division": "NFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 12.8,
-      "avgPoints": 4.27,
-      "bestWeek": 1,
-      "bestWeekPoints": 9.0,
+      "gamesPlayed": 2,
+      "totalPoints": 8.8,
+      "avgPoints": 4.4,
+      "bestWeek": 4,
+      "bestWeekPoints": 7.0,
       "weeklyPoints": {
-        "1": 9.0,
-        "3": 2.9,
-        "4": 0.9
+        "4": 7.0,
+        "5": 1.8
       }
     },
     {
-      "name": "Efton Chism",
-      "position": "WR",
-      "nflTeam": "NE",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 12.74,
-      "avgPoints": 4.25,
+      "name": "Colston Loveland",
+      "position": "TE",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 4,
+      "totalPoints": 17.5,
+      "avgPoints": 4.38,
       "bestWeek": 4,
-      "bestWeekPoints": 11.2,
+      "bestWeekPoints": 8.7,
       "weeklyPoints": {
-        "2": 0.3,
-        "3": 1.24,
-        "4": 11.2
+        "2": 0.8,
+        "3": 5.1,
+        "4": 8.7,
+        "5": 2.9
+      }
+    },
+    {
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 21.9,
+      "avgPoints": 4.38,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.8,
+      "weeklyPoints": {
+        "1": 2.1,
+        "2": 4.0,
+        "3": 6.1,
+        "4": 0.9,
+        "5": 8.8
+      }
+    },
+    {
+      "name": "Justice Hill",
+      "position": "RB",
+      "nflTeam": "BAL",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 21.7,
+      "avgPoints": 4.34,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.8,
+      "weeklyPoints": {
+        "1": 3.3,
+        "2": 2.8,
+        "3": 3.3,
+        "4": 3.5,
+        "5": 8.8
+      }
+    },
+    {
+      "name": "Kayshon Boutte",
+      "position": "WR",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 21.3,
+      "avgPoints": 4.26,
+      "bestWeek": 5,
+      "bestWeekPoints": 5.3,
+      "weeklyPoints": {
+        "1": 2.6,
+        "2": 5.2,
+        "3": 3.1,
+        "4": 5.1,
+        "5": 5.3
       }
     },
     {
@@ -3949,16 +4304,17 @@
       "position": "RB",
       "nflTeam": "TB",
       "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 17.0,
-      "avgPoints": 4.25,
+      "gamesPlayed": 5,
+      "totalPoints": 21.3,
+      "avgPoints": 4.26,
       "bestWeek": 4,
       "bestWeekPoints": 9.7,
       "weeklyPoints": {
         "1": 2.3,
         "2": 3.0,
         "3": 2.0,
-        "4": 9.7
+        "4": 9.7,
+        "5": 4.3
       }
     },
     {
@@ -3974,39 +4330,6 @@
       "weeklyPoints": {
         "1": 3.1,
         "2": 5.4
-      }
-    },
-    {
-      "name": "Tyler Badie",
-      "position": "WR",
-      "nflTeam": "DEN",
-      "division": "AFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 12.7,
-      "avgPoints": 4.23,
-      "bestWeek": 4,
-      "bestWeekPoints": 6.9,
-      "weeklyPoints": {
-        "2": 3.9,
-        "3": 1.9,
-        "4": 6.9
-      }
-    },
-    {
-      "name": "Ryan Flournoy",
-      "position": "WR",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 16.9,
-      "avgPoints": 4.22,
-      "bestWeek": 4,
-      "bestWeekPoints": 5.7,
-      "weeklyPoints": {
-        "1": 3.2,
-        "2": 4.8,
-        "3": 3.2,
-        "4": 5.7
       }
     },
     {
@@ -4057,20 +4380,6 @@
       }
     },
     {
-      "name": "Tyler Huntley",
-      "position": "QB",
-      "nflTeam": "BAL",
-      "division": "AFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 4.12,
-      "avgPoints": 4.12,
-      "bestWeek": 4,
-      "bestWeekPoints": 4.12,
-      "weeklyPoints": {
-        "4": 4.12
-      }
-    },
-    {
       "name": "A.J. Brown",
       "position": "WR",
       "nflTeam": "NE",
@@ -4082,6 +4391,69 @@
       "bestWeekPoints": 4.1,
       "weeklyPoints": {
         "1": 4.1
+      }
+    },
+    {
+      "name": "Chigoziem Okonkwo",
+      "position": "TE",
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 12.1,
+      "avgPoints": 4.03,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.0,
+      "weeklyPoints": {
+        "1": 2.6,
+        "4": 1.5,
+        "5": 8.0
+      }
+    },
+    {
+      "name": "Jerry Jeudy",
+      "position": "WR",
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 3,
+      "totalPoints": 12.1,
+      "avgPoints": 4.03,
+      "bestWeek": 4,
+      "bestWeekPoints": 5.1,
+      "weeklyPoints": {
+        "1": 3.6,
+        "4": 5.1,
+        "5": 3.4
+      }
+    },
+    {
+      "name": "Kevin Coleman",
+      "position": "WR",
+      "nflTeam": "MIA",
+      "division": "AFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 12.1,
+      "avgPoints": 4.03,
+      "bestWeek": 5,
+      "bestWeekPoints": 10.5,
+      "weeklyPoints": {
+        "3": 0.8,
+        "4": 0.8,
+        "5": 10.5
+      }
+    },
+    {
+      "name": "Dylan Laube",
+      "position": "WR",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 2,
+      "totalPoints": 8.0,
+      "avgPoints": 4.0,
+      "bestWeek": 5,
+      "bestWeekPoints": 10.0,
+      "weeklyPoints": {
+        "3": -2.0,
+        "5": 10.0
       }
     },
     {
@@ -4101,53 +4473,20 @@
       }
     },
     {
-      "name": "Kayshon Boutte",
+      "name": "Darnell Mooney",
       "position": "WR",
-      "nflTeam": "HOU",
-      "division": "AFC South",
+      "nflTeam": "NYG",
+      "division": "NFC East",
       "gamesPlayed": 4,
-      "totalPoints": 16.0,
-      "avgPoints": 4.0,
+      "totalPoints": 15.8,
+      "avgPoints": 3.95,
       "bestWeek": 2,
-      "bestWeekPoints": 5.2,
+      "bestWeekPoints": 5.8,
       "weeklyPoints": {
-        "1": 2.6,
-        "2": 5.2,
-        "3": 3.1,
-        "4": 5.1
-      }
-    },
-    {
-      "name": "Eli Raridon",
-      "position": "TE",
-      "nflTeam": "NE",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 11.9,
-      "avgPoints": 3.97,
-      "bestWeek": 1,
-      "bestWeekPoints": 6.7,
-      "weeklyPoints": {
-        "1": 6.7,
-        "2": 3.5,
-        "4": 1.7
-      }
-    },
-    {
-      "name": "George Holani",
-      "position": "WR",
-      "nflTeam": "SEA",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 15.7,
-      "avgPoints": 3.92,
-      "bestWeek": 3,
-      "bestWeekPoints": 8.3,
-      "weeklyPoints": {
-        "1": 2.9,
-        "2": 2.0,
-        "3": 8.3,
-        "4": 2.5
+        "1": 3.7,
+        "2": 5.8,
+        "3": 3.9,
+        "5": 2.4
       }
     },
     {
@@ -4197,6 +4536,20 @@
       }
     },
     {
+      "name": "Reginald Virgil",
+      "position": "WR",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 3.9,
+      "avgPoints": 3.9,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.9,
+      "weeklyPoints": {
+        "5": 3.9
+      }
+    },
+    {
       "name": "Emmett Johnson",
       "position": "RB",
       "nflTeam": "KC",
@@ -4229,35 +4582,55 @@
       }
     },
     {
-      "name": "Devontez Walker",
-      "position": "WR",
-      "nflTeam": "BAL",
-      "division": "AFC North",
-      "gamesPlayed": 2,
-      "totalPoints": 7.6,
-      "avgPoints": 3.8,
-      "bestWeek": 2,
-      "bestWeekPoints": 5.2,
+      "name": "Mike Washington",
+      "position": "RB",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 19.2,
+      "avgPoints": 3.84,
+      "bestWeek": 3,
+      "bestWeekPoints": 11.4,
       "weeklyPoints": {
-        "2": 5.2,
-        "4": 2.4
+        "1": 4.1,
+        "2": 0.0,
+        "3": 11.4,
+        "4": 2.2,
+        "5": 1.5
       }
     },
     {
-      "name": "Foster Moreau",
-      "position": "TE",
-      "nflTeam": "HOU",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 15.2,
-      "avgPoints": 3.8,
+      "name": "George Holani",
+      "position": "WR",
+      "nflTeam": "SEA",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 18.8,
+      "avgPoints": 3.76,
       "bestWeek": 3,
-      "bestWeekPoints": 7.7,
+      "bestWeekPoints": 8.3,
       "weeklyPoints": {
-        "1": 2.5,
-        "2": 4.4,
-        "3": 7.7,
-        "4": 0.6
+        "1": 2.9,
+        "2": 2.0,
+        "3": 8.3,
+        "4": 2.5,
+        "5": 3.1
+      }
+    },
+    {
+      "name": "Isaiah Bond",
+      "position": "WR",
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 3,
+      "totalPoints": 11.1,
+      "avgPoints": 3.7,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.9,
+      "weeklyPoints": {
+        "2": 1.5,
+        "4": 0.7,
+        "5": 8.9
       }
     },
     {
@@ -4275,6 +4648,20 @@
       }
     },
     {
+      "name": "Jeshaun Jones",
+      "position": "WR",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 1,
+      "totalPoints": 3.7,
+      "avgPoints": 3.7,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.7,
+      "weeklyPoints": {
+        "5": 3.7
+      }
+    },
+    {
       "name": "Jonnu Smith",
       "position": "TE",
       "nflTeam": "GB",
@@ -4288,6 +4675,24 @@
         "1": 6.0,
         "3": 2.6,
         "4": 2.4
+      }
+    },
+    {
+      "name": "Tyjae Spears",
+      "position": "RB",
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 18.3,
+      "avgPoints": 3.66,
+      "bestWeek": 2,
+      "bestWeekPoints": 8.0,
+      "weeklyPoints": {
+        "1": 3.4,
+        "2": 8.0,
+        "3": 0.5,
+        "4": 1.1,
+        "5": 5.3
       }
     },
     {
@@ -4308,17 +4713,67 @@
       }
     },
     {
-      "name": "Charlie Kolar",
-      "position": "TE",
-      "nflTeam": "LAC",
-      "division": "AFC West",
+      "name": "Dyami Brown",
+      "position": "WR",
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 10.8,
+      "avgPoints": 3.6,
+      "bestWeek": 4,
+      "bestWeekPoints": 8.0,
+      "weeklyPoints": {
+        "2": 2.1,
+        "4": 8.0,
+        "5": 0.7
+      }
+    },
+    {
+      "name": "Tim Patrick",
+      "position": "WR",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
       "gamesPlayed": 1,
       "totalPoints": 3.6,
       "avgPoints": 3.6,
-      "bestWeek": 2,
+      "bestWeek": 5,
       "bestWeekPoints": 3.6,
       "weeklyPoints": {
-        "2": 3.6
+        "5": 3.6
+      }
+    },
+    {
+      "name": "Makai Lemon",
+      "position": "WR",
+      "nflTeam": "PHI",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 17.8,
+      "avgPoints": 3.56,
+      "bestWeek": 5,
+      "bestWeekPoints": 6.8,
+      "weeklyPoints": {
+        "1": 1.0,
+        "2": 1.4,
+        "3": 4.4,
+        "4": 4.2,
+        "5": 6.8
+      }
+    },
+    {
+      "name": "Calvin Ridley",
+      "position": "WR",
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 3,
+      "totalPoints": 10.6,
+      "avgPoints": 3.53,
+      "bestWeek": 2,
+      "bestWeekPoints": 4.5,
+      "weeklyPoints": {
+        "2": 4.5,
+        "4": 1.8,
+        "5": 4.3
       }
     },
     {
@@ -4336,20 +4791,87 @@
       }
     },
     {
-      "name": "Raheim Sanders",
-      "position": "RB",
-      "nflTeam": "CLE",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 13.8,
-      "avgPoints": 3.45,
-      "bestWeek": 3,
-      "bestWeekPoints": 7.1,
+      "name": "Will Shipley",
+      "position": "WR",
+      "nflTeam": "PHI",
+      "division": "NFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 17.3,
+      "avgPoints": 3.46,
+      "bestWeek": 5,
+      "bestWeekPoints": 7.8,
       "weeklyPoints": {
-        "1": 4.1,
-        "2": 0.0,
-        "3": 7.1,
-        "4": 2.6
+        "1": 1.7,
+        "2": 3.9,
+        "3": 1.6,
+        "4": 2.3,
+        "5": 7.8
+      }
+    },
+    {
+      "name": "Charlie Kolar",
+      "position": "TE",
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 2,
+      "totalPoints": 6.8,
+      "avgPoints": 3.4,
+      "bestWeek": 2,
+      "bestWeekPoints": 3.6,
+      "weeklyPoints": {
+        "2": 3.6,
+        "5": 3.2
+      }
+    },
+    {
+      "name": "Foster Moreau",
+      "position": "TE",
+      "nflTeam": "HOU",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 17.0,
+      "avgPoints": 3.4,
+      "bestWeek": 3,
+      "bestWeekPoints": 7.7,
+      "weeklyPoints": {
+        "1": 2.5,
+        "2": 4.4,
+        "3": 7.7,
+        "4": 0.6,
+        "5": 1.8
+      }
+    },
+    {
+      "name": "Tez Johnson",
+      "position": "WR",
+      "nflTeam": "TB",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 16.9,
+      "avgPoints": 3.38,
+      "bestWeek": 5,
+      "bestWeekPoints": 6.9,
+      "weeklyPoints": {
+        "1": -0.4,
+        "2": 5.4,
+        "3": 1.3,
+        "4": 3.7,
+        "5": 6.9
+      }
+    },
+    {
+      "name": "Gavin Bartholomew",
+      "position": "TE",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 6.7,
+      "avgPoints": 3.35,
+      "bestWeek": 5,
+      "bestWeekPoints": 5.8,
+      "weeklyPoints": {
+        "4": 0.9,
+        "5": 5.8
       }
     },
     {
@@ -4369,87 +4891,80 @@
       }
     },
     {
-      "name": "Courtland Sutton",
+      "name": "Tyler Badie",
       "position": "WR",
       "nflTeam": "DEN",
       "division": "AFC West",
       "gamesPlayed": 4,
-      "totalPoints": 13.1,
-      "avgPoints": 3.27,
-      "bestWeek": 3,
-      "bestWeekPoints": 6.1,
+      "totalPoints": 13.3,
+      "avgPoints": 3.33,
+      "bestWeek": 4,
+      "bestWeekPoints": 6.9,
       "weeklyPoints": {
-        "1": 2.1,
-        "2": 4.0,
-        "3": 6.1,
-        "4": 0.9
+        "2": 3.9,
+        "3": 1.9,
+        "4": 6.9,
+        "5": 0.6
       }
     },
     {
-      "name": "Kaelon Black",
+      "name": "Pierre Strong",
       "position": "RB",
-      "nflTeam": "SF",
-      "division": "NFC West",
-      "gamesPlayed": 4,
-      "totalPoints": 13.0,
-      "avgPoints": 3.25,
-      "bestWeek": 1,
-      "bestWeekPoints": 7.5,
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 1,
+      "totalPoints": 3.3,
+      "avgPoints": 3.3,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.3,
       "weeklyPoints": {
-        "1": 7.5,
-        "2": 2.5,
-        "3": 1.7,
-        "4": 1.3
+        "5": 3.3
       }
     },
     {
-      "name": "Tyjae Spears",
+      "name": "Austin Ekeler",
       "position": "RB",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 13.0,
-      "avgPoints": 3.25,
-      "bestWeek": 2,
-      "bestWeekPoints": 8.0,
+      "nflTeam": "WAS",
+      "division": "NFC East",
+      "gamesPlayed": 2,
+      "totalPoints": 6.4,
+      "avgPoints": 3.2,
+      "bestWeek": 4,
+      "bestWeekPoints": 4.5,
       "weeklyPoints": {
-        "1": 3.4,
-        "2": 8.0,
-        "3": 0.5,
-        "4": 1.1
+        "4": 4.5,
+        "5": 1.9
       }
     },
     {
-      "name": "Justice Hill",
-      "position": "RB",
-      "nflTeam": "BAL",
+      "name": "Marquez Valdes-Scantling",
+      "position": "WR",
+      "nflTeam": "LAC",
+      "division": "AFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 3.2,
+      "avgPoints": 3.2,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.2,
+      "weeklyPoints": {
+        "5": 3.2
+      }
+    },
+    {
+      "name": "Tanner Hudson",
+      "position": "TE",
+      "nflTeam": "CIN",
       "division": "AFC North",
       "gamesPlayed": 4,
-      "totalPoints": 12.9,
-      "avgPoints": 3.23,
-      "bestWeek": 4,
-      "bestWeekPoints": 3.5,
-      "weeklyPoints": {
-        "1": 3.3,
-        "2": 2.8,
-        "3": 3.3,
-        "4": 3.5
-      }
-    },
-    {
-      "name": "KaVontae Turpin",
-      "position": "WR",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 9.6,
+      "totalPoints": 12.8,
       "avgPoints": 3.2,
-      "bestWeek": 3,
-      "bestWeekPoints": 8.3,
+      "bestWeek": 5,
+      "bestWeekPoints": 8.9,
       "weeklyPoints": {
-        "1": 1.3,
-        "2": 0.0,
-        "3": 8.3
+        "1": 0.9,
+        "3": 2.3,
+        "4": 0.7,
+        "5": 8.9
       }
     },
     {
@@ -4470,54 +4985,6 @@
       }
     },
     {
-      "name": "Demario Douglas",
-      "position": "WR",
-      "nflTeam": "NE",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 12.7,
-      "avgPoints": 3.17,
-      "bestWeek": 1,
-      "bestWeekPoints": 4.5,
-      "weeklyPoints": {
-        "1": 4.5,
-        "2": 1.4,
-        "3": 4.3,
-        "4": 2.5
-      }
-    },
-    {
-      "name": "Germie Bernard",
-      "position": "WR",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 9.5,
-      "avgPoints": 3.17,
-      "bestWeek": 2,
-      "bestWeekPoints": 5.5,
-      "weeklyPoints": {
-        "2": 5.5,
-        "3": 1.9,
-        "4": 2.1
-      }
-    },
-    {
-      "name": "Calvin Ridley",
-      "position": "WR",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 2,
-      "totalPoints": 6.3,
-      "avgPoints": 3.15,
-      "bestWeek": 2,
-      "bestWeekPoints": 4.5,
-      "weeklyPoints": {
-        "2": 4.5,
-        "4": 1.8
-      }
-    },
-    {
       "name": "Gunnar Helm",
       "position": "TE",
       "nflTeam": "TEN",
@@ -4535,19 +5002,21 @@
       }
     },
     {
-      "name": "Kyle Pitts",
-      "position": "TE",
-      "nflTeam": "ATL",
-      "division": "NFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 9.2,
-      "avgPoints": 3.07,
-      "bestWeek": 4,
-      "bestWeekPoints": 6.2,
+      "name": "Raheim Sanders",
+      "position": "RB",
+      "nflTeam": "CLE",
+      "division": "AFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 15.6,
+      "avgPoints": 3.12,
+      "bestWeek": 3,
+      "bestWeekPoints": 7.1,
       "weeklyPoints": {
-        "2": 2.0,
-        "3": 1.0,
-        "4": 6.2
+        "1": 4.1,
+        "2": 0.0,
+        "3": 7.1,
+        "4": 2.6,
+        "5": 1.8
       }
     },
     {
@@ -4582,53 +5051,21 @@
       }
     },
     {
-      "name": "Dawson Knox",
-      "position": "TE",
-      "nflTeam": "BUF",
-      "division": "AFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 12.0,
-      "avgPoints": 3.0,
-      "bestWeek": 2,
+      "name": "Kaelon Black",
+      "position": "RB",
+      "nflTeam": "SF",
+      "division": "NFC West",
+      "gamesPlayed": 5,
+      "totalPoints": 14.6,
+      "avgPoints": 2.92,
+      "bestWeek": 1,
       "bestWeekPoints": 7.5,
       "weeklyPoints": {
-        "1": 1.2,
-        "2": 7.5,
-        "3": 1.0,
-        "4": 2.3
-      }
-    },
-    {
-      "name": "Samaje Perine",
-      "position": "RB",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 11.8,
-      "avgPoints": 2.95,
-      "bestWeek": 1,
-      "bestWeekPoints": 6.5,
-      "weeklyPoints": {
-        "1": 6.5,
-        "2": 2.7,
-        "3": 1.9,
-        "4": 0.7
-      }
-    },
-    {
-      "name": "Najee Harris",
-      "position": "RB",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 8.8,
-      "avgPoints": 2.93,
-      "bestWeek": 3,
-      "bestWeekPoints": 5.2,
-      "weeklyPoints": {
-        "2": 0.6,
-        "3": 5.2,
-        "4": 3.0
+        "1": 7.5,
+        "2": 2.5,
+        "3": 1.7,
+        "4": 1.3,
+        "5": 1.6
       }
     },
     {
@@ -4676,37 +5113,6 @@
       }
     },
     {
-      "name": "Roschon Johnson",
-      "position": "RB",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 2.8,
-      "avgPoints": 2.8,
-      "bestWeek": 4,
-      "bestWeekPoints": 2.8,
-      "weeklyPoints": {
-        "4": 2.8
-      }
-    },
-    {
-      "name": "Sione Vaki",
-      "position": "RB",
-      "nflTeam": "DET",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 11.2,
-      "avgPoints": 2.8,
-      "bestWeek": 3,
-      "bestWeekPoints": 4.2,
-      "weeklyPoints": {
-        "1": 2.3,
-        "2": 2.5,
-        "3": 4.2,
-        "4": 2.2
-      }
-    },
-    {
       "name": "Sterling Shepard",
       "position": "WR",
       "nflTeam": "NYJ",
@@ -4718,6 +5124,21 @@
       "bestWeekPoints": 2.8,
       "weeklyPoints": {
         "3": 2.8
+      }
+    },
+    {
+      "name": "Tai Felton",
+      "position": "WR",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 5.6,
+      "avgPoints": 2.8,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.7,
+      "weeklyPoints": {
+        "4": 1.9,
+        "5": 3.7
       }
     },
     {
@@ -4736,20 +5157,33 @@
       }
     },
     {
-      "name": "Makai Lemon",
-      "position": "WR",
-      "nflTeam": "PHI",
-      "division": "NFC East",
-      "gamesPlayed": 4,
-      "totalPoints": 11.0,
+      "name": "Erick All",
+      "position": "TE",
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 5.5,
       "avgPoints": 2.75,
-      "bestWeek": 3,
-      "bestWeekPoints": 4.4,
+      "bestWeek": 5,
+      "bestWeekPoints": 4.0,
       "weeklyPoints": {
-        "1": 1.0,
-        "2": 1.4,
-        "3": 4.4,
-        "4": 4.2
+        "2": 1.5,
+        "5": 4.0
+      }
+    },
+    {
+      "name": "Josh Cuevas",
+      "position": "TE",
+      "nflTeam": "BAL",
+      "division": "AFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 5.5,
+      "avgPoints": 2.75,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.6,
+      "weeklyPoints": {
+        "3": 1.9,
+        "5": 3.6
       }
     },
     {
@@ -4786,18 +5220,83 @@
       }
     },
     {
-      "name": "Kyle Williams",
+      "name": "Jalen Tolbert",
       "position": "WR",
-      "nflTeam": "NE",
+      "nflTeam": "MIA",
       "division": "AFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 5.4,
+      "gamesPlayed": 1,
+      "totalPoints": 2.7,
+      "avgPoints": 2.7,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.7,
+      "weeklyPoints": {
+        "5": 2.7
+      }
+    },
+    {
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 10.8,
       "avgPoints": 2.7,
       "bestWeek": 3,
-      "bestWeekPoints": 3.9,
+      "bestWeekPoints": 8.3,
       "weeklyPoints": {
-        "2": 1.5,
-        "3": 3.9
+        "1": 1.3,
+        "2": 0.0,
+        "3": 8.3,
+        "5": 1.2
+      }
+    },
+    {
+      "name": "Najee Harris",
+      "position": "RB",
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 10.7,
+      "avgPoints": 2.67,
+      "bestWeek": 3,
+      "bestWeekPoints": 5.2,
+      "weeklyPoints": {
+        "2": 0.6,
+        "3": 5.2,
+        "4": 3.0,
+        "5": 1.9
+      }
+    },
+    {
+      "name": "Dawson Knox",
+      "position": "TE",
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 5,
+      "totalPoints": 13.1,
+      "avgPoints": 2.62,
+      "bestWeek": 2,
+      "bestWeekPoints": 7.5,
+      "weeklyPoints": {
+        "1": 1.2,
+        "2": 7.5,
+        "3": 1.0,
+        "4": 2.3,
+        "5": 1.1
+      }
+    },
+    {
+      "name": "Jalen Brooks",
+      "position": "WR",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 2.6,
+      "avgPoints": 2.6,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.6,
+      "weeklyPoints": {
+        "5": 2.6
       }
     },
     {
@@ -4821,32 +5320,49 @@
       "position": "RB",
       "nflTeam": "GB",
       "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 7.5,
-      "avgPoints": 2.5,
+      "gamesPlayed": 4,
+      "totalPoints": 10.1,
+      "avgPoints": 2.52,
       "bestWeek": 2,
       "bestWeekPoints": 3.2,
       "weeklyPoints": {
         "2": 3.2,
         "3": 2.1,
-        "4": 2.2
+        "4": 2.2,
+        "5": 2.6
       }
     },
     {
-      "name": "Tez Johnson",
+      "name": "Bo Melton",
       "position": "WR",
-      "nflTeam": "TB",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 10.0,
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 5.0,
       "avgPoints": 2.5,
-      "bestWeek": 2,
-      "bestWeekPoints": 5.4,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.5,
       "weeklyPoints": {
-        "1": -0.4,
-        "2": 5.4,
-        "3": 1.3,
-        "4": 3.7
+        "1": 1.5,
+        "5": 3.5
+      }
+    },
+    {
+      "name": "Sione Vaki",
+      "position": "RB",
+      "nflTeam": "DET",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 12.3,
+      "avgPoints": 2.46,
+      "bestWeek": 3,
+      "bestWeekPoints": 4.2,
+      "weeklyPoints": {
+        "1": 2.3,
+        "2": 2.5,
+        "3": 4.2,
+        "4": 2.2,
+        "5": 1.1
       }
     },
     {
@@ -4882,34 +5398,35 @@
       }
     },
     {
-      "name": "Zonovan Knight",
-      "position": "RB",
-      "nflTeam": "ARI",
-      "division": "NFC West",
-      "gamesPlayed": 1,
-      "totalPoints": 2.4,
-      "avgPoints": 2.4,
-      "bestWeek": 2,
-      "bestWeekPoints": 2.4,
+      "name": "Mason Taylor",
+      "position": "TE",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 2,
+      "totalPoints": 4.7,
+      "avgPoints": 2.35,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.9,
       "weeklyPoints": {
-        "2": 2.4
+        "1": 0.8,
+        "5": 3.9
       }
     },
     {
-      "name": "Will Shipley",
-      "position": "WR",
-      "nflTeam": "PHI",
-      "division": "NFC East",
+      "name": "Davis Allen",
+      "position": "TE",
+      "nflTeam": "LA",
+      "division": "NFC West",
       "gamesPlayed": 4,
-      "totalPoints": 9.5,
-      "avgPoints": 2.38,
-      "bestWeek": 2,
-      "bestWeekPoints": 3.9,
+      "totalPoints": 9.3,
+      "avgPoints": 2.33,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.4,
       "weeklyPoints": {
-        "1": 1.7,
-        "2": 3.9,
-        "3": 1.6,
-        "4": 2.3
+        "1": 1.8,
+        "2": 1.2,
+        "3": 2.9,
+        "5": 3.4
       }
     },
     {
@@ -4941,6 +5458,81 @@
       }
     },
     {
+      "name": "Jonathan Mingo",
+      "position": "WR",
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 2,
+      "totalPoints": 4.5,
+      "avgPoints": 2.25,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.0,
+      "weeklyPoints": {
+        "1": 1.5,
+        "5": 3.0
+      }
+    },
+    {
+      "name": "Mo Alie-Cox",
+      "position": "TE",
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 2,
+      "totalPoints": 4.5,
+      "avgPoints": 2.25,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.4,
+      "weeklyPoints": {
+        "3": 2.1,
+        "5": 2.4
+      }
+    },
+    {
+      "name": "Troy Franklin",
+      "position": "WR",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 4,
+      "totalPoints": 8.9,
+      "avgPoints": 2.23,
+      "bestWeek": 2,
+      "bestWeekPoints": 3.2,
+      "weeklyPoints": {
+        "1": 0.5,
+        "2": 3.2,
+        "3": 2.6,
+        "5": 2.6
+      }
+    },
+    {
+      "name": "Fernando Mendoza",
+      "position": "QB",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 2.22,
+      "avgPoints": 2.22,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.22,
+      "weeklyPoints": {
+        "5": 2.22
+      }
+    },
+    {
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "nflTeam": "PHI",
+      "division": "NFC East",
+      "gamesPlayed": 1,
+      "totalPoints": 2.2,
+      "avgPoints": 2.2,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.2,
+      "weeklyPoints": {
+        "5": 2.2
+      }
+    },
+    {
       "name": "Elijah Arroyo",
       "position": "TE",
       "nflTeam": "SEA",
@@ -4952,6 +5544,20 @@
       "bestWeekPoints": 2.2,
       "weeklyPoints": {
         "2": 2.2
+      }
+    },
+    {
+      "name": "Isaiah Davis",
+      "position": "RB",
+      "nflTeam": "NYJ",
+      "division": "AFC East",
+      "gamesPlayed": 1,
+      "totalPoints": 2.2,
+      "avgPoints": 2.2,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.2,
+      "weeklyPoints": {
+        "5": 2.2
       }
     },
     {
@@ -4985,19 +5591,36 @@
       }
     },
     {
-      "name": "Skyy Moore",
-      "position": "WR",
-      "nflTeam": "GB",
-      "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 6.5,
+      "name": "Corey Kiner",
+      "position": "RB",
+      "nflTeam": "NE",
+      "division": "AFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 8.7,
       "avgPoints": 2.17,
-      "bestWeek": 3,
-      "bestWeekPoints": 4.6,
+      "bestWeek": 5,
+      "bestWeekPoints": 4.4,
       "weeklyPoints": {
-        "2": 1.6,
-        "3": 4.6,
-        "4": 0.3
+        "1": 1.1,
+        "2": 0.0,
+        "3": 3.2,
+        "5": 4.4
+      }
+    },
+    {
+      "name": "Nate Boerkircher",
+      "position": "TE",
+      "nflTeam": "JAX",
+      "division": "AFC South",
+      "gamesPlayed": 3,
+      "totalPoints": 6.4,
+      "avgPoints": 2.13,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.0,
+      "weeklyPoints": {
+        "1": 1.4,
+        "4": 2.0,
+        "5": 3.0
       }
     },
     {
@@ -5015,48 +5638,17 @@
       }
     },
     {
-      "name": "Mo Alie-Cox",
-      "position": "TE",
-      "nflTeam": "IND",
-      "division": "AFC South",
+      "name": "Theo Wease",
+      "position": "WR",
+      "nflTeam": "LAC",
+      "division": "AFC West",
       "gamesPlayed": 1,
       "totalPoints": 2.1,
       "avgPoints": 2.1,
-      "bestWeek": 3,
+      "bestWeek": 5,
       "bestWeekPoints": 2.1,
       "weeklyPoints": {
-        "3": 2.1
-      }
-    },
-    {
-      "name": "Troy Franklin",
-      "position": "WR",
-      "nflTeam": "DEN",
-      "division": "AFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 6.3,
-      "avgPoints": 2.1,
-      "bestWeek": 2,
-      "bestWeekPoints": 3.2,
-      "weeklyPoints": {
-        "1": 0.5,
-        "2": 3.2,
-        "3": 2.6
-      }
-    },
-    {
-      "name": "Chigoziem Okonkwo",
-      "position": "TE",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 4.1,
-      "avgPoints": 2.05,
-      "bestWeek": 1,
-      "bestWeekPoints": 2.6,
-      "weeklyPoints": {
-        "1": 2.6,
-        "4": 1.5
+        "5": 2.1
       }
     },
     {
@@ -5075,6 +5667,23 @@
       }
     },
     {
+      "name": "Zachariah Branch",
+      "position": "WR",
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 8.1,
+      "avgPoints": 2.02,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.5,
+      "weeklyPoints": {
+        "2": 2.4,
+        "3": 1.2,
+        "4": 2.0,
+        "5": 2.5
+      }
+    },
+    {
       "name": "Adam Trautman",
       "position": "TE",
       "nflTeam": "DEN",
@@ -5086,37 +5695,6 @@
       "bestWeekPoints": 2.0,
       "weeklyPoints": {
         "1": 2.0
-      }
-    },
-    {
-      "name": "Davis Allen",
-      "position": "TE",
-      "nflTeam": "LA",
-      "division": "NFC West",
-      "gamesPlayed": 3,
-      "totalPoints": 5.9,
-      "avgPoints": 1.97,
-      "bestWeek": 3,
-      "bestWeekPoints": 2.9,
-      "weeklyPoints": {
-        "1": 1.8,
-        "2": 1.2,
-        "3": 2.9
-      }
-    },
-    {
-      "name": "Drew Sample",
-      "position": "TE",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 2,
-      "totalPoints": 3.9,
-      "avgPoints": 1.95,
-      "bestWeek": 1,
-      "bestWeekPoints": 3.4,
-      "weeklyPoints": {
-        "1": 3.4,
-        "3": 0.5
       }
     },
     {
@@ -5133,20 +5711,6 @@
         "1": 3.7,
         "2": 1.8,
         "3": 0.2
-      }
-    },
-    {
-      "name": "Josh Cuevas",
-      "position": "TE",
-      "nflTeam": "BAL",
-      "division": "AFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 1.9,
-      "avgPoints": 1.9,
-      "bestWeek": 3,
-      "bestWeekPoints": 1.9,
-      "weeklyPoints": {
-        "3": 1.9
       }
     },
     {
@@ -5175,66 +5739,6 @@
       "bestWeekPoints": 1.9,
       "weeklyPoints": {
         "3": 1.9
-      }
-    },
-    {
-      "name": "Tai Felton",
-      "position": "WR",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 1.9,
-      "avgPoints": 1.9,
-      "bestWeek": 4,
-      "bestWeekPoints": 1.9,
-      "weeklyPoints": {
-        "4": 1.9
-      }
-    },
-    {
-      "name": "Zachariah Branch",
-      "position": "WR",
-      "nflTeam": "ATL",
-      "division": "NFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 5.6,
-      "avgPoints": 1.87,
-      "bestWeek": 2,
-      "bestWeekPoints": 2.4,
-      "weeklyPoints": {
-        "2": 2.4,
-        "3": 1.2,
-        "4": 2.0
-      }
-    },
-    {
-      "name": "Chatarius Atwell",
-      "position": "WR",
-      "nflTeam": "LA",
-      "division": "NFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 3.7,
-      "avgPoints": 1.85,
-      "bestWeek": 2,
-      "bestWeekPoints": 2.4,
-      "weeklyPoints": {
-        "2": 2.4,
-        "4": 1.3
-      }
-    },
-    {
-      "name": "John Bates",
-      "position": "TE",
-      "nflTeam": "WAS",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 3.7,
-      "avgPoints": 1.85,
-      "bestWeek": 1,
-      "bestWeekPoints": 2.3,
-      "weeklyPoints": {
-        "1": 2.3,
-        "3": 1.4
       }
     },
     {
@@ -5281,18 +5785,17 @@
       }
     },
     {
-      "name": "Colby Parkinson",
+      "name": "Charlie Woerner",
       "position": "TE",
-      "nflTeam": "LA",
-      "division": "NFC West",
-      "gamesPlayed": 2,
-      "totalPoints": 3.6,
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 1,
+      "totalPoints": 1.8,
       "avgPoints": 1.8,
-      "bestWeek": 2,
-      "bestWeekPoints": 2.5,
+      "bestWeek": 5,
+      "bestWeekPoints": 1.8,
       "weeklyPoints": {
-        "1": 1.1,
-        "2": 2.5
+        "5": 1.8
       }
     },
     {
@@ -5310,17 +5813,19 @@
       }
     },
     {
-      "name": "Myles Price",
-      "position": "WR",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 1.8,
-      "avgPoints": 1.8,
-      "bestWeek": 4,
-      "bestWeekPoints": 1.8,
+      "name": "Re'Mahn Davis",
+      "position": "RB",
+      "nflTeam": "BUF",
+      "division": "AFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 5.3,
+      "avgPoints": 1.77,
+      "bestWeek": 5,
+      "bestWeekPoints": 3.8,
       "weeklyPoints": {
-        "4": 1.8
+        "1": 0.3,
+        "4": 1.2,
+        "5": 3.8
       }
     },
     {
@@ -5339,6 +5844,41 @@
       }
     },
     {
+      "name": "Skyy Moore",
+      "position": "WR",
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 4,
+      "totalPoints": 7.0,
+      "avgPoints": 1.75,
+      "bestWeek": 3,
+      "bestWeekPoints": 4.6,
+      "weeklyPoints": {
+        "2": 1.6,
+        "3": 4.6,
+        "4": 0.3,
+        "5": 0.5
+      }
+    },
+    {
+      "name": "Seth McGowan",
+      "position": "RB",
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 8.6,
+      "avgPoints": 1.72,
+      "bestWeek": 4,
+      "bestWeekPoints": 4.3,
+      "weeklyPoints": {
+        "1": 0.5,
+        "2": 0.0,
+        "3": 1.4,
+        "4": 4.3,
+        "5": 2.4
+      }
+    },
+    {
       "name": "Andrei Iosivas",
       "position": "WR",
       "nflTeam": "CIN",
@@ -5354,21 +5894,6 @@
       }
     },
     {
-      "name": "Nate Boerkircher",
-      "position": "TE",
-      "nflTeam": "JAX",
-      "division": "AFC South",
-      "gamesPlayed": 2,
-      "totalPoints": 3.4,
-      "avgPoints": 1.7,
-      "bestWeek": 4,
-      "bestWeekPoints": 2.0,
-      "weeklyPoints": {
-        "1": 1.4,
-        "4": 2.0
-      }
-    },
-    {
       "name": "Tyler Goodson",
       "position": "RB",
       "nflTeam": "DAL",
@@ -5381,6 +5906,52 @@
       "weeklyPoints": {
         "3": 2.2,
         "4": 1.2
+      }
+    },
+    {
+      "name": "Myles Price",
+      "position": "WR",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 3.3,
+      "avgPoints": 1.65,
+      "bestWeek": 4,
+      "bestWeekPoints": 1.8,
+      "weeklyPoints": {
+        "4": 1.8,
+        "5": 1.5
+      }
+    },
+    {
+      "name": "Zavion Thomas",
+      "position": "WR",
+      "nflTeam": "CHI",
+      "division": "NFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 3.3,
+      "avgPoints": 1.65,
+      "bestWeek": 5,
+      "bestWeekPoints": 2.7,
+      "weeklyPoints": {
+        "3": 0.6,
+        "5": 2.7
+      }
+    },
+    {
+      "name": "Drew Sample",
+      "position": "TE",
+      "nflTeam": "CIN",
+      "division": "AFC North",
+      "gamesPlayed": 3,
+      "totalPoints": 4.9,
+      "avgPoints": 1.63,
+      "bestWeek": 1,
+      "bestWeekPoints": 3.4,
+      "weeklyPoints": {
+        "1": 3.4,
+        "3": 0.5,
+        "5": 1.0
       }
     },
     {
@@ -5414,6 +5985,21 @@
       }
     },
     {
+      "name": "Zonovan Knight",
+      "position": "RB",
+      "nflTeam": "ARI",
+      "division": "NFC West",
+      "gamesPlayed": 2,
+      "totalPoints": 3.2,
+      "avgPoints": 1.6,
+      "bestWeek": 2,
+      "bestWeekPoints": 2.4,
+      "weeklyPoints": {
+        "2": 2.4,
+        "5": 0.8
+      }
+    },
+    {
       "name": "Chris Blair",
       "position": "WR",
       "nflTeam": "ATL",
@@ -5429,93 +6015,33 @@
       }
     },
     {
-      "name": "Luke Schoonmaker",
-      "position": "TE",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 3.1,
-      "avgPoints": 1.55,
-      "bestWeek": 1,
-      "bestWeekPoints": 1.7,
-      "weeklyPoints": {
-        "1": 1.7,
-        "3": 1.4
-      }
-    },
-    {
-      "name": "Seth McGowan",
-      "position": "RB",
-      "nflTeam": "IND",
-      "division": "AFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 6.2,
-      "avgPoints": 1.55,
-      "bestWeek": 4,
-      "bestWeekPoints": 4.3,
-      "weeklyPoints": {
-        "1": 0.5,
-        "2": 0.0,
-        "3": 1.4,
-        "4": 4.3
-      }
-    },
-    {
-      "name": "Bo Melton",
+      "name": "Chatarius Atwell",
       "position": "WR",
-      "nflTeam": "GB",
+      "nflTeam": "LA",
+      "division": "NFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 4.6,
+      "avgPoints": 1.53,
+      "bestWeek": 2,
+      "bestWeekPoints": 2.4,
+      "weeklyPoints": {
+        "2": 2.4,
+        "4": 1.3,
+        "5": 0.9
+      }
+    },
+    {
+      "name": "Benjamin Yurosek",
+      "position": "TE",
+      "nflTeam": "MIN",
       "division": "NFC North",
       "gamesPlayed": 1,
       "totalPoints": 1.5,
       "avgPoints": 1.5,
-      "bestWeek": 1,
+      "bestWeek": 5,
       "bestWeekPoints": 1.5,
       "weeklyPoints": {
-        "1": 1.5
-      }
-    },
-    {
-      "name": "Daniel Bellinger",
-      "position": "TE",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 4.5,
-      "avgPoints": 1.5,
-      "bestWeek": 3,
-      "bestWeekPoints": 2.6,
-      "weeklyPoints": {
-        "1": 1.2,
-        "3": 2.6,
-        "4": 0.7
-      }
-    },
-    {
-      "name": "Erick All",
-      "position": "TE",
-      "nflTeam": "CIN",
-      "division": "AFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 1.5,
-      "avgPoints": 1.5,
-      "bestWeek": 2,
-      "bestWeekPoints": 1.5,
-      "weeklyPoints": {
-        "2": 1.5
-      }
-    },
-    {
-      "name": "Jonathan Mingo",
-      "position": "WR",
-      "nflTeam": "DAL",
-      "division": "NFC East",
-      "gamesPlayed": 1,
-      "totalPoints": 1.5,
-      "avgPoints": 1.5,
-      "bestWeek": 1,
-      "bestWeekPoints": 1.5,
-      "weeklyPoints": {
-        "1": 1.5
+        "5": 1.5
       }
     },
     {
@@ -5533,34 +6059,69 @@
       }
     },
     {
-      "name": "Will Kacmarek",
+      "name": "Luke Schoonmaker",
       "position": "TE",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 2.9,
-      "avgPoints": 1.45,
-      "bestWeek": 4,
-      "bestWeekPoints": 2.0,
+      "nflTeam": "DAL",
+      "division": "NFC East",
+      "gamesPlayed": 3,
+      "totalPoints": 4.5,
+      "avgPoints": 1.5,
+      "bestWeek": 1,
+      "bestWeekPoints": 1.7,
       "weeklyPoints": {
-        "2": 0.9,
-        "4": 2.0
+        "1": 1.7,
+        "3": 1.4,
+        "5": 1.4
       }
     },
     {
-      "name": "Corey Kiner",
+      "name": "Colby Parkinson",
+      "position": "TE",
+      "nflTeam": "LA",
+      "division": "NFC West",
+      "gamesPlayed": 3,
+      "totalPoints": 4.4,
+      "avgPoints": 1.47,
+      "bestWeek": 2,
+      "bestWeekPoints": 2.5,
+      "weeklyPoints": {
+        "1": 1.1,
+        "2": 2.5,
+        "5": 0.8
+      }
+    },
+    {
+      "name": "CJ Donaldson",
       "position": "RB",
-      "nflTeam": "NE",
-      "division": "AFC East",
+      "nflTeam": "NO",
+      "division": "NFC South",
+      "gamesPlayed": 5,
+      "totalPoints": 7.2,
+      "avgPoints": 1.44,
+      "bestWeek": 4,
+      "bestWeekPoints": 3.3,
+      "weeklyPoints": {
+        "1": 0.7,
+        "2": 0.2,
+        "3": 0.5,
+        "4": 3.3,
+        "5": 2.5
+      }
+    },
+    {
+      "name": "John Bates",
+      "position": "TE",
+      "nflTeam": "WAS",
+      "division": "NFC East",
       "gamesPlayed": 3,
       "totalPoints": 4.3,
       "avgPoints": 1.43,
-      "bestWeek": 3,
-      "bestWeekPoints": 3.2,
+      "bestWeek": 1,
+      "bestWeekPoints": 2.3,
       "weeklyPoints": {
-        "1": 1.1,
-        "2": 0.0,
-        "3": 3.2
+        "1": 2.3,
+        "3": 1.4,
+        "5": 0.6
       }
     },
     {
@@ -5592,6 +6153,23 @@
         "2": -0.3,
         "3": 1.9,
         "4": 1.2
+      }
+    },
+    {
+      "name": "Brock Wright",
+      "position": "TE",
+      "nflTeam": "DET",
+      "division": "NFC North",
+      "gamesPlayed": 4,
+      "totalPoints": 5.6,
+      "avgPoints": 1.4,
+      "bestWeek": 3,
+      "bestWeekPoints": 1.7,
+      "weeklyPoints": {
+        "1": 1.0,
+        "3": 1.7,
+        "4": 1.3,
+        "5": 1.6
       }
     },
     {
@@ -5638,6 +6216,23 @@
       }
     },
     {
+      "name": "Daniel Bellinger",
+      "position": "TE",
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 5.5,
+      "avgPoints": 1.38,
+      "bestWeek": 3,
+      "bestWeekPoints": 2.6,
+      "weeklyPoints": {
+        "1": 1.2,
+        "3": 2.6,
+        "4": 0.7,
+        "5": 1.0
+      }
+    },
+    {
       "name": "Kaytron Allen",
       "position": "RB",
       "nflTeam": "WAS",
@@ -5666,22 +6261,6 @@
       "weeklyPoints": {
         "2": 1.8,
         "3": 0.9
-      }
-    },
-    {
-      "name": "Brock Wright",
-      "position": "TE",
-      "nflTeam": "DET",
-      "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 4.0,
-      "avgPoints": 1.33,
-      "bestWeek": 3,
-      "bestWeekPoints": 1.7,
-      "weeklyPoints": {
-        "1": 1.0,
-        "3": 1.7,
-        "4": 1.3
       }
     },
     {
@@ -5715,6 +6294,20 @@
       }
     },
     {
+      "name": "Deven Thompkins",
+      "position": "WR",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 1.3,
+      "avgPoints": 1.3,
+      "bestWeek": 5,
+      "bestWeekPoints": 1.3,
+      "weeklyPoints": {
+        "5": 1.3
+      }
+    },
+    {
       "name": "Jackson Meeks",
       "position": "TE",
       "nflTeam": "DET",
@@ -5726,6 +6319,20 @@
       "bestWeekPoints": 1.3,
       "weeklyPoints": {
         "3": 1.3
+      }
+    },
+    {
+      "name": "Lil'Jordan Humphrey",
+      "position": "WR",
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 1,
+      "totalPoints": 1.3,
+      "avgPoints": 1.3,
+      "bestWeek": 5,
+      "bestWeekPoints": 1.3,
+      "weeklyPoints": {
+        "5": 1.3
       }
     },
     {
@@ -5743,19 +6350,37 @@
       }
     },
     {
-      "name": "Tanner Hudson",
+      "name": "Will Kacmarek",
       "position": "TE",
-      "nflTeam": "CIN",
-      "division": "AFC North",
+      "nflTeam": "MIA",
+      "division": "AFC East",
       "gamesPlayed": 3,
       "totalPoints": 3.9,
       "avgPoints": 1.3,
-      "bestWeek": 3,
-      "bestWeekPoints": 2.3,
+      "bestWeek": 4,
+      "bestWeekPoints": 2.0,
       "weeklyPoints": {
-        "1": 0.9,
-        "3": 2.3,
-        "4": 0.7
+        "2": 0.9,
+        "4": 2.0,
+        "5": 1.0
+      }
+    },
+    {
+      "name": "DeeJay Dallas",
+      "position": "RB",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 5,
+      "totalPoints": 6.4,
+      "avgPoints": 1.28,
+      "bestWeek": 2,
+      "bestWeekPoints": 2.5,
+      "weeklyPoints": {
+        "1": 0.6,
+        "2": 2.5,
+        "3": 0.2,
+        "4": 1.5,
+        "5": 1.6
       }
     },
     {
@@ -5785,23 +6410,6 @@
       "bestWeekPoints": 1.5,
       "weeklyPoints": {
         "3": 1.0,
-        "4": 1.5
-      }
-    },
-    {
-      "name": "DeeJay Dallas",
-      "position": "RB",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 4,
-      "totalPoints": 4.8,
-      "avgPoints": 1.2,
-      "bestWeek": 2,
-      "bestWeekPoints": 2.5,
-      "weeklyPoints": {
-        "1": 0.6,
-        "2": 2.5,
-        "3": 0.2,
         "4": 1.5
       }
     },
@@ -5848,38 +6456,6 @@
       }
     },
     {
-      "name": "CJ Donaldson",
-      "position": "RB",
-      "nflTeam": "NO",
-      "division": "NFC South",
-      "gamesPlayed": 4,
-      "totalPoints": 4.7,
-      "avgPoints": 1.18,
-      "bestWeek": 4,
-      "bestWeekPoints": 3.3,
-      "weeklyPoints": {
-        "1": 0.7,
-        "2": 0.2,
-        "3": 0.5,
-        "4": 3.3
-      }
-    },
-    {
-      "name": "Isaiah Bond",
-      "position": "WR",
-      "nflTeam": "CLE",
-      "division": "AFC North",
-      "gamesPlayed": 2,
-      "totalPoints": 2.2,
-      "avgPoints": 1.1,
-      "bestWeek": 2,
-      "bestWeekPoints": 1.5,
-      "weeklyPoints": {
-        "2": 1.5,
-        "4": 0.7
-      }
-    },
-    {
       "name": "Jordan Whittington",
       "position": "WR",
       "nflTeam": "LA",
@@ -5895,6 +6471,23 @@
       }
     },
     {
+      "name": "Chimere Dike",
+      "position": "WR",
+      "nflTeam": "TEN",
+      "division": "AFC South",
+      "gamesPlayed": 4,
+      "totalPoints": 4.3,
+      "avgPoints": 1.07,
+      "bestWeek": 5,
+      "bestWeekPoints": 4.3,
+      "weeklyPoints": {
+        "1": -0.8,
+        "3": -1.2,
+        "4": 2.0,
+        "5": 4.3
+      }
+    },
+    {
       "name": "Kenny Pickett",
       "position": "RB",
       "nflTeam": "CAR",
@@ -5907,6 +6500,20 @@
       "weeklyPoints": {
         "1": 2.4,
         "2": -0.4
+      }
+    },
+    {
+      "name": "Payne Durham",
+      "position": "TE",
+      "nflTeam": "TB",
+      "division": "NFC South",
+      "gamesPlayed": 1,
+      "totalPoints": 1.0,
+      "avgPoints": 1.0,
+      "bestWeek": 5,
+      "bestWeekPoints": 1.0,
+      "weeklyPoints": {
+        "5": 1.0
       }
     },
     {
@@ -5941,6 +6548,37 @@
       }
     },
     {
+      "name": "Tyrone Tracy",
+      "position": "RB",
+      "nflTeam": "NYG",
+      "division": "NFC East",
+      "gamesPlayed": 4,
+      "totalPoints": 3.7,
+      "avgPoints": 0.93,
+      "bestWeek": 5,
+      "bestWeekPoints": 4.1,
+      "weeklyPoints": {
+        "1": -0.6,
+        "3": 0.3,
+        "4": -0.1,
+        "5": 4.1
+      }
+    },
+    {
+      "name": "Andrew Ogletree",
+      "position": "TE",
+      "nflTeam": "IND",
+      "division": "AFC South",
+      "gamesPlayed": 1,
+      "totalPoints": 0.9,
+      "avgPoints": 0.9,
+      "bestWeek": 5,
+      "bestWeekPoints": 0.9,
+      "weeklyPoints": {
+        "5": 0.9
+      }
+    },
+    {
       "name": "Brashard Smith",
       "position": "WR",
       "nflTeam": "KC",
@@ -5966,20 +6604,6 @@
       "bestWeekPoints": 0.9,
       "weeklyPoints": {
         "1": 0.9
-      }
-    },
-    {
-      "name": "Gavin Bartholomew",
-      "position": "TE",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 0.9,
-      "avgPoints": 0.9,
-      "bestWeek": 4,
-      "bestWeekPoints": 0.9,
-      "weeklyPoints": {
-        "4": 0.9
       }
     },
     {
@@ -6011,32 +6635,20 @@
       }
     },
     {
-      "name": "Kevin Coleman",
-      "position": "WR",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 1.6,
-      "avgPoints": 0.8,
-      "bestWeek": 3,
-      "bestWeekPoints": 0.8,
+      "name": "Demond Claiborne",
+      "position": "RB",
+      "nflTeam": "MIN",
+      "division": "NFC North",
+      "gamesPlayed": 4,
+      "totalPoints": 3.1,
+      "avgPoints": 0.78,
+      "bestWeek": 4,
+      "bestWeekPoints": 1.2,
       "weeklyPoints": {
-        "3": 0.8,
-        "4": 0.8
-      }
-    },
-    {
-      "name": "Mason Taylor",
-      "position": "TE",
-      "nflTeam": "NYJ",
-      "division": "AFC East",
-      "gamesPlayed": 1,
-      "totalPoints": 0.8,
-      "avgPoints": 0.8,
-      "bestWeek": 1,
-      "bestWeekPoints": 0.8,
-      "weeklyPoints": {
-        "1": 0.8
+        "2": 0.7,
+        "3": 0.1,
+        "4": 1.2,
+        "5": 1.1
       }
     },
     {
@@ -6055,32 +6667,50 @@
       }
     },
     {
-      "name": "Re'Mahn Davis",
+      "name": "Jaylen Wright",
       "position": "RB",
-      "nflTeam": "BUF",
+      "nflTeam": "MIA",
       "division": "AFC East",
-      "gamesPlayed": 2,
-      "totalPoints": 1.5,
-      "avgPoints": 0.75,
-      "bestWeek": 4,
-      "bestWeekPoints": 1.2,
+      "gamesPlayed": 4,
+      "totalPoints": 2.8,
+      "avgPoints": 0.7,
+      "bestWeek": 2,
+      "bestWeekPoints": 1.1,
       "weeklyPoints": {
-        "1": 0.3,
-        "4": 1.2
+        "1": -0.1,
+        "2": 1.1,
+        "4": 0.7,
+        "5": 1.1
       }
     },
     {
-      "name": "Adam Prentice",
-      "position": "RB",
+      "name": "Malik Benson",
+      "position": "WR",
+      "nflTeam": "LV",
+      "division": "AFC West",
+      "gamesPlayed": 2,
+      "totalPoints": 1.4,
+      "avgPoints": 0.7,
+      "bestWeek": 5,
+      "bestWeekPoints": 1.1,
+      "weeklyPoints": {
+        "1": 0.3,
+        "5": 1.1
+      }
+    },
+    {
+      "name": "Marvin Mims",
+      "position": "WR",
       "nflTeam": "DEN",
       "division": "AFC West",
-      "gamesPlayed": 1,
-      "totalPoints": 0.7,
+      "gamesPlayed": 2,
+      "totalPoints": 1.4,
       "avgPoints": 0.7,
-      "bestWeek": 2,
-      "bestWeekPoints": 0.7,
+      "bestWeek": 5,
+      "bestWeekPoints": 1.9,
       "weeklyPoints": {
-        "2": 0.7
+        "4": -0.5,
+        "5": 1.9
       }
     },
     {
@@ -6095,22 +6725,6 @@
       "bestWeekPoints": 0.7,
       "weeklyPoints": {
         "3": 0.7
-      }
-    },
-    {
-      "name": "Demond Claiborne",
-      "position": "RB",
-      "nflTeam": "MIN",
-      "division": "NFC North",
-      "gamesPlayed": 3,
-      "totalPoints": 2.0,
-      "avgPoints": 0.67,
-      "bestWeek": 4,
-      "bestWeekPoints": 1.2,
-      "weeklyPoints": {
-        "2": 0.7,
-        "3": 0.1,
-        "4": 1.2
       }
     },
     {
@@ -6143,33 +6757,18 @@
       }
     },
     {
-      "name": "Zavion Thomas",
-      "position": "WR",
-      "nflTeam": "CHI",
-      "division": "NFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 0.6,
-      "avgPoints": 0.6,
-      "bestWeek": 3,
-      "bestWeekPoints": 0.6,
-      "weeklyPoints": {
-        "3": 0.6
-      }
-    },
-    {
-      "name": "Jaylen Wright",
+      "name": "Adam Prentice",
       "position": "RB",
-      "nflTeam": "MIA",
-      "division": "AFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 1.7,
-      "avgPoints": 0.57,
+      "nflTeam": "DEN",
+      "division": "AFC West",
+      "gamesPlayed": 2,
+      "totalPoints": 1.0,
+      "avgPoints": 0.5,
       "bestWeek": 2,
-      "bestWeekPoints": 1.1,
+      "bestWeekPoints": 0.7,
       "weeklyPoints": {
-        "1": -0.1,
-        "2": 1.1,
-        "4": 0.7
+        "2": 0.7,
+        "5": 0.3
       }
     },
     {
@@ -6177,15 +6776,16 @@
       "position": "RB",
       "nflTeam": "DAL",
       "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": 1.5,
+      "gamesPlayed": 4,
+      "totalPoints": 2.0,
       "avgPoints": 0.5,
       "bestWeek": 1,
       "bestWeekPoints": 0.7,
       "weeklyPoints": {
         "1": 0.7,
         "2": 0.1,
-        "4": 0.7
+        "4": 0.7,
+        "5": 0.5
       }
     },
     {
@@ -6235,6 +6835,20 @@
       }
     },
     {
+      "name": "Tua Tagovailoa",
+      "position": "QB",
+      "nflTeam": "ATL",
+      "division": "NFC South",
+      "gamesPlayed": 1,
+      "totalPoints": 0.36,
+      "avgPoints": 0.36,
+      "bestWeek": 5,
+      "bestWeekPoints": 0.36,
+      "weeklyPoints": {
+        "5": 0.36
+      }
+    },
+    {
       "name": "Colbie Young",
       "position": "WR",
       "nflTeam": "CIN",
@@ -6264,31 +6878,46 @@
       }
     },
     {
-      "name": "Malik Benson",
-      "position": "WR",
-      "nflTeam": "LV",
-      "division": "AFC West",
+      "name": "Kalel Mullings",
+      "position": "RB",
+      "nflTeam": "TEN",
+      "division": "AFC South",
       "gamesPlayed": 1,
       "totalPoints": 0.3,
       "avgPoints": 0.3,
-      "bestWeek": 1,
+      "bestWeek": 5,
       "bestWeekPoints": 0.3,
       "weeklyPoints": {
-        "1": 0.3
+        "5": 0.3
       }
     },
     {
-      "name": "Jacob Cowing",
-      "position": "WR",
-      "nflTeam": "SF",
-      "division": "NFC West",
+      "name": "Lew Nichols",
+      "position": "RB",
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 2,
+      "totalPoints": 0.6,
+      "avgPoints": 0.3,
+      "bestWeek": 5,
+      "bestWeekPoints": 0.6,
+      "weeklyPoints": {
+        "3": 0.0,
+        "5": 0.6
+      }
+    },
+    {
+      "name": "J.J. McCarthy",
+      "position": "QB",
+      "nflTeam": "NYG",
+      "division": "NFC East",
       "gamesPlayed": 1,
       "totalPoints": 0.2,
       "avgPoints": 0.2,
-      "bestWeek": 4,
+      "bestWeek": 5,
       "bestWeekPoints": 0.2,
       "weeklyPoints": {
-        "4": 0.2
+        "5": 0.2
       }
     },
     {
@@ -6306,54 +6935,10 @@
       }
     },
     {
-      "name": "Chimere Dike",
-      "position": "WR",
-      "nflTeam": "TEN",
-      "division": "AFC South",
-      "gamesPlayed": 3,
-      "totalPoints": 0.0,
-      "avgPoints": 0.0,
-      "bestWeek": 4,
-      "bestWeekPoints": 2.0,
-      "weeklyPoints": {
-        "1": -0.8,
-        "3": -1.2,
-        "4": 2.0
-      }
-    },
-    {
       "name": "Jack Strand",
       "position": "QB",
       "nflTeam": "ATL",
       "division": "NFC South",
-      "gamesPlayed": 1,
-      "totalPoints": 0.0,
-      "avgPoints": 0.0,
-      "bestWeek": 2,
-      "bestWeekPoints": 0.0,
-      "weeklyPoints": {
-        "2": 0.0
-      }
-    },
-    {
-      "name": "Lew Nichols",
-      "position": "RB",
-      "nflTeam": "PIT",
-      "division": "AFC North",
-      "gamesPlayed": 1,
-      "totalPoints": 0.0,
-      "avgPoints": 0.0,
-      "bestWeek": 3,
-      "bestWeekPoints": 0.0,
-      "weeklyPoints": {
-        "3": 0.0
-      }
-    },
-    {
-      "name": "Mason Rudolph",
-      "position": "QB",
-      "nflTeam": "PIT",
-      "division": "AFC North",
       "gamesPlayed": 1,
       "totalPoints": 0.0,
       "avgPoints": 0.0,
@@ -6393,19 +6978,33 @@
       }
     },
     {
-      "name": "Tyrone Tracy",
-      "position": "RB",
-      "nflTeam": "NYG",
-      "division": "NFC East",
-      "gamesPlayed": 3,
-      "totalPoints": -0.4,
-      "avgPoints": -0.13,
-      "bestWeek": 3,
-      "bestWeekPoints": 0.3,
+      "name": "Mason Rudolph",
+      "position": "QB",
+      "nflTeam": "PIT",
+      "division": "AFC North",
+      "gamesPlayed": 2,
+      "totalPoints": -0.2,
+      "avgPoints": -0.1,
+      "bestWeek": 2,
+      "bestWeekPoints": 0.0,
       "weeklyPoints": {
-        "1": -0.6,
-        "3": 0.3,
-        "4": -0.1
+        "2": 0.0,
+        "5": -0.2
+      }
+    },
+    {
+      "name": "Jacob Cowing",
+      "position": "WR",
+      "nflTeam": "SF",
+      "division": "NFC West",
+      "gamesPlayed": 2,
+      "totalPoints": -0.4,
+      "avgPoints": -0.2,
+      "bestWeek": 4,
+      "bestWeekPoints": 0.2,
+      "weeklyPoints": {
+        "4": 0.2,
+        "5": -0.6
       }
     },
     {
@@ -6423,6 +7022,20 @@
       }
     },
     {
+      "name": "Tyrod Taylor",
+      "position": "QB",
+      "nflTeam": "GB",
+      "division": "NFC North",
+      "gamesPlayed": 1,
+      "totalPoints": -0.2,
+      "avgPoints": -0.2,
+      "bestWeek": 5,
+      "bestWeekPoints": -0.2,
+      "weeklyPoints": {
+        "5": -0.2
+      }
+    },
+    {
       "name": "Nick Mullens",
       "position": "RB",
       "nflTeam": "JAX",
@@ -6434,20 +7047,6 @@
       "bestWeekPoints": -0.3,
       "weeklyPoints": {
         "1": -0.3
-      }
-    },
-    {
-      "name": "Marvin Mims",
-      "position": "WR",
-      "nflTeam": "DEN",
-      "division": "AFC West",
-      "gamesPlayed": 1,
-      "totalPoints": -0.5,
-      "avgPoints": -0.5,
-      "bestWeek": 4,
-      "bestWeekPoints": -0.5,
-      "weeklyPoints": {
-        "4": -0.5
       }
     },
     {
@@ -6476,20 +7075,6 @@
       "bestWeekPoints": -1.0,
       "weeklyPoints": {
         "3": -1.0
-      }
-    },
-    {
-      "name": "Dylan Laube",
-      "position": "WR",
-      "nflTeam": "LV",
-      "division": "AFC West",
-      "gamesPlayed": 1,
-      "totalPoints": -2.0,
-      "avgPoints": -2.0,
-      "bestWeek": 3,
-      "bestWeekPoints": -2.0,
-      "weeklyPoints": {
-        "3": -2.0
       }
     },
     {
