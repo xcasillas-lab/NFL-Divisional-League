@@ -1694,7 +1694,7 @@ const DFFL_WEEK4_FINAL = {
     const status=row.querySelector('.week-status'); if(status){status.className='week-status final';status.innerHTML='<span class="status-icon">✓</span><span>FINAL</span>';}
   }
   function setPlayerCell(td,p,side){ const status='<span class="player-game-status final">FINAL</span>'; td.innerHTML=side==='left' ? p[1]+' - '+p[2]+status : p[1]+' - '+p[2]+status; }
-  const RECORDS={Dallas:'3-2',Brian:'4-1',JetLiX:'3-2',Ben:'5-0',Juan:'1-4',Xavier:'1-4',Joshua:'1-4',Kendall:'2-3'};
+  const RECORDS={Dallas:'3-1',Brian:'3-1',JetLiX:'2-2',Ben:'4-0',Juan:'1-3',Xavier:'1-3',Joshua:'1-3',Kendall:'1-3'};
   window.openWeek4Final=function(id){
     const d=DFFL_WEEK4_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide');if(hide){hide.setAttribute('onclick','closeWeek4Final()');hide.textContent='HIDE DETAILS ⌃';}
@@ -1726,7 +1726,7 @@ const DFFL_WEEK5_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"Ben","leftDivi
     const status=row.querySelector('.week-status'); if(status){status.className='week-status final';status.innerHTML='<span class="status-icon">✓</span><span>FINAL</span>';}
   }
   function setPlayerCell(td,p,side){ const status='<span class="player-game-status final">FINAL</span>'; td.innerHTML=side==='left' ? p[1]+' - '+p[2]+status : p[1]+' - '+p[2]+status; }
-  const RECORDS={Dallas:'3-1',Brian:'3-1',JetLiX:'2-2',Ben:'4-0',Juan:'1-3',Xavier:'1-3',Joshua:'1-3',Kendall:'1-3'};
+  const RECORDS={Dallas:'3-2',Brian:'4-1',JetLiX:'3-2',Ben:'5-0',Juan:'1-4',Xavier:'1-4',Joshua:'1-4',Kendall:'2-3'};
   window.openWeek5Final=function(id){
     const d=DFFL_WEEK5_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide');if(hide){hide.setAttribute('onclick','closeWeek5Final()');hide.textContent='HIDE DETAILS ⌃';}
