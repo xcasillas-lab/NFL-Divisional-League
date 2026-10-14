@@ -1633,8 +1633,8 @@ const DFFL_WEEK3_FINAL = {
     td.innerHTML=side==='left' ? p[0]+' — '+p[1]+' - '+p[2]+status : p[1]+' - '+p[2]+' — '+p[0]+status;
   }
   const DFFL_WEEK3_ARCHIVE_RECORDS = {
-    Dallas:"1-1", Brian:"1-1", JetLiX:"1-1", Ben:"2-0",
-    Juan:"1-1", Xavier:"0-2", Joshua:"1-1", Kendall:"1-1"
+    Dallas:"2-1", Brian:"2-1", JetLiX:"2-1", Ben:"3-0",
+    Juan:"1-2", Xavier:"0-3", Joshua:"1-2", Kendall:"1-2"
   };
   window.openWeek3Final=function(id){
     const d=DFFL_WEEK3_FINAL[String(id)], source=document.getElementById('matchup-detail-'+id); if(!d||!source)return;
@@ -1694,7 +1694,7 @@ const DFFL_WEEK4_FINAL = {
     const status=row.querySelector('.week-status'); if(status){status.className='week-status final';status.innerHTML='<span class="status-icon">✓</span><span>FINAL</span>';}
   }
   function setPlayerCell(td,p,side){ const status='<span class="player-game-status final">FINAL</span>'; td.innerHTML=side==='left' ? p[1]+' - '+p[2]+status : p[1]+' - '+p[2]+status; }
-  const RECORDS={Dallas:'2-1',Brian:'2-1',JetLiX:'2-1',Ben:'3-0',Juan:'1-2',Xavier:'0-3',Joshua:'1-2',Kendall:'1-2'};
+  const RECORDS={Dallas:'3-2',Brian:'4-1',JetLiX:'3-2',Ben:'5-0',Juan:'1-4',Xavier:'1-4',Joshua:'1-4',Kendall:'2-3'};
   window.openWeek4Final=function(id){
     const d=DFFL_WEEK4_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide');if(hide){hide.setAttribute('onclick','closeWeek4Final()');hide.textContent='HIDE DETAILS ⌃';}
