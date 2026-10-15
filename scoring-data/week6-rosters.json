@@ -69,7 +69,64 @@
     },
     "Joshua": {
       "division": "AFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Josh Allen",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "James Cook",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Rhamondre Stevenson",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Garrett Wilson",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Keon Coleman",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Dalton Kincaid",
+          "nflTeam": "BUF",
+          "nflTeamName": "Buffalo Bills",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Braelon Allen",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "New England Patriots DEF",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        }
+      ]
     },
     "Juan": {
       "division": "NFC East",
@@ -134,7 +191,64 @@
     },
     "JetLiX": {
       "division": "NFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Jordan Love",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "D'Andre Swift",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Josh Jacobs",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Rome Odunze",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Christian Watson",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Colston Loveland",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Luther Burden",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Green Bay Packers DEF",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        }
+      ]
     },
     "Xavier": {
       "division": "NFC South",
