@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-15T22:00:21-05:00",
+  "lastUpdated": "2026-10-15T22:05:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Ben",
       "leftTotal": 0.0,
-      "rightTotal": 13.2
+      "rightTotal": 15.2
     },
     "3": {
       "leftOwner": "Joshua",
@@ -181,13 +181,13 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 1.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 14,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 0.0,
+          "sacks": 2.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
