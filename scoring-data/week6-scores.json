@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-15T20:10:17-05:00",
+  "lastUpdated": "2026-10-15T20:15:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 5.5,
+      "leftTotal": 11.6,
       "rightTotal": 0.0
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Ben",
       "leftTotal": 0.0,
-      "rightTotal": 6.1
+      "rightTotal": 3.1
     },
     "3": {
       "leftOwner": "Joshua",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 4.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 14,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1006,7 +1006,7 @@
         "position": "FLEX",
         "name": "RJ Harvey",
         "nflTeam": "DEN",
-        "points": 5.5,
+        "points": 11.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1014,8 +1014,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 9.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 10.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 31.0,
           "receivingTouchdowns": 0.0,
