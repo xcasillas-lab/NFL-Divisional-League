@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-15T20:35:19-05:00",
+  "lastUpdated": "2026-10-15T20:40:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 11.6,
+      "leftTotal": 11.7,
       "rightTotal": 0.0
     },
     "2": {
@@ -1006,7 +1006,7 @@
         "position": "FLEX",
         "name": "RJ Harvey",
         "nflTeam": "DEN",
-        "points": 11.6,
+        "points": 11.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1014,7 +1014,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 10.0,
+          "rushingYards": 11.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 31.0,
