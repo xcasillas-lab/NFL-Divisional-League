@@ -1,12 +1,12 @@
 {
   "week": 6,
-  "status": "live",
-  "lastUpdated": "2026-10-15T22:30:19-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-15T22:35:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 12.6,
+      "leftTotal": 13.1,
       "rightTotal": 0.0
     },
     "2": {
@@ -98,7 +98,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 19.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -182,10 +182,10 @@
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
         "points": 7.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 14,
+          "pointsAllowed": 17,
           "pointsAllowedFantasy": 1.0,
           "sacks": 2.0,
           "interceptions": 2.0,
@@ -1006,15 +1006,15 @@
         "position": "FLEX",
         "name": "RJ Harvey",
         "nflTeam": "DEN",
-        "points": 12.6,
-        "gameStatus": "live",
+        "points": 13.1,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 20.0,
+          "rushingYards": 25.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 31.0,
