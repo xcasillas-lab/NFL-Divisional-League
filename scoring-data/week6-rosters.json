@@ -374,7 +374,64 @@
     },
     "Kendall": {
       "division": "AFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "C.J. Stroud",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jonathan Taylor",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bhayshul Tuten",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Josh Downs",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Nico Collins",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Tyler Warren",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Marvin Harrison",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Tennessee Titans DEF",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        }
+      ]
     }
   }
 }
