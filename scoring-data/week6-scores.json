@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "pre-game",
-  "lastUpdated": "2026-10-17T09:00:20-05:00",
+  "lastUpdated": "2026-10-17T09:05:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -941,8 +941,8 @@
       },
       {
         "position": "WR",
-        "name": "Jack Bech",
-        "nflTeam": "LV",
+        "name": "Ladd McConkey",
+        "nflTeam": "LAC",
         "points": 0.0,
         "gameStatus": "pre-game",
         "foundInFeed": false,
