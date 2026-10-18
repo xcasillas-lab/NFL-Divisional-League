@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T14:55:15-05:00",
+  "lastUpdated": "2026-10-18T15:00:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
       "leftTotal": 13.1,
-      "rightTotal": 77.04
+      "rightTotal": 75.24
     },
     "2": {
       "leftOwner": "Brian",
@@ -18,13 +18,13 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
-      "leftTotal": 27.2,
+      "leftTotal": 27.4,
       "rightTotal": 24.7
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
-      "leftTotal": 97.78,
+      "leftTotal": 98.78,
       "rightTotal": 55.1
     }
   },
@@ -225,7 +225,7 @@
         "name": "Derrick Henry",
         "nflTeam": "BAL",
         "points": 4.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -267,7 +267,7 @@
         "name": "Denzel Boston",
         "nflTeam": "CLE",
         "points": 2.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -288,7 +288,7 @@
         "name": "Zay Flowers",
         "nflTeam": "BAL",
         "points": 9.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -309,7 +309,7 @@
         "name": "Harold Fannin",
         "nflTeam": "CLE",
         "points": 1.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -414,7 +414,7 @@
         "position": "RB",
         "name": "Rhamondre Stevenson",
         "nflTeam": "NE",
-        "points": 3.4,
+        "points": 3.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -422,7 +422,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 34.0,
+          "rushingYards": 36.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -921,7 +921,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 15.2,
+        "points": 15.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -929,7 +929,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 86.0,
+          "rushingYards": 88.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 1.0,
@@ -1026,13 +1026,13 @@
         "position": "DEF",
         "name": "Tampa Bay Buccaneers DEF",
         "nflTeam": "TB",
-        "points": 10.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 13,
-          "pointsAllowedFantasy": 4.0,
-          "sacks": 4.0,
+          "pointsAllowed": 16,
+          "pointsAllowedFantasy": 1.0,
+          "sacks": 5.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -1364,13 +1364,13 @@
         "position": "DEF",
         "name": "Tennessee Titans DEF",
         "nflTeam": "TEN",
-        "points": 10.0,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 20,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 5.0,
+          "sacks": 6.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
