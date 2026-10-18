@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T12:15:20-05:00",
+  "lastUpdated": "2026-10-18T12:16:57-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
-      "leftTotal": 11.0,
+      "leftTotal": 11.4,
       "rightTotal": 8.9
     },
     "4": {
@@ -414,15 +414,15 @@
         "position": "RB",
         "name": "Rhamondre Stevenson",
         "nflTeam": "NE",
-        "points": 0.0,
+        "points": 0.4,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 4.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
