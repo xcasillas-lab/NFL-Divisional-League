@@ -1,7 +1,7 @@
 {
   "week": 6,
-  "status": "live",
-  "lastUpdated": "2026-10-18T18:30:21-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-18T18:35:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
-      "leftTotal": 90.0,
+      "leftTotal": 89.7,
       "rightTotal": 43.4
     },
     "4": {
@@ -372,15 +372,15 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 18.6,
-        "gameStatus": "live",
+        "points": 18.3,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 255.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
+          "rushingYards": 1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -394,7 +394,7 @@
         "name": "James Cook",
         "nflTeam": "BUF",
         "points": 22.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -457,7 +457,7 @@
         "name": "Keon Coleman",
         "nflTeam": "BUF",
         "points": 13.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -478,7 +478,7 @@
         "name": "Dalton Kincaid",
         "nflTeam": "BUF",
         "points": 7.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1091,7 +1091,7 @@
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
         "points": 13.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1154,7 +1154,7 @@
         "name": "Brock Bowers",
         "nflTeam": "LV",
         "points": 9.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
