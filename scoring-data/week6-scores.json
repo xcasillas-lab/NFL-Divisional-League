@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T09:05:17-05:00",
+  "lastUpdated": "2026-10-18T09:10:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
-      "leftTotal": 11.86,
+      "leftTotal": 12.26,
       "rightTotal": 0.0
     }
   },
@@ -1091,7 +1091,7 @@
         "position": "RB",
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
-        "points": 1.0,
+        "points": 1.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1099,7 +1099,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 10.0,
+          "rushingYards": 14.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
