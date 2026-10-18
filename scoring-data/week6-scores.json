@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T15:10:17-05:00",
+  "lastUpdated": "2026-10-18T15:15:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -141,8 +141,8 @@
         "nflTeam": "ARI",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -354,7 +354,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 16,
+          "pointsAllowed": 19,
           "pointsAllowedFantasy": 1.0,
           "sacks": 4.0,
           "interceptions": 2.0,
@@ -415,7 +415,7 @@
         "name": "Rhamondre Stevenson",
         "nflTeam": "NE",
         "points": 3.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -436,7 +436,7 @@
         "name": "Garrett Wilson",
         "nflTeam": "NYJ",
         "points": 6.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -499,7 +499,7 @@
         "name": "Braelon Allen",
         "nflTeam": "NYJ",
         "points": 11.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -520,7 +520,7 @@
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
         "points": 6.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 19,
