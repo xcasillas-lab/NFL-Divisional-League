@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "pre-game",
-  "lastUpdated": "2026-10-18T18:50:18-05:00",
+  "lastUpdated": "2026-10-18T18:55:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -750,7 +750,7 @@
       },
       {
         "position": "RB",
-        "name": "Josh Jacobs",
+        "name": "MarShawn Lloyd",
         "nflTeam": "GB",
         "points": 0.0,
         "gameStatus": "pre-game",
