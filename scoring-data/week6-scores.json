@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T17:25:16-05:00",
+  "lastUpdated": "2026-10-18T17:30:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 76.7,
+      "leftTotal": 77.7,
       "rightTotal": 85.84
     },
     "2": {
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "Kansas City Chiefs DEF",
         "nflTeam": "KC",
-        "points": 9.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 6,
           "pointsAllowedFantasy": 7.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
