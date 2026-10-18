@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T18:00:22-05:00",
+  "lastUpdated": "2026-10-18T18:05:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 89.32,
+      "leftTotal": 90.28,
       "rightTotal": 85.84
     },
     "2": {
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
-      "leftTotal": 71.34,
+      "leftTotal": 72.94,
       "rightTotal": 43.4
     },
     "4": {
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 10.6,
+        "points": 12.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -401,7 +401,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 64.0,
+          "rushingYards": 80.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 32.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 10.22,
+        "points": 11.18,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 233.0,
+          "passingYards": 257.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 19.0,
