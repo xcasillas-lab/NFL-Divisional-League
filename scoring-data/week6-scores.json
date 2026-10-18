@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T17:35:17-05:00",
+  "lastUpdated": "2026-10-18T17:40:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 79.24,
+      "leftTotal": 80.34,
       "rightTotal": 85.84
     },
     "2": {
@@ -1048,7 +1048,7 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 8.64,
+        "points": 8.74,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1056,7 +1056,7 @@
           "passingYards": 216.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
-          "rushingYards": 10.0,
+          "rushingYards": 11.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "Kansas City Chiefs DEF",
         "nflTeam": "KC",
-        "points": 10.0,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 6,
           "pointsAllowedFantasy": 7.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
