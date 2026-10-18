@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T09:40:17-05:00",
+  "lastUpdated": "2026-10-18T09:45:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
-      "leftTotal": 25.98,
+      "leftTotal": 26.26,
       "rightTotal": 0.0
     }
   },
@@ -1049,12 +1049,12 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 8.08,
+        "points": 8.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 102.0,
+          "passingYards": 109.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
