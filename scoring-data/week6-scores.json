@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T18:25:15-05:00",
+  "lastUpdated": "2026-10-18T18:30:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 95.98,
+      "leftTotal": 95.68,
       "rightTotal": 85.84
     },
     "2": {
@@ -1048,15 +1048,15 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 11.78,
-        "gameStatus": "live",
+        "points": 11.48,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 272.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
-          "rushingYards": 19.0,
+          "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1070,7 +1070,7 @@
         "name": "Kenneth Walker",
         "nflTeam": "KC",
         "points": 26.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1112,7 +1112,7 @@
         "name": "Ladd McConkey",
         "nflTeam": "LAC",
         "points": 2.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1133,7 +1133,7 @@
         "name": "Quentin Johnston",
         "nflTeam": "LAC",
         "points": 6.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1196,7 +1196,7 @@
         "name": "Kansas City Chiefs DEF",
         "nflTeam": "KC",
         "points": 13.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 6,
