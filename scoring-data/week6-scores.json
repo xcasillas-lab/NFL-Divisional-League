@@ -1,7 +1,7 @@
 {
   "week": 6,
-  "status": "live",
-  "lastUpdated": "2026-10-18T11:45:17-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-18T11:50:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -1218,7 +1218,7 @@
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
         "points": 23.98,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1260,7 +1260,7 @@
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
         "points": 22.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1302,7 +1302,7 @@
         "name": "Nico Collins",
         "nflTeam": "HOU",
         "points": 9.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1344,7 +1344,7 @@
         "name": "Marvin Harrison",
         "nflTeam": "HOU",
         "points": 4.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
