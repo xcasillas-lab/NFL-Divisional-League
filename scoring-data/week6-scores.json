@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T16:30:20-05:00",
+  "lastUpdated": "2026-10-18T16:35:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 53.84,
+      "leftTotal": 57.5,
       "rightTotal": 85.84
     },
     "2": {
@@ -1048,15 +1048,15 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 2.24,
+        "points": 5.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 81.0,
+          "passingYards": 140.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
-          "rushingYards": 0.0,
+          "rushingYards": 10.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 14.0,
+        "points": 14.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 24.0,
+          "rushingYards": 27.0,
           "rushingTouchdowns": 1.0,
           "receptions": 4.0,
           "receivingYards": 36.0,
