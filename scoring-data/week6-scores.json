@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T08:57:00-05:00",
+  "lastUpdated": "2026-10-18T09:00:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
-      "leftTotal": 1.24,
+      "leftTotal": 11.86,
       "rightTotal": 0.0
     }
   },
@@ -1049,13 +1049,13 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 0.24,
+        "points": 6.16,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 6.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 54.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
@@ -1133,7 +1133,7 @@
         "position": "WR",
         "name": "Nico Collins",
         "nflTeam": "HOU",
-        "points": 0.0,
+        "points": 4.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1143,8 +1143,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 42.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
