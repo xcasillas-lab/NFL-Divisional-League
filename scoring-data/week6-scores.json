@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T16:20:18-05:00",
+  "lastUpdated": "2026-10-18T16:25:15-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 52.64,
+      "leftTotal": 53.54,
       "rightTotal": 85.84
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Ben",
       "leftTotal": 68.22,
-      "rightTotal": 37.0
+      "rightTotal": 38.2
     },
     "3": {
       "leftOwner": "Joshua",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 2.3,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 27.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 3.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 13.1,
+        "points": 14.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 24.0,
           "rushingTouchdowns": 1.0,
           "receptions": 4.0,
           "receivingYards": 36.0,
