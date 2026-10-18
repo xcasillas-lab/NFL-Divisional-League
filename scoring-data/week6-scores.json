@@ -1,12 +1,12 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T17:15:18-05:00",
+  "lastUpdated": "2026-10-18T17:20:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Xavier",
-      "leftTotal": 76.0,
+      "leftTotal": 76.7,
       "rightTotal": 85.84
     },
     "2": {
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
-      "leftTotal": 58.32,
+      "leftTotal": 58.42,
       "rightTotal": 43.4
     },
     "4": {
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 10.4,
+        "points": 10.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -401,7 +401,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 62.0,
+          "rushingYards": 63.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 32.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker",
         "nflTeam": "KC",
-        "points": 23.0,
+        "points": 23.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 99.0,
+          "rushingYards": 106.0,
           "rushingTouchdowns": 2.0,
           "receptions": 1.0,
           "receivingYards": 6.0,
