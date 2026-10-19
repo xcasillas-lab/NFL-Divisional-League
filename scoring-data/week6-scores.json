@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T21:25:18-05:00",
+  "lastUpdated": "2026-10-18T21:30:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
       "leftTotal": 98.78,
-      "rightTotal": 90.66
+      "rightTotal": 91.06
     }
   },
   "players": {
@@ -752,7 +752,7 @@
         "position": "RB",
         "name": "MarShawn Lloyd",
         "nflTeam": "GB",
-        "points": -0.2,
+        "points": 0.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -760,7 +760,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": -2.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
