@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T21:15:18-05:00",
+  "lastUpdated": "2026-10-18T21:20:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
       "leftTotal": 98.78,
-      "rightTotal": 93.82
+      "rightTotal": 88.06
     }
   },
   "players": {
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Jordan Love",
         "nflTeam": "GB",
-        "points": 18.12,
+        "points": 18.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 193.0,
+          "passingYards": 199.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 14.0,
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Green Bay Packers DEF",
         "nflTeam": "GB",
-        "points": 14.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
