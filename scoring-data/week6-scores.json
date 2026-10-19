@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T22:15:18-05:00",
+  "lastUpdated": "2026-10-18T22:20:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
       "leftTotal": 89.7,
-      "rightTotal": 69.16
+      "rightTotal": 69.66
     },
     "4": {
       "leftOwner": "Kendall",
@@ -625,7 +625,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 8.4,
+        "points": 8.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -635,7 +635,7 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
+          "receptions": 7.0,
           "receivingYards": 54.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
