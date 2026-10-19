@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T20:30:20-05:00",
+  "lastUpdated": "2026-10-18T20:35:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
       "leftTotal": 89.7,
-      "rightTotal": 51.56
+      "rightTotal": 52.8
     },
     "4": {
       "leftOwner": "Kendall",
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 1.56,
+        "points": 2.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 64.0,
+          "passingYards": 80.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 3.4,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 21.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 9.0,
