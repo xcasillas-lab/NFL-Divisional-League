@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T20:50:19-05:00",
+  "lastUpdated": "2026-10-18T20:55:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
       "leftTotal": 89.7,
-      "rightTotal": 51.8
+      "rightTotal": 52.04
     },
     "4": {
       "leftOwner": "Kendall",
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 1.2,
+        "points": 1.44,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 80.0,
+          "passingYards": 86.0,
           "passingTouchdowns": 0.0,
           "interceptions": 2.0,
           "rushingYards": 0.0,
