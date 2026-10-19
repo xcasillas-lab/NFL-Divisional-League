@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T22:20:16-05:00",
+  "lastUpdated": "2026-10-18T22:25:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,13 +19,13 @@
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
       "leftTotal": 89.7,
-      "rightTotal": 69.66
+      "rightTotal": 70.18
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
       "leftTotal": 98.78,
-      "rightTotal": 92.82
+      "rightTotal": 93.82
     }
   },
   "players": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 5.86,
+        "points": 6.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 179.0,
+          "passingYards": 192.0,
           "passingTouchdowns": 0.0,
           "interceptions": 2.0,
           "rushingYards": 7.0,
@@ -857,13 +857,13 @@
         "position": "DEF",
         "name": "Green Bay Packers DEF",
         "nflTeam": "GB",
-        "points": 8.0,
+        "points": 9.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
