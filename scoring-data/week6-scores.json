@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T22:25:19-05:00",
+  "lastUpdated": "2026-10-18T22:30:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
       "leftTotal": 98.78,
-      "rightTotal": 93.82
+      "rightTotal": 94.74
     }
   },
   "players": {
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Jordan Love",
         "nflTeam": "GB",
-        "points": 21.12,
+        "points": 21.44,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 268.0,
+          "passingYards": 276.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 14.0,
@@ -752,7 +752,7 @@
         "position": "RB",
         "name": "MarShawn Lloyd",
         "nflTeam": "GB",
-        "points": 0.4,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -760,7 +760,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
+          "rushingYards": 10.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
