@@ -1,7 +1,7 @@
 {
   "week": 6,
-  "status": "live",
-  "lastUpdated": "2026-10-18T22:45:16-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-18T22:50:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
       "leftTotal": 98.78,
-      "rightTotal": 94.74
+      "rightTotal": 94.54
     }
   },
   "players": {
@@ -542,7 +542,7 @@
         "name": "Dak Prescott",
         "nflTeam": "DAL",
         "points": 13.02,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -563,7 +563,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 12.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -626,7 +626,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 11.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -710,15 +710,15 @@
         "position": "QB",
         "name": "Jordan Love",
         "nflTeam": "GB",
-        "points": 21.44,
-        "gameStatus": "live",
+        "points": 21.24,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 276.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
-          "rushingYards": 14.0,
+          "rushingYards": 12.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -753,7 +753,7 @@
         "name": "MarShawn Lloyd",
         "nflTeam": "GB",
         "points": 1.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -795,7 +795,7 @@
         "name": "Christian Watson",
         "nflTeam": "GB",
         "points": 7.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -858,7 +858,7 @@
         "name": "Green Bay Packers DEF",
         "nflTeam": "GB",
         "points": 9.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
