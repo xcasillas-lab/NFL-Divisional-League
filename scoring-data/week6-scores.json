@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-18T19:55:17-05:00",
+  "lastUpdated": "2026-10-18T20:00:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,13 +19,13 @@
       "leftOwner": "Joshua",
       "rightOwner": "Juan",
       "leftTotal": 89.7,
-      "rightTotal": 46.68
+      "rightTotal": 49.78
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "JetLiX",
       "leftTotal": 98.78,
-      "rightTotal": 76.76
+      "rightTotal": 77.76
     }
   },
   "players": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 0.68,
+        "points": 1.68,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 17.0,
+          "passingYards": 42.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -625,7 +625,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 1.1,
+        "points": 3.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -635,8 +635,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 6.0,
+          "receptions": 2.0,
+          "receivingYards": 22.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -710,14 +710,14 @@
         "position": "QB",
         "name": "Jordan Love",
         "nflTeam": "GB",
-        "points": 8.36,
+        "points": 7.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 109.0,
           "passingTouchdowns": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
@@ -857,14 +857,14 @@
         "position": "DEF",
         "name": "Green Bay Packers DEF",
         "nflTeam": "GB",
-        "points": 10.0,
+        "points": 12.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
           "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
