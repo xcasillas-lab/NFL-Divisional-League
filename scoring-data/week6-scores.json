@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-19T21:00:23-05:00",
+  "lastUpdated": "2026-10-19T21:05:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Ben",
       "leftTotal": 68.22,
-      "rightTotal": 101.06
+      "rightTotal": 102.26
     },
     "3": {
       "leftOwner": "Joshua",
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 21.2,
+        "points": 22.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 44.0,
+          "rushingYards": 56.0,
           "rushingTouchdowns": 2.0,
           "receptions": 6.0,
           "receivingYards": 38.0,
