@@ -1,7 +1,7 @@
 {
   "week": 6,
-  "status": "live",
-  "lastUpdated": "2026-10-19T22:20:19-05:00",
+  "status": "final",
+  "lastUpdated": "2026-10-19T22:25:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -35,7 +35,7 @@
         "name": "Brock Purdy",
         "nflTeam": "SF",
         "points": 17.36,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -56,7 +56,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 26.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -161,7 +161,7 @@
         "name": "Mike Evans",
         "nflTeam": "SF",
         "points": 10.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "Terry McLaurin",
         "nflTeam": "WAS",
         "points": 3.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
