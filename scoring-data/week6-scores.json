@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-19T20:20:17-05:00",
+  "lastUpdated": "2026-10-19T20:25:16-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Ben",
       "leftTotal": 68.22,
-      "rightTotal": 88.96
+      "rightTotal": 91.36
     },
     "3": {
       "leftOwner": "Joshua",
@@ -34,15 +34,15 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 12.06,
+        "points": 13.56,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 184.0,
+          "passingYards": 194.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 7.0,
+          "rushingYards": 18.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 13.7,
+        "points": 14.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 29.0,
+          "rushingYards": 38.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 38.0,
