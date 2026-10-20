@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "lastUpdated": "2026-10-19T19:50:20-05:00",
+  "lastUpdated": "2026-10-19T19:55:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Ben",
       "leftTotal": 68.22,
-      "rightTotal": 83.56
+      "rightTotal": 83.84
     },
     "3": {
       "leftOwner": "Joshua",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 9.26,
+        "points": 9.54,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 114.0,
+          "passingYards": 121.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 7.0,
