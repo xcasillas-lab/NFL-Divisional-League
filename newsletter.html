@@ -751,22 +751,267 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 @media(max-width:700px){
   .week6-report-grid{grid-template-columns:1fr}
 }
+
+/* ===== WEEK 7 PRESEASON EXPECTATIONS VS REALITY ===== */
+.week7-story-hero{
+  padding:16px;
+  border:1px solid rgba(56,189,248,.28);
+  border-radius:14px;
+  background:linear-gradient(180deg,#081525,#050d19);
+}
+.week7-story-kicker{
+  color:#38bdf8;
+  font-size:.68rem;
+  font-weight:900;
+  letter-spacing:.12em;
+}
+.week7-story-hero h3{
+  margin:5px 0 10px;
+  color:#f8fafc;
+  font-size:1.22rem;
+  line-height:1.25;
+}
+.week7-story-hero p{
+  margin:7px 0 0;
+  color:#cbd5e1;
+  font-size:.79rem;
+  line-height:1.55;
+}
+.week7-compare-wrap{
+  margin-top:13px;
+  overflow-x:auto;
+  border:1px solid #26374e;
+  border-radius:12px;
+  background:#050d19;
+}
+.week7-compare-table{
+  width:100%;
+  min-width:760px;
+  border-collapse:collapse;
+  font-size:.75rem;
+}
+.week7-compare-table th{
+  padding:9px 10px;
+  background:#020617;
+  color:#38bdf8;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:.64rem;
+  letter-spacing:.04em;
+  border-bottom:1px solid #334155;
+}
+.week7-compare-table th:nth-child(1),
+.week7-compare-table th:nth-child(2),
+.week7-compare-table td:nth-child(1),
+.week7-compare-table td:nth-child(2){text-align:left}
+.week7-compare-table td{
+  padding:9px 10px;
+  color:#e2e8f0;
+  text-align:center;
+  border-bottom:1px solid #1f2d40;
+  white-space:nowrap;
+}
+.week7-compare-table tbody tr:last-child td{border-bottom:0}
+.week7-compare-table td b{color:#f8fafc}
+.week7-compare-table td small{
+  display:block;
+  margin-top:2px;
+  color:#94a3b8;
+  font-size:.62rem;
+}
+.week7-highlight-top td{
+  background:rgba(34,197,94,.055);
+}
+.week7-highlight-value td{
+  background:rgba(245,158,11,.045);
+}
+.week7-takeaways{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+  margin-top:13px;
+}
+.week7-takeaways article{
+  padding:11px 12px;
+  border:1px solid #26374e;
+  border-radius:11px;
+  background:#050d19;
+}
+.week7-takeaways strong{
+  display:block;
+  color:#f8fafc;
+  font-size:.77rem;
+}
+.week7-takeaways p{
+  margin:5px 0 0;
+  color:#94a3b8;
+  font-size:.72rem;
+  line-height:1.45;
+}
+.week7-verdict{
+  margin-top:12px;
+  padding:13px;
+  border:1px solid rgba(245,158,11,.3);
+  border-radius:12px;
+  background:rgba(245,158,11,.055);
+}
+.week7-verdict b{
+  display:block;
+  color:#fbbf24;
+  font-size:.84rem;
+}
+.week7-verdict p{
+  margin:6px 0 0;
+  color:#cbd5e1;
+  font-size:.76rem;
+  line-height:1.5;
+}
+@media(max-width:700px){
+  .week7-story-hero{padding:13px}
+  .week7-story-hero h3{font-size:1.05rem}
+  .week7-takeaways{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 <header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
-<nav class="tabs"><button class="tab-btn" onclick="window.location.href='index.html#overview'" type="button">Home</button><button class="tab-btn" onclick="window.location.href='standings.html'" type="button">Standings</button><button class="tab-btn" onclick="window.location.href='index.html#submit'" type="button">Roster Submissions</button><button class="tab-btn" onclick="window.location.href='matchups.html'" type="button">Weekly Matchups</button><button class="tab-btn" onclick="window.location.href='lastweek.html'" type="button">Last Week</button><button class="tab-btn" onclick="window.location.href='playoffs.html'" type="button">Playoffs</button><button class="tab-btn active" onclick="window.location.href='newsletter.html'" type="button">Newsletter</button><button class="tab-btn" onclick="window.location.href='index.html#schedule'" type="button">Schedule</button><button class="tab-btn" onclick="window.location.href='index.html#rules'" type="button">Rules</button></nav>
+<nav class="tabs"><button class="tab-btn" onclick="window.location.href='index.html#overview'" type="button">Home</button><button class="tab-btn" onclick="window.location.href='standings.html'" type="button">Standings</button><button class="tab-btn" onclick="window.location.href='index.html#submit'" type="button">Roster Submissions</button><button class="tab-btn" onclick="window.location.href='matchups.html'" type="button">Weekly Matchups</button><button class="tab-btn" onclick="window.location.href='lastweek.html'" type="button">Last Week</button><button class="tab-btn" onclick="window.location.href='playoffs.html'" type="button">Playoffs</button><button class="tab-btn active" onclick="window.location.href='newsletter.html'" type="button">Newsletter</button><button class="tab-btn" onclick="window.location.href='schedule.html'" type="button">Schedule</button><button class="tab-btn" onclick="window.location.href='index.html#rules'" type="button">Rules</button></nav>
 <main><section class="newsletter-dashboard">
 <div class="newsletter-shell">
 <div class="newsletter-masthead">
 <div class="newsletter-kicker">Founding Edition</div>
 <h2>DFFL HUDDLE</h2>
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
-<div class="newsletter-issue">October 13, 2026</div>
+<div class="newsletter-issue">October 20, 2026</div>
+</div>
+
+<div class="newsletter-collapse week7-lead-story">
+<button aria-controls="week7UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span>
+<strong>📣 Week 7 — Preseason Expectations vs. Reality <span class="latest-new-badge">NEW</span></strong>
+<small>The lottery, the draft room, the AI — who actually got it right six games into the inaugural season?</small>
+</span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="week7UpdatesContent">
+<div class="week2-section-block week7-reality-block">
+<div class="combined-update-divider">🔮 PRESEASON EXPECTATIONS VS. REALITY</div>
+<div class="week7-story-hero">
+<div class="week7-story-kicker">SIX GAMES LATER</div>
+<h3>The lottery, the draft room, the AI — who actually got it right?</h3>
+<p>
+          Before the inaugural DFFL season kicked off, every owner had a different path to a division.
+          Some owners invested more into the lottery for better draft odds. Then came the division draft itself.
+          After that, the preseason AI rankings tried to predict which divisions had the strongest overall fantasy talent
+          before a single DFFL matchup had been played.
+        </p>
+<p>
+          Now, six games later, we finally have enough actual results to compare those expectations with reality.
+          The original draft put JetLiX, Ben and Brian at the top, while Dallas and Kendall selected seventh and eighth.
+          The preseason AI saw the board differently — and Week 7 gives us a chance to see which prediction aged best.
+        </p>
+</div>
+<div class="week7-compare-wrap">
+<table class="week7-compare-table">
+<thead>
+<tr>
+<th>Owner</th>
+<th>Division</th>
+<th>Lottery $</th>
+<th>Draft</th>
+<th>AI Preseason</th>
+<th>Standing</th>
+<th>Week 7 Power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>JetLiX</b></td><td>NFC North</td><td>$60</td><td>1</td><td>1</td><td>5 <small>3-3</small></td><td>2</td>
+</tr>
+<tr class="week7-highlight-top">
+<td><b>Ben</b></td><td>NFC West</td><td>$90</td><td>2</td><td>4</td><td>1 <small>6-0</small></td><td>1</td>
+</tr>
+<tr>
+<td><b>Brian</b></td><td>AFC North</td><td>$75</td><td>3</td><td>5</td><td>3 <small>4-2</small></td><td>3</td>
+</tr>
+<tr>
+<td><b>Juan</b></td><td>NFC East</td><td>$75</td><td>4</td><td>7</td><td>7 <small>1-5</small></td><td>8</td>
+</tr>
+<tr>
+<td><b>Joshua</b></td><td>AFC East</td><td>$75</td><td>5</td><td>6</td><td>6 <small>2-4</small></td><td>7</td>
+</tr>
+<tr>
+<td><b>Xavier</b></td><td>NFC South</td><td>$50</td><td>6</td><td>2</td><td>8 <small>1-5</small></td><td>6</td>
+</tr>
+<tr class="week7-highlight-value">
+<td><b>Dallas</b></td><td>AFC West</td><td>$40</td><td>7</td><td>3</td><td>2 <small>4-2</small></td><td>4</td>
+</tr>
+<tr class="week7-highlight-value">
+<td><b>Kendall</b></td><td>AFC South</td><td>$40</td><td>8</td><td>8</td><td>4 <small>3-3</small></td><td>5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="week7-takeaways">
+<article>
+<strong>💰 Biggest Draft-Day Value — Dallas</strong>
+<p>
+            Dallas entered at the $40 minimum, drafted seventh, and has climbed all the way to the No. 2 seed at 4-2.
+            The preseason AI was much higher on AFC West than the draft room, ranking the division third.
+          </p>
+</article>
+<article>
+<strong>👑 Best Overall Result — Ben</strong>
+<p>
+            Ben made the largest lottery contribution at $90, drafted second, and has turned NFC West into the league's
+            only 6-0 division. He is No. 1 in both the standings and the Week 7 Power Rankings.
+          </p>
+</article>
+<article>
+<strong>🎯 Closest Prediction — Brian</strong>
+<p>
+            Brian was drafted third and now sits third in both the standings and Power Rankings.
+            The draft room could not have been much more accurate on AFC North.
+          </p>
+</article>
+<article>
+<strong>🧠 Talent vs. Record — JetLiX</strong>
+<p>
+            NFC North was the No. 1 draft selection and the AI's preseason No. 1. JetLiX is only fifth in the standings
+            at 3-3, but the Power Rankings still rate NFC North second overall.
+          </p>
+</article>
+<article>
+<strong>📈 Quiet Overachiever — Kendall</strong>
+<p>
+            AFC South was drafted eighth and ranked eighth by the preseason AI, yet Kendall is currently fourth
+            in the standings and fifth in the Power Rankings.
+          </p>
+</article>
+<article>
+<strong>⚠️ Biggest Preseason Miss — NFC South</strong>
+<p>
+            The preseason AI ranked NFC South second overall. Six games later, Xavier sits eighth in the standings at 1-5,
+            although the current Power Rankings still see more underlying strength at No. 6.
+          </p>
+</article>
+</div>
+<div class="week7-verdict">
+<b>So who got it right?</b>
+<p>
+          The draft room did a strong job identifying Ben and Brian near the top, but it badly underestimated Dallas and Kendall.
+          The preseason AI deserves credit for seeing AFC West as an upper-tier division before the season, while missing badly on
+          NFC South and underrating NFC West. The standings tell us who has actually won; the Power Rankings tell us which divisions
+          may be stronger than their records. Six weeks in, the four measures still do not completely agree — and that is what makes
+          the inaugural DFFL season interesting.
+        </p>
+</div>
+</div>
+</div>
 </div>
 <div class="newsletter-collapse">
 <button aria-controls="week6UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
-<span><strong>📣 Week 6 — Game of the Week <span class="latest-new-badge">NEW</span></strong>
+<span><strong>📣 Week 6 — Game of the Week </strong>
 <small>Brian's AFC North vs. Ben's NFC West — a head-to-head look at each division's top fantasy performers.</small></span>
 <span aria-hidden="true" class="toggle-arrow">▾</span>
 </button>
@@ -964,7 +1209,6 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p>All eight teams still make the playoffs, so the second half is not only about qualifying. It is about seeding, momentum and building the strongest possible lineup before the postseason begins.</p>
 </div>
 </div>
-
 </div>
 </div>
 <div class="newsletter-collapse">
