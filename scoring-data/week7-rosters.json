@@ -195,7 +195,64 @@
     },
     "Xavier": {
       "division": "NFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Tyler Shough",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bijan Robinson",
+          "nflTeam": "ATL",
+          "nflTeamName": "Atlanta Falcons",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bucky Irving",
+          "nflTeam": "TB",
+          "nflTeamName": "Tampa Bay Buccaneers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jalen Coker",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Chris Olave",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Juwan Johnson",
+          "nflTeam": "NO",
+          "nflTeamName": "New Orleans Saints",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Tetairoa McMillan",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Carolina Panthers DEF",
+          "nflTeam": "CAR",
+          "nflTeamName": "Carolina Panthers",
+          "jersey": null
+        }
+      ]
     },
     "Dallas": {
       "division": "AFC West",
