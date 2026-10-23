@@ -1,7 +1,7 @@
 {
   "week": 7,
-  "status": "live",
-  "lastUpdated": "2026-10-22T22:20:18-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-22T22:25:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -373,7 +373,7 @@
         "name": "Drake Maye",
         "nflTeam": "NE",
         "points": 28.44,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -394,7 +394,7 @@
         "name": "Rhamondre Stevenson",
         "nflTeam": "NE",
         "points": 20.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -795,7 +795,7 @@
         "name": "Rome Odunze",
         "nflTeam": "CHI",
         "points": 8.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -858,10 +858,10 @@
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
         "points": 4.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 21,
+          "pointsAllowed": 24,
           "pointsAllowedFantasy": 0.0,
           "sacks": 2.0,
           "interceptions": 1.0,
