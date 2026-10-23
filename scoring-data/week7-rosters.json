@@ -126,7 +126,64 @@
     },
     "Joshua": {
       "division": "AFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Drake Maye",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Rhamondre Stevenson",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Breece Hall",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Malik Washington",
+          "nflTeam": "MIA",
+          "nflTeamName": "Miami Dolphins",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Romeo Doubs",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Kenyon Sadiq",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Ollie Gordon II",
+          "nflTeam": "MIA",
+          "nflTeamName": "Miami Dolphins",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "New York Jets DEF",
+          "nflTeam": "NYJ",
+          "nflTeamName": "New York Jets",
+          "jersey": null
+        }
+      ]
     },
     "Juan": {
       "division": "NFC East",
