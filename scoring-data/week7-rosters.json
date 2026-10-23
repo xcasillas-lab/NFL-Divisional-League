@@ -248,7 +248,64 @@
     },
     "JetLiX": {
       "division": "NFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Jared Goff",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jahmyr Gibbs",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Josh Jacobs",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Amon-Ra St. Brown",
+          "nflTeam": "DET",
+          "nflTeamName": "Detroit Lions",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Rome Odunze",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "T.J. Hockenson",
+          "nflTeam": "MIN",
+          "nflTeamName": "Minnesota Vikings",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Christian Watson",
+          "nflTeam": "GB",
+          "nflTeamName": "Green Bay Packers",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Chicago Bears DEF",
+          "nflTeam": "CHI",
+          "nflTeamName": "Chicago Bears",
+          "jersey": null
+        }
+      ]
     },
     "Xavier": {
       "division": "NFC South",
