@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-22T20:40:19-05:00",
+  "lastUpdated": "2026-10-22T20:45:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
-      "leftTotal": 17.82,
+      "leftTotal": 18.54,
       "rightTotal": 0.0
     },
     "4": {
@@ -372,12 +372,12 @@
         "position": "QB",
         "name": "Drake Maye",
         "nflTeam": "NE",
-        "points": 11.32,
+        "points": 12.04,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 103.0,
+          "passingYards": 121.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 22.0,
