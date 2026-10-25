@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T09:10:17-05:00",
+  "lastUpdated": "2026-10-25T09:15:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -19,7 +19,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
       "leftTotal": 48.44,
-      "rightTotal": 3.94
+      "rightTotal": 6.46
     },
     "4": {
       "leftOwner": "Kendall",
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Tyler Shough",
         "nflTeam": "NO",
-        "points": 1.44,
+        "points": 3.96,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 36.0,
+          "passingYards": 99.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
