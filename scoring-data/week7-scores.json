@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T14:05:18-05:00",
+  "lastUpdated": "2026-10-25T14:10:40-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,18 +13,18 @@
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
       "leftTotal": 82.12,
-      "rightTotal": 14.7
+      "rightTotal": 21.7
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
-      "leftTotal": 71.04,
+      "leftTotal": 72.04,
       "rightTotal": 66.02
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
-      "leftTotal": 55.66,
+      "leftTotal": 55.46,
       "rightTotal": 26.3
     }
   },
@@ -519,13 +519,13 @@
         "position": "DEF",
         "name": "New York Jets DEF",
         "nflTeam": "NYJ",
-        "points": 3.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 21,
           "pointsAllowedFantasy": 0.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -815,7 +815,7 @@
         "position": "TE",
         "name": "T.J. Hockenson",
         "nflTeam": "MIN",
-        "points": 1.8,
+        "points": 8.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -825,9 +825,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 8.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 3.0,
+          "receivingYards": 13.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -1301,7 +1301,7 @@
         "position": "WR",
         "name": "Carnell Tate",
         "nflTeam": "TEN",
-        "points": 4.2,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1311,10 +1311,10 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 32.0,
+          "receptions": 3.0,
+          "receivingYards": 45.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
