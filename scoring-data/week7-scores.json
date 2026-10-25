@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T16:10:19-05:00",
+  "lastUpdated": "2026-10-25T16:15:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -13,7 +13,7 @@
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
       "leftTotal": 117.68,
-      "rightTotal": 48.44
+      "rightTotal": 51.32
     },
     "3": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 60.32
+      "rightTotal": 63.82
     }
   },
   "players": {
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 2.1,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 21.0,
+          "rushingYards": 24.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -118,7 +118,7 @@
         "position": "WR",
         "name": "Puka Nacua",
         "nflTeam": "LAR",
-        "points": 6.4,
+        "points": 7.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -128,8 +128,8 @@
           "interceptions": 0.0,
           "rushingYards": 7.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 37.0,
+          "receptions": 5.0,
+          "receivingYards": 45.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -139,7 +139,7 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 1.0,
+        "points": 2.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -149,8 +149,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 5.0,
+          "receptions": 3.0,
+          "receivingYards": 14.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 8.84,
+        "points": 9.52,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 121.0,
+          "passingYards": 138.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -773,7 +773,7 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 7.8,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -783,8 +783,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 68.0,
+          "receptions": 3.0,
+          "receivingYards": 85.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
