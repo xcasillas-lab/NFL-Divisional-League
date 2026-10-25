@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T09:50:19-05:00",
+  "lastUpdated": "2026-10-25T09:55:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
-      "leftTotal": 11.4,
+      "leftTotal": 12.8,
       "rightTotal": 12.9
     },
     "3": {
@@ -308,7 +308,7 @@
         "position": "TE",
         "name": "Pat Freiermuth",
         "nflTeam": "PIT",
-        "points": 0.0,
+        "points": 1.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -318,8 +318,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 9.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
