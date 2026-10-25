@@ -1,19 +1,19 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T17:15:21-05:00",
+  "lastUpdated": "2026-10-25T17:20:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 26.8,
+      "leftTotal": 24.9,
       "rightTotal": 16.8
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
       "leftTotal": 117.68,
-      "rightTotal": 78.62
+      "rightTotal": 84.18
     },
     "3": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 88.92
+      "rightTotal": 96.12
     }
   },
   "players": {
@@ -139,7 +139,7 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 7.3,
+        "points": 14.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -149,9 +149,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 43.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 7.0,
+          "receivingYards": 50.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -710,13 +710,13 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 11.92,
+        "points": 16.48,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 248.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 262.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 6.7,
+        "points": 6.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 54.0,
+          "rushingYards": 55.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 18.0,
@@ -773,7 +773,7 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 16.9,
+        "points": 17.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -783,8 +783,8 @@
           "interceptions": 0.0,
           "rushingYards": -1.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 7.0,
-          "receivingYards": 135.0,
+          "receptions": 8.0,
+          "receivingYards": 139.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1153,7 +1153,7 @@
         "position": "TE",
         "name": "Brock Bowers",
         "nflTeam": "LV",
-        "points": 3.1,
+        "points": 4.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1163,8 +1163,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 21.0,
+          "receptions": 3.0,
+          "receivingYards": 27.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
-        "points": 8.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 6,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 13,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
