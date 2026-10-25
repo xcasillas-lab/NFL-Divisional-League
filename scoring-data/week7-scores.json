@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T15:05:23-05:00",
+  "lastUpdated": "2026-10-25T15:10:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 0.0,
-      "rightTotal": 13.6
+      "leftTotal": 10.0,
+      "rightTotal": 15.4
     },
     "2": {
       "leftOwner": "Brian",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 41.66
+      "rightTotal": 43.82
     }
   },
   "players": {
@@ -34,15 +34,15 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 12.46,
-        "gameStatus": "live",
+        "points": 14.02,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 254.0,
+          "passingYards": 288.0,
           "passingTouchdowns": 1.0,
           "interceptions": 2.0,
-          "rushingYards": 3.0,
+          "rushingYards": 5.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -56,7 +56,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 19.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -140,7 +140,7 @@
         "name": "Trey McBride",
         "nflTeam": "ARI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -160,8 +160,8 @@
         "position": "FLEX",
         "name": "George Kittle",
         "nflTeam": "SF",
-        "points": 10.2,
-        "gameStatus": "live",
+        "points": 10.8,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -170,10 +170,10 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 7.0,
-          "receivingYards": 67.0,
+          "receptions": 8.0,
+          "receivingYards": 88.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
@@ -351,7 +351,7 @@
         "name": "Cleveland Browns DEF",
         "nflTeam": "CLE",
         "points": 3.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 24,
@@ -625,7 +625,7 @@
         "position": "WR",
         "name": "Malik Nabers",
         "nflTeam": "NYG",
-        "points": 11.4,
+        "points": 13.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -635,8 +635,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 94.0,
+          "receptions": 6.0,
+          "receivingYards": 102.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -901,7 +901,7 @@
         "name": "Bijan Robinson",
         "nflTeam": "ATL",
         "points": 14.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1133,7 +1133,7 @@
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1209,7 +1209,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Kendall": [
@@ -1260,7 +1260,7 @@
         "name": "Tony Pollard",
         "nflTeam": "TEN",
         "points": 35.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1302,7 +1302,7 @@
         "name": "Carnell Tate",
         "nflTeam": "TEN",
         "points": 7.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1344,7 +1344,7 @@
         "name": "Wan'Dale Robinson",
         "nflTeam": "TEN",
         "points": 2.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
