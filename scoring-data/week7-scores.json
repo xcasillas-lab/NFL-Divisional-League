@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T09:20:17-05:00",
+  "lastUpdated": "2026-10-25T09:25:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,14 +12,14 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
-      "leftTotal": 7.7,
+      "leftTotal": 10.8,
       "rightTotal": 12.9
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
       "leftTotal": 48.44,
-      "rightTotal": 6.66
+      "rightTotal": 6.62
     },
     "4": {
       "leftOwner": "Kendall",
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 7.7,
+        "points": 10.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -255,8 +255,8 @@
           "interceptions": 0.0,
           "rushingYards": 57.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 10.0,
+          "receptions": 3.0,
+          "receivingYards": 36.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Tyler Shough",
         "nflTeam": "NO",
-        "points": 4.16,
+        "points": 4.12,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 104.0,
+          "passingYards": 103.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
