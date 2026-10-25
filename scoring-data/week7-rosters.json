@@ -158,8 +158,8 @@
         {
           "position": "WR",
           "name": "Romeo Doubs",
-          "nflTeam": "GB",
-          "nflTeamName": "Green Bay Packers",
+          "nflTeam": "NE",
+          "nflTeamName": "New England Patriots",
           "jersey": null
         },
         {
@@ -370,11 +370,125 @@
     },
     "Dallas": {
       "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kenneth Walker II",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Tre Tucker",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jaylen Waddle",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Brock Bowers",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Travis Kelce",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Denver Broncos DEF",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "C.J. Stroud",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jonathan Taylor",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Tony Pollard",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Nico Collins",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Carnell Tate",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Tyler Warren",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Wan'Dale Robinson",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Houston Texans DEF",
+          "nflTeam": "HOU",
+          "nflTeamName": "Houston Texans",
+          "jersey": null
+        }
+      ]
     }
   }
 }
