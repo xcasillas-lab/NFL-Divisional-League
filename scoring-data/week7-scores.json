@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T18:30:20-05:00",
+  "lastUpdated": "2026-10-25T18:35:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -711,7 +711,7 @@
         "name": "Jared Goff",
         "nflTeam": "DET",
         "points": 18.02,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -732,7 +732,7 @@
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
         "points": 14.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -753,7 +753,7 @@
         "name": "Josh Jacobs",
         "nflTeam": "GB",
         "points": 17.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 19.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -837,7 +837,7 @@
         "name": "Christian Watson",
         "nflTeam": "GB",
         "points": 8.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
