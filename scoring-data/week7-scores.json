@@ -1,7 +1,7 @@
 {
   "week": 7,
-  "status": "live",
-  "lastUpdated": "2026-10-25T11:30:20-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-25T11:35:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -246,7 +246,7 @@
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
         "points": 15.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -309,7 +309,7 @@
         "name": "Pat Freiermuth",
         "nflTeam": "PIT",
         "points": 3.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -880,7 +880,7 @@
         "name": "Tyler Shough",
         "nflTeam": "NO",
         "points": 14.82,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Chris Olave",
         "nflTeam": "NO",
         "points": 8.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -985,7 +985,7 @@
         "name": "Juwan Johnson",
         "nflTeam": "NO",
         "points": 1.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
