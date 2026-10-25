@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T12:53:54-05:00",
+  "lastUpdated": "2026-10-25T12:55:17-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
-      "leftTotal": 42.98,
+      "leftTotal": 43.26,
       "rightTotal": 14.7
     },
     "3": {
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
-      "leftTotal": 41.78,
+      "leftTotal": 42.78,
       "rightTotal": 21.7
     }
   },
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 1.68,
+        "points": 1.96,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 12.0,
+          "passingYards": 19.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 12.0,
@@ -1030,7 +1030,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 17,
+          "pointsAllowed": 19,
           "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 0.0,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 0.88,
+        "points": 1.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 22.0,
+          "passingYards": 47.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
