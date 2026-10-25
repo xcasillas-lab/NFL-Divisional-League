@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T13:30:20-05:00",
+  "lastUpdated": "2026-10-25T13:35:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 8.2
+      "rightTotal": 11.4
     },
     "2": {
       "leftOwner": "Brian",
@@ -19,12 +19,12 @@
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
       "leftTotal": 69.34,
-      "rightTotal": 58.32
+      "rightTotal": 58.82
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
-      "leftTotal": 47.72,
+      "leftTotal": 49.32,
       "rightTotal": 23.2
     }
   },
@@ -625,7 +625,7 @@
         "position": "WR",
         "name": "Malik Nabers",
         "nflTeam": "NYG",
-        "points": 8.2,
+        "points": 11.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -635,8 +635,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 67.0,
+          "receptions": 4.0,
+          "receivingYards": 94.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -900,7 +900,7 @@
         "position": "RB",
         "name": "Bijan Robinson",
         "nflTeam": "ATL",
-        "points": 7.3,
+        "points": 7.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -908,7 +908,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 37.0,
+          "rushingYards": 42.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 21.0,
@@ -1238,7 +1238,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 11.3,
+        "points": 12.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1246,7 +1246,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 53.0,
+          "rushingYards": 69.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
