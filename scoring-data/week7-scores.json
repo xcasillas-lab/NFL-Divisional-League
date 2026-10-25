@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T14:20:18-05:00",
+  "lastUpdated": "2026-10-25T14:25:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -18,14 +18,14 @@
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
-      "leftTotal": 72.04,
+      "leftTotal": 72.24,
       "rightTotal": 67.42
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 60.04,
-      "rightTotal": 28.32
+      "rightTotal": 28.76
     }
   },
   "players": {
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 6.12,
+        "points": 6.56,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 178.0,
+          "passingYards": 189.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 13.5,
+        "points": 13.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -506,7 +506,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 70.0,
+          "rushingYards": 72.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 0.0,
@@ -1030,7 +1030,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 36,
+          "pointsAllowed": 43,
           "pointsAllowedFantasy": -4.0,
           "sacks": 0.0,
           "interceptions": 2.0,
