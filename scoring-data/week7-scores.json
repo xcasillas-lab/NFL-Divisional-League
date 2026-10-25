@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T15:20:19-05:00",
+  "lastUpdated": "2026-10-25T15:25:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -626,7 +626,7 @@
         "name": "Malik Nabers",
         "nflTeam": "NYG",
         "points": 14.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -647,7 +647,7 @@
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
         "points": 2.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1218,7 +1218,7 @@
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
         "points": 14.52,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1281,7 +1281,7 @@
         "name": "Nico Collins",
         "nflTeam": "HOU",
         "points": 1.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1365,10 +1365,10 @@
         "name": "Houston Texans DEF",
         "nflTeam": "HOU",
         "points": 3.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 21,
+          "pointsAllowed": 27,
           "pointsAllowedFantasy": 0.0,
           "sacks": 3.0,
           "interceptions": 0.0,
