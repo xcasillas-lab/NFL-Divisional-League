@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T11:20:18-05:00",
+  "lastUpdated": "2026-10-25T11:25:18-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
-      "leftTotal": 17.4,
+      "leftTotal": 17.8,
       "rightTotal": 12.9
     },
     "3": {
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 14.4,
+        "points": 14.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 93.0,
+          "rushingYards": 97.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 36.0,
