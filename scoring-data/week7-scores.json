@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T13:20:20-05:00",
+  "lastUpdated": "2026-10-25T13:25:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -12,19 +12,19 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
-      "leftTotal": 53.2,
+      "leftTotal": 53.52,
       "rightTotal": 14.7
     },
     "3": {
       "leftOwner": "Joshua",
       "rightOwner": "Xavier",
       "leftTotal": 69.34,
-      "rightTotal": 59.32
+      "rightTotal": 58.32
     },
     "4": {
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
-      "leftTotal": 41.28,
+      "leftTotal": 43.0,
       "rightTotal": 23.2
     }
   },
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 2.6,
+        "points": 2.92,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 35.0,
+          "passingYards": 43.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 12.0,
@@ -1026,12 +1026,12 @@
         "position": "DEF",
         "name": "Carolina Panthers DEF",
         "nflTeam": "CAR",
-        "points": 2.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 26,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowed": 33,
+          "pointsAllowedFantasy": -1.0,
           "sacks": 0.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "C.J. Stroud",
         "nflTeam": "HOU",
-        "points": 1.88,
+        "points": 3.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 47.0,
+          "passingYards": 90.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
