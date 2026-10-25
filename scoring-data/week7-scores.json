@@ -1,19 +1,19 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T18:25:17-05:00",
+  "lastUpdated": "2026-10-25T18:30:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 56.5,
+      "leftTotal": 57.5,
       "rightTotal": 16.8
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "JetLiX",
       "leftTotal": 117.68,
-      "rightTotal": 101.92
+      "rightTotal": 102.72
     },
     "3": {
       "leftOwner": "Joshua",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 102.52
+      "rightTotal": 104.82
     }
   },
   "players": {
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 14.8,
+        "points": 17.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 76.0,
+          "rushingYards": 99.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 22.0,
@@ -140,7 +140,7 @@
         "name": "Trey McBride",
         "nflTeam": "ARI",
         "points": 22.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -710,7 +710,7 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 18.12,
+        "points": 18.02,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -718,7 +718,7 @@
           "passingYards": 303.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": -1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 13.9,
+        "points": 14.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 107.0,
+          "rushingYards": 116.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 27.0,
@@ -1133,7 +1133,7 @@
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
         "points": 6.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
-        "points": 3.0,
-        "gameStatus": "live",
+        "points": 4.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 16,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 2.0,
+          "sacks": 3.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
