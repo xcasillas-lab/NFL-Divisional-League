@@ -1,12 +1,12 @@
 {
   "week": 7,
   "status": "pre-game",
-  "lastUpdated": "2026-10-26T15:55:18-05:00",
+  "lastUpdated": "2026-10-26T16:00:25-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 78.6,
+      "leftTotal": 68.8,
       "rightTotal": 16.8
     },
     "2": {
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 131.62
+      "rightTotal": 109.52
     }
   },
   "players": {
@@ -139,19 +139,19 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 22.1,
+        "points": 0.0,
         "gameStatus": "final",
-        "foundInFeed": true,
-        "matchMethod": "exact",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 10.0,
-          "receivingYards": 111.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
+          "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -1132,18 +1132,18 @@
         "position": "WR",
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
-        "points": 6.8,
+        "points": 0.0,
         "gameStatus": "final",
-        "foundInFeed": true,
-        "matchMethod": "exact",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 48.0,
+          "receptions": 0.0,
+          "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1195,13 +1195,13 @@
         "position": "DEF",
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
-        "points": 4.0,
+        "points": 1.0,
         "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 16,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 3.0,
+          "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
