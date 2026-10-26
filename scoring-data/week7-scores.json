@@ -1,12 +1,12 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T22:05:17-05:00",
+  "lastUpdated": "2026-10-25T22:10:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 77.68,
+      "leftTotal": 78.6,
       "rightTotal": 16.8
     },
     "2": {
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 6.88,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 162.0,
+          "passingYards": 165.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 14.0,
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Travis Kelce",
         "nflTeam": "KC",
-        "points": 5.6,
+        "points": 6.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,8 +1184,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 41.0,
+          "receptions": 4.0,
+          "receivingYards": 44.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
