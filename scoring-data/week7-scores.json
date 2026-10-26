@@ -1,7 +1,7 @@
 {
   "week": 7,
-  "status": "live",
-  "lastUpdated": "2026-10-25T22:15:19-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-25T22:20:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -98,7 +98,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 26.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1049,7 +1049,7 @@
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
         "points": 7.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1070,7 +1070,7 @@
         "name": "Kenneth Walker II",
         "nflTeam": "KC",
         "points": 7.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1175,7 +1175,7 @@
         "name": "Travis Kelce",
         "nflTeam": "KC",
         "points": 6.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
