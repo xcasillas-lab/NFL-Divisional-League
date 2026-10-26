@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T20:25:25-05:00",
+  "lastUpdated": "2026-10-25T20:30:22-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 112.82
+      "rightTotal": 122.12
     }
   },
   "players": {
@@ -97,7 +97,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 8.0,
+        "points": 17.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -107,9 +107,9 @@
           "interceptions": 0.0,
           "rushingYards": 13.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 52.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 4.0,
+          "receivingYards": 80.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
