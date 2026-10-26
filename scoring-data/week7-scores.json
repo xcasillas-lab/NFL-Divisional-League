@@ -1,12 +1,12 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T20:40:20-05:00",
+  "lastUpdated": "2026-10-25T20:45:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 63.72,
+      "leftTotal": 64.12,
       "rightTotal": 16.8
     },
     "2": {
@@ -25,7 +25,7 @@
       "leftOwner": "Kendall",
       "rightOwner": "Ben",
       "leftTotal": 82.22,
-      "rightTotal": 124.72
+      "rightTotal": 128.02
     }
   },
   "players": {
@@ -97,7 +97,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 19.9,
+        "points": 23.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -107,8 +107,8 @@
           "interceptions": 0.0,
           "rushingYards": 13.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 101.0,
+          "receptions": 6.0,
+          "receivingYards": 129.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker II",
         "nflTeam": "KC",
-        "points": 4.5,
+        "points": 4.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 24.0,
+          "rushingYards": 28.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 11.0,
