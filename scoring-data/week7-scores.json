@@ -1,12 +1,12 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-25T19:25:16-05:00",
+  "lastUpdated": "2026-10-25T19:30:26-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
-      "leftTotal": 59.76,
+      "leftTotal": 59.86,
       "rightTotal": 16.8
     },
     "2": {
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker II",
         "nflTeam": "KC",
-        "points": 1.3,
+        "points": 1.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 2.0,
+          "rushingYards": 3.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 6.0,
@@ -1176,8 +1176,8 @@
         "nflTeam": "KC",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
