@@ -1108,7 +1108,7 @@ async function dfflOpenAutoFinal(week,matchupId){
   const data=window.DFFL_AUTO_WEEK_DATA[week]||{},scores=data.scores||await dfflAutoFetchJson(dfflAutoJsonUrl(week,"scores")),rosters=data.rosters||await dfflAutoFetchJson(dfflAutoJsonUrl(week,"rosters")),pair=(DFFL_AUTOMATION_SCHEDULE[week]||[])[matchupId-1];
   if(!scores||!rosters||!pair)return;
   const source=document.getElementById("matchup-detail-"+matchupId);if(!source)return;
-  const panel=source.cloneNode(true);panel.removeAttribute("id");panel.classList.add("active");
+  const panel=source.cloneNode(true);panel.removeAttribute("id");panel.dataset.dfflWeek=String(week);panel.classList.add("active");
   const records=dfflRecordsBeforeWeek(week),leftOwner=pair[0],rightOwner=pair[1],li=DFFL_OWNER_DIVISION[leftOwner],ri=DFFL_OWNER_DIVISION[rightOwner],totals=dfflAutoFindScore(scores,leftOwner,rightOwner),lr=(rosters.rosters&&rosters.rosters[leftOwner])||{players:[]},rr=(rosters.rosters&&rosters.rosters[rightOwner])||{players:[]},ls=(scores.players&&scores.players[leftOwner])||[],rs=(scores.players&&scores.players[rightOwner])||[];
   const hide=panel.querySelector(".matchup-detail-hide");if(hide){hide.setAttribute("onclick","closeWeek1Final()");hide.textContent="HIDE DETAILS ⌃";}
   const kicker=panel.querySelector(".matchup-detail-kicker");if(kicker)kicker.textContent="Week "+week+" • Matchup "+matchupId+" Final";
@@ -1117,7 +1117,7 @@ async function dfflOpenAutoFinal(week,matchupId){
   const headers=panel.querySelectorAll(".matchup-player-table thead th");if(headers[0])headers[0].textContent=li.division.toUpperCase()+" PLAYER";if(headers[4])headers[4].textContent=ri.division.toUpperCase()+" PLAYER";
   dfflBuildPlayerTable(panel,lr,rr,ls,rs,totals.leftTotal,totals.rightTotal);
   panel.querySelectorAll(".player-game-status").forEach(s=>{s.textContent="FINAL";s.className="player-game-status final";});
-  const holder=document.getElementById("week1FinalContent"),modal=document.getElementById("week1FinalModal");if(holder&&modal){holder.innerHTML="";holder.appendChild(panel);modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}
+  const holder=document.getElementById("week1FinalContent"),modal=document.getElementById("week1FinalModal");if(holder&&modal){holder.innerHTML="";holder.appendChild(panel);modal.dataset.dfflWeek=panel.dataset.dfflWeek||"";modal.classList.add("open");modal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}
 }
 async function dfflDetermineActiveWeek(){
   window.DFFL_AUTO_WEEK_DATA={};let active=6,allFinal=true;
@@ -1153,18 +1153,10 @@ document.addEventListener("DOMContentLoaded",function(){dfflLoadAutomaticMatchup
 </script>
 <script id="dfflPlayerBoxscoreLinks">
 /* ===== PLAYER -> ESPN BOXSCORE LINKS =====
-   Always builds the ESPN map for the CURRENT active DFFL week.
-   Cache is stored separately by week so a prior week's map can never
-   be reused after the automatic matchup page rolls forward.
+   Historical popups are explicitly stamped with data-dffl-week.
+   Live matchups use the automatically detected DFFL_ACTIVE_WEEK.
+   ESPN is queried by NFL regular-season week, not by fragile date windows.
 */
-const DFFL_ESPN_DATES_BY_WEEK = {
-  6:["20261015","20261016","20261017","20261018","20261019"],
-  7:["20261022","20261023","20261024","20261025","20261026"],
-  8:["20261029","20261030","20261031","20261101","20261102"],
-  9:["20261105","20261106","20261107","20261108","20261109"],
-  10:["20261112","20261113","20261114","20261115","20261116"]
-};
-
 const DFFL_NFL_TEAM_CODES = new Set([
   "ARI","ATL","BAL","BUF","CAR","CHI","CIN","CLE",
   "DAL","DEN","DET","GB","HOU","IND","JAX","KC",
@@ -1172,13 +1164,11 @@ const DFFL_NFL_TEAM_CODES = new Set([
   "NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"
 ]);
 
-/* ESPN can occasionally use an alternate abbreviation. */
 const DFFL_ESPN_TEAM_ALIASES = {
   "WSH":"WAS",
   "LA":"LAR"
 };
 
-/* One independent promise/map per DFFL week. */
 const dfflEspnGameMapPromises = {};
 
 function dfflExtractTeamCodeFromPlayerCell(cell){
@@ -1193,7 +1183,44 @@ function dfflExtractTeamCodeFromPlayerCell(cell){
 
 function dfflGetActiveWeekForBoxscore(){
   const week = Number(window.DFFL_ACTIVE_WEEK);
-  return Number.isFinite(week) && week >= 6 && week <= 10 ? week : 6;
+  return Number.isFinite(week) && week >= 1 && week <= 10 ? week : 6;
+}
+
+function dfflGetWeekForPlayerCell(cell){
+  const panel = cell ? cell.closest(".matchup-detail-panel") : null;
+
+  /* Primary source: explicit archive week stamped on the popup itself. */
+  if(panel && panel.dataset && panel.dataset.dfflWeek){
+    const stampedWeek = Number(panel.dataset.dfflWeek);
+    if(Number.isFinite(stampedWeek) && stampedWeek >= 1 && stampedWeek <= 10){
+      return stampedWeek;
+    }
+  }
+
+  /* Secondary source: modal stamp. */
+  const modal = cell ? cell.closest("#week1FinalModal") : null;
+  if(modal && modal.dataset && modal.dataset.dfflWeek){
+    const modalWeek = Number(modal.dataset.dfflWeek);
+    if(Number.isFinite(modalWeek) && modalWeek >= 1 && modalWeek <= 10){
+      return modalWeek;
+    }
+  }
+
+  /* Legacy backup for any older popup that includes "Week X" in its kicker. */
+  if(panel){
+    const kicker = panel.querySelector(".matchup-detail-kicker");
+    const text = String(kicker ? kicker.textContent : "");
+    const match = text.match(/\bWeek\s+(\d{1,2})\b/i);
+    if(match){
+      const parsedWeek = Number(match[1]);
+      if(Number.isFinite(parsedWeek) && parsedWeek >= 1 && parsedWeek <= 10){
+        return parsedWeek;
+      }
+    }
+  }
+
+  /* Normal live matchup. */
+  return dfflGetActiveWeekForBoxscore();
 }
 
 function dfflBuildEspnGameMap(week){
@@ -1203,61 +1230,56 @@ function dfflBuildEspnGameMap(week){
     return dfflEspnGameMapPromises[targetWeek];
   }
 
-  const dates = DFFL_ESPN_DATES_BY_WEEK[targetWeek] || [];
+  dfflEspnGameMapPromises[targetWeek] = (async function(){
+    try{
+      /* Query ESPN by REGULAR-SEASON WEEK directly. This prevents a game
+         from another DFFL/NFL week being selected because of date overlap. */
+      const url =
+        "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard" +
+        "?dates=2026&seasontype=2&week=" + targetWeek;
 
-  dfflEspnGameMapPromises[targetWeek] = Promise.all(
-    dates.map(async function(date){
-      try{
-        const url =
-          "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=" +
-          date;
-        const response = await fetch(url, { cache:"no-store" });
-        if(!response.ok) return [];
-        const data = await response.json();
-        return Array.isArray(data.events) ? data.events : [];
-      }catch(error){
-        console.warn("DFFL ESPN boxscore lookup failed for", date, error);
-        return [];
-      }
-    })
-  ).then(function(eventGroups){
-    const gameMap = {};
+      const response = await fetch(url, {cache:"no-store"});
+      if(!response.ok) throw new Error("ESPN scoreboard HTTP " + response.status);
 
-    eventGroups.flat().forEach(function(event){
-      if(!event || !event.id) return;
+      const data = await response.json();
+      const events = Array.isArray(data.events) ? data.events : [];
+      const gameMap = {};
 
-      const competition =
-        event.competitions && event.competitions[0]
-          ? event.competitions[0]
-          : null;
+      events.forEach(function(event){
+        if(!event || !event.id) return;
 
-      const competitors =
-        competition && Array.isArray(competition.competitors)
-          ? competition.competitors
-          : [];
+        const competition =
+          event.competitions && event.competitions[0]
+            ? event.competitions[0]
+            : null;
 
-      competitors.forEach(function(competitor){
-        const team = competitor && competitor.team ? competitor.team : {};
-        let abbr = String(team.abbreviation || "").toUpperCase();
-        abbr = DFFL_ESPN_TEAM_ALIASES[abbr] || abbr;
+        const competitors =
+          competition && Array.isArray(competition.competitors)
+            ? competition.competitors
+            : [];
 
-        if(abbr){
-          gameMap[abbr] =
-            "https://www.espn.com/nfl/boxscore/_/gameId/" + event.id;
-        }
+        competitors.forEach(function(competitor){
+          const team = competitor && competitor.team ? competitor.team : {};
+          let abbr = String(team.abbreviation || "").toUpperCase();
+          abbr = DFFL_ESPN_TEAM_ALIASES[abbr] || abbr;
+
+          if(abbr){
+            gameMap[abbr] =
+              "https://www.espn.com/nfl/boxscore/_/gameId/" + event.id;
+          }
+        });
       });
-    });
 
-    return gameMap;
-  });
+      return gameMap;
+    }catch(error){
+      console.warn("DFFL ESPN week lookup failed for NFL Week", targetWeek, error);
+      return {};
+    }
+  })();
 
   return dfflEspnGameMapPromises[targetWeek];
 }
 
-/* Do NOT prefetch here.
-   The automatic-week detector runs asynchronously on page load.
-   Building the map on the actual click guarantees we use the week
-   that the page has already selected. */
 document.addEventListener("click", function(event){
   const cell = event.target.closest(
     ".matchup-player-table tbody tr:not(.total-row) td:first-child, " +
@@ -1269,9 +1291,8 @@ document.addEventListener("click", function(event){
   const teamCode = dfflExtractTeamCodeFromPlayerCell(cell);
   if(!teamCode) return;
 
-  const activeWeek = dfflGetActiveWeekForBoxscore();
+  const targetWeek = dfflGetWeekForPlayerCell(cell);
 
-  /* Open immediately from the user gesture so browsers don't block it. */
   const newTab = window.open("", "_blank");
   if(!newTab) return;
 
@@ -1279,10 +1300,10 @@ document.addEventListener("click", function(event){
     newTab.document.title = "Opening ESPN Box Score";
     newTab.document.body.innerHTML =
       '<div style="font-family:Arial,sans-serif;padding:24px">' +
-      'Opening ESPN box score…</div>';
+      'Opening ESPN Week ' + targetWeek + ' box score…</div>';
   }catch(error){}
 
-  dfflBuildEspnGameMap(activeWeek).then(function(gameMap){
+  dfflBuildEspnGameMap(targetWeek).then(function(gameMap){
     const boxscoreUrl = gameMap[teamCode];
 
     if(boxscoreUrl){
@@ -1290,16 +1311,16 @@ document.addEventListener("click", function(event){
       return;
     }
 
-    /* Dynamic fallback follows the actual active week. */
+    /* Safe week-specific fallback. */
     newTab.location.replace(
       "https://www.espn.com/nfl/scoreboard/_/week/" +
-      activeWeek +
+      targetWeek +
       "/year/2026/seasontype/2"
     );
   }).catch(function(){
     newTab.location.replace(
       "https://www.espn.com/nfl/scoreboard/_/week/" +
-      activeWeek +
+      targetWeek +
       "/year/2026/seasontype/2"
     );
   });
@@ -1379,6 +1400,7 @@ const DFFL_WEEK1_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"JetLiX","leftD
     // Exact duplicate of the site's existing matchup detail box.
     const panel=source.cloneNode(true);
     panel.removeAttribute("id");
+    panel.dataset.dfflWeek="1";
     panel.classList.add("active");
 
     // Header stays identical; hide button now closes the popup.
@@ -1579,7 +1601,7 @@ const DFFL_WEEK2_FINAL = {
   };
   window.openWeek2Final=function(id){
     const d=DFFL_WEEK2_FINAL[String(id)], source=document.getElementById('matchup-detail-'+id); if(!d||!source)return;
-    const panel=source.cloneNode(true); panel.removeAttribute('id'); panel.classList.add('active');
+    const panel=source.cloneNode(true); panel.removeAttribute('id'); panel.dataset.dfflWeek='2'; panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide'); if(hide){hide.setAttribute('onclick','closeWeek2Final()');hide.textContent='HIDE DETAILS ⌃';}
     const title=panel.querySelector('.matchup-detail-top strong'); if(title)title.textContent=d.leftDivision+' VS '+d.rightDivision;
     const divisionToHelmet={"AFC WEST":"AFC West","NFC NORTH":"NFC North","NFC EAST":"NFC East","AFC NORTH":"AFC North","AFC EAST":"AFC East","NFC WEST":"NFC West","AFC SOUTH":"AFC South","NFC SOUTH":"NFC South"};
@@ -1602,7 +1624,7 @@ const DFFL_WEEK2_FINAL = {
       const tr=document.createElement('tr');tr.className='total-row';tr.innerHTML='<td>TOTAL</td><td class="left-pts">'+fmt(d.leftTotal)+'</td><td></td><td class="right-pts">'+fmt(d.rightTotal)+'</td><td>TOTAL</td>';tbody.appendChild(tr);
     }
     const holder=document.getElementById('week1FinalContent');holder.innerHTML='';holder.appendChild(panel);
-    const modal=document.getElementById('week1FinalModal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+    const modal=document.getElementById('week1FinalModal');modal.dataset.dfflWeek=panel.dataset.dfflWeek||'';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
     if(window.applyHelmetImages) try{window.applyHelmetImages(panel);}catch(e){}
   };
   window.closeWeek2Final=function(){ if(window.closeWeek1Final)window.closeWeek1Final(); };
@@ -1665,7 +1687,7 @@ const DFFL_WEEK3_FINAL = {
   };
   window.openWeek3Final=function(id){
     const d=DFFL_WEEK3_FINAL[String(id)], source=document.getElementById('matchup-detail-'+id); if(!d||!source)return;
-    const panel=source.cloneNode(true); panel.removeAttribute('id'); panel.classList.add('active');
+    const panel=source.cloneNode(true); panel.removeAttribute('id'); panel.dataset.dfflWeek='3'; panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide'); if(hide){hide.setAttribute('onclick','closeWeek3Final()');hide.textContent='HIDE DETAILS ⌃';}
     const kicker=panel.querySelector('.matchup-detail-kicker'); if(kicker)kicker.textContent='Week 3 • Matchup '+id+' Final';
     const title=panel.querySelector('.matchup-detail-top strong'); if(title)title.textContent=d.leftDivision+' VS '+d.rightDivision;
@@ -1689,7 +1711,7 @@ const DFFL_WEEK3_FINAL = {
       const tr=document.createElement('tr');tr.className='total-row';tr.innerHTML='<td>TOTAL</td><td class="left-pts">'+fmt(d.leftTotal)+'</td><td></td><td class="right-pts">'+fmt(d.rightTotal)+'</td><td>TOTAL</td>';tbody.appendChild(tr);
     }
     const holder=document.getElementById('week1FinalContent');holder.innerHTML='';holder.appendChild(panel);
-    const modal=document.getElementById('week1FinalModal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+    const modal=document.getElementById('week1FinalModal');modal.dataset.dfflWeek=panel.dataset.dfflWeek||'';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
   };
   window.closeWeek3Final=function(){ if(window.closeWeek1Final)window.closeWeek1Final(); };
   document.addEventListener('DOMContentLoaded',makeWeek3SeasonStatic); setTimeout(makeWeek3SeasonStatic,500);
@@ -1723,7 +1745,7 @@ const DFFL_WEEK4_FINAL = {
   function setPlayerCell(td,p,side){ const status='<span class="player-game-status final">FINAL</span>'; td.innerHTML=side==='left' ? p[1]+' - '+p[2]+status : p[1]+' - '+p[2]+status; }
   const RECORDS={Dallas:'3-1',Brian:'3-1',JetLiX:'2-2',Ben:'4-0',Juan:'1-3',Xavier:'1-3',Joshua:'1-3',Kendall:'1-3'};
   window.openWeek4Final=function(id){
-    const d=DFFL_WEEK4_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.classList.add('active');
+    const d=DFFL_WEEK4_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.dataset.dfflWeek='4';panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide');if(hide){hide.setAttribute('onclick','closeWeek4Final()');hide.textContent='HIDE DETAILS ⌃';}
     const kicker=panel.querySelector('.matchup-detail-kicker');if(kicker)kicker.textContent='Week 4 • Matchup '+id+' Final';
     const title=panel.querySelector('.matchup-detail-top strong');if(title)title.textContent=d.leftDivision+' VS '+d.rightDivision;
@@ -1733,7 +1755,7 @@ const DFFL_WEEK4_FINAL = {
     const totals=panel.querySelectorAll('.detail-total');if(totals[0])totals[0].textContent=fmt(d.leftTotal);if(totals[1])totals[1].textContent=fmt(d.rightTotal);
     const recap=panel.querySelector('.recap-link-btn');if(recap)recap.style.display='none';const preview=panel.querySelector('.preview-analysis-btn');if(preview)preview.style.display='none';
     const tbody=panel.querySelector('.matchup-player-table tbody');if(tbody){tbody.innerHTML='';for(let i=0;i<8;i++){const l=d.left[i],r=d.right[i],row=document.createElement('tr');row.innerHTML='<td></td><td class="left-pts"></td><td class="pos-cell"></td><td class="right-pts"></td><td></td>';const c=row.children;setPlayerCell(c[0],l,'left');c[1].textContent=fmt(l[3]);c[2].textContent=l[0];c[3].textContent=fmt(r[3]);setPlayerCell(c[4],r,'right');tbody.appendChild(row);}const tr=document.createElement('tr');tr.className='total-row';tr.innerHTML='<td>TOTAL</td><td class="left-pts">'+fmt(d.leftTotal)+'</td><td></td><td class="right-pts">'+fmt(d.rightTotal)+'</td><td>TOTAL</td>';tbody.appendChild(tr);}
-    const holder=document.getElementById('week1FinalContent');holder.innerHTML='';holder.appendChild(panel);const modal=document.getElementById('week1FinalModal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+    const holder=document.getElementById('week1FinalContent');holder.innerHTML='';holder.appendChild(panel);const modal=document.getElementById('week1FinalModal');modal.dataset.dfflWeek=panel.dataset.dfflWeek||'';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
   };
   window.closeWeek4Final=function(){if(window.closeWeek1Final)window.closeWeek1Final();};
   document.addEventListener('DOMContentLoaded',makeWeek4SeasonStatic);setTimeout(makeWeek4SeasonStatic,550);
@@ -1755,7 +1777,7 @@ const DFFL_WEEK5_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"Ben","leftDivi
   function setPlayerCell(td,p,side){ const status='<span class="player-game-status final">FINAL</span>'; td.innerHTML=side==='left' ? p[1]+' - '+p[2]+status : p[1]+' - '+p[2]+status; }
   const RECORDS={Dallas:'3-2',Brian:'4-1',JetLiX:'3-2',Ben:'5-0',Juan:'1-4',Xavier:'1-4',Joshua:'1-4',Kendall:'2-3'};
   window.openWeek5Final=function(id){
-    const d=DFFL_WEEK5_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.classList.add('active');
+    const d=DFFL_WEEK5_FINAL[String(id)],source=document.getElementById('matchup-detail-'+id); if(!d||!source)return; const panel=source.cloneNode(true); panel.removeAttribute('id');panel.dataset.dfflWeek='5';panel.classList.add('active');
     const hide=panel.querySelector('.matchup-detail-hide');if(hide){hide.setAttribute('onclick','closeWeek5Final()');hide.textContent='HIDE DETAILS ⌃';}
     const kicker=panel.querySelector('.matchup-detail-kicker');if(kicker)kicker.textContent='Week 5 • Matchup '+id+' Final';
     const title=panel.querySelector('.matchup-detail-top strong');if(title)title.textContent=d.leftDivision+' VS '+d.rightDivision;
@@ -1765,7 +1787,7 @@ const DFFL_WEEK5_FINAL = {"1":{"leftOwner":"Dallas","rightOwner":"Ben","leftDivi
     const totals=panel.querySelectorAll('.detail-total');if(totals[0])totals[0].textContent=fmt(d.leftTotal);if(totals[1])totals[1].textContent=fmt(d.rightTotal);
     const recap=panel.querySelector('.recap-link-btn');if(recap)recap.style.display='none';const preview=panel.querySelector('.preview-analysis-btn');if(preview)preview.style.display='none';
     const tbody=panel.querySelector('.matchup-player-table tbody');if(tbody){tbody.innerHTML='';for(let i=0;i<8;i++){const l=d.left[i],r=d.right[i],row=document.createElement('tr');row.innerHTML='<td></td><td class="left-pts"></td><td class="pos-cell"></td><td class="right-pts"></td><td></td>';const c=row.children;setPlayerCell(c[0],l,'left');c[1].textContent=fmt(l[3]);c[2].textContent=l[0];c[3].textContent=fmt(r[3]);setPlayerCell(c[4],r,'right');tbody.appendChild(row);}const tr=document.createElement('tr');tr.className='total-row';tr.innerHTML='<td>TOTAL</td><td class="left-pts">'+fmt(d.leftTotal)+'</td><td></td><td class="right-pts">'+fmt(d.rightTotal)+'</td><td>TOTAL</td>';tbody.appendChild(tr);}
-    const holder=document.getElementById('week1FinalContent');holder.innerHTML='';holder.appendChild(panel);const modal=document.getElementById('week1FinalModal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
+    const holder=document.getElementById('week1FinalContent');holder.innerHTML='';holder.appendChild(panel);const modal=document.getElementById('week1FinalModal');modal.dataset.dfflWeek=panel.dataset.dfflWeek||'';modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';
   };
   window.closeWeek5Final=function(){if(window.closeWeek1Final)window.closeWeek1Final();};
   document.addEventListener('DOMContentLoaded',makeWeek5SeasonStatic);setTimeout(makeWeek5SeasonStatic,600);
