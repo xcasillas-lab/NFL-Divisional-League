@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-26T22:10:18-05:00",
+  "lastUpdated": "2026-10-26T22:15:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
       "leftTotal": 78.6,
-      "rightTotal": 90.28
+      "rightTotal": 96.78
     },
     "2": {
       "leftOwner": "Brian",
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 15.0,
+        "points": 21.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,8 +570,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 150.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 155.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
