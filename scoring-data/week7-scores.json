@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-26T19:55:18-05:00",
+  "lastUpdated": "2026-10-26T20:00:27-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
       "leftTotal": 78.6,
-      "rightTotal": 39.26
+      "rightTotal": 42.76
     },
     "2": {
       "leftOwner": "Brian",
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Dameon Pierce",
         "nflTeam": "PHI",
-        "points": 1.1,
+        "points": 7.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,8 +591,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 11.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 16.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
@@ -688,12 +688,12 @@
         "position": "DEF",
         "name": "Dallas Cowboys DEF",
         "nflTeam": "DAL",
-        "points": 4.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 14,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
