@@ -1152,9 +1152,10 @@ async function dfflLoadAutomaticMatchups(){
 document.addEventListener("DOMContentLoaded",function(){dfflLoadAutomaticMatchups();setInterval(dfflLoadAutomaticMatchups,DFFL_REFRESH_MS);});
 </script>
 <script id="dfflPlayerBoxscoreLinks">
-/* ===== HIDDEN PLAYER -> ESPN BOXSCORE LINKS =====
-   Visual design is unchanged. Tapping/clicking a player cell opens that
-   player's active-week NFL game box score in a new tab.
+/* ===== PLAYER -> ESPN BOXSCORE LINKS =====
+   Always builds the ESPN map for the CURRENT active DFFL week.
+   Cache is stored separately by week so a prior week's map can never
+   be reused after the automatic matchup page rolls forward.
 */
 const DFFL_ESPN_DATES_BY_WEEK = {
   6:["20261015","20261016","20261017","20261018","20261019"],
@@ -1171,7 +1172,14 @@ const DFFL_NFL_TEAM_CODES = new Set([
   "NYJ","PHI","PIT","SEA","SF","TB","TEN","WAS"
 ]);
 
-let dfflEspnGameMapPromise = null;
+/* ESPN can occasionally use an alternate abbreviation. */
+const DFFL_ESPN_TEAM_ALIASES = {
+  "WSH":"WAS",
+  "LA":"LAR"
+};
+
+/* One independent promise/map per DFFL week. */
+const dfflEspnGameMapPromises = {};
 
 function dfflExtractTeamCodeFromPlayerCell(cell){
   if(!cell) return "";
@@ -1183,11 +1191,22 @@ function dfflExtractTeamCodeFromPlayerCell(cell){
   return "";
 }
 
-function dfflBuildEspnGameMap(){
-  if(dfflEspnGameMapPromise) return dfflEspnGameMapPromise;
+function dfflGetActiveWeekForBoxscore(){
+  const week = Number(window.DFFL_ACTIVE_WEEK);
+  return Number.isFinite(week) && week >= 6 && week <= 10 ? week : 6;
+}
 
-  dfflEspnGameMapPromise = Promise.all(
-    (DFFL_ESPN_DATES_BY_WEEK[window.DFFL_ACTIVE_WEEK || 6] || []).map(async function(date){
+function dfflBuildEspnGameMap(week){
+  const targetWeek = Number(week) || dfflGetActiveWeekForBoxscore();
+
+  if(dfflEspnGameMapPromises[targetWeek]){
+    return dfflEspnGameMapPromises[targetWeek];
+  }
+
+  const dates = DFFL_ESPN_DATES_BY_WEEK[targetWeek] || [];
+
+  dfflEspnGameMapPromises[targetWeek] = Promise.all(
+    dates.map(async function(date){
       try{
         const url =
           "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=" +
@@ -1219,7 +1238,9 @@ function dfflBuildEspnGameMap(){
 
       competitors.forEach(function(competitor){
         const team = competitor && competitor.team ? competitor.team : {};
-        const abbr = String(team.abbreviation || "").toUpperCase();
+        let abbr = String(team.abbreviation || "").toUpperCase();
+        abbr = DFFL_ESPN_TEAM_ALIASES[abbr] || abbr;
+
         if(abbr){
           gameMap[abbr] =
             "https://www.espn.com/nfl/boxscore/_/gameId/" + event.id;
@@ -1230,12 +1251,13 @@ function dfflBuildEspnGameMap(){
     return gameMap;
   });
 
-  return dfflEspnGameMapPromise;
+  return dfflEspnGameMapPromises[targetWeek];
 }
 
-/* Prefetch the Week 6 ESPN game map so player taps open immediately. */
-dfflBuildEspnGameMap();
-
+/* Do NOT prefetch here.
+   The automatic-week detector runs asynchronously on page load.
+   Building the map on the actual click guarantees we use the week
+   that the page has already selected. */
 document.addEventListener("click", function(event){
   const cell = event.target.closest(
     ".matchup-player-table tbody tr:not(.total-row) td:first-child, " +
@@ -1247,8 +1269,9 @@ document.addEventListener("click", function(event){
   const teamCode = dfflExtractTeamCodeFromPlayerCell(cell);
   if(!teamCode) return;
 
-  /* Open the tab immediately from the user gesture so mobile browsers
-     do not block it while the ESPN lookup finishes. */
+  const activeWeek = dfflGetActiveWeekForBoxscore();
+
+  /* Open immediately from the user gesture so browsers don't block it. */
   const newTab = window.open("", "_blank");
   if(!newTab) return;
 
@@ -1259,7 +1282,7 @@ document.addEventListener("click", function(event){
       'Opening ESPN box score…</div>';
   }catch(error){}
 
-  dfflBuildEspnGameMap().then(function(gameMap){
+  dfflBuildEspnGameMap(activeWeek).then(function(gameMap){
     const boxscoreUrl = gameMap[teamCode];
 
     if(boxscoreUrl){
@@ -1267,13 +1290,17 @@ document.addEventListener("click", function(event){
       return;
     }
 
-    /* Safe fallback if ESPN's scoreboard lookup is temporarily unavailable. */
+    /* Dynamic fallback follows the actual active week. */
     newTab.location.replace(
-      "https://www.espn.com/nfl/scoreboard/_/week/6/year/2026/seasontype/2"
+      "https://www.espn.com/nfl/scoreboard/_/week/" +
+      activeWeek +
+      "/year/2026/seasontype/2"
     );
   }).catch(function(){
     newTab.location.replace(
-      "https://www.espn.com/nfl/scoreboard/_/week/6/year/2026/seasontype/2"
+      "https://www.espn.com/nfl/scoreboard/_/week/" +
+      activeWeek +
+      "/year/2026/seasontype/2"
     );
   });
 });
