@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "lastUpdated": "2026-10-26T22:00:25-05:00",
+  "lastUpdated": "2026-10-26T22:05:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Dallas",
       "rightOwner": "Juan",
       "leftTotal": 78.6,
-      "rightTotal": 88.18
+      "rightTotal": 89.18
     },
     "2": {
       "leftOwner": "Brian",
@@ -688,13 +688,13 @@
         "position": "DEF",
         "name": "Dallas Cowboys DEF",
         "nflTeam": "DAL",
-        "points": 3.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 21,
           "pointsAllowedFantasy": 0.0,
-          "sacks": 1.0,
+          "sacks": 2.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
