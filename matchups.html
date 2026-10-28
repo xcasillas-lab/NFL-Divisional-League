@@ -1067,7 +1067,21 @@ function dfflApplyFinalResultToRecords(records,scoreData,week){
 }
 function dfflRecordsBeforeWeek(activeWeek){
   const records=dfflCopyRecords();
-  for(let w=6;w<activeWeek;w++){const d=window.DFFL_AUTO_WEEK_DATA[w];if(d&&dfflAutoIsFinal(d.scores))dfflApplyFinalResultToRecords(records,d.scores,w);}
+  for(let w=6;w<activeWeek;w++){
+    const d=window.DFFL_AUTO_WEEK_DATA[w];
+    if(d&&dfflAutoIsFinal(d.scores))dfflApplyFinalResultToRecords(records,d.scores,w);
+  }
+  return records;
+}
+
+/* Historical FINAL popups must show the record AFTER that week's result.
+   Example: Week 6 FINAL = six games played; Week 7 FINAL = seven games played. */
+function dfflRecordsAfterWeek(finalWeek){
+  const records=dfflCopyRecords();
+  for(let w=6;w<=finalWeek;w++){
+    const d=window.DFFL_AUTO_WEEK_DATA[w];
+    if(d&&dfflAutoIsFinal(d.scores))dfflApplyFinalResultToRecords(records,d.scores,w);
+  }
   return records;
 }
 function dfflOwnerLabel(owner,records){const r=records&&records[owner];return r?owner+" ("+r.w+"-"+r.l+")":owner;}
@@ -1109,7 +1123,7 @@ async function dfflOpenAutoFinal(week,matchupId){
   if(!scores||!rosters||!pair)return;
   const source=document.getElementById("matchup-detail-"+matchupId);if(!source)return;
   const panel=source.cloneNode(true);panel.removeAttribute("id");panel.dataset.dfflWeek=String(week);panel.classList.add("active");
-  const records=dfflRecordsBeforeWeek(week),leftOwner=pair[0],rightOwner=pair[1],li=DFFL_OWNER_DIVISION[leftOwner],ri=DFFL_OWNER_DIVISION[rightOwner],totals=dfflAutoFindScore(scores,leftOwner,rightOwner),lr=(rosters.rosters&&rosters.rosters[leftOwner])||{players:[]},rr=(rosters.rosters&&rosters.rosters[rightOwner])||{players:[]},ls=(scores.players&&scores.players[leftOwner])||[],rs=(scores.players&&scores.players[rightOwner])||[];
+  const records=dfflRecordsAfterWeek(week),leftOwner=pair[0],rightOwner=pair[1],li=DFFL_OWNER_DIVISION[leftOwner],ri=DFFL_OWNER_DIVISION[rightOwner],totals=dfflAutoFindScore(scores,leftOwner,rightOwner),lr=(rosters.rosters&&rosters.rosters[leftOwner])||{players:[]},rr=(rosters.rosters&&rosters.rosters[rightOwner])||{players:[]},ls=(scores.players&&scores.players[leftOwner])||[],rs=(scores.players&&scores.players[rightOwner])||[];
   const hide=panel.querySelector(".matchup-detail-hide");if(hide){hide.setAttribute("onclick","closeWeek1Final()");hide.textContent="HIDE DETAILS ⌃";}
   const kicker=panel.querySelector(".matchup-detail-kicker");if(kicker)kicker.textContent="Week "+week+" • Matchup "+matchupId+" Final";
   const title=panel.querySelector(".matchup-detail-top strong");if(title)title.textContent=li.division.toUpperCase()+" VS "+ri.division.toUpperCase();
