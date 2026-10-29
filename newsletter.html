@@ -871,6 +871,30 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   .week7-story-hero h3{font-size:1.05rem}
   .week7-takeaways{grid-template-columns:1fr}
 }
+
+/* ===== WEEK 8 STRETCH RUN ===== */
+.week8-story-hero{padding:16px;border:1px solid rgba(245,158,11,.35);border-radius:14px;background:linear-gradient(180deg,#081525,#050d19)}
+.week8-story-kicker{color:#fbbf24;font-size:.68rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.week8-story-hero h3{margin:5px 0 10px;color:#f8fafc;font-size:1.22rem}
+.week8-story-hero p{margin:7px 0 0;color:#cbd5e1;font-size:.79rem;line-height:1.55}
+.week8-subhead{margin:14px 0 9px;color:#38bdf8;font-size:.82rem;font-weight:900;text-transform:uppercase;letter-spacing:.05em}
+.week8-matchup-grid,.week8-watch-grid,.week8-awards-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.week8-matchup-card,.week8-watch-grid article,.week8-awards-grid article{padding:11px 12px;border:1px solid #26374e;border-radius:11px;background:#050d19}
+.week8-matchup-card strong,.week8-watch-grid strong,.week8-awards-grid b{display:block;color:#f8fafc;font-size:.78rem}
+.week8-matchup-card span{display:block;margin-top:3px;color:#38bdf8;font-size:.7rem;font-weight:900}
+.week8-matchup-card p,.week8-watch-grid p,.week8-awards-grid p{margin:5px 0 0;color:#94a3b8;font-size:.72rem;line-height:1.45}
+.week8-intro{margin:0 0 10px;color:#cbd5e1;font-size:.79rem}
+.week8-hot-table-wrap{overflow-x:auto;border:1px solid #26374e;border-radius:12px;background:#050d19}
+.week8-hot-table{width:100%;min-width:720px;margin:0;border-collapse:collapse}
+.week8-hot-table th{padding:9px 10px;background:#020617;color:#38bdf8;font-size:.66rem;text-transform:uppercase}
+.week8-hot-table td{padding:9px 10px;border-bottom:1px solid #1f2d40;color:#cbd5e1;font-size:.73rem}
+.week8-hot-table tbody tr:last-child td{border-bottom:0}
+.week8-hot-table td:nth-child(1),.week8-hot-table td:nth-child(2){color:#f8fafc;font-weight:800}
+.week8-hot-table td:nth-child(3){white-space:nowrap}
+.week8-closing{margin-top:12px;padding:12px 13px;border:1px solid rgba(56,189,248,.25);border-radius:11px;background:rgba(56,189,248,.06)}
+.week8-closing strong{color:#38bdf8}
+.week8-closing p{margin:5px 0 0;color:#cbd5e1;font-size:.76rem;line-height:1.5}
+@media(max-width:700px){.week8-matchup-grid,.week8-watch-grid,.week8-awards-grid{grid-template-columns:1fr}.week8-story-hero{padding:13px}}
 </style>
 </head>
 <body>
@@ -882,12 +906,80 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="newsletter-kicker">Founding Edition</div>
 <h2>DFFL HUDDLE</h2>
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
-<div class="newsletter-issue">October 20, 2026</div>
+<div class="newsletter-issue">October 28, 2026</div>
+</div>
+
+<div class="newsletter-collapse week8-lead-story">
+<button aria-controls="week8UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>📣 Week 8 — The Stretch Run Begins <span class="latest-new-badge">NEW</span></strong>
+<small>Division games only. Three weeks left. Every result now reshapes the playoff bracket.</small></span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="week8UpdatesContent">
+<div class="week2-section-block">
+<div class="combined-update-divider">🔥 THE STRETCH RUN BEGINS</div>
+<div class="week8-story-hero">
+<div class="week8-story-kicker">THREE REGULAR-SEASON WEEKS LEFT</div>
+<h3>Division games only. Every result now reshapes the bracket.</h3>
+<p>Seven weeks are complete, and the inaugural DFFL regular season has reached its final turn. From here on out, every matchup is a division matchup, which means the standings can move quickly.</p>
+<p>Ben's NFC West remains perfect at <strong>7-0</strong> and has already locked up a <strong>Top 3 playoff seed</strong>. Brian's AFC North sits at <strong>5-2</strong>, Dallas enters at <strong>4-3</strong>, and JetLiX, Kendall and Joshua are all at <strong>3-4</strong>. Juan's NFC East is <strong>2-5</strong>, while Xavier's NFC South enters the stretch run at <strong>1-6</strong>.</p>
+<p>All eight divisions make the playoffs. The race now is about <strong>seeding, momentum, and avoiding the matchup nobody wants in Week 12.</strong></p>
+</div>
+<div class="week8-subhead">Week 8 — The Games That Matter</div>
+<div class="week8-matchup-grid">
+<div class="week8-matchup-card"><strong>AFC South — Kendall vs. AFC West — Dallas</strong><span>3-4 vs. 4-3</span><p>Kendall can pull even with Dallas; Dallas can strengthen his position in the upper half.</p></div>
+<div class="week8-matchup-card"><strong>AFC East — Joshua vs. AFC North — Brian</strong><span>3-4 vs. 5-2</span><p>Joshua has quietly climbed back into the race. Brian needs the win to keep pressure on the top seed.</p></div>
+<div class="week8-matchup-card"><strong>NFC South — Xavier vs. NFC West — Ben</strong><span>1-6 vs. 7-0</span><p>Can anyone finally hand Ben his first loss? Xavier has nothing to lose and plenty of spoiler potential.</p></div>
+<div class="week8-matchup-card"><strong>NFC East — Juan vs. NFC North — JetLiX</strong><span>2-5 vs. 3-4</span><p>Juan is coming off a major upset. Another win suddenly makes the bottom half of the bracket very interesting.</p></div>
+</div>
+<div class="week8-subhead">👀 What to Watch</div>
+<div class="week8-watch-grid">
+<article><strong>Can NFC West finish undefeated?</strong><p>Ben is 7-0 and has already secured a Top 3 seed. The question is shifting from whether he will make a run to whether anyone can stop him before the playoffs.</p></article>
+<article><strong>Can Brian close the gap?</strong><p>AFC North is 5-2 and remains the most obvious threat to NFC West near the top of the league.</p></article>
+<article><strong>The middle is getting crowded.</strong><p>Dallas is 4-3, while JetLiX, Kendall and Joshua all sit at 3-4. One week could completely reorder that group.</p></article>
+<article><strong>Juan isn't finished.</strong><p>NFC East is 2-5 and still has time to build momentum. Another win could turn a rough season into a dangerous late-season run.</p></article>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">🏆 DFFL AWARDS WATCH</div>
+<p class="week8-intro">If we handed out awards today...</p>
+<div class="week8-awards-grid">
+<article><b>👑 MVP Division — NFC West / Ben</b><p>A 7-0 record, the league's top spot, and a Top 3 seed already secured. Ben has been the standard everyone else is chasing.</p></article>
+<article><b>🥇 Best Challenger — AFC North / Brian</b><p>At 5-2, Brian has quietly built the résumé of a legitimate championship threat.</p></article>
+<article><b>💰 Best Draft Value — AFC West / Dallas</b><p>Dallas originally selected seventh and still sits above .500 at 4-3. AFC West has dramatically outperformed its draft position.</p></article>
+<article><b>🧠 Better Than the Record — NFC North / JetLiX</b><p>A 3-4 record does not look imposing, but NFC North still looks like the kind of division a higher seed may not want to see.</p></article>
+<article><b>🚀 Late-Season Riser — AFC East / Joshua</b><p>Joshua has reached 3-4 and suddenly has a chance to turn the second half into a real climb.</p></article>
+<article><b>😈 Spoiler Alert — NFC East / Juan</b><p>At 2-5, Coast Killers Amigos may not have the prettiest record, but this is becoming the kind of team that can wreck somebody else's seeding.</p></article>
+<article><b>🎲 Wild Card — AFC South / Kendall</b><p>KVR1 is 3-4, and a Week 8 win over Dallas would put Kendall right back into the middle of the standings battle.</p></article>
+<article><b>🧨 Nothing to Lose — NFC South / Xavier</b><p>At 1-6, Bandwagon Elites can play aggressively. With undefeated NFC West next, Xavier gets the ultimate opportunity to create the biggest upset of the season.</p></article>
+</div>
+</div>
+<div class="week2-section-block">
+<div class="combined-update-divider">🌡️ HOT OR NOT</div>
+<p class="week8-intro">Who is rising, holding steady or cooling off as the stretch run begins?</p>
+<div class="week8-hot-table-wrap">
+<table class="week8-hot-table">
+<thead><tr><th>Division</th><th>Owner</th><th>Temperature</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>NFC West</td><td>Ben</td><td>🔥🔥🔥 <b>SCORCHING</b></td><td>7-0 and still undefeated.</td></tr>
+<tr><td>AFC North</td><td>Brian</td><td>🔥🔥 <b>HOT</b></td><td>5-2 and still the strongest challenger near the top.</td></tr>
+<tr><td>AFC East</td><td>Joshua</td><td>🔥 <b>RISING</b></td><td>Now 3-4 and building momentum at exactly the right time.</td></tr>
+<tr><td>NFC East</td><td>Juan</td><td>🔥 <b>RISING</b></td><td>2-5 and still capable of playing spoiler in the stretch run.</td></tr>
+<tr><td>AFC West</td><td>Dallas</td><td>➡️ <b>STEADY</b></td><td>Still 4-3 and positioned in the upper half of the field.</td></tr>
+<tr><td>NFC North</td><td>JetLiX</td><td>⚠️ <b>WATCH</b></td><td>3-4, but the division still looks more dangerous than the record suggests.</td></tr>
+<tr><td>AFC South</td><td>Kendall</td><td>🧊 <b>COOLING</b></td><td>3-4 and entering a pivotal Week 8 matchup with Dallas.</td></tr>
+<tr><td>NFC South</td><td>Xavier</td><td>🧊🧊 <b>COLD</b></td><td>1-6 and now facing the league's only undefeated division.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="week8-closing"><strong>Three regular-season weeks remain.</strong><p>NFC West has separated itself from the field, but the rest of the bracket is nowhere close to settled. One upset, one huge scoring week or one bad lineup decision could move an owner several seeds before Week 10 is finished.</p></div>
+</div>
+</div>
 </div>
 <div class="newsletter-collapse week7-lead-story">
 <button aria-controls="week7UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
 <span>
-<strong>📣 Week 7 — Preseason Expectations vs. Reality <span class="latest-new-badge">NEW</span></strong>
+<strong>📣 Week 7 — Preseason Expectations vs. Reality </strong>
 <small>The lottery, the draft room, the AI — who actually got it right six games into the inaugural season?</small>
 </span>
 <span aria-hidden="true" class="toggle-arrow">▾</span>
