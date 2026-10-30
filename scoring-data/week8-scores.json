@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-10-29T21:35:16-05:00",
+  "lastUpdated": "2026-10-29T21:40:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 25.26,
+      "leftTotal": 27.98,
       "rightTotal": 0.0
     },
     "4": {
@@ -711,12 +711,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 3.16,
+        "points": 3.68,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 104.0,
+          "passingYards": 117.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -753,7 +753,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 17.4,
+        "points": 17.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -761,7 +761,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 68.0,
+          "rushingYards": 72.0,
           "rushingTouchdowns": 1.0,
           "receptions": 5.0,
           "receivingYards": 21.0,
@@ -774,7 +774,7 @@
         "position": "WR",
         "name": "Tetairoa McMillan",
         "nflTeam": "CAR",
-        "points": 4.7,
+        "points": 6.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -784,8 +784,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 32.0,
+          "receptions": 4.0,
+          "receivingYards": 45.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
