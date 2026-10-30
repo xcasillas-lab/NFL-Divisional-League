@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-10-29T22:10:18-05:00",
+  "lastUpdated": "2026-10-29T22:15:21-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -18,14 +18,14 @@
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 50.14,
+      "leftTotal": 50.4,
       "rightTotal": 0.0
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 0.0,
-      "rightTotal": 19.6
+      "rightTotal": 20.4
     }
   },
   "players": {
@@ -584,7 +584,7 @@
         "position": "RB",
         "name": "Josh Jacobs",
         "nflTeam": "GB",
-        "points": 19.6,
+        "points": 20.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -592,7 +592,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 33.0,
+          "rushingYards": 41.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 13.0,
@@ -711,12 +711,12 @@
         "position": "QB",
         "name": "Bryce Young",
         "nflTeam": "CAR",
-        "points": 10.84,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 196.0,
+          "passingYards": 200.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -753,7 +753,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 21.3,
+        "points": 21.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -761,7 +761,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 80.0,
+          "rushingYards": 81.0,
           "rushingTouchdowns": 1.0,
           "receptions": 7.0,
           "receivingYards": 38.0,
