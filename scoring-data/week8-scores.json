@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-10-29T21:40:19-05:00",
+  "lastUpdated": "2026-10-29T21:45:20-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 27.98,
+      "leftTotal": 28.18,
       "rightTotal": 0.0
     },
     "4": {
@@ -753,7 +753,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 17.8,
+        "points": 18.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -761,7 +761,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 72.0,
+          "rushingYards": 74.0,
           "rushingTouchdowns": 1.0,
           "receptions": 5.0,
           "receivingYards": 21.0,
