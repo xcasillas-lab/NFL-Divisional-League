@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-10-29T22:15:21-05:00",
+  "lastUpdated": "2026-10-29T22:20:19-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 0.0,
-      "rightTotal": 20.4
+      "rightTotal": 20.1
     }
   },
   "players": {
@@ -584,7 +584,7 @@
         "position": "RB",
         "name": "Josh Jacobs",
         "nflTeam": "GB",
-        "points": 20.4,
+        "points": 20.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -592,7 +592,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 41.0,
+          "rushingYards": 38.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 13.0,
