@@ -1,7 +1,7 @@
 {
   "week": 8,
-  "status": "live",
-  "lastUpdated": "2026-10-29T22:25:16-05:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-10-29T22:30:28-05:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -585,7 +585,7 @@
         "name": "Josh Jacobs",
         "nflTeam": "GB",
         "points": 20.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -712,7 +712,7 @@
         "name": "Bryce Young",
         "nflTeam": "CAR",
         "points": 11.36,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -754,7 +754,7 @@
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
         "points": 21.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -774,8 +774,8 @@
         "position": "WR",
         "name": "Tetairoa McMillan",
         "nflTeam": "CAR",
-        "points": 8.7,
-        "gameStatus": "live",
+        "points": 8.8,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -785,7 +785,7 @@
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 6.0,
-          "receivingYards": 57.0,
+          "receivingYards": 58.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -795,8 +795,8 @@
         "position": "WR",
         "name": "Jalen Coker",
         "nflTeam": "CAR",
-        "points": 8.7,
-        "gameStatus": "live",
+        "points": 8.6,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -806,7 +806,7 @@
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
-          "receivingYards": 37.0,
+          "receivingYards": 36.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 1.0,
           "twoPointConversions": 0.0
