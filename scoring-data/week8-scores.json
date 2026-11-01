@@ -1,25 +1,25 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T15:40:20-06:00",
+  "lastUpdated": "2026-11-01T15:45:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 105.6,
-      "rightTotal": 46.6
+      "rightTotal": 52.12
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 108.86,
+      "leftTotal": 109.86,
       "rightTotal": 127.3
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 42.88
+      "rightTotal": 43.08
     },
     "4": {
       "leftOwner": "Juan",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Blake Corum",
         "nflTeam": "LAR",
-        "points": 0.6,
+        "points": 0.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 6.0,
+          "rushingYards": 8.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -267,7 +267,7 @@
         "name": "Ja'Marr Chase",
         "nflTeam": "CIN",
         "points": 25.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -330,7 +330,7 @@
         "name": "Tee Higgins",
         "nflTeam": "CIN",
         "points": 32.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -519,13 +519,13 @@
         "position": "DEF",
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
-        "points": 12.0,
+        "points": 13.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
           "pointsAllowedFantasy": 10.0,
-          "sacks": 2.0,
+          "sacks": 3.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -1048,15 +1048,15 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 0.6,
+        "points": 6.12,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 15.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 48.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1302,7 +1302,7 @@
         "name": "Carnell Tate",
         "nflTeam": "TEN",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1344,7 +1344,7 @@
         "name": "Tony Pollard",
         "nflTeam": "TEN",
         "points": 27.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
