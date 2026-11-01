@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T15:20:19-06:00",
+  "lastUpdated": "2026-11-01T15:25:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 37.86
+      "rightTotal": 37.9
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": -0.64,
+        "points": -0.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 9.0,
+          "passingYards": 5.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 0.0,
+        "points": 0.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -97,7 +97,7 @@
         "position": "WR",
         "name": "Puka Nacua",
         "nflTeam": "LAR",
-        "points": 1.4,
+        "points": 1.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -107,8 +107,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 9.0,
+          "receptions": 2.0,
+          "receivingYards": 5.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -204,7 +204,7 @@
         "name": "Lamar Jackson",
         "nflTeam": "BAL",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -225,7 +225,7 @@
         "name": "Derrick Henry",
         "nflTeam": "BAL",
         "points": 13.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -288,7 +288,7 @@
         "name": "Zay Flowers",
         "nflTeam": "BAL",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -373,7 +373,7 @@
         "name": "Josh Allen",
         "nflTeam": "BUF",
         "points": 27.56,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -394,7 +394,7 @@
         "name": "James Cook",
         "nflTeam": "BUF",
         "points": 17.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -478,7 +478,7 @@
         "name": "Dalton Kincaid",
         "nflTeam": "BUF",
         "points": 16.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
