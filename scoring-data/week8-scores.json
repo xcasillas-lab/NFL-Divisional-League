@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T13:40:20-06:00",
+  "lastUpdated": "2026-11-01T13:45:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -12,13 +12,13 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 41.28,
+      "leftTotal": 42.78,
       "rightTotal": 63.3
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
-      "leftTotal": 83.06,
+      "leftTotal": 83.86,
       "rightTotal": 6.5
     },
     "4": {
@@ -372,7 +372,7 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 10.98,
+        "points": 12.48,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -380,7 +380,7 @@
           "passingYards": 112.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
-          "rushingYards": 15.0,
+          "rushingYards": 30.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -900,7 +900,7 @@
         "position": "RB",
         "name": "Bijan Robinson",
         "nflTeam": "ATL",
-        "points": 6.7,
+        "points": 7.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -908,7 +908,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 67.0,
+          "rushingYards": 75.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
