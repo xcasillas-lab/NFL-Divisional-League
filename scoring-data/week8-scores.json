@@ -1,18 +1,18 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T13:25:18-06:00",
+  "lastUpdated": "2026-11-01T13:30:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
-      "leftTotal": 63.02,
+      "leftTotal": 61.02,
       "rightTotal": 13.6
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 39.84,
+      "leftTotal": 40.56,
       "rightTotal": 63.3
     },
     "3": {
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 20.6,
-      "rightTotal": 39.2
+      "leftTotal": 21.0,
+      "rightTotal": 41.1
     }
   },
   "players": {
@@ -372,12 +372,12 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 9.54,
+        "points": 10.26,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 76.0,
+          "passingYards": 94.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 15.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 3.2,
+        "points": 3.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 26.0,
+          "rushingYards": 30.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 1.0,
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 1.5,
+        "points": 2.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,10 +739,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 18.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 2.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -794,7 +794,7 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 4.3,
+        "points": 5.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -804,8 +804,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 23.0,
+          "receptions": 5.0,
+          "receivingYards": 27.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1217,7 +1217,7 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 14.02,
+        "points": 12.02,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1230,7 +1230,7 @@
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
