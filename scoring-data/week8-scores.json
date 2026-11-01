@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T16:20:17-06:00",
+  "lastUpdated": "2026-11-01T16:25:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 48.78
+      "rightTotal": 57.2
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 1.88,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 72.0,
+          "passingYards": 85.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 0.9,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,8 +63,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 1.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 2.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 3.0,
           "receivingTouchdowns": 0.0,
@@ -97,7 +97,7 @@
         "position": "WR",
         "name": "Puka Nacua",
         "nflTeam": "LAR",
-        "points": 5.7,
+        "points": 7.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -107,8 +107,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 27.0,
+          "receptions": 7.0,
+          "receivingYards": 40.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
