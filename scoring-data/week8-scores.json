@@ -1,18 +1,18 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T15:45:19-06:00",
+  "lastUpdated": "2026-11-01T15:50:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
-      "leftTotal": 105.6,
+      "leftTotal": 105.1,
       "rightTotal": 52.12
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 109.86,
+      "leftTotal": 106.56,
       "rightTotal": 127.3
     },
     "3": {
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 0.6,
+        "points": 0.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -506,7 +506,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 6.0,
+          "rushingYards": 3.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -519,12 +519,12 @@
         "position": "DEF",
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
-        "points": 13.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 0,
-          "pointsAllowedFantasy": 10.0,
+          "pointsAllowed": 3,
+          "pointsAllowedFantasy": 7.0,
           "sacks": 3.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1364,13 +1364,13 @@
         "position": "DEF",
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
-        "points": 18.5,
+        "points": 18.0,
         "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 4.5,
+          "sacks": 4.0,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
