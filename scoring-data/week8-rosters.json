@@ -65,7 +65,64 @@
     },
     "Brian": {
       "division": "AFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Lamar Jackson",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Derrick Henry",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jaylen Warren",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ja'Marr Chase",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Zay Flowers",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Harold Fannin Jr.",
+          "nflTeam": "CLE",
+          "nflTeamName": "Cleveland Browns",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Tee Higgins",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Pittsburgh Steelers DEF",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        }
+      ]
     },
     "Joshua": {
       "division": "AFC East",
@@ -313,11 +370,125 @@
     },
     "Dallas": {
       "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kenneth Walker III",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Tre Tucker",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Brock Bowers",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "RJ Harvey",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Kansas City Chiefs DEF",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Trevor Lawrence",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jonathan Taylor",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Bhayshul Tuten",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Parker Washington",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Carnell Tate",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Tyler Warren",
+          "nflTeam": "IND",
+          "nflTeamName": "Indianapolis Colts",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Tony Pollard",
+          "nflTeam": "TEN",
+          "nflTeamName": "Tennessee Titans",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Jacksonville Jaguars DEF",
+          "nflTeam": "JAX",
+          "nflTeamName": "Jacksonville Jaguars",
+          "jersey": null
+        }
+      ]
     }
   }
 }
