@@ -1,25 +1,25 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T17:40:19-06:00",
+  "lastUpdated": "2026-11-01T17:45:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 105.1,
-      "rightTotal": 71.5
+      "rightTotal": 75.66
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 108.06,
+      "leftTotal": 108.76,
       "rightTotal": 127.3
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 89.64
+      "rightTotal": 91.24
     },
     "4": {
       "leftOwner": "Juan",
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 8.3,
+        "points": 9.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 31.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 3.0,
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 2.8,
+        "points": 3.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -506,7 +506,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 28.0,
+          "rushingYards": 35.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1048,13 +1048,13 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 18.2,
+        "points": 22.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 250.0,
-          "passingTouchdowns": 2.0,
+          "passingYards": 254.0,
+          "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
