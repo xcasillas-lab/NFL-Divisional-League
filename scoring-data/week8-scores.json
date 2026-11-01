@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T16:40:18-06:00",
+  "lastUpdated": "2026-11-01T16:45:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -12,14 +12,14 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 110.46,
+      "leftTotal": 107.46,
       "rightTotal": 127.3
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 57.2
+      "rightTotal": 60.4
     },
     "4": {
       "leftOwner": "Juan",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Blake Corum",
         "nflTeam": "LAR",
-        "points": 0.8,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 8.0,
+          "rushingYards": 40.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -519,12 +519,12 @@
         "position": "DEF",
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
-        "points": 12.0,
+        "points": 9.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 6,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 13,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 5.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
