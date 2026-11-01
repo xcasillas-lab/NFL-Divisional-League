@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T15:10:19-06:00",
+  "lastUpdated": "2026-11-01T15:15:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -13,18 +13,18 @@
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
       "leftTotal": 96.26,
-      "rightTotal": 108.0
+      "rightTotal": 110.2
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 24.66
+      "rightTotal": 23.66
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 21.0,
+      "leftTotal": 21.3,
       "rightTotal": 78.7
     }
   },
@@ -34,14 +34,14 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 0.36,
+        "points": -0.64,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 9.0,
           "passingTouchdowns": 0.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
@@ -57,8 +57,8 @@
         "nflTeam": "LAR",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -266,7 +266,7 @@
         "position": "WR",
         "name": "Ja'Marr Chase",
         "nflTeam": "CIN",
-        "points": 19.3,
+        "points": 21.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -276,8 +276,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 8.0,
-          "receivingYards": 93.0,
+          "receptions": 9.0,
+          "receivingYards": 110.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 5.7,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 51.0,
+          "rushingYards": 54.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 1.0,
