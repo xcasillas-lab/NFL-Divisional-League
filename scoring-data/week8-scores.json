@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T16:55:16-06:00",
+  "lastUpdated": "2026-11-01T17:00:25-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 105.1,
-      "rightTotal": 66.7
+      "rightTotal": 68.5
     },
     "2": {
       "leftOwner": "Joshua",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 73.06
+      "rightTotal": 74.52
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 3.36,
+        "points": 3.92,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 109.0,
+          "passingYards": 123.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 7.0,
+        "points": 7.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 2.0,
+          "rushingYards": 11.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 3.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 14.2,
+        "points": 16.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 150.0,
+          "passingYards": 195.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
