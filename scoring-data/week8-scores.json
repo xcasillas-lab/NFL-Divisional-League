@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T17:45:22-06:00",
+  "lastUpdated": "2026-11-01T17:50:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -12,14 +12,14 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 108.76,
+      "leftTotal": 110.66,
       "rightTotal": 127.3
     },
     "3": {
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 91.24
+      "rightTotal": 92.88
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Matthew Stafford",
         "nflTeam": "LAR",
-        "points": 9.04,
+        "points": 9.28,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 151.0,
+          "passingYards": 157.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 0.0,
@@ -55,7 +55,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 9.9,
+        "points": 11.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -63,7 +63,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 31.0,
+          "rushingYards": 45.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 3.0,
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 3.5,
+        "points": 3.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -506,7 +506,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 35.0,
+          "rushingYards": 34.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -519,14 +519,14 @@
         "position": "DEF",
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
-        "points": 9.0,
+        "points": 11.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
           "pointsAllowedFantasy": 4.0,
           "sacks": 5.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
