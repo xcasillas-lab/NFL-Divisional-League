@@ -1,18 +1,18 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T13:30:23-06:00",
+  "lastUpdated": "2026-11-01T13:35:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
-      "leftTotal": 61.02,
+      "leftTotal": 69.02,
       "rightTotal": 13.6
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 40.56,
+      "leftTotal": 41.28,
       "rightTotal": 63.3
     },
     "3": {
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 21.0,
-      "rightTotal": 41.1
+      "rightTotal": 44.1
     }
   },
   "players": {
@@ -372,12 +372,12 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 10.26,
+        "points": 10.98,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 94.0,
+          "passingYards": 112.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 15.0,
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 2.5,
+        "points": 4.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 18.0,
+          "rushingYards": 37.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
@@ -794,7 +794,7 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 5.2,
+        "points": 6.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -804,8 +804,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 27.0,
+          "receptions": 6.0,
+          "receivingYards": 33.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1364,18 +1364,18 @@
         "position": "DEF",
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
-        "points": 12.0,
+        "points": 20.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
           "pointsAllowedFantasy": 10.0,
           "sacks": 2.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
-          "defensiveTD": 0.0,
+          "defensiveTD": 1.0,
           "returnTD": 0.0
         },
         "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
