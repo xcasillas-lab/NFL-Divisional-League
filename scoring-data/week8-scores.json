@@ -1,18 +1,18 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T16:00:24-06:00",
+  "lastUpdated": "2026-11-01T16:05:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
-      "leftTotal": 105.1,
+      "leftTotal": 105.6,
       "rightTotal": 52.7
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 107.26,
+      "leftTotal": 107.86,
       "rightTotal": 127.3
     },
     "3": {
@@ -498,7 +498,7 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 1.0,
+        "points": 1.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -506,7 +506,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 10.0,
+          "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1364,13 +1364,13 @@
         "position": "DEF",
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
-        "points": 18.0,
+        "points": 18.5,
         "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 7,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 4.0,
+          "sacks": 4.5,
           "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
