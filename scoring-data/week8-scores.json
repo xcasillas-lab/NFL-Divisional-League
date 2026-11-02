@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T20:35:17-06:00",
+  "lastUpdated": "2026-11-01T20:40:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 49.5,
+      "leftTotal": 49.7,
       "rightTotal": 78.7
     }
   },
@@ -667,7 +667,7 @@
         "position": "FLEX",
         "name": "Rachaad White",
         "nflTeam": "WAS",
-        "points": 2.2,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -675,7 +675,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 13.0,
+          "rushingYards": 15.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 4.0,
