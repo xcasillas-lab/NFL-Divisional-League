@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T20:15:19-06:00",
+  "lastUpdated": "2026-11-01T20:20:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 34.84,
+      "leftTotal": 35.68,
       "rightTotal": 78.7
     }
   },
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Jayden Daniels",
         "nflTeam": "WAS",
-        "points": 1.04,
+        "points": 1.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 26.0,
+          "passingYards": 47.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
