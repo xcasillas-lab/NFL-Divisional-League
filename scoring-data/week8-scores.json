@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T18:25:17-06:00",
+  "lastUpdated": "2026-11-01T18:30:21-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 105.1,
-      "rightTotal": 76.54
+      "rightTotal": 76.14
     },
     "2": {
       "leftOwner": "Joshua",
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
-        "points": 7.6,
+        "points": 8.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 54.0,
+          "rushingYards": 60.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 7.0,
@@ -1195,12 +1195,12 @@
         "position": "DEF",
         "name": "Kansas City Chiefs DEF",
         "nflTeam": "KC",
-        "points": 1.0,
+        "points": 0.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 21,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowed": 28,
+          "pointsAllowedFantasy": -1.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
