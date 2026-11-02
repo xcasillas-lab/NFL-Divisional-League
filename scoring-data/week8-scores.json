@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T21:50:22-06:00",
+  "lastUpdated": "2026-11-01T21:55:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 64.68,
+      "leftTotal": 64.88,
       "rightTotal": 78.7
     }
   },
@@ -646,7 +646,7 @@
         "position": "TE",
         "name": "Dallas Goedert",
         "nflTeam": "PHI",
-        "points": 5.0,
+        "points": 5.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -654,7 +654,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
           "receptions": 4.0,
           "receivingYards": 30.0,
