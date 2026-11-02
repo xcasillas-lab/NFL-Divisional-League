@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T18:10:18-06:00",
+  "lastUpdated": "2026-11-01T18:15:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
       "rightOwner": "Dallas",
       "leftTotal": 105.1,
-      "rightTotal": 73.26
+      "rightTotal": 74.16
     },
     "2": {
       "leftOwner": "Joshua",
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 22.96,
+        "points": 23.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 259.0,
+          "passingYards": 269.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 6.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
-        "points": 5.2,
+        "points": 5.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 41.0,
+          "rushingYards": 46.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 1.0,
