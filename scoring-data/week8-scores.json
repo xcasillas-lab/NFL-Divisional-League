@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T20:25:17-06:00",
+  "lastUpdated": "2026-11-01T20:30:21-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 37.88,
+      "leftTotal": 49.5,
       "rightTotal": 78.7
     }
   },
@@ -541,13 +541,13 @@
         "position": "QB",
         "name": "Jayden Daniels",
         "nflTeam": "WAS",
-        "points": 4.08,
+        "points": 8.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 67.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 75.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 14.0,
           "rushingTouchdowns": 0.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
-        "points": 0.0,
+        "points": 7.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -614,9 +614,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 8.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
