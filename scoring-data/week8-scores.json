@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T20:00:22-06:00",
+  "lastUpdated": "2026-11-01T20:05:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 33.1,
+      "leftTotal": 34.84,
       "rightTotal": 78.7
     }
   },
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Jayden Daniels",
         "nflTeam": "WAS",
-        "points": 0.6,
+        "points": 1.04,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 15.0,
+          "passingYards": 26.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -667,7 +667,7 @@
         "position": "FLEX",
         "name": "Rachaad White",
         "nflTeam": "WAS",
-        "points": 0.9,
+        "points": 2.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -675,10 +675,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 9.0,
+          "rushingYards": 13.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 4.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
