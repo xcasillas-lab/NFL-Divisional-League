@@ -1,7 +1,7 @@
 {
   "week": 8,
-  "status": "live",
-  "lastUpdated": "2026-11-01T18:35:21-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-01T18:40:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -1049,7 +1049,7 @@
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
         "points": 25.44,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1070,7 +1070,7 @@
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
         "points": 10.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1175,7 +1175,7 @@
         "name": "RJ Harvey",
         "nflTeam": "DEN",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1196,7 +1196,7 @@
         "name": "Kansas City Chiefs DEF",
         "nflTeam": "KC",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 28,
