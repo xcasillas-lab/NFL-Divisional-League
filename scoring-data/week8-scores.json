@@ -1,7 +1,7 @@
 {
   "week": 8,
-  "status": "live",
-  "lastUpdated": "2026-11-01T22:20:23-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-01T22:25:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -542,7 +542,7 @@
         "name": "Jayden Daniels",
         "nflTeam": "WAS",
         "points": 14.98,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -584,7 +584,7 @@
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
         "points": 11.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
         "points": 11.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -647,7 +647,7 @@
         "name": "Dallas Goedert",
         "nflTeam": "PHI",
         "points": 5.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -668,7 +668,7 @@
         "name": "Rachaad White",
         "nflTeam": "WAS",
         "points": 13.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
