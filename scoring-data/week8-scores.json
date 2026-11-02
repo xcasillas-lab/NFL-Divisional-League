@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-01T19:50:18-06:00",
+  "lastUpdated": "2026-11-01T19:55:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
-      "leftTotal": 23.56,
+      "leftTotal": 26.8,
       "rightTotal": 78.7
     }
   },
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Jayden Daniels",
         "nflTeam": "WAS",
-        "points": 0.16,
+        "points": 0.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 4.0,
+          "passingYards": 15.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -583,7 +583,7 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 1.0,
+        "points": 3.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -591,10 +591,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 10.0,
+          "rushingYards": 9.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 24.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -648,8 +648,8 @@
         "nflTeam": "PHI",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": true,
-        "matchMethod": "exact",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
