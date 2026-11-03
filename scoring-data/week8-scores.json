@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-02T21:50:23-06:00",
+  "lastUpdated": "2026-11-02T21:55:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,7 +19,7 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 113.18
+      "rightTotal": 112.18
     },
     "4": {
       "leftOwner": "Juan",
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 2.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 20,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 27,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
