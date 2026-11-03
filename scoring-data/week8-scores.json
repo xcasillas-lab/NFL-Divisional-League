@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-02T20:15:20-06:00",
+  "lastUpdated": "2026-11-02T20:20:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 97.26,
+      "leftTotal": 111.16,
       "rightTotal": 127.3
     },
     "3": {
@@ -498,15 +498,15 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 0.0,
+        "points": 6.9,
         "gameStatus": "final",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 69.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -519,14 +519,14 @@
         "position": "DEF",
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
-        "points": 1.0,
+        "points": 8.0,
         "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 19,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 0.0,
-          "interceptions": 0.0,
+          "sacks": 5.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
