@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-02T22:00:29-06:00",
+  "lastUpdated": "2026-11-02T22:05:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,13 +19,13 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 112.18
+      "rightTotal": 114.18
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 77.88,
-      "rightTotal": 107.48
+      "rightTotal": 109.48
     }
   },
   "players": {
@@ -181,14 +181,14 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 1.0,
+        "points": 3.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 27,
           "pointsAllowedFantasy": 0.0,
           "sacks": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
@@ -857,14 +857,14 @@
         "position": "DEF",
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
-        "points": 4.0,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 17,
           "pointsAllowedFantasy": 1.0,
           "sacks": 3.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
