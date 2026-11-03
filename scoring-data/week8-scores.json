@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-02T20:35:21-06:00",
+  "lastUpdated": "2026-11-02T20:40:21-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,13 +19,13 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 104.38
+      "rightTotal": 115.18
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 77.88,
-      "rightTotal": 102.14
+      "rightTotal": 99.7
     }
   },
   "players": {
@@ -118,7 +118,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 6.4,
+        "points": 17.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -128,9 +128,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 49.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 4.0,
+          "receivingYards": 92.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Caleb Williams",
         "nflTeam": "CHI",
-        "points": 10.24,
+        "points": 10.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 151.0,
+          "passingYards": 165.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
-        "points": 8.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 3,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 9,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
