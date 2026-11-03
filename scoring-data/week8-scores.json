@@ -1,7 +1,7 @@
 {
   "week": 8,
-  "status": "pre-game",
-  "lastUpdated": "2026-11-02T19:15:19-06:00",
+  "status": "live",
+  "lastUpdated": "2026-11-02T19:20:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -19,13 +19,13 @@
       "leftOwner": "Xavier",
       "rightOwner": "Ben",
       "leftTotal": 98.36,
-      "rightTotal": 93.98
+      "rightTotal": 103.98
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 77.88,
-      "rightTotal": 78.7
+      "rightTotal": 88.7
     }
   },
   "players": {
@@ -119,9 +119,9 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -181,12 +181,12 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -195,7 +195,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Brian": [
@@ -711,7 +711,7 @@
         "name": "Caleb Williams",
         "nflTeam": "CHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -837,7 +837,7 @@
         "name": "Rome Odunze",
         "nflTeam": "CHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -857,12 +857,12 @@
         "position": "DEF",
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
-        "points": 0.0,
-        "gameStatus": "pre-game",
+        "points": 10.0,
+        "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 0,
-          "pointsAllowedFantasy": 0.0,
+          "pointsAllowedFantasy": 10.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -871,7 +871,7 @@
           "defensiveTD": 0.0,
           "returnTD": 0.0
         },
-        "note": "Game has not started; D/ST score remains 0.00."
+        "note": "Full D/ST test: points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs, return TDs."
       }
     ],
     "Xavier": [
