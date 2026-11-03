@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "lastUpdated": "2026-11-02T20:10:24-06:00",
+  "lastUpdated": "2026-11-02T20:15:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Kendall",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Brian",
-      "leftTotal": 111.16,
+      "leftTotal": 97.26,
       "rightTotal": 127.3
     },
     "3": {
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "JetLiX",
       "leftTotal": 77.88,
-      "rightTotal": 94.38
+      "rightTotal": 95.18
     }
   },
   "players": {
@@ -185,7 +185,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
+          "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
@@ -498,15 +498,15 @@
         "position": "FLEX",
         "name": "Ollie Gordon II",
         "nflTeam": "MIA",
-        "points": 6.9,
+        "points": 0.0,
         "gameStatus": "final",
-        "foundInFeed": true,
-        "matchMethod": "exact",
+        "foundInFeed": false,
+        "matchMethod": "not-found",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 69.0,
+          "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -519,14 +519,14 @@
         "position": "DEF",
         "name": "New England Patriots DEF",
         "nflTeam": "NE",
-        "points": 8.0,
+        "points": 1.0,
         "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 19,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 5.0,
-          "interceptions": 1.0,
+          "sacks": 0.0,
+          "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
@@ -710,15 +710,15 @@
         "position": "QB",
         "name": "Caleb Williams",
         "nflTeam": "CHI",
-        "points": 7.68,
+        "points": 8.48,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 92.0,
+          "passingYards": 107.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
