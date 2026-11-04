@@ -895,6 +895,48 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .week8-closing strong{color:#38bdf8}
 .week8-closing p{margin:5px 0 0;color:#cbd5e1;font-size:.76rem;line-height:1.5}
 @media(max-width:700px){.week8-matchup-grid,.week8-watch-grid,.week8-awards-grid{grid-template-columns:1fr}.week8-story-hero{padding:13px}}
+
+/* ===== WEEK 9 ADVANCED PLAYER STATS ===== */
+.week9-story-hero{padding:16px;border:1px solid rgba(56,189,248,.30);border-radius:14px;background:linear-gradient(180deg,#081525,#050d19)}
+.week9-story-kicker{color:#38bdf8;font-size:.68rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.week9-story-hero h3{margin:5px 0 10px;color:#f8fafc;font-size:1.22rem;line-height:1.25}
+.week9-story-hero p{margin:7px 0 0;color:#cbd5e1;font-size:.79rem;line-height:1.55}
+.week9-subhead{margin:16px 0 8px;color:#fbbf24;font-size:.82rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.week9-intro{margin:0 0 9px;color:#94a3b8;font-size:.75rem}
+.week9-table-wrap{overflow-x:auto;border:1px solid #26374e;border-radius:12px;background:#050d19}
+.week9-table{margin:0;min-width:680px;background:#050d19}
+.week9-table th{font-size:.64rem;text-transform:uppercase;letter-spacing:.04em;color:#38bdf8;white-space:nowrap;background:#020617}
+.week9-table td{font-size:.73rem;color:#e2e8f0;white-space:nowrap}
+.week9-table td:first-child{color:#38bdf8;font-weight:900;text-align:center}
+.week9-table td b{color:#f8fafc}
+.week9-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:11px}
+.week9-feature-grid article{padding:11px 12px;border:1px solid #26374e;border-radius:11px;background:#050d19}
+.week9-feature-grid strong{display:block;color:#f8fafc;font-size:.78rem}
+.week9-feature-grid p{margin:5px 0 0;color:#94a3b8;font-size:.72rem;line-height:1.45}
+.week9-feature-grid p b{color:#e2e8f0}
+.week9-kings-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.week9-king-card{display:flex;gap:11px;align-items:flex-start;padding:12px;border:1px solid #26374e;border-radius:11px;background:#050d19}
+.week9-king-icon{font-size:1.5rem;line-height:1}
+.week9-king-card small{display:block;color:#38bdf8;font-size:.62rem;font-weight:900;letter-spacing:.08em}
+.week9-king-card strong{display:block;margin-top:3px;color:#f8fafc;font-size:.84rem}
+.week9-king-card span{display:block;margin-top:2px;color:#94a3b8;font-size:.68rem}
+.week9-king-card p{margin:6px 0 0;color:#cbd5e1;font-size:.71rem}
+.week9-king-card p b{color:#a3e635}
+.week9-hot-note{margin-top:10px;padding:11px 12px;border:1px solid rgba(245,158,11,.28);border-radius:10px;background:rgba(245,158,11,.05);color:#cbd5e1;font-size:.74rem;line-height:1.48}
+.week9-hot-note>b:first-child{color:#fbbf24}.week9-hot-note b{color:#f8fafc}
+.week9-race-card{display:grid;grid-template-columns:110px 1fr;gap:14px;align-items:center;margin-top:13px;padding:14px;border:1px solid rgba(34,197,94,.32);border-radius:12px;background:rgba(34,197,94,.055)}
+.week9-race-number{font-size:2rem;font-weight:900;text-align:center;color:#22c55e}
+.week9-race-card small{display:block;color:#22c55e;font-size:.64rem;font-weight:900;letter-spacing:.09em}
+.week9-race-card strong{display:block;margin-top:3px;color:#f8fafc;font-size:.9rem}
+.week9-race-card p{margin:6px 0 0;color:#cbd5e1;font-size:.74rem;line-height:1.48}
+.week9-race-card p b{color:#f8fafc}
+@media(max-width:700px){
+  .week9-feature-grid,.week9-kings-grid{grid-template-columns:1fr}
+  .week9-story-hero{padding:13px}
+  .week9-story-hero h3{font-size:1.05rem}
+  .week9-race-card{grid-template-columns:1fr;text-align:center}
+  .week9-race-number{font-size:1.8rem}
+}
 </style>
 </head>
 <body>
@@ -906,12 +948,218 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <div class="newsletter-kicker">Founding Edition</div>
 <h2>DFFL HUDDLE</h2>
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
-<div class="newsletter-issue">October 28, 2026</div>
+<div class="newsletter-issue">November 4, 2026</div>
 </div>
 
+<div class="newsletter-collapse week9-lead-story">
+<button aria-controls="week9UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span>
+<strong>📣 Week 9 — The Players Powering the DFFL <span class="latest-new-badge">NEW</span></strong>
+<small>Advanced Stats spotlight: elite scorers, position kings, Week 8 heat and the race to 200.</small>
+</span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="week9UpdatesContent">
+<div class="week2-section-block">
+<div class="combined-update-divider">⭐ THE PLAYERS POWERING THE DFFL</div>
+<div class="week9-story-hero">
+<div class="week9-story-kicker">ADVANCED STATS • THROUGH WEEK 8</div>
+<h3>Eight weeks of data are in. Who are the players actually driving their divisions?</h3>
+<p>
+          With only two regular-season games remaining before the DFFL bye and playoffs,
+          we've spent plenty of time talking about records, seeds and division strength.
+          This week, we're turning the spotlight onto the players.
+        </p>
+<p>
+          The Advanced Player Report now includes eight weeks of DFFL scoring, giving us a much clearer picture
+          of which players have been the league's biggest weapons — not based on preseason reputation,
+          but on what they have actually produced.
+        </p>
+</div>
+<div class="week9-subhead">👑 THE DFFL ELITE</div>
+<p class="week9-intro">Highest scoring averages through Week 8 • Minimum five games played</p>
+<div class="week9-table-wrap">
+<table class="week9-table week9-elite-table">
+<thead><tr>
+<th>#</th><th>Player</th><th>Pos</th><th>NFL</th><th>DFFL Division</th><th>GP</th><th>Avg PPG</th><th>Total</th>
+</tr></thead>
+<tbody><tr>
+<td>1</td><td><b>Josh Allen</b></td><td>QB</td><td>BUF</td>
+<td>AFC East</td><td>7</td><td><b>27.47</b></td><td>192.32</td>
+</tr>
+<tr>
+<td>2</td><td><b>Jahmyr Gibbs</b></td><td>RB</td><td>DET</td>
+<td>NFC North</td><td>7</td><td><b>25.54</b></td><td>178.80</td>
+</tr>
+<tr>
+<td>3</td><td><b>Joe Burrow</b></td><td>QB</td><td>CIN</td>
+<td>AFC North</td><td>7</td><td><b>25.09</b></td><td>175.60</td>
+</tr>
+<tr>
+<td>4</td><td><b>Jaxon Smith-Njigba</b></td><td>WR</td><td>SEA</td>
+<td>NFC West</td><td>8</td><td><b>23.50</b></td><td>187.96</td>
+</tr>
+<tr>
+<td>5</td><td><b>Brock Purdy</b></td><td>QB</td><td>SF</td>
+<td>NFC West</td><td>7</td><td><b>21.43</b></td><td>150.02</td>
+</tr>
+<tr>
+<td>6</td><td><b>Kenneth Walker</b></td><td>RB</td><td>KC</td>
+<td>AFC West</td><td>7</td><td><b>21.30</b></td><td>149.10</td>
+</tr>
+<tr>
+<td>7</td><td><b>Drake Maye</b></td><td>QB</td><td>NE</td>
+<td>AFC East</td><td>8</td><td><b>21.11</b></td><td>168.92</td>
+</tr>
+<tr>
+<td>8</td><td><b>Kirk Cousins</b></td><td>QB</td><td>LV</td>
+<td>AFC West</td><td>8</td><td><b>20.58</b></td><td>164.66</td>
+</tr></tbody>
+</table>
+</div>
+<div class="week9-feature-grid">
+<article>
+<strong>👑 Josh Allen sits on top</strong>
+<p>
+            Allen leads the Advanced Player Report at <b>27.47 points per game</b>
+            with 192.32 total points in 7 games.
+            His season high remains 40.82 in Week 2.
+          </p>
+</article>
+<article>
+<strong>⚡ Gibbs is doing RB things nobody else is matching</strong>
+<p>
+            Jahmyr Gibbs is averaging <b>25.54</b>, making him the No. 2 player overall by average
+            and the top running back in the league.
+          </p>
+</article>
+<article>
+<strong>🚀 JSN combines ceiling with availability</strong>
+<p>
+            Jaxon Smith-Njigba has played all 8 games and produced 187.96 points
+            at a 23.50 average — elite WR production every week for NFC West.
+          </p>
+</article>
+<article>
+<strong>🔥 Burrow is peaking late</strong>
+<p>
+            Joe Burrow just dropped <b>42.48</b> in Week 8,
+            his best performance of the season, pushing his average to 25.09.
+          </p>
+</article>
+</div>
+<div class="week9-subhead">🏅 POSITION KINGS</div>
+<p class="week9-intro">The current scoring-average leader at each offensive position.</p>
+<div class="week9-kings-grid">
+<article class="week9-king-card">
+<div class="week9-king-icon">🎯</div>
+<div>
+<small>QB KING</small>
+<strong>Josh Allen</strong>
+<span>BUF • AFC East • Joshua</span>
+<p><b>27.47 PPG</b> • 192.32 total • 7 games</p>
+</div>
+</article>
+<article class="week9-king-card">
+<div class="week9-king-icon">⚡</div>
+<div>
+<small>RB KING</small>
+<strong>Jahmyr Gibbs</strong>
+<span>DET • NFC North • JetLiX</span>
+<p><b>25.54 PPG</b> • 178.80 total • 7 games</p>
+</div>
+</article>
+<article class="week9-king-card">
+<div class="week9-king-icon">🚀</div>
+<div>
+<small>WR KING</small>
+<strong>Jaxon Smith-Njigba</strong>
+<span>SEA • NFC West • Ben</span>
+<p><b>23.50 PPG</b> • 187.96 total • 8 games</p>
+</div>
+</article>
+<article class="week9-king-card">
+<div class="week9-king-icon">🧱</div>
+<div>
+<small>TE KING</small>
+<strong>Brock Bowers</strong>
+<span>LV • AFC West • Dallas</span>
+<p><b>17.20 PPG</b> • 103.20 total • 6 games</p>
+</div>
+</article>
+</div>
+<div class="week9-subhead">🔥 WHO'S HOT RIGHT NOW?</div>
+<p class="week9-intro">The eight biggest individual performances from Week 8.</p>
+<div class="week9-table-wrap">
+<table class="week9-table week9-hot-table">
+<thead><tr><th>#</th><th>Player</th><th>Division</th><th>Week 8</th></tr></thead>
+<tbody><tr>
+<td>1</td><td><b>Joe Burrow</b></td><td>AFC North</td><td><b>42.48</b></td>
+</tr>
+<tr>
+<td>2</td><td><b>Tyler Allgeier</b></td><td>NFC West</td><td><b>33.60</b></td>
+</tr>
+<tr>
+<td>3</td><td><b>Tee Higgins</b></td><td>AFC North</td><td><b>32.50</b></td>
+</tr>
+<tr>
+<td>4</td><td><b>Bhayshul Tuten</b></td><td>AFC South</td><td><b>28.90</b></td>
+</tr>
+<tr>
+<td>5</td><td><b>Kirk Cousins</b></td><td>AFC West</td><td><b>28.18</b></td>
+</tr>
+<tr>
+<td>6</td><td><b>Josh Allen</b></td><td>AFC East</td><td><b>27.56</b></td>
+</tr>
+<tr>
+<td>7</td><td><b>Tony Pollard</b></td><td>AFC South</td><td><b>27.20</b></td>
+</tr>
+<tr>
+<td>8</td><td><b>D'Andre Swift</b></td><td>NFC North</td><td><b>26.90</b></td>
+</tr></tbody>
+</table>
+</div>
+<div class="week9-hot-note">
+<b>🚨 Late-season heater:</b>
+        Tony Pollard has gone from a quiet first six weeks to back-to-back explosions of
+        <b>35.00</b> and
+        <b>27.20</b>.
+        AFC South may have found another difference-maker at exactly the right time.
+      </div>
+<div class="week9-subhead">📊 TOTAL POINTS MATTER TOO</div>
+<p class="week9-intro">Average shows explosiveness. Total points reward availability and week-to-week production.</p>
+<div class="week9-table-wrap">
+<table class="week9-table week9-total-table">
+<thead><tr><th>#</th><th>Player</th><th>Division</th><th>Total Points</th></tr></thead>
+<tbody><tr><td>1</td><td><b>Josh Allen</b></td><td>AFC East</td><td><b>192.32</b></td></tr>
+<tr><td>2</td><td><b>Jaxon Smith-Njigba</b></td><td>NFC West</td><td><b>187.96</b></td></tr>
+<tr><td>3</td><td><b>Jahmyr Gibbs</b></td><td>NFC North</td><td><b>178.80</b></td></tr>
+<tr><td>4</td><td><b>Joe Burrow</b></td><td>AFC North</td><td><b>175.60</b></td></tr>
+<tr><td>5</td><td><b>Drake Maye</b></td><td>AFC East</td><td><b>168.92</b></td></tr>
+<tr><td>6</td><td><b>Kirk Cousins</b></td><td>AFC West</td><td><b>164.66</b></td></tr>
+<tr><td>7</td><td><b>Jordan Love</b></td><td>NFC North</td><td><b>154.84</b></td></tr>
+<tr><td>8</td><td><b>Dak Prescott</b></td><td>NFC East</td><td><b>152.94</b></td></tr></tbody>
+</table>
+</div>
+<div class="week9-race-card">
+<div class="week9-race-number">192.32</div>
+<div>
+<small>THE RACE TO 200</small>
+<strong>Who becomes the first 200-point player in DFFL history?</strong>
+<p>
+            Josh Allen needs only <b>7.68</b> more points.
+            Jaxon Smith-Njigba sits at <b>187.96</b>,
+            while Jahmyr Gibbs (178.80) and Joe Burrow (175.60)
+            remain close enough to make Week 9 interesting.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div class="newsletter-collapse week8-lead-story">
 <button aria-controls="week8UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
-<span><strong>📣 Week 8 — The Stretch Run Begins <span class="latest-new-badge">NEW</span></strong>
+<span><strong>📣 Week 8 — The Stretch Run Begins </strong>
 <small>Division games only. Three weeks left. Every result now reshapes the playoff bracket.</small></span>
 <span aria-hidden="true" class="toggle-arrow">▾</span>
 </button>
