@@ -2136,7 +2136,7 @@ function renderWeekAvailability(removedTeams=[]){
 }
 
 /* ===== DFFL FANTASY STATS DISPLAY =====
-   Primary source: /data/player-stats.json
+   Primary source: /scoring-data/player-stats.json
    The embedded historical object below is retained only as a safe fallback if the JSON
    cannot be loaded. Stats are display-only and do NOT determine roster eligibility,
    bye-week availability, team distribution rules, player membership, or Google Form values.
@@ -2157,7 +2157,7 @@ function normalizeDFFLPlayerName(name){
 /* Current JSON is the only source of displayed averages. Historical data above
    is deliberately never used for missing, invalid, or unavailable current data. */
 const DFFL_PLAYER_STATS_URL = location.protocol === "file:"
-  ? "https://dff-league.com/data/player-stats.json" : "/data/player-stats.json";
+  ? "https://dff-league.com/scoring-data/player-stats.json" : "/scoring-data/player-stats.json";
 let dfflFantasyStatsLiveByPlayer = {};
 let dfflFantasyStatsThroughWeek = null;
 let dfflFantasyStatsLiveLoaded = false;
@@ -2213,7 +2213,7 @@ async function loadDFFLPlayerStats(){
     dfflFantasyStatsThroughWeek=Number(data.statsThroughWeek);
     dfflFantasyStatsLiveLoaded=true;
   }catch(error){
-    dfflStatsError="Could not load "+DFFL_PLAYER_STATS_URL+". Check the data path and connection. For local testing, serve this HTML over HTTP with data/player-stats.json beside it.";
+    dfflStatsError="Could not load "+DFFL_PLAYER_STATS_URL+". Check the data path and connection. For local testing, serve this HTML over HTTP with scoring-data/player-stats.json beside it.";
     console.warn("DFFL current averages unavailable:",error);
   }finally{
     clearTimeout(timer);
