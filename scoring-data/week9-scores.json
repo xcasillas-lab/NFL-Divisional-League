@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-05T20:50:19-06:00",
+  "lastUpdated": "2026-11-05T20:55:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -13,7 +13,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 0.0,
-      "rightTotal": 41.08
+      "rightTotal": 42.98
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -587,7 +587,7 @@
         "position": "RB",
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
-        "points": 8.2,
+        "points": 8.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -595,7 +595,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 22.0,
+          "rushingYards": 21.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -692,14 +692,14 @@
         "position": "DEF",
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
-        "points": 8.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 3,
           "pointsAllowedFantasy": 7.0,
           "sacks": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
