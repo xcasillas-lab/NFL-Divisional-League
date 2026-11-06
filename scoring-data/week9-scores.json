@@ -1,7 +1,7 @@
 {
   "week": 9,
-  "status": "live",
-  "lastUpdated": "2026-11-05T22:05:16-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-05T22:10:24-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -57,7 +57,7 @@
         "name": "Derrick Henry",
         "nflTeam": "BAL",
         "points": 5.58,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -162,7 +162,7 @@
         "name": "Zay Flowers",
         "nflTeam": "BAL",
         "points": 3.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -546,7 +546,7 @@
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
         "points": 13.58,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -588,7 +588,7 @@
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
         "points": 8.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -609,7 +609,7 @@
         "name": "Parker Washington",
         "nflTeam": "JAX",
         "points": 13.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -693,7 +693,7 @@
         "name": "Jacksonville Jaguars DEF",
         "nflTeam": "JAX",
         "points": 9.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
