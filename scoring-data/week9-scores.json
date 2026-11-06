@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-05T21:15:23-06:00",
+  "lastUpdated": "2026-11-05T21:20:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
-      "leftTotal": 8.68,
+      "leftTotal": 9.18,
       "rightTotal": 0.0
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 0.0,
-      "rightTotal": 43.56
+      "rightTotal": 43.88
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -56,7 +56,7 @@
         "position": "RB",
         "name": "Derrick Henry",
         "nflTeam": "BAL",
-        "points": 4.88,
+        "points": 5.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -64,7 +64,7 @@
           "passingYards": -3.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 50.0,
+          "rushingYards": 55.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -545,12 +545,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 12.06,
+        "points": 12.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 204.0,
+          "passingYards": 212.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": -1.0,
