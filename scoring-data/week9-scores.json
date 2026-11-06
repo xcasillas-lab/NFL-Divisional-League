@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-05T21:00:29-06:00",
+  "lastUpdated": "2026-11-05T21:05:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
-      "leftTotal": 7.88,
+      "leftTotal": 8.78,
       "rightTotal": 0.0
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 0.0,
-      "rightTotal": 42.98
+      "rightTotal": 43.18
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -161,7 +161,7 @@
         "position": "FLEX",
         "name": "Zay Flowers",
         "nflTeam": "BAL",
-        "points": 2.8,
+        "points": 3.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -171,8 +171,8 @@
           "interceptions": 0.0,
           "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 2.0,
+          "receptions": 3.0,
+          "receivingYards": 6.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -587,7 +587,7 @@
         "position": "RB",
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
-        "points": 8.1,
+        "points": 8.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -595,7 +595,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 21.0,
+          "rushingYards": 23.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
