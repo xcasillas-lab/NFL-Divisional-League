@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-05T21:40:19-06:00",
+  "lastUpdated": "2026-11-05T21:45:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -13,7 +13,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 0.0,
-      "rightTotal": 47.26
+      "rightTotal": 47.58
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -545,12 +545,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 13.26,
+        "points": 13.58,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 234.0,
+          "passingYards": 242.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": -1.0,
