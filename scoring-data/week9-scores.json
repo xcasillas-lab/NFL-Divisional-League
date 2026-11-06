@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-05T19:35:18-06:00",
+  "lastUpdated": "2026-11-05T19:40:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -13,7 +13,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 0.0,
-      "rightTotal": 16.38
+      "rightTotal": 17.66
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -545,12 +545,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 2.88,
+        "points": 3.56,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 72.0,
+          "passingYards": 89.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -587,7 +587,7 @@
         "position": "RB",
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
-        "points": 6.5,
+        "points": 7.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -595,7 +595,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 5.0,
+          "rushingYards": 11.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -610,8 +610,8 @@
         "nflTeam": "JAX",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
