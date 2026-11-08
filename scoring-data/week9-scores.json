@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T15:15:19-06:00",
+  "lastUpdated": "2026-11-08T15:20:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -13,7 +13,7 @@
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 24.9,
-      "rightTotal": 58.58
+      "rightTotal": 58.48
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 104.46,
-      "rightTotal": 81.62
+      "leftTotal": 105.46,
+      "rightTotal": 83.1
     }
   },
   "players": {
@@ -626,7 +626,7 @@
         "name": "Malik Nabers",
         "nflTeam": "NYG",
         "points": 6.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -647,7 +647,7 @@
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
         "points": 13.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -668,7 +668,7 @@
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
         "points": 8.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -688,13 +688,13 @@
         "position": "DEF",
         "name": "New York Giants DEF",
         "nflTeam": "NYG",
-        "points": 10.0,
-        "gameStatus": "live",
+        "points": 11.0,
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 11,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 6.0,
+          "sacks": 7.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -879,15 +879,15 @@
         "position": "QB",
         "name": "Tyler Shough",
         "nflTeam": "NO",
-        "points": 13.62,
+        "points": 15.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 233.0,
+          "passingYards": 250.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 43.0,
+          "rushingYards": 51.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1238,7 +1238,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 7.0,
+        "points": 6.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1246,7 +1246,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 47.0,
+          "rushingYards": 46.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 18.0,
