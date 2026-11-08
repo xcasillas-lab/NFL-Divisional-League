@@ -1,12 +1,12 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T11:30:20-06:00",
+  "lastUpdated": "2026-11-08T11:35:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
-      "leftTotal": 83.22,
+      "leftTotal": 83.12,
       "rightTotal": 0.0
     },
     "2": {
@@ -203,7 +203,7 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 29.64,
+        "points": 29.54,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -211,7 +211,7 @@
           "passingYards": 271.0,
           "passingTouchdowns": 3.0,
           "interceptions": 0.0,
-          "rushingYards": 8.0,
+          "rushingYards": 7.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
