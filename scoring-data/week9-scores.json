@@ -1,31 +1,31 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T14:45:20-06:00",
+  "lastUpdated": "2026-11-08T14:50:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
-      "leftTotal": 96.42,
+      "leftTotal": 97.12,
       "rightTotal": 76.54
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 25.8,
-      "rightTotal": 55.88
+      "rightTotal": 56.58
     },
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 31.0,
+      "leftTotal": 31.2,
       "rightTotal": 35.2
     },
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 98.16,
-      "rightTotal": 68.62
+      "leftTotal": 96.16,
+      "rightTotal": 72.12
     }
   },
   "players": {
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Quinshon Judkins",
         "nflTeam": "CLE",
-        "points": 4.3,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -253,7 +253,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 36.0,
+          "rushingYards": 43.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 2.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 25.0,
+        "points": 23.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -617,7 +617,7 @@
           "receptions": 7.0,
           "receivingYards": 155.0,
           "receivingTouchdowns": 1.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
@@ -731,7 +731,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 13.2,
+        "points": 13.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -739,7 +739,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 72.0,
+          "rushingYards": 74.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -921,7 +921,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 8.3,
+        "points": 10.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -931,8 +931,8 @@
           "interceptions": 0.0,
           "rushingYards": 79.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": -1.0,
+          "receptions": 3.0,
+          "receivingYards": 14.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -1026,13 +1026,13 @@
         "position": "DEF",
         "name": "New Orleans Saints DEF",
         "nflTeam": "NO",
-        "points": 8.0,
+        "points": 9.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 4.0,
+          "sacks": 5.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -1238,7 +1238,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 7.6,
+        "points": 8.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1246,7 +1246,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 33.0,
+          "rushingYards": 40.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 18.0,
