@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T14:35:18-06:00",
+  "lastUpdated": "2026-11-08T14:40:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
       "leftTotal": 96.42,
-      "rightTotal": 73.82
+      "rightTotal": 75.04
     },
     "2": {
       "leftOwner": "Joshua",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 88.8,
-      "rightTotal": 71.12
+      "leftTotal": 89.44,
+      "rightTotal": 68.12
     }
   },
   "players": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 13.6,
+        "points": 14.24,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 185.0,
+          "passingYards": 201.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
@@ -1026,12 +1026,12 @@
         "position": "DEF",
         "name": "New Orleans Saints DEF",
         "nflTeam": "NO",
-        "points": 11.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 6,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 13,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 4.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 15.32,
+        "points": 15.44,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 213.0,
+          "passingYards": 216.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 8.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Kenneth Walker III",
         "nflTeam": "KC",
-        "points": 33.2,
+        "points": 34.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 91.0,
+          "rushingYards": 102.0,
           "rushingTouchdowns": 1.0,
           "receptions": 4.0,
           "receivingYards": 41.0,
