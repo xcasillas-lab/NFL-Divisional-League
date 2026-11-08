@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T15:10:23-06:00",
+  "lastUpdated": "2026-11-08T15:15:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
       "leftTotal": 94.12,
-      "rightTotal": 78.38
+      "rightTotal": 79.28
     },
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
       "leftTotal": 24.9,
-      "rightTotal": 57.98
+      "rightTotal": 58.58
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -24,8 +24,8 @@
     "4": {
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
-      "leftTotal": 105.46,
-      "rightTotal": 81.34
+      "leftTotal": 104.46,
+      "rightTotal": 81.62
     }
   },
   "players": {
@@ -56,7 +56,7 @@
         "name": "Kyren Williams",
         "nflTeam": "LAR",
         "points": 7.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -98,7 +98,7 @@
         "name": "Puka Nacua",
         "nflTeam": "LAR",
         "points": 28.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -583,8 +583,8 @@
         "position": "RB",
         "name": "Rachaad White",
         "nflTeam": "WAS",
-        "points": 7.9,
-        "gameStatus": "live",
+        "points": 5.9,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -596,7 +596,7 @@
           "receptions": 2.0,
           "receivingYards": 41.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
@@ -688,13 +688,13 @@
         "position": "DEF",
         "name": "New York Giants DEF",
         "nflTeam": "NYG",
-        "points": 9.0,
+        "points": 10.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 11,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 5.0,
+          "sacks": 6.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -879,12 +879,12 @@
         "position": "QB",
         "name": "Tyler Shough",
         "nflTeam": "NO",
-        "points": 13.34,
+        "points": 13.62,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 226.0,
+          "passingYards": 233.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 43.0,
@@ -922,7 +922,7 @@
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
         "points": 11.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -964,7 +964,7 @@
         "name": "Tetairoa McMillan",
         "nflTeam": "CAR",
         "points": 13.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1112,7 +1112,7 @@
         "name": "Jaylen Waddle",
         "nflTeam": "DEN",
         "points": 2.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1174,15 +1174,15 @@
         "position": "FLEX",
         "name": "Jonah Coleman",
         "nflTeam": "DEN",
-        "points": 15.9,
-        "gameStatus": "live",
+        "points": 16.8,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 48.0,
+          "rushingYards": 57.0,
           "rushingTouchdowns": 1.0,
           "receptions": 4.0,
           "receivingYards": 31.0,
@@ -1238,7 +1238,7 @@
         "position": "RB",
         "name": "Jonathan Taylor",
         "nflTeam": "IND",
-        "points": 6.4,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1246,7 +1246,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 41.0,
+          "rushingYards": 47.0,
           "rushingTouchdowns": 0.0,
           "receptions": 5.0,
           "receivingYards": 18.0,
