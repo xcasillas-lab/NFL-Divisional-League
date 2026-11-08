@@ -1,12 +1,12 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T09:15:19-06:00",
+  "lastUpdated": "2026-11-08T09:20:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
-      "leftTotal": 32.38,
+      "leftTotal": 40.8,
       "rightTotal": 0.0
     },
     "2": {
@@ -203,16 +203,16 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 7.8,
+        "points": 14.42,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 95.0,
+          "passingYards": 108.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
-          "rushingTouchdowns": 0.0,
+          "rushingYards": 1.0,
+          "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
@@ -287,7 +287,7 @@
         "position": "WR",
         "name": "Ja'Marr Chase",
         "nflTeam": "CIN",
-        "points": 13.0,
+        "points": 14.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -297,8 +297,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 60.0,
+          "receptions": 3.0,
+          "receivingYards": 73.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
