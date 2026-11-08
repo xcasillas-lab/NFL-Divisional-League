@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T17:25:19-06:00",
+  "lastUpdated": "2026-11-08T17:30:25-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 31.7,
-      "rightTotal": 101.1
+      "rightTotal": 109.26
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,13 +34,13 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 19.6,
+        "points": 25.56,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 165.0,
-          "passingTouchdowns": 1.0,
+          "passingYards": 214.0,
+          "passingTouchdowns": 2.0,
           "interceptions": 1.0,
           "rushingYards": 40.0,
           "rushingTouchdowns": 1.0,
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 19.5,
+        "points": 20.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 58.0,
+          "rushingYards": 63.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 12.0,
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "George Kittle",
         "nflTeam": "SF",
-        "points": 5.1,
+        "points": 6.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -170,8 +170,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 41.0,
+          "receptions": 3.0,
+          "receivingYards": 53.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
