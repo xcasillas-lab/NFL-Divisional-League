@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T17:00:28-06:00",
+  "lastUpdated": "2026-11-08T17:05:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
       "leftTotal": 104.32,
-      "rightTotal": 88.48
+      "rightTotal": 97.08
     },
     "2": {
       "leftOwner": "Joshua",
@@ -1153,7 +1153,7 @@
         "position": "TE",
         "name": "Brock Bowers",
         "nflTeam": "LV",
-        "points": 5.2,
+        "points": 13.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1163,9 +1163,9 @@
           "interceptions": 0.0,
           "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 35.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 4.0,
+          "receivingYards": 56.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
