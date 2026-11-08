@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T17:05:20-06:00",
+  "lastUpdated": "2026-11-08T17:10:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -19,7 +19,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 31.7,
-      "rightTotal": 98.42
+      "rightTotal": 99.1
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,14 +34,14 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 18.92,
+        "points": 18.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 123.0,
+          "passingYards": 135.0,
           "passingTouchdowns": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 40.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
-        "points": 19.5,
+        "points": 19.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 58.0,
+          "rushingYards": 60.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 12.0,
@@ -139,7 +139,7 @@
         "position": "TE",
         "name": "Trey McBride",
         "nflTeam": "ARI",
-        "points": 1.7,
+        "points": 2.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -149,8 +149,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 7.0,
+          "receptions": 3.0,
+          "receivingYards": 12.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
