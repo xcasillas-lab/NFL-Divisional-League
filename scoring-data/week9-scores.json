@@ -1,12 +1,12 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T10:40:18-06:00",
+  "lastUpdated": "2026-11-08T10:45:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
-      "leftTotal": 66.3,
+      "leftTotal": 79.7,
       "rightTotal": 0.0
     },
     "2": {
@@ -203,13 +203,13 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 23.62,
+        "points": 28.42,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 238.0,
-          "passingTouchdowns": 2.0,
+          "passingYards": 258.0,
+          "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
           "rushingTouchdowns": 1.0,
@@ -266,7 +266,7 @@
         "position": "WR",
         "name": "Tee Higgins",
         "nflTeam": "CIN",
-        "points": 9.1,
+        "points": 17.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -276,9 +276,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 16.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 5.0,
+          "receivingYards": 32.0,
+          "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
