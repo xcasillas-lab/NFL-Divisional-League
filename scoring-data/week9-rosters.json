@@ -370,7 +370,64 @@
     },
     "Dallas": {
       "division": "AFC West",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Patrick Mahomes",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Kenneth Walker III",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Ashton Jeanty",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Jaylen Waddle",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ladd McConkey",
+          "nflTeam": "LAC",
+          "nflTeamName": "Los Angeles Chargers",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Brock Bowers",
+          "nflTeam": "LV",
+          "nflTeamName": "Las Vegas Raiders",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Jonah Coleman",
+          "nflTeam": "DEN",
+          "nflTeamName": "Denver Broncos",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Kansas City Chiefs DEF",
+          "nflTeam": "KC",
+          "nflTeamName": "Kansas City Chiefs",
+          "jersey": null
+        }
+      ]
     },
     "Kendall": {
       "division": "AFC South",
