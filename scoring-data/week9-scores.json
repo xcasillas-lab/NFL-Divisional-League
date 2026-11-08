@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T16:20:20-06:00",
+  "lastUpdated": "2026-11-08T16:25:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
       "rightOwner": "Dallas",
       "leftTotal": 104.32,
-      "rightTotal": 82.68
+      "rightTotal": 83.48
     },
     "2": {
       "leftOwner": "Joshua",
@@ -19,7 +19,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
       "leftTotal": 31.7,
-      "rightTotal": 90.66
+      "rightTotal": 90.72
     },
     "4": {
       "leftOwner": "Juan",
@@ -34,15 +34,15 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 18.86,
+        "points": 18.92,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 124.0,
+          "passingYards": 123.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 39.0,
+          "rushingYards": 40.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1090,7 +1090,7 @@
         "position": "RB",
         "name": "Ashton Jeanty",
         "nflTeam": "LV",
-        "points": 0.9,
+        "points": 1.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1098,7 +1098,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 9.0,
+          "rushingYards": 15.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1153,7 +1153,7 @@
         "position": "TE",
         "name": "Brock Bowers",
         "nflTeam": "LV",
-        "points": 2.5,
+        "points": 2.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1161,7 +1161,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 2.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 20.0,
