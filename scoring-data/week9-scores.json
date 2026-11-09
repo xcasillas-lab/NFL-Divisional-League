@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T18:25:18-06:00",
+  "lastUpdated": "2026-11-08T18:30:24-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -1133,7 +1133,7 @@
         "name": "Ladd McConkey",
         "nflTeam": "LAC",
         "points": 0.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -1302,7 +1302,7 @@
         "name": "Nico Collins",
         "nflTeam": "HOU",
         "points": 13.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1323,7 +1323,7 @@
         "name": "Dalton Schultz",
         "nflTeam": "HOU",
         "points": 5.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
