@@ -937,6 +937,16 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   .week9-race-card{grid-template-columns:1fr;text-align:center}
   .week9-race-number{font-size:1.8rem}
 }
+
+/* ===== WEEK 9 PART II — DFFL 2027 TEAM TIERS ===== */
+.week9p2-hero{padding:16px;border:1px solid rgba(168,85,247,.34);border-radius:14px;background:radial-gradient(circle at 92% 10%,rgba(168,85,247,.13),transparent 28%),linear-gradient(180deg,#081525,#050d19)}
+.week9p2-kicker{color:#c084fc;font-size:.68rem;font-weight:900;letter-spacing:.11em;text-transform:uppercase}.week9p2-hero h3{margin:5px 0 10px;color:#f8fafc;font-size:1.25rem}.week9p2-hero p{margin:7px 0 0;color:#cbd5e1;font-size:.79rem;line-height:1.55}
+.week9p2-tier-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:13px}.week9p2-tier-card{padding:11px;border:1px solid #334155;border-radius:11px;background:#050d19}.week9p2-tier-card strong{display:block;font-size:.84rem}.week9p2-tier-card span{display:block;margin-top:3px;font-size:.67rem;font-weight:900;text-transform:uppercase}.week9p2-tier-card p{margin:5px 0 0;color:#94a3b8;font-size:.69rem;line-height:1.4}
+.week9p2-tier-card.platinum{border-color:rgba(226,232,240,.55)}.week9p2-tier-card.platinum strong,.tier-platinum{color:#e2e8f0}.week9p2-tier-card.gold{border-color:rgba(245,158,11,.50)}.week9p2-tier-card.gold strong,.tier-gold{color:#fbbf24}.week9p2-tier-card.silver{border-color:rgba(148,163,184,.50)}.week9p2-tier-card.silver strong,.tier-silver{color:#cbd5e1}.week9p2-tier-card.bronze{border-color:rgba(180,83,9,.55)}.week9p2-tier-card.bronze strong,.tier-bronze{color:#fdba74}
+.week9p2-table-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin:17px 0 8px}.week9p2-table-head strong{display:block;color:#f8fafc;font-size:.92rem}.week9p2-table-head small{display:block;margin-top:3px;color:#94a3b8;font-size:.69rem}.week9p2-table-head>span{color:#38bdf8;font-size:.67rem;font-weight:800}
+.week9p2-table-wrap{overflow-x:auto;border:1px solid #26374e;border-radius:12px;background:#050d19}.week9p2-table{width:100%;min-width:760px;margin:0;border-collapse:collapse;background:#050d19}.week9p2-table th{padding:9px 10px;background:#020617;color:#38bdf8;font-size:.64rem;text-transform:uppercase;letter-spacing:.04em;cursor:pointer;user-select:none;white-space:nowrap}.week9p2-table th:hover{color:#7dd3fc;background:#07111f}.week9p2-table td{padding:9px 10px;border-bottom:1px solid #1f2d40;color:#e2e8f0;font-size:.73rem;white-space:nowrap}.week9p2-table tbody tr:last-child td{border-bottom:0}.week9p2-table td:first-child{color:#38bdf8;font-weight:900;text-align:center}.week9p2-table td:nth-child(5),.week9p2-table td:nth-child(6){text-align:right}.week9p2-table td small{display:block;color:#64748b;font-size:.58rem;margin-top:2px}.team-tier{display:inline-block;padding:3px 8px;border-radius:999px;border:1px solid currentColor;font-size:.64rem;font-weight:900;background:rgba(15,23,42,.65)}
+.week9p2-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}.week9p2-notes article{padding:11px 12px;border:1px solid #26374e;border-radius:11px;background:#050d19}.week9p2-notes strong{display:block;color:#f8fafc;font-size:.76rem}.week9p2-notes p{margin:5px 0 0;color:#94a3b8;font-size:.71rem;line-height:1.45}.week9p2-closing{margin-top:12px;padding:12px 13px;border:1px solid rgba(168,85,247,.3);border-radius:11px;background:rgba(88,28,135,.10)}.week9p2-closing strong{color:#c084fc}.week9p2-closing p{margin:5px 0 0;color:#cbd5e1;font-size:.75rem;line-height:1.5}
+@media(max-width:900px){.week9p2-tier-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:700px){.week9p2-tier-grid,.week9p2-notes{grid-template-columns:1fr}.week9p2-table-head{display:block}.week9p2-table-head>span{display:block;margin-top:6px}.week9p2-hero{padding:13px}}
 </style>
 </head>
 <body>
@@ -950,11 +960,51 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
 <div class="newsletter-issue">November 4, 2026</div>
 </div>
-
-<div class="newsletter-collapse week9-lead-story">
+<div class="newsletter-collapse week9-part2-story">
+<button aria-controls="week9Part2Content" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button"><span><strong>📣 Week 9 Part II Update — A Glimpse at DFFL 2027 <span class="latest-new-badge">NEW</span></strong><small>Next season, you won't draft a division. You'll build one.</small></span><span aria-hidden="true" class="toggle-arrow">▾</span></button>
+<div class="newsletter-collapse-content" hidden="" id="week9Part2Content"><div class="week2-section-block">
+<div class="combined-update-divider">🏈 A GLIMPSE AT DFFL 2027</div>
+<div class="week9p2-hero"><div class="week9p2-kicker">CUSTOM DIVISION DRAFT PREVIEW</div><h3>Next season, the draft changes completely.</h3><p>In 2026, owners drafted one of the eight existing NFL divisions. Beginning next season, the plan is to draft individual NFL franchises and build your own custom DFFL division. That means owners will no longer inherit four teams that already belong together — they will have to decide which franchises give them the best combination of stars, depth and weekly fantasy production.</p><p>This table is an early glimpse at what that draft board could look like. Using the current Advanced Player data through Week 8, every NFL team's offensive fantasy production has been combined and ranked from top to bottom. The tiers are not a future draft order — they are a snapshot of how valuable each NFL franchise has been in the inaugural DFFL season so far.</p></div>
+<div class="week9p2-tier-grid"><article class="week9p2-tier-card platinum"><strong>💎 Platinum</strong><span>Ranks 1–8</span><p>Current top-tier fantasy-producing franchises.</p></article><article class="week9p2-tier-card gold"><strong>🥇 Gold</strong><span>Ranks 9–16</span><p>Strong teams that could anchor a custom division.</p></article><article class="week9p2-tier-card silver"><strong>🥈 Silver</strong><span>Ranks 17–24</span><p>Middle-tier teams with plenty of draft value.</p></article><article class="week9p2-tier-card bronze"><strong>🥉 Bronze</strong><span>Ranks 25–32</span><p>Lower production so far, but still potential value picks.</p></article></div>
+<div class="week9p2-table-head"><div><strong>2026 NFL Team Fantasy Production</strong><small>Through Week 8 • Offensive DFFL Fantasy Points</small></div><span>Click any column heading to sort</span></div>
+<div class="week9p2-table-wrap"><table class="week9p2-table" id="week9TeamTierTable"><thead><tr><th data-key="rank" data-type="number">Rank ↕</th><th data-key="team" data-type="text">NFL Team ↕</th><th data-key="division" data-type="text">Current DFFL Division ↕</th><th data-key="tier" data-type="tier">Tier ↕</th><th data-key="total" data-type="number">Total Fantasy Pts ↕</th><th data-key="avg" data-type="number">Avg / Game ↕</th></tr></thead><tbody><tr data-avg="87.46" data-division="NFC West" data-rank="1" data-team="LA Rams" data-tier="1" data-total="699.66"><td>1</td><td><b>LA Rams</b><small>LA</small></td><td>NFC West</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>699.66</b></td><td>87.46</td></tr>
+<tr data-avg="83.37" data-division="AFC West" data-rank="2" data-team="Las Vegas" data-tier="1" data-total="666.98"><td>2</td><td><b>Las Vegas</b><small>LV</small></td><td>AFC West</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>666.98</b></td><td>83.37</td></tr>
+<tr data-avg="82.89" data-division="NFC East" data-rank="3" data-team="Dallas" data-tier="1" data-total="663.14"><td>3</td><td><b>Dallas</b><small>DAL</small></td><td>NFC East</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>663.14</b></td><td>82.89</td></tr>
+<tr data-avg="82.8" data-division="NFC North" data-rank="4" data-team="Chicago" data-tier="1" data-total="662.44"><td>4</td><td><b>Chicago</b><small>CHI</small></td><td>NFC North</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>662.44</b></td><td>82.80</td></tr>
+<tr data-avg="94.09" data-division="AFC North" data-rank="5" data-team="Cincinnati" data-tier="1" data-total="658.6"><td>5</td><td><b>Cincinnati</b><small>CIN</small></td><td>AFC North</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>658.60</b></td><td>94.09</td></tr>
+<tr data-avg="92.57" data-division="NFC North" data-rank="6" data-team="Detroit" data-tier="1" data-total="647.96"><td>6</td><td><b>Detroit</b><small>DET</small></td><td>NFC North</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>647.96</b></td><td>92.57</td></tr>
+<tr data-avg="78.88" data-division="AFC East" data-rank="7" data-team="New England" data-tier="1" data-total="631.06"><td>7</td><td><b>New England</b><small>NE</small></td><td>AFC East</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>631.06</b></td><td>78.88</td></tr>
+<tr data-avg="78.87" data-division="NFC North" data-rank="8" data-team="Green Bay" data-tier="1" data-total="630.94"><td>8</td><td><b>Green Bay</b><small>GB</small></td><td>NFC North</td><td><span class="team-tier tier-platinum">💎 Platinum</span></td><td><b>630.94</b></td><td>78.87</td></tr>
+<tr data-avg="87.92" data-division="AFC East" data-rank="9" data-team="Buffalo" data-tier="2" data-total="615.42"><td>9</td><td><b>Buffalo</b><small>BUF</small></td><td>AFC East</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>615.42</b></td><td>87.92</td></tr>
+<tr data-avg="86.6" data-division="NFC West" data-rank="10" data-team="San Francisco" data-tier="2" data-total="606.22"><td>10</td><td><b>San Francisco</b><small>SF</small></td><td>NFC West</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>606.22</b></td><td>86.60</td></tr>
+<tr data-avg="75.33" data-division="NFC West" data-rank="11" data-team="Seattle" data-tier="2" data-total="602.66"><td>11</td><td><b>Seattle</b><small>SEA</small></td><td>NFC West</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>602.66</b></td><td>75.33</td></tr>
+<tr data-avg="73.61" data-division="NFC West" data-rank="12" data-team="Arizona" data-tier="2" data-total="588.86"><td>12</td><td><b>Arizona</b><small>ARI</small></td><td>NFC West</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>588.86</b></td><td>73.61</td></tr>
+<tr data-avg="73.44" data-division="AFC North" data-rank="13" data-team="Pittsburgh" data-tier="2" data-total="587.54"><td>13</td><td><b>Pittsburgh</b><small>PIT</small></td><td>AFC North</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>587.54</b></td><td>73.44</td></tr>
+<tr data-avg="83.65" data-division="NFC South" data-rank="14" data-team="Carolina" data-tier="2" data-total="585.52"><td>14</td><td><b>Carolina</b><small>CAR</small></td><td>NFC South</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>585.52</b></td><td>83.65</td></tr>
+<tr data-avg="72.93" data-division="AFC East" data-rank="15" data-team="NY Jets" data-tier="2" data-total="583.42"><td>15</td><td><b>NY Jets</b><small>NYJ</small></td><td>AFC East</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>583.42</b></td><td>72.93</td></tr>
+<tr data-avg="72.84" data-division="AFC North" data-rank="16" data-team="Baltimore" data-tier="2" data-total="582.7"><td>16</td><td><b>Baltimore</b><small>BAL</small></td><td>AFC North</td><td><span class="team-tier tier-gold">🥇 Gold</span></td><td><b>582.70</b></td><td>72.84</td></tr>
+<tr data-avg="82.39" data-division="AFC West" data-rank="17" data-team="Kansas City" data-tier="3" data-total="576.7"><td>17</td><td><b>Kansas City</b><small>KC</small></td><td>AFC West</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>576.70</b></td><td>82.39</td></tr>
+<tr data-avg="81.69" data-division="AFC South" data-rank="18" data-team="Jacksonville" data-tier="3" data-total="571.82"><td>18</td><td><b>Jacksonville</b><small>JAX</small></td><td>AFC South</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>571.82</b></td><td>81.69</td></tr>
+<tr data-avg="80.38" data-division="AFC South" data-rank="19" data-team="Houston" data-tier="3" data-total="562.68"><td>19</td><td><b>Houston</b><small>HOU</small></td><td>AFC South</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>562.68</b></td><td>80.38</td></tr>
+<tr data-avg="77.52" data-division="NFC South" data-rank="20" data-team="New Orleans" data-tier="3" data-total="542.64"><td>20</td><td><b>New Orleans</b><small>NO</small></td><td>NFC South</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>542.64</b></td><td>77.52</td></tr>
+<tr data-avg="67.02" data-division="NFC South" data-rank="21" data-team="Atlanta" data-tier="3" data-total="536.16"><td>21</td><td><b>Atlanta</b><small>ATL</small></td><td>NFC South</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>536.16</b></td><td>67.02</td></tr>
+<tr data-avg="75.51" data-division="NFC East" data-rank="22" data-team="NY Giants" data-tier="3" data-total="528.58"><td>22</td><td><b>NY Giants</b><small>NYG</small></td><td>NFC East</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>528.58</b></td><td>75.51</td></tr>
+<tr data-avg="72.43" data-division="NFC East" data-rank="23" data-team="Washington" data-tier="3" data-total="506.98"><td>23</td><td><b>Washington</b><small>WAS</small></td><td>NFC East</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>506.98</b></td><td>72.43</td></tr>
+<tr data-avg="62.95" data-division="AFC North" data-rank="24" data-team="Cleveland" data-tier="3" data-total="503.62"><td>24</td><td><b>Cleveland</b><small>CLE</small></td><td>AFC North</td><td><span class="team-tier tier-silver">🥈 Silver</span></td><td><b>503.62</b></td><td>62.95</td></tr>
+<tr data-avg="62.87" data-division="NFC East" data-rank="25" data-team="Philadelphia" data-tier="4" data-total="502.94"><td>25</td><td><b>Philadelphia</b><small>PHI</small></td><td>NFC East</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>502.94</b></td><td>62.87</td></tr>
+<tr data-avg="62.58" data-division="AFC West" data-rank="26" data-team="Denver" data-tier="4" data-total="500.62"><td>26</td><td><b>Denver</b><small>DEN</small></td><td>AFC West</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>500.62</b></td><td>62.58</td></tr>
+<tr data-avg="60.15" data-division="AFC South" data-rank="27" data-team="Indianapolis" data-tier="4" data-total="481.2"><td>27</td><td><b>Indianapolis</b><small>IND</small></td><td>AFC South</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>481.20</b></td><td>60.15</td></tr>
+<tr data-avg="57.97" data-division="AFC South" data-rank="28" data-team="Tennessee" data-tier="4" data-total="463.72"><td>28</td><td><b>Tennessee</b><small>TEN</small></td><td>AFC South</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>463.72</b></td><td>57.97</td></tr>
+<tr data-avg="57.64" data-division="NFC South" data-rank="29" data-team="Tampa Bay" data-tier="4" data-total="461.1"><td>29</td><td><b>Tampa Bay</b><small>TB</small></td><td>NFC South</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>461.10</b></td><td>57.64</td></tr>
+<tr data-avg="60.27" data-division="NFC North" data-rank="30" data-team="Minnesota" data-tier="4" data-total="421.92"><td>30</td><td><b>Minnesota</b><small>MIN</small></td><td>NFC North</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>421.92</b></td><td>60.27</td></tr>
+<tr data-avg="58.69" data-division="AFC East" data-rank="31" data-team="Miami" data-tier="4" data-total="410.82"><td>31</td><td><b>Miami</b><small>MIA</small></td><td>AFC East</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>410.82</b></td><td>58.69</td></tr>
+<tr data-avg="55.57" data-division="AFC West" data-rank="32" data-team="LA Chargers" data-tier="4" data-total="389.02"><td>32</td><td><b>LA Chargers</b><small>LAC</small></td><td>AFC West</td><td><span class="team-tier tier-bronze">🥉 Bronze</span></td><td><b>389.02</b></td><td>55.57</td></tr></tbody></table></div>
+<div class="week9p2-notes"><article><strong>💎 Platinum doesn't necessarily mean first-round lock.</strong><p>The tier simply reflects current 2026 production. Next year's real draft strategy could look very different once owners factor in injuries, roster changes, rookies, bye weeks and positional balance.</p></article><article><strong>🧠 Building a division changes the strategy.</strong><p>Instead of asking, “Which NFL division is strongest?” owners may be deciding whether to chase one elite Platinum franchise early or build a deeper custom division using several Gold and Silver teams.</p></article></div>
+<div class="week9p2-closing"><strong>This is where DFFL 2.0 starts to get interesting.</strong><p>Imagine four NFL teams that have never shared a division suddenly becoming your fantasy roster pool. The 2026 season is giving us our first real data on which franchises owners may be fighting over when that draft arrives.</p></div>
+</div></div></div><div class="newsletter-collapse week9-lead-story">
 <button aria-controls="week9UpdatesContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
 <span>
-<strong>📣 Week 9 — The Players Powering the DFFL <span class="latest-new-badge">NEW</span></strong>
+<strong>📣 Week 9 — The Players Powering the DFFL </strong>
 <small>Advanced Stats spotlight: elite scorers, position kings, Week 8 heat and the race to 200.</small>
 </span>
 <span aria-hidden="true" class="toggle-arrow">▾</span>
@@ -2107,5 +2157,31 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape') closeAdvancedAnalysis();
 });
 </script>
-</body>
+<script>
+(function(){
+ const table=document.getElementById('week9TeamTierTable'); if(!table)return;
+ const tbody=table.querySelector('tbody'); const headers=table.querySelectorAll('th[data-key]');
+ let currentKey='total', currentDir='desc';
+ function sortRows(key,type,dir){
+  const rows=Array.from(tbody.querySelectorAll('tr'));
+  rows.sort((a,b)=>{
+   const av=a.dataset[key], bv=b.dataset[key];
+   if(type==='tier'){
+    const ta=Number(av), tb=Number(bv);
+    if(ta!==tb) return dir==='asc'?ta-tb:tb-ta;
+    return Number(b.dataset.total)-Number(a.dataset.total);
+   }
+   if(type==='number'){const na=Number(av),nb=Number(bv);return dir==='asc'?na-nb:nb-na;}
+   const cmp=String(av).localeCompare(String(bv)); return dir==='asc'?cmp:-cmp;
+  }); rows.forEach(r=>tbody.appendChild(r));
+ }
+ headers.forEach(th=>th.addEventListener('click',()=>{
+  const key=th.dataset.key,type=th.dataset.type; let dir;
+  if(key==='tier') dir=(currentKey===key&&currentDir==='asc')?'desc':'asc';
+  else if(currentKey===key) dir=currentDir==='asc'?'desc':'asc';
+  else dir=(key==='total'||key==='avg')?'desc':'asc';
+  currentKey=key; currentDir=dir; sortRows(key,type,dir);
+ }));
+ sortRows('total','number','desc');
+})();</script></body>
 </html>
