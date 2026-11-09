@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T21:05:21-06:00",
+  "lastUpdated": "2026-11-08T21:10:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -25,7 +25,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Xavier",
       "leftTotal": 114.1,
-      "rightTotal": 92.2
+      "rightTotal": 92.9
     }
   },
   "players": {
@@ -1005,7 +1005,7 @@
         "position": "FLEX",
         "name": "Bucky Irving",
         "nflTeam": "TB",
-        "points": 5.5,
+        "points": 6.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1013,7 +1013,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 32.0,
+          "rushingYards": 39.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 13.0,
