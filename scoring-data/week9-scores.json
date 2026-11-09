@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T21:35:17-06:00",
+  "lastUpdated": "2026-11-08T21:40:21-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 70.8,
+      "leftTotal": 71.08,
       "rightTotal": 118.88
     },
     "4": {
@@ -710,12 +710,12 @@
         "position": "QB",
         "name": "Caleb Williams",
         "nflTeam": "CHI",
-        "points": 14.1,
+        "points": 14.38,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 200.0,
+          "passingYards": 207.0,
           "passingTouchdowns": 2.0,
           "interceptions": 3.0,
           "rushingYards": 11.0,
