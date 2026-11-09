@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T18:20:21-06:00",
+  "lastUpdated": "2026-11-08T18:25:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -119,7 +119,7 @@
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
         "points": 8.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -140,7 +140,7 @@
         "name": "Trey McBride",
         "nflTeam": "ARI",
         "points": 8.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -182,7 +182,7 @@
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
         "points": 10.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 3,
