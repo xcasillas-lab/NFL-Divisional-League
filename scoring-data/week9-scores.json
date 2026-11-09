@@ -1,7 +1,7 @@
 {
   "week": 9,
-  "status": "live",
-  "lastUpdated": "2026-11-08T22:35:17-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-08T22:40:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 79.34,
+      "leftTotal": 80.46,
       "rightTotal": 118.88
     },
     "4": {
@@ -710,15 +710,15 @@
         "position": "QB",
         "name": "Caleb Williams",
         "nflTeam": "CHI",
-        "points": 15.64,
-        "gameStatus": "live",
+        "points": 16.76,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 241.0,
+          "passingYards": 279.0,
           "passingTouchdowns": 2.0,
           "interceptions": 4.0,
-          "rushingYards": 20.0,
+          "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -837,7 +837,7 @@
         "name": "Rome Odunze",
         "nflTeam": "CHI",
         "points": 14.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -858,7 +858,7 @@
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
         "points": 18.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 24,
@@ -1006,7 +1006,7 @@
         "name": "Bucky Irving",
         "nflTeam": "TB",
         "points": 26.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
