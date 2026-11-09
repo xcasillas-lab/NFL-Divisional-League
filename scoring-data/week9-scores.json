@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-08T22:00:25-06:00",
+  "lastUpdated": "2026-11-08T22:05:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Ben",
-      "leftTotal": 78.98,
+      "leftTotal": 76.98,
       "rightTotal": 118.88
     },
     "4": {
@@ -857,13 +857,13 @@
         "position": "DEF",
         "name": "Chicago Bears DEF",
         "nflTeam": "CHI",
-        "points": 19.0,
+        "points": 17.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 13,
-          "pointsAllowedFantasy": 4.0,
-          "sacks": 1.0,
+          "pointsAllowed": 16,
+          "pointsAllowedFantasy": 1.0,
+          "sacks": 2.0,
           "interceptions": 4.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
