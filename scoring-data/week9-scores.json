@@ -1,7 +1,7 @@
 {
   "week": 9,
-  "status": "pre-game",
-  "lastUpdated": "2026-11-09T19:15:22-06:00",
+  "status": "live",
+  "lastUpdated": "2026-11-09T19:20:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 29.9,
+      "leftTotal": 30.0,
       "rightTotal": 74.78
     },
     "3": {
@@ -373,9 +373,9 @@
         "name": "Josh Allen",
         "nflTeam": "BUF",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -393,15 +393,15 @@
         "position": "RB",
         "name": "James Cook III",
         "nflTeam": "BUF",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.1,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -436,7 +436,7 @@
         "name": "Keon Coleman",
         "nflTeam": "BUF",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "Justin Jefferson",
         "nflTeam": "MIN",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
