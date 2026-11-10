@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-09T19:50:20-06:00",
+  "lastUpdated": "2026-11-09T19:55:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -775,8 +775,8 @@
         "nflTeam": "MIN",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
