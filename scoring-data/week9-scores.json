@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "lastUpdated": "2026-11-09T21:45:22-06:00",
+  "lastUpdated": "2026-11-09T21:50:28-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Joshua",
       "rightOwner": "Kendall",
-      "leftTotal": 49.76,
+      "leftTotal": 49.96,
       "rightTotal": 74.78
     },
     "3": {
@@ -393,7 +393,7 @@
         "position": "RB",
         "name": "James Cook III",
         "nflTeam": "BUF",
-        "points": 5.5,
+        "points": 5.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -401,7 +401,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 55.0,
+          "rushingYards": 57.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
