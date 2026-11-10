@@ -1,7 +1,7 @@
 {
   "week": 9,
-  "status": "live",
-  "lastUpdated": "2026-11-09T22:25:18-06:00",
+  "status": "final",
+  "lastUpdated": "2026-11-09T22:30:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Brian",
@@ -373,7 +373,7 @@
         "name": "Josh Allen",
         "nflTeam": "BUF",
         "points": 13.86,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -394,7 +394,7 @@
         "name": "James Cook III",
         "nflTeam": "BUF",
         "points": 16.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -436,7 +436,7 @@
         "name": "Keon Coleman",
         "nflTeam": "BUF",
         "points": 3.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -774,7 +774,7 @@
         "name": "Justin Jefferson",
         "nflTeam": "MIN",
         "points": 7.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
