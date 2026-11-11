@@ -2188,7 +2188,7 @@ function normalizeDFFLPlayerName(name){
   return norm;
 }
 
-/* Current JSON is the only source of displayed averages. Historical data above
+/* Latest available season JSON is the only source of displayed averages, even when the current week is ahead of statsThroughWeek. Historical data above
    is deliberately never used for missing, invalid, or unavailable current data. */
 const DFFL_PLAYER_STATS_URL = location.protocol === "file:"
   ? "https://dff-league.com/scoring-data/player-stats.json" : "/scoring-data/player-stats.json";
@@ -2205,15 +2205,16 @@ function renderDFFLStatsStatus(){
     box.setAttribute("aria-live","polite");
     availableTeams.insertAdjacentElement("afterend",box);
   }
-  const required=Math.max(8,getWeekNumber()-1);
-  const current=dfflFantasyStatsLiveLoaded && dfflFantasyStatsThroughWeek>=required;
+  const required=Math.max(1,getWeekNumber()-1);
+  const loaded=dfflFantasyStatsLiveLoaded && Number.isInteger(dfflFantasyStatsThroughWeek);
+  const behind=loaded && dfflFantasyStatsThroughWeek<required;
   box.style.cssText="padding:12px;margin:12px 0;border:1px solid;border-radius:8px;"+
-    (current?"background:#e8f5e9;color:#174c25":"background:#fff3cd;color:#664d03");
-  box.textContent=current
-    ? "Player averages loaded through Week "+dfflFantasyStatsThroughWeek+". Players without a valid current match show N/A; selected missing averages make the lineup total unavailable."
-    : "Warning: current player averages unavailable. "+(dfflFantasyStatsLiveLoaded
-      ? "Stats are only through Week "+dfflFantasyStatsThroughWeek+"; Week "+required+" or later is required."
-      : dfflStatsError)+" Old averages are not used. Roster selection and submission remain available.";
+    (!loaded?"background:#fff3cd;color:#664d03":behind?"background:#eaf2ff;color:#153b65":"background:#e8f5e9;color:#174c25");
+  box.textContent=!loaded
+    ? "Warning: player averages unavailable. "+dfflStatsError+" Old embedded averages are not used. Roster selection and submission remain available."
+    : behind
+      ? "Player averages through Week "+dfflFantasyStatsThroughWeek+" — Week "+(dfflFantasyStatsThroughWeek+1)+(required>dfflFantasyStatsThroughWeek+1?" and later updates pending.":" update pending.")+" Using the latest available season AVG PPG for player ranking and lineup projections."
+      : "Player averages loaded through Week "+dfflFantasyStatsThroughWeek+". Players are ranked by season AVG PPG, highest first.";
 }
 async function loadDFFLPlayerStats(){
   dfflFantasyStatsLiveByPlayer={};
@@ -2257,7 +2258,7 @@ async function loadDFFLPlayerStats(){
 }
 const dfflStatTeamCodes={"Arizona Cardinals":"ARI","Atlanta Falcons":"ATL","Baltimore Ravens":"BAL","Buffalo Bills":"BUF","Carolina Panthers":"CAR","Chicago Bears":"CHI","Cincinnati Bengals":"CIN","Cleveland Browns":"CLE","Dallas Cowboys":"DAL","Denver Broncos":"DEN","Detroit Lions":"DET","Green Bay Packers":"GB","Houston Texans":"HOU","Indianapolis Colts":"IND","Jacksonville Jaguars":"JAX","Kansas City Chiefs":"KC","Las Vegas Raiders":"LV","Los Angeles Chargers":"LAC","Los Angeles Rams":"LAR","Miami Dolphins":"MIA","Minnesota Vikings":"MIN","New England Patriots":"NE","New Orleans Saints":"NO","New York Giants":"NYG","New York Jets":"NYJ","Philadelphia Eagles":"PHI","Pittsburgh Steelers":"PIT","San Francisco 49ers":"SF","Seattle Seahawks":"SEA","Tampa Bay Buccaneers":"TB","Tennessee Titans":"TEN","Washington Commanders":"WAS"};
 function getDFFLFantasyStat(team,player){
-  if(!dfflFantasyStatsLiveLoaded || dfflFantasyStatsThroughWeek<Math.max(8,getWeekNumber()-1)) return null;
+  if(!dfflFantasyStatsLiveLoaded) return null;
   const candidates=dfflFantasyStatsLiveByPlayer[normalizeDFFLPlayerName(player)] || [];
   const matches=candidates.filter(stat=>stat.nflTeam===(dfflStatTeamCodes[team] || String(team).toUpperCase()));
   if(matches.length===1) return matches[0];
