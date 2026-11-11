@@ -679,7 +679,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
         <tbody id="advReportBody"></tbody>
       </table>
     </div>
-    <p class="adv-report-foot">Live player data loads from /scoring-data/player-stats.json. Minimum Games Played applies to the currently selected weeks.</p>
+    <p class="adv-report-foot">Live player data loads from /scoring-data/player-stats.json. Team and division reflect where each selected week was played (including trades); a traded player may have separate rows for old and new teams. Minimum Games Played applies within each team stint and selected weeks.</p>
   </div>
 </div>
 
@@ -711,7 +711,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     </div>
 
     <div class="adv-share-list" id="advDivisionShareList"></div>
-    <p class="adv-share-foot">Example: if NFC West has 5 of the selected Top 20 RBs, its share is 25%. Percentages use the actual number of ranked players returned by the current filters.</p>
+    <p class="adv-share-foot">Example: if NFC West has 5 of the selected Top 20 player/team entries, its share is 25%. A traded player may contribute one entry per NFL team when the selected weeks span a trade. Percentages use the ranked entries returned by the current filters.</p>
   </div>
 </div>
 
@@ -1478,33 +1478,48 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     render();
   });
 
-  function calcPlayer(p,weeks){
-    const vals=weeks
-      .filter(w=>Object.prototype.hasOwnProperty.call(p.weeklyPoints||{},w))
-      .map(w=>Number(p.weeklyPoints[w]))
-      .filter(Number.isFinite);
+  // DFFL trade protection: score each week against the NFL team/division
+  // the player represented that week. Current nflTeam/division are used only
+  // for players without a matching historical interval (legacy records).
+  function teamForWeek(p,week){
+    const n=Number(week);
+    const history=Array.isArray(p.teamHistory) ? p.teamHistory : [];
+    const period=history.find(h=>
+      Number.isFinite(n) &&
+      n>=Number(h.fromWeek ?? 1) &&
+      n<=Number(h.throughWeek ?? 999)
+    );
+    return {
+      nflTeam: period ? (period.nflTeam || period.team || p.nflTeam) : p.nflTeam,
+      division: period ? (period.division || p.division) : p.division
+    };
+  }
 
-    const total=vals.reduce((a,b)=>a+b,0);
-    const gp=vals.length;
-    const avg=gp?total/gp:0;
-
-    let best=0,bestWeek=null;
+  // One player may have multiple rows if the selected weeks span a trade.
+  // This protects division totals without changing the player's season stats.
+  function calcPlayerByHistoricalTeam(p,weeks){
+    const byTeam=new Map();
     weeks.forEach(w=>{
-      const v=Number((p.weeklyPoints||{})[w]);
-      if(Number.isFinite(v) && (bestWeek===null || v>best)){
-        best=v;
-        bestWeek=w;
+      if(!Object.prototype.hasOwnProperty.call(p.weeklyPoints||{},w)) return;
+      const v=Number(p.weeklyPoints[w]);
+      if(!Number.isFinite(v)) return;
+      const {nflTeam,division}=teamForWeek(p,w);
+      const key=division+"|"+nflTeam;
+      if(!byTeam.has(key)) byTeam.set(key,{
+        ...p,nflTeam,division,selectedGP:0,selectedTotal:0,
+        selectedAvg:0,selectedBest:0,selectedBestWeek:null
+      });
+      const row=byTeam.get(key);
+      row.selectedGP++;
+      row.selectedTotal+=v;
+      if(row.selectedBestWeek===null || v>row.selectedBest){
+        row.selectedBest=v;
+        row.selectedBestWeek=w;
       }
     });
-
-    return {
-      ...p,
-      selectedGP:gp,
-      selectedTotal:total,
-      selectedAvg:avg,
-      selectedBest:best,
-      selectedBestWeek:bestWeek
-    };
+    return Array.from(byTeam.values()).map(row=>({
+      ...row,selectedAvg:row.selectedGP?row.selectedTotal/row.selectedGP:0
+    }));
   }
 
   function fmt(n){return Number(n).toFixed(2);}
@@ -1523,10 +1538,9 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
     minGames=Math.max(0,Math.min(10,minGames));
 
     let rows=(PLAYER_STATS.players||[])
-      .filter(p=>divs.includes(p.division))
       .filter(p=>positions.includes(p.position))
-      .map(p=>calcPlayer(p,weeks))
-      .filter(p=>p.selectedGP>0)
+      .flatMap(p=>calcPlayerByHistoricalTeam(p,weeks))
+      .filter(p=>divs.includes(p.division))
       .filter(p=>p.selectedGP>=minGames);
 
     const key=metric==="total" ? "selectedTotal" : metric==="best" ? "selectedBest" : "selectedAvg";
