@@ -1,7 +1,7 @@
 {
   "week": 10,
-  "status": "pending",
-  "lastUpdated": null,
+  "status": "pre-game",
+  "lastUpdated": "2026-11-12T00:00:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -40,17 +40,23 @@
   },
   "source": {
     "primary": "ESPN public NFL JSON",
-    "dates": [],
+    "dates": [
+      "20261112",
+      "20261113",
+      "20261114",
+      "20261115",
+      "20261116"
+    ],
     "stage": "2026-week10-production",
     "owners": [
-      "Ben",
-      "Brian",
-      "Joshua",
-      "Juan",
-      "JetLiX",
-      "Xavier",
       "Dallas",
-      "Kendall"
+      "Ben",
+      "Juan",
+      "Xavier",
+      "Joshua",
+      "Kendall",
+      "Brian",
+      "JetLiX"
     ],
     "defenseIncluded": true,
     "defenseNote": "D/ST includes points allowed, sacks, INT, fumble recoveries, safeties, blocked kicks, defensive TDs and kick/punt return TDs."
