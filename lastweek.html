@@ -1687,5 +1687,30 @@ card.addEventListener('click',open);card.addEventListener('keydown',function(e){
   select(0);
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup();
-})();</script></body>
+})();</script>
+<!-- DFFL Week Recap spacing normalization: presentation-only, no recap data changes -->
+<style id="dffl-consistent-recap-spacing">
+.recap-shell { display:flex !important; flex-direction:column !important; gap:20px !important; }
+.recap-shell > .week-recap-card { margin:0 !important; flex:0 0 auto; }
+</style>
+<script id="dffl-recap-layout-normalizer">
+(function () {
+  function normalizeWeekRecaps() {
+    var shell = document.querySelector('.recap-shell');
+    if (!shell) return;
+    // A few older cards were inadvertently nested inside Week 5.
+    // Move only the existing cards (with all contents/events intact) to be siblings.
+    for (var week = 9; week >= 1; week--) {
+      var toggle = document.getElementById('week' + week + 'Toggle');
+      if (!toggle) continue;
+      var card = toggle.closest('.week-recap-card');
+      if (card) shell.appendChild(card);
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', normalizeWeekRecaps, {once:true});
+  } else { normalizeWeekRecaps(); }
+})();
+</script>
+</body>
 </html>
