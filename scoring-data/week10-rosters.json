@@ -8,7 +8,64 @@
     },
     "Brian": {
       "division": "AFC North",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Joe Burrow",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Derrick Henry",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Jaylen Warren",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Tee Higgins",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Ja'Marr Chase",
+          "nflTeam": "CIN",
+          "nflTeamName": "Cincinnati Bengals",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Harold Fannin Jr.",
+          "nflTeam": "CLE",
+          "nflTeamName": "Cleveland Browns",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Zay Flowers",
+          "nflTeam": "BAL",
+          "nflTeamName": "Baltimore Ravens",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Pittsburgh Steelers DEF",
+          "nflTeam": "PIT",
+          "nflTeamName": "Pittsburgh Steelers",
+          "jersey": null
+        }
+      ]
     },
     "Joshua": {
       "division": "AFC East",
@@ -16,7 +73,64 @@
     },
     "Juan": {
       "division": "NFC East",
-      "players": []
+      "players": [
+        {
+          "position": "QB",
+          "name": "Dak Prescott",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Javonte Williams",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "RB",
+          "name": "Rachaad White",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "CeeDee Lamb",
+          "nflTeam": "DAL",
+          "nflTeamName": "Dallas Cowboys",
+          "jersey": null
+        },
+        {
+          "position": "WR",
+          "name": "Malik Nabers",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": null
+        },
+        {
+          "position": "TE",
+          "name": "Isaiah Likely",
+          "nflTeam": "NYG",
+          "nflTeamName": "New York Giants",
+          "jersey": null
+        },
+        {
+          "position": "FLEX",
+          "name": "Stefon Diggs",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": null
+        },
+        {
+          "position": "DEF",
+          "name": "Washington Commanders DEF",
+          "nflTeam": "WAS",
+          "nflTeamName": "Washington Commanders",
+          "jersey": null
+        }
+      ]
     },
     "JetLiX": {
       "division": "NFC North",
