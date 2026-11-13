@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-12T21:10:20-06:00",
+  "lastUpdated": "2026-11-12T21:15:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 19.5,
+      "leftTotal": 22.1,
       "rightTotal": 0.0
     },
     "4": {
@@ -289,7 +289,7 @@
         "position": "WR",
         "name": "Malik Nabers",
         "nflTeam": "NYG",
-        "points": 2.3,
+        "points": 4.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -299,10 +299,10 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 8.0,
+          "receptions": 5.0,
+          "receivingYards": 44.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
