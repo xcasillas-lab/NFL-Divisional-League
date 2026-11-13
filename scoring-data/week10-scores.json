@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-12T21:40:19-06:00",
+  "lastUpdated": "2026-11-12T21:45:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 27.5,
+      "leftTotal": 39.6,
       "rightTotal": 0.0
     },
     "4": {
@@ -310,7 +310,7 @@
         "position": "TE",
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
-        "points": 10.1,
+        "points": 23.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -320,9 +320,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 8.0,
-          "receivingYards": 61.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 9.0,
+          "receivingYards": 127.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
@@ -352,12 +352,12 @@
         "position": "DEF",
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
-        "points": 2.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 14,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 21,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
