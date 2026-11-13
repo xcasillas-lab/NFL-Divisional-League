@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-12T22:00:24-06:00",
+  "lastUpdated": "2026-11-12T22:05:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 43.1,
+      "leftTotal": 46.4,
       "rightTotal": 0.0
     },
     "4": {
@@ -247,7 +247,7 @@
         "position": "RB",
         "name": "Rachaad White",
         "nflTeam": "WAS",
-        "points": 5.8,
+        "points": 5.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -255,7 +255,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 48.0,
+          "rushingYards": 47.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 5.0,
@@ -331,7 +331,7 @@
         "position": "FLEX",
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
-        "points": 6.2,
+        "points": 7.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -341,8 +341,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 4.0,
-          "receivingYards": 42.0,
+          "receptions": 5.0,
+          "receivingYards": 51.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -352,14 +352,14 @@
         "position": "DEF",
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
-        "points": 3.0,
+        "points": 5.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 21,
           "pointsAllowedFantasy": 0.0,
           "sacks": 1.0,
-          "interceptions": 1.0,
+          "interceptions": 2.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
