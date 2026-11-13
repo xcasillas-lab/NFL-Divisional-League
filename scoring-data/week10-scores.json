@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-12T22:10:27-06:00",
+  "lastUpdated": "2026-11-12T22:15:21-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 46.4,
+      "leftTotal": 56.1,
       "rightTotal": 0.0
     },
     "4": {
@@ -331,7 +331,7 @@
         "position": "FLEX",
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
-        "points": 7.6,
+        "points": 17.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -341,9 +341,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 51.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 6.0,
+          "receivingYards": 83.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
