@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-12T20:25:18-06:00",
+  "lastUpdated": "2026-11-12T20:30:25-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 18.7,
+      "leftTotal": 20.1,
       "rightTotal": 0.0
     },
     "4": {
@@ -247,7 +247,7 @@
         "position": "RB",
         "name": "Rachaad White",
         "nflTeam": "WAS",
-        "points": 0.6,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -255,7 +255,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 6.0,
+          "rushingYards": 20.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
