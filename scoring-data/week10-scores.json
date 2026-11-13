@@ -1,7 +1,7 @@
 {
   "week": 10,
-  "status": "live",
-  "lastUpdated": "2026-11-12T22:20:20-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-12T22:25:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -248,7 +248,7 @@
         "name": "Rachaad White",
         "nflTeam": "WAS",
         "points": 5.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -290,7 +290,7 @@
         "name": "Malik Nabers",
         "nflTeam": "NYG",
         "points": 4.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -311,7 +311,7 @@
         "name": "Isaiah Likely",
         "nflTeam": "NYG",
         "points": 23.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -332,7 +332,7 @@
         "name": "Stefon Diggs",
         "nflTeam": "WAS",
         "points": 17.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -353,7 +353,7 @@
         "name": "Washington Commanders DEF",
         "nflTeam": "WAS",
         "points": 5.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 21,
