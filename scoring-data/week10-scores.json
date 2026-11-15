@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T13:30:21-06:00",
+  "lastUpdated": "2026-11-15T13:35:16-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 41.24,
+      "leftTotal": 41.14,
       "rightTotal": 48.02
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 4.7,
-      "rightTotal": 54.98
+      "rightTotal": 55.86
     },
     "3": {
       "leftOwner": "Juan",
@@ -372,7 +372,7 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 9.34,
+        "points": 9.24,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -380,7 +380,7 @@
           "passingYards": 71.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 5.0,
+          "rushingYards": 4.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -1217,12 +1217,12 @@
         "position": "QB",
         "name": "Trevor Lawrence",
         "nflTeam": "JAX",
-        "points": 11.68,
+        "points": 12.56,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 212.0,
+          "passingYards": 234.0,
           "passingTouchdowns": 1.0,
           "interceptions": 1.0,
           "rushingYards": 2.0,
