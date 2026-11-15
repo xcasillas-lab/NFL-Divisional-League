@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T17:20:25-06:00",
+  "lastUpdated": "2026-11-15T17:25:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 73.14,
-      "rightTotal": 96.3
+      "leftTotal": 74.54,
+      "rightTotal": 98.9
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 3.6,
+        "points": 4.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 17.0,
+          "rushingYards": 23.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 9.0,
@@ -181,13 +181,13 @@
         "position": "DEF",
         "name": "Seattle Seahawks DEF",
         "nflTeam": "SEA",
-        "points": 6.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 2.0,
+          "sacks": 4.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 12.54,
+        "points": 13.54,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 111.0,
+          "passingYards": 136.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 4.5,
+        "points": 4.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 45.0,
+          "rushingYards": 49.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
