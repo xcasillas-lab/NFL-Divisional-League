@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T16:50:17-06:00",
+  "lastUpdated": "2026-11-15T16:55:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 72.96,
-      "rightTotal": 71.04
+      "leftTotal": 72.86,
+      "rightTotal": 71.48
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -34,12 +34,12 @@
         "position": "QB",
         "name": "Brock Purdy",
         "nflTeam": "SF",
-        "points": 17.44,
+        "points": 17.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 206.0,
+          "passingYards": 217.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 12.0,
@@ -541,7 +541,7 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 12.36,
+        "points": 12.26,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -549,7 +549,7 @@
           "passingYards": 104.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
-          "rushingYards": 2.0,
+          "rushingYards": 1.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
