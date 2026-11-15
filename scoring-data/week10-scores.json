@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T15:20:24-06:00",
+  "lastUpdated": "2026-11-15T15:25:27-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 56.1,
-      "rightTotal": 8.1
+      "rightTotal": 12.1
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Zach Charbonnet",
         "nflTeam": "SEA",
-        "points": 0.6,
+        "points": 4.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 6.0,
+          "rushingYards": 41.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 1.2,
+        "points": 1.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 5.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 7.0,
