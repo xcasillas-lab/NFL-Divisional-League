@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T10:35:16-06:00",
+  "lastUpdated": "2026-11-15T10:40:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 58.72,
+      "leftTotal": 73.14,
       "rightTotal": 0.0
     }
   },
@@ -374,13 +374,13 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 15.42,
+        "points": 20.54,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 228.0,
-          "passingTouchdowns": 2.0,
+          "passingYards": 256.0,
+          "passingTouchdowns": 3.0,
           "interceptions": 2.0,
           "rushingYards": 3.0,
           "rushingTouchdowns": 0.0,
@@ -500,7 +500,7 @@
         "position": "FLEX",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 14.5,
+        "points": 23.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -510,9 +510,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 70.0,
-          "receivingTouchdowns": 1.0,
+          "receptions": 4.0,
+          "receivingYards": 98.0,
+          "receivingTouchdowns": 2.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
