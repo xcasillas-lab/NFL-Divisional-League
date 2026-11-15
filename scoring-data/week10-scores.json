@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T11:15:23-06:00",
+  "lastUpdated": "2026-11-15T11:20:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 78.12,
+      "leftTotal": 86.92,
       "rightTotal": 0.0
     }
   },
@@ -395,7 +395,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 31.9,
+        "points": 40.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -403,8 +403,8 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 125.0,
-          "rushingTouchdowns": 1.0,
+          "rushingYards": 153.0,
+          "rushingTouchdowns": 2.0,
           "receptions": 7.0,
           "receivingYards": 99.0,
           "receivingTouchdowns": 0.0,
