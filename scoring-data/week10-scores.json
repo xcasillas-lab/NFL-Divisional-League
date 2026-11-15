@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T17:15:26-06:00",
+  "lastUpdated": "2026-11-15T17:20:25-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 72.86,
-      "rightTotal": 95.5
+      "leftTotal": 73.14,
+      "rightTotal": 96.3
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Zach Charbonnet",
         "nflTeam": "SEA",
-        "points": 8.9,
+        "points": 9.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 89.0,
+          "rushingYards": 92.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 3.1,
+        "points": 3.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -168,7 +168,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 12.0,
+          "rushingYards": 17.0,
           "rushingTouchdowns": 0.0,
           "receptions": 2.0,
           "receivingYards": 9.0,
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 12.26,
+        "points": 12.54,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 104.0,
+          "passingYards": 111.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 1.0,
