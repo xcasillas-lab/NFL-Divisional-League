@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T09:05:27-06:00",
+  "lastUpdated": "2026-11-15T09:10:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 21.12,
+      "leftTotal": 25.76,
       "rightTotal": 0.0
     }
   },
@@ -374,15 +374,15 @@
         "position": "QB",
         "name": "Jared Goff",
         "nflTeam": "DET",
-        "points": 6.52,
+        "points": 7.26,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 63.0,
+          "passingYards": 74.0,
           "passingTouchdowns": 1.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 3.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -395,7 +395,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 1.3,
+        "points": 5.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -403,10 +403,10 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 13.0,
+          "rushingYards": 43.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 4.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
