@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T15:45:21-06:00",
+  "lastUpdated": "2026-11-15T15:50:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,8 +18,8 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 57.6,
-      "rightTotal": 27.36
+      "leftTotal": 58.06,
+      "rightTotal": 28.16
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Zach Charbonnet",
         "nflTeam": "SEA",
-        "points": 3.7,
+        "points": 3.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 37.0,
+          "rushingYards": 38.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -160,7 +160,7 @@
         "position": "FLEX",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 2.0,
+        "points": 2.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -170,8 +170,8 @@
           "interceptions": 0.0,
           "rushingYards": 8.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 7.0,
+          "receptions": 2.0,
+          "receivingYards": 9.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 0.0,
+        "points": 0.36,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 0.0,
+          "passingYards": 9.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -562,7 +562,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 1.5,
+        "points": 1.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -570,7 +570,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 15.0,
+          "rushingYards": 16.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
