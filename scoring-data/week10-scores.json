@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T13:40:19-06:00",
+  "lastUpdated": "2026-11-15T13:45:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 41.14,
-      "rightTotal": 48.02
+      "leftTotal": 40.14,
+      "rightTotal": 48.4
     },
     "2": {
       "leftOwner": "Brian",
@@ -25,7 +25,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
       "leftTotal": 100.52,
-      "rightTotal": 33.34
+      "rightTotal": 35.24
     }
   },
   "players": {
@@ -519,12 +519,12 @@
         "position": "DEF",
         "name": "Miami Dolphins DEF",
         "nflTeam": "MIA",
-        "points": 3.0,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 14,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 21,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 0.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
@@ -921,7 +921,7 @@
         "position": "RB",
         "name": "Chuba Hubbard",
         "nflTeam": "CAR",
-        "points": 15.5,
+        "points": 16.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -929,7 +929,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 63.0,
+          "rushingYards": 72.0,
           "rushingTouchdowns": 1.0,
           "receptions": 3.0,
           "receivingYards": 17.0,
@@ -1026,13 +1026,13 @@
         "position": "DEF",
         "name": "Atlanta Falcons DEF",
         "nflTeam": "ATL",
-        "points": 1.0,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 14,
           "pointsAllowedFantasy": 1.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
@@ -1048,12 +1048,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 16.22,
+        "points": 16.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 183.0,
+          "passingYards": 190.0,
           "passingTouchdowns": 2.0,
           "interceptions": 0.0,
           "rushingYards": 9.0,
@@ -1069,7 +1069,7 @@
         "position": "RB",
         "name": "Emmett Johnson",
         "nflTeam": "KC",
-        "points": 18.5,
+        "points": 18.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1077,7 +1077,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 50.0,
+          "rushingYards": 51.0,
           "rushingTouchdowns": 0.0,
           "receptions": 4.0,
           "receivingYards": 55.0,
