@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T16:55:19-06:00",
+  "lastUpdated": "2026-11-15T17:00:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -19,7 +19,7 @@
       "leftOwner": "Juan",
       "rightOwner": "Ben",
       "leftTotal": 72.86,
-      "rightTotal": 71.48
+      "rightTotal": 85.78
     },
     "4": {
       "leftOwner": "JetLiX",
@@ -76,7 +76,7 @@
         "position": "RB",
         "name": "Zach Charbonnet",
         "nflTeam": "SEA",
-        "points": 5.3,
+        "points": 6.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -84,7 +84,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 53.0,
+          "rushingYards": 60.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -97,7 +97,7 @@
         "position": "WR",
         "name": "Jaxon Smith-Njigba",
         "nflTeam": "SEA",
-        "points": 7.9,
+        "points": 21.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -107,9 +107,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 64.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 4.0,
+          "receivingYards": 135.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
