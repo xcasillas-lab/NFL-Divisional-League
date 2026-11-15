@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T12:40:23-06:00",
+  "lastUpdated": "2026-11-15T12:45:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
-      "leftTotal": 24.06,
+      "leftTotal": 21.06,
       "rightTotal": 32.6
     },
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
       "leftTotal": 1.2,
-      "rightTotal": 35.54
+      "rightTotal": 37.24
     },
     "3": {
       "leftOwner": "Juan",
@@ -24,7 +24,7 @@
     "4": {
       "leftOwner": "JetLiX",
       "rightOwner": "Xavier",
-      "leftTotal": 96.32,
+      "leftTotal": 98.32,
       "rightTotal": 14.62
     }
   },
@@ -519,12 +519,12 @@
         "position": "DEF",
         "name": "Miami Dolphins DEF",
         "nflTeam": "MIA",
-        "points": 7.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 6,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 7,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -817,8 +817,8 @@
         "nflTeam": "GB",
         "points": 0.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -857,14 +857,14 @@
         "position": "DEF",
         "name": "Green Bay Packers DEF",
         "nflTeam": "GB",
-        "points": 5.0,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 10,
           "pointsAllowedFantasy": 4.0,
           "sacks": 1.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
           "blockedKicks": 0.0,
@@ -1259,7 +1259,7 @@
         "position": "RB",
         "name": "Bhayshul Tuten",
         "nflTeam": "JAX",
-        "points": 3.4,
+        "points": 3.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1267,7 +1267,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 18.0,
+          "rushingYards": 22.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 11.0,
@@ -1280,7 +1280,7 @@
         "position": "WR",
         "name": "Nico Collins",
         "nflTeam": "HOU",
-        "points": 12.2,
+        "points": 13.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1290,8 +1290,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 47.0,
+          "receptions": 4.0,
+          "receivingYards": 55.0,
           "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
