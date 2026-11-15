@@ -1,7 +1,7 @@
 {
   "week": 10,
-  "status": "live",
-  "lastUpdated": "2026-11-15T11:35:16-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-15T11:40:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -310,7 +310,7 @@
         "name": "Hunter Henry",
         "nflTeam": "NE",
         "points": 3.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -543,7 +543,7 @@
         "name": "Jared Goff",
         "nflTeam": "DET",
         "points": 22.42,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -564,7 +564,7 @@
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
         "points": 40.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -669,7 +669,7 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 23.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
