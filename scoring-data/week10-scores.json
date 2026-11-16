@@ -1,7 +1,7 @@
 {
   "week": 10,
-  "status": "live",
-  "lastUpdated": "2026-11-15T18:45:20-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-15T18:50:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 113.14,
+      "leftTotal": 113.42,
       "rightTotal": 153.26
     },
     "4": {
@@ -35,7 +35,7 @@
         "name": "Brock Purdy",
         "nflTeam": "SF",
         "points": 29.66,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -56,7 +56,7 @@
         "name": "Christian McCaffrey",
         "nflTeam": "SF",
         "points": 42.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -119,7 +119,7 @@
         "name": "Deebo Samuel Sr.",
         "nflTeam": "SF",
         "points": 24.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -541,12 +541,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 33.14,
-        "gameStatus": "live",
+        "points": 33.42,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 336.0,
+          "passingYards": 343.0,
           "passingTouchdowns": 5.0,
           "interceptions": 1.0,
           "rushingYards": 7.0,
@@ -563,7 +563,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 7.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -605,7 +605,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 16.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
