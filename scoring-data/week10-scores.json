@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T20:50:22-06:00",
+  "lastUpdated": "2026-11-15T20:55:21-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
-      "leftTotal": 65.08,
+      "leftTotal": 68.68,
       "rightTotal": 105.58
     },
     "3": {
@@ -203,13 +203,13 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 20.28,
+        "points": 24.88,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 287.0,
-          "passingTouchdowns": 2.0,
+          "passingYards": 302.0,
+          "passingTouchdowns": 3.0,
           "interceptions": 0.0,
           "rushingYards": 8.0,
           "rushingTouchdowns": 0.0,
@@ -350,12 +350,12 @@
         "position": "DEF",
         "name": "Pittsburgh Steelers DEF",
         "nflTeam": "PIT",
-        "points": 2.0,
+        "points": 1.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 17,
-          "pointsAllowedFantasy": 1.0,
+          "pointsAllowed": 24,
+          "pointsAllowedFantasy": 0.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
