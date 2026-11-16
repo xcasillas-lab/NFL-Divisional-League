@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T19:50:30-06:00",
+  "lastUpdated": "2026-11-15T19:55:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
-      "leftTotal": 33.2,
+      "leftTotal": 36.84,
       "rightTotal": 105.58
     },
     "3": {
@@ -203,15 +203,15 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 5.1,
+        "points": 5.64,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 105.0,
+          "passingYards": 121.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 9.0,
+          "rushingYards": 8.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -266,7 +266,7 @@
         "position": "WR",
         "name": "Tee Higgins",
         "nflTeam": "CIN",
-        "points": 1.5,
+        "points": 3.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -276,8 +276,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 1.0,
-          "receivingYards": 10.0,
+          "receptions": 2.0,
+          "receivingYards": 26.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -350,13 +350,13 @@
         "position": "DEF",
         "name": "Pittsburgh Steelers DEF",
         "nflTeam": "PIT",
-        "points": 7.0,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 3,
           "pointsAllowedFantasy": 7.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
