@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "pre-game",
-  "lastUpdated": "2026-11-16T10:05:26-06:00",
+  "lastUpdated": "2026-11-16T10:10:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -1130,7 +1130,7 @@
       },
       {
         "position": "WR",
-        "name": "Ladd McConkey",
+        "name": "Quentin Johnston",
         "nflTeam": "LAC",
         "points": 0.0,
         "gameStatus": "pre-game",
