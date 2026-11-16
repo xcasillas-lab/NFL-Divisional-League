@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T22:00:25-06:00",
+  "lastUpdated": "2026-11-15T22:05:25-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
-      "leftTotal": 84.82,
+      "leftTotal": 87.06,
       "rightTotal": 105.58
     },
     "3": {
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 33.12,
+        "points": 33.16,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 408.0,
+          "passingYards": 409.0,
           "passingTouchdowns": 4.0,
           "interceptions": 0.0,
           "rushingYards": 8.0,
@@ -245,7 +245,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 4.5,
+        "points": 6.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -255,8 +255,8 @@
           "interceptions": 0.0,
           "rushingYards": 15.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 15.0,
+          "receptions": 5.0,
+          "receivingYards": 26.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -287,7 +287,7 @@
         "position": "WR",
         "name": "Ja'Marr Chase",
         "nflTeam": "CIN",
-        "points": 28.5,
+        "points": 28.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -298,7 +298,7 @@
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 11.0,
-          "receivingYards": 230.0,
+          "receivingYards": 231.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
