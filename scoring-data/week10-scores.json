@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T21:35:27-06:00",
+  "lastUpdated": "2026-11-15T21:40:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -12,7 +12,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Kendall",
-      "leftTotal": 81.2,
+      "leftTotal": 81.44,
       "rightTotal": 105.58
     },
     "3": {
@@ -203,12 +203,12 @@
         "position": "QB",
         "name": "Joe Burrow",
         "nflTeam": "CIN",
-        "points": 31.2,
+        "points": 31.44,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 360.0,
+          "passingYards": 366.0,
           "passingTouchdowns": 4.0,
           "interceptions": 0.0,
           "rushingYards": 8.0,
