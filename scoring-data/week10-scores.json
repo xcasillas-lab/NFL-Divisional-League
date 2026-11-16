@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-15T18:35:22-06:00",
+  "lastUpdated": "2026-11-15T18:40:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -18,7 +18,7 @@
     "3": {
       "leftOwner": "Juan",
       "rightOwner": "Ben",
-      "leftTotal": 102.5,
+      "leftTotal": 113.14,
       "rightTotal": 153.06
     },
     "4": {
@@ -541,13 +541,13 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 29.1,
+        "points": 33.14,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 335.0,
-          "passingTouchdowns": 4.0,
+          "passingYards": 336.0,
+          "passingTouchdowns": 5.0,
           "interceptions": 1.0,
           "rushingYards": 7.0,
           "rushingTouchdowns": 0.0,
@@ -604,7 +604,7 @@
         "position": "WR",
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
-        "points": 10.1,
+        "points": 16.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -614,9 +614,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 71.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 7.0,
+          "receivingYards": 72.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
