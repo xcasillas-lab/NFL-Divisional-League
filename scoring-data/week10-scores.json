@@ -1,7 +1,7 @@
 {
   "week": 10,
-  "status": "live",
-  "lastUpdated": "2026-11-15T22:20:21-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-15T22:25:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -204,7 +204,7 @@
         "name": "Joe Burrow",
         "nflTeam": "CIN",
         "points": 33.16,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -246,7 +246,7 @@
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
         "points": 6.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -267,7 +267,7 @@
         "name": "Tee Higgins",
         "nflTeam": "CIN",
         "points": 9.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -288,7 +288,7 @@
         "name": "Ja'Marr Chase",
         "nflTeam": "CIN",
         "points": 28.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -351,7 +351,7 @@
         "name": "Pittsburgh Steelers DEF",
         "nflTeam": "PIT",
         "points": -3.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 38,
