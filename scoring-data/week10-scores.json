@@ -1,7 +1,7 @@
 {
   "week": 10,
-  "status": "live",
-  "lastUpdated": "2026-11-16T22:20:21-06:00",
+  "status": "final",
+  "lastUpdated": "2026-11-16T22:25:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -225,7 +225,7 @@
         "name": "Derrick Henry",
         "nflTeam": "BAL",
         "points": 16.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -330,7 +330,7 @@
         "name": "Zay Flowers",
         "nflTeam": "BAL",
         "points": 8.4,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1133,7 +1133,7 @@
         "name": "Quentin Johnston",
         "nflTeam": "LAC",
         "points": 1.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1175,7 +1175,7 @@
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
         "points": 17.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
