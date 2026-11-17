@@ -681,6 +681,20 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
   .week1-final-modal{padding:8px}
   .week1-final-modal-shell{width:100%;max-height:96vh}
 }</style>
+
+<style id="dfflQuarterfinalArchiveStyle">
+.playoff-quarterfinal-row{
+  border-color:#2563eb;
+  box-shadow:inset 0 0 0 1px rgba(37,99,235,.16);
+}
+.playoff-quarterfinal-row .week-block{
+  background:linear-gradient(180deg,#172554,#0b1626);
+}
+.playoff-quarterfinal-row .week-block strong{color:#7dd3fc}
+.playoff-quarterfinal-row .week-block span{color:#bfdbfe}
+.playoff-quarterfinal-row .compact-team b{color:#f8fafc}
+</style>
+
 </head>
 <body>
 <header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
@@ -689,11 +703,11 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <section class="matchups-dashboard">
 <div class="matchups-shell">
 <div class="matchups-titlebar">
-<div><h2>🏈 Weekly Matchups</h2><p>10 regular-season weeks • Division vs. division</p></div>
-<div class="season-chip">2026 REGULAR SEASON</div>
+<div><h2>🏆 DFFL Playoffs</h2><p>Quarterfinals • Semifinals • Championship</p></div>
+<div class="season-chip">2026 POSTSEASON</div>
 </div>
 <div class="current-week-panel">
-<span class="current-week-label">This Week</span><span class="current-week-sub">Week 6 Preview</span>
+<span class="current-week-label">PLAYOFFS</span><span class="current-week-sub">Week 12 Playoffs — Quarterfinals</span>
 <div class="matchups-current-grid"><div aria-controls="matchup-detail-1" aria-expanded="false" aria-label="Open Week 6 game details" class="featured-matchup" id="featured-matchup-1" role="button" tabindex="0"><div aria-controls="matchup-detail-1" aria-expanded="false" class="full-division"></div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Dallas (3-2)</div><div class="owner-score">0.00</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Xavier (1-4)</div><div class="owner-score">0.00</div></div></div><div class="matchup-time">Pending kickoff</div></div><div aria-controls="matchup-detail-2" aria-expanded="false" aria-label="Open Week 6 game details" class="featured-matchup" id="featured-matchup-2" role="button" tabindex="0"><div aria-controls="matchup-detail-2" aria-expanded="false" class="full-division"></div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Brian (4-1)</div><div class="owner-score">0.00</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Ben (5-0)</div><div class="owner-score">0.00</div></div></div><div class="matchup-time">Pending kickoff</div></div><div aria-controls="matchup-detail-3" aria-expanded="false" aria-label="Open Week 6 game details" class="featured-matchup" id="featured-matchup-3" role="button" tabindex="0"><div aria-controls="matchup-detail-3" aria-expanded="false" class="full-division"></div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Joshua (1-4)</div><div class="owner-score">0.00</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Juan (1-4)</div><div class="owner-score">0.00</div></div></div><div class="matchup-time">Pending kickoff</div></div><div aria-controls="matchup-detail-4" aria-expanded="false" aria-label="Open Week 6 game details" class="featured-matchup" id="featured-matchup-4" role="button" tabindex="0"><div aria-controls="matchup-detail-4" aria-expanded="false" class="full-division"></div><div class="featured-helmet-vs"><div class="featured-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">Kendall (2-3)</div><div class="owner-score">0.00</div></div><div class="vs-mark">VS</div><div class="featured-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><div class="owner-label">JetLiX (3-2)</div><div class="owner-score">0.00</div></div></div><div class="matchup-time">Pending kickoff</div></div></div>
 <div class="matchup-detail-panel" id="matchup-detail-1">
 <div class="matchup-detail-top"><div><div class="matchup-detail-kicker">Matchup 1 Details</div><strong>AFC WEST VS NFC SOUTH</strong></div><button class="matchup-detail-hide" onclick="toggleMatchupDetail(1, false)" type="button">HIDE DETAILS ⌃</button></div>
@@ -730,19 +744,50 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </div>
 <div class="season-list-panel">
-<div class="season-list-heading"><h3>Season Matchups</h3><span>Weeks 1–10</span></div>
+<div class="season-list-heading"><h3>Season Matchups</h3><span>Regular Season + Playoffs</span></div>
 <div class="season-week-list"><div class="season-week-row week1-results-row" id="season-week-1"><div class="week-block"><small>Week</small><strong>1</strong><span>Regular Season</span></div><div class="week-matchups">
 <div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b><span class="compact-score">122.26</span></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b><span class="compact-score">169.66</span></div></div>
 <div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b><span class="compact-score">95.60</span></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b><span class="compact-score">119.06</span></div></div>
 <div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b><span class="compact-score">89.12</span></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b><span class="compact-score">99.30</span></div></div>
 <div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b><span class="compact-score">108.90</span></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b><span class="compact-score">101.74</span></div></div>
-</div><div class="week-status final"><span class="status-icon">✓</span><span>FINAL</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>2</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>3</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>4</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>5</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>6</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>7</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>8</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>9</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>10</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div></div>
+</div><div class="week-status final"><span class="status-icon">✓</span><span>FINAL</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>2</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>3</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>4</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>5</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>6</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>7</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>8</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>9</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div><div class="season-week-row"><div class="week-block"><small>Week</small><strong>10</strong><span>Regular Season</span></div><div class="week-matchups"><div class="compact-matchup"><div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>AFCS</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCE</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCW</b></div></div><div class="compact-matchup"><div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCN</b></div><div class="compact-vs">VS</div><div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>NFCS</b></div></div></div><div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div></div>
+<div class="season-week-row playoff-quarterfinal-row" id="season-week-12-playoffs">
+  <div class="week-block">
+    <small>Week</small>
+    <strong>12</strong>
+    <span>Playoffs • Quarterfinals</span>
+  </div>
+  <div class="week-matchups">
+    <div class="compact-matchup">
+      <div class="compact-team"><img alt="NFC West helmet" data-helmet="NFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#1 NFCW</b></div>
+      <div class="compact-vs">VS</div>
+      <div class="compact-team"><img alt="NFC South helmet" data-helmet="NFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#8 NFCS</b></div>
+    </div>
+    <div class="compact-matchup">
+      <div class="compact-team"><img alt="AFC North helmet" data-helmet="AFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#2 AFCN</b></div>
+      <div class="compact-vs">VS</div>
+      <div class="compact-team"><img alt="NFC East helmet" data-helmet="NFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#7 NFCE</b></div>
+    </div>
+    <div class="compact-matchup">
+      <div class="compact-team"><img alt="NFC North helmet" data-helmet="NFC North" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#3 NFCN</b></div>
+      <div class="compact-vs">VS</div>
+      <div class="compact-team"><img alt="AFC East helmet" data-helmet="AFC East" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#6 AFCE</b></div>
+    </div>
+    <div class="compact-matchup">
+      <div class="compact-team"><img alt="AFC West helmet" data-helmet="AFC West" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#4 AFCW</b></div>
+      <div class="compact-vs">VS</div>
+      <div class="compact-team"><img alt="AFC South helmet" data-helmet="AFC South" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="/><b>#5 AFCS</b></div>
+    </div>
+  </div>
+  <div class="week-status"><span class="status-icon">◷</span><span>Upcoming</span></div>
+</div>
+</div>
 </div>
 <div class="matchups-info">
 <div class="how-it-works"><h3>How It Works</h3><div class="rules-strip">
-<div class="rule-item"><span class="rule-icon">🎯</span><div><b>Head-to-Head</b>Four division matchups each week.</div></div>
-<div class="rule-item"><span class="rule-icon">🏆</span><div><b>Top 6 Advance</b>The six best records reach the playoffs.</div></div>
-<div class="rule-item"><span class="rule-icon">🛡️</span><div><b>Tiebreakers</b>Head-to-head, points for, then points against.</div></div>
+<div class="rule-item"><span class="rule-icon">🏆</span><div><b>Win & Advance</b>Every playoff matchup is elimination football.</div></div>
+<div class="rule-item"><span class="rule-icon">4️⃣</span><div><b>Quarterfinals</b>Week 12 starts with four seeded matchups.</div></div>
+<div class="rule-item"><span class="rule-icon">⭐</span><div><b>Championship</b>The final two divisions meet in Week 16.</div></div>
 </div></div>
 <div class="owner-feedback"><h3>✉ Owner Feedback</h3><p>Have ideas or corrections? Send them to Xavier at <a href="mailto:xcasillas@gmail.com">xcasillas@gmail.com</a>.</p></div>
 </div>
@@ -1165,6 +1210,227 @@ async function dfflLoadAutomaticMatchups(){
 }
 document.addEventListener("DOMContentLoaded",function(){dfflLoadAutomaticMatchups();setInterval(dfflLoadAutomaticMatchups,DFFL_REFRESH_MS);});
 </script>
+
+<script id="dfflPostseasonAutomation">
+/* ===== DFFL POSTSEASON AUTOMATION =====
+   Week 10 is final. The current matchup area now advances through:
+   Week 12 Quarterfinals -> Week 15 Semifinals -> Week 16 Championship.
+   Regular-season Weeks 1-10 remain the permanent archive below.
+*/
+const DFFL_FINAL_RECORDS = {
+  "Ben":{w:10,l:0},
+  "Brian":{w:8,l:2},
+  "JetLiX":{w:5,l:5},
+  "Dallas":{w:5,l:5},
+  "Kendall":{w:5,l:5},
+  "Joshua":{w:3,l:7},
+  "Juan":{w:3,l:7},
+  "Xavier":{w:1,l:9}
+};
+
+const DFFL_PLAYOFF_SEEDS = {
+  "Ben":1,"Brian":2,"JetLiX":3,"Dallas":4,
+  "Kendall":5,"Joshua":6,"Juan":7,"Xavier":8
+};
+
+const DFFL_PLAYOFF_ROUNDS = {
+  12:{name:"Quarterfinals",matchups:4},
+  15:{name:"Semifinals",matchups:2},
+  16:{name:"Championship",matchups:1}
+};
+
+const DFFL_WEEK12_QUARTERFINALS = [
+  ["Ben","Xavier"],
+  ["Brian","Juan"],
+  ["JetLiX","Joshua"],
+  ["Dallas","Kendall"]
+];
+
+window.DFFL_PLAYOFF_WEEK_DATA = {};
+
+function dfflPlayoffJsonUrl(week,type){
+  return "/scoring-data/playoffs-week"+week+"-"+type+".json";
+}
+
+function dfflPlayoffWinner(scoreData,pair){
+  if(!scoreData||!pair)return null;
+  const totals=dfflAutoFindScore(scoreData,pair[0],pair[1]);
+  if(totals.leftTotal>totals.rightTotal)return pair[0];
+  if(totals.rightTotal>totals.leftTotal)return pair[1];
+  return null;
+}
+
+function dfflExplicitPlayoffSchedule(scoreData){
+  const values=Object.values((scoreData&&scoreData.matchups)||{});
+  const pairs=[];
+  values.forEach(function(m){
+    if(m&&m.leftOwner&&m.rightOwner)pairs.push([m.leftOwner,m.rightOwner]);
+  });
+  return pairs;
+}
+
+function dfflGetPlayoffSchedule(week,scoreData){
+  /* If the scoring JSON already carries pairings, trust those first. */
+  const explicit=dfflExplicitPlayoffSchedule(scoreData);
+  if(explicit.length)return explicit;
+
+  if(Number(week)===12)return DFFL_WEEK12_QUARTERFINALS.slice();
+
+  if(Number(week)===15){
+    const qf=(window.DFFL_PLAYOFF_WEEK_DATA[12]||{}).scores;
+    if(!dfflAutoIsFinal(qf))return [];
+    const w1=dfflPlayoffWinner(qf,DFFL_WEEK12_QUARTERFINALS[0]);
+    const w2=dfflPlayoffWinner(qf,DFFL_WEEK12_QUARTERFINALS[1]);
+    const w3=dfflPlayoffWinner(qf,DFFL_WEEK12_QUARTERFINALS[2]);
+    const w4=dfflPlayoffWinner(qf,DFFL_WEEK12_QUARTERFINALS[3]);
+    return (w1&&w4&&w2&&w3)?[[w1,w4],[w2,w3]]:[];
+  }
+
+  if(Number(week)===16){
+    const sf=(window.DFFL_PLAYOFF_WEEK_DATA[15]||{}).scores;
+    if(!dfflAutoIsFinal(sf))return [];
+    const sfSchedule=dfflGetPlayoffSchedule(15,sf);
+    if(sfSchedule.length<2)return [];
+    const w1=dfflPlayoffWinner(sf,sfSchedule[0]);
+    const w2=dfflPlayoffWinner(sf,sfSchedule[1]);
+    return (w1&&w2)?[[w1,w2]]:[];
+  }
+  return [];
+}
+
+function dfflSetPlayoffPageChrome(week,scoreData){
+  const round=(DFFL_PLAYOFF_ROUNDS[week]||{}).name||"Playoffs";
+  const h2=document.querySelector(".matchups-titlebar h2");
+  const sub=document.querySelector(".matchups-titlebar p");
+  const chip=document.querySelector(".season-chip");
+  const label=document.querySelector(".current-week-label");
+  const current=document.querySelector(".current-week-sub");
+
+  if(h2)h2.textContent="🏆 DFFL Playoffs";
+  if(sub)sub.textContent="Quarterfinals • Semifinals • Championship";
+  if(chip)chip.textContent="2026 POSTSEASON";
+  if(label)label.textContent="PLAYOFFS";
+
+  if(current){
+    let text="Week "+week+" Playoffs — "+round;
+    if(scoreData&&scoreData.lastUpdated){
+      const updated=new Date(scoreData.lastUpdated);
+      const formatted=Number.isNaN(updated.getTime())?scoreData.lastUpdated:updated.toLocaleString("en-US",{
+        timeZone:"America/Chicago",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"
+      });
+      text += " • Updated "+formatted+" CT";
+    }else if(dfflAutoIsFinal(scoreData)){
+      text += " • FINAL";
+    }
+    current.textContent=text;
+  }
+}
+
+function dfflSetPlayoffCardVisibility(count){
+  for(let i=1;i<=4;i++){
+    const card=document.getElementById("featured-matchup-"+i);
+    const panel=document.getElementById("matchup-detail-"+i);
+    const show=i<=count;
+    if(card){card.style.display=show?"":"none";if(!show)card.classList.remove("is-open");}
+    if(panel){panel.style.display=show?"":"none";if(!show)panel.classList.remove("active");}
+  }
+  const grid=document.querySelector(".matchups-current-grid");
+  if(grid){
+    grid.style.gridTemplateColumns=count===1?"minmax(0,1fr)":count===2?"repeat(2,minmax(0,1fr))":"repeat(4,minmax(0,1fr))";
+  }
+}
+
+function dfflUpdatePlayoffMatchup(matchupId,leftOwner,rightOwner,rosterData,scoreData,week){
+  const card=document.getElementById("featured-matchup-"+matchupId);
+  const panel=document.getElementById("matchup-detail-"+matchupId);
+  if(!card||!panel||!leftOwner||!rightOwner)return;
+
+  /* Reuse the proven regular-season renderer. */
+  dfflUpdateCurrentMatchup(String(matchupId),leftOwner,rightOwner,rosterData,scoreData,DFFL_FINAL_RECORDS);
+  panel.dataset.dfflWeek=String(week);
+  card.dataset.dfflWeek=String(week);
+
+  const leftSeed=DFFL_PLAYOFF_SEEDS[leftOwner]||"";
+  const rightSeed=DFFL_PLAYOFF_SEEDS[rightOwner]||"";
+  const li=DFFL_OWNER_DIVISION[leftOwner]||{};
+  const ri=DFFL_OWNER_DIVISION[rightOwner]||{};
+  const header=card.querySelector(".full-division");
+  if(header)header.textContent="#"+leftSeed+" "+(li.abbr||leftOwner)+"  vs  #"+rightSeed+" "+(ri.abbr||rightOwner);
+
+  card.setAttribute("aria-label","Open Week "+week+" playoff matchup details");
+  const kicker=panel.querySelector(".matchup-detail-kicker");
+  const round=(DFFL_PLAYOFF_ROUNDS[week]||{}).name||"Playoffs";
+  if(kicker)kicker.textContent="Week "+week+" Playoffs • "+round+" • Matchup "+matchupId;
+}
+
+async function dfflDeterminePlayoffWeek(){
+  const weeks=[12,15,16];
+  for(const week of weeks){
+    const scores=await dfflAutoFetchJson(dfflPlayoffJsonUrl(week,"scores"));
+    window.DFFL_PLAYOFF_WEEK_DATA[week]={scores:scores,rosters:null};
+    if(!dfflAutoIsFinal(scores))return week;
+  }
+  return 16;
+}
+
+async function dfflRefreshRegularSeasonArchive(){
+  /* Preserve all automatic Week 6-10 final history exactly as before. */
+  await dfflDetermineActiveWeek();
+  for(let w=6;w<=10;w++){
+    dfflUpdateSeasonPairings(w);
+    let data=window.DFFL_AUTO_WEEK_DATA[w]||{};
+    if(!data.scores)data.scores=await dfflAutoFetchJson(dfflAutoJsonUrl(w,"scores"));
+    if(dfflAutoIsFinal(data.scores)){
+      data.rosters=await dfflAutoFetchJson(dfflAutoJsonUrl(w,"rosters"));
+      window.DFFL_AUTO_WEEK_DATA[w]=data;
+      dfflMarkSeasonFinal(w,data.scores);
+    }
+  }
+}
+
+/* Paint the real Week 12 bracket immediately so there is no regular-season flash. */
+(function dfflPrimeWeek12PlayoffCards(){
+  const emptyRosters={week:12,round:"quarterfinals",locked:false,rosters:{}};
+  const emptyScores={week:12,round:"quarterfinals",status:"pending",lastUpdated:null,matchups:{},players:{}};
+  window.DFFL_ACTIVE_WEEK=12;
+  dfflSetPlayoffCardVisibility(4);
+  dfflSetPlayoffPageChrome(12,emptyScores);
+  DFFL_WEEK12_QUARTERFINALS.forEach(function(pair,index){
+    dfflUpdatePlayoffMatchup(index+1,pair[0],pair[1],emptyRosters,emptyScores,12);
+  });
+})();
+
+/* Override the regular-season loader after Week 10 completion. */
+dfflLoadAutomaticMatchups = async function(){
+  await dfflRefreshRegularSeasonArchive();
+
+  const week=await dfflDeterminePlayoffWeek();
+  window.DFFL_ACTIVE_WEEK=week;
+
+  const rosterData=await dfflAutoFetchJson(dfflPlayoffJsonUrl(week,"rosters"))||{week:week,round:(DFFL_PLAYOFF_ROUNDS[week]||{}).name||"",locked:false,rosters:{}};
+  const cached=window.DFFL_PLAYOFF_WEEK_DATA[week]||{};
+  const scoreData=cached.scores||await dfflAutoFetchJson(dfflPlayoffJsonUrl(week,"scores"))||{week:week,status:"pending",lastUpdated:null,matchups:{},players:{}};
+  window.DFFL_PLAYOFF_WEEK_DATA[week]={scores:scoreData,rosters:rosterData};
+
+  /* Ensure prior final round data is present when deriving advancing teams. */
+  if(week>=15&&!window.DFFL_PLAYOFF_WEEK_DATA[12]){
+    window.DFFL_PLAYOFF_WEEK_DATA[12]={scores:await dfflAutoFetchJson(dfflPlayoffJsonUrl(12,"scores")),rosters:null};
+  }
+  if(week>=16&&!window.DFFL_PLAYOFF_WEEK_DATA[15]){
+    window.DFFL_PLAYOFF_WEEK_DATA[15]={scores:await dfflAutoFetchJson(dfflPlayoffJsonUrl(15,"scores")),rosters:null};
+  }
+
+  const schedule=dfflGetPlayoffSchedule(week,scoreData);
+  const expected=(DFFL_PLAYOFF_ROUNDS[week]||{}).matchups||schedule.length||1;
+  dfflSetPlayoffCardVisibility(expected);
+  dfflSetPlayoffPageChrome(week,scoreData);
+
+  schedule.slice(0,expected).forEach(function(pair,index){
+    dfflUpdatePlayoffMatchup(index+1,pair[0],pair[1],rosterData,scoreData,week);
+  });
+};
+</script>
+
 <script id="dfflPlayerBoxscoreLinks">
 /* ===== PLAYER -> ESPN BOXSCORE LINKS =====
    Historical popups are explicitly stamped with data-dffl-week.
@@ -1197,7 +1463,7 @@ function dfflExtractTeamCodeFromPlayerCell(cell){
 
 function dfflGetActiveWeekForBoxscore(){
   const week = Number(window.DFFL_ACTIVE_WEEK);
-  return Number.isFinite(week) && week >= 1 && week <= 10 ? week : 6;
+  return Number.isFinite(week) && week >= 1 && week <= 18 ? week : 12;
 }
 
 function dfflGetWeekForPlayerCell(cell){
@@ -1206,7 +1472,7 @@ function dfflGetWeekForPlayerCell(cell){
   /* Primary source: explicit archive week stamped on the popup itself. */
   if(panel && panel.dataset && panel.dataset.dfflWeek){
     const stampedWeek = Number(panel.dataset.dfflWeek);
-    if(Number.isFinite(stampedWeek) && stampedWeek >= 1 && stampedWeek <= 10){
+    if(Number.isFinite(stampedWeek) && stampedWeek >= 1 && stampedWeek <= 18){
       return stampedWeek;
     }
   }
@@ -1215,7 +1481,7 @@ function dfflGetWeekForPlayerCell(cell){
   const modal = cell ? cell.closest("#week1FinalModal") : null;
   if(modal && modal.dataset && modal.dataset.dfflWeek){
     const modalWeek = Number(modal.dataset.dfflWeek);
-    if(Number.isFinite(modalWeek) && modalWeek >= 1 && modalWeek <= 10){
+    if(Number.isFinite(modalWeek) && modalWeek >= 1 && modalWeek <= 18){
       return modalWeek;
     }
   }
@@ -1227,7 +1493,7 @@ function dfflGetWeekForPlayerCell(cell){
     const match = text.match(/\bWeek\s+(\d{1,2})\b/i);
     if(match){
       const parsedWeek = Number(match[1]);
-      if(Number.isFinite(parsedWeek) && parsedWeek >= 1 && parsedWeek <= 10){
+      if(Number.isFinite(parsedWeek) && parsedWeek >= 1 && parsedWeek <= 18){
         return parsedWeek;
       }
     }
