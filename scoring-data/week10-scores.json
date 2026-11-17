@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-16T22:10:17-06:00",
+  "lastUpdated": "2026-11-16T22:15:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
@@ -339,10 +339,10 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 5.0,
-          "receivingYards": 59.0,
+          "receptions": 6.0,
+          "receivingYards": 74.0,
           "receivingTouchdowns": 0.0,
-          "fumblesLost": 0.0,
+          "fumblesLost": 1.0,
           "twoPointConversions": 0.0
         }
       },
