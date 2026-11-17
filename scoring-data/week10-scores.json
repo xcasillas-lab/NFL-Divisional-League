@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "lastUpdated": "2026-11-16T22:05:24-06:00",
+  "lastUpdated": "2026-11-16T22:10:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Joshua",
       "rightOwner": "Dallas",
       "leftTotal": 105.04,
-      "rightTotal": 115.22
+      "rightTotal": 115.72
     },
     "2": {
       "leftOwner": "Brian",
@@ -1174,7 +1174,7 @@
         "position": "FLEX",
         "name": "Omarion Hampton",
         "nflTeam": "LAC",
-        "points": 15.7,
+        "points": 16.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1184,7 +1184,7 @@
           "interceptions": 0.0,
           "rushingYards": 97.0,
           "rushingTouchdowns": 1.0,
-          "receptions": 0.0,
+          "receptions": 1.0,
           "receivingYards": 0.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
