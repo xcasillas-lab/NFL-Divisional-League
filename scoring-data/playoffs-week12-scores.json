@@ -2,12 +2,12 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-25T22:05:29-06:00",
+  "lastUpdated": "2026-11-25T22:10:31-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
       "rightOwner": "Xavier",
-      "leftTotal": 41.9,
+      "leftTotal": 42.9,
       "rightTotal": 0.0
     },
     "2": {
@@ -182,13 +182,13 @@
         "position": "DEF",
         "name": "Los Angeles Rams DEF",
         "nflTeam": "LAR",
-        "points": 6.0,
+        "points": 7.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
           "pointsAllowedFantasy": 4.0,
-          "sacks": 0.0,
+          "sacks": 1.0,
           "interceptions": 1.0,
           "fumbleRecoveries": 0.0,
           "safeties": 0.0,
