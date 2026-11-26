@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T16:15:26-06:00",
+  "lastUpdated": "2026-11-26T16:20:24-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -14,7 +14,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 15.52
+      "rightTotal": 15.82
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -584,7 +584,7 @@
         "position": "RB",
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
-        "points": 0.4,
+        "points": 0.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -592,7 +592,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 4.0,
+          "rushingYards": 7.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
