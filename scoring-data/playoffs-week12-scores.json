@@ -2,12 +2,12 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-25T20:05:25-06:00",
+  "lastUpdated": "2026-11-25T20:10:26-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
       "rightOwner": "Xavier",
-      "leftTotal": 19.5,
+      "leftTotal": 16.5,
       "rightTotal": 0.0
     },
     "2": {
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 7.4,
+      "leftTotal": 14.5,
       "rightTotal": 0.0
     },
     "4": {
@@ -182,12 +182,12 @@
         "position": "DEF",
         "name": "Los Angeles Rams DEF",
         "nflTeam": "LAR",
-        "points": 7.0,
+        "points": 4.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 3,
-          "pointsAllowedFantasy": 7.0,
+          "pointsAllowed": 10,
+          "pointsAllowedFantasy": 4.0,
           "sacks": 0.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
@@ -501,7 +501,7 @@
         "position": "FLEX",
         "name": "Christian Watson",
         "nflTeam": "GB",
-        "points": 7.4,
+        "points": 14.5,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -511,9 +511,9 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 3.0,
-          "receivingYards": 59.0,
-          "receivingTouchdowns": 0.0,
+          "receptions": 4.0,
+          "receivingYards": 65.0,
+          "receivingTouchdowns": 1.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
         }
