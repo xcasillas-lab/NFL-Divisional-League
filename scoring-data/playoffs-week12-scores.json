@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T14:55:32-06:00",
+  "lastUpdated": "2026-11-26T15:00:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 100.52,
+      "leftTotal": 107.36,
       "rightTotal": 0.0
     },
     "4": {
@@ -711,13 +711,13 @@
         "position": "QB",
         "name": "Caleb Williams",
         "nflTeam": "CHI",
-        "points": 10.02,
+        "points": 16.86,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 218.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 289.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 13.0,
           "rushingTouchdowns": 0.0,
