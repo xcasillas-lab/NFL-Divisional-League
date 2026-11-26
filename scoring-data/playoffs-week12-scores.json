@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T16:20:24-06:00",
+  "lastUpdated": "2026-11-26T16:25:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -14,7 +14,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 15.82
+      "rightTotal": 17.86
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -542,12 +542,12 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 1.32,
+        "points": 2.76,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 33.0,
+          "passingYards": 69.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
@@ -563,7 +563,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 10.5,
+        "points": 11.1,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -571,7 +571,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 35.0,
+          "rushingYards": 41.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 5.0,
