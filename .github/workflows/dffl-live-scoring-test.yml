@@ -76,7 +76,7 @@ jobs:
           git config user.name "dffl-scorebot"
           git config user.email "actions@users.noreply.github.com"
 
-          git add scoring-data/week*-scores.json
+          git add -- 'scoring-data/week*-scores.json' 'scoring-data/playoffs-week*-scores.json'
 
           if git diff --cached --quiet; then
             echo "No score changes to commit."
