@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T13:30:27-06:00",
+  "lastUpdated": "2026-11-26T13:35:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 55.48,
+      "leftTotal": 56.98,
       "rightTotal": 0.0
     },
     "4": {
@@ -732,7 +732,7 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 16.3,
+        "points": 17.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -742,8 +742,8 @@
           "interceptions": 0.0,
           "rushingYards": 57.0,
           "rushingTouchdowns": 1.0,
-          "receptions": 3.0,
-          "receivingYards": 31.0,
+          "receptions": 4.0,
+          "receivingYards": 41.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
