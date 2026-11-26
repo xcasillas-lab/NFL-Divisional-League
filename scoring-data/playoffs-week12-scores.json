@@ -1,8 +1,8 @@
 {
   "week": 12,
   "round": "quarterfinals",
-  "status": "live",
-  "lastUpdated": "2026-11-25T22:30:24-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-25T22:35:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -78,7 +78,7 @@
         "name": "Kyren Williams",
         "nflTeam": "LAR",
         "points": 14.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -162,7 +162,7 @@
         "name": "Blake Corum",
         "nflTeam": "LAR",
         "points": 27.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -183,7 +183,7 @@
         "name": "Los Angeles Rams DEF",
         "nflTeam": "LAR",
         "points": 9.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 13,
@@ -670,7 +670,7 @@
         "name": "Christian Watson",
         "nflTeam": "GB",
         "points": 14.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
