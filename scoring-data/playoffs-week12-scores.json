@@ -2,12 +2,12 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-25T22:00:27-06:00",
+  "lastUpdated": "2026-11-25T22:05:29-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
       "rightOwner": "Xavier",
-      "leftTotal": 40.2,
+      "leftTotal": 41.9,
       "rightTotal": 0.0
     },
     "2": {
@@ -77,7 +77,7 @@
         "position": "RB",
         "name": "Kyren Williams",
         "nflTeam": "LAR",
-        "points": 12.0,
+        "points": 13.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -85,7 +85,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 21.0,
+          "rushingYards": 38.0,
           "rushingTouchdowns": 1.0,
           "receptions": 4.0,
           "receivingYards": 19.0,
