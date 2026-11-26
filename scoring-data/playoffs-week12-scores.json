@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T16:25:19-06:00",
+  "lastUpdated": "2026-11-26T16:30:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -14,7 +14,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 17.86
+      "rightTotal": 23.1
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -542,13 +542,13 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 2.76,
+        "points": 8.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 69.0,
-          "passingTouchdowns": 0.0,
+          "passingYards": 100.0,
+          "passingTouchdowns": 1.0,
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
