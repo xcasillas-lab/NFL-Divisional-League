@@ -1,8 +1,8 @@
 {
   "week": 12,
   "round": "quarterfinals",
-  "status": "live",
-  "lastUpdated": "2026-11-26T15:30:23-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-26T15:35:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 124.4,
+      "leftTotal": 126.3,
       "rightTotal": 0.0
     },
     "4": {
@@ -712,7 +712,7 @@
         "name": "Caleb Williams",
         "nflTeam": "CHI",
         "points": 23.3,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -732,8 +732,8 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 45.2,
-        "gameStatus": "live",
+        "points": 45.7,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -743,7 +743,7 @@
           "rushingYards": 205.0,
           "rushingTouchdowns": 3.0,
           "receptions": 5.0,
-          "receivingYards": 42.0,
+          "receivingYards": 47.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -754,7 +754,7 @@
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
         "points": 25.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -795,8 +795,8 @@
         "position": "WR",
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
-        "points": 16.7,
-        "gameStatus": "live",
+        "points": 18.1,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -805,8 +805,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 6.0,
-          "receivingYards": 137.0,
+          "receptions": 7.0,
+          "receivingYards": 146.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
@@ -817,7 +817,7 @@
         "name": "Colston Loveland",
         "nflTeam": "CHI",
         "points": -1.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
