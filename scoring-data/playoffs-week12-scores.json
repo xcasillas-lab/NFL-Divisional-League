@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-25T20:03:22-06:00",
+  "lastUpdated": "2026-11-25T20:05:25-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 4.8,
+      "leftTotal": 7.4,
       "rightTotal": 0.0
     },
     "4": {
@@ -501,7 +501,7 @@
         "position": "FLEX",
         "name": "Christian Watson",
         "nflTeam": "GB",
-        "points": 4.8,
+        "points": 7.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -511,8 +511,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 2.0,
-          "receivingYards": 38.0,
+          "receptions": 3.0,
+          "receivingYards": 59.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
