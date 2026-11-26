@@ -2,12 +2,12 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-25T21:10:25-06:00",
+  "lastUpdated": "2026-11-25T21:15:29-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
       "rightOwner": "Xavier",
-      "leftTotal": 20.5,
+      "leftTotal": 22.0,
       "rightTotal": 0.0
     },
     "2": {
@@ -161,7 +161,7 @@
         "position": "FLEX",
         "name": "Blake Corum",
         "nflTeam": "LAR",
-        "points": 5.4,
+        "points": 6.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -169,7 +169,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 42.0,
+          "rushingYards": 57.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 7.0,
