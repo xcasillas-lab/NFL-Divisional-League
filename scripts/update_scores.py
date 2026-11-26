@@ -4,7 +4,7 @@ import json
 import os
 import re
 import unicodedata
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -106,7 +106,62 @@ WEEK_CONFIG = {
             "4": ("JetLiX", "Xavier"),
         },
     },
+    12: {
+        "dates": ["20261125", "20261126", "20261127", "20261128", "20261129", "20261130"],
+        "matchups": {
+            "1": ("Ben", "Xavier"),
+            "2": ("Brian", "Juan"),
+            "3": ("JetLiX", "Joshua"),
+            "4": ("Dallas", "Kendall"),
+        },
+    },
+    15: {
+        "dates": ["20261216", "20261217", "20261218", "20261219", "20261220", "20261221"],
+        "matchups": {},
+    },
+    16: {
+        "dates": ["20261223", "20261224", "20261225", "20261226", "20261227", "20261228"],
+        "matchups": {},
+    },
 }
+
+PLAYOFF_ROUNDS = {12: "quarterfinals", 15: "semifinals", 16: "championship"}
+
+
+def playoff_winners(week, expected_pairs):
+    path = ROOT / "scoring-data" / f"playoffs-week{week}-scores.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("status") != "final":
+        return None
+    winners = []
+    for left, right in expected_pairs:
+        matches = [m for m in data.get("matchups", {}).values()
+                   if {m.get("leftOwner"), m.get("rightOwner")} == {left, right}]
+        if len(matches) != 1:
+            return None
+        m = matches[0]
+        a, b = m.get("leftTotal"), m.get("rightTotal")
+        if not isinstance(a, (int, float)) or not isinstance(b, (int, float)) or a == b:
+            return None
+        winners.append(m["leftOwner"] if a > b else m["rightOwner"])
+    return winners
+
+
+def playoff_matchups(week):
+    qf = list(WEEK_CONFIG[12]["matchups"].values())
+    if week == 12:
+        return WEEK_CONFIG[12]["matchups"]
+    winners = playoff_winners(12, qf)
+    if not winners:
+        return {}
+    sf = [(winners[0], winners[3]), (winners[1], winners[2])]
+    if week == 15:
+        return {str(i + 1): pair for i, pair in enumerate(sf)}
+    finalists = playoff_winners(15, sf)
+    return {"1": tuple(finalists)} if finalists else {}
+
 
 TARGET_OWNERS = [
     "Dallas",
@@ -133,12 +188,16 @@ def get_active_week(now=None):
     for week, config in WEEK_CONFIG.items():
         if today in config["dates"]:
             return week
+        # Allow Monday-night playoff games to finish after midnight CT.
+        if week in PLAYOFF_ROUNDS and now.hour < 2 and (now - timedelta(days=1)).strftime("%Y%m%d") == config["dates"][-1]:
+            return week
 
     return None
 
 TEAM_ALIASES = {
     "WSH": "WAS",
-    "JAC": "JAX"
+    "JAC": "JAX",
+    "LA": "LAR"
 }
 
 
@@ -869,10 +928,16 @@ def main():
 
     config = WEEK_CONFIG[active_week]
     week_dates = config["dates"]
-    week_matchups = config["matchups"]
+    is_playoff = active_week in PLAYOFF_ROUNDS
+    week_matchups = playoff_matchups(active_week) if is_playoff else config["matchups"]
+    if not week_matchups:
+        print("Playoff participants not resolved; no scores updated.")
+        return
+    scoring_owners = list(dict.fromkeys(owner for pair in week_matchups.values() for owner in pair)) if is_playoff else TARGET_OWNERS
 
-    roster_file = ROOT / "scoring-data" / f"week{active_week}-rosters.json"
-    score_file = ROOT / "scoring-data" / f"week{active_week}-scores.json"
+    prefix = "playoffs-" if is_playoff else ""
+    roster_file = ROOT / "scoring-data" / f"{prefix}week{active_week}-rosters.json"
+    score_file = ROOT / "scoring-data" / f"{prefix}week{active_week}-scores.json"
 
     if not roster_file.exists():
         raise FileNotFoundError(f"Roster file not found: {roster_file}")
@@ -897,10 +962,18 @@ def main():
         )
     )
 
+    if is_playoff:
+        if score_data.get("status") == "final":
+            print("Playoff round already final; no scores updated.")
+            return
+        score_data["week"] = active_week
+        score_data["round"] = PLAYOFF_ROUNDS[active_week]
+        score_data["matchups"] = {}
+        score_data["players"] = {}
     needed_teams = set()
     defense_teams = set()
 
-    for owner in TARGET_OWNERS:
+    for owner in scoring_owners:
         for player in roster_data["rosters"][owner]["players"]:
             team = normalize_team(
                 player.get("nflTeam") or ""
@@ -1036,7 +1109,7 @@ def main():
 
     owner_totals = {}
 
-    for owner in TARGET_OWNERS:
+    for owner in scoring_owners:
         rows = []
         total = 0.0
 
@@ -1230,6 +1303,10 @@ def main():
 
     elif (
         relevant_statuses
+        and (not is_playoff or (
+            all(len(roster_data["rosters"][owner]["players"]) == 8 for owner in scoring_owners)
+            and needed_teams.issubset(status_by_team)
+        ))
         and all(
             s == "final"
             for s in relevant_statuses
@@ -1260,7 +1337,7 @@ def main():
         "primary": "ESPN public NFL JSON",
         "dates": week_dates,
         "stage": f"2026-week{active_week}-production",
-        "owners": TARGET_OWNERS,
+        "owners": scoring_owners,
         "defenseIncluded": True,
         "defenseNote": (
             "D/ST includes points allowed, sacks, INT, "
