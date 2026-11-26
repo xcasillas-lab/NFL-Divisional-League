@@ -695,6 +695,15 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 .playoff-quarterfinal-row .compact-team b{color:#f8fafc}
 </style>
 
+<style id="dfflMobilePlayoffGridFix">
+/* Restore the regular-season responsive grid over the postseason inline column setting. */
+@media (min-width:641px) and (max-width:980px){
+  .matchups-current-grid[style*="repeat(4"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+@media (max-width:640px){
+  .matchups-current-grid{grid-template-columns:minmax(0,1fr) !important;}
+}
+</style>
 </head>
 <body>
 <header><h1>DFFL Interactive League Hub</h1><p>Welcome to the Inaugural DFFL Season</p></header>
