@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T17:50:18-06:00",
+  "lastUpdated": "2026-11-26T17:55:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -14,7 +14,7 @@
       "leftOwner": "Brian",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 50.86
+      "rightTotal": 51.06
     },
     "3": {
       "leftOwner": "JetLiX",
@@ -563,7 +563,7 @@
         "position": "RB",
         "name": "Javonte Williams",
         "nflTeam": "DAL",
-        "points": 28.1,
+        "points": 28.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -571,7 +571,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 64.0,
+          "rushingYards": 66.0,
           "rushingTouchdowns": 2.0,
           "receptions": 3.0,
           "receivingYards": 22.0,
