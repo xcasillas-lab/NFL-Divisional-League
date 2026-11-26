@@ -1,8 +1,8 @@
 {
   "week": 12,
   "round": "quarterfinals",
-  "status": "pre-game",
-  "lastUpdated": "2026-11-26T12:00:28-06:00",
+  "status": "live",
+  "lastUpdated": "2026-11-26T12:05:22-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 14.5,
+      "leftTotal": 15.1,
       "rightTotal": 0.0
     },
     "4": {
@@ -712,7 +712,7 @@
         "name": "Caleb Williams",
         "nflTeam": "CHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -732,15 +732,15 @@
         "position": "RB",
         "name": "Jahmyr Gibbs",
         "nflTeam": "DET",
-        "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "points": 0.6,
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 6.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -754,7 +754,7 @@
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
@@ -796,9 +796,9 @@
         "name": "Amon-Ra St. Brown",
         "nflTeam": "DET",
         "points": 0.0,
-        "gameStatus": "pre-game",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "gameStatus": "live",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
@@ -817,7 +817,7 @@
         "name": "Colston Loveland",
         "nflTeam": "CHI",
         "points": 0.0,
-        "gameStatus": "pre-game",
+        "gameStatus": "live",
         "foundInFeed": false,
         "matchMethod": "not-found",
         "raw": {
