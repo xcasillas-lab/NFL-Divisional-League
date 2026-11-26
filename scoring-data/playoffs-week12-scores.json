@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T15:20:20-06:00",
+  "lastUpdated": "2026-11-26T15:25:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -19,7 +19,7 @@
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
-      "leftTotal": 117.18,
+      "leftTotal": 117.68,
       "rightTotal": 0.0
     },
     "4": {
@@ -753,7 +753,7 @@
         "position": "RB",
         "name": "D'Andre Swift",
         "nflTeam": "CHI",
-        "points": 23.2,
+        "points": 23.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -761,7 +761,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 57.0,
+          "rushingYards": 62.0,
           "rushingTouchdowns": 1.0,
           "receptions": 6.0,
           "receivingYards": 85.0,
