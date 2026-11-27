@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-27T14:30:23-06:00",
+  "lastUpdated": "2026-11-27T14:35:17-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -25,7 +25,7 @@
     "4": {
       "leftOwner": "Dallas",
       "rightOwner": "Kendall",
-      "leftTotal": 30.46,
+      "leftTotal": 27.46,
       "rightTotal": 0.0
     }
   },
@@ -1196,12 +1196,12 @@
         "position": "DEF",
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
-        "points": 5.0,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 7,
-          "pointsAllowedFantasy": 4.0,
+          "pointsAllowed": 14,
+          "pointsAllowedFantasy": 1.0,
           "sacks": 1.0,
           "interceptions": 0.0,
           "fumbleRecoveries": 0.0,
