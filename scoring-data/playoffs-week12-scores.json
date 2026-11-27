@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T19:50:19-06:00",
+  "lastUpdated": "2026-11-26T19:55:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -20,7 +20,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
       "leftTotal": 126.3,
-      "rightTotal": 3.72
+      "rightTotal": 5.62
     },
     "4": {
       "leftOwner": "Dallas",
@@ -901,7 +901,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 2.4,
+        "points": 4.3,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -909,7 +909,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 11.0,
+          "rushingYards": 30.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 8.0,
