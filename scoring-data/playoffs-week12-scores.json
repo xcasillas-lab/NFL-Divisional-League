@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T21:25:18-06:00",
+  "lastUpdated": "2026-11-26T21:30:24-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -25,7 +25,7 @@
     "4": {
       "leftOwner": "Dallas",
       "rightOwner": "Kendall",
-      "leftTotal": 18.1,
+      "leftTotal": 18.8,
       "rightTotal": 0.0
     }
   },
@@ -1070,7 +1070,7 @@
         "position": "RB",
         "name": "Emmett Johnson",
         "nflTeam": "KC",
-        "points": 13.1,
+        "points": 13.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1078,7 +1078,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 53.0,
+          "rushingYards": 60.0,
           "rushingTouchdowns": 1.0,
           "receptions": 2.0,
           "receivingYards": 8.0,
