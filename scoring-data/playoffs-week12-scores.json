@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T19:55:19-06:00",
+  "lastUpdated": "2026-11-26T20:00:31-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -20,7 +20,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
       "leftTotal": 126.3,
-      "rightTotal": 5.62
+      "rightTotal": 7.0
     },
     "4": {
       "leftOwner": "Dallas",
@@ -880,12 +880,12 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 1.32,
+        "points": 2.2,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 8.0,
+          "passingYards": 30.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 10.0,
@@ -901,7 +901,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 4.3,
+        "points": 4.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -909,7 +909,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 30.0,
+          "rushingYards": 35.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 8.0,
