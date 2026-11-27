@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-27T15:10:24-06:00",
+  "lastUpdated": "2026-11-27T15:15:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -1200,7 +1200,7 @@
         "gameStatus": "live",
         "foundInFeed": true,
         "raw": {
-          "pointsAllowed": 14,
+          "pointsAllowed": 17,
           "pointsAllowedFantasy": 1.0,
           "sacks": 1.0,
           "interceptions": 0.0,
