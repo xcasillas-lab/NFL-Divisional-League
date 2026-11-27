@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T19:30:21-06:00",
+  "lastUpdated": "2026-11-26T19:35:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -14,13 +14,13 @@
       "leftOwner": "Brian",
       "rightOwner": "Juan",
       "leftTotal": 0.0,
-      "rightTotal": 76.94
+      "rightTotal": 75.94
     },
     "3": {
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
       "leftTotal": 126.3,
-      "rightTotal": 0.0
+      "rightTotal": 3.32
     },
     "4": {
       "leftOwner": "Dallas",
@@ -542,14 +542,14 @@
         "position": "QB",
         "name": "Dak Prescott",
         "nflTeam": "DAL",
-        "points": 27.54,
-        "gameStatus": "live",
+        "points": 26.54,
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
           "passingYards": 291.0,
           "passingTouchdowns": 2.0,
-          "interceptions": 0.0,
+          "interceptions": 1.0,
           "rushingYards": 19.0,
           "rushingTouchdowns": 1.0,
           "receptions": 0.0,
@@ -564,7 +564,7 @@
         "name": "Javonte Williams",
         "nflTeam": "DAL",
         "points": 31.8,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -585,7 +585,7 @@
         "name": "Saquon Barkley",
         "nflTeam": "PHI",
         "points": 0.7,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -606,7 +606,7 @@
         "name": "CeeDee Lamb",
         "nflTeam": "DAL",
         "points": 16.9,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -880,15 +880,15 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 0.0,
+        "points": 1.32,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
-          "passingYards": 0.0,
+          "passingYards": 8.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 10.0,
           "rushingTouchdowns": 0.0,
           "receptions": 0.0,
           "receivingYards": 0.0,
@@ -901,18 +901,18 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 0.0,
+        "points": 2.0,
         "gameStatus": "live",
-        "foundInFeed": false,
-        "matchMethod": "not-found",
+        "foundInFeed": true,
+        "matchMethod": "exact",
         "raw": {
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 0.0,
+          "rushingYards": 7.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 8.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
