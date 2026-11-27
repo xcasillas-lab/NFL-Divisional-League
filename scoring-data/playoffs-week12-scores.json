@@ -1,8 +1,8 @@
 {
   "week": 12,
   "round": "quarterfinals",
-  "status": "live",
-  "lastUpdated": "2026-11-27T16:50:19-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-27T16:55:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -416,7 +416,7 @@
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
         "points": 5.1,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1176,7 +1176,7 @@
         "name": "Jonah Coleman",
         "nflTeam": "DEN",
         "points": 11.2,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1197,7 +1197,7 @@
         "name": "Denver Broncos DEF",
         "nflTeam": "DEN",
         "points": 5.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "raw": {
           "pointsAllowed": 27,
