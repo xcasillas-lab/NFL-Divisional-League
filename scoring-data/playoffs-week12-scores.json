@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T20:45:17-06:00",
+  "lastUpdated": "2026-11-26T20:50:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -25,7 +25,7 @@
     "4": {
       "leftOwner": "Dallas",
       "rightOwner": "Kendall",
-      "leftTotal": 7.92,
+      "leftTotal": 7.88,
       "rightTotal": 0.0
     }
   },
@@ -1049,12 +1049,12 @@
         "position": "QB",
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
-        "points": 4.12,
+        "points": 4.08,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 98.0,
+          "passingYards": 97.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
           "rushingYards": 2.0,
