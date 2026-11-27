@@ -1,8 +1,8 @@
 {
   "week": 12,
   "round": "quarterfinals",
-  "status": "live",
-  "lastUpdated": "2026-11-26T22:25:17-06:00",
+  "status": "pre-game",
+  "lastUpdated": "2026-11-26T22:30:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -881,7 +881,7 @@
         "name": "Josh Allen",
         "nflTeam": "BUF",
         "points": 5.54,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -902,7 +902,7 @@
         "name": "James Cook",
         "nflTeam": "BUF",
         "points": 19.0,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -944,7 +944,7 @@
         "name": "D.J. Moore",
         "nflTeam": "BUF",
         "points": 2.5,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "initial-last",
         "raw": {
@@ -1050,7 +1050,7 @@
         "name": "Patrick Mahomes",
         "nflTeam": "KC",
         "points": 7.16,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
@@ -1071,7 +1071,7 @@
         "name": "Emmett Johnson",
         "nflTeam": "KC",
         "points": 17.6,
-        "gameStatus": "live",
+        "gameStatus": "final",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
