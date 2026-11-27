@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T20:35:19-06:00",
+  "lastUpdated": "2026-11-26T20:40:20-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -20,7 +20,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
       "leftTotal": 126.3,
-      "rightTotal": 16.8
+      "rightTotal": 16.94
     },
     "4": {
       "leftOwner": "Dallas",
@@ -880,12 +880,12 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 1.6,
+        "points": 1.64,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 40.0,
+          "passingYards": 41.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 10.0,
@@ -943,7 +943,7 @@
         "position": "WR",
         "name": "D.J. Moore",
         "nflTeam": "BUF",
-        "points": 0.8,
+        "points": 0.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "initial-last",
@@ -954,7 +954,7 @@
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
-          "receivingYards": 3.0,
+          "receivingYards": 4.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
