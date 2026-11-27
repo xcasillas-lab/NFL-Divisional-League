@@ -1027,12 +1027,59 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 <p>Official Newsletter of the Divisional Fantasy Football League</p>
 <div class="newsletter-issue">November 23, 2026 • Week 12 Playoff Edition</div>
 </div>
-<div class="newsletter-collapse week12-playoff-preview">
-<button aria-controls="week12PlayoffPreviewContent" aria-expanded="true" class="newsletter-collapse-toggle" onclick="toggleNewsletterSection(this)" type="button">
-<span><strong>🏆 Week 12 — First Round Playoff Preview <span class="latest-new-badge">NEW</span></strong><small>#1 NFC West vs. #8 NFC South • Matchup spotlight, season story and the players each owner trusted most.</small></span>
+<div class="newsletter-collapse dffl-scoring-profile">
+<button aria-controls="dfflScoringProfileContent" aria-expanded="true" class="newsletter-collapse-toggle" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>📊 Anatomy of a DFFL Winner <span class="latest-new-badge">NEW</span></strong><small>League scoring benchmarks, winning vs. losing scores, record-group averages and the strange case of NFC North.</small></span>
 <span aria-hidden="true" class="toggle-arrow">▾</span>
 </button>
-<div class="newsletter-collapse-content" id="week12PlayoffPreviewContent">
+<div class="newsletter-collapse-content" id="dfflScoringProfileContent">
+<div class="combined-update-divider">📈 2026 REGULAR-SEASON SCORING PROFILE</div>
+<div class="dffl-score-hero">
+<div class="dffl-score-kicker">10 WEEKS • 40 GAMES • 80 TEAM SCORES</div>
+<h3>What Did It Take to Win?</h3>
+<p>After the full regular season, the scoring numbers show a clear separation between the league's top teams, the middle of the pack and the teams that finished below .500.</p>
+</div>
+<div class="dffl-score-benchmark-grid">
+<div class="dffl-score-benchmark top"><small>Above .500</small><b>118.00</b><span>Avg PPG</span></div>
+<div class="dffl-score-benchmark"><small>League Average</small><b>100.46</b><span>Avg PPG</span></div>
+<div class="dffl-score-benchmark"><small>At .500</small><b>98.51</b><span>Avg PPG</span></div>
+<div class="dffl-score-benchmark"><small>Below .500</small><b>90.72</b><span>Avg PPG</span></div>
+<div class="dffl-score-benchmark gap"><small>Top vs. Bottom Gap</small><b>27.27</b><span>Points per game</span></div>
+</div>
+<div class="dffl-winloss-grid">
+<div class="dffl-winloss-card"><small>Average Winning Score</small><b>112.44</b><span>points</span></div>
+<div class="dffl-winloss-card"><small>Average Losing Score</small><b>88.47</b><span>points</span></div>
+<div class="dffl-winloss-card"><small>Average Margin</small><b>23.97</b><span>points</span></div>
+</div>
+<div class="dffl-score-story"><b>The separation is real:</b> the two divisions that finished above .500 averaged <b>118.00 points per game</b>. The three .500 teams averaged <b>98.51</b>, almost exactly around the league average. The three divisions below .500 averaged only <b>90.72</b>. That's a <b>27.27-point-per-game</b> gap between the winning tier and the below-.500 tier.</div>
+<div class="dffl-score-table-wrap">
+<table class="dffl-score-table">
+<thead><tr><th>Division</th><th>Record</th><th>Avg. PPG</th></tr></thead>
+<tbody>
+<tr><td>NFC West</td><td>10-0</td><td>129.66</td></tr>
+<tr><td>NFC North</td><td>5-5</td><td>111.45</td></tr>
+<tr><td>AFC North</td><td>8-2</td><td>106.32</td></tr>
+<tr><td>AFC West</td><td>5-5</td><td>93.08</td></tr>
+<tr><td>NFC East</td><td>3-7</td><td>93.02</td></tr>
+<tr><td>NFC South</td><td>1-9</td><td>92.07</td></tr>
+<tr><td>AFC South</td><td>5-5</td><td>91.00</td></tr>
+<tr><td>AFC East</td><td>3-7</td><td>87.06</td></tr>
+</tbody>
+</table>
+</div>
+<div class="dffl-score-story"><b>The strangest record in the league:</b> NFC North averaged <b>111.45 PPG</b> — second-best in the entire DFFL — yet finished only <b>5-5</b>. AFC South also finished 5-5 while averaging just <b>91.00 PPG</b>. Two identical records, separated by more than <b>20 points per game</b> in scoring.</div>
+<div class="dffl-score-takeaway">
+<small>DFFL Playoff Benchmark</small>
+<b>GET TO 112.</b>
+<p>The average regular-season winner scored 112.44 points. It isn't a guarantee, but if you're looking for one simple playoff target, 112 is the number the regular season says you want to reach.</p>
+</div>
+</div>
+</div><div class="newsletter-collapse week12-playoff-preview">
+<button aria-controls="week12PlayoffPreviewContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
+<span><strong>🏆 Week 12 — First Round Playoff Preview</strong><small>#1 NFC West vs. #8 NFC South • Matchup spotlight, season story and the players each owner trusted most.</small></span>
+<span aria-hidden="true" class="toggle-arrow">▾</span>
+</button>
+<div class="newsletter-collapse-content" hidden="" id="week12PlayoffPreviewContent">
 <div class="combined-update-divider">🏈 DFFL PLAYOFFS • FIRST ROUND</div><div class="week12-preview-selector"><label for="week12MatchupPreviewSelect">Choose Matchup Preview</label><select aria-label="Choose Week 12 playoff matchup preview" id="week12MatchupPreviewSelect"><option value="matchup1">#1 NFC West vs #8 NFC South</option><option value="matchup2">#4 AFC West vs #5 AFC South</option><option value="matchup3">#2 AFC North vs #7 NFC East</option><option value="matchup4">#3 NFC North vs #6 AFC East</option></select></div><div class="week12-preview-panel active" data-preview="matchup1" id="week12PreviewMatchup1"><div class="week12-playoff-hero">
 <div class="week12-kicker">MATCHUP SPOTLIGHT • #1 VS #8</div>
 <h3>NFC West vs. NFC South</h3>
@@ -1341,54 +1388,7 @@ input,select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--bor
 </div>
 </div>
 </div>
-<div class="newsletter-collapse dffl-scoring-profile">
-<button aria-controls="dfflScoringProfileContent" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button">
-<span><strong>📊 Anatomy of a DFFL Winner <span class="latest-new-badge">NEW</span></strong><small>League scoring benchmarks, winning vs. losing scores, record-group averages and the strange case of NFC North.</small></span>
-<span aria-hidden="true" class="toggle-arrow">▾</span>
-</button>
-<div class="newsletter-collapse-content" hidden="" id="dfflScoringProfileContent">
-<div class="combined-update-divider">📈 2026 REGULAR-SEASON SCORING PROFILE</div>
-<div class="dffl-score-hero">
-<div class="dffl-score-kicker">10 WEEKS • 40 GAMES • 80 TEAM SCORES</div>
-<h3>What Did It Take to Win?</h3>
-<p>After the full regular season, the scoring numbers show a clear separation between the league's top teams, the middle of the pack and the teams that finished below .500.</p>
-</div>
-<div class="dffl-score-benchmark-grid">
-<div class="dffl-score-benchmark top"><small>Above .500</small><b>118.00</b><span>Avg PPG</span></div>
-<div class="dffl-score-benchmark"><small>League Average</small><b>100.46</b><span>Avg PPG</span></div>
-<div class="dffl-score-benchmark"><small>At .500</small><b>98.51</b><span>Avg PPG</span></div>
-<div class="dffl-score-benchmark"><small>Below .500</small><b>90.72</b><span>Avg PPG</span></div>
-<div class="dffl-score-benchmark gap"><small>Top vs. Bottom Gap</small><b>27.27</b><span>Points per game</span></div>
-</div>
-<div class="dffl-winloss-grid">
-<div class="dffl-winloss-card"><small>Average Winning Score</small><b>112.44</b><span>points</span></div>
-<div class="dffl-winloss-card"><small>Average Losing Score</small><b>88.47</b><span>points</span></div>
-<div class="dffl-winloss-card"><small>Average Margin</small><b>23.97</b><span>points</span></div>
-</div>
-<div class="dffl-score-story"><b>The separation is real:</b> the two divisions that finished above .500 averaged <b>118.00 points per game</b>. The three .500 teams averaged <b>98.51</b>, almost exactly around the league average. The three divisions below .500 averaged only <b>90.72</b>. That's a <b>27.27-point-per-game</b> gap between the winning tier and the below-.500 tier.</div>
-<div class="dffl-score-table-wrap">
-<table class="dffl-score-table">
-<thead><tr><th>Division</th><th>Record</th><th>Avg. PPG</th></tr></thead>
-<tbody>
-<tr><td>NFC West</td><td>10-0</td><td>129.66</td></tr>
-<tr><td>NFC North</td><td>5-5</td><td>111.45</td></tr>
-<tr><td>AFC North</td><td>8-2</td><td>106.32</td></tr>
-<tr><td>AFC West</td><td>5-5</td><td>93.08</td></tr>
-<tr><td>NFC East</td><td>3-7</td><td>93.02</td></tr>
-<tr><td>NFC South</td><td>1-9</td><td>92.07</td></tr>
-<tr><td>AFC South</td><td>5-5</td><td>91.00</td></tr>
-<tr><td>AFC East</td><td>3-7</td><td>87.06</td></tr>
-</tbody>
-</table>
-</div>
-<div class="dffl-score-story"><b>The strangest record in the league:</b> NFC North averaged <b>111.45 PPG</b> — second-best in the entire DFFL — yet finished only <b>5-5</b>. AFC South also finished 5-5 while averaging just <b>91.00 PPG</b>. Two identical records, separated by more than <b>20 points per game</b> in scoring.</div>
-<div class="dffl-score-takeaway">
-<small>DFFL Playoff Benchmark</small>
-<b>GET TO 112.</b>
-<p>The average regular-season winner scored 112.44 points. It isn't a guarantee, but if you're looking for one simple playoff target, 112 is the number the regular season says you want to reach.</p>
-</div>
-</div>
-</div><div class="newsletter-collapse week9-part2-story">
+<div class="newsletter-collapse week9-part2-story">
 <button aria-controls="week9Part2Content" aria-expanded="false" class="newsletter-collapse-toggle collapsed" onclick="toggleNewsletterSection(this)" type="button"><span><strong>📣 Week 9 Part II Update — A Glimpse at DFFL 2027</strong><small>Next season, you won't draft a division. You'll build one.</small></span><span aria-hidden="true" class="toggle-arrow">▾</span></button>
 <div class="newsletter-collapse-content" hidden="" id="week9Part2Content"><div class="week2-section-block">
 <div class="combined-update-divider">🏈 A GLIMPSE AT DFFL 2027</div>
