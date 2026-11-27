@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-26T20:30:22-06:00",
+  "lastUpdated": "2026-11-26T20:35:19-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -20,7 +20,7 @@
       "leftOwner": "JetLiX",
       "rightOwner": "Joshua",
       "leftTotal": 126.3,
-      "rightTotal": 14.58
+      "rightTotal": 16.8
     },
     "4": {
       "leftOwner": "Dallas",
@@ -880,12 +880,12 @@
         "position": "QB",
         "name": "Josh Allen",
         "nflTeam": "BUF",
-        "points": 1.48,
+        "points": 1.6,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
         "raw": {
-          "passingYards": 37.0,
+          "passingYards": 40.0,
           "passingTouchdowns": 0.0,
           "interceptions": 1.0,
           "rushingYards": 10.0,
@@ -901,7 +901,7 @@
         "position": "RB",
         "name": "James Cook",
         "nflTeam": "BUF",
-        "points": 13.1,
+        "points": 14.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -909,7 +909,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 58.0,
+          "rushingYards": 71.0,
           "rushingTouchdowns": 1.0,
           "receptions": 1.0,
           "receivingYards": 8.0,
@@ -943,7 +943,7 @@
         "position": "WR",
         "name": "D.J. Moore",
         "nflTeam": "BUF",
-        "points": 0.0,
+        "points": 0.8,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "initial-last",
@@ -953,8 +953,8 @@
           "interceptions": 0.0,
           "rushingYards": 0.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 3.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
