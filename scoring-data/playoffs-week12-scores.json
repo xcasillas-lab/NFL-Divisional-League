@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-27T14:50:18-06:00",
+  "lastUpdated": "2026-11-27T14:55:18-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -13,7 +13,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Juan",
-      "leftTotal": 2.1,
+      "leftTotal": 2.0,
       "rightTotal": 113.44
     },
     "3": {
@@ -25,7 +25,7 @@
     "4": {
       "leftOwner": "Dallas",
       "rightOwner": "Kendall",
-      "leftTotal": 29.06,
+      "leftTotal": 29.16,
       "rightTotal": 0.0
     }
   },
@@ -415,7 +415,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 2.1,
+        "points": 2.0,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -423,7 +423,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 16.0,
+          "rushingYards": 15.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 0.0,
@@ -1175,7 +1175,7 @@
         "position": "FLEX",
         "name": "Jonah Coleman",
         "nflTeam": "DEN",
-        "points": 2.3,
+        "points": 2.4,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1183,7 +1183,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": -5.0,
+          "rushingYards": -4.0,
           "rushingTouchdowns": 0.0,
           "receptions": 3.0,
           "receivingYards": 13.0,
