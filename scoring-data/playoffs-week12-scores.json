@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-27T15:05:19-06:00",
+  "lastUpdated": "2026-11-27T15:10:24-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -13,7 +13,7 @@
     "2": {
       "leftOwner": "Brian",
       "rightOwner": "Juan",
-      "leftTotal": 2.2,
+      "leftTotal": 2.9,
       "rightTotal": 113.44
     },
     "3": {
@@ -415,7 +415,7 @@
         "position": "RB",
         "name": "Jaylen Warren",
         "nflTeam": "PIT",
-        "points": 2.2,
+        "points": 2.9,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -423,7 +423,7 @@
           "passingYards": 0.0,
           "passingTouchdowns": 0.0,
           "interceptions": 0.0,
-          "rushingYards": 17.0,
+          "rushingYards": 24.0,
           "rushingTouchdowns": 0.0,
           "receptions": 1.0,
           "receivingYards": 0.0,
