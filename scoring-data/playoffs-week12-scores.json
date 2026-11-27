@@ -2,7 +2,7 @@
   "week": 12,
   "round": "quarterfinals",
   "status": "live",
-  "lastUpdated": "2026-11-27T14:25:16-06:00",
+  "lastUpdated": "2026-11-27T14:30:23-06:00",
   "matchups": {
     "1": {
       "leftOwner": "Ben",
@@ -25,7 +25,7 @@
     "4": {
       "leftOwner": "Dallas",
       "rightOwner": "Kendall",
-      "leftTotal": 29.36,
+      "leftTotal": 30.46,
       "rightTotal": 0.0
     }
   },
@@ -1175,7 +1175,7 @@
         "position": "FLEX",
         "name": "Jonah Coleman",
         "nflTeam": "DEN",
-        "points": -0.4,
+        "points": 0.7,
         "gameStatus": "live",
         "foundInFeed": true,
         "matchMethod": "exact",
@@ -1185,8 +1185,8 @@
           "interceptions": 0.0,
           "rushingYards": -4.0,
           "rushingTouchdowns": 0.0,
-          "receptions": 0.0,
-          "receivingYards": 0.0,
+          "receptions": 1.0,
+          "receivingYards": 6.0,
           "receivingTouchdowns": 0.0,
           "fumblesLost": 0.0,
           "twoPointConversions": 0.0
